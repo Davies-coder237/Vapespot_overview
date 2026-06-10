@@ -226,7 +226,7 @@ function CategoryPage() {
               <div className="relative">
                 <button
                   type="button"
-                  onClick={() => setSortDropdownOpen((v) => !v)}
+                  onClick={(e) => { e.stopPropagation(); setSortDropdownOpen((v) => !v); }}
                   className="flex items-center gap-2 text-[14px] font-medium text-black border border-[#E5E7EB] px-4 py-2 hover:bg-[#FAFAFA]"
                 >
                   <ArrowUpDown className="h-4 w-4" />
@@ -234,7 +234,7 @@ function CategoryPage() {
                   <ChevronDown className="h-4 w-4 text-[#6E6E73]" />
                 </button>
                 {sortDropdownOpen && (
-                  <div className="absolute right-0 top-full mt-1 bg-white border border-[#E5E7EB] shadow-lg z-50 min-w-[200px]">
+                  <div className="absolute right-0 top-full mt-1 bg-white border border-[#E5E7EB] shadow-lg z-50 min-w-[200px]" onClick={(e) => e.stopPropagation()}>
                     <button
                       type="button"
                       onClick={() => { setSortDropdownOpen(false); navTo({ brand, series, sort: undefined }); }}
