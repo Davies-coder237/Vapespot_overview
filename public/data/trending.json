@@ -1,0 +1,1138 @@
+{
+  "generated_at": "2026-06-04T00:58:48.268Z",
+  "count": 48,
+  "products": [
+    {
+      "rank": 1,
+      "id": "geek-bar-pulse-x-platinum-disposable-vape-20ml-8126",
+      "source_id": "8126",
+      "name": "Pulse X Platinum Disposable Vape 20mL",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "nicotine_strength": "5% (50mg/mL)",
+        "puff_count": "15000-25000",
+        "battery_capacity": "820mAh",
+        "charging_port": "USB-C",
+        "e-liquid_capacity": "20mL",
+        "display": "LED"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/geek-bar-pulse-x-platinum-disposable-vape-20ml-8126.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/geek-bar-pulse-x-platinum-disposable-vape-20ml-8126.webp"
+      },
+      "brand": "Geek Bar",
+      "series": "Pulse X Platinum"
+    },
+    {
+      "rank": 2,
+      "id": "iget-moon-k5000-watermelon-ice-13113",
+      "source_id": "13113",
+      "name": "MOON K5000 Watermelon Ice",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "puff_count": "5000",
+        "nicotine_strength": "5%",
+        "e-liquid_capacity": "12ml",
+        "battery_capacity": "1750mAh",
+        "charging_port": "USB-C"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/iget-moon-k5000-watermelon-ice-13113.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/iget-moon-k5000-watermelon-ice-13113.webp"
+      },
+      "brand": "IGET",
+      "series": "Moon K5000"
+    },
+    {
+      "rank": 3,
+      "id": "alibarbar-ingot-pineapple-coconut-2136",
+      "source_id": "2136",
+      "name": "Ingot Pineapple Coconut",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2350mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "charging_port": "USB-C",
+        "e-liquid_capacity": "22mL",
+        "adjustable_airflow": "Yes",
+        "coil_type": "Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/alibarbar-ingot-pineapple-coconut-2136.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/alibarbar-ingot-pineapple-coconut-2136.webp"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 9000"
+    },
+    {
+      "rank": 4,
+      "id": "waka-blackcurrant-berries-sopro-10000-2150",
+      "source_id": "2150",
+      "name": "Blackcurrant Berries – SOPRO 10,000",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "nicotine_strength": "50mg/ml",
+        "puff_count": "10000",
+        "battery_capacity": "850mAh",
+        "charging_port": "USB-C",
+        "e-liquid_capacity": "18ml",
+        "adjustable_airflow": "Yes",
+        "coil_type": "Mesh Coil",
+        "sweetness": "3/5",
+        "cooling": "2/5"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/waka-blackcurrant-berries-sopro-10000-2150.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/waka-blackcurrant-berries-sopro-10000-2150.webp"
+      },
+      "brand": "Waka",
+      "series": "Sopro PA10000"
+    },
+    {
+      "rank": 5,
+      "id": "waka-smash-6000-puffs-disposable-vape-fresh-mint-4288",
+      "source_id": "4288",
+      "name": "Smash 6000 Puffs Disposable Vape Fresh Mint",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "puff_count": "6000",
+        "nicotine_strength": "50mg/mL",
+        "battery_capacity": "500mAh",
+        "charging_port": "USB-C",
+        "adjustable_airflow": "Yes",
+        "coil": "Mesh Coil"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/waka-smash-6000-puffs-disposable-vape-fresh-mint-4288.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/waka-smash-6000-puffs-disposable-vape-fresh-mint-4288.webp"
+      },
+      "brand": "Waka",
+      "series": "Smash 6000"
+    },
+    {
+      "rank": 6,
+      "id": "relx-sparta-peach-strawberry-2261",
+      "source_id": "2261",
+      "name": "SPARTA Peach Strawberry",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "780mAh",
+        "puff_count": "18000-24000",
+        "nicotine_strength": "5%",
+        "charging_port": "USB-C",
+        "adjustable_airflow": "No",
+        "e-liquid_capacity": "18mL"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/relx-sparta-peach-strawberry-2261.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/relx-sparta-peach-strawberry-2261.webp"
+      },
+      "brand": "RELX",
+      "series": "SPARTA"
+    },
+    {
+      "rank": 7,
+      "id": "gunnpod-evo-frost-cola-fizz-2303",
+      "source_id": "2303",
+      "name": "EVO Frost Cola Fizz",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2500mAh",
+        "puff_count": "15000",
+        "nicotine_strength": "50mg/ml",
+        "liquid_capacity": "25ml",
+        "charging_port": "USB-C",
+        "adjustable_airflow": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/gunnpod-evo-frost-cola-fizz-2303.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/gunnpod-evo-frost-cola-fizz-2303.webp"
+      },
+      "brand": "Gunnpod",
+      "series": "EVO"
+    },
+    {
+      "rank": 8,
+      "id": "gunnpod-president-2000-puffs-12691",
+      "source_id": "12691",
+      "name": "President 2000 Puffs",
+      "price_aud": 34.99,
+      "currency": "AUD",
+      "specs": {
+        "nicotine_strength": "5%",
+        "battery_capacity": "1250mAh",
+        "puffs": "2000",
+        "e-liquid_capacity": "8mL"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/gunnpod-president-2000-puffs-12691.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/gunnpod-president-2000-puffs-12691.webp"
+      },
+      "brand": "Gunnpod",
+      "series": "2000 Puffs"
+    },
+    {
+      "rank": 9,
+      "id": "veipus-blueberry-lemonade-2344",
+      "source_id": "2344",
+      "name": "Blueberry Lemonade",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "nicotine_strength": "5%",
+        "puff_count": "15000",
+        "battery_capacity": "700mAh",
+        "charging_port": "USB-C",
+        "adjustable_airflow": "Yes",
+        "e-liquid_capacity": "20ml"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/veipus-blueberry-lemonade-2344.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/veipus-blueberry-lemonade-2344.webp"
+      },
+      "brand": "Veipus",
+      "series": "Bussin"
+    },
+    {
+      "rank": 10,
+      "id": "vigor-storm-golden-tobacco-prime-2422",
+      "source_id": "2422",
+      "name": "Golden Tobacco – PRIME",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "800mAh",
+        "puff_count": "8000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "charging_port": "USB-C",
+        "e-liquid_capacity": "20mL",
+        "adjustable_airflow": "yes",
+        "display_screen": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/vigor-storm-golden-tobacco-prime-2422.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/vigor-storm-golden-tobacco-prime-2422.webp"
+      },
+      "brand": "Vigor Storm",
+      "series": "PRIME"
+    },
+    {
+      "rank": 11,
+      "id": "vigor-storm-elite-strawberry-kiwi-13794",
+      "source_id": "13794",
+      "name": "Elite Strawberry Kiwi",
+      "price_aud": 30,
+      "currency": "AUD",
+      "specs": {
+        "nicotine_strength": "5% (50mg/mL)",
+        "battery_capacity": "600mAh",
+        "puff_count": "8000",
+        "charging_port": "USB-C",
+        "adjustable_airflow": "No"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/vigor-storm-elite-strawberry-kiwi-13794.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/vigor-storm-elite-strawberry-kiwi-13794.webp"
+      },
+      "brand": "Vigor Storm",
+      "series": "Elite"
+    },
+    {
+      "rank": 12,
+      "id": "hqd-titan-rainbow-7000-puffs-4254",
+      "source_id": "4254",
+      "name": "TITAN RAINBOW 7000 PUFFS",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "nicotine_strength": "50mg/ml",
+        "puff_count": "7000",
+        "battery_capacity": "650mAh",
+        "charging_port": "USB-C",
+        "e-liquid_capacity": "20ml"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/hqd-titan-rainbow-7000-puffs-4254.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/hqd-titan-rainbow-7000-puffs-4254.webp"
+      },
+      "brand": "HQD",
+      "series": "Titan"
+    },
+    {
+      "rank": 13,
+      "id": "hqd-cuvie-slick-13016",
+      "source_id": "13016",
+      "name": "CUVIE SLICK",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "1400mAh",
+        "puff_count": "6000",
+        "nicotine_strength": "50mg/ml",
+        "charging_port": "USB-C",
+        "adjustable_airflow": "No",
+        "e-liquid_capacity": "15ml"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/hqd-cuvie-slick-13016.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/hqd-cuvie-slick-13016.webp"
+      },
+      "brand": "HQD",
+      "series": "Cuvie Slick 6000"
+    },
+    {
+      "rank": 14,
+      "id": "solo-max-pod-kit-blueberry-raspberry-4336",
+      "source_id": "4336",
+      "name": "MAX Pod Kit Blueberry Raspberry",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "puff_count": "7000",
+        "nicotine_strength": "28.5mg/mL",
+        "device_type": "pod"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/solo-max-pod-kit-blueberry-raspberry-4336.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/solo-max-pod-kit-blueberry-raspberry-4336.webp"
+      },
+      "brand": "Solo",
+      "series": ""
+    },
+    {
+      "rank": 15,
+      "id": "lost-mary-bm6000-watermelon-ice-disposable-vape-20mg-11458",
+      "source_id": "11458",
+      "name": "BM6000 Watermelon Ice Disposable Vape – 20mg",
+      "price_aud": 34.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "6000",
+        "nicotine_strength": "50mg/mL",
+        "charging_port": "USB-C",
+        "e-liquid_capacity": "12mL",
+        "adjustable_airflow": "No",
+        "coil_type": "Mesh coil",
+        "display": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lost-mary-bm6000-watermelon-ice-disposable-vape-20mg-11458.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lost-mary-bm6000-watermelon-ice-disposable-vape-20mg-11458.webp"
+      },
+      "brand": "Lost Mary",
+      "series": "BM6000"
+    },
+    {
+      "rank": 16,
+      "id": "fum-pebble-strawberry-banana-8471",
+      "source_id": "8471",
+      "name": "Pebble Strawberry Banana",
+      "price_aud": 37.99,
+      "currency": "AUD",
+      "specs": {
+        "puff_count": "6000",
+        "nicotine_strength": "5%",
+        "e-liquid_capacity": "14ml",
+        "battery_capacity": "600mAh",
+        "charging_port": "USB-C",
+        "adjustable_airflow": "No"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/fum-pebble-strawberry-banana-8471.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/fum-pebble-strawberry-banana-8471.webp"
+      },
+      "brand": "Flum",
+      "series": "Pebble 6000"
+    },
+    {
+      "rank": 17,
+      "id": "rabbeats-rc10000-clear-13708",
+      "source_id": "13708",
+      "name": "RC10000 Clear",
+      "price_aud": 29,
+      "currency": "AUD",
+      "specs": {
+        "puff_count": "10000",
+        "nicotine_strength": "5%",
+        "e-liquid_capacity": "18ml",
+        "charging_port": "USB-C"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/rabbeats-rc10000-clear-13708.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/rabbeats-rc10000-clear-13708.webp"
+      },
+      "brand": "RabBeats",
+      "series": "RC10000"
+    },
+    {
+      "rank": 18,
+      "id": "merrymi-panda-x-40000-fanta-e-cigarettes-14278",
+      "source_id": "14278",
+      "name": "Panda X 40000 Fanta e-cigarettes",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "puff_count": "40000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "battery_capacity": "1150mAh",
+        "charging_port": "USB-C",
+        "e-liquid_capacity": "28mL",
+        "adjustable_airflow": "Yes",
+        "display_screen": "Yes",
+        "coil_type": "Mesh Coil"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/merrymi-panda-x-40000-fanta-e-cigarettes-14278.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/merrymi-panda-x-40000-fanta-e-cigarettes-14278.webp"
+      },
+      "brand": "MerryMi",
+      "series": "Panda X 40000"
+    },
+    {
+      "rank": 19,
+      "id": "geekvape-aegis-legend-3-carrera-edition-8639",
+      "source_id": "8639",
+      "name": "Aegis Legend 3 Carrera Edition",
+      "price_aud": 99.95,
+      "currency": "AUD",
+      "specs": {
+        "wattage": "5-200W",
+        "temperature_range": "200-600°F / 100-315°C",
+        "battery_type": "Dual 18650",
+        "charging_port": "USB-C",
+        "display": "0.96-inch TFT Color Screen",
+        "resistance_range": "0.1-3.0ohm",
+        "operating_mode": "Power, TC, TCR, ECO, Smart",
+        "material": "Zinc-Alloy",
+        "thread": "510",
+        "dimensions": "56.1mm x 39.8mm x 88.1mm",
+        "available_colors": "Black, Blue, Gold, Red, Silver",
+        "protection_features": "Short Circuit, Over-Heating, Low Voltage, Overtime",
+        "adjustable_airflow": "Yes",
+        "tank_capacity": "5.5ml",
+        "coil_compatibility": "GeekVape Z Series Coils",
+        "filling_system": "Top Filling"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/geekvape-aegis-legend-3-carrera-edition-8639.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/geekvape-aegis-legend-3-carrera-edition-8639.webp"
+      },
+      "brand": "GeekVape",
+      "series": "Aegis Legend"
+    },
+    {
+      "rank": 20,
+      "id": "aspire-rover-plus-kit-11197",
+      "source_id": "11197",
+      "name": "ROVER PLUS KIT",
+      "price_aud": 99.95,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "84 mm x 50.7 mm x 26 mm",
+        "weight": "168g",
+        "battery_capacity": "3000mAh",
+        "wattage_range": "1-80W",
+        "voltage_range": "0.5-8.4V",
+        "temperature_range": "200-600°F / 100-315°C",
+        "resistance_range": "0.1-3.5ohm",
+        "screen": "0.96 inch TFT color screen",
+        "charging": "USB Type-C",
+        "tank_capacity": "3.5ml",
+        "filling_type": "Top filling",
+        "airflow": "Adjustable bottom airflow",
+        "coil_compatibility": "BP Coils",
+        "material": "Zinc Alloy chassis construction",
+        "mod_type": "Box Mod",
+        "tank_included": "Aspire Tigon 3 Tank"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/aspire-rover-plus-kit-11197.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/aspire-rover-plus-kit-11197.webp"
+      },
+      "brand": "Aspire",
+      "series": "Rover Plus"
+    },
+    {
+      "rank": 21,
+      "id": "voopoo-argus-mt-uforce-l-kit-6723",
+      "source_id": "6723",
+      "name": "ARGUS MT UFORCE-L KIT",
+      "price_aud": 99.95,
+      "currency": "AUD",
+      "specs": {
+        "wattage": "5-100W",
+        "battery_capacity": "2600mAh",
+        "tank_capacity": "6.5ml",
+        "resistance_range": "0.05-3.0Ω",
+        "charging_current": "5V/3A",
+        "material": "Leather + Zinc Alloy + PC",
+        " Gene.TT 2.0 Chip": "Yes",
+        "turbo mode": "Yes",
+        "QS locking system": "Yes",
+        "IP68 rating": "Yes",
+        "dimensions": "145mm x 40mm x 30mm",
+        "compatible_coils": "VooPoo TPP Coils"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/voopoo-argus-mt-uforce-l-kit-6723.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/voopoo-argus-mt-uforce-l-kit-6723.webp"
+      },
+      "brand": "VooPoo",
+      "series": "Argus"
+    },
+    {
+      "rank": 22,
+      "id": "vaporesso-xros-3-r-kit-7413",
+      "source_id": "7413",
+      "name": "Xros 3 R Kit",
+      "price_aud": 39.95,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "13.7 x 23.6 x 115.1 mm",
+        "pod_capacity": "3mL",
+        "battery_capacity": "1000mAh",
+        "charging_current": "5V/1A",
+        "coil_resistance": "0.6ohm, 1.0ohm",
+        "adjustable_airflow": "Yes",
+        "activation": "Draw or Button",
+        "material": "Aluminum Alloy, PCTG",
+        "filling_system": "Top-filling",
+        "display": "LED Indicator"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/vaporesso-xros-3-r-kit-7413.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/vaporesso-xros-3-r-kit-7413.webp"
+      },
+      "brand": "Vaporesso",
+      "series": "XROS "
+    },
+    {
+      "rank": 23,
+      "id": "vaporesso-luxe-xr-max-kit-4586",
+      "source_id": "4586",
+      "name": "LUXE XR MAX KIT",
+      "price_aud": 69.95,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "106.5mm x 32.1mm x 26mm",
+        "pod_capacity": "5ml",
+        "coil_compatibility": "GTX Coils",
+        "battery_capacity": "2800mAh",
+        "output_wattage": "5-80W",
+        "charging_current": "DC 5V/2A, Type-C",
+        "display": "0.96 inch TFT Screen",
+        "adjustable_airflow": "Yes",
+        "chipset": "AXON Chip",
+        "material": "PCTG, Aluminum Alloy",
+        "resistance_range": "0.15ohm-1.4ohm",
+        "leak_resistant_technology": "SSS Leak-Resistant Technology",
+        "pod_type": "LUXE XR Pod",
+        "activation": "Button Activated",
+        "e-liquid_filling": "Bottom Filling"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/vaporesso-luxe-xr-max-kit-4586.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/vaporesso-luxe-xr-max-kit-4586.webp"
+      },
+      "brand": "Vaporesso",
+      "series": "LUXE"
+    },
+    {
+      "rank": 24,
+      "id": "gunnpod-moss-kit-13510",
+      "source_id": "13510",
+      "name": "MOSS - KIT",
+      "price_aud": 49.95,
+      "currency": "AUD",
+      "specs": {
+        "pod_capacity": "15mL",
+        "battery_capacity": "1200mAh",
+        "charging_port": "USB-C",
+        "coil_resistance": "0.8ohm",
+        "adjustable_airflow": "Yes",
+        "display_screen": "Yes",
+        "material": "PCTG",
+        "dimensions": "88mm x 45mm x 20mm",
+        "weight": "85g",
+        "refillable": "Yes",
+        "replaceable_coil": "Yes",
+        "activation": "Draw-activated"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/gunnpod-moss-kit-13510.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/gunnpod-moss-kit-13510.webp"
+      },
+      "brand": "Gunnpod",
+      "series": "MOSS"
+    },
+    {
+      "rank": 25,
+      "id": "geekvape-digi-max-kit-9137",
+      "source_id": "9137",
+      "name": "DIGI MAX KIT",
+      "price_aud": 39.95,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "1000mAh",
+        "charging_port": "USB-C",
+        "pod_capacity": "2.0ml",
+        "coil_resistance": "0.7ohm, 1.1ohm",
+        "adjustable_wattage": "Up to 20W",
+        "display": "OLED",
+        "material": "Zinc Alloy, PCTG",
+        "dimensions": "70.96*45.62*23.8mm",
+        "weight": "89g",
+        "airflow": "Adjustable",
+        "activation": "Draw-activated"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/geekvape-digi-max-kit-9137.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/geekvape-digi-max-kit-9137.webp"
+      },
+      "brand": "GeekVape",
+      "series": "Digi"
+    },
+    {
+      "rank": 26,
+      "id": "voom-roasted-coffee-pods-12686",
+      "source_id": "12686",
+      "name": "Roasted Coffee Pods",
+      "price_aud": 19.99,
+      "currency": "AUD",
+      "specs": {
+        "nicotine_strength": "20mg/mL",
+        "nicotine_type": "Nic Salt",
+        "pod_capacity": "1.2mL",
+        "quantity": "3 pods"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/voom-roasted-coffee-pods-12686.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/voom-roasted-coffee-pods-12686.webp"
+      },
+      "brand": "VOOM",
+      "series": ""
+    },
+    {
+      "rank": 27,
+      "id": "geekvape-u-pod-3pack-11960",
+      "source_id": "11960",
+      "name": "U Pod 3–Pack",
+      "price_aud": 14.99,
+      "currency": "AUD",
+      "specs": {
+        "pod_capacity": "2ml",
+        "coil_resistance": "0.7ohm",
+        "coil_type": "Meshed",
+        "quantity_per_pack": "3",
+        "compatible_devices": "Wenax U, Sonder U, Obelisk U"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/geekvape-u-pod-3pack-11960.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/geekvape-u-pod-3pack-11960.webp"
+      },
+      "brand": "GeekVape",
+      "series": "U Pod"
+    },
+    {
+      "rank": 28,
+      "id": "iget-cola-ice-bar-plus-13067",
+      "source_id": "13067",
+      "name": "Cola Ice - BAR Plus",
+      "price_aud": 14.99,
+      "currency": "AUD",
+      "specs": {
+        "puff_count": "6000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "16mL",
+        "battery_capacity": "600mAh",
+        "charging_port": "USB-C",
+        "adjustable_airflow": "No"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/iget-cola-ice-bar-plus-13067.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/iget-cola-ice-bar-plus-13067.webp"
+      },
+      "brand": "IGET",
+      "series": "BAR Plus"
+    },
+    {
+      "rank": 29,
+      "id": "nasty-juice-salt-strawberry-e-liquid-10219",
+      "source_id": "10219",
+      "name": "SALT STRAWBERRY E-LIQUID",
+      "price_aud": 14.99,
+      "currency": "AUD",
+      "specs": {
+        "pg_vg": "50/50",
+        "volume": "10ml",
+        "nicotine_strength": "18mg"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/nasty-juice-salt-strawberry-e-liquid-10219.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/nasty-juice-salt-strawberry-e-liquid-10219.webp"
+      },
+      "brand": "Nasty Juice",
+      "series": ""
+    },
+    {
+      "rank": 30,
+      "id": "nasty-juice-salt-pineapple-lemon-e-liquid-10220",
+      "source_id": "10220",
+      "name": "SALT PINEAPPLE LEMON E-LIQUID",
+      "price_aud": 14.99,
+      "currency": "AUD",
+      "specs": {
+        "pg_vg": "50/50",
+        "volume": "10ml",
+        "nicotine_strength": "18mg"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/nasty-juice-salt-pineapple-lemon-e-liquid-10220.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/nasty-juice-salt-pineapple-lemon-e-liquid-10220.webp"
+      },
+      "brand": "Nasty Juice",
+      "series": ""
+    },
+    {
+      "rank": 31,
+      "id": "vaporesso-apple-peach-deliciu-e-liquid-8927",
+      "source_id": "8927",
+      "name": "Apple Peach Deliciu E-Liquid",
+      "price_aud": 14.99,
+      "currency": "AUD",
+      "specs": {
+        "nicotine_type": "Nicotine Salts",
+        "nicotine_strength": "20mg/ml",
+        "volume": "10ml"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/vaporesso-apple-peach-deliciu-e-liquid-8927.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/vaporesso-apple-peach-deliciu-e-liquid-8927.webp"
+      },
+      "brand": "Vaporesso",
+      "series": "Deliciu"
+    },
+    {
+      "rank": 32,
+      "id": "naked-100-cuban-blend-60ml-8281",
+      "source_id": "8281",
+      "name": "CUBAN BLEND 60ML",
+      "price_aud": 29.95,
+      "currency": "AUD",
+      "specs": {
+        "bottle_size": "60ml",
+        "pg_vg": "65VG / 35PG",
+        "flavor_profile": "Tobacco / Cuban Cigar",
+        "nicotine_type": "Nicotine Salt"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/naked-100-cuban-blend-60ml-8281.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/naked-100-cuban-blend-60ml-8281.webp"
+      },
+      "brand": "Naked 100",
+      "series": "Cuban Blend"
+    },
+    {
+      "rank": 33,
+      "id": "six-licks-bluemonia-100ml-4637",
+      "source_id": "4637",
+      "name": "Bluemonia 100ml",
+      "price_aud": 34.95,
+      "currency": "AUD",
+      "specs": {
+        "bottle_size": "100ml",
+        "nicotine_strength": "0mg",
+        "pg_vg_ratio": "30/70",
+        "made_in": "UK"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/six-licks-bluemonia-100ml-4637.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/six-licks-bluemonia-100ml-4637.webp"
+      },
+      "brand": "Six Licks",
+      "series": ""
+    },
+    {
+      "rank": 34,
+      "id": "wake-vape-cactus-fruit-cooler-100ml-4629",
+      "source_id": "4629",
+      "name": "Cactus Fruit Cooler 100ml",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "100ml",
+        "nicotine_strength": "0mg",
+        "pg_vg_ratio": "30/70",
+        "bottle_type": "Chubby Gorilla",
+        "made_in": "USA"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/wake-vape-cactus-fruit-cooler-100ml-4629.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/wake-vape-cactus-fruit-cooler-100ml-4629.webp"
+      },
+      "brand": "Wake & Vape",
+      "series": ""
+    },
+    {
+      "rank": 35,
+      "id": "innokin-zlide-tank-4147",
+      "source_id": "4147",
+      "name": "ZLIDE TANK",
+      "price_aud": 39.95,
+      "currency": "AUD",
+      "specs": {
+        "diameter": "24mm",
+        "height": "48mm",
+        "e-liquid capacity": "4ml",
+        "fill type": "Sliding Top Fill",
+        "airflow": "Adjustable Bottom Airflow",
+        "coil compatibility": "Innokin Z-Coils",
+        "coil installation": "Plug 'n' Play",
+        "drip tip": "510",
+        "connection": "510 Thread",
+        "material": "Stainless Steel",
+        "construction": "Pyrex Glass & Stainless Steel",
+        "child lock": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/innokin-zlide-tank-4147.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/innokin-zlide-tank-4147.webp"
+      },
+      "brand": "Innokin",
+      "series": "Zlide Tank"
+    },
+    {
+      "rank": 36,
+      "id": "innokin-t22-pro-tank-7416",
+      "source_id": "7416",
+      "name": "T22 Pro Tank",
+      "price_aud": 32.95,
+      "currency": "AUD",
+      "specs": {
+        "tank_capacity": "4.5ml",
+        "coil_compatibility": "Innokin T18E Coils",
+        "coil_included": "1.5ohm",
+        "fill_type": "Top Fill",
+        "airflow": "Adjustable",
+        "thread": "510",
+        "material": "Stainless Steel",
+        "diameter": "22mm"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/innokin-t22-pro-tank-7416.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/innokin-t22-pro-tank-7416.webp"
+      },
+      "brand": "Innokin",
+      "series": "T22 Pro"
+    },
+    {
+      "rank": 37,
+      "id": "uwell-valyrian-iii-3-subohm-tank-4549",
+      "source_id": "4549",
+      "name": "Valyrian III (3) Subohm Tank",
+      "price_aud": 59.95,
+      "currency": "AUD",
+      "specs": {
+        "tank_capacity": "6 mL",
+        "diameter": "25.5 mm",
+        "fill_method": "Top Fill",
+        "airflow": "Adjustable Bottom Airflow",
+        "coil_compatibility": "Uwell Valyrian III Coils",
+        "material": "Stainless Steel, Pyrex Glass",
+        "thread": "510",
+        "drip_tip": "810",
+        "compatible_mods": "Most Box Mods",
+        "e-liquid_compatibility": "Freebase and Nicotine Salt E-liquids",
+        "coil_installation": "Press-Fit",
+        "vaping_style": "Direct Lung (DL)",
+        "weight": "65g"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/uwell-valyrian-iii-3-subohm-tank-4549.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/uwell-valyrian-iii-3-subohm-tank-4549.webp"
+      },
+      "brand": "Uwell",
+      "series": "Valyrian III"
+    },
+    {
+      "rank": 38,
+      "id": "pax-era-variable-voltage-vape-pen-210mah-3698",
+      "source_id": "3698",
+      "name": "ERA Variable Voltage Vape Pen | 210mAh",
+      "price_aud": 99.99,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "3.3\" H x 0.5\" W x 0.5\" D",
+        "weight": "0.14 lbs",
+        "battery_capacity": "240mAh",
+        "temperature_settings": "520°F / 270°C to 840°F / 450°C",
+        "heat_time": "Instant",
+        "compatible_concentrates": "Oil",
+        "connection": "Bluetooth",
+        "smart_features": "Pod ID, ExpertTemp, Dose Control",
+        "material": "Aluminum",
+        "haptic_feedback": "Yes",
+        "charging_time": "45 minutes",
+        "charging_type": "USB-C",
+        "pod_compatibility": "PAX Era Pods",
+        "available_colors": "Onyx, Silver, Black, Jade, Rose Gold"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-era-variable-voltage-vape-pen-210mah-3698.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-era-variable-voltage-vape-pen-210mah-3698.webp"
+      },
+      "brand": "PAX",
+      "series": ""
+    },
+    {
+      "rank": 39,
+      "id": "storz-bickel-volcano-hybrid-vaporizer-2470",
+      "source_id": "2470",
+      "name": "Volcano Hybrid Vaporizer",
+      "price_aud": 949,
+      "currency": "AUD",
+      "specs": {
+        "heating_style": "convection and conduction",
+        "heat_up_time": "1-2 minutes",
+        "temperature_range": "40°C - 230°C (104°F - 446°F)",
+        "vapor_delivery_method": "balloon or whip",
+        "compatible_materials": "dry herb",
+        "power_source": "AC power",
+        "dimensions": "20.0 x 18.0 cm",
+        "weight": "1.8 kg",
+        "features": "digital display, app control, automatic shut-off",
+        "warranty": "3-year manufacturer warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-hybrid-vaporizer-2470.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-hybrid-vaporizer-2470.webp"
+      },
+      "brand": "Storz & Bickel",
+      "series": "Volcano Hybrid"
+    },
+    {
+      "rank": 40,
+      "id": "storz-bickel-mighty-portable-usb-c-vaporizer-7637",
+      "source_id": "7637",
+      "name": "Mighty+ Portable Usb-c Vaporizer",
+      "price_aud": 549,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "14.0 x 8.0 x 3.0 cm",
+        "weight": "230 g",
+        "heat_up_time": "Approx. 60 seconds",
+        "temperature_range": "40°C - 210°C (104°F - 410°F)",
+        "heating_method": "Hybrid (convection and conduction)",
+        "battery_type": "Integrated Lithium-Ion",
+        "charging_time": "Approx. 3 hours",
+        "charger_type": "USB-C",
+        "automatic_shutoff": "Yes",
+        "materials": "Medical grade",
+        "vibration": "Yes",
+        "display": "LED",
+        "warranty": "2-year",
+        "country_of_origin": "Germany",
+        "features": "Pre-set Superbooster Temperature",
+        "compatible_with": "Dry Herb",
+        "chamber_capacity": "1.4 g"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/storz-bickel-mighty-portable-usb-c-vaporizer-7637.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/storz-bickel-mighty-portable-usb-c-vaporizer-7637.webp"
+      },
+      "brand": "Storz & Bickel",
+      "series": ""
+    },
+    {
+      "rank": 41,
+      "id": "lookah-swordfish-concentrate-vape-pen-950mah-2619",
+      "source_id": "2619",
+      "name": "Swordfish Concentrate Vape Pen – 950mAh",
+      "price_aud": 79.95,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "950mAh",
+        "battery_type": "Built-in",
+        "adjustable_voltage": "Yes",
+        "preheat": "Yes",
+        "connection": "Magnetic",
+        "coil_material": "Quartz",
+        "compatible_with": "Concentrates",
+        "dimensions": "36mm x 28mm x 95mm",
+        "weight": "90g",
+        "charging_type": "USB-C",
+        "airflow": "Adjustable",
+        "material": "Aluminum Alloy"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lookah-swordfish-concentrate-vape-pen-950mah-2619.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lookah-swordfish-concentrate-vape-pen-950mah-2619.webp"
+      },
+      "brand": "Lookah",
+      "series": ""
+    },
+    {
+      "rank": 42,
+      "id": "vaporesso-gti-replacement-coils-5834",
+      "source_id": "5834",
+      "name": "GTi Replacement Coils",
+      "price_aud": 21.95,
+      "currency": "AUD",
+      "specs": {
+        "coil_resistance": "0.15Ω / 0.2Ω / 0.4Ω",
+        "coil_type": "Mesh",
+        "compatible_devices": "Vaporesso iTank 2",
+        "recommended_wattage": "0.15Ω (75-90W) / 0.2Ω (60-75W) / 0.4Ω (50-60W)",
+        "pack_quantity": "5pcs"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/vaporesso-gti-replacement-coils-5834.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/vaporesso-gti-replacement-coils-5834.webp"
+      },
+      "brand": "Vaporesso",
+      "series": "GTi"
+    },
+    {
+      "rank": 43,
+      "id": "pulsar-510-dl-auto-draw-variable-voltage-vape-pen-3440",
+      "source_id": "3440",
+      "name": "510 DL Auto-Draw Variable Voltage Vape Pen",
+      "price_aud": 49.95,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "voltage_levels": "2.5V, 3.0V, 3.5V, 4.0V",
+        "preheat_function": "Yes",
+        "connection": "510 thread",
+        "activation": "Auto-draw",
+        "adjustable_voltage": "Yes",
+        "charging_method": "USB-C",
+        "material": "Aluminum Alloy",
+        "height": "3.4 inches",
+        "diameter": "0.55 inches",
+        "short_circuit_protection": "Yes",
+        "overcharge_protection": "Yes",
+        "overdischarge_protection": "Yes",
+        "led_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-510-dl-auto-draw-variable-voltage-vape-pen-3440.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-510-dl-auto-draw-variable-voltage-vape-pen-3440.webp"
+      },
+      "brand": "Pulsar",
+      "series": "510 DL"
+    },
+    {
+      "rank": 44,
+      "id": "canna-river-delta-8-thc-gummies-lemon-raspberry-canna-river-10896",
+      "source_id": "10896",
+      "name": "DELTA 8 THC GUMMIES – LEMON RASPBERRY – CANNA RIVER",
+      "price_aud": 34.99,
+      "currency": "AUD",
+      "specs": {
+        "quantity": "30 gummies",
+        "delta_9_per_gummy": "10mg",
+        "cbd_per_gummy": "20mg",
+        "net_weight": "5.29oz (150g)",
+        "age_restriction": "21+"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/canna-river-delta-8-thc-gummies-lemon-raspberry-canna-river-10896.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/canna-river-delta-8-thc-gummies-lemon-raspberry-canna-river-10896.webp"
+      },
+      "brand": "Canna River",
+      "series": "Delta 9"
+    },
+    {
+      "rank": 45,
+      "id": "lucy-nicotine-pouches-winter-green-7462",
+      "source_id": "7462",
+      "name": "Nicotine Pouches – Winter Green",
+      "price_aud": 7,
+      "currency": "AUD",
+      "specs": {
+        "nicotine_strength": "8mg",
+        "pouch_count": "15",
+        "pouch_type": "All White",
+        "ingredients": "Nicotine, Plant-based fibers, Flavorings, Sweeteners",
+        "country_of_origin": "Sweden"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lucy-nicotine-pouches-winter-green-7462.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lucy-nicotine-pouches-winter-green-7462.webp"
+      },
+      "brand": "Lucy",
+      "series": "Breakers"
+    },
+    {
+      "rank": 46,
+      "id": "alibarbar-nicotine-pouches-strawberry-raspberry-8112",
+      "source_id": "8112",
+      "name": "Nicotine Pouches Strawberry Raspberry",
+      "price_aud": 19.99,
+      "currency": "AUD",
+      "specs": {
+        "nicotine_strength": "6mg",
+        "pouches_count": "20",
+        "weight": "10g",
+        "nicotine_type": "Synthetic Nicotine"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/alibarbar-nicotine-pouches-strawberry-raspberry-8112.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/alibarbar-nicotine-pouches-strawberry-raspberry-8112.webp"
+      },
+      "brand": "Alibarbar",
+      "series": ""
+    },
+    {
+      "rank": 47,
+      "id": "snu-grape-nic-pouches-9971",
+      "source_id": "9971",
+      "name": "Grape Nic Pouches",
+      "price_aud": 7,
+      "currency": "AUD",
+      "specs": {
+        "nicotine_strength": "60mg per gram",
+        "strength": "Extra Strong",
+        "type": "Nicotine Pouches"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/snu-grape-nic-pouches-9971.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/snu-grape-nic-pouches-9971.webp"
+      },
+      "brand": "SNÜ",
+      "series": ""
+    },
+    {
+      "rank": 48,
+      "id": "trē-house-cookies-screams-magic-mushroom-chocolate-bar-5250",
+      "source_id": "5250",
+      "name": "COOKIES & SCREAMS MAGIC MUSHROOM CHOCOLATE BAR",
+      "price_aud": 34.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Fruity Cereal",
+        "chocolate_type": "White Chocolate",
+        "net_weight": "50g / 1.76oz",
+        "squares_per_bar": "15",
+        "blend": "Magic Mushroom Microdose Blend"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/trē-house-cookies-screams-magic-mushroom-chocolate-bar-5250.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/trē-house-cookies-screams-magic-mushroom-chocolate-bar-5250.webp"
+      },
+      "brand": "TRĒ House",
+      "series": "Magic Mushroom Microdose Chocolate Bar"
+    }
+  ]
+}
