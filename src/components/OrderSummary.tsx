@@ -198,6 +198,27 @@ export function OrderSummary() {
             </div>
           </div>
         </div>
+
+        {/* ── Crypto Payment ── */}
+        <div className="flex items-center gap-3 md:gap-4">
+          <div className="h-12 w-12 md:h-16 md:w-16 lg:h-[72px] lg:w-[72px] rounded-full bg-[#FEF3E2] flex items-center justify-center shrink-0">
+            <svg
+              viewBox="0 0 32 32"
+              className="h-6 w-6 md:h-8 md:w-8 lg:h-9 lg:w-9"
+              aria-label="Bitcoin"
+            >
+              <circle cx="16" cy="16" r="16" fill="#F7931A" />
+              <path
+                d="M22.47 14.17c.32-2.16-1.32-3.32-3.57-4.09l.73-2.92-1.78-.44-.71 2.84c-.47-.12-.95-.23-1.43-.34l.71-2.86-1.78-.44-.73 2.92c-.39-.09-.77-.18-1.14-.27l.002-.009-2.45-.61-.47 1.9s1.32.3 1.29.32c.72.18.85.66.83 1.04l-.83 3.33c.05.01.11.03.18.06l-.18-.04-1.17 4.68c-.09.22-.31.55-.81.42.02.03-1.29-.32-1.29-.32l-.88 2.04 2.31.58c.43.11.85.22 1.27.32l-.74 2.96 1.78.44.73-2.92c.49.13.96.25 1.43.37l-.72 2.9 1.78.44.74-2.95c3.05.58 5.34.34 6.3-2.41.78-2.22-.04-3.5-1.64-4.33 1.17-.27 2.05-1.04 2.28-2.63zm-4.08 5.73c-.55 2.22-4.3.02-5.52-.27l.98-3.95c1.22.3 5.15.9 4.54 4.22zm.56-5.76c-.5 2.02-3.62.99-4.63.74l.89-3.58c1.01.25 4.28.72 3.74 2.84z"
+                fill="#fff"
+              />
+            </svg>
+          </div>
+          <div>
+            <p className="text-[15px] md:text-[17px] lg:text-[19px] font-bold text-black">Crypto</p>
+            <p className="text-[12px] md:text-[13px] lg:text-[14px] text-[#6E6E73]">Accepted</p>
+          </div>
+        </div>
       </div>
 
       {/* ── Telegram CTA ── */}
