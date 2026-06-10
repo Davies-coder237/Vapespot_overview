@@ -1,22 +1,19 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { brandImage, onImageError } from "@/lib/data";
 
-const BRANDS: { slug: string; label: string }[] = [
-  { slug: "alibarbar", label: "Alibarbar" },
-  { slug: "aspire", label: "Aspire" },
-  { slug: "elfbar", label: "Elf Bar" },
-  { slug: "geekbar", label: "Geek Bar" },
-  { slug: "iget", label: "IGET" },
-  { slug: "lostmary", label: "Lost Mary" },
-  { slug: "uwell", label: "Uwell" },
-  { slug: "vaporesso", label: "Vaporesso" },
-  { slug: "voopoo", label: "VooPoo" },
-];
-
 export function BrandCarousel() {
   const scrollerRef = useRef<HTMLDivElement>(null);
-  if (BRANDS.length === 0) return null;
+  const [brands, setBrands] = useState<{ slug: string; label: string }[]>([]);
+
+  useEffect(() => {
+    fetch("/data/brands.json")
+      .then((r) => r.json())
+      .then((data) => setBrands(data))
+      .catch(() => setBrands([]));
+  }, []);
+
+  if (brands.length === 0) return null;
   const scrollBy = (amount: number) =>
     scrollerRef.current?.scrollBy({ left: amount, behavior: "smooth" });
 
@@ -49,7 +46,7 @@ export function BrandCarousel() {
         className="flex overflow-x-auto px-4 md:px-6 pb-2"
         style={{ scrollSnapType: "x mandatory", WebkitOverflowScrolling: "touch" }}
       >
-        {BRANDS.map((b) => (
+        {brands.map((b) => (
           <div
             key={b.slug}
             aria-label={b.label}
