@@ -207,31 +207,31 @@ export function OrderSummary() {
 
         {/* Methods */}
         <div className="grid grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-          <div className="flex items-center gap-3 md:gap-4">
-            <div className="h-12 w-12 md:h-16 md:w-16 lg:h-[72px] lg:w-[72px] rounded-full bg-[#DDD6FF] flex items-center justify-center text-[#5B3DF5] shrink-0">
-              <Wallet className="h-6 w-6 md:h-8 md:w-8 lg:h-9 lg:w-9" />
+          <div className="flex items-center gap-1.5 md:gap-4">
+            <div className="h-9 w-9 md:h-16 md:w-16 lg:h-[72px] lg:w-[72px] rounded-full bg-[#DDD6FF] flex items-center justify-center text-[#5B3DF5] shrink-0">
+              <Wallet className="h-4 w-4 md:h-8 md:w-8 lg:h-9 lg:w-9" />
             </div>
             <div>
-              <p className="text-[15px] md:text-[17px] lg:text-[19px] font-bold text-black">PayID</p>
-              <p className="text-[12px] md:text-[13px] lg:text-[14px] text-[#6E6E73]">Accepted</p>
+              <p className="text-[12px] md:text-[17px] lg:text-[19px] font-bold text-black">PayID</p>
+              <p className="text-[10px] md:text-[13px] lg:text-[14px] text-[#6E6E73]">Accepted</p>
             </div>
           </div>
-          <div className="flex items-center gap-3 md:gap-4">
-            <div className="h-12 w-12 md:h-16 md:w-16 lg:h-[72px] lg:w-[72px] rounded-full bg-[#DDD6FF] flex items-center justify-center text-[#5B3DF5] shrink-0">
-              <Landmark className="h-6 w-6 md:h-8 md:w-8 lg:h-9 lg:w-9" />
+          <div className="flex items-center gap-1.5 md:gap-4">
+            <div className="h-9 w-9 md:h-16 md:w-16 lg:h-[72px] lg:w-[72px] rounded-full bg-[#DDD6FF] flex items-center justify-center text-[#5B3DF5] shrink-0">
+              <Landmark className="h-4 w-4 md:h-8 md:w-8 lg:h-9 lg:w-9" />
             </div>
             <div>
-              <p className="text-[15px] md:text-[17px] lg:text-[19px] font-bold text-black">Bank Transfer</p>
-              <p className="text-[12px] md:text-[13px] lg:text-[14px] text-[#6E6E73]">Accepted</p>
+              <p className="text-[12px] md:text-[17px] lg:text-[19px] font-bold text-black">Bank Transfer</p>
+              <p className="text-[10px] md:text-[13px] lg:text-[14px] text-[#6E6E73]">Accepted</p>
             </div>
           </div>
-          <div className="flex items-center gap-3 md:gap-4">
-            <div className="h-12 w-12 md:h-16 md:w-16 lg:h-[72px] lg:w-[72px] rounded-full bg-[#DDD6FF] flex items-center justify-center text-[#5B3DF5] shrink-0">
-              <Bitcoin className="h-6 w-6 md:h-8 md:w-8 lg:h-9 lg:w-9" />
+          <div className="flex items-center gap-1.5 md:gap-4">
+            <div className="h-9 w-9 md:h-16 md:w-16 lg:h-[72px] lg:w-[72px] rounded-full bg-[#DDD6FF] flex items-center justify-center text-[#5B3DF5] shrink-0">
+              <Bitcoin className="h-4 w-4 md:h-8 md:w-8 lg:h-9 lg:w-9" />
             </div>
             <div>
-              <p className="text-[15px] md:text-[17px] lg:text-[19px] font-bold text-black">Crypto</p>
-              <p className="text-[12px] md:text-[13px] lg:text-[14px] text-[#6E6E73]">Accepted</p>
+              <p className="text-[12px] md:text-[17px] lg:text-[19px] font-bold text-black">Crypto</p>
+              <p className="text-[10px] md:text-[13px] lg:text-[14px] text-[#6E6E73]">Accepted</p>
             </div>
           </div>
         </div>
