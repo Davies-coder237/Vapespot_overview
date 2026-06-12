@@ -29,7 +29,7 @@ function fmt(p: number | null | undefined): string {
   return `A$${p.toFixed(2)}`;
 }
 
-export function buildTelegramMessage(lines: OrderLine[]): string {
+export function buildTelegramMessage(lines: OrderLine[], deliveryAddress = ""): string {
   if (lines.length === 0) {
     return "Hello! I'd like to place an order on Vape Spot.";
   }
@@ -54,14 +54,31 @@ export function buildTelegramMessage(lines: OrderLine[]): string {
 
   const totalLine = `TOTAL:  ${fmt(ordersTotal(lines))} AUD`;
 
+  const addressSection = deliveryAddress.trim()
+    ? `🚚  DELIVERY ADDRESS\n    ${deliveryAddress.trim()}`
+    : `🚚  DELIVERY ADDRESS\n    Not specified`;
+
   const payment = [
     "💳  PAYMENT",
-    "    PayID or Bank Transfer — payment required before delivery.",
+    "    PayID, Bank Transfer or Crypto — payment required before delivery.",
   ].join("\n");
 
   const footer = "Please reply to confirm this order. Thank you! 🙏";
 
-  return [header, divider, "📦  ORDER\n", productLines, divider, totalLine, divider, payment, divider, footer].join("\n");
+  return [
+    header,
+    divider,
+    "📦  ORDER\n",
+    productLines,
+    divider,
+    totalLine,
+    divider,
+    addressSection,
+    divider,
+    payment,
+    divider,
+    footer,
+  ].join("\n");
 }
 
 export function buildTelegramUrl(message: string, handle = TELEGRAM_HANDLE): string {

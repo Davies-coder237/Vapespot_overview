@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Send, ShieldAlert, Wallet, Landmark, Lock, Timer, Zap, Truck } from "lucide-react";
+import { Send, ShieldAlert, Wallet, Landmark, Lock, Timer, Zap, Truck, MapPin, Bitcoin } from "lucide-react";
 import { findProduct, formatPrice, onImageError, productCard } from "@/lib/data";
 import { useMyList } from "@/lib/storage";
 import type { Product } from "@/lib/types";
@@ -15,6 +15,7 @@ import {
 export function OrderSummary() {
   const { items } = useMyList();
   const [products, setProducts] = useState<Product[]>([]);
+  const [deliveryAddress, setDeliveryAddress] = useState("");
 
   useEffect(() => {
     let cancelled = false;
@@ -25,7 +26,7 @@ export function OrderSummary() {
   }, [items]);
 
   const lines = buildOrderLines(items, products);
-  const url = buildTelegramUrl(buildTelegramMessage(lines));
+  const url = buildTelegramUrl(buildTelegramMessage(lines, deliveryAddress));
 
   if (lines.length === 0) {
     return (
@@ -150,8 +151,7 @@ export function OrderSummary() {
                   <Zap className="h-2.5 w-2.5 md:h-3.5 md:w-3.5 text-[#5B3DF5]" fill="#5B3DF5" strokeWidth={0} />
                 </div>
                 <div className="min-w-0">
-                  <span className="text-[12px] md:text-[14px] lg:text-[15px] font-semibold text-[#2D2D2D]">Local area</span>
-                  <span className="mx-1.5 text-[#C4B8F0]">·</span>
+                  <span className="text-[12px] md:text-[14px] lg:text-[15px] font-semibold text-[#2D2D2D]">Local area:</span>
                   <span className="text-[12px] md:text-[14px] lg:text-[15px] font-bold text-[#5B3DF5]">within 1 hour</span>
                 </div>
               </div>
@@ -165,20 +165,48 @@ export function OrderSummary() {
                   <Truck className="h-2.5 w-2.5 md:h-3.5 md:w-3.5 text-[#5B3DF5]" strokeWidth={1.75} />
                 </div>
                 <div className="min-w-0">
-                  <span className="text-[12px] md:text-[14px] lg:text-[15px] font-semibold text-[#2D2D2D]">Nationwide</span>
-                  <span className="mx-1.5 text-[#C4B8F0]">·</span>
-                  <span className="text-[12px] md:text-[14px] lg:text-[15px] font-bold text-[#5B3DF5]">within 1–3 business days</span>
+                  <span className="text-[12px] md:text-[14px] lg:text-[15px] font-semibold text-[#2D2D2D]">Nationwide:</span>
+                  <span className="text-[12px] md:text-[14px] lg:text-[15px] font-bold text-[#5B3DF5]">1–3 business days</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
+        {/* ── Delivery address ── */}
+        <div className="bg-[#F9F7FF] border border-[#E4DEFF] rounded-xl px-4 py-3.5 md:px-6 md:py-5 space-y-2">
+          <div className="flex items-center gap-3">
+            <div className="shrink-0 h-10 w-10 rounded-full bg-[#EDE9FF] flex items-center justify-center">
+              <MapPin className="h-5 w-5 text-[#5B3DF5]" strokeWidth={1.75} />
+            </div>
+            <p className="text-[14px] md:text-[16px] font-extrabold text-[#0A0A0A]">
+              Enter your delivery address
+            </p>
+          </div>
+          <textarea
+            value={deliveryAddress}
+            onChange={(e) => setDeliveryAddress(e.target.value)}
+            placeholder="Street, City, State, Postcode"
+            rows={2}
+            className="w-full text-[13px] md:text-[14px] border border-[#E4DEFF] bg-white rounded-lg px-3 py-2 text-black placeholder:text-[#C4B8F0] focus:outline-none focus:border-[#7C3AED] resize-none"
+          />
+        </div>
+
         {/* Divider */}
         <div className="border-t border-[#DDD6FF]" />
 
+        {/* ── Processed immediately ── */}
+        <div className="flex items-start gap-3 md:gap-4">
+          <div className="shrink-0 h-10 w-10 md:h-12 md:w-12 rounded-full bg-[#EDE9FF] flex items-center justify-center">
+            <Zap className="h-5 w-5 md:h-6 md:w-6 text-[#5B3DF5]" fill="#5B3DF5" strokeWidth={0} />
+          </div>
+          <p className="text-[13px] md:text-[15px] text-[#2D2D2D] leading-snug mt-2">
+            Your order will be <span className="font-bold text-[#5B3DF5]">processed immediately</span> after payment confirmation.
+          </p>
+        </div>
+
         {/* Methods */}
-        <div className="grid grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+        <div className="grid grid-cols-3 gap-4 md:gap-6 lg:gap-8">
           <div className="flex items-center gap-3 md:gap-4">
             <div className="h-12 w-12 md:h-16 md:w-16 lg:h-[72px] lg:w-[72px] rounded-full bg-[#DDD6FF] flex items-center justify-center text-[#5B3DF5] shrink-0">
               <Wallet className="h-6 w-6 md:h-8 md:w-8 lg:h-9 lg:w-9" />
@@ -197,26 +225,14 @@ export function OrderSummary() {
               <p className="text-[12px] md:text-[13px] lg:text-[14px] text-[#6E6E73]">Accepted</p>
             </div>
           </div>
-        </div>
-
-        {/* ── Crypto Payment ── */}
-        <div className="flex items-center gap-3 md:gap-4">
-          <div className="h-12 w-12 md:h-16 md:w-16 lg:h-[72px] lg:w-[72px] rounded-full bg-[#FEF3E2] flex items-center justify-center shrink-0">
-            <svg
-              viewBox="0 0 32 32"
-              className="h-6 w-6 md:h-8 md:w-8 lg:h-9 lg:w-9"
-              aria-label="Bitcoin"
-            >
-              <circle cx="16" cy="16" r="16" fill="#F7931A" />
-              <path
-                d="M22.47 14.17c.32-2.16-1.32-3.32-3.57-4.09l.73-2.92-1.78-.44-.71 2.84c-.47-.12-.95-.23-1.43-.34l.71-2.86-1.78-.44-.73 2.92c-.39-.09-.77-.18-1.14-.27l.002-.009-2.45-.61-.47 1.9s1.32.3 1.29.32c.72.18.85.66.83 1.04l-.83 3.33c.05.01.11.03.18.06l-.18-.04-1.17 4.68c-.09.22-.31.55-.81.42.02.03-1.29-.32-1.29-.32l-.88 2.04 2.31.58c.43.11.85.22 1.27.32l-.74 2.96 1.78.44.73-2.92c.49.13.96.25 1.43.37l-.72 2.9 1.78.44.74-2.95c3.05.58 5.34.34 6.3-2.41.78-2.22-.04-3.5-1.64-4.33 1.17-.27 2.05-1.04 2.28-2.63zm-4.08 5.73c-.55 2.22-4.3.02-5.52-.27l.98-3.95c1.22.3 5.15.9 4.54 4.22zm.56-5.76c-.5 2.02-3.62.99-4.63.74l.89-3.58c1.01.25 4.28.72 3.74 2.84z"
-                fill="#fff"
-              />
-            </svg>
-          </div>
-          <div>
-            <p className="text-[15px] md:text-[17px] lg:text-[19px] font-bold text-black">Crypto</p>
-            <p className="text-[12px] md:text-[13px] lg:text-[14px] text-[#6E6E73]">Accepted</p>
+          <div className="flex items-center gap-3 md:gap-4">
+            <div className="h-12 w-12 md:h-16 md:w-16 lg:h-[72px] lg:w-[72px] rounded-full bg-[#DDD6FF] flex items-center justify-center text-[#5B3DF5] shrink-0">
+              <Bitcoin className="h-6 w-6 md:h-8 md:w-8 lg:h-9 lg:w-9" />
+            </div>
+            <div>
+              <p className="text-[15px] md:text-[17px] lg:text-[19px] font-bold text-black">Crypto</p>
+              <p className="text-[12px] md:text-[13px] lg:text-[14px] text-[#6E6E73]">Accepted</p>
+            </div>
           </div>
         </div>
       </div>
