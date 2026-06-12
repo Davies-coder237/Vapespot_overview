@@ -55,8 +55,8 @@ export function buildTelegramMessage(lines: OrderLine[], deliveryAddress = ""): 
   const totalLine = `TOTAL:  ${fmt(ordersTotal(lines))} AUD`;
 
   const addressSection = deliveryAddress.trim()
-    ? `🚚  DELIVERY ADDRESS\n    ${deliveryAddress.trim()}`
-    : `🚚  DELIVERY ADDRESS\n    Not specified`;
+    ? `🚚  DELIVERY ADDRESS\n\n    ${deliveryAddress.trim()}`
+    : `🚚  DELIVERY ADDRESS\n\n    Not specified`;
 
   const payment = [
     "💳  PAYMENT",

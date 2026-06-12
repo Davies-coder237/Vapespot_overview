@@ -151,7 +151,7 @@ export function OrderSummary() {
                   <Zap className="h-2.5 w-2.5 md:h-3.5 md:w-3.5 text-[#5B3DF5]" fill="#5B3DF5" strokeWidth={0} />
                 </div>
                 <div className="min-w-0">
-                  <span className="text-[12px] md:text-[14px] lg:text-[15px] font-semibold text-[#2D2D2D]">Local area:</span>
+                  <span className="text-[12px] md:text-[14px] lg:text-[15px] font-semibold text-[#2D2D2D]">Local area :</span>
                   <span className="text-[12px] md:text-[14px] lg:text-[15px] font-bold text-[#5B3DF5]">within 1 hour</span>
                 </div>
               </div>
@@ -165,7 +165,7 @@ export function OrderSummary() {
                   <Truck className="h-2.5 w-2.5 md:h-3.5 md:w-3.5 text-[#5B3DF5]" strokeWidth={1.75} />
                 </div>
                 <div className="min-w-0">
-                  <span className="text-[12px] md:text-[14px] lg:text-[15px] font-semibold text-[#2D2D2D]">Nationwide:</span>
+                  <span className="text-[12px] md:text-[14px] lg:text-[15px] font-semibold text-[#2D2D2D]">Nationwide :</span>
                   <span className="text-[12px] md:text-[14px] lg:text-[15px] font-bold text-[#5B3DF5]">1–3 business days</span>
                 </div>
               </div>
