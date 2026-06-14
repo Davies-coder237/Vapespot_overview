@@ -1,1 +1,142 @@
-{"path":["psychedelics","mushroom","chocolate"],"file":"psychedelics/mushroom/chocolate.json","brands":[{"name":"TRĒ House","slug":"trē-house","product_count":6}],"series_index":{"TRĒ House":["Magic Mushroom Microdose Chocolate Bar"]},"products":[{"id":"trē-house-fruity-cereal-magic-mushroom-chocolate-bar-5208","source_id":"5208","name":"FRUITY CEREAL MAGIC MUSHROOM CHOCOLATE BAR","price_aud":34.99,"currency":"AUD","specs":{"flavor":"Fruity Cereal","chocolate_type":"White Chocolate","net_weight":"50g / 1.76oz","squares_per_bar":"15","blend":"Magic Mushroom Microdose Blend"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/trē-house-fruity-cereal-magic-mushroom-chocolate-bar-5208.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/trē-house-fruity-cereal-magic-mushroom-chocolate-bar-5208.webp"},"brand":"TRĒ House","series":"Magic Mushroom Microdose Chocolate Bar"},{"id":"trē-house-peanut-butter-magic-mushroom-chocolate-bar-5249","source_id":"5249","name":"PEANUT BUTTER MAGIC MUSHROOM CHOCOLATE BAR","price_aud":34.99,"currency":"AUD","specs":{"flavor":"Fruity Cereal","chocolate_type":"White Chocolate","net_weight":"50g / 1.76oz","squares_per_bar":"15","blend":"Magic Mushroom Microdose Blend"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/trē-house-peanut-butter-magic-mushroom-chocolate-bar-5249.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/trē-house-peanut-butter-magic-mushroom-chocolate-bar-5249.webp"},"brand":"TRĒ House","series":"Magic Mushroom Microdose Chocolate Bar"},{"id":"trē-house-cookies-screams-magic-mushroom-chocolate-bar-5250","source_id":"5250","name":"COOKIES & SCREAMS MAGIC MUSHROOM CHOCOLATE BAR","price_aud":34.99,"currency":"AUD","specs":{"flavor":"Fruity Cereal","chocolate_type":"White Chocolate","net_weight":"50g / 1.76oz","squares_per_bar":"15","blend":"Magic Mushroom Microdose Blend"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/trē-house-cookies-screams-magic-mushroom-chocolate-bar-5250.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/trē-house-cookies-screams-magic-mushroom-chocolate-bar-5250.webp"},"brand":"TRĒ House","series":"Magic Mushroom Microdose Chocolate Bar"},{"id":"trē-house-fruity-cereal-magic-mushroom-chocolate-bar-10890","source_id":"10890","name":"FRUITY CEREAL MAGIC MUSHROOM CHOCOLATE BAR","price_aud":34.99,"currency":"AUD","specs":{"flavor":"Fruity Cereal","chocolate_type":"White Chocolate","net_weight":"50g / 1.76oz","squares_per_bar":"15","blend":"Magic Mushroom Microdose Blend"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/trē-house-fruity-cereal-magic-mushroom-chocolate-bar-10890.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/trē-house-fruity-cereal-magic-mushroom-chocolate-bar-10890.webp"},"brand":"TRĒ House","series":"Magic Mushroom Microdose Chocolate Bar"},{"id":"tre-house-peanut-butter-magic-mushroom-chocolate-bar-10903","source_id":"10903","name":"PEANUT BUTTER MAGIC MUSHROOM CHOCOLATE BAR","price_aud":34.99,"currency":"AUD","specs":{"flavor":"Fruity Cereal","chocolate_type":"White Chocolate","net_weight":"50g / 1.76oz","squares_per_bar":"15","blend":"Magic Mushroom Microdose Blend"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/tre-house-peanut-butter-magic-mushroom-chocolate-bar-10903.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/tre-house-peanut-butter-magic-mushroom-chocolate-bar-10903.webp"},"brand":"TRĒ House","series":"Magic Mushroom Microdose Chocolate Bar"},{"id":"trē-house-cookies-screams-magic-mushroom-chocolate-bar-10904","source_id":"10904","name":"COOKIES & SCREAMS MAGIC MUSHROOM CHOCOLATE BAR","price_aud":34.99,"currency":"AUD","specs":{"flavor":"Fruity Cereal","chocolate_type":"White Chocolate","net_weight":"50g / 1.76oz","squares_per_bar":"15","blend":"Magic Mushroom Microdose Blend"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/trē-house-cookies-screams-magic-mushroom-chocolate-bar-10904.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/trē-house-cookies-screams-magic-mushroom-chocolate-bar-10904.webp"},"brand":"TRĒ House","series":"Magic Mushroom Microdose Chocolate Bar"}]}
+{
+  "path": [
+    "psychedelics",
+    "mushroom",
+    "chocolate"
+  ],
+  "file": "psychedelics/mushroom/chocolate.json",
+  "brands": [
+    {
+      "name": "TRĒ House",
+      "slug": "trē-house",
+      "product_count": 6
+    }
+  ],
+  "series_index": {
+    "TRĒ House": [
+      "Magic Mushroom Microdose Chocolate Bar"
+    ]
+  },
+  "products": [
+    {
+      "id": "trē-house-fruity-cereal-magic-mushroom-chocolate-bar-5208",
+      "source_id": "5208",
+      "name": "FRUITY CEREAL MAGIC MUSHROOM CHOCOLATE BAR",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Fruity Cereal",
+        "chocolate_type": "White Chocolate",
+        "net_weight": "50g / 1.76oz",
+        "squares_per_bar": "15",
+        "blend": "Magic Mushroom Microdose Blend"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/trē-house-fruity-cereal-magic-mushroom-chocolate-bar-5208.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/trē-house-fruity-cereal-magic-mushroom-chocolate-bar-5208.webp"
+      },
+      "brand": "TRĒ House",
+      "series": "Magic Mushroom Microdose Chocolate Bar"
+    },
+    {
+      "id": "trē-house-peanut-butter-magic-mushroom-chocolate-bar-5249",
+      "source_id": "5249",
+      "name": "PEANUT BUTTER MAGIC MUSHROOM CHOCOLATE BAR",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Fruity Cereal",
+        "chocolate_type": "White Chocolate",
+        "net_weight": "50g / 1.76oz",
+        "squares_per_bar": "15",
+        "blend": "Magic Mushroom Microdose Blend"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/trē-house-peanut-butter-magic-mushroom-chocolate-bar-5249.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/trē-house-peanut-butter-magic-mushroom-chocolate-bar-5249.webp"
+      },
+      "brand": "TRĒ House",
+      "series": "Magic Mushroom Microdose Chocolate Bar"
+    },
+    {
+      "id": "trē-house-cookies-screams-magic-mushroom-chocolate-bar-5250",
+      "source_id": "5250",
+      "name": "COOKIES & SCREAMS MAGIC MUSHROOM CHOCOLATE BAR",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Fruity Cereal",
+        "chocolate_type": "White Chocolate",
+        "net_weight": "50g / 1.76oz",
+        "squares_per_bar": "15",
+        "blend": "Magic Mushroom Microdose Blend"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/trē-house-cookies-screams-magic-mushroom-chocolate-bar-5250.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/trē-house-cookies-screams-magic-mushroom-chocolate-bar-5250.webp"
+      },
+      "brand": "TRĒ House",
+      "series": "Magic Mushroom Microdose Chocolate Bar"
+    },
+    {
+      "id": "trē-house-fruity-cereal-magic-mushroom-chocolate-bar-10890",
+      "source_id": "10890",
+      "name": "FRUITY CEREAL MAGIC MUSHROOM CHOCOLATE BAR",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Fruity Cereal",
+        "chocolate_type": "White Chocolate",
+        "net_weight": "50g / 1.76oz",
+        "squares_per_bar": "15",
+        "blend": "Magic Mushroom Microdose Blend"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/trē-house-fruity-cereal-magic-mushroom-chocolate-bar-10890.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/trē-house-fruity-cereal-magic-mushroom-chocolate-bar-10890.webp"
+      },
+      "brand": "TRĒ House",
+      "series": "Magic Mushroom Microdose Chocolate Bar"
+    },
+    {
+      "id": "tre-house-peanut-butter-magic-mushroom-chocolate-bar-10903",
+      "source_id": "10903",
+      "name": "PEANUT BUTTER MAGIC MUSHROOM CHOCOLATE BAR",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Fruity Cereal",
+        "chocolate_type": "White Chocolate",
+        "net_weight": "50g / 1.76oz",
+        "squares_per_bar": "15",
+        "blend": "Magic Mushroom Microdose Blend"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/tre-house-peanut-butter-magic-mushroom-chocolate-bar-10903.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/tre-house-peanut-butter-magic-mushroom-chocolate-bar-10903.webp"
+      },
+      "brand": "TRĒ House",
+      "series": "Magic Mushroom Microdose Chocolate Bar"
+    },
+    {
+      "id": "trē-house-cookies-screams-magic-mushroom-chocolate-bar-10904",
+      "source_id": "10904",
+      "name": "COOKIES & SCREAMS MAGIC MUSHROOM CHOCOLATE BAR",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Fruity Cereal",
+        "chocolate_type": "White Chocolate",
+        "net_weight": "50g / 1.76oz",
+        "squares_per_bar": "15",
+        "blend": "Magic Mushroom Microdose Blend"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/trē-house-cookies-screams-magic-mushroom-chocolate-bar-10904.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/trē-house-cookies-screams-magic-mushroom-chocolate-bar-10904.webp"
+      },
+      "brand": "TRĒ House",
+      "series": "Magic Mushroom Microdose Chocolate Bar"
+    }
+  ]
+}

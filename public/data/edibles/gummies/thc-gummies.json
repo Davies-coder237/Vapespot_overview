@@ -1,1 +1,190 @@
-{"path":["edibles","gummies","thc-gummies"],"file":"edibles/gummies/thc-gummies.json","brands":[{"name":"binoid","slug":"binoid","product_count":2},{"name":"Lazarus Naturals","slug":"lazarus-naturals","product_count":2},{"name":"Cutleaf","slug":"cutleaf","product_count":2},{"name":"PureBotanics","slug":"purebotanics","product_count":1}],"series_index":{"binoid":["THE BFG PARTY PACK"],"Lazarus Naturals":["Unwind Full Spectrum"],"PureBotanics":["7OH"]},"products":[{"id":"binoid-the-bfg-party-pack-thc-gummy-blueberry-delight-20000mg-5243","source_id":"5243","name":"THE BFG PARTY PACK THC GUMMY – BLUEBERRY DELIGHT – 20,000MG","price_aud":269,"currency":"AUD","specs":{"flavor":"Blueberry Delight","total_thc":"3000mg Δ9","total_weight":"42.8 oz (1200g)","total_mg":"20,000mg"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/binoid-the-bfg-party-pack-thc-gummy-blueberry-delight-20000mg-5243.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/binoid-the-bfg-party-pack-thc-gummy-blueberry-delight-20000mg-5243.webp"},"brand":"binoid","series":"THE BFG PARTY PACK"},{"id":"binoid-the-bfg-party-pack-thc-gummy-blueberry-delight-20000mg-10897","source_id":"10897","name":"THE BFG PARTY PACK THC GUMMY – BLUEBERRY DELIGHT – 20,000MG","price_aud":269,"currency":"AUD","specs":{"flavor":"Blueberry Delight","total_thc":"3000mg Δ9","total_weight":"42.8 oz (1200g)","total_mg":"20,000mg"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/binoid-the-bfg-party-pack-thc-gummy-blueberry-delight-20000mg-10897.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/binoid-the-bfg-party-pack-thc-gummy-blueberry-delight-20000mg-10897.webp"},"brand":"binoid","series":"THE BFG PARTY PACK"},{"id":"lazarus-naturals-unwind-full-spectrum-cbd-thc-gummies-black-currant-5280","source_id":"5280","name":"UNWIND FULL SPECTRUM CBD + THC GUMMIES – BLACK CURRANT","price_aud":99.99,"currency":"AUD","specs":{"flavor":"Black Currant","cannabinoid_type":"Full Spectrum","cbd_content_per_gummy":"50mg","thc_content_per_gummy":"2mg","quantity":"20 gummies","total_cbd_content":"1000mg","total_thc_content":"40mg"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lazarus-naturals-unwind-full-spectrum-cbd-thc-gummies-black-currant-5280.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lazarus-naturals-unwind-full-spectrum-cbd-thc-gummies-black-currant-5280.webp"},"brand":"Lazarus Naturals","series":"Unwind Full Spectrum"},{"id":"lazarus-naturals-unwind-full-spectrum-cbd-thc-gummies-black-currant-10938","source_id":"10938","name":"UNWIND FULL SPECTRUM CBD + THC GUMMIES – BLACK CURRANT","price_aud":99.99,"currency":"AUD","specs":{"flavor":"Black Currant","cannabinoid_type":"Full Spectrum","cbd_content_per_gummy":"50mg","thc_content_per_gummy":"2mg","quantity":"20 gummies","total_cbd_content":"1000mg","total_thc_content":"40mg"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lazarus-naturals-unwind-full-spectrum-cbd-thc-gummies-black-currant-10938.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lazarus-naturals-unwind-full-spectrum-cbd-thc-gummies-black-currant-10938.webp"},"brand":"Lazarus Naturals","series":"Unwind Full Spectrum"},{"id":"cutleaf-cold-pressed-live-rosin-super-gummies-5374","source_id":"5374","name":"Cold-Pressed Live Rosin Super Gummies","price_aud":19.99,"currency":"AUD","specs":{"type":"THC gummies","cannabinoid_content":"30mg THC per gummy","ingredients":"Cold-Pressed Live Rosin","flavors":"Blue Raspberry, Kiwi Strawberry","package_size":"multiple gummies per package","age_restriction":"21+","legal_compliance":"Legal Cannabis"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cutleaf-cold-pressed-live-rosin-super-gummies-5374.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cutleaf-cold-pressed-live-rosin-super-gummies-5374.webp"},"brand":"Cutleaf","series":""},{"id":"cutleaf-cold-pressed-live-rosin-super-gummies-10996","source_id":"10996","name":"Cold-Pressed Live Rosin Super Gummies","price_aud":19.99,"currency":"AUD","specs":{"type":"THC gummies","cannabinoid_content":"30mg THC per gummy","ingredients":"Cold-Pressed Live Rosin","flavors":"Blue Raspberry, Kiwi Strawberry","package_contains":"Multiple gummies per package","legal_compliance":"21+ legal cannabis"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cutleaf-cold-pressed-live-rosin-super-gummies-10996.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cutleaf-cold-pressed-live-rosin-super-gummies-10996.webp"},"brand":"Cutleaf","series":""},{"id":"purebotanics-7oh-7-hydroxy-mixed-berry-gummies-50mg-5828","source_id":"5828","name":"7OH 7 Hydroxy Mixed Berry Gummies 50mg","price_aud":34,"currency":"AUD","specs":{"type":"gummies","flavor":"Mixed Berry","count":"5","net_weight":"20g","active_ingredient":"7-hydroxymitragynine","mg_per_gummy":"10mg 7OH","total_mg":"50mg 7OH"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/purebotanics-7oh-7-hydroxy-mixed-berry-gummies-50mg-5828.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/purebotanics-7oh-7-hydroxy-mixed-berry-gummies-50mg-5828.webp"},"brand":"PureBotanics","series":"7OH"}]}
+{
+  "path": [
+    "edibles",
+    "gummies",
+    "thc-gummies"
+  ],
+  "file": "edibles/gummies/thc-gummies.json",
+  "brands": [
+    {
+      "name": "binoid",
+      "slug": "binoid",
+      "product_count": 2
+    },
+    {
+      "name": "Lazarus Naturals",
+      "slug": "lazarus-naturals",
+      "product_count": 2
+    },
+    {
+      "name": "Cutleaf",
+      "slug": "cutleaf",
+      "product_count": 2
+    },
+    {
+      "name": "PureBotanics",
+      "slug": "purebotanics",
+      "product_count": 1
+    }
+  ],
+  "series_index": {
+    "binoid": [
+      "THE BFG PARTY PACK"
+    ],
+    "Lazarus Naturals": [
+      "Unwind Full Spectrum"
+    ],
+    "PureBotanics": [
+      "7OH"
+    ]
+  },
+  "products": [
+    {
+      "id": "binoid-the-bfg-party-pack-thc-gummy-blueberry-delight-20000mg-5243",
+      "source_id": "5243",
+      "name": "THE BFG PARTY PACK THC GUMMY – BLUEBERRY DELIGHT – 20,000MG",
+      "price_aud": 278.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Blueberry Delight",
+        "total_thc": "3000mg Δ9",
+        "total_weight": "42.8 oz (1200g)",
+        "total_mg": "20,000mg"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/binoid-the-bfg-party-pack-thc-gummy-blueberry-delight-20000mg-5243.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/binoid-the-bfg-party-pack-thc-gummy-blueberry-delight-20000mg-5243.webp"
+      },
+      "brand": "binoid",
+      "series": "THE BFG PARTY PACK"
+    },
+    {
+      "id": "binoid-the-bfg-party-pack-thc-gummy-blueberry-delight-20000mg-10897",
+      "source_id": "10897",
+      "name": "THE BFG PARTY PACK THC GUMMY – BLUEBERRY DELIGHT – 20,000MG",
+      "price_aud": 278.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Blueberry Delight",
+        "total_thc": "3000mg Δ9",
+        "total_weight": "42.8 oz (1200g)",
+        "total_mg": "20,000mg"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/binoid-the-bfg-party-pack-thc-gummy-blueberry-delight-20000mg-10897.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/binoid-the-bfg-party-pack-thc-gummy-blueberry-delight-20000mg-10897.webp"
+      },
+      "brand": "binoid",
+      "series": "THE BFG PARTY PACK"
+    },
+    {
+      "id": "lazarus-naturals-unwind-full-spectrum-cbd-thc-gummies-black-currant-5280",
+      "source_id": "5280",
+      "name": "UNWIND FULL SPECTRUM CBD + THC GUMMIES – BLACK CURRANT",
+      "price_aud": 109.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Black Currant",
+        "cannabinoid_type": "Full Spectrum",
+        "cbd_content_per_gummy": "50mg",
+        "thc_content_per_gummy": "2mg",
+        "quantity": "20 gummies",
+        "total_cbd_content": "1000mg",
+        "total_thc_content": "40mg"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lazarus-naturals-unwind-full-spectrum-cbd-thc-gummies-black-currant-5280.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lazarus-naturals-unwind-full-spectrum-cbd-thc-gummies-black-currant-5280.webp"
+      },
+      "brand": "Lazarus Naturals",
+      "series": "Unwind Full Spectrum"
+    },
+    {
+      "id": "lazarus-naturals-unwind-full-spectrum-cbd-thc-gummies-black-currant-10938",
+      "source_id": "10938",
+      "name": "UNWIND FULL SPECTRUM CBD + THC GUMMIES – BLACK CURRANT",
+      "price_aud": 109.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Black Currant",
+        "cannabinoid_type": "Full Spectrum",
+        "cbd_content_per_gummy": "50mg",
+        "thc_content_per_gummy": "2mg",
+        "quantity": "20 gummies",
+        "total_cbd_content": "1000mg",
+        "total_thc_content": "40mg"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lazarus-naturals-unwind-full-spectrum-cbd-thc-gummies-black-currant-10938.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lazarus-naturals-unwind-full-spectrum-cbd-thc-gummies-black-currant-10938.webp"
+      },
+      "brand": "Lazarus Naturals",
+      "series": "Unwind Full Spectrum"
+    },
+    {
+      "id": "cutleaf-cold-pressed-live-rosin-super-gummies-5374",
+      "source_id": "5374",
+      "name": "Cold-Pressed Live Rosin Super Gummies",
+      "price_aud": 29.99,
+      "currency": "AUD",
+      "specs": {
+        "type": "THC gummies",
+        "cannabinoid_content": "30mg THC per gummy",
+        "ingredients": "Cold-Pressed Live Rosin",
+        "flavors": "Blue Raspberry, Kiwi Strawberry",
+        "package_size": "multiple gummies per package",
+        "age_restriction": "21+",
+        "legal_compliance": "Legal Cannabis"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cutleaf-cold-pressed-live-rosin-super-gummies-5374.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cutleaf-cold-pressed-live-rosin-super-gummies-5374.webp"
+      },
+      "brand": "Cutleaf",
+      "series": ""
+    },
+    {
+      "id": "cutleaf-cold-pressed-live-rosin-super-gummies-10996",
+      "source_id": "10996",
+      "name": "Cold-Pressed Live Rosin Super Gummies",
+      "price_aud": 29.99,
+      "currency": "AUD",
+      "specs": {
+        "type": "THC gummies",
+        "cannabinoid_content": "30mg THC per gummy",
+        "ingredients": "Cold-Pressed Live Rosin",
+        "flavors": "Blue Raspberry, Kiwi Strawberry",
+        "package_contains": "Multiple gummies per package",
+        "legal_compliance": "21+ legal cannabis"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cutleaf-cold-pressed-live-rosin-super-gummies-10996.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cutleaf-cold-pressed-live-rosin-super-gummies-10996.webp"
+      },
+      "brand": "Cutleaf",
+      "series": ""
+    },
+    {
+      "id": "purebotanics-7oh-7-hydroxy-mixed-berry-gummies-50mg-5828",
+      "source_id": "5828",
+      "name": "7OH 7 Hydroxy Mixed Berry Gummies 50mg",
+      "price_aud": 43.99,
+      "currency": "AUD",
+      "specs": {
+        "type": "gummies",
+        "flavor": "Mixed Berry",
+        "count": "5",
+        "net_weight": "20g",
+        "active_ingredient": "7-hydroxymitragynine",
+        "mg_per_gummy": "10mg 7OH",
+        "total_mg": "50mg 7OH"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/purebotanics-7oh-7-hydroxy-mixed-berry-gummies-50mg-5828.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/purebotanics-7oh-7-hydroxy-mixed-berry-gummies-50mg-5828.webp"
+      },
+      "brand": "PureBotanics",
+      "series": "7OH"
+    }
+  ]
+}

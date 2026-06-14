@@ -1,1 +1,146 @@
-{"path":["tabac"],"file":"tabac/tabac.json","brands":[{"name":"IQOS","slug":"iqos","product_count":5},{"name":"NEAFS","slug":"neafs","product_count":1}],"series_index":{},"products":[{"id":"iqos-terea-heated-tobacco-sticks-4379","source_id":"4379","name":"TEREA Heated Tobacco Sticks","price_aud":14.99,"currency":"AUD","specs":{"compatible_with":"IQOS ILUMA","type":"heated tobacco sticks","quantity":"20 sticks per pack"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/iqos-terea-heated-tobacco-sticks-4379.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/iqos-terea-heated-tobacco-sticks-4379.webp"},"brand":"IQOS","series":""},{"id":"iqos-iluma-one-starter-bundle-kit-4380","source_id":"4380","name":"ILUMA ONE Starter Bundle Kit","price_aud":129,"currency":"AUD","specs":{"device_type":"heat-not-burn","compatible_with":"Terea sticks","charging_port":"USB-C","dimensions":"121.5 mm x 30.5 mm x 16.4 mm","weight":"68.5 g","full_charge_duration":"90 minutes","usage":"20 consecutive uses per charge"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/iqos-iluma-one-starter-bundle-kit-4380.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/iqos-iluma-one-starter-bundle-kit-4380.webp"},"brand":"IQOS","series":""},{"id":"iqos-iluma-starter-bundle-kit-4381","source_id":"4381","name":"ILUMA Starter Bundle Kit","price_aud":149.99,"currency":"AUD","specs":{"device_type":"Heat-not-burn","compatible_products":"TEREA sticks","charging_port":"USB-C","dimensions":"121.5 x 47 x 16.4 mm","weight":"116.5 g","charging_time":"135 minutes","holder_charging_time":"1.50 - 10 minutes","holder_number_of_uses":"20","features":"Smart gesture control, Autostart, Overheating Protection"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/iqos-iluma-starter-bundle-kit-4381.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/iqos-iluma-starter-bundle-kit-4381.webp"},"brand":"IQOS","series":""},{"id":"iqos-3-duo-kit-7415","source_id":"7415","name":"3 Duo Kit","price_aud":153,"currency":"AUD","specs":{"device_type":"heat-not-burn","compatible_products":"HEETS","charging_time":"120 minutes","holder_charging_time":"3.5 minutes","holder_use_per_charge":"2 consecutive uses","features":"vibration alerts, side opening, protect plus system","color_options":"Warm White, Stellar Blue, Brilliant Gold, Velvet Grey"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/iqos-3-duo-kit-7415.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/iqos-3-duo-kit-7415.webp"},"brand":"IQOS","series":""},{"id":"iqos-3-duo-kit-11613","source_id":"11613","name":"3 Duo Kit","price_aud":149,"currency":"AUD","specs":{"device_type":"Heat-not-burn tobacco product","charging_time":"120 minutes","holder_charging_time":"3.5 minutes","usage":"6 minutes or 14 puffs, whichever comes first","sessions_per_charge":"20","continuous_use":"2 consecutive uses","features":"Vibration alerts, fast charging","dimensions":"46.3 x 22.9 x 114.7 mm (pocket charger), 14.42 x 16.25 x 92.27 mm (holder)","weight":"125g (approximate)","compatible_with":"HEETS tobacco sticks"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/iqos-3-duo-kit-11613.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/iqos-3-duo-kit-11613.webp"},"brand":"IQOS","series":""},{"id":"neafs-teo-heating-device-4184","source_id":"4184","name":"TEO HEATING DEVICE","price_aud":75,"currency":"AUD","specs":{},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/neafs-teo-heating-device-4184.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/neafs-teo-heating-device-4184.webp"},"brand":"NEAFS","series":""}]}
+{
+  "path": [
+    "tabac"
+  ],
+  "file": "tabac/tabac.json",
+  "brands": [
+    {
+      "name": "IQOS",
+      "slug": "iqos",
+      "product_count": 5
+    },
+    {
+      "name": "NEAFS",
+      "slug": "neafs",
+      "product_count": 1
+    }
+  ],
+  "series_index": {},
+  "products": [
+    {
+      "id": "iqos-terea-heated-tobacco-sticks-4379",
+      "source_id": "4379",
+      "name": "TEREA Heated Tobacco Sticks",
+      "price_aud": 19.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "IQOS ILUMA",
+        "type": "heated tobacco sticks",
+        "quantity": "20 sticks per pack"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/iqos-terea-heated-tobacco-sticks-4379.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/iqos-terea-heated-tobacco-sticks-4379.webp"
+      },
+      "brand": "IQOS",
+      "series": ""
+    },
+    {
+      "id": "iqos-iluma-one-starter-bundle-kit-4380",
+      "source_id": "4380",
+      "name": "ILUMA ONE Starter Bundle Kit",
+      "price_aud": 133.99,
+      "currency": "AUD",
+      "specs": {
+        "device_type": "heat-not-burn",
+        "compatible_with": "Terea sticks",
+        "charging_port": "USB-C",
+        "dimensions": "121.5 mm x 30.5 mm x 16.4 mm",
+        "weight": "68.5 g",
+        "full_charge_duration": "90 minutes",
+        "usage": "20 consecutive uses per charge"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/iqos-iluma-one-starter-bundle-kit-4380.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/iqos-iluma-one-starter-bundle-kit-4380.webp"
+      },
+      "brand": "IQOS",
+      "series": ""
+    },
+    {
+      "id": "iqos-iluma-starter-bundle-kit-4381",
+      "source_id": "4381",
+      "name": "ILUMA Starter Bundle Kit",
+      "price_aud": 154.99,
+      "currency": "AUD",
+      "specs": {
+        "device_type": "Heat-not-burn",
+        "compatible_products": "TEREA sticks",
+        "charging_port": "USB-C",
+        "dimensions": "121.5 x 47 x 16.4 mm",
+        "weight": "116.5 g",
+        "charging_time": "135 minutes",
+        "holder_charging_time": "1.50 - 10 minutes",
+        "holder_number_of_uses": "20",
+        "features": "Smart gesture control, Autostart, Overheating Protection"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/iqos-iluma-starter-bundle-kit-4381.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/iqos-iluma-starter-bundle-kit-4381.webp"
+      },
+      "brand": "IQOS",
+      "series": ""
+    },
+    {
+      "id": "iqos-3-duo-kit-7415",
+      "source_id": "7415",
+      "name": "3 Duo Kit",
+      "price_aud": 157.99,
+      "currency": "AUD",
+      "specs": {
+        "device_type": "heat-not-burn",
+        "compatible_products": "HEETS",
+        "charging_time": "120 minutes",
+        "holder_charging_time": "3.5 minutes",
+        "holder_use_per_charge": "2 consecutive uses",
+        "features": "vibration alerts, side opening, protect plus system",
+        "color_options": "Warm White, Stellar Blue, Brilliant Gold, Velvet Grey"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/iqos-3-duo-kit-7415.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/iqos-3-duo-kit-7415.webp"
+      },
+      "brand": "IQOS",
+      "series": ""
+    },
+    {
+      "id": "iqos-3-duo-kit-11613",
+      "source_id": "11613",
+      "name": "3 Duo Kit",
+      "price_aud": 153.99,
+      "currency": "AUD",
+      "specs": {
+        "device_type": "Heat-not-burn tobacco product",
+        "charging_time": "120 minutes",
+        "holder_charging_time": "3.5 minutes",
+        "usage": "6 minutes or 14 puffs, whichever comes first",
+        "sessions_per_charge": "20",
+        "continuous_use": "2 consecutive uses",
+        "features": "Vibration alerts, fast charging",
+        "dimensions": "46.3 x 22.9 x 114.7 mm (pocket charger), 14.42 x 16.25 x 92.27 mm (holder)",
+        "weight": "125g (approximate)",
+        "compatible_with": "HEETS tobacco sticks"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/iqos-3-duo-kit-11613.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/iqos-3-duo-kit-11613.webp"
+      },
+      "brand": "IQOS",
+      "series": ""
+    },
+    {
+      "id": "neafs-teo-heating-device-4184",
+      "source_id": "4184",
+      "name": "TEO HEATING DEVICE",
+      "price_aud": 79.99,
+      "currency": "AUD",
+      "specs": {},
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/neafs-teo-heating-device-4184.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/neafs-teo-heating-device-4184.webp"
+      },
+      "brand": "NEAFS",
+      "series": ""
+    }
+  ]
+}

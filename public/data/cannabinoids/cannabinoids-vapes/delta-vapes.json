@@ -1,1 +1,764 @@
-{"path":["cannabinoids","cannabinoids-vapes","delta-vapes"],"file":"cannabinoids/cannabinoids-vapes/delta-vapes.json","brands":[{"name":"Ghost","slug":"ghost","product_count":1},{"name":"Haze","slug":"haze","product_count":1},{"name":"ELF THC","slug":"elf-thc","product_count":22},{"name":"Cookies","slug":"cookies","product_count":9},{"name":"Just Delta","slug":"just-delta","product_count":6}],"series_index":{"ELF THC":["THC3000"]},"products":[{"id":"ghost-zkittles-5-one-gram-disposables-1973","source_id":"1973","name":"Zkittles (5) One Gram Disposables","price_aud":98,"currency":"AUD","specs":{"cartridge_capacity":"1 gram","quantity":"5"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ghost-zkittles-5-one-gram-disposables-1973.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ghost-zkittles-5-one-gram-disposables-1973.webp"},"brand":"Ghost","series":""},{"id":"haze-hybrid-surreal-blend-disposable-vape-3ml-cotton-candy-6pc-display-3957","source_id":"3957","name":"Hybrid Surreal Blend Disposable Vape – 3mL / Cotton Candy – 6PC DISPLAY","price_aud":230,"currency":"AUD","specs":{"cartridge_capacity":"3ml","flavor":"Cotton Candy","cannabinoids":"D8, CBG, D10","type":"disposable","blend":"Hybrid","resin_type":"Live Resin","rechargeable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/haze-hybrid-surreal-blend-disposable-vape-3ml-cotton-candy-6pc-display-3957.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/haze-hybrid-surreal-blend-disposable-vape-3ml-cotton-candy-6pc-display-3957.webp"},"brand":"Haze","series":""},{"id":"elf-thc-amanita-dream-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9189","source_id":"9189","name":"Amanita Dream High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-amanita-dream-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9189.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-amanita-dream-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9189.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-black-domina-x-24k-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9190","source_id":"9190","name":"Black Domina X 24K High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-black-domina-x-24k-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9190.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-black-domina-x-24k-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9190.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-blue-magic-og-x-3000-9191","source_id":"9191","name":"Blue Magic OG X 3000","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-blue-magic-og-x-3000-9191.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-blue-magic-og-x-3000-9191.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-grape-slur-p-4-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9192","source_id":"9192","name":"Grape Slur-P #4 High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-grape-slur-p-4-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9192.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-grape-slur-p-4-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9192.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-thc3000-supreme-jellybean-kush-9193","source_id":"9193","name":"THC3000 Supreme Jellybean Kush","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-thc3000-supreme-jellybean-kush-9193.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-thc3000-supreme-jellybean-kush-9193.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-lazer-lime-haze-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9194","source_id":"9194","name":"Lazer Lime Haze High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-lazer-lime-haze-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9194.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-lazer-lime-haze-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9194.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-octane-orange-xl-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9195","source_id":"9195","name":"Octane Orange XL High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-octane-orange-xl-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9195.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-octane-orange-xl-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9195.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-sour-pink-lemonade-thc3000-9196","source_id":"9196","name":"Sour Pink Lemonade THC3000","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-sour-pink-lemonade-thc3000-9196.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-sour-pink-lemonade-thc3000-9196.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-haha-psycho-punch-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9226","source_id":"9226","name":"HaHa Psycho Punch High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-haha-psycho-punch-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9226.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-haha-psycho-punch-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9226.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-razz-tiger-express-auto-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9227","source_id":"9227","name":"Razz Tiger Express Auto High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-razz-tiger-express-auto-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9227.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-razz-tiger-express-auto-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9227.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-shark-shock-diesel-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9228","source_id":"9228","name":"Shark Shock Diesel High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-shark-shock-diesel-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9228.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-shark-shock-diesel-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9228.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-amanita-dream-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11198","source_id":"11198","name":"Amanita Dream High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-amanita-dream-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11198.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-amanita-dream-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11198.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-black-domina-x-24k-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11199","source_id":"11199","name":"Black Domina X 24K High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-black-domina-x-24k-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11199.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-black-domina-x-24k-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11199.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-blue-magic-og-x-thc3000-11200","source_id":"11200","name":"Blue Magic OG X THC3000","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-blue-magic-og-x-thc3000-11200.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-blue-magic-og-x-thc3000-11200.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-grape-slur-p-4-thc3000-11201","source_id":"11201","name":"Grape Slur-P #4 THC3000","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-grape-slur-p-4-thc3000-11201.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-grape-slur-p-4-thc3000-11201.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-thc3000-supreme-jellybean-kush-11202","source_id":"11202","name":"THC3000 Supreme Jellybean Kush","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-thc3000-supreme-jellybean-kush-11202.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-thc3000-supreme-jellybean-kush-11202.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-lazer-lime-haze-delta-8-thc-p-thc-x-3g-disposable-11203","source_id":"11203","name":"Lazer Lime Haze Delta 8 + THC-P + THC-X 3g Disposable","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-lazer-lime-haze-delta-8-thc-p-thc-x-3g-disposable-11203.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-lazer-lime-haze-delta-8-thc-p-thc-x-3g-disposable-11203.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-octane-orange-xl-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11204","source_id":"11204","name":"Octane Orange XL High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-octane-orange-xl-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11204.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-octane-orange-xl-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11204.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-thc3000-sour-pink-lemonade-11205","source_id":"11205","name":"THC3000 Sour Pink Lemonade","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-thc3000-sour-pink-lemonade-11205.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-thc3000-sour-pink-lemonade-11205.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-haha-psycho-punch-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11206","source_id":"11206","name":"HaHa Psycho Punch High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-haha-psycho-punch-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11206.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-haha-psycho-punch-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11206.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-razz-tiger-express-auto-thc3000-11207","source_id":"11207","name":"Razz Tiger Express Auto THC3000","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-razz-tiger-express-auto-thc3000-11207.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-razz-tiger-express-auto-thc3000-11207.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"elf-thc-shark-shock-diesel-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11208","source_id":"11208","name":"Shark Shock Diesel High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable","price_aud":73.99,"currency":"AUD","specs":{"cartridge_capacity":"3g","cannabinoid_types":"Delta 8 + THC-P + THC-X","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-shark-shock-diesel-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11208.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-shark-shock-diesel-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11208.webp"},"brand":"ELF THC","series":"THC3000"},{"id":"cookies-pink-runtz-indica-hybrid-cookies-delta-8-disposable-3g-11341","source_id":"11341","name":"Pink Runtz (Indica Hybrid)-Cookies Delta 8 Disposable 3G","price_aud":33,"currency":"AUD","specs":{"strain":"Indica Hybrid","cartridge_capacity":"3g","cannabinoid":"Delta 8","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-pink-runtz-indica-hybrid-cookies-delta-8-disposable-3g-11341.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-pink-runtz-indica-hybrid-cookies-delta-8-disposable-3g-11341.webp"},"brand":"Cookies","series":""},{"id":"cookies-tequila-sunrise-indica-hybrid-delta-8-disposable-3g-11342","source_id":"11342","name":"Tequila Sunrise (Indica Hybrid) Delta 8 Disposable 3G","price_aud":33,"currency":"AUD","specs":{"strain":"Indica Hybrid","cartridge_capacity":"3g","cannabinoid":"Delta 8","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-tequila-sunrise-indica-hybrid-delta-8-disposable-3g-11342.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-tequila-sunrise-indica-hybrid-delta-8-disposable-3g-11342.webp"},"brand":"Cookies","series":""},{"id":"cookies-london-pound-cake-75-sativa-hybrid-delta-8-disposable-3g-11343","source_id":"11343","name":"London Pound Cake 75 (Sativa Hybrid) Delta 8 Disposable 3G","price_aud":33,"currency":"AUD","specs":{"strain":"Indica Hybrid","cartridge_capacity":"3g","cannabinoid":"Delta 8","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-london-pound-cake-75-sativa-hybrid-delta-8-disposable-3g-11343.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-london-pound-cake-75-sativa-hybrid-delta-8-disposable-3g-11343.webp"},"brand":"Cookies","series":""},{"id":"cookies-huckleberry-gelato-indica-hybrid-delta-8-disposable-3g-11344","source_id":"11344","name":"Huckleberry Gelato (Indica Hybrid) Delta 8 Disposable 3G","price_aud":33,"currency":"AUD","specs":{"strain":"Indica Hybrid","cartridge_capacity":"3g","cannabinoid":"Delta 8","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-huckleberry-gelato-indica-hybrid-delta-8-disposable-3g-11344.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-huckleberry-gelato-indica-hybrid-delta-8-disposable-3g-11344.webp"},"brand":"Cookies","series":""},{"id":"cookies-grandaddy-pluto-indica-hybrid-delta-8-disposable-3g-11345","source_id":"11345","name":"Grandaddy Pluto (Indica Hybrid) Delta-8 Disposable 3G","price_aud":33,"currency":"AUD","specs":{"strain":"Indica Hybrid","cartridge_capacity":"3g","cannabinoid":"Delta 8","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-grandaddy-pluto-indica-hybrid-delta-8-disposable-3g-11345.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-grandaddy-pluto-indica-hybrid-delta-8-disposable-3g-11345.webp"},"brand":"Cookies","series":""},{"id":"cookies-mexican-flan-delta-8-disposable-3g-11346","source_id":"11346","name":"Mexican Flan – Delta-8 Disposable 3G","price_aud":33,"currency":"AUD","specs":{"strain":"Indica Hybrid","cartridge_capacity":"3g","cannabinoid":"Delta 8","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-mexican-flan-delta-8-disposable-3g-11346.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-mexican-flan-delta-8-disposable-3g-11346.webp"},"brand":"Cookies","series":""},{"id":"cookies-fish-scale-indica-hybrid-delta-8-disposable-3g-11347","source_id":"11347","name":"Fish Scale (Indica Hybrid) Delta 8 Disposable 3G","price_aud":33,"currency":"AUD","specs":{"strain":"Indica Hybrid","cartridge_capacity":"3g","cannabinoid":"Delta 8","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-fish-scale-indica-hybrid-delta-8-disposable-3g-11347.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-fish-scale-indica-hybrid-delta-8-disposable-3g-11347.webp"},"brand":"Cookies","series":""},{"id":"cookies-cereal-a-la-mode-indica-hybrid-delta-8-disposable-3g-11348","source_id":"11348","name":"Cereal A La Mode (Indica Hybrid) Delta 8 Disposable 3G","price_aud":33,"currency":"AUD","specs":{"strain":"Indica Hybrid","cartridge_capacity":"3g","cannabinoid":"Delta 8","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-cereal-a-la-mode-indica-hybrid-delta-8-disposable-3g-11348.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-cereal-a-la-mode-indica-hybrid-delta-8-disposable-3g-11348.webp"},"brand":"Cookies","series":""},{"id":"cookies-bernie-hana-butter-indica-hybrid-delta-8-disposable-3g-11349","source_id":"11349","name":"Bernie Hana Butter (Indica Hybrid) Delta 8 Disposable 3G","price_aud":33,"currency":"AUD","specs":{"strain":"Indica Hybrid","cartridge_capacity":"3g","cannabinoid":"Delta 8","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-bernie-hana-butter-indica-hybrid-delta-8-disposable-3g-11349.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-bernie-hana-butter-indica-hybrid-delta-8-disposable-3g-11349.webp"},"brand":"Cookies","series":""},{"id":"just-delta-delta-8-disposable-cartridge-1000mg-strawberry-cough-11417","source_id":"11417","name":"Delta 8 Disposable Cartridge 1000mg Strawberry Cough","price_aud":39.99,"currency":"AUD","specs":{"cannabinoid":"Delta 8","size":"1000mg","type":"disposable","sativa_indica_hybrid":"sativa","flavor":"Strawberry"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposable-cartridge-1000mg-strawberry-cough-11417.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposable-cartridge-1000mg-strawberry-cough-11417.webp"},"brand":"Just Delta","series":""},{"id":"just-delta-delta-8-disposable-cartridge-1000mg-zkittlez-11418","source_id":"11418","name":"Delta 8 Disposable Cartridge 1000mg Zkittlez","price_aud":39.99,"currency":"AUD","specs":{"cannabinoid":"Delta 8","size":"1000mg","type":"disposable","sativa_indica_hybrid":"sativa","flavor":"Strawberry"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposable-cartridge-1000mg-zkittlez-11418.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposable-cartridge-1000mg-zkittlez-11418.webp"},"brand":"Just Delta","series":""},{"id":"just-delta-8-cartridge-6-pack-bubble-gum-galaxy-11419","source_id":"11419","name":"Delta 8 Cartridge 6 Pack Bubble Gum Galaxy","price_aud":179.99,"currency":"AUD","specs":{"cartridge_count":"6","cartridge_capacity":"1000mg","cannabinoid":"Delta 8","packaging_type":"Box"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/just-delta-8-cartridge-6-pack-bubble-gum-galaxy-11419.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/just-delta-8-cartridge-6-pack-bubble-gum-galaxy-11419.webp"},"brand":"Just Delta","series":""},{"id":"just-delta-delta-8-cartridges-6-pack-solar-flare-lemonade-11420","source_id":"11420","name":"Delta 8 Cartridges 6 Pack Solar Flare Lemonade","price_aud":179.99,"currency":"AUD","specs":{"cartridge_count":"6","cartridge_capacity":"1000mg","cannabinoid":"Delta 8","packaging_type":"Box"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-cartridges-6-pack-solar-flare-lemonade-11420.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-cartridges-6-pack-solar-flare-lemonade-11420.webp"},"brand":"Just Delta","series":""},{"id":"just-delta-delta-8-disposables-6-pack-zkittlez-11421","source_id":"11421","name":"Delta 8 Disposables 6 Pack Zkittlez","price_aud":179.99,"currency":"AUD","specs":{"cartridge_count":"6","cartridge_capacity":"1000mg","cannabinoid":"Delta 8","packaging_type":"Box"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposables-6-pack-zkittlez-11421.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposables-6-pack-zkittlez-11421.webp"},"brand":"Just Delta","series":""},{"id":"just-delta-delta-8-disposables-6-pack-pineapple-express-11450","source_id":"11450","name":"Delta 8 Disposables 6 Pack Pineapple Express","price_aud":179.99,"currency":"AUD","specs":{"cartridge_count":"6","cartridge_capacity":"1000mg","cannabinoid":"Delta 8","packaging_type":"Box"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposables-6-pack-pineapple-express-11450.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposables-6-pack-pineapple-express-11450.webp"},"brand":"Just Delta","series":""}]}
+{
+  "path": [
+    "cannabinoids",
+    "cannabinoids-vapes",
+    "delta-vapes"
+  ],
+  "file": "cannabinoids/cannabinoids-vapes/delta-vapes.json",
+  "brands": [
+    {
+      "name": "Ghost",
+      "slug": "ghost",
+      "product_count": 1
+    },
+    {
+      "name": "Haze",
+      "slug": "haze",
+      "product_count": 1
+    },
+    {
+      "name": "ELF THC",
+      "slug": "elf-thc",
+      "product_count": 22
+    },
+    {
+      "name": "Cookies",
+      "slug": "cookies",
+      "product_count": 9
+    },
+    {
+      "name": "Just Delta",
+      "slug": "just-delta",
+      "product_count": 6
+    }
+  ],
+  "series_index": {
+    "ELF THC": [
+      "THC3000"
+    ]
+  },
+  "products": [
+    {
+      "id": "ghost-zkittles-5-one-gram-disposables-1973",
+      "source_id": "1973",
+      "name": "Zkittles (5) One Gram Disposables",
+      "price_aud": 107.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "1 gram",
+        "quantity": "5"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ghost-zkittles-5-one-gram-disposables-1973.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ghost-zkittles-5-one-gram-disposables-1973.webp"
+      },
+      "brand": "Ghost",
+      "series": ""
+    },
+    {
+      "id": "haze-hybrid-surreal-blend-disposable-vape-3ml-cotton-candy-6pc-display-3957",
+      "source_id": "3957",
+      "name": "Hybrid Surreal Blend Disposable Vape – 3mL / Cotton Candy – 6PC DISPLAY",
+      "price_aud": 239.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3ml",
+        "flavor": "Cotton Candy",
+        "cannabinoids": "D8, CBG, D10",
+        "type": "disposable",
+        "blend": "Hybrid",
+        "resin_type": "Live Resin",
+        "rechargeable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/haze-hybrid-surreal-blend-disposable-vape-3ml-cotton-candy-6pc-display-3957.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/haze-hybrid-surreal-blend-disposable-vape-3ml-cotton-candy-6pc-display-3957.webp"
+      },
+      "brand": "Haze",
+      "series": ""
+    },
+    {
+      "id": "elf-thc-amanita-dream-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9189",
+      "source_id": "9189",
+      "name": "Amanita Dream High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-amanita-dream-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9189.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-amanita-dream-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9189.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-black-domina-x-24k-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9190",
+      "source_id": "9190",
+      "name": "Black Domina X 24K High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-black-domina-x-24k-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9190.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-black-domina-x-24k-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9190.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-blue-magic-og-x-3000-9191",
+      "source_id": "9191",
+      "name": "Blue Magic OG X 3000",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-blue-magic-og-x-3000-9191.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-blue-magic-og-x-3000-9191.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-grape-slur-p-4-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9192",
+      "source_id": "9192",
+      "name": "Grape Slur-P #4 High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-grape-slur-p-4-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9192.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-grape-slur-p-4-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9192.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-thc3000-supreme-jellybean-kush-9193",
+      "source_id": "9193",
+      "name": "THC3000 Supreme Jellybean Kush",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-thc3000-supreme-jellybean-kush-9193.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-thc3000-supreme-jellybean-kush-9193.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-lazer-lime-haze-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9194",
+      "source_id": "9194",
+      "name": "Lazer Lime Haze High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-lazer-lime-haze-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9194.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-lazer-lime-haze-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9194.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-octane-orange-xl-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9195",
+      "source_id": "9195",
+      "name": "Octane Orange XL High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-octane-orange-xl-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9195.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-octane-orange-xl-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9195.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-sour-pink-lemonade-thc3000-9196",
+      "source_id": "9196",
+      "name": "Sour Pink Lemonade THC3000",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-sour-pink-lemonade-thc3000-9196.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-sour-pink-lemonade-thc3000-9196.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-haha-psycho-punch-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9226",
+      "source_id": "9226",
+      "name": "HaHa Psycho Punch High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-haha-psycho-punch-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9226.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-haha-psycho-punch-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9226.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-razz-tiger-express-auto-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9227",
+      "source_id": "9227",
+      "name": "Razz Tiger Express Auto High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-razz-tiger-express-auto-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9227.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-razz-tiger-express-auto-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9227.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-shark-shock-diesel-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9228",
+      "source_id": "9228",
+      "name": "Shark Shock Diesel High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-shark-shock-diesel-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9228.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-shark-shock-diesel-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9228.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-amanita-dream-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11198",
+      "source_id": "11198",
+      "name": "Amanita Dream High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-amanita-dream-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11198.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-amanita-dream-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11198.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-black-domina-x-24k-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11199",
+      "source_id": "11199",
+      "name": "Black Domina X 24K High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-black-domina-x-24k-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11199.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-black-domina-x-24k-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11199.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-blue-magic-og-x-thc3000-11200",
+      "source_id": "11200",
+      "name": "Blue Magic OG X THC3000",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-blue-magic-og-x-thc3000-11200.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-blue-magic-og-x-thc3000-11200.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-grape-slur-p-4-thc3000-11201",
+      "source_id": "11201",
+      "name": "Grape Slur-P #4 THC3000",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-grape-slur-p-4-thc3000-11201.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-grape-slur-p-4-thc3000-11201.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-thc3000-supreme-jellybean-kush-11202",
+      "source_id": "11202",
+      "name": "THC3000 Supreme Jellybean Kush",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-thc3000-supreme-jellybean-kush-11202.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-thc3000-supreme-jellybean-kush-11202.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-lazer-lime-haze-delta-8-thc-p-thc-x-3g-disposable-11203",
+      "source_id": "11203",
+      "name": "Lazer Lime Haze Delta 8 + THC-P + THC-X 3g Disposable",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-lazer-lime-haze-delta-8-thc-p-thc-x-3g-disposable-11203.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-lazer-lime-haze-delta-8-thc-p-thc-x-3g-disposable-11203.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-octane-orange-xl-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11204",
+      "source_id": "11204",
+      "name": "Octane Orange XL High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-octane-orange-xl-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11204.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-octane-orange-xl-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11204.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-thc3000-sour-pink-lemonade-11205",
+      "source_id": "11205",
+      "name": "THC3000 Sour Pink Lemonade",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-thc3000-sour-pink-lemonade-11205.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-thc3000-sour-pink-lemonade-11205.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-haha-psycho-punch-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11206",
+      "source_id": "11206",
+      "name": "HaHa Psycho Punch High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-haha-psycho-punch-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11206.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-haha-psycho-punch-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11206.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-razz-tiger-express-auto-thc3000-11207",
+      "source_id": "11207",
+      "name": "Razz Tiger Express Auto THC3000",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-razz-tiger-express-auto-thc3000-11207.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-razz-tiger-express-auto-thc3000-11207.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "elf-thc-shark-shock-diesel-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11208",
+      "source_id": "11208",
+      "name": "Shark Shock Diesel High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "price_aud": 83.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "3g",
+        "cannabinoid_types": "Delta 8 + THC-P + THC-X",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/elf-thc-shark-shock-diesel-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11208.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/elf-thc-shark-shock-diesel-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11208.webp"
+      },
+      "brand": "ELF THC",
+      "series": "THC3000"
+    },
+    {
+      "id": "cookies-pink-runtz-indica-hybrid-cookies-delta-8-disposable-3g-11341",
+      "source_id": "11341",
+      "name": "Pink Runtz (Indica Hybrid)-Cookies Delta 8 Disposable 3G",
+      "price_aud": 42.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Indica Hybrid",
+        "cartridge_capacity": "3g",
+        "cannabinoid": "Delta 8",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-pink-runtz-indica-hybrid-cookies-delta-8-disposable-3g-11341.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-pink-runtz-indica-hybrid-cookies-delta-8-disposable-3g-11341.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "cookies-tequila-sunrise-indica-hybrid-delta-8-disposable-3g-11342",
+      "source_id": "11342",
+      "name": "Tequila Sunrise (Indica Hybrid) Delta 8 Disposable 3G",
+      "price_aud": 42.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Indica Hybrid",
+        "cartridge_capacity": "3g",
+        "cannabinoid": "Delta 8",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-tequila-sunrise-indica-hybrid-delta-8-disposable-3g-11342.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-tequila-sunrise-indica-hybrid-delta-8-disposable-3g-11342.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "cookies-london-pound-cake-75-sativa-hybrid-delta-8-disposable-3g-11343",
+      "source_id": "11343",
+      "name": "London Pound Cake 75 (Sativa Hybrid) Delta 8 Disposable 3G",
+      "price_aud": 42.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Indica Hybrid",
+        "cartridge_capacity": "3g",
+        "cannabinoid": "Delta 8",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-london-pound-cake-75-sativa-hybrid-delta-8-disposable-3g-11343.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-london-pound-cake-75-sativa-hybrid-delta-8-disposable-3g-11343.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "cookies-huckleberry-gelato-indica-hybrid-delta-8-disposable-3g-11344",
+      "source_id": "11344",
+      "name": "Huckleberry Gelato (Indica Hybrid) Delta 8 Disposable 3G",
+      "price_aud": 42.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Indica Hybrid",
+        "cartridge_capacity": "3g",
+        "cannabinoid": "Delta 8",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-huckleberry-gelato-indica-hybrid-delta-8-disposable-3g-11344.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-huckleberry-gelato-indica-hybrid-delta-8-disposable-3g-11344.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "cookies-grandaddy-pluto-indica-hybrid-delta-8-disposable-3g-11345",
+      "source_id": "11345",
+      "name": "Grandaddy Pluto (Indica Hybrid) Delta-8 Disposable 3G",
+      "price_aud": 42.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Indica Hybrid",
+        "cartridge_capacity": "3g",
+        "cannabinoid": "Delta 8",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-grandaddy-pluto-indica-hybrid-delta-8-disposable-3g-11345.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-grandaddy-pluto-indica-hybrid-delta-8-disposable-3g-11345.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "cookies-mexican-flan-delta-8-disposable-3g-11346",
+      "source_id": "11346",
+      "name": "Mexican Flan – Delta-8 Disposable 3G",
+      "price_aud": 42.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Indica Hybrid",
+        "cartridge_capacity": "3g",
+        "cannabinoid": "Delta 8",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-mexican-flan-delta-8-disposable-3g-11346.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-mexican-flan-delta-8-disposable-3g-11346.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "cookies-fish-scale-indica-hybrid-delta-8-disposable-3g-11347",
+      "source_id": "11347",
+      "name": "Fish Scale (Indica Hybrid) Delta 8 Disposable 3G",
+      "price_aud": 42.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Indica Hybrid",
+        "cartridge_capacity": "3g",
+        "cannabinoid": "Delta 8",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-fish-scale-indica-hybrid-delta-8-disposable-3g-11347.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-fish-scale-indica-hybrid-delta-8-disposable-3g-11347.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "cookies-cereal-a-la-mode-indica-hybrid-delta-8-disposable-3g-11348",
+      "source_id": "11348",
+      "name": "Cereal A La Mode (Indica Hybrid) Delta 8 Disposable 3G",
+      "price_aud": 42.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Indica Hybrid",
+        "cartridge_capacity": "3g",
+        "cannabinoid": "Delta 8",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-cereal-a-la-mode-indica-hybrid-delta-8-disposable-3g-11348.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-cereal-a-la-mode-indica-hybrid-delta-8-disposable-3g-11348.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "cookies-bernie-hana-butter-indica-hybrid-delta-8-disposable-3g-11349",
+      "source_id": "11349",
+      "name": "Bernie Hana Butter (Indica Hybrid) Delta 8 Disposable 3G",
+      "price_aud": 42.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Indica Hybrid",
+        "cartridge_capacity": "3g",
+        "cannabinoid": "Delta 8",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-bernie-hana-butter-indica-hybrid-delta-8-disposable-3g-11349.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-bernie-hana-butter-indica-hybrid-delta-8-disposable-3g-11349.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "just-delta-delta-8-disposable-cartridge-1000mg-strawberry-cough-11417",
+      "source_id": "11417",
+      "name": "Delta 8 Disposable Cartridge 1000mg Strawberry Cough",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "cannabinoid": "Delta 8",
+        "size": "1000mg",
+        "type": "disposable",
+        "sativa_indica_hybrid": "sativa",
+        "flavor": "Strawberry"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposable-cartridge-1000mg-strawberry-cough-11417.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposable-cartridge-1000mg-strawberry-cough-11417.webp"
+      },
+      "brand": "Just Delta",
+      "series": ""
+    },
+    {
+      "id": "just-delta-delta-8-disposable-cartridge-1000mg-zkittlez-11418",
+      "source_id": "11418",
+      "name": "Delta 8 Disposable Cartridge 1000mg Zkittlez",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "cannabinoid": "Delta 8",
+        "size": "1000mg",
+        "type": "disposable",
+        "sativa_indica_hybrid": "sativa",
+        "flavor": "Strawberry"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposable-cartridge-1000mg-zkittlez-11418.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposable-cartridge-1000mg-zkittlez-11418.webp"
+      },
+      "brand": "Just Delta",
+      "series": ""
+    },
+    {
+      "id": "just-delta-8-cartridge-6-pack-bubble-gum-galaxy-11419",
+      "source_id": "11419",
+      "name": "Delta 8 Cartridge 6 Pack Bubble Gum Galaxy",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_count": "6",
+        "cartridge_capacity": "1000mg",
+        "cannabinoid": "Delta 8",
+        "packaging_type": "Box"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/just-delta-8-cartridge-6-pack-bubble-gum-galaxy-11419.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/just-delta-8-cartridge-6-pack-bubble-gum-galaxy-11419.webp"
+      },
+      "brand": "Just Delta",
+      "series": ""
+    },
+    {
+      "id": "just-delta-delta-8-cartridges-6-pack-solar-flare-lemonade-11420",
+      "source_id": "11420",
+      "name": "Delta 8 Cartridges 6 Pack Solar Flare Lemonade",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_count": "6",
+        "cartridge_capacity": "1000mg",
+        "cannabinoid": "Delta 8",
+        "packaging_type": "Box"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-cartridges-6-pack-solar-flare-lemonade-11420.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-cartridges-6-pack-solar-flare-lemonade-11420.webp"
+      },
+      "brand": "Just Delta",
+      "series": ""
+    },
+    {
+      "id": "just-delta-delta-8-disposables-6-pack-zkittlez-11421",
+      "source_id": "11421",
+      "name": "Delta 8 Disposables 6 Pack Zkittlez",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_count": "6",
+        "cartridge_capacity": "1000mg",
+        "cannabinoid": "Delta 8",
+        "packaging_type": "Box"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposables-6-pack-zkittlez-11421.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposables-6-pack-zkittlez-11421.webp"
+      },
+      "brand": "Just Delta",
+      "series": ""
+    },
+    {
+      "id": "just-delta-delta-8-disposables-6-pack-pineapple-express-11450",
+      "source_id": "11450",
+      "name": "Delta 8 Disposables 6 Pack Pineapple Express",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_count": "6",
+        "cartridge_capacity": "1000mg",
+        "cannabinoid": "Delta 8",
+        "packaging_type": "Box"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposables-6-pack-pineapple-express-11450.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/just-delta-delta-8-disposables-6-pack-pineapple-express-11450.webp"
+      },
+      "brand": "Just Delta",
+      "series": ""
+    }
+  ]
+}

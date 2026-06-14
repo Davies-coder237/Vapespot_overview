@@ -1,1 +1,37 @@
-{"path":["psychedelics","dmt"],"file":"psychedelics/dmt.json","brands":[{"name":"Shroom Bros","slug":"shroom-bros","product_count":1}],"series_index":{},"products":[{"id":"shroom-bros-dmt-8127","source_id":"8127","name":"DMT","price_aud":69.99,"currency":"AUD","specs":{"volume":"5ml","dmt_concentration":"400mg DMT / 5ml","ingredients":"N,N-Dimethyltryptamine","recommended_for":"Adults","usage_instructions":"Use with caution"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/shroom-bros-dmt-8127.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/shroom-bros-dmt-8127.webp"},"brand":"Shroom Bros","series":""}]}
+{
+  "path": [
+    "psychedelics",
+    "dmt"
+  ],
+  "file": "psychedelics/dmt.json",
+  "brands": [
+    {
+      "name": "Shroom Bros",
+      "slug": "shroom-bros",
+      "product_count": 1
+    }
+  ],
+  "series_index": {},
+  "products": [
+    {
+      "id": "shroom-bros-dmt-8127",
+      "source_id": "8127",
+      "name": "DMT",
+      "price_aud": 79.99,
+      "currency": "AUD",
+      "specs": {
+        "volume": "5ml",
+        "dmt_concentration": "400mg DMT / 5ml",
+        "ingredients": "N,N-Dimethyltryptamine",
+        "recommended_for": "Adults",
+        "usage_instructions": "Use with caution"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/shroom-bros-dmt-8127.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/shroom-bros-dmt-8127.webp"
+      },
+      "brand": "Shroom Bros",
+      "series": ""
+    }
+  ]
+}

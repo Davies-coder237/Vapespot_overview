@@ -1,1 +1,1728 @@
-{"path":["vaporizers","concentrate-wax","portable"],"file":"vaporizers/concentrate-wax/portable.json","brands":[{"name":"O.pen","slug":"o.pen","product_count":2},{"name":"Evolv","slug":"evolv","product_count":1},{"name":"Dr. Dabber","slug":"dr.-dabber","product_count":4},{"name":"Puffco","slug":"puffco","product_count":2},{"name":"Cookies","slug":"cookies","product_count":1},{"name":"Pulsar","slug":"pulsar","product_count":15},{"name":"Groove","slug":"groove","product_count":1},{"name":"Yocan","slug":"yocan","product_count":8},{"name":"Lookah","slug":"lookah","product_count":4},{"name":"Ooze","slug":"ooze","product_count":5},{"name":"G Pen","slug":"g-pen","product_count":8},{"name":"Boundless Vaporizers","slug":"boundless-vaporizers","product_count":1},{"name":"Focus V","slug":"focus-v","product_count":1},{"name":"Vivant","slug":"vivant","product_count":2},{"name":"XVape","slug":"xvape","product_count":1},{"name":"Hitoki","slug":"hitoki","product_count":2},{"name":"Ispire","slug":"ispire","product_count":1},{"name":"Origin","slug":"origin","product_count":1}],"series_index":{"Vivant":["Dabox Pro"]},"products":[{"id":"open-sesh-510-e-rig-2517","source_id":"2517","name":"Sesh 510 e-rig","price_aud":99.95,"currency":"AUD","specs":{"compatible_with":"510-thread cartridges and concentrates","activation":"button-activated","adjustable_voltage":"yes","heat_settings":"3","battery_capacity":"650mAh","charge_time":"1-2 hours","dimensions":"4.5 x 2.5 x 2 inches","weight":"4 ounces","material":"aluminum alloy, glass","included":"device, glass bubbler attachment, dab tool, USB charging cable","features":"automatic shut-off, haptic feedback"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/open-sesh-510-e-rig-2517.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/open-sesh-510-e-rig-2517.webp"},"brand":"O.pen","series":""},{"id":"open-20-conceal-vape-pen-battery-3750","source_id":"3750","name":"2.0 Conceal Vape Pen Battery","price_aud":59.95,"currency":"AUD","specs":{"battery_capacity":"500mAh","voltage_settings":"2.4V, 3.2V, 4.0V","preheat_function":"Yes","cartridge_compatibility":"510 thread","charging_method":"Micro-USB","height":"76mm","width":"38mm","depth":"19mm","material":"Aluminum Alloy","activation":"Button-activated","adjustable_airflow":"No","display_screen":"No","short_circuit_protection":"Yes","overcharge_protection":"Yes","overtime_protection":"Yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/open-20-conceal-vape-pen-battery-3750.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/open-20-conceal-vape-pen-battery-3750.webp"},"brand":"O.pen","series":""},{"id":"evolv-cricket-portable-dab-rig-2518","source_id":"2518","name":"Cricket Portable Dab Rig","price_aud":250,"currency":"AUD","specs":{"adjustable_temperature":"Yes","temperature_control":"Yes, single degree increments","display":"OLED","airflow":"Advanced Geometry","heating_time":"Instant","cooling_time":"5 seconds","material_compatibility":"Concentrates","dab_tool_included":"Yes","easy_access_cleaning":"Yes","pocket_friendly":"Yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/evolv-cricket-portable-dab-rig-2518.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/evolv-cricket-portable-dab-rig-2518.webp"},"brand":"Evolv","series":""},{"id":"dr-dabber-ghost-concentrate-vaporizer-650mah-2519","source_id":"2519","name":"Ghost Concentrate Vaporizer – 650mAh","price_aud":119.95,"currency":"AUD","specs":{"battery_capacity":"650mAh","voltage_settings":"3.7V","coil_material":"Titanium","atomizer_type":"Wickless","compatible_with":"Concentrates","preheat_function":"Yes","charging_method":"USB","height":"120mm","diameter":"14mm","weight":"50g","material":"Stainless Steel","available_colors":"Black"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dr-dabber-ghost-concentrate-vaporizer-650mah-2519.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dr-dabber-ghost-concentrate-vaporizer-650mah-2519.webp"},"brand":"Dr. Dabber","series":""},{"id":"dr-dabber-light-vaporizer-kit-140mah-2852","source_id":"2852","name":"Light Vaporizer Kit | 140mAh","price_aud":49.95,"currency":"AUD","specs":{"battery_capacity":"140mAh","voltage_levels":"3","coil_material":"Titanium","atomizer_compatibility":"Dr. Dabber Light Atomizer","charging_method":"USB","height":"10.16 cm","diameter":"0.95 cm","weight":"14.2 g","material":"Anodized Aluminum","heat_up_time":"5-10 seconds","warranty":"1 year limited"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dr-dabber-light-vaporizer-kit-140mah-2852.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dr-dabber-light-vaporizer-kit-140mah-2852.webp"},"brand":"Dr. Dabber","series":""},{"id":"dr-dabber-light-vaporizer-kit-140mah-2970","source_id":"2970","name":"Light Vaporizer Kit - 140mAh","price_aud":109.99,"currency":"AUD","specs":{"battery_capacity":"140mAh","voltage_levels":"3","coil_type":"Quartz","compatible_concentrates":"Wax","preheat_function":"Yes","charging_method":"USB","dimensions":"9.5cm x 1cm","weight":"14g","material":"Stainless Steel","connection":"510 Thread","activation":"Button-activated","heat_up_time":"5-10 seconds","sessions_per_charge":"20","warranty":"1 Year Limited"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dr-dabber-light-vaporizer-kit-140mah-2970.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dr-dabber-light-vaporizer-kit-140mah-2970.webp"},"brand":"Dr. Dabber","series":""},{"id":"dr-dabber-stella-vaporizer-and-portable-wax-pen-3000","source_id":"3000","name":"Stella Vaporizer and Portable Wax Pen","price_aud":149.95,"currency":"AUD","specs":{"material":"Aluminum Alloy","dimensions":"105mm x 19mm","weight":"50g","battery_capacity":"600mAh","voltage_levels":"3","preheat_function":"Yes","charging_time":"1-2 hours","connection":"510 Thread","coil_material":"Quartz","chamber_material":"Ceramic","airflow":"Adjustable","heat_up_time":"5-10 seconds","compatible_concentrates":"Wax, Shatter, Crumble, Rosin","features":"Pass-through charging, haptic feedback","includes":"Stella Vaporizer, Loading Tool, USB-C Charging Cable"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dr-dabber-stella-vaporizer-and-portable-wax-pen-3000.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dr-dabber-stella-vaporizer-and-portable-wax-pen-3000.webp"},"brand":"Dr. Dabber","series":""},{"id":"puffco-plus-portable-concentrate-vaporizer-520mah-2520","source_id":"2520","name":"Plus Portable Concentrate Vaporizer | 520mAh","price_aud":149.99,"currency":"AUD","specs":{"battery_capacity":"520mAh","coil_material":"Ceramic","chamber_capacity":"0.5g","voltage_levels":"3","heat_up_time":"Instant","dimensions":"13mm diameter","weight":"60g","charging_time":"45 minutes","connection":"510 thread","features":"Coilless chamber, built-in extendable loading tool, carb cap","included_accessories":"USB charger, cleaning swabs"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/puffco-plus-portable-concentrate-vaporizer-520mah-2520.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/puffco-plus-portable-concentrate-vaporizer-520mah-2520.webp"},"brand":"Puffco","series":""},{"id":"puffco-proxy-8395","source_id":"8395","name":"Proxy","price_aud":449.95,"currency":"AUD","specs":{"compatible_with":"concentrates","heating_style":"conduction","temperature_control":"4 pre-set heat settings","heat_up_time":"instant","battery_capacity":"1350mAh","charging_time":"90 minutes","dimensions":"42mm x 42mm x 129.5mm","weight":"90g","materials":"glass, ceramic","features":"3D Chamber, Boost Mode, USB-C Charging, carrying case included"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/puffco-proxy-8395.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/puffco-proxy-8395.webp"},"brand":"Puffco","series":""},{"id":"cookies-x-g-pen-roam-portable-e-rig-vaporizer-2521","source_id":"2521","name":"X G Pen Roam – Portable E-Rig Vaporizer","price_aud":250,"currency":"AUD","specs":{"vaporizer_type":"portable e-rig","compatible_material":"wax concentrates","heating_method":"ceramic chamber","temperature_control":"adjustable","temperature_range":"600-800°F (315-427°C)","battery_capacity":"1300mAh","charging_time":"2-3 hours","display_type":"LED","water_filtration":"hydro-tube","housing_material":"aluminum alloy","dimensions":"129mm x 33mm","weight":"181g","connection":"magnetic","heat-up_time":"5 seconds","airflow":"adjustable","vibration":"haptic feedback"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-x-g-pen-roam-portable-e-rig-vaporizer-2521.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-x-g-pen-roam-portable-e-rig-vaporizer-2521.webp"},"brand":"Cookies","series":""},{"id":"pulsar-apx-wax-v3-concentrate-vape-2522","source_id":"2522","name":"APX Wax V3 Concentrate Vape","price_aud":99.95,"currency":"AUD","specs":{"battery_capacity":"1100mAh","voltage_levels":"3.2V, 3.7V, 4.2V","heating_element":"Quartz","coil_type":"Triple Quartz Coil","tank_capacity":"0.4 grams","charging_type":"Micro-USB","dimensions":"3.5\" x 1.5\" x 1\"","weight":"4oz","material":"Aluminum Alloy","preheat_function":"Yes","variable_voltage":"Yes","short_circuit_protection":"Yes","overcharge_protection":"Yes","overheat_protection":"Yes","automatic_shutoff":"Yes","heat_up_time":"5 seconds","temperature_range":"N/A","resistance":"N/A","airflow":"Fixed","screen_type":"N/A","haptic_feedback":"No","water_filtration_compatibility":"No","concentrate_compatibility":"Wax, Concentrates","warranty":"6-month limited warranty"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-apx-wax-v3-concentrate-vape-2522.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-apx-wax-v3-concentrate-vape-2522.webp"},"brand":"Pulsar","series":""},{"id":"pulsar-barb-fire-variable-voltage-wax-vaporizer-2582","source_id":"2582","name":"Barb Fire Variable Voltage Wax Vaporizer","price_aud":99.95,"currency":"AUD","specs":{"material":"Quartz","coil_type":"Dual Quartz Coil","voltage_levels":"3.0V, 3.4V, 3.8V","battery_capacity":"650mAh","preheat_function":"Yes","connection":"510 Thread","dimensions":"4.75 inches","variable_voltage":"Yes","heat_time":"15 seconds","charging_time":"2 hours","features":"LED indicator, Auto shut-off"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-barb-fire-variable-voltage-wax-vaporizer-2582.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-barb-fire-variable-voltage-wax-vaporizer-2582.webp"},"brand":"Pulsar","series":""},{"id":"pulsar-apx-volt-v3-vv-concentrate-vaporizer-1100mah-2583","source_id":"2583","name":"APX Volt V3 VV Concentrate Vaporizer – 1100mAh","price_aud":99.95,"currency":"AUD","specs":{"battery_capacity":"1100mAh","voltage_settings":"2.5V, 2.8V, 3.2V, 3.7V","coil_material":"Quartz","tank_capacity":"0.5ml","charging_type":"Micro-USB","dimensions":"3.5\" tall","heat_up_time":"5 seconds","features":"Variable Voltage, Borosilicate Glass","compatible_with":"Concentrates","construction":"Aluminum Alloy","resistance":"0.4 Ohm"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-apx-volt-v3-vv-concentrate-vaporizer-1100mah-2583.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-apx-volt-v3-vv-concentrate-vaporizer-1100mah-2583.webp"},"brand":"Pulsar","series":""},{"id":"pulsar-barb-fire-slim-variable-voltage-2-in-1-vape-800mah-2585","source_id":"2585","name":"Barb Fire Slim Variable Voltage 2-in-1 Vape | 800mAh","price_aud":69.95,"currency":"AUD","specs":{"battery_capacity":"800mAh","voltage_settings":"Variable Voltage","coil_type":"Quartz","connection":"510 Thread","compatible_with":"Concentrates","preheat_function":"Yes","construction":"Metal","charging_method":"USB","height":"110mm","diameter":"14mm"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-barb-fire-slim-variable-voltage-2-in-1-vape-800mah-2585.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-barb-fire-slim-variable-voltage-2-in-1-vape-800mah-2585.webp"},"brand":"Pulsar","series":""},{"id":"pulsar-duplocart-h2o-thick-oil-vaporizer-w-water-pipe-adapter-2618","source_id":"2618","name":"DuploCart H2O Thick Oil Vaporizer w/ Water Pipe Adapter","price_aud":129.95,"currency":"AUD","specs":{"compatible_with":"thick oil cartridges","connection":"magnetic","battery_capacity":"650mAh","voltage_settings":"3.4V / 3.6V / 3.8V","preheat_function":"yes","water_pipe_adapter":"included","charging_method":"USB-C","material":"aluminum alloy","height":"3.25 inches","width":"1.5 inches","depth":"1 inch","weight":"3.5 oz","cartridge_capacity":"0.5mL / 1.0mL / 2.0mL","display":"LED"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-duplocart-h2o-thick-oil-vaporizer-w-water-pipe-adapter-2618.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-duplocart-h2o-thick-oil-vaporizer-w-water-pipe-adapter-2618.webp"},"brand":"Pulsar","series":""},{"id":"pulsar-barb-fire-h2o-variable-voltage-wax-vape-kit-1450mah-2650","source_id":"2650","name":"Barb Fire H2O Variable Voltage Wax Vape Kit – 1450mAh","price_aud":149.95,"currency":"AUD","specs":{"battery_capacity":"1450mAh","voltage_control":"Variable Voltage","coil_type":"Quartz Coil","connection":"510 Thread","material":"Glass, Metal","dimensions":"5.5 inches","water_filtration":"Yes","heat_settings":"3","preheat_function":"Yes","charging_method":"USB","dab_tool_included":"Yes","user_manual_included":"Yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-barb-fire-h2o-variable-voltage-wax-vape-kit-1450mah-2650.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-barb-fire-h2o-variable-voltage-wax-vape-kit-1450mah-2650.webp"},"brand":"Pulsar","series":""},{"id":"pulsar-range-modular-vape-2725","source_id":"2725","name":"Range Modular Vape","price_aud":149,"currency":"AUD","specs":{"compatible_with":"wax concentrates","battery_capacity":"650mAh","voltage_settings":"3.4V, 3.6V, 3.8V","preheat_function":"yes","charging_port":"USB-C","coil_type":"dual quartz coil, ceramic coil","water_bubbler_attachment":"optional","material":"aluminum alloy","height":"4.5 inches","diameter":"0.75 inches","weight":"3 oz","available_colors":"black, silver","features":"modular design, magnetic connections, haptic feedback"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-range-modular-vape-2725.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-range-modular-vape-2725.webp"},"brand":"Pulsar","series":""},{"id":"pulsar-dl-wax-vape-bar-650mah-2902","source_id":"2902","name":"DL Wax Vape Bar | 650mAh","price_aud":79.95,"currency":"AUD","specs":{"battery_capacity":"650mAh","voltage_levels":"H/M/L","preheat":"yes","connection":"magnetic","display":"OLED","material":"aluminum alloy","charging_port":"USB-C","dimensions":"60mm x 35mm x 25mm"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-dl-wax-vape-bar-650mah-2902.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-dl-wax-vape-bar-650mah-2902.webp"},"brand":"Pulsar","series":""},{"id":"pulsar-boho-faces-variable-voltage-barb-fire-kit-1450mah-2967","source_id":"2967","name":"Boho Faces Variable Voltage Barb Fire Kit -1450mAh","price_aud":178,"currency":"AUD","specs":{"wattage":"Variable Voltage","battery_type":"1450mAh","charging":"USB-C"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-boho-faces-variable-voltage-barb-fire-kit-1450mah-2967.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-boho-faces-variable-voltage-barb-fire-kit-1450mah-2967.webp"},"brand":"Pulsar","series":""},{"id":"pulsar-melting-mushrooms-variable-voltage-barb-fire-kit-1450mah-3067","source_id":"3067","name":"Melting Mushrooms Variable Voltage Barb Fire Kit -1450mAh","price_aud":149.95,"currency":"AUD","specs":{"battery_capacity":"1450mAh","voltage_levels":"3","voltage_range":"3.0-4.0V","preheat_function":"Yes","atomizer_type":"Coil-less","coil_material":"Quartz","connection":"510 thread","dimensions":"5.5 inches","material":"Metal","features":"Variable Voltage, Haptic Feedback, Hands Free Mode","design":"Melting Mushrooms"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-melting-mushrooms-variable-voltage-barb-fire-kit-1450mah-3067.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-melting-mushrooms-variable-voltage-barb-fire-kit-1450mah-3067.webp"},"brand":"Pulsar","series":""},{"id":"pulsar-micro-dose-2-in-1-vaporizer-pen-3125","source_id":"3125","name":"Micro Dose 2-in-1 Vaporizer Pen","price_aud":79.99,"currency":"AUD","specs":{"compatible_with":"Concentrates","battery_capacity":"350mAh","voltage_levels":"3.0V, 3.4V, 3.8V","preheat_function":"Yes","charging_method":"USB","connection":"Magnetic","material":"Metal","height":"12cm","diameter":"1.4cm","weight":"30g","available_colors":"Black, Silver, Gold","features":"2-in-1 functionality for concentrates and thick oils, single button operation, LED indicator"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-micro-dose-2-in-1-vaporizer-pen-3125.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-micro-dose-2-in-1-vaporizer-pen-3125.webp"},"brand":"Pulsar","series":""},{"id":"pulsar-gigi-oil-cartridge-vaporizer-3348","source_id":"3348","name":"Gigi Oil Cartridge Vaporizer","price_aud":59.95,"currency":"AUD","specs":{"battery_capacity":"650mAh","voltage_levels":"3.4V, 3.6V, 3.8V","preheat_function":"Yes","cartridge_compatibility":"510-threaded","charging_port":"USB-C","height":"2.3 inches","width":"1.4 inches","depth":"0.7 inches","material":"Silicone","variable_voltage":"Yes","display_screen":"No","activation":"Button-activated","cut_off_time":"15 seconds"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-gigi-oil-cartridge-vaporizer-3348.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-gigi-oil-cartridge-vaporizer-3348.webp"},"brand":"Pulsar","series":""},{"id":"pulsar-510-dunk-2-in-1-variable-voltage-vaporizer-750mah-3486","source_id":"3486","name":"510 Dunk 2-In-1 Variable Voltage Vaporizer -750mAh","price_aud":99.95,"currency":"AUD","specs":{"battery_capacity":"750mAh","voltage_levels":"2.8V, 3.2V, 3.6V","connection":"510 thread","preheat_function":"Yes","charging_port":"USB-C","material_compatibility":"Concentrates","dimensions":"3.15 x 1.38 x 0.79 inches","variable_voltage":"Yes","heat_up_time":"Instant","features":"2-in-1 functionality for cartridges and concentrates","construction":"Aluminum Alloy"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-510-dunk-2-in-1-variable-voltage-vaporizer-750mah-3486.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-510-dunk-2-in-1-variable-voltage-vaporizer-750mah-3486.webp"},"brand":"Pulsar","series":""},{"id":"pulsar-gigi-h2o-510-battery-w-water-pipe-adapter-3487","source_id":"3487","name":"GiGi H2O 510 Battery w/ Water Pipe Adapter","price_aud":99.95,"currency":"AUD","specs":{"battery_capacity":"650mAh","voltage_levels":"3.4V, 3.6V, 3.8V","preheat_function":"Yes","connection":"510 thread","water_pipe_adapter":"Included","charging_method":"USB-C","activation":"Button-activated","material":"Aluminum Alloy","dimensions":"54mm x 40mm x 20mm","weight":"60g","short_circuit_protection":"Yes","overcharge_protection":"Yes","overdischarge_protection":"Yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-gigi-h2o-510-battery-w-water-pipe-adapter-3487.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-gigi-h2o-510-battery-w-water-pipe-adapter-3487.webp"},"brand":"Pulsar","series":""},{"id":"pulsar-grateful-dead-x-pulsar-duplocart-510-vaporizer-650mah-3721","source_id":"3721","name":"Grateful Dead x Pulsar DuploCart 510 Vaporizer – 650mAh","price_aud":99.95,"currency":"AUD","specs":{"battery_capacity":"650mAh","voltage_levels":"3.4V, 3.6V, 3.8V","preheat_function":"Yes","connection":"510 thread","charging_port":"USB-C","activation":"Button-activated","material":"Aluminum alloy","dimensions":"3.25 x 1.5 x 0.75 inches","compatibility":"Dual Cartridge","special_features":"Grateful Dead design"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-grateful-dead-x-pulsar-duplocart-510-vaporizer-650mah-3721.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-grateful-dead-x-pulsar-duplocart-510-vaporizer-650mah-3721.webp"},"brand":"Pulsar","series":""},{"id":"groove-cara-pen-2523","source_id":"2523","name":"Cara Pen","price_aud":46,"currency":"AUD","specs":{"battery_capacity":"350mAh","voltage_levels":"3.0V, 3.4V, 3.8V","preheat_function":"Yes","connection":"510 thread","material":"Metal","charging":"USB","activation":"Button-activated"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/groove-cara-pen-2523.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/groove-cara-pen-2523.webp"},"brand":"Groove","series":""},{"id":"yocan-armor-concentrate-pen-vaporizer-2524","source_id":"2524","name":"Armor Concentrate Pen Vaporizer","price_aud":59.95,"currency":"AUD","specs":{"compatible_material":"wax concentrates","battery_capacity":"380mAh","coil_type":"QDC (Quartz Dual Coil)","voltage_levels":"3 (3.0V, 3.5V, 4.0V)","preheat_function":"yes","preheat_duration":"10 seconds","charging_method":"micro-USB","height":"115mm","diameter":"14mm","material":"stainless steel","thread":"510","adjustable_airflow":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-armor-concentrate-pen-vaporizer-2524.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-armor-concentrate-pen-vaporizer-2524.webp"},"brand":"Yocan","series":""},{"id":"yocan-orbit-concentrate-vaporizer-1800mah-2586","source_id":"2586","name":"Orbit Concentrate Vaporizer – 1800mAh","price_aud":79.95,"currency":"AUD","specs":{"battery_capacity":"1800mAh","coil_type":"Quartz Balls","airflow":"Top Adjustable","connection":"510 Thread","material":"Stainless Steel","diameter":"19mm","height":"127mm","resistance":"0.6ohm","voltage_levels":"3.4V, 3.7V, 4.0V","preheat":"Yes","charge_type":"USB-C","on_off":"5-Clicks","adjustable_voltage":"Yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-orbit-concentrate-vaporizer-1800mah-2586.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-orbit-concentrate-vaporizer-1800mah-2586.webp"},"brand":"Yocan","series":""},{"id":"yocan-cubex-concentrate-vaporizer-1400mah-2701","source_id":"2701","name":"Cubex Concentrate Vaporizer – 1400mAh","price_aud":79.95,"currency":"AUD","specs":{"battery_capacity":"1400mAh","coil_type":"Quartz XTAL","adjustable_voltage":"Yes","preheat":"Yes","connection":"Magnetic","charging_type":"USB-C","material":"Aluminum Alloy","height":"114mm","diameter":"22mm"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-cubex-concentrate-vaporizer-1400mah-2701.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-cubex-concentrate-vaporizer-1400mah-2701.webp"},"brand":"Yocan","series":""},{"id":"yocan-black-series-phaser-max-e-rig-1800mah-2937","source_id":"2937","name":"Black Series Phaser MAX E-Rig | 1800mAh","price_aud":149.99,"currency":"AUD","specs":{"battery_capacity":"1800mAh","coil_type":"Quartz","adjustable_voltage":"Yes","preheat":"Yes","charging_type":"USB-C","material":"Metal","height":"181mm","diameter":"31mm","weight":"240g","water_filtration":"Yes","heat_up_time":"5-10 seconds","temperature_settings":"3","automatic_shutoff":"Yes","available_colors":"Black, Silver, Red, Blue"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-black-series-phaser-max-e-rig-1800mah-2937.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-black-series-phaser-max-e-rig-1800mah-2937.webp"},"brand":"Yocan","series":""},{"id":"yocan-magneto-concentrate-vaporizer-2966","source_id":"2966","name":"Magneto Concentrate Vaporizer","price_aud":69.95,"currency":"AUD","specs":{"material":"wax concentrates","coil_type":"ceramic","connection":"magnetic","voltage_levels":"3.5V, 3.8V, 4.2V","battery_capacity":"1100mAh","height":"111 mm","diameter":"19 mm","features":"built-in wax container, magnetic mouthpiece, variable voltage"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-magneto-concentrate-vaporizer-2966.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-magneto-concentrate-vaporizer-2966.webp"},"brand":"Yocan","series":""},{"id":"yocan-x-pod-system-concentrate-vaporizer-500mah-3037","source_id":"3037","name":"X Pod System Concentrate Vaporizer | 500mAh","price_aud":49.95,"currency":"AUD","specs":{"battery_capacity":"500mAh","coil_type":"Ceramic","compatible_with":"Concentrates","connection":"Magnetic","charging_type":"USB-C","voltage_levels":"3.2V, 3.7V, 4.2V","preheat_function":"Yes","pod_capacity":"1.2ml"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-x-pod-system-concentrate-vaporizer-500mah-3037.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-x-pod-system-concentrate-vaporizer-500mah-3037.webp"},"brand":"Yocan","series":""},{"id":"yocan-evolve-plus-vaporizer-kit-3176","source_id":"3176","name":"Evolve Plus Vaporizer Kit","price_aud":79.95,"currency":"AUD","specs":{"battery_capacity":"1100mAh","coil_type":"Dual Quartz Coil","coil_resistance":"0.8ohm","charging_type":"Micro-USB","voltage_levels":"Single Voltage Output","preheat_function":"Yes","airflow_control":"Adjustable","material_compatibility":"Wax Concentrates","chamber_capacity":"0.5g","height":"120mm","diameter":"19mm","weight":"85g","available_colors":"Black, Silver, Gold, Rose Gold, Blue","body_material":"Stainless Steel","thread_type":"510","features":"Built-in silicone jar","wattage":"15W"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-evolve-plus-vaporizer-kit-3176.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-evolve-plus-vaporizer-kit-3176.webp"},"brand":"Yocan","series":""},{"id":"yocan-evolve-plus-xl-2-in-1-vaporizer-10259","source_id":"10259","name":"Evolve Plus Xl 2 In 1 Vaporizer","price_aud":99,"currency":"AUD","specs":{"coil_type":"quad coil","coil_material":"quartz","battery_capacity":"1400mAh","voltage_levels":"3.2V, 3.7V, 4.2V","adjustable_airflow":"yes","connection":"510 thread","diameter":"22mm","height":"130mm","material":"stainless steel","preheat_function":"yes","dab_tool":"integrated","magnetic_connection":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-evolve-plus-xl-2-in-1-vaporizer-10259.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-evolve-plus-xl-2-in-1-vaporizer-10259.webp"},"brand":"Yocan","series":""},{"id":"lookah-seahorse-20-electric-dab-pen-2525","source_id":"2525","name":"Seahorse 2.0 Electric Dab Pen","price_aud":99.95,"currency":"AUD","specs":{"material":"Quartz","coil_type":"Quartz Coil","battery_capacity":"650mAh","voltage_levels":"3.2V, 3.6V, 4.1V","preheat":"Yes","connection":"510 thread","dimensions":"128.75mm x 17.5mm x 17.5mm","charging_type":"Micro-USB","heat_up_time":"Instant","features":"Variable Voltage, Replaceable Coils, Borosilicate Glass Tip","compatible_with":"Concentrates","body_material":"Metal"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lookah-seahorse-20-electric-dab-pen-2525.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lookah-seahorse-20-electric-dab-pen-2525.webp"},"brand":"Lookah","series":""},{"id":"lookah-seahorse-pro-20-2587","source_id":"2587","name":"Seahorse PRO 2.0","price_aud":149,"currency":"AUD","specs":{"material":"Quartz","battery_capacity":"650mAh","voltage_levels":"3.2V, 3.6V, 4.1V","preheat_function":"Yes","connection":"Magnetic","coil_type":"Quartz","dimensions":"128mm x 22mm x 22mm","weight":"46g","charging_type":"USB-C","heat_up_time":"Instant","features":"Variable Voltage, Replaceable Coils, Portable, Haptic Feedback"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lookah-seahorse-pro-20-2587.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lookah-seahorse-pro-20-2587.webp"},"brand":"Lookah","series":""},{"id":"lookah-swordfish-concentrate-vape-pen-950mah-2619","source_id":"2619","name":"Swordfish Concentrate Vape Pen – 950mAh","price_aud":79.95,"currency":"AUD","specs":{"battery_capacity":"950mAh","battery_type":"Built-in","adjustable_voltage":"Yes","preheat":"Yes","connection":"Magnetic","coil_material":"Quartz","compatible_with":"Concentrates","dimensions":"36mm x 28mm x 95mm","weight":"90g","charging_type":"USB-C","airflow":"Adjustable","material":"Aluminum Alloy"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lookah-swordfish-concentrate-vape-pen-950mah-2619.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lookah-swordfish-concentrate-vape-pen-950mah-2619.webp"},"brand":"Lookah","series":""},{"id":"lookah-seahorse-x-all-in-one-electric-dab-kit-3099","source_id":"3099","name":"Seahorse X All In One Electric Dab Kit","price_aud":149.95,"currency":"AUD","specs":{"battery_capacity":"650mAh","voltage_levels":"3.2V, 3.6V, 4.1V","coil_type":"Quartz","connection":"Magnetic","preheat_function":"Yes","charging_type":"USB-C","material":"Quartz, Glass","dimensions":"4.75 inches","features":"All-in-one design, Flexible dab hose, Integrated water bubbler","compatible_with":"Concentrates","includes":"Seahorse X device, Dab tool, USB-C cable, User manual"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lookah-seahorse-x-all-in-one-electric-dab-kit-3099.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lookah-seahorse-x-all-in-one-electric-dab-kit-3099.webp"},"brand":"Lookah","series":""},{"id":"ooze-beacon-slim-wax-pen-800mah-2584","source_id":"2584","name":"Beacon Slim Wax Pen | 800mAh","price_aud":49.95,"currency":"AUD","specs":{"battery_capacity":"800mAh","battery_type":"internal","adjustable_voltage":"yes","preheat_function":"yes","connection":"510 thread","compatible_with":"wax concentrates","charging_method":"USB","construction":"metal","activation":"button-activated"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-beacon-slim-wax-pen-800mah-2584.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-beacon-slim-wax-pen-800mah-2584.webp"},"brand":"Ooze","series":""},{"id":"ooze-slim-twist-pro-concentrate-vape-kit-2855","source_id":"2855","name":"Slim Twist PRO Concentrate Vape Kit","price_aud":59.95,"currency":"AUD","specs":{"battery_capacity":"320mAh","voltage_range":"3.3V-4.8V","preheat_function":"Yes","adjustable_voltage":"Yes","connection":"510 Thread","charging_method":"USB","coil_material":"Quartz","coil_type":"Dual Quartz","dab_tool_included":"Yes","atomizer_included":"Yes","variable_voltage":"Yes","battery_type":"Integrated","dimensions":"11mm diameter"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-slim-twist-pro-concentrate-vape-kit-2855.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-slim-twist-pro-concentrate-vape-kit-2855.webp"},"brand":"Ooze","series":""},{"id":"ooze-pronto-electronic-concentrate-vaporizer-900mah-2969","source_id":"2969","name":"Pronto Electronic Concentrate Vaporizer – 900mAh","price_aud":79.95,"currency":"AUD","specs":{"battery_capacity":"900mAh","voltage_levels":"3","preheat_function":"Yes","charging_port":"USB-C","coil_type":"Quartz","adjustable_airflow":"Yes","material":"Metal","dimensions":"4.5 inches","weight":"4 oz","heat_up_time":"15 seconds","automatic_shutoff":"Yes","warranty":"Limited Lifetime"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-pronto-electronic-concentrate-vaporizer-900mah-2969.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-pronto-electronic-concentrate-vaporizer-900mah-2969.webp"},"brand":"Ooze","series":""},{"id":"ooze-signal-concentrate-vaporizer-pen-650mah-3036","source_id":"3036","name":"Signal Concentrate Vaporizer Pen | 650mAh","price_aud":49.95,"currency":"AUD","specs":{"battery_capacity":"650mAh","voltage_levels":"3.4V, 3.6V, 3.8V, 4.0V","preheat_function":"Yes","charging_method":"USB","connection":"510 thread","material":"Metal","activation":"Button-activated","adjustable_airflow":"No","dimensions":"11mm diameter","features":"Auto shut-off, discreet design","compatible_with":"Concentrates","heat_up_time":"Instant","warranty":"Limited Lifetime Warranty"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-signal-concentrate-vaporizer-pen-650mah-3036.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-signal-concentrate-vaporizer-pen-650mah-3036.webp"},"brand":"Ooze","series":""},{"id":"ooze-booster-extract-vaporizer-1100mah-3923","source_id":"3923","name":"Booster Extract Vaporizer | 1100mAh","price_aud":59.95,"currency":"AUD","specs":{"battery_capacity":"1100mAh","voltage_levels":"3.0V, 3.4V, 3.7V, 4.0V","preheat_function":"Yes","charging_port":"USB-C","connection":"Magnetic","material":"Metal","dimensions":"110mm x 25mm x 20mm","weight":"80g","compatible_with":"Concentrates","coil_type":"Quartz","adjustable_airflow":"No","activation":"Button-activated","heat_up_time":"15 seconds","sessions_per_charge":"10-15","warranty":"Limited Lifetime"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-booster-extract-vaporizer-1100mah-3923.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-booster-extract-vaporizer-1100mah-3923.webp"},"brand":"Ooze","series":""},{"id":"g-pen-micro-concentrate-vaporizer-2617","source_id":"2617","name":"Micro+ Concentrate Vaporizer","price_aud":129.95,"currency":"AUD","specs":{"vaporizer_type":"portable","compatible_material":"concentrates","battery_capacity":"850mAh","voltage_settings":"3","heat_up_time":"5 seconds","charging_time":"90 minutes","charging_type":"USB-C","dimensions":"4.5\" x 0.6\"","weight":"2 oz","construction":"zinc alloy","coil_material":"ceramic","airflow":"fixed","warranty":"1 year","features":"haptic feedback, smart chip technology, carb cap"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-micro-concentrate-vaporizer-2617.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-micro-concentrate-vaporizer-2617.webp"},"brand":"G Pen","series":""},{"id":"g-pen-micro-vaporizer-2620","source_id":"2620","name":"Micro+ Vaporizer","price_aud":120,"currency":"AUD","specs":{"vaporizer_type":"wax","battery_capacity":"500mAh","voltage_levels":"3","charging_port":"USB-C","connection":"510-thread","material":"zinc alloy","activation":"button-activated","coil_material":"ceramic","airflow":"adjustable","heat_time":"5 seconds","dimensions":"114mm x 19mm","weight":"50g","color":"blue"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-micro-vaporizer-2620.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-micro-vaporizer-2620.webp"},"brand":"G Pen","series":""},{"id":"g-pen-lemonnade-x-g-pen-micro-vaporizer-2621","source_id":"2621","name":"Lemonnade X G Pen Micro+ Vaporizer","price_aud":149.95,"currency":"AUD","specs":{"material":"Quartz","battery_capacity":"850mAh","voltage_levels":"3","heat_time":"5 seconds","charging_time":"90 minutes","connection":"510-thread","dimensions":"4.5\" x 0.625\" diameter","weight":"0.2 lbs","compatible_with":"Concentrates","features":"Haptic feedback, smart-chip technology, manual or automatic draw","included":"G Pen Micro+ Battery, G Pen Micro+ Tank, G Pen Micro+ Mouthpiece, USB to USB-C Charging Cable, G Pen Keychain Tool"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-lemonnade-x-g-pen-micro-vaporizer-2621.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-lemonnade-x-g-pen-micro-vaporizer-2621.webp"},"brand":"G Pen","series":""},{"id":"g-pen-micro-vaporizer-2649","source_id":"2649","name":"Micro+ Vaporizer","price_aud":129.95,"currency":"AUD","specs":{"battery_capacity":"850mAh","voltage_levels":"Low, Medium, High","charging_port":"USB-C","heat_source":"Ceramic","material_compatibility":"Concentrates","activation":"Button-activated","coil_material":"Quartz","airflow":"Fixed","dimensions":"4.5\" x 0.55\" x 0.55\"","weight":"2 oz","warranty":"1 year","features":"Haptic feedback, Smart chip technology, Carb cap","included":"G Pen Micro+ Battery, G Pen Micro+ Tank, G Pen Keychain Tool, USB to USB-C Charging Cable, Hemp Travel Case"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-micro-vaporizer-2649.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-micro-vaporizer-2649.webp"},"brand":"G Pen","series":""},{"id":"g-pen-roam-portable-e-rig-vaporizer-2854","source_id":"2854","name":"Roam – Portable E-Rig Vaporizer","price_aud":349.95,"currency":"AUD","specs":{"material_compatibility":"concentrates","heating_style":"conduction","temperature_control":"yes","battery_capacity":"1300mAh","heat_up_time":"5 seconds","dimensions":"121mm x 33mm","weight":"227g","warranty":"1 year","features":"haptic feedback, borosilicate glass hydrotube, pass-through charging","adjustable_temperature_range":"315°C - 428°C (600°F - 800°F)","charging_time":"2-3 hours","connection":"micro-USB"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-roam-portable-e-rig-vaporizer-2854.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-roam-portable-e-rig-vaporizer-2854.webp"},"brand":"G Pen","series":""},{"id":"g-pen-roam-portable-e-rig-vaporizer-2891","source_id":"2891","name":"Roam – Portable E-Rig Vaporizer","price_aud":349.95,"currency":"AUD","specs":{"compatible_material":"wax concentrates","battery_capacity":"1300mAh","voltage_modes":"variable voltage","temperature_range":"204°C - 427°C (400°F - 800°F)","heat_up_time":"5 seconds","charging_time":"2-3 hours","connection":"micro-USB","dimensions":"121mm x 33mm x 33mm","weight":"181g","water_filtration":"yes","replaceable_atomizer":"yes","material":"aluminum alloy, silicone","display":"LED","haptic_feedback":"yes","automatic_shutoff":"yes","warranty":"1 year"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-roam-portable-e-rig-vaporizer-2891.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-roam-portable-e-rig-vaporizer-2891.webp"},"brand":"G Pen","series":""},{"id":"lemonnade-x-g-pen-micro-concentrate-vaporizer-2936","source_id":"2936","name":"x G Pen Micro+ Concentrate Vaporizer","price_aud":149.95,"currency":"AUD","specs":{"vaporizer_type":"wax concentrate","battery_capacity":"850mAh","voltage_levels":"3","heat_up_time":"5 seconds","charging_type":"USB-C","connection":"510-thread","material":"zinc alloy","dimensions":"115mm x 19mm","weight":"50g","features":"haptic feedback, smart chip technology, manual or automatic draw","included":"Micro+ Tank, USB-C Charging Cable, G Pen Keychain Tool"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lemonnade-x-g-pen-micro-concentrate-vaporizer-2936.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lemonnade-x-g-pen-micro-concentrate-vaporizer-2936.webp"},"brand":"G Pen","series":""},{"id":"g-pen-roam-concentrate-vaporizer-2971","source_id":"2971","name":"Roam Concentrate Vaporizer","price_aud":349.95,"currency":"AUD","specs":{"material":"Aluminum Alloy, Silicone","dimensions":"121mm x 33mm x 33mm","battery_capacity":"1300mAh","voltage":"2.5V-4.0V","temperature_range":"600°F - 800°F","heat_up_time":"5 seconds","charging_time":"2-3 hours","display":"LED","water_filtration":"Hydro-Tube","connection":"Micro-USB","compatible_material":"Concentrates","features":"Haptic Feedback, Pass-Through Charging, Full Quartz Tank","manufacturer_warranty":"1 year"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-roam-concentrate-vaporizer-2971.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-roam-concentrate-vaporizer-2971.webp"},"brand":"G Pen","series":""},{"id":"boundless-vaporizer-terp-pen-2651","source_id":"2651","name":"Terp Pen","price_aud":49.95,"currency":"AUD","specs":{"dimensions":"125mm x 14mm","weight":"28g","battery_capacity":"300mAh","voltage":"3.3V-4.2V","charging_time":"30 minutes","coil_type":"Ceramic","activation":"Inhale Activated","material_compatibility":"Wax Concentrates","heat_up_time":"Instant","adjustable_airflow":"Yes","connection":"Magnetic","construction":"Stainless Steel","available_colors":"Black, Silver, Teal","warranty":"3-Year Manufacturer Warranty"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/boundless-vaporizer-terp-pen-2651.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/boundless-vaporizer-terp-pen-2651.webp"},"brand":"Boundless Vaporizers","series":""},{"id":"focus-v-aeris-vaporizer-800mah-black-2812","source_id":"2812","name":"AERIS Vaporizer – 800mAh / Black","price_aud":299,"currency":"AUD","specs":{"battery_capacity":"800mAh","color":"Black","material":"Aluminum Alloy","dimensions":"135mm x 30mm","weight":"150g","heating_element":"Ceramic","temperature_range":"250°F - 800°F","heat_up_time":"15 seconds","charging_time":"1.5 hours","charging_type":"USB-C","vibration_feedback":"Yes","water_filtration":"Optional","warranty":"1 Year"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/focus-v-aeris-vaporizer-800mah-black-2812.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/focus-v-aeris-vaporizer-800mah-black-2812.webp"},"brand":"Focus V","series":""},{"id":"vivant-dabox-pro-wax-vaporizer-2999","source_id":"2999","name":"Dabox Pro Wax Vaporizer","price_aud":149,"currency":"AUD","specs":{"vaporizer_type":"wax","compatible_material":"wax concentrates","heating_method":"coil","temperature_control":"yes","temperature_settings":"variable voltage","battery_capacity":"900mAh","charging_port":"micro-USB","replaceable_atomizer":"yes","water_filtration":"optional","dimensions":"100mm x 40mm x 25mm","weight":"150g","material":"aluminum alloy","available_colors":"black, silver, red, blue","heat_up_time":"5-10 seconds","features":"quartz crystal atomizer, magnetic mouthpiece, haptic feedback"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/vivant-dabox-pro-wax-vaporizer-2999.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/vivant-dabox-pro-wax-vaporizer-2999.webp"},"brand":"Vivant","series":"Dabox Pro"},{"id":"vivant-dabox-wax-vaporizer-3001","source_id":"3001","name":"Dabox Wax Vaporizer","price_aud":149,"currency":"AUD","specs":{"vaporizer_type":"wax","compatible_material":"wax concentrates","heating_method":"coil","temperature_control":"yes","temperature_settings":"variable voltage","battery_capacity":"900mAh","charging_port":"micro-USB","replaceable_atomizer":"yes","water_filtration":"optional","dimensions":"100mm x 40mm x 25mm","weight":"150g","material":"aluminum alloy","available_colors":"black, silver, red, blue","heat_up_time":"5-10 seconds","features":"quartz crystal atomizer, magnetic mouthpiece, haptic feedback"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/vivant-dabox-wax-vaporizer-3001.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/vivant-dabox-wax-vaporizer-3001.webp"},"brand":"Vivant","series":"Dabox Pro"},{"id":"xvape-fyra-dab-star-edition-3-in-1-vaporizer-1500mah-3127","source_id":"3127","name":"Fyra Dab Star Edition 3-in-1 Vaporizer – 1500mAh","price_aud":149,"currency":"AUD","specs":{"battery_capacity":"1500mAh","adjustable_voltage":"Yes","preheat":"Yes","connection":"Magnetic","material":"Glass, Metal","dimensions":"129mm x 28mm x 24mm","weight":"90g","heat_source":"Quartz Coil","compatible_with":"Concentrates","features":"3-in-1 functionality, water bubbler attachment"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/xvape-fyra-dab-star-edition-3-in-1-vaporizer-1500mah-3127.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/xvape-fyra-dab-star-edition-3-in-1-vaporizer-1500mah-3127.webp"},"brand":"XVape","series":""},{"id":"hitoki-saber-portable-bundle-3304","source_id":"3304","name":"Saber Portable Bundle","price_aud":799,"currency":"AUD","specs":{"vaporizer_type":"portable","compatible_material":"wax concentrates","heating_method":"laser","temperature_control":"preset","battery_capacity":"2500mAh","charging_type":"USB-C","heat_up_time":"3 seconds","dimensions":"4.25 x 2.25 x 1.25 inches","weight":"12 oz","warranty":"1 year","included":"Saber unit, glass bubbler attachment, USB-C charging cable, dab tool, carrying case"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/hitoki-saber-portable-bundle-3304.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/hitoki-saber-portable-bundle-3304.webp"},"brand":"Hitoki","series":""},{"id":"hitoki-saber-laser-vaporizer-and-bubbler-7682","source_id":"7682","name":"Saber – Laser Vaporizer and Bubbler","price_aud":999,"currency":"AUD","specs":{"material":"Aluminum, Glass","dimensions":"10.5 x 3.5 inches","weight":"2.2 lbs","laser_power":"15W","heating_element":"Laser","compatibility":"Concentrates","water_filtration":"Yes","warranty":"2-year manufacturer warranty","features":"Automatic shut-off, multiple power settings, borosilicate glass bubbler","color":"Black/Red"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/hitoki-saber-laser-vaporizer-and-bubbler-7682.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/hitoki-saber-laser-vaporizer-and-bubbler-7682.webp"},"brand":"Hitoki","series":""},{"id":"ispire-the-wand-8394","source_id":"8394","name":"The Wand","price_aud":249,"currency":"AUD","specs":{"dimensions":"14cm x 3cm x 2.5cm","weight":"200g","battery_capacity":"2900mAh","charging_time":"2 hours","temperature_range":"121°C - 427°C (250°F - 800°F)","heat_up_time":"5-10 seconds","warranty":"1 year","material":"Borosilicate Glass, Metal Alloy","compatibility":"Dabs, Concentrates","features":"Induction Heating, Temperature Control, Haptic Feedback, Reverse Polarity Protection, Short Circuit Protection, Overheat Protection, Low Voltage Protection, Automatic Shutoff","includes":"The Wand, Angled Banger, Straight Banger, Carb Cap, Dab Tool, User Manual, USB-C Charging Cable"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ispire-the-wand-8394.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ispire-the-wand-8394.webp"},"brand":"Ispire","series":""},{"id":"origin-ii-vaporizer-10265","source_id":"10265","name":"Ii Vaporizer","price_aud":149.99,"currency":"AUD","specs":{"compatible_with":"concentrates","battery_capacity":"650mAh","voltage_settings":"3.0V, 3.4V, 3.8V","preheat_function":"yes","charging_type":"USB-C","material":"aluminum alloy","height":"120mm","diameter":"19mm","weight":"60g","available_colors":"black, silver"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/origin-ii-vaporizer-10265.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/origin-ii-vaporizer-10265.webp"},"brand":"Origin","series":""}]}
+{
+  "path": [
+    "vaporizers",
+    "concentrate-wax",
+    "portable"
+  ],
+  "file": "vaporizers/concentrate-wax/portable.json",
+  "brands": [
+    {
+      "name": "O.pen",
+      "slug": "o.pen",
+      "product_count": 2
+    },
+    {
+      "name": "Evolv",
+      "slug": "evolv",
+      "product_count": 1
+    },
+    {
+      "name": "Dr. Dabber",
+      "slug": "dr.-dabber",
+      "product_count": 4
+    },
+    {
+      "name": "Puffco",
+      "slug": "puffco",
+      "product_count": 2
+    },
+    {
+      "name": "Cookies",
+      "slug": "cookies",
+      "product_count": 1
+    },
+    {
+      "name": "Pulsar",
+      "slug": "pulsar",
+      "product_count": 15
+    },
+    {
+      "name": "Groove",
+      "slug": "groove",
+      "product_count": 1
+    },
+    {
+      "name": "Yocan",
+      "slug": "yocan",
+      "product_count": 8
+    },
+    {
+      "name": "Lookah",
+      "slug": "lookah",
+      "product_count": 4
+    },
+    {
+      "name": "Ooze",
+      "slug": "ooze",
+      "product_count": 5
+    },
+    {
+      "name": "G Pen",
+      "slug": "g-pen",
+      "product_count": 8
+    },
+    {
+      "name": "Boundless Vaporizers",
+      "slug": "boundless-vaporizers",
+      "product_count": 1
+    },
+    {
+      "name": "Focus V",
+      "slug": "focus-v",
+      "product_count": 1
+    },
+    {
+      "name": "Vivant",
+      "slug": "vivant",
+      "product_count": 2
+    },
+    {
+      "name": "XVape",
+      "slug": "xvape",
+      "product_count": 1
+    },
+    {
+      "name": "Hitoki",
+      "slug": "hitoki",
+      "product_count": 2
+    },
+    {
+      "name": "Ispire",
+      "slug": "ispire",
+      "product_count": 1
+    },
+    {
+      "name": "Origin",
+      "slug": "origin",
+      "product_count": 1
+    }
+  ],
+  "series_index": {
+    "Vivant": [
+      "Dabox Pro"
+    ]
+  },
+  "products": [
+    {
+      "id": "open-sesh-510-e-rig-2517",
+      "source_id": "2517",
+      "name": "Sesh 510 e-rig",
+      "price_aud": 119.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "510-thread cartridges and concentrates",
+        "activation": "button-activated",
+        "adjustable_voltage": "yes",
+        "heat_settings": "3",
+        "battery_capacity": "650mAh",
+        "charge_time": "1-2 hours",
+        "dimensions": "4.5 x 2.5 x 2 inches",
+        "weight": "4 ounces",
+        "material": "aluminum alloy, glass",
+        "included": "device, glass bubbler attachment, dab tool, USB charging cable",
+        "features": "automatic shut-off, haptic feedback"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/open-sesh-510-e-rig-2517.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/open-sesh-510-e-rig-2517.webp"
+      },
+      "brand": "O.pen",
+      "series": ""
+    },
+    {
+      "id": "open-20-conceal-vape-pen-battery-3750",
+      "source_id": "3750",
+      "name": "2.0 Conceal Vape Pen Battery",
+      "price_aud": 99.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "500mAh",
+        "voltage_settings": "2.4V, 3.2V, 4.0V",
+        "preheat_function": "Yes",
+        "cartridge_compatibility": "510 thread",
+        "charging_method": "Micro-USB",
+        "height": "76mm",
+        "width": "38mm",
+        "depth": "19mm",
+        "material": "Aluminum Alloy",
+        "activation": "Button-activated",
+        "adjustable_airflow": "No",
+        "display_screen": "No",
+        "short_circuit_protection": "Yes",
+        "overcharge_protection": "Yes",
+        "overtime_protection": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/open-20-conceal-vape-pen-battery-3750.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/open-20-conceal-vape-pen-battery-3750.webp"
+      },
+      "brand": "O.pen",
+      "series": ""
+    },
+    {
+      "id": "evolv-cricket-portable-dab-rig-2518",
+      "source_id": "2518",
+      "name": "Cricket Portable Dab Rig",
+      "price_aud": 289.99,
+      "currency": "AUD",
+      "specs": {
+        "adjustable_temperature": "Yes",
+        "temperature_control": "Yes, single degree increments",
+        "display": "OLED",
+        "airflow": "Advanced Geometry",
+        "heating_time": "Instant",
+        "cooling_time": "5 seconds",
+        "material_compatibility": "Concentrates",
+        "dab_tool_included": "Yes",
+        "easy_access_cleaning": "Yes",
+        "pocket_friendly": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/evolv-cricket-portable-dab-rig-2518.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/evolv-cricket-portable-dab-rig-2518.webp"
+      },
+      "brand": "Evolv",
+      "series": ""
+    },
+    {
+      "id": "dr-dabber-ghost-concentrate-vaporizer-650mah-2519",
+      "source_id": "2519",
+      "name": "Ghost Concentrate Vaporizer – 650mAh",
+      "price_aud": 639.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "voltage_settings": "3.7V",
+        "coil_material": "Titanium",
+        "atomizer_type": "Wickless",
+        "compatible_with": "Concentrates",
+        "preheat_function": "Yes",
+        "charging_method": "USB",
+        "height": "120mm",
+        "diameter": "14mm",
+        "weight": "50g",
+        "material": "Stainless Steel",
+        "available_colors": "Black"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dr-dabber-ghost-concentrate-vaporizer-650mah-2519.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dr-dabber-ghost-concentrate-vaporizer-650mah-2519.webp"
+      },
+      "brand": "Dr. Dabber",
+      "series": ""
+    },
+    {
+      "id": "dr-dabber-light-vaporizer-kit-140mah-2852",
+      "source_id": "2852",
+      "name": "Light Vaporizer Kit | 140mAh",
+      "price_aud": 639.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "140mAh",
+        "voltage_levels": "3",
+        "coil_material": "Titanium",
+        "atomizer_compatibility": "Dr. Dabber Light Atomizer",
+        "charging_method": "USB",
+        "height": "10.16 cm",
+        "diameter": "0.95 cm",
+        "weight": "14.2 g",
+        "material": "Anodized Aluminum",
+        "heat_up_time": "5-10 seconds",
+        "warranty": "1 year limited"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dr-dabber-light-vaporizer-kit-140mah-2852.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dr-dabber-light-vaporizer-kit-140mah-2852.webp"
+      },
+      "brand": "Dr. Dabber",
+      "series": ""
+    },
+    {
+      "id": "dr-dabber-light-vaporizer-kit-140mah-2970",
+      "source_id": "2970",
+      "name": "Light Vaporizer Kit - 140mAh",
+      "price_aud": 639.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "140mAh",
+        "voltage_levels": "3",
+        "coil_type": "Quartz",
+        "compatible_concentrates": "Wax",
+        "preheat_function": "Yes",
+        "charging_method": "USB",
+        "dimensions": "9.5cm x 1cm",
+        "weight": "14g",
+        "material": "Stainless Steel",
+        "connection": "510 Thread",
+        "activation": "Button-activated",
+        "heat_up_time": "5-10 seconds",
+        "sessions_per_charge": "20",
+        "warranty": "1 Year Limited"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dr-dabber-light-vaporizer-kit-140mah-2970.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dr-dabber-light-vaporizer-kit-140mah-2970.webp"
+      },
+      "brand": "Dr. Dabber",
+      "series": ""
+    },
+    {
+      "id": "dr-dabber-stella-vaporizer-and-portable-wax-pen-3000",
+      "source_id": "3000",
+      "name": "Stella Vaporizer and Portable Wax Pen",
+      "price_aud": 639.99,
+      "currency": "AUD",
+      "specs": {
+        "material": "Aluminum Alloy",
+        "dimensions": "105mm x 19mm",
+        "weight": "50g",
+        "battery_capacity": "600mAh",
+        "voltage_levels": "3",
+        "preheat_function": "Yes",
+        "charging_time": "1-2 hours",
+        "connection": "510 Thread",
+        "coil_material": "Quartz",
+        "chamber_material": "Ceramic",
+        "airflow": "Adjustable",
+        "heat_up_time": "5-10 seconds",
+        "compatible_concentrates": "Wax, Shatter, Crumble, Rosin",
+        "features": "Pass-through charging, haptic feedback",
+        "includes": "Stella Vaporizer, Loading Tool, USB-C Charging Cable"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dr-dabber-stella-vaporizer-and-portable-wax-pen-3000.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dr-dabber-stella-vaporizer-and-portable-wax-pen-3000.webp"
+      },
+      "brand": "Dr. Dabber",
+      "series": ""
+    },
+    {
+      "id": "puffco-plus-portable-concentrate-vaporizer-520mah-2520",
+      "source_id": "2520",
+      "name": "Plus Portable Concentrate Vaporizer | 520mAh",
+      "price_aud": 219.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "520mAh",
+        "coil_material": "Ceramic",
+        "chamber_capacity": "0.5g",
+        "voltage_levels": "3",
+        "heat_up_time": "Instant",
+        "dimensions": "13mm diameter",
+        "weight": "60g",
+        "charging_time": "45 minutes",
+        "connection": "510 thread",
+        "features": "Coilless chamber, built-in extendable loading tool, carb cap",
+        "included_accessories": "USB charger, cleaning swabs"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/puffco-plus-portable-concentrate-vaporizer-520mah-2520.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/puffco-plus-portable-concentrate-vaporizer-520mah-2520.webp"
+      },
+      "brand": "Puffco",
+      "series": ""
+    },
+    {
+      "id": "puffco-proxy-8395",
+      "source_id": "8395",
+      "name": "Proxy",
+      "price_aud": 469.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "concentrates",
+        "heating_style": "conduction",
+        "temperature_control": "4 pre-set heat settings",
+        "heat_up_time": "instant",
+        "battery_capacity": "1350mAh",
+        "charging_time": "90 minutes",
+        "dimensions": "42mm x 42mm x 129.5mm",
+        "weight": "90g",
+        "materials": "glass, ceramic",
+        "features": "3D Chamber, Boost Mode, USB-C Charging, carrying case included"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/puffco-proxy-8395.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/puffco-proxy-8395.webp"
+      },
+      "brand": "Puffco",
+      "series": ""
+    },
+    {
+      "id": "cookies-x-g-pen-roam-portable-e-rig-vaporizer-2521",
+      "source_id": "2521",
+      "name": "X G Pen Roam – Portable E-Rig Vaporizer",
+      "price_aud": 289.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable e-rig",
+        "compatible_material": "wax concentrates",
+        "heating_method": "ceramic chamber",
+        "temperature_control": "adjustable",
+        "temperature_range": "600-800°F (315-427°C)",
+        "battery_capacity": "1300mAh",
+        "charging_time": "2-3 hours",
+        "display_type": "LED",
+        "water_filtration": "hydro-tube",
+        "housing_material": "aluminum alloy",
+        "dimensions": "129mm x 33mm",
+        "weight": "181g",
+        "connection": "magnetic",
+        "heat-up_time": "5 seconds",
+        "airflow": "adjustable",
+        "vibration": "haptic feedback"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-x-g-pen-roam-portable-e-rig-vaporizer-2521.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-x-g-pen-roam-portable-e-rig-vaporizer-2521.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "pulsar-apx-wax-v3-concentrate-vape-2522",
+      "source_id": "2522",
+      "name": "APX Wax V3 Concentrate Vape",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "1100mAh",
+        "voltage_levels": "3.2V, 3.7V, 4.2V",
+        "heating_element": "Quartz",
+        "coil_type": "Triple Quartz Coil",
+        "tank_capacity": "0.4 grams",
+        "charging_type": "Micro-USB",
+        "dimensions": "3.5\" x 1.5\" x 1\"",
+        "weight": "4oz",
+        "material": "Aluminum Alloy",
+        "preheat_function": "Yes",
+        "variable_voltage": "Yes",
+        "short_circuit_protection": "Yes",
+        "overcharge_protection": "Yes",
+        "overheat_protection": "Yes",
+        "automatic_shutoff": "Yes",
+        "heat_up_time": "5 seconds",
+        "temperature_range": "N/A",
+        "resistance": "N/A",
+        "airflow": "Fixed",
+        "screen_type": "N/A",
+        "haptic_feedback": "No",
+        "water_filtration_compatibility": "No",
+        "concentrate_compatibility": "Wax, Concentrates",
+        "warranty": "6-month limited warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-apx-wax-v3-concentrate-vape-2522.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-apx-wax-v3-concentrate-vape-2522.webp"
+      },
+      "brand": "Pulsar",
+      "series": ""
+    },
+    {
+      "id": "pulsar-barb-fire-variable-voltage-wax-vaporizer-2582",
+      "source_id": "2582",
+      "name": "Barb Fire Variable Voltage Wax Vaporizer",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "material": "Quartz",
+        "coil_type": "Dual Quartz Coil",
+        "voltage_levels": "3.0V, 3.4V, 3.8V",
+        "battery_capacity": "650mAh",
+        "preheat_function": "Yes",
+        "connection": "510 Thread",
+        "dimensions": "4.75 inches",
+        "variable_voltage": "Yes",
+        "heat_time": "15 seconds",
+        "charging_time": "2 hours",
+        "features": "LED indicator, Auto shut-off"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-barb-fire-variable-voltage-wax-vaporizer-2582.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-barb-fire-variable-voltage-wax-vaporizer-2582.webp"
+      },
+      "brand": "Pulsar",
+      "series": ""
+    },
+    {
+      "id": "pulsar-apx-volt-v3-vv-concentrate-vaporizer-1100mah-2583",
+      "source_id": "2583",
+      "name": "APX Volt V3 VV Concentrate Vaporizer – 1100mAh",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "1100mAh",
+        "voltage_settings": "2.5V, 2.8V, 3.2V, 3.7V",
+        "coil_material": "Quartz",
+        "tank_capacity": "0.5ml",
+        "charging_type": "Micro-USB",
+        "dimensions": "3.5\" tall",
+        "heat_up_time": "5 seconds",
+        "features": "Variable Voltage, Borosilicate Glass",
+        "compatible_with": "Concentrates",
+        "construction": "Aluminum Alloy",
+        "resistance": "0.4 Ohm"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-apx-volt-v3-vv-concentrate-vaporizer-1100mah-2583.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-apx-volt-v3-vv-concentrate-vaporizer-1100mah-2583.webp"
+      },
+      "brand": "Pulsar",
+      "series": ""
+    },
+    {
+      "id": "pulsar-barb-fire-slim-variable-voltage-2-in-1-vape-800mah-2585",
+      "source_id": "2585",
+      "name": "Barb Fire Slim Variable Voltage 2-in-1 Vape | 800mAh",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "800mAh",
+        "voltage_settings": "Variable Voltage",
+        "coil_type": "Quartz",
+        "connection": "510 Thread",
+        "compatible_with": "Concentrates",
+        "preheat_function": "Yes",
+        "construction": "Metal",
+        "charging_method": "USB",
+        "height": "110mm",
+        "diameter": "14mm"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-barb-fire-slim-variable-voltage-2-in-1-vape-800mah-2585.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-barb-fire-slim-variable-voltage-2-in-1-vape-800mah-2585.webp"
+      },
+      "brand": "Pulsar",
+      "series": ""
+    },
+    {
+      "id": "pulsar-duplocart-h2o-thick-oil-vaporizer-w-water-pipe-adapter-2618",
+      "source_id": "2618",
+      "name": "DuploCart H2O Thick Oil Vaporizer w/ Water Pipe Adapter",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "thick oil cartridges",
+        "connection": "magnetic",
+        "battery_capacity": "650mAh",
+        "voltage_settings": "3.4V / 3.6V / 3.8V",
+        "preheat_function": "yes",
+        "water_pipe_adapter": "included",
+        "charging_method": "USB-C",
+        "material": "aluminum alloy",
+        "height": "3.25 inches",
+        "width": "1.5 inches",
+        "depth": "1 inch",
+        "weight": "3.5 oz",
+        "cartridge_capacity": "0.5mL / 1.0mL / 2.0mL",
+        "display": "LED"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-duplocart-h2o-thick-oil-vaporizer-w-water-pipe-adapter-2618.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-duplocart-h2o-thick-oil-vaporizer-w-water-pipe-adapter-2618.webp"
+      },
+      "brand": "Pulsar",
+      "series": ""
+    },
+    {
+      "id": "pulsar-barb-fire-h2o-variable-voltage-wax-vape-kit-1450mah-2650",
+      "source_id": "2650",
+      "name": "Barb Fire H2O Variable Voltage Wax Vape Kit – 1450mAh",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "1450mAh",
+        "voltage_control": "Variable Voltage",
+        "coil_type": "Quartz Coil",
+        "connection": "510 Thread",
+        "material": "Glass, Metal",
+        "dimensions": "5.5 inches",
+        "water_filtration": "Yes",
+        "heat_settings": "3",
+        "preheat_function": "Yes",
+        "charging_method": "USB",
+        "dab_tool_included": "Yes",
+        "user_manual_included": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-barb-fire-h2o-variable-voltage-wax-vape-kit-1450mah-2650.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-barb-fire-h2o-variable-voltage-wax-vape-kit-1450mah-2650.webp"
+      },
+      "brand": "Pulsar",
+      "series": ""
+    },
+    {
+      "id": "pulsar-range-modular-vape-2725",
+      "source_id": "2725",
+      "name": "Range Modular Vape",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "wax concentrates",
+        "battery_capacity": "650mAh",
+        "voltage_settings": "3.4V, 3.6V, 3.8V",
+        "preheat_function": "yes",
+        "charging_port": "USB-C",
+        "coil_type": "dual quartz coil, ceramic coil",
+        "water_bubbler_attachment": "optional",
+        "material": "aluminum alloy",
+        "height": "4.5 inches",
+        "diameter": "0.75 inches",
+        "weight": "3 oz",
+        "available_colors": "black, silver",
+        "features": "modular design, magnetic connections, haptic feedback"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-range-modular-vape-2725.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-range-modular-vape-2725.webp"
+      },
+      "brand": "Pulsar",
+      "series": ""
+    },
+    {
+      "id": "pulsar-dl-wax-vape-bar-650mah-2902",
+      "source_id": "2902",
+      "name": "DL Wax Vape Bar | 650mAh",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "voltage_levels": "H/M/L",
+        "preheat": "yes",
+        "connection": "magnetic",
+        "display": "OLED",
+        "material": "aluminum alloy",
+        "charging_port": "USB-C",
+        "dimensions": "60mm x 35mm x 25mm"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-dl-wax-vape-bar-650mah-2902.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-dl-wax-vape-bar-650mah-2902.webp"
+      },
+      "brand": "Pulsar",
+      "series": ""
+    },
+    {
+      "id": "pulsar-boho-faces-variable-voltage-barb-fire-kit-1450mah-2967",
+      "source_id": "2967",
+      "name": "Boho Faces Variable Voltage Barb Fire Kit -1450mAh",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "wattage": "Variable Voltage",
+        "battery_type": "1450mAh",
+        "charging": "USB-C"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-boho-faces-variable-voltage-barb-fire-kit-1450mah-2967.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-boho-faces-variable-voltage-barb-fire-kit-1450mah-2967.webp"
+      },
+      "brand": "Pulsar",
+      "series": ""
+    },
+    {
+      "id": "pulsar-melting-mushrooms-variable-voltage-barb-fire-kit-1450mah-3067",
+      "source_id": "3067",
+      "name": "Melting Mushrooms Variable Voltage Barb Fire Kit -1450mAh",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "1450mAh",
+        "voltage_levels": "3",
+        "voltage_range": "3.0-4.0V",
+        "preheat_function": "Yes",
+        "atomizer_type": "Coil-less",
+        "coil_material": "Quartz",
+        "connection": "510 thread",
+        "dimensions": "5.5 inches",
+        "material": "Metal",
+        "features": "Variable Voltage, Haptic Feedback, Hands Free Mode",
+        "design": "Melting Mushrooms"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-melting-mushrooms-variable-voltage-barb-fire-kit-1450mah-3067.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-melting-mushrooms-variable-voltage-barb-fire-kit-1450mah-3067.webp"
+      },
+      "brand": "Pulsar",
+      "series": ""
+    },
+    {
+      "id": "pulsar-micro-dose-2-in-1-vaporizer-pen-3125",
+      "source_id": "3125",
+      "name": "Micro Dose 2-in-1 Vaporizer Pen",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "Concentrates",
+        "battery_capacity": "350mAh",
+        "voltage_levels": "3.0V, 3.4V, 3.8V",
+        "preheat_function": "Yes",
+        "charging_method": "USB",
+        "connection": "Magnetic",
+        "material": "Metal",
+        "height": "12cm",
+        "diameter": "1.4cm",
+        "weight": "30g",
+        "available_colors": "Black, Silver, Gold",
+        "features": "2-in-1 functionality for concentrates and thick oils, single button operation, LED indicator"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-micro-dose-2-in-1-vaporizer-pen-3125.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-micro-dose-2-in-1-vaporizer-pen-3125.webp"
+      },
+      "brand": "Pulsar",
+      "series": ""
+    },
+    {
+      "id": "pulsar-gigi-oil-cartridge-vaporizer-3348",
+      "source_id": "3348",
+      "name": "Gigi Oil Cartridge Vaporizer",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "voltage_levels": "3.4V, 3.6V, 3.8V",
+        "preheat_function": "Yes",
+        "cartridge_compatibility": "510-threaded",
+        "charging_port": "USB-C",
+        "height": "2.3 inches",
+        "width": "1.4 inches",
+        "depth": "0.7 inches",
+        "material": "Silicone",
+        "variable_voltage": "Yes",
+        "display_screen": "No",
+        "activation": "Button-activated",
+        "cut_off_time": "15 seconds"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-gigi-oil-cartridge-vaporizer-3348.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-gigi-oil-cartridge-vaporizer-3348.webp"
+      },
+      "brand": "Pulsar",
+      "series": ""
+    },
+    {
+      "id": "pulsar-510-dunk-2-in-1-variable-voltage-vaporizer-750mah-3486",
+      "source_id": "3486",
+      "name": "510 Dunk 2-In-1 Variable Voltage Vaporizer -750mAh",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "750mAh",
+        "voltage_levels": "2.8V, 3.2V, 3.6V",
+        "connection": "510 thread",
+        "preheat_function": "Yes",
+        "charging_port": "USB-C",
+        "material_compatibility": "Concentrates",
+        "dimensions": "3.15 x 1.38 x 0.79 inches",
+        "variable_voltage": "Yes",
+        "heat_up_time": "Instant",
+        "features": "2-in-1 functionality for cartridges and concentrates",
+        "construction": "Aluminum Alloy"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-510-dunk-2-in-1-variable-voltage-vaporizer-750mah-3486.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-510-dunk-2-in-1-variable-voltage-vaporizer-750mah-3486.webp"
+      },
+      "brand": "Pulsar",
+      "series": ""
+    },
+    {
+      "id": "pulsar-gigi-h2o-510-battery-w-water-pipe-adapter-3487",
+      "source_id": "3487",
+      "name": "GiGi H2O 510 Battery w/ Water Pipe Adapter",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "voltage_levels": "3.4V, 3.6V, 3.8V",
+        "preheat_function": "Yes",
+        "connection": "510 thread",
+        "water_pipe_adapter": "Included",
+        "charging_method": "USB-C",
+        "activation": "Button-activated",
+        "material": "Aluminum Alloy",
+        "dimensions": "54mm x 40mm x 20mm",
+        "weight": "60g",
+        "short_circuit_protection": "Yes",
+        "overcharge_protection": "Yes",
+        "overdischarge_protection": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-gigi-h2o-510-battery-w-water-pipe-adapter-3487.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-gigi-h2o-510-battery-w-water-pipe-adapter-3487.webp"
+      },
+      "brand": "Pulsar",
+      "series": ""
+    },
+    {
+      "id": "pulsar-grateful-dead-x-pulsar-duplocart-510-vaporizer-650mah-3721",
+      "source_id": "3721",
+      "name": "Grateful Dead x Pulsar DuploCart 510 Vaporizer – 650mAh",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "voltage_levels": "3.4V, 3.6V, 3.8V",
+        "preheat_function": "Yes",
+        "connection": "510 thread",
+        "charging_port": "USB-C",
+        "activation": "Button-activated",
+        "material": "Aluminum alloy",
+        "dimensions": "3.25 x 1.5 x 0.75 inches",
+        "compatibility": "Dual Cartridge",
+        "special_features": "Grateful Dead design"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pulsar-grateful-dead-x-pulsar-duplocart-510-vaporizer-650mah-3721.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pulsar-grateful-dead-x-pulsar-duplocart-510-vaporizer-650mah-3721.webp"
+      },
+      "brand": "Pulsar",
+      "series": ""
+    },
+    {
+      "id": "groove-cara-pen-2523",
+      "source_id": "2523",
+      "name": "Cara Pen",
+      "price_aud": 84.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "350mAh",
+        "voltage_levels": "3.0V, 3.4V, 3.8V",
+        "preheat_function": "Yes",
+        "connection": "510 thread",
+        "material": "Metal",
+        "charging": "USB",
+        "activation": "Button-activated"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/groove-cara-pen-2523.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/groove-cara-pen-2523.webp"
+      },
+      "brand": "Groove",
+      "series": ""
+    },
+    {
+      "id": "yocan-armor-concentrate-pen-vaporizer-2524",
+      "source_id": "2524",
+      "name": "Armor Concentrate Pen Vaporizer",
+      "price_aud": 99.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_material": "wax concentrates",
+        "battery_capacity": "380mAh",
+        "coil_type": "QDC (Quartz Dual Coil)",
+        "voltage_levels": "3 (3.0V, 3.5V, 4.0V)",
+        "preheat_function": "yes",
+        "preheat_duration": "10 seconds",
+        "charging_method": "micro-USB",
+        "height": "115mm",
+        "diameter": "14mm",
+        "material": "stainless steel",
+        "thread": "510",
+        "adjustable_airflow": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-armor-concentrate-pen-vaporizer-2524.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-armor-concentrate-pen-vaporizer-2524.webp"
+      },
+      "brand": "Yocan",
+      "series": ""
+    },
+    {
+      "id": "yocan-orbit-concentrate-vaporizer-1800mah-2586",
+      "source_id": "2586",
+      "name": "Orbit Concentrate Vaporizer – 1800mAh",
+      "price_aud": 99.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "1800mAh",
+        "coil_type": "Quartz Balls",
+        "airflow": "Top Adjustable",
+        "connection": "510 Thread",
+        "material": "Stainless Steel",
+        "diameter": "19mm",
+        "height": "127mm",
+        "resistance": "0.6ohm",
+        "voltage_levels": "3.4V, 3.7V, 4.0V",
+        "preheat": "Yes",
+        "charge_type": "USB-C",
+        "on_off": "5-Clicks",
+        "adjustable_voltage": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-orbit-concentrate-vaporizer-1800mah-2586.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-orbit-concentrate-vaporizer-1800mah-2586.webp"
+      },
+      "brand": "Yocan",
+      "series": ""
+    },
+    {
+      "id": "yocan-cubex-concentrate-vaporizer-1400mah-2701",
+      "source_id": "2701",
+      "name": "Cubex Concentrate Vaporizer – 1400mAh",
+      "price_aud": 99.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "1400mAh",
+        "coil_type": "Quartz XTAL",
+        "adjustable_voltage": "Yes",
+        "preheat": "Yes",
+        "connection": "Magnetic",
+        "charging_type": "USB-C",
+        "material": "Aluminum Alloy",
+        "height": "114mm",
+        "diameter": "22mm"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-cubex-concentrate-vaporizer-1400mah-2701.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-cubex-concentrate-vaporizer-1400mah-2701.webp"
+      },
+      "brand": "Yocan",
+      "series": ""
+    },
+    {
+      "id": "yocan-black-series-phaser-max-e-rig-1800mah-2937",
+      "source_id": "2937",
+      "name": "Black Series Phaser MAX E-Rig | 1800mAh",
+      "price_aud": 169.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "1800mAh",
+        "coil_type": "Quartz",
+        "adjustable_voltage": "Yes",
+        "preheat": "Yes",
+        "charging_type": "USB-C",
+        "material": "Metal",
+        "height": "181mm",
+        "diameter": "31mm",
+        "weight": "240g",
+        "water_filtration": "Yes",
+        "heat_up_time": "5-10 seconds",
+        "temperature_settings": "3",
+        "automatic_shutoff": "Yes",
+        "available_colors": "Black, Silver, Red, Blue"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-black-series-phaser-max-e-rig-1800mah-2937.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-black-series-phaser-max-e-rig-1800mah-2937.webp"
+      },
+      "brand": "Yocan",
+      "series": ""
+    },
+    {
+      "id": "yocan-magneto-concentrate-vaporizer-2966",
+      "source_id": "2966",
+      "name": "Magneto Concentrate Vaporizer",
+      "price_aud": 99.99,
+      "currency": "AUD",
+      "specs": {
+        "material": "wax concentrates",
+        "coil_type": "ceramic",
+        "connection": "magnetic",
+        "voltage_levels": "3.5V, 3.8V, 4.2V",
+        "battery_capacity": "1100mAh",
+        "height": "111 mm",
+        "diameter": "19 mm",
+        "features": "built-in wax container, magnetic mouthpiece, variable voltage"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-magneto-concentrate-vaporizer-2966.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-magneto-concentrate-vaporizer-2966.webp"
+      },
+      "brand": "Yocan",
+      "series": ""
+    },
+    {
+      "id": "yocan-x-pod-system-concentrate-vaporizer-500mah-3037",
+      "source_id": "3037",
+      "name": "X Pod System Concentrate Vaporizer | 500mAh",
+      "price_aud": 99.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "500mAh",
+        "coil_type": "Ceramic",
+        "compatible_with": "Concentrates",
+        "connection": "Magnetic",
+        "charging_type": "USB-C",
+        "voltage_levels": "3.2V, 3.7V, 4.2V",
+        "preheat_function": "Yes",
+        "pod_capacity": "1.2ml"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-x-pod-system-concentrate-vaporizer-500mah-3037.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-x-pod-system-concentrate-vaporizer-500mah-3037.webp"
+      },
+      "brand": "Yocan",
+      "series": ""
+    },
+    {
+      "id": "yocan-evolve-plus-vaporizer-kit-3176",
+      "source_id": "3176",
+      "name": "Evolve Plus Vaporizer Kit",
+      "price_aud": 99.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "1100mAh",
+        "coil_type": "Dual Quartz Coil",
+        "coil_resistance": "0.8ohm",
+        "charging_type": "Micro-USB",
+        "voltage_levels": "Single Voltage Output",
+        "preheat_function": "Yes",
+        "airflow_control": "Adjustable",
+        "material_compatibility": "Wax Concentrates",
+        "chamber_capacity": "0.5g",
+        "height": "120mm",
+        "diameter": "19mm",
+        "weight": "85g",
+        "available_colors": "Black, Silver, Gold, Rose Gold, Blue",
+        "body_material": "Stainless Steel",
+        "thread_type": "510",
+        "features": "Built-in silicone jar",
+        "wattage": "15W"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-evolve-plus-vaporizer-kit-3176.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-evolve-plus-vaporizer-kit-3176.webp"
+      },
+      "brand": "Yocan",
+      "series": ""
+    },
+    {
+      "id": "yocan-evolve-plus-xl-2-in-1-vaporizer-10259",
+      "source_id": "10259",
+      "name": "Evolve Plus Xl 2 In 1 Vaporizer",
+      "price_aud": 118.99,
+      "currency": "AUD",
+      "specs": {
+        "coil_type": "quad coil",
+        "coil_material": "quartz",
+        "battery_capacity": "1400mAh",
+        "voltage_levels": "3.2V, 3.7V, 4.2V",
+        "adjustable_airflow": "yes",
+        "connection": "510 thread",
+        "diameter": "22mm",
+        "height": "130mm",
+        "material": "stainless steel",
+        "preheat_function": "yes",
+        "dab_tool": "integrated",
+        "magnetic_connection": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-evolve-plus-xl-2-in-1-vaporizer-10259.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-evolve-plus-xl-2-in-1-vaporizer-10259.webp"
+      },
+      "brand": "Yocan",
+      "series": ""
+    },
+    {
+      "id": "lookah-seahorse-20-electric-dab-pen-2525",
+      "source_id": "2525",
+      "name": "Seahorse 2.0 Electric Dab Pen",
+      "price_aud": 119.99,
+      "currency": "AUD",
+      "specs": {
+        "material": "Quartz",
+        "coil_type": "Quartz Coil",
+        "battery_capacity": "650mAh",
+        "voltage_levels": "3.2V, 3.6V, 4.1V",
+        "preheat": "Yes",
+        "connection": "510 thread",
+        "dimensions": "128.75mm x 17.5mm x 17.5mm",
+        "charging_type": "Micro-USB",
+        "heat_up_time": "Instant",
+        "features": "Variable Voltage, Replaceable Coils, Borosilicate Glass Tip",
+        "compatible_with": "Concentrates",
+        "body_material": "Metal"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lookah-seahorse-20-electric-dab-pen-2525.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lookah-seahorse-20-electric-dab-pen-2525.webp"
+      },
+      "brand": "Lookah",
+      "series": ""
+    },
+    {
+      "id": "lookah-seahorse-pro-20-2587",
+      "source_id": "2587",
+      "name": "Seahorse PRO 2.0",
+      "price_aud": 168.99,
+      "currency": "AUD",
+      "specs": {
+        "material": "Quartz",
+        "battery_capacity": "650mAh",
+        "voltage_levels": "3.2V, 3.6V, 4.1V",
+        "preheat_function": "Yes",
+        "connection": "Magnetic",
+        "coil_type": "Quartz",
+        "dimensions": "128mm x 22mm x 22mm",
+        "weight": "46g",
+        "charging_type": "USB-C",
+        "heat_up_time": "Instant",
+        "features": "Variable Voltage, Replaceable Coils, Portable, Haptic Feedback"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lookah-seahorse-pro-20-2587.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lookah-seahorse-pro-20-2587.webp"
+      },
+      "brand": "Lookah",
+      "series": ""
+    },
+    {
+      "id": "lookah-swordfish-concentrate-vape-pen-950mah-2619",
+      "source_id": "2619",
+      "name": "Swordfish Concentrate Vape Pen – 950mAh",
+      "price_aud": 119.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "950mAh",
+        "battery_type": "Built-in",
+        "adjustable_voltage": "Yes",
+        "preheat": "Yes",
+        "connection": "Magnetic",
+        "coil_material": "Quartz",
+        "compatible_with": "Concentrates",
+        "dimensions": "36mm x 28mm x 95mm",
+        "weight": "90g",
+        "charging_type": "USB-C",
+        "airflow": "Adjustable",
+        "material": "Aluminum Alloy"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lookah-swordfish-concentrate-vape-pen-950mah-2619.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lookah-swordfish-concentrate-vape-pen-950mah-2619.webp"
+      },
+      "brand": "Lookah",
+      "series": ""
+    },
+    {
+      "id": "lookah-seahorse-x-all-in-one-electric-dab-kit-3099",
+      "source_id": "3099",
+      "name": "Seahorse X All In One Electric Dab Kit",
+      "price_aud": 169.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "voltage_levels": "3.2V, 3.6V, 4.1V",
+        "coil_type": "Quartz",
+        "connection": "Magnetic",
+        "preheat_function": "Yes",
+        "charging_type": "USB-C",
+        "material": "Quartz, Glass",
+        "dimensions": "4.75 inches",
+        "features": "All-in-one design, Flexible dab hose, Integrated water bubbler",
+        "compatible_with": "Concentrates",
+        "includes": "Seahorse X device, Dab tool, USB-C cable, User manual"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lookah-seahorse-x-all-in-one-electric-dab-kit-3099.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lookah-seahorse-x-all-in-one-electric-dab-kit-3099.webp"
+      },
+      "brand": "Lookah",
+      "series": ""
+    },
+    {
+      "id": "ooze-beacon-slim-wax-pen-800mah-2584",
+      "source_id": "2584",
+      "name": "Beacon Slim Wax Pen | 800mAh",
+      "price_aud": 89.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "800mAh",
+        "battery_type": "internal",
+        "adjustable_voltage": "yes",
+        "preheat_function": "yes",
+        "connection": "510 thread",
+        "compatible_with": "wax concentrates",
+        "charging_method": "USB",
+        "construction": "metal",
+        "activation": "button-activated"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-beacon-slim-wax-pen-800mah-2584.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-beacon-slim-wax-pen-800mah-2584.webp"
+      },
+      "brand": "Ooze",
+      "series": ""
+    },
+    {
+      "id": "ooze-slim-twist-pro-concentrate-vape-kit-2855",
+      "source_id": "2855",
+      "name": "Slim Twist PRO Concentrate Vape Kit",
+      "price_aud": 89.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "320mAh",
+        "voltage_range": "3.3V-4.8V",
+        "preheat_function": "Yes",
+        "adjustable_voltage": "Yes",
+        "connection": "510 Thread",
+        "charging_method": "USB",
+        "coil_material": "Quartz",
+        "coil_type": "Dual Quartz",
+        "dab_tool_included": "Yes",
+        "atomizer_included": "Yes",
+        "variable_voltage": "Yes",
+        "battery_type": "Integrated",
+        "dimensions": "11mm diameter"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-slim-twist-pro-concentrate-vape-kit-2855.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-slim-twist-pro-concentrate-vape-kit-2855.webp"
+      },
+      "brand": "Ooze",
+      "series": ""
+    },
+    {
+      "id": "ooze-pronto-electronic-concentrate-vaporizer-900mah-2969",
+      "source_id": "2969",
+      "name": "Pronto Electronic Concentrate Vaporizer – 900mAh",
+      "price_aud": 99.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "900mAh",
+        "voltage_levels": "3",
+        "preheat_function": "Yes",
+        "charging_port": "USB-C",
+        "coil_type": "Quartz",
+        "adjustable_airflow": "Yes",
+        "material": "Metal",
+        "dimensions": "4.5 inches",
+        "weight": "4 oz",
+        "heat_up_time": "15 seconds",
+        "automatic_shutoff": "Yes",
+        "warranty": "Limited Lifetime"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-pronto-electronic-concentrate-vaporizer-900mah-2969.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-pronto-electronic-concentrate-vaporizer-900mah-2969.webp"
+      },
+      "brand": "Ooze",
+      "series": ""
+    },
+    {
+      "id": "ooze-signal-concentrate-vaporizer-pen-650mah-3036",
+      "source_id": "3036",
+      "name": "Signal Concentrate Vaporizer Pen | 650mAh",
+      "price_aud": 89.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "voltage_levels": "3.4V, 3.6V, 3.8V, 4.0V",
+        "preheat_function": "Yes",
+        "charging_method": "USB",
+        "connection": "510 thread",
+        "material": "Metal",
+        "activation": "Button-activated",
+        "adjustable_airflow": "No",
+        "dimensions": "11mm diameter",
+        "features": "Auto shut-off, discreet design",
+        "compatible_with": "Concentrates",
+        "heat_up_time": "Instant",
+        "warranty": "Limited Lifetime Warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-signal-concentrate-vaporizer-pen-650mah-3036.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-signal-concentrate-vaporizer-pen-650mah-3036.webp"
+      },
+      "brand": "Ooze",
+      "series": ""
+    },
+    {
+      "id": "ooze-booster-extract-vaporizer-1100mah-3923",
+      "source_id": "3923",
+      "name": "Booster Extract Vaporizer | 1100mAh",
+      "price_aud": 89.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "1100mAh",
+        "voltage_levels": "3.0V, 3.4V, 3.7V, 4.0V",
+        "preheat_function": "Yes",
+        "charging_port": "USB-C",
+        "connection": "Magnetic",
+        "material": "Metal",
+        "dimensions": "110mm x 25mm x 20mm",
+        "weight": "80g",
+        "compatible_with": "Concentrates",
+        "coil_type": "Quartz",
+        "adjustable_airflow": "No",
+        "activation": "Button-activated",
+        "heat_up_time": "15 seconds",
+        "sessions_per_charge": "10-15",
+        "warranty": "Limited Lifetime"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-booster-extract-vaporizer-1100mah-3923.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-booster-extract-vaporizer-1100mah-3923.webp"
+      },
+      "brand": "Ooze",
+      "series": ""
+    },
+    {
+      "id": "g-pen-micro-concentrate-vaporizer-2617",
+      "source_id": "2617",
+      "name": "Micro+ Concentrate Vaporizer",
+      "price_aud": 199.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable",
+        "compatible_material": "concentrates",
+        "battery_capacity": "850mAh",
+        "voltage_settings": "3",
+        "heat_up_time": "5 seconds",
+        "charging_time": "90 minutes",
+        "charging_type": "USB-C",
+        "dimensions": "4.5\" x 0.6\"",
+        "weight": "2 oz",
+        "construction": "zinc alloy",
+        "coil_material": "ceramic",
+        "airflow": "fixed",
+        "warranty": "1 year",
+        "features": "haptic feedback, smart chip technology, carb cap"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-micro-concentrate-vaporizer-2617.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-micro-concentrate-vaporizer-2617.webp"
+      },
+      "brand": "G Pen",
+      "series": ""
+    },
+    {
+      "id": "g-pen-micro-vaporizer-2620",
+      "source_id": "2620",
+      "name": "Micro+ Vaporizer",
+      "price_aud": 199.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "wax",
+        "battery_capacity": "500mAh",
+        "voltage_levels": "3",
+        "charging_port": "USB-C",
+        "connection": "510-thread",
+        "material": "zinc alloy",
+        "activation": "button-activated",
+        "coil_material": "ceramic",
+        "airflow": "adjustable",
+        "heat_time": "5 seconds",
+        "dimensions": "114mm x 19mm",
+        "weight": "50g",
+        "color": "blue"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-micro-vaporizer-2620.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-micro-vaporizer-2620.webp"
+      },
+      "brand": "G Pen",
+      "series": ""
+    },
+    {
+      "id": "g-pen-lemonnade-x-g-pen-micro-vaporizer-2621",
+      "source_id": "2621",
+      "name": "Lemonnade X G Pen Micro+ Vaporizer",
+      "price_aud": 199.99,
+      "currency": "AUD",
+      "specs": {
+        "material": "Quartz",
+        "battery_capacity": "850mAh",
+        "voltage_levels": "3",
+        "heat_time": "5 seconds",
+        "charging_time": "90 minutes",
+        "connection": "510-thread",
+        "dimensions": "4.5\" x 0.625\" diameter",
+        "weight": "0.2 lbs",
+        "compatible_with": "Concentrates",
+        "features": "Haptic feedback, smart-chip technology, manual or automatic draw",
+        "included": "G Pen Micro+ Battery, G Pen Micro+ Tank, G Pen Micro+ Mouthpiece, USB to USB-C Charging Cable, G Pen Keychain Tool"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-lemonnade-x-g-pen-micro-vaporizer-2621.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-lemonnade-x-g-pen-micro-vaporizer-2621.webp"
+      },
+      "brand": "G Pen",
+      "series": ""
+    },
+    {
+      "id": "g-pen-micro-vaporizer-2649",
+      "source_id": "2649",
+      "name": "Micro+ Vaporizer",
+      "price_aud": 199.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "850mAh",
+        "voltage_levels": "Low, Medium, High",
+        "charging_port": "USB-C",
+        "heat_source": "Ceramic",
+        "material_compatibility": "Concentrates",
+        "activation": "Button-activated",
+        "coil_material": "Quartz",
+        "airflow": "Fixed",
+        "dimensions": "4.5\" x 0.55\" x 0.55\"",
+        "weight": "2 oz",
+        "warranty": "1 year",
+        "features": "Haptic feedback, Smart chip technology, Carb cap",
+        "included": "G Pen Micro+ Battery, G Pen Micro+ Tank, G Pen Keychain Tool, USB to USB-C Charging Cable, Hemp Travel Case"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-micro-vaporizer-2649.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-micro-vaporizer-2649.webp"
+      },
+      "brand": "G Pen",
+      "series": ""
+    },
+    {
+      "id": "g-pen-roam-portable-e-rig-vaporizer-2854",
+      "source_id": "2854",
+      "name": "Roam – Portable E-Rig Vaporizer",
+      "price_aud": 369.99,
+      "currency": "AUD",
+      "specs": {
+        "material_compatibility": "concentrates",
+        "heating_style": "conduction",
+        "temperature_control": "yes",
+        "battery_capacity": "1300mAh",
+        "heat_up_time": "5 seconds",
+        "dimensions": "121mm x 33mm",
+        "weight": "227g",
+        "warranty": "1 year",
+        "features": "haptic feedback, borosilicate glass hydrotube, pass-through charging",
+        "adjustable_temperature_range": "315°C - 428°C (600°F - 800°F)",
+        "charging_time": "2-3 hours",
+        "connection": "micro-USB"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-roam-portable-e-rig-vaporizer-2854.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-roam-portable-e-rig-vaporizer-2854.webp"
+      },
+      "brand": "G Pen",
+      "series": ""
+    },
+    {
+      "id": "g-pen-roam-portable-e-rig-vaporizer-2891",
+      "source_id": "2891",
+      "name": "Roam – Portable E-Rig Vaporizer",
+      "price_aud": 369.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_material": "wax concentrates",
+        "battery_capacity": "1300mAh",
+        "voltage_modes": "variable voltage",
+        "temperature_range": "204°C - 427°C (400°F - 800°F)",
+        "heat_up_time": "5 seconds",
+        "charging_time": "2-3 hours",
+        "connection": "micro-USB",
+        "dimensions": "121mm x 33mm x 33mm",
+        "weight": "181g",
+        "water_filtration": "yes",
+        "replaceable_atomizer": "yes",
+        "material": "aluminum alloy, silicone",
+        "display": "LED",
+        "haptic_feedback": "yes",
+        "automatic_shutoff": "yes",
+        "warranty": "1 year"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-roam-portable-e-rig-vaporizer-2891.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-roam-portable-e-rig-vaporizer-2891.webp"
+      },
+      "brand": "G Pen",
+      "series": ""
+    },
+    {
+      "id": "lemonnade-x-g-pen-micro-concentrate-vaporizer-2936",
+      "source_id": "2936",
+      "name": "x G Pen Micro+ Concentrate Vaporizer",
+      "price_aud": 199.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "wax concentrate",
+        "battery_capacity": "850mAh",
+        "voltage_levels": "3",
+        "heat_up_time": "5 seconds",
+        "charging_type": "USB-C",
+        "connection": "510-thread",
+        "material": "zinc alloy",
+        "dimensions": "115mm x 19mm",
+        "weight": "50g",
+        "features": "haptic feedback, smart chip technology, manual or automatic draw",
+        "included": "Micro+ Tank, USB-C Charging Cable, G Pen Keychain Tool"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lemonnade-x-g-pen-micro-concentrate-vaporizer-2936.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lemonnade-x-g-pen-micro-concentrate-vaporizer-2936.webp"
+      },
+      "brand": "G Pen",
+      "series": ""
+    },
+    {
+      "id": "g-pen-roam-concentrate-vaporizer-2971",
+      "source_id": "2971",
+      "name": "Roam Concentrate Vaporizer",
+      "price_aud": 369.99,
+      "currency": "AUD",
+      "specs": {
+        "material": "Aluminum Alloy, Silicone",
+        "dimensions": "121mm x 33mm x 33mm",
+        "battery_capacity": "1300mAh",
+        "voltage": "2.5V-4.0V",
+        "temperature_range": "600°F - 800°F",
+        "heat_up_time": "5 seconds",
+        "charging_time": "2-3 hours",
+        "display": "LED",
+        "water_filtration": "Hydro-Tube",
+        "connection": "Micro-USB",
+        "compatible_material": "Concentrates",
+        "features": "Haptic Feedback, Pass-Through Charging, Full Quartz Tank",
+        "manufacturer_warranty": "1 year"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-roam-concentrate-vaporizer-2971.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-roam-concentrate-vaporizer-2971.webp"
+      },
+      "brand": "G Pen",
+      "series": ""
+    },
+    {
+      "id": "boundless-vaporizer-terp-pen-2651",
+      "source_id": "2651",
+      "name": "Terp Pen",
+      "price_aud": 89.99,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "125mm x 14mm",
+        "weight": "28g",
+        "battery_capacity": "300mAh",
+        "voltage": "3.3V-4.2V",
+        "charging_time": "30 minutes",
+        "coil_type": "Ceramic",
+        "activation": "Inhale Activated",
+        "material_compatibility": "Wax Concentrates",
+        "heat_up_time": "Instant",
+        "adjustable_airflow": "Yes",
+        "connection": "Magnetic",
+        "construction": "Stainless Steel",
+        "available_colors": "Black, Silver, Teal",
+        "warranty": "3-Year Manufacturer Warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/boundless-vaporizer-terp-pen-2651.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/boundless-vaporizer-terp-pen-2651.webp"
+      },
+      "brand": "Boundless Vaporizers",
+      "series": ""
+    },
+    {
+      "id": "focus-v-aeris-vaporizer-800mah-black-2812",
+      "source_id": "2812",
+      "name": "AERIS Vaporizer – 800mAh / Black",
+      "price_aud": 339.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "800mAh",
+        "color": "Black",
+        "material": "Aluminum Alloy",
+        "dimensions": "135mm x 30mm",
+        "weight": "150g",
+        "heating_element": "Ceramic",
+        "temperature_range": "250°F - 800°F",
+        "heat_up_time": "15 seconds",
+        "charging_time": "1.5 hours",
+        "charging_type": "USB-C",
+        "vibration_feedback": "Yes",
+        "water_filtration": "Optional",
+        "warranty": "1 Year"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/focus-v-aeris-vaporizer-800mah-black-2812.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/focus-v-aeris-vaporizer-800mah-black-2812.webp"
+      },
+      "brand": "Focus V",
+      "series": ""
+    },
+    {
+      "id": "vivant-dabox-pro-wax-vaporizer-2999",
+      "source_id": "2999",
+      "name": "Dabox Pro Wax Vaporizer",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "wax",
+        "compatible_material": "wax concentrates",
+        "heating_method": "coil",
+        "temperature_control": "yes",
+        "temperature_settings": "variable voltage",
+        "battery_capacity": "900mAh",
+        "charging_port": "micro-USB",
+        "replaceable_atomizer": "yes",
+        "water_filtration": "optional",
+        "dimensions": "100mm x 40mm x 25mm",
+        "weight": "150g",
+        "material": "aluminum alloy",
+        "available_colors": "black, silver, red, blue",
+        "heat_up_time": "5-10 seconds",
+        "features": "quartz crystal atomizer, magnetic mouthpiece, haptic feedback"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/vivant-dabox-pro-wax-vaporizer-2999.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/vivant-dabox-pro-wax-vaporizer-2999.webp"
+      },
+      "brand": "Vivant",
+      "series": "Dabox Pro"
+    },
+    {
+      "id": "vivant-dabox-wax-vaporizer-3001",
+      "source_id": "3001",
+      "name": "Dabox Wax Vaporizer",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "wax",
+        "compatible_material": "wax concentrates",
+        "heating_method": "coil",
+        "temperature_control": "yes",
+        "temperature_settings": "variable voltage",
+        "battery_capacity": "900mAh",
+        "charging_port": "micro-USB",
+        "replaceable_atomizer": "yes",
+        "water_filtration": "optional",
+        "dimensions": "100mm x 40mm x 25mm",
+        "weight": "150g",
+        "material": "aluminum alloy",
+        "available_colors": "black, silver, red, blue",
+        "heat_up_time": "5-10 seconds",
+        "features": "quartz crystal atomizer, magnetic mouthpiece, haptic feedback"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/vivant-dabox-wax-vaporizer-3001.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/vivant-dabox-wax-vaporizer-3001.webp"
+      },
+      "brand": "Vivant",
+      "series": "Dabox Pro"
+    },
+    {
+      "id": "xvape-fyra-dab-star-edition-3-in-1-vaporizer-1500mah-3127",
+      "source_id": "3127",
+      "name": "Fyra Dab Star Edition 3-in-1 Vaporizer – 1500mAh",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "1500mAh",
+        "adjustable_voltage": "Yes",
+        "preheat": "Yes",
+        "connection": "Magnetic",
+        "material": "Glass, Metal",
+        "dimensions": "129mm x 28mm x 24mm",
+        "weight": "90g",
+        "heat_source": "Quartz Coil",
+        "compatible_with": "Concentrates",
+        "features": "3-in-1 functionality, water bubbler attachment"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/xvape-fyra-dab-star-edition-3-in-1-vaporizer-1500mah-3127.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/xvape-fyra-dab-star-edition-3-in-1-vaporizer-1500mah-3127.webp"
+      },
+      "brand": "XVape",
+      "series": ""
+    },
+    {
+      "id": "hitoki-saber-portable-bundle-3304",
+      "source_id": "3304",
+      "name": "Saber Portable Bundle",
+      "price_aud": 1239.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable",
+        "compatible_material": "wax concentrates",
+        "heating_method": "laser",
+        "temperature_control": "preset",
+        "battery_capacity": "2500mAh",
+        "charging_type": "USB-C",
+        "heat_up_time": "3 seconds",
+        "dimensions": "4.25 x 2.25 x 1.25 inches",
+        "weight": "12 oz",
+        "warranty": "1 year",
+        "included": "Saber unit, glass bubbler attachment, USB-C charging cable, dab tool, carrying case"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/hitoki-saber-portable-bundle-3304.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/hitoki-saber-portable-bundle-3304.webp"
+      },
+      "brand": "Hitoki",
+      "series": ""
+    },
+    {
+      "id": "hitoki-saber-laser-vaporizer-and-bubbler-7682",
+      "source_id": "7682",
+      "name": "Saber – Laser Vaporizer and Bubbler",
+      "price_aud": 1239.99,
+      "currency": "AUD",
+      "specs": {
+        "material": "Aluminum, Glass",
+        "dimensions": "10.5 x 3.5 inches",
+        "weight": "2.2 lbs",
+        "laser_power": "15W",
+        "heating_element": "Laser",
+        "compatibility": "Concentrates",
+        "water_filtration": "Yes",
+        "warranty": "2-year manufacturer warranty",
+        "features": "Automatic shut-off, multiple power settings, borosilicate glass bubbler",
+        "color": "Black/Red"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/hitoki-saber-laser-vaporizer-and-bubbler-7682.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/hitoki-saber-laser-vaporizer-and-bubbler-7682.webp"
+      },
+      "brand": "Hitoki",
+      "series": ""
+    },
+    {
+      "id": "ispire-the-wand-8394",
+      "source_id": "8394",
+      "name": "The Wand",
+      "price_aud": 289.99,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "14cm x 3cm x 2.5cm",
+        "weight": "200g",
+        "battery_capacity": "2900mAh",
+        "charging_time": "2 hours",
+        "temperature_range": "121°C - 427°C (250°F - 800°F)",
+        "heat_up_time": "5-10 seconds",
+        "warranty": "1 year",
+        "material": "Borosilicate Glass, Metal Alloy",
+        "compatibility": "Dabs, Concentrates",
+        "features": "Induction Heating, Temperature Control, Haptic Feedback, Reverse Polarity Protection, Short Circuit Protection, Overheat Protection, Low Voltage Protection, Automatic Shutoff",
+        "includes": "The Wand, Angled Banger, Straight Banger, Carb Cap, Dab Tool, User Manual, USB-C Charging Cable"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ispire-the-wand-8394.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ispire-the-wand-8394.webp"
+      },
+      "brand": "Ispire",
+      "series": ""
+    },
+    {
+      "id": "origin-ii-vaporizer-10265",
+      "source_id": "10265",
+      "name": "Ii Vaporizer",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "concentrates",
+        "battery_capacity": "650mAh",
+        "voltage_settings": "3.0V, 3.4V, 3.8V",
+        "preheat_function": "yes",
+        "charging_type": "USB-C",
+        "material": "aluminum alloy",
+        "height": "120mm",
+        "diameter": "19mm",
+        "weight": "60g",
+        "available_colors": "black, silver"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/origin-ii-vaporizer-10265.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/origin-ii-vaporizer-10265.webp"
+      },
+      "brand": "Origin",
+      "series": ""
+    }
+  ]
+}

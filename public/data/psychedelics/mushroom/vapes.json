@@ -1,1 +1,98 @@
-{"path":["psychedelics","mushroom","vapes"],"file":"psychedelics/mushroom/vapes.json","brands":[{"name":"TRĒ House","slug":"trē-house","product_count":4}],"series_index":{"TRĒ House":["Magic Mushroom"]},"products":[{"id":"tre-house-microdose-magic-mushroom-vape-pen-pink-lemonade-2g-disposable-pen-10950","source_id":"10950","name":"MICRODOSE MAGIC MUSHROOM VAPE PEN – PINK LEMONADE – 2G DISPOSABLE PEN","price_aud":79.99,"currency":"AUD","specs":{"cartridge_capacity":"2g","type":"disposable","blend":"proprietary mushroom blend","dose":"microdose"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-pink-lemonade-2g-disposable-pen-10950.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-pink-lemonade-2g-disposable-pen-10950.webp"},"brand":"TRĒ House","series":"Magic Mushroom"},{"id":"tre-house-microdose-magic-mushroom-vape-pen-mango-smoothie-2g-disposable-pen-10951","source_id":"10951","name":"MICRODOSE MAGIC MUSHROOM VAPE PEN – MANGO SMOOTHIE – 2G DISPOSABLE PEN","price_aud":79.99,"currency":"AUD","specs":{"cartridge_capacity":"2g","type":"disposable","blend":"proprietary mushroom blend","dose":"microdose"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-mango-smoothie-2g-disposable-pen-10951.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-mango-smoothie-2g-disposable-pen-10951.webp"},"brand":"TRĒ House","series":"Magic Mushroom"},{"id":"tre-house-microdose-magic-mushroom-vape-pen-blue-jello-2g-disposable-vape-pen-10952","source_id":"10952","name":"MICRODOSE MAGIC MUSHROOM VAPE PEN – BLUE JELLO – 2G DISPOSABLE VAPE PEN","price_aud":79.99,"currency":"AUD","specs":{"cartridge_capacity":"2g","type":"disposable","blend":"proprietary mushroom blend","dose":"microdose"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-blue-jello-2g-disposable-vape-pen-10952.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-blue-jello-2g-disposable-vape-pen-10952.webp"},"brand":"TRĒ House","series":"Magic Mushroom"},{"id":"tre-house-microdose-magic-mushroom-vape-pen-apple-tart-2g-disposable-vape-10953","source_id":"10953","name":"MICRODOSE MAGIC MUSHROOM VAPE PEN – APPLE TART – 2G DISPOSABLE VAPE","price_aud":79.99,"currency":"AUD","specs":{"cartridge_capacity":"2g","type":"disposable","blend":"proprietary mushroom blend","dose":"microdose"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-apple-tart-2g-disposable-vape-10953.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-apple-tart-2g-disposable-vape-10953.webp"},"brand":"TRĒ House","series":"Magic Mushroom"}]}
+{
+  "path": [
+    "psychedelics",
+    "mushroom",
+    "vapes"
+  ],
+  "file": "psychedelics/mushroom/vapes.json",
+  "brands": [
+    {
+      "name": "TRĒ House",
+      "slug": "trē-house",
+      "product_count": 4
+    }
+  ],
+  "series_index": {
+    "TRĒ House": [
+      "Magic Mushroom"
+    ]
+  },
+  "products": [
+    {
+      "id": "tre-house-microdose-magic-mushroom-vape-pen-pink-lemonade-2g-disposable-pen-10950",
+      "source_id": "10950",
+      "name": "MICRODOSE MAGIC MUSHROOM VAPE PEN – PINK LEMONADE – 2G DISPOSABLE PEN",
+      "price_aud": 89.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "2g",
+        "type": "disposable",
+        "blend": "proprietary mushroom blend",
+        "dose": "microdose"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-pink-lemonade-2g-disposable-pen-10950.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-pink-lemonade-2g-disposable-pen-10950.webp"
+      },
+      "brand": "TRĒ House",
+      "series": "Magic Mushroom"
+    },
+    {
+      "id": "tre-house-microdose-magic-mushroom-vape-pen-mango-smoothie-2g-disposable-pen-10951",
+      "source_id": "10951",
+      "name": "MICRODOSE MAGIC MUSHROOM VAPE PEN – MANGO SMOOTHIE – 2G DISPOSABLE PEN",
+      "price_aud": 89.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "2g",
+        "type": "disposable",
+        "blend": "proprietary mushroom blend",
+        "dose": "microdose"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-mango-smoothie-2g-disposable-pen-10951.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-mango-smoothie-2g-disposable-pen-10951.webp"
+      },
+      "brand": "TRĒ House",
+      "series": "Magic Mushroom"
+    },
+    {
+      "id": "tre-house-microdose-magic-mushroom-vape-pen-blue-jello-2g-disposable-vape-pen-10952",
+      "source_id": "10952",
+      "name": "MICRODOSE MAGIC MUSHROOM VAPE PEN – BLUE JELLO – 2G DISPOSABLE VAPE PEN",
+      "price_aud": 89.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "2g",
+        "type": "disposable",
+        "blend": "proprietary mushroom blend",
+        "dose": "microdose"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-blue-jello-2g-disposable-vape-pen-10952.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-blue-jello-2g-disposable-vape-pen-10952.webp"
+      },
+      "brand": "TRĒ House",
+      "series": "Magic Mushroom"
+    },
+    {
+      "id": "tre-house-microdose-magic-mushroom-vape-pen-apple-tart-2g-disposable-vape-10953",
+      "source_id": "10953",
+      "name": "MICRODOSE MAGIC MUSHROOM VAPE PEN – APPLE TART – 2G DISPOSABLE VAPE",
+      "price_aud": 89.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "2g",
+        "type": "disposable",
+        "blend": "proprietary mushroom blend",
+        "dose": "microdose"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-apple-tart-2g-disposable-vape-10953.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/tre-house-microdose-magic-mushroom-vape-pen-apple-tart-2g-disposable-vape-10953.webp"
+      },
+      "brand": "TRĒ House",
+      "series": "Magic Mushroom"
+    }
+  ]
+}

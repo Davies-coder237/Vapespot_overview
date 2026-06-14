@@ -1,1 +1,512 @@
-{"path":["cannabinoids","cannabinoids-e-liquids","cbd-e-liquids"],"file":"cannabinoids/cannabinoids-e-liquids/cbd-e-liquids.json","brands":[{"name":"Supreme CBD","slug":"supreme-cbd","product_count":26}],"series_index":{},"products":[{"id":"supreme-cbd-raspberry-pineapple-e-liquid-60ml-5567","source_id":"5567","name":"Raspberry Pineapple E-Liquid 60ml","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-raspberry-pineapple-e-liquid-60ml-5567.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-raspberry-pineapple-e-liquid-60ml-5567.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-sweet-strawberry-e-liquid-60ml-3000mg-5568","source_id":"5568","name":"Sweet Strawberry E-Liquid 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-sweet-strawberry-e-liquid-60ml-3000mg-5568.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-sweet-strawberry-e-liquid-60ml-3000mg-5568.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-spearmint-menthol-60ml-3000mg-5569","source_id":"5569","name":"Spearmint Menthol 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-spearmint-menthol-60ml-3000mg-5569.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-spearmint-menthol-60ml-3000mg-5569.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-arctic-berry-60ml-3000mg-5570","source_id":"5570","name":"Arctic Berry 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-arctic-berry-60ml-3000mg-5570.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-arctic-berry-60ml-3000mg-5570.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-fruit-punch-e-liquid-60ml-3000mg-5571","source_id":"5571","name":"Fruit Punch E-Liquid 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-punch-e-liquid-60ml-3000mg-5571.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-punch-e-liquid-60ml-3000mg-5571.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-zesty-pink-e-liquid-60ml-3000mg-5597","source_id":"5597","name":"Zesty Pink E-Liquid 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-zesty-pink-e-liquid-60ml-3000mg-5597.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-zesty-pink-e-liquid-60ml-3000mg-5597.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-cherry-berry-ice-e-liquid-60ml-5598","source_id":"5598","name":"Cherry Berry Ice E-Liquid 60ml","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cherry-berry-ice-e-liquid-60ml-5598.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cherry-berry-ice-e-liquid-60ml-5598.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-cosmic-candy-60ml-3000mg-5599","source_id":"5599","name":"Cosmic Candy 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cosmic-candy-60ml-3000mg-5599.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cosmic-candy-60ml-3000mg-5599.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-vapes-grape-e-liquid-1500mg-5600","source_id":"5600","name":"Vapes Grape E-Liquid 1500mg","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-vapes-grape-e-liquid-1500mg-5600.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-vapes-grape-e-liquid-1500mg-5600.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-raspberry-pineapple-e-liquid-60ml-8328","source_id":"8328","name":"Raspberry Pineapple E-Liquid 60ml","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-raspberry-pineapple-e-liquid-60ml-8328.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-raspberry-pineapple-e-liquid-60ml-8328.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-spearmint-menthol-e-liquid-60ml-3000mg-8354","source_id":"8354","name":"Spearmint Menthol E-Liquid 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-spearmint-menthol-e-liquid-60ml-3000mg-8354.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-spearmint-menthol-e-liquid-60ml-3000mg-8354.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-arctic-berry-e-liquid-60ml-3000mg-8355","source_id":"8355","name":"Arctic Berry E-Liquid 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-arctic-berry-e-liquid-60ml-3000mg-8355.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-arctic-berry-e-liquid-60ml-3000mg-8355.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-fruit-punch-60ml-3000mg-8356","source_id":"8356","name":"Fruit Punch 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-punch-60ml-3000mg-8356.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-punch-60ml-3000mg-8356.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-zesty-pink-e-liquid-60ml-3000mg-8357","source_id":"8357","name":"Zesty Pink E-Liquid 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-zesty-pink-e-liquid-60ml-3000mg-8357.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-zesty-pink-e-liquid-60ml-3000mg-8357.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-cherry-berry-ice-e-liquid-60ml-3000mg-8358","source_id":"8358","name":"Cherry Berry Ice E-Liquid 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cherry-berry-ice-e-liquid-60ml-3000mg-8358.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cherry-berry-ice-e-liquid-60ml-3000mg-8358.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-cosmic-candy-e-liquid-60ml-3000mg-8359","source_id":"8359","name":"Cosmic Candy E-Liquid 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cosmic-candy-e-liquid-60ml-3000mg-8359.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cosmic-candy-e-liquid-60ml-3000mg-8359.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-grape-e-liquid-50ml-1500mg-8360","source_id":"8360","name":"Grape E-Liquid 50ml (1500mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-grape-e-liquid-50ml-1500mg-8360.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-grape-e-liquid-50ml-1500mg-8360.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-raspberry-pineapple-e-liquid-60ml-3000mg-11011","source_id":"11011","name":"Raspberry Pineapple E-Liquid 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-raspberry-pineapple-e-liquid-60ml-3000mg-11011.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-raspberry-pineapple-e-liquid-60ml-3000mg-11011.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-sweet-strawberry-e-liquid-60ml-3000mg-11012","source_id":"11012","name":"Sweet Strawberry E-Liquid 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-sweet-strawberry-e-liquid-60ml-3000mg-11012.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-sweet-strawberry-e-liquid-60ml-3000mg-11012.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-spearmint-menthol-60ml-3000mg-11013","source_id":"11013","name":"Spearmint Menthol 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-spearmint-menthol-60ml-3000mg-11013.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-spearmint-menthol-60ml-3000mg-11013.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-arctic-berry-e-liquid-60ml-3000mg-11041","source_id":"11041","name":"Arctic Berry E-Liquid 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-arctic-berry-e-liquid-60ml-3000mg-11041.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-arctic-berry-e-liquid-60ml-3000mg-11041.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-fruit-punch-e-liquid-60ml-3000mg-11042","source_id":"11042","name":"Fruit Punch E-Liquid 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-punch-e-liquid-60ml-3000mg-11042.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-punch-e-liquid-60ml-3000mg-11042.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-zesty-pink-60ml-3000mg-11043","source_id":"11043","name":"Zesty Pink 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-zesty-pink-60ml-3000mg-11043.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-zesty-pink-60ml-3000mg-11043.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-cherry-berry-ice-e-liquid-60ml-3000mg-11044","source_id":"11044","name":"Cherry Berry Ice E-Liquid 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cherry-berry-ice-e-liquid-60ml-3000mg-11044.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cherry-berry-ice-e-liquid-60ml-3000mg-11044.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-cosmic-candy-60ml-3000mg-11045","source_id":"11045","name":"Cosmic Candy 60ml (3000mg)","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cosmic-candy-60ml-3000mg-11045.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cosmic-candy-60ml-3000mg-11045.webp"},"brand":"Supreme CBD","series":""},{"id":"supreme-cbd-vapes-usa-grape-fanta-vaping-cbd-e-liquids-1500mg-11046","source_id":"11046","name":"Vapes USA Grape Fanta Vaping CBD E-Liquids 1500mg","price_aud":39.95,"currency":"AUD","specs":{"size":"60ml","cbd_content":"3000mg","nicotine_strength":"0mg","formulation":"CBD Isolate"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-vapes-usa-grape-fanta-vaping-cbd-e-liquids-1500mg-11046.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-vapes-usa-grape-fanta-vaping-cbd-e-liquids-1500mg-11046.webp"},"brand":"Supreme CBD","series":""}]}
+{
+  "path": [
+    "cannabinoids",
+    "cannabinoids-e-liquids",
+    "cbd-e-liquids"
+  ],
+  "file": "cannabinoids/cannabinoids-e-liquids/cbd-e-liquids.json",
+  "brands": [
+    {
+      "name": "Supreme CBD",
+      "slug": "supreme-cbd",
+      "product_count": 26
+    }
+  ],
+  "series_index": {},
+  "products": [
+    {
+      "id": "supreme-cbd-raspberry-pineapple-e-liquid-60ml-5567",
+      "source_id": "5567",
+      "name": "Raspberry Pineapple E-Liquid 60ml",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-raspberry-pineapple-e-liquid-60ml-5567.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-raspberry-pineapple-e-liquid-60ml-5567.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-sweet-strawberry-e-liquid-60ml-3000mg-5568",
+      "source_id": "5568",
+      "name": "Sweet Strawberry E-Liquid 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-sweet-strawberry-e-liquid-60ml-3000mg-5568.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-sweet-strawberry-e-liquid-60ml-3000mg-5568.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-spearmint-menthol-60ml-3000mg-5569",
+      "source_id": "5569",
+      "name": "Spearmint Menthol 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-spearmint-menthol-60ml-3000mg-5569.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-spearmint-menthol-60ml-3000mg-5569.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-arctic-berry-60ml-3000mg-5570",
+      "source_id": "5570",
+      "name": "Arctic Berry 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-arctic-berry-60ml-3000mg-5570.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-arctic-berry-60ml-3000mg-5570.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-fruit-punch-e-liquid-60ml-3000mg-5571",
+      "source_id": "5571",
+      "name": "Fruit Punch E-Liquid 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-punch-e-liquid-60ml-3000mg-5571.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-punch-e-liquid-60ml-3000mg-5571.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-zesty-pink-e-liquid-60ml-3000mg-5597",
+      "source_id": "5597",
+      "name": "Zesty Pink E-Liquid 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-zesty-pink-e-liquid-60ml-3000mg-5597.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-zesty-pink-e-liquid-60ml-3000mg-5597.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-cherry-berry-ice-e-liquid-60ml-5598",
+      "source_id": "5598",
+      "name": "Cherry Berry Ice E-Liquid 60ml",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cherry-berry-ice-e-liquid-60ml-5598.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cherry-berry-ice-e-liquid-60ml-5598.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-cosmic-candy-60ml-3000mg-5599",
+      "source_id": "5599",
+      "name": "Cosmic Candy 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cosmic-candy-60ml-3000mg-5599.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cosmic-candy-60ml-3000mg-5599.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-vapes-grape-e-liquid-1500mg-5600",
+      "source_id": "5600",
+      "name": "Vapes Grape E-Liquid 1500mg",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-vapes-grape-e-liquid-1500mg-5600.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-vapes-grape-e-liquid-1500mg-5600.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-raspberry-pineapple-e-liquid-60ml-8328",
+      "source_id": "8328",
+      "name": "Raspberry Pineapple E-Liquid 60ml",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-raspberry-pineapple-e-liquid-60ml-8328.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-raspberry-pineapple-e-liquid-60ml-8328.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-spearmint-menthol-e-liquid-60ml-3000mg-8354",
+      "source_id": "8354",
+      "name": "Spearmint Menthol E-Liquid 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-spearmint-menthol-e-liquid-60ml-3000mg-8354.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-spearmint-menthol-e-liquid-60ml-3000mg-8354.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-arctic-berry-e-liquid-60ml-3000mg-8355",
+      "source_id": "8355",
+      "name": "Arctic Berry E-Liquid 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-arctic-berry-e-liquid-60ml-3000mg-8355.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-arctic-berry-e-liquid-60ml-3000mg-8355.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-fruit-punch-60ml-3000mg-8356",
+      "source_id": "8356",
+      "name": "Fruit Punch 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-punch-60ml-3000mg-8356.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-punch-60ml-3000mg-8356.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-zesty-pink-e-liquid-60ml-3000mg-8357",
+      "source_id": "8357",
+      "name": "Zesty Pink E-Liquid 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-zesty-pink-e-liquid-60ml-3000mg-8357.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-zesty-pink-e-liquid-60ml-3000mg-8357.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-cherry-berry-ice-e-liquid-60ml-3000mg-8358",
+      "source_id": "8358",
+      "name": "Cherry Berry Ice E-Liquid 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cherry-berry-ice-e-liquid-60ml-3000mg-8358.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cherry-berry-ice-e-liquid-60ml-3000mg-8358.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-cosmic-candy-e-liquid-60ml-3000mg-8359",
+      "source_id": "8359",
+      "name": "Cosmic Candy E-Liquid 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cosmic-candy-e-liquid-60ml-3000mg-8359.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cosmic-candy-e-liquid-60ml-3000mg-8359.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-grape-e-liquid-50ml-1500mg-8360",
+      "source_id": "8360",
+      "name": "Grape E-Liquid 50ml (1500mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-grape-e-liquid-50ml-1500mg-8360.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-grape-e-liquid-50ml-1500mg-8360.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-raspberry-pineapple-e-liquid-60ml-3000mg-11011",
+      "source_id": "11011",
+      "name": "Raspberry Pineapple E-Liquid 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-raspberry-pineapple-e-liquid-60ml-3000mg-11011.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-raspberry-pineapple-e-liquid-60ml-3000mg-11011.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-sweet-strawberry-e-liquid-60ml-3000mg-11012",
+      "source_id": "11012",
+      "name": "Sweet Strawberry E-Liquid 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-sweet-strawberry-e-liquid-60ml-3000mg-11012.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-sweet-strawberry-e-liquid-60ml-3000mg-11012.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-spearmint-menthol-60ml-3000mg-11013",
+      "source_id": "11013",
+      "name": "Spearmint Menthol 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-spearmint-menthol-60ml-3000mg-11013.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-spearmint-menthol-60ml-3000mg-11013.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-arctic-berry-e-liquid-60ml-3000mg-11041",
+      "source_id": "11041",
+      "name": "Arctic Berry E-Liquid 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-arctic-berry-e-liquid-60ml-3000mg-11041.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-arctic-berry-e-liquid-60ml-3000mg-11041.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-fruit-punch-e-liquid-60ml-3000mg-11042",
+      "source_id": "11042",
+      "name": "Fruit Punch E-Liquid 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-punch-e-liquid-60ml-3000mg-11042.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-punch-e-liquid-60ml-3000mg-11042.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-zesty-pink-60ml-3000mg-11043",
+      "source_id": "11043",
+      "name": "Zesty Pink 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-zesty-pink-60ml-3000mg-11043.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-zesty-pink-60ml-3000mg-11043.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-cherry-berry-ice-e-liquid-60ml-3000mg-11044",
+      "source_id": "11044",
+      "name": "Cherry Berry Ice E-Liquid 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cherry-berry-ice-e-liquid-60ml-3000mg-11044.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cherry-berry-ice-e-liquid-60ml-3000mg-11044.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-cosmic-candy-60ml-3000mg-11045",
+      "source_id": "11045",
+      "name": "Cosmic Candy 60ml (3000mg)",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cosmic-candy-60ml-3000mg-11045.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cosmic-candy-60ml-3000mg-11045.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    },
+    {
+      "id": "supreme-cbd-vapes-usa-grape-fanta-vaping-cbd-e-liquids-1500mg-11046",
+      "source_id": "11046",
+      "name": "Vapes USA Grape Fanta Vaping CBD E-Liquids 1500mg",
+      "price_aud": 44.99,
+      "currency": "AUD",
+      "specs": {
+        "size": "60ml",
+        "cbd_content": "3000mg",
+        "nicotine_strength": "0mg",
+        "formulation": "CBD Isolate"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-vapes-usa-grape-fanta-vaping-cbd-e-liquids-1500mg-11046.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-vapes-usa-grape-fanta-vaping-cbd-e-liquids-1500mg-11046.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": ""
+    }
+  ]
+}

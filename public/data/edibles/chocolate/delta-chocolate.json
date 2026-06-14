@@ -1,1 +1,64 @@
-{"path":["edibles","chocolate","delta-chocolate"],"file":"edibles/chocolate/delta-chocolate.json","brands":[{"name":"küribl","slug":"küribl","product_count":2}],"series_index":{"küribl":["A9"]},"products":[{"id":"küribl-delta-9-cookies-double-chocolate-5283","source_id":"5283","name":"DELTA 9 COOKIES - DOUBLE CHOCOLATE","price_aud":14.99,"currency":"AUD","specs":{"type":"cookies","flavor":"double chocolate","delta_9_content":"50mg","quantity":"10 cookies","delta_9_per_cookie":"5mg","derived_from":"hemp"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/küribl-delta-9-cookies-double-chocolate-5283.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/küribl-delta-9-cookies-double-chocolate-5283.webp"},"brand":"küribl","series":"A9"},{"id":"küribl-delta-9-cookies-double-chocolate-10941","source_id":"10941","name":"DELTA 9 COOKIES - DOUBLE CHOCOLATE","price_aud":14.99,"currency":"AUD","specs":{"type":"cookies","flavor":"double chocolate","delta_9_content":"50mg","quantity":"10 cookies","delta_9_per_cookie":"5mg","derived_from":"hemp"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/küribl-delta-9-cookies-double-chocolate-10941.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/küribl-delta-9-cookies-double-chocolate-10941.webp"},"brand":"küribl","series":"A9"}]}
+{
+  "path": [
+    "edibles",
+    "chocolate",
+    "delta-chocolate"
+  ],
+  "file": "edibles/chocolate/delta-chocolate.json",
+  "brands": [
+    {
+      "name": "küribl",
+      "slug": "küribl",
+      "product_count": 2
+    }
+  ],
+  "series_index": {
+    "küribl": [
+      "A9"
+    ]
+  },
+  "products": [
+    {
+      "id": "küribl-delta-9-cookies-double-chocolate-5283",
+      "source_id": "5283",
+      "name": "DELTA 9 COOKIES - DOUBLE CHOCOLATE",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "type": "cookies",
+        "flavor": "double chocolate",
+        "delta_9_content": "50mg",
+        "quantity": "10 cookies",
+        "delta_9_per_cookie": "5mg",
+        "derived_from": "hemp"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/küribl-delta-9-cookies-double-chocolate-5283.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/küribl-delta-9-cookies-double-chocolate-5283.webp"
+      },
+      "brand": "küribl",
+      "series": "A9"
+    },
+    {
+      "id": "küribl-delta-9-cookies-double-chocolate-10941",
+      "source_id": "10941",
+      "name": "DELTA 9 COOKIES - DOUBLE CHOCOLATE",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "type": "cookies",
+        "flavor": "double chocolate",
+        "delta_9_content": "50mg",
+        "quantity": "10 cookies",
+        "delta_9_per_cookie": "5mg",
+        "derived_from": "hemp"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/küribl-delta-9-cookies-double-chocolate-10941.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/küribl-delta-9-cookies-double-chocolate-10941.webp"
+      },
+      "brand": "küribl",
+      "series": "A9"
+    }
+  ]
+}

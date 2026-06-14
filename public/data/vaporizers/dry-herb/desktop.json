@@ -1,1 +1,341 @@
-{"path":["vaporizers","dry-herb","desktop"],"file":"vaporizers/dry-herb/desktop.json","brands":[{"name":"Arizer","slug":"arizer","product_count":6},{"name":"Storz & Bickel","slug":"storz-&-bickel","product_count":4},{"name":"Retro Vapes","slug":"retro-vapes","product_count":1}],"series_index":{"Arizer":["XQ2","Extreme Q","V-Tower"],"Storz & Bickel":["Volcano Hybrid","Volcano Classic"]},"products":[{"id":"arizer-xq2-desktop-vaporizer-2434","source_id":"2434","name":"XQ2 Desktop Vaporizer","price_aud":399,"currency":"AUD","specs":{"vaporizer_type":"desktop","compatible_material":"dry herb","heating_method":"convection","temperature_control":"digital","temperature_range":"50°C - 260°C (122°F - 500°F)","heat_up_time":"15-30 seconds","fan_assisted_vapor_delivery":"yes","balloon_bag_compatible":"yes","whip_compatible":"yes","remote_control":"yes","display_screen":"LED","precision_temperature_control":"yes","custom_session_settings":"yes","material":"glass, ceramic","dimensions":"18.5 cm Height","weight":"354 g","power_source":"AC adapter","manufacturer_warranty":"3-year limited warranty"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-xq2-desktop-vaporizer-2434.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-xq2-desktop-vaporizer-2434.webp"},"brand":"Arizer","series":"XQ2"},{"id":"arizer-xq2-dry-herb-vaporizer-2477","source_id":"2477","name":"XQ2 Dry Herb Vaporizer","price_aud":349,"currency":"AUD","specs":{"vaporizer_type":"desktop","compatible_with":"dry herb","heating_method":"convection","temperature_control":"digital","temperature_range":"50°C - 260°C (122°F - 500°F)","heat_up_time":"15-20 seconds","fan_assisted_vapor_delivery":"yes","remote_control":"yes","balloon_bag_compatible":"yes","whip_compatible":"yes","multi_user":"yes","material":"glass, ceramic","dimensions":"16 cm x 16 cm x 19 cm","weight":"0.4 kg","power_source":"AC adapter","manufacturer_warranty":"3 years"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-xq2-dry-herb-vaporizer-2477.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-xq2-dry-herb-vaporizer-2477.webp"},"brand":"Arizer","series":"XQ2"},{"id":"arizer-extreme-q-2473","source_id":"2473","name":"Extreme Q","price_aud":349,"currency":"AUD","specs":{"vaporizer_type":"desktop","compatible_material":"dry herb","heating_method":"convection","temperature_control":"digital","temperature_range":"50°C - 260°C (122°F - 500°F)","heat_up_time":"2-3 minutes","power_source":"AC adapter","dimensions":"18 cm x 15 cm x 15 cm","weight":"400g","features":"remote control, multi-speed fan, glass components, precise temperature control, auto shut-off","included":"glass aroma dish, glass stir tool, screen pack, mini whip, all-glass mini whip, remote control, power adapter","warranty":"lifetime on heating element, 3-year limited warranty"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-extreme-q-2473.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-extreme-q-2473.webp"},"brand":"Arizer","series":"Extreme Q"},{"id":"arizer-extreme-q-dry-herb-desktop-vaporizer-2480","source_id":"2480","name":"Extreme Q Dry Herb Desktop Vaporizer","price_aud":349,"currency":"AUD","specs":{"vaporizer_type":"desktop","compatible_material":"dry herb","heating_method":"convection","temperature_control":"digital","temperature_range":"50°C - 260°C (122°F - 500°F)","heat_up_time":"2-3 minutes","power_source":"AC adapter","dimensions":"18 cm x 18 cm x 15 cm","weight":"400g","features":"remote control, fan assisted vapor delivery, balloon bag compatibility, aromatherapy dish","construction":"stainless steel, glass","warranty":"Limited Lifetime"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-extreme-q-dry-herb-desktop-vaporizer-2480.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-extreme-q-dry-herb-desktop-vaporizer-2480.webp"},"brand":"Arizer","series":"Extreme Q"},{"id":"arizer-v-tower-dry-herb-desktop-vaporizer-2475","source_id":"2475","name":"V-Tower Dry Herb Desktop Vaporizer","price_aud":259,"currency":"AUD","specs":{"vaporizer_type":"desktop","compatible_material":"dry herb","heating_method":"convection","temperature_control":"digital","temperature_range":"50°C - 260°C (122°F - 500°F)","heat_up_time":"2-3 minutes","power_source":"mains","dimensions":"16 cm (height) x 8 cm (diameter)","weight":"0.4 kg","warranty":"lifetime on heating element, 2-year limited warranty","features":"digital display, precise temperature control, auto shut-off timer, remote control (optional)","included":"glass aroma tube, glass potpourri dish, stirring tool, screens","material":"stainless steel housing, borosilicate glass components"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-v-tower-dry-herb-desktop-vaporizer-2475.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-v-tower-dry-herb-desktop-vaporizer-2475.webp"},"brand":"Arizer","series":"V-Tower"},{"id":"arizer-v-tower-2478","source_id":"2478","name":"V-Tower","price_aud":249,"currency":"AUD","specs":{"vaporizer_type":"desktop","compatible_material":"dry herb","heating_method":"convection","temperature_control":"digital","temperature_range":"50°C - 260°C (122°F - 500°F)","heat_up_time":"2-3 minutes","power_source":"mains","dimensions":"16 cm (height) x 6 cm (diameter)","weight":"230 g","features":"digital display, precise temperature control, auto shut-off timer, remote control (optional)","materials":"stainless steel, glass","warranty":"2 years"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-v-tower-2478.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-v-tower-2478.webp"},"brand":"Arizer","series":"V-Tower"},{"id":"storz-bickel-volcano-hybrid-vaporizer-2470","source_id":"2470","name":"Volcano Hybrid Vaporizer","price_aud":949,"currency":"AUD","specs":{"heating_style":"convection and conduction","heat_up_time":"1-2 minutes","temperature_range":"40°C - 230°C (104°F - 446°F)","vapor_delivery_method":"balloon or whip","compatible_materials":"dry herb","power_source":"AC power","dimensions":"20.0 x 18.0 cm","weight":"1.8 kg","features":"digital display, app control, automatic shut-off","warranty":"3-year manufacturer warranty"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-hybrid-vaporizer-2470.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-hybrid-vaporizer-2470.webp"},"brand":"Storz & Bickel","series":"Volcano Hybrid"},{"id":"storz-bickel-volcano-hybrid-vaporizer-onyx-limited-edition-2476","source_id":"2476","name":"Volcano Hybrid Vaporizer | Onyx Limited Edition","price_aud":949,"currency":"AUD","specs":{"heating_style":"convection and conduction","heat_up_time":"1-2 minutes","temperature_range":"40°C - 230°C (104°F - 446°F)","vapor_delivery_method":"balloon or whip","compatible_materials":"dry herb","power_source":"AC power","dimensions":"20.0 x 18.0 cm","weight":"1.8 kg","features":"digital display, app control, automatic shut-off","warranty":"3-year manufacturer warranty"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-hybrid-vaporizer-onyx-limited-edition-2476.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-hybrid-vaporizer-onyx-limited-edition-2476.webp"},"brand":"Storz & Bickel","series":"Volcano Hybrid"},{"id":"storz-bickel-volcano-classic-vaporizer-2472","source_id":"2472","name":"Volcano Classic Vaporizer","price_aud":799,"currency":"AUD","specs":{"vaporizer_type":"desktop","compatible_with":"dry herb","heating_style":"convection","heat_up_time":"3-6 minutes","temperature_range":"130°C - 230°C (266°F - 446°F)","temperature_control":"analog dial","dimensions":"18cm Height x 20cm Diameter","weight":"1.8 kg","power_source":"AC power","manufacturer":"Storz & Bickel","country_of_origin":"Germany","warranty":"3-year manufacturer warranty"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-classic-vaporizer-2472.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-classic-vaporizer-2472.webp"},"brand":"Storz & Bickel","series":"Volcano Classic"},{"id":"storz-bickel-volcano-classic-vaporizer-onyx-limited-edition-2474","source_id":"2474","name":"Volcano Classic Vaporizer | Onyx Limited Edition","price_aud":799,"currency":"AUD","specs":{"vaporizer_type":"desktop","compatible_with":"dry herb","heating_style":"convection","heat_up_time":"3-6 minutes","temperature_range":"130°C - 230°C (266°F - 446°F)","temperature_control":"analog dial","dimensions":"18cm Height x 20cm Diameter","weight":"1.8 kg","power_source":"AC power","manufacturer":"Storz & Bickel","country_of_origin":"Germany","warranty":"3-year manufacturer warranty"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-classic-vaporizer-onyx-limited-edition-2474.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-classic-vaporizer-onyx-limited-edition-2474.webp"},"brand":"Storz & Bickel","series":"Volcano Classic"},{"id":"retro-vapes-tabletop-vaporizer-the-bel-air-2516","source_id":"2516","name":"Tabletop Vaporizer | The Bel Air","price_aud":249,"currency":"AUD","specs":{"vaporizer_type":"desktop","compatible_material":"dry herb","heating_method":"convection","temperature_control":"digital","temperature_range":"176°F - 482°F (80°C - 250°C)","heat_up_time":"2-3 minutes","power_source":"wall outlet","housing_material":"metal","dimensions":"6 x 4 x 4 inches","included":"glass mouthpiece, whip","features":"digital display, precise temperature control"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/retro-vapes-tabletop-vaporizer-the-bel-air-2516.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/retro-vapes-tabletop-vaporizer-the-bel-air-2516.webp"},"brand":"Retro Vapes","series":""}]}
+{
+  "path": [
+    "vaporizers",
+    "dry-herb",
+    "desktop"
+  ],
+  "file": "vaporizers/dry-herb/desktop.json",
+  "brands": [
+    {
+      "name": "Arizer",
+      "slug": "arizer",
+      "product_count": 6
+    },
+    {
+      "name": "Storz & Bickel",
+      "slug": "storz-&-bickel",
+      "product_count": 4
+    },
+    {
+      "name": "Retro Vapes",
+      "slug": "retro-vapes",
+      "product_count": 1
+    }
+  ],
+  "series_index": {
+    "Arizer": [
+      "XQ2",
+      "Extreme Q",
+      "V-Tower"
+    ],
+    "Storz & Bickel": [
+      "Volcano Hybrid",
+      "Volcano Classic"
+    ]
+  },
+  "products": [
+    {
+      "id": "arizer-xq2-desktop-vaporizer-2434",
+      "source_id": "2434",
+      "name": "XQ2 Desktop Vaporizer",
+      "price_aud": 418.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "desktop",
+        "compatible_material": "dry herb",
+        "heating_method": "convection",
+        "temperature_control": "digital",
+        "temperature_range": "50°C - 260°C (122°F - 500°F)",
+        "heat_up_time": "15-30 seconds",
+        "fan_assisted_vapor_delivery": "yes",
+        "balloon_bag_compatible": "yes",
+        "whip_compatible": "yes",
+        "remote_control": "yes",
+        "display_screen": "LED",
+        "precision_temperature_control": "yes",
+        "custom_session_settings": "yes",
+        "material": "glass, ceramic",
+        "dimensions": "18.5 cm Height",
+        "weight": "354 g",
+        "power_source": "AC adapter",
+        "manufacturer_warranty": "3-year limited warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-xq2-desktop-vaporizer-2434.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-xq2-desktop-vaporizer-2434.webp"
+      },
+      "brand": "Arizer",
+      "series": "XQ2"
+    },
+    {
+      "id": "arizer-xq2-dry-herb-vaporizer-2477",
+      "source_id": "2477",
+      "name": "XQ2 Dry Herb Vaporizer",
+      "price_aud": 399.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "desktop",
+        "compatible_with": "dry herb",
+        "heating_method": "convection",
+        "temperature_control": "digital",
+        "temperature_range": "50°C - 260°C (122°F - 500°F)",
+        "heat_up_time": "15-20 seconds",
+        "fan_assisted_vapor_delivery": "yes",
+        "remote_control": "yes",
+        "balloon_bag_compatible": "yes",
+        "whip_compatible": "yes",
+        "multi_user": "yes",
+        "material": "glass, ceramic",
+        "dimensions": "16 cm x 16 cm x 19 cm",
+        "weight": "0.4 kg",
+        "power_source": "AC adapter",
+        "manufacturer_warranty": "3 years"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-xq2-dry-herb-vaporizer-2477.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-xq2-dry-herb-vaporizer-2477.webp"
+      },
+      "brand": "Arizer",
+      "series": "XQ2"
+    },
+    {
+      "id": "arizer-extreme-q-2473",
+      "source_id": "2473",
+      "name": "Extreme Q",
+      "price_aud": 389.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "desktop",
+        "compatible_material": "dry herb",
+        "heating_method": "convection",
+        "temperature_control": "digital",
+        "temperature_range": "50°C - 260°C (122°F - 500°F)",
+        "heat_up_time": "2-3 minutes",
+        "power_source": "AC adapter",
+        "dimensions": "18 cm x 15 cm x 15 cm",
+        "weight": "400g",
+        "features": "remote control, multi-speed fan, glass components, precise temperature control, auto shut-off",
+        "included": "glass aroma dish, glass stir tool, screen pack, mini whip, all-glass mini whip, remote control, power adapter",
+        "warranty": "lifetime on heating element, 3-year limited warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-extreme-q-2473.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-extreme-q-2473.webp"
+      },
+      "brand": "Arizer",
+      "series": "Extreme Q"
+    },
+    {
+      "id": "arizer-extreme-q-dry-herb-desktop-vaporizer-2480",
+      "source_id": "2480",
+      "name": "Extreme Q Dry Herb Desktop Vaporizer",
+      "price_aud": 389.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "desktop",
+        "compatible_material": "dry herb",
+        "heating_method": "convection",
+        "temperature_control": "digital",
+        "temperature_range": "50°C - 260°C (122°F - 500°F)",
+        "heat_up_time": "2-3 minutes",
+        "power_source": "AC adapter",
+        "dimensions": "18 cm x 18 cm x 15 cm",
+        "weight": "400g",
+        "features": "remote control, fan assisted vapor delivery, balloon bag compatibility, aromatherapy dish",
+        "construction": "stainless steel, glass",
+        "warranty": "Limited Lifetime"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-extreme-q-dry-herb-desktop-vaporizer-2480.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-extreme-q-dry-herb-desktop-vaporizer-2480.webp"
+      },
+      "brand": "Arizer",
+      "series": "Extreme Q"
+    },
+    {
+      "id": "arizer-v-tower-dry-herb-desktop-vaporizer-2475",
+      "source_id": "2475",
+      "name": "V-Tower Dry Herb Desktop Vaporizer",
+      "price_aud": 299.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "desktop",
+        "compatible_material": "dry herb",
+        "heating_method": "convection",
+        "temperature_control": "digital",
+        "temperature_range": "50°C - 260°C (122°F - 500°F)",
+        "heat_up_time": "2-3 minutes",
+        "power_source": "mains",
+        "dimensions": "16 cm (height) x 8 cm (diameter)",
+        "weight": "0.4 kg",
+        "warranty": "lifetime on heating element, 2-year limited warranty",
+        "features": "digital display, precise temperature control, auto shut-off timer, remote control (optional)",
+        "included": "glass aroma tube, glass potpourri dish, stirring tool, screens",
+        "material": "stainless steel housing, borosilicate glass components"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-v-tower-dry-herb-desktop-vaporizer-2475.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-v-tower-dry-herb-desktop-vaporizer-2475.webp"
+      },
+      "brand": "Arizer",
+      "series": "V-Tower"
+    },
+    {
+      "id": "arizer-v-tower-2478",
+      "source_id": "2478",
+      "name": "V-Tower",
+      "price_aud": 299.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "desktop",
+        "compatible_material": "dry herb",
+        "heating_method": "convection",
+        "temperature_control": "digital",
+        "temperature_range": "50°C - 260°C (122°F - 500°F)",
+        "heat_up_time": "2-3 minutes",
+        "power_source": "mains",
+        "dimensions": "16 cm (height) x 6 cm (diameter)",
+        "weight": "230 g",
+        "features": "digital display, precise temperature control, auto shut-off timer, remote control (optional)",
+        "materials": "stainless steel, glass",
+        "warranty": "2 years"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-v-tower-2478.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-v-tower-2478.webp"
+      },
+      "brand": "Arizer",
+      "series": "V-Tower"
+    },
+    {
+      "id": "storz-bickel-volcano-hybrid-vaporizer-2470",
+      "source_id": "2470",
+      "name": "Volcano Hybrid Vaporizer",
+      "price_aud": 989.99,
+      "currency": "AUD",
+      "specs": {
+        "heating_style": "convection and conduction",
+        "heat_up_time": "1-2 minutes",
+        "temperature_range": "40°C - 230°C (104°F - 446°F)",
+        "vapor_delivery_method": "balloon or whip",
+        "compatible_materials": "dry herb",
+        "power_source": "AC power",
+        "dimensions": "20.0 x 18.0 cm",
+        "weight": "1.8 kg",
+        "features": "digital display, app control, automatic shut-off",
+        "warranty": "3-year manufacturer warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-hybrid-vaporizer-2470.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-hybrid-vaporizer-2470.webp"
+      },
+      "brand": "Storz & Bickel",
+      "series": "Volcano Hybrid"
+    },
+    {
+      "id": "storz-bickel-volcano-hybrid-vaporizer-onyx-limited-edition-2476",
+      "source_id": "2476",
+      "name": "Volcano Hybrid Vaporizer | Onyx Limited Edition",
+      "price_aud": 989.99,
+      "currency": "AUD",
+      "specs": {
+        "heating_style": "convection and conduction",
+        "heat_up_time": "1-2 minutes",
+        "temperature_range": "40°C - 230°C (104°F - 446°F)",
+        "vapor_delivery_method": "balloon or whip",
+        "compatible_materials": "dry herb",
+        "power_source": "AC power",
+        "dimensions": "20.0 x 18.0 cm",
+        "weight": "1.8 kg",
+        "features": "digital display, app control, automatic shut-off",
+        "warranty": "3-year manufacturer warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-hybrid-vaporizer-onyx-limited-edition-2476.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-hybrid-vaporizer-onyx-limited-edition-2476.webp"
+      },
+      "brand": "Storz & Bickel",
+      "series": "Volcano Hybrid"
+    },
+    {
+      "id": "storz-bickel-volcano-classic-vaporizer-2472",
+      "source_id": "2472",
+      "name": "Volcano Classic Vaporizer",
+      "price_aud": 839.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "desktop",
+        "compatible_with": "dry herb",
+        "heating_style": "convection",
+        "heat_up_time": "3-6 minutes",
+        "temperature_range": "130°C - 230°C (266°F - 446°F)",
+        "temperature_control": "analog dial",
+        "dimensions": "18cm Height x 20cm Diameter",
+        "weight": "1.8 kg",
+        "power_source": "AC power",
+        "manufacturer": "Storz & Bickel",
+        "country_of_origin": "Germany",
+        "warranty": "3-year manufacturer warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-classic-vaporizer-2472.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-classic-vaporizer-2472.webp"
+      },
+      "brand": "Storz & Bickel",
+      "series": "Volcano Classic"
+    },
+    {
+      "id": "storz-bickel-volcano-classic-vaporizer-onyx-limited-edition-2474",
+      "source_id": "2474",
+      "name": "Volcano Classic Vaporizer | Onyx Limited Edition",
+      "price_aud": 839.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "desktop",
+        "compatible_with": "dry herb",
+        "heating_style": "convection",
+        "heat_up_time": "3-6 minutes",
+        "temperature_range": "130°C - 230°C (266°F - 446°F)",
+        "temperature_control": "analog dial",
+        "dimensions": "18cm Height x 20cm Diameter",
+        "weight": "1.8 kg",
+        "power_source": "AC power",
+        "manufacturer": "Storz & Bickel",
+        "country_of_origin": "Germany",
+        "warranty": "3-year manufacturer warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-classic-vaporizer-onyx-limited-edition-2474.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/storz-bickel-volcano-classic-vaporizer-onyx-limited-edition-2474.webp"
+      },
+      "brand": "Storz & Bickel",
+      "series": "Volcano Classic"
+    },
+    {
+      "id": "retro-vapes-tabletop-vaporizer-the-bel-air-2516",
+      "source_id": "2516",
+      "name": "Tabletop Vaporizer | The Bel Air",
+      "price_aud": 289.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "desktop",
+        "compatible_material": "dry herb",
+        "heating_method": "convection",
+        "temperature_control": "digital",
+        "temperature_range": "176°F - 482°F (80°C - 250°C)",
+        "heat_up_time": "2-3 minutes",
+        "power_source": "wall outlet",
+        "housing_material": "metal",
+        "dimensions": "6 x 4 x 4 inches",
+        "included": "glass mouthpiece, whip",
+        "features": "digital display, precise temperature control"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/retro-vapes-tabletop-vaporizer-the-bel-air-2516.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/retro-vapes-tabletop-vaporizer-the-bel-air-2516.webp"
+      },
+      "brand": "Retro Vapes",
+      "series": ""
+    }
+  ]
+}

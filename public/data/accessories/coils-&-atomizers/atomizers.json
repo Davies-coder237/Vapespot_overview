@@ -1,1 +1,245 @@
-{"path":["accessories","coils-&-atomizers","atomizers"],"file":"accessories/coils-&-atomizers/atomizers.json","brands":[{"name":"Ooze","slug":"ooze","product_count":1},{"name":"Lost Vape","slug":"lost-vape","product_count":2},{"name":"Steam Crave","slug":"steam-crave","product_count":4},{"name":"GeekVape","slug":"geekvape","product_count":2}],"series_index":{"Ooze":["Slim Twist Pro"],"Lost Vape":["E-Plus RBA Cartridge"],"Steam Crave":["Meson AIO","Meson RTA"],"GeekVape":["Aegis Boost RBA"]},"products":[{"id":"ooze-slim-twist-pro-wax-vape-tank-2553","source_id":"2553","name":"Slim Twist Pro Wax Vape Tank","price_aud":49.95,"currency":"AUD","specs":{"compatible_with":"Wax","connection":"510 Thread","adjustable_airflow":"Yes","material":"Quartz","coil_type":"Dual Quartz Coil","preheat_function":"Yes","voltage_settings":"Adjustable","voltage_range":"3.0V - 4.0V","resistance":"1.0 ohm","tank_capacity":"0.5g","features":"Visual Window"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-slim-twist-pro-wax-vape-tank-2553.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-slim-twist-pro-wax-vape-tank-2553.webp"},"brand":"Ooze","series":"Slim Twist Pro"},{"id":"lost-vape-e-plus-rba-cartridge-4143","source_id":"4143","name":"E-Plus RBA Cartridge","price_aud":29.95,"currency":"AUD","specs":{"compatible_with":"Lost Vape Ursa Series","build_deck":"Single Coil","airflow":"Adjustable","material":"Stainless Steel","connection":"Proprietary","quantity_per_pack":"1"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lost-vape-e-plus-rba-cartridge-4143.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lost-vape-e-plus-rba-cartridge-4143.webp"},"brand":"Lost Vape","series":"E-Plus RBA Cartridge"},{"id":"lost-vape-e-plus-rba-cartridge-10471","source_id":"10471","name":"E-Plus RBA Cartridge","price_aud":29.95,"currency":"AUD","specs":{"compatible_with":"Lost Vape Ursa Series","build_deck":"Single Coil","airflow":"Adjustable","material":"Stainless Steel","connection":"Proprietary","quantity_per_pack":"1"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lost-vape-e-plus-rba-cartridge-10471.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lost-vape-e-plus-rba-cartridge-10471.webp"},"brand":"Lost Vape","series":"E-Plus RBA Cartridge"},{"id":"steam-crave-meson-aio-decks-5938","source_id":"5938","name":"Meson AIO Decks","price_aud":29.95,"currency":"AUD","specs":{"deck_type":"single coil","build_style":"clamp system","material":"stainless steel","compatible_with":"Steam Crave Meson AIO","airflow":"adjustable","diameter":"24mm"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-aio-decks-5938.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-aio-decks-5938.webp"},"brand":"Steam Crave","series":"Meson AIO"},{"id":"steam-crave-meson-aio-decks-12350","source_id":"12350","name":"Meson AIO Decks","price_aud":29.95,"currency":"AUD","specs":{"deck_type":"single coil","build_style":"clamp system","material":"stainless steel","compatible_with":"Steam Crave Meson AIO","airflow":"adjustable","diameter":"24mm"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-aio-decks-12350.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-aio-decks-12350.webp"},"brand":"Steam Crave","series":"Meson AIO"},{"id":"steam-crave-meson-rta-single-coil-deck-5976","source_id":"5976","name":"Meson RTA Single Coil Deck","price_aud":14.99,"currency":"AUD","specs":{"deck_type":"Single Coil","build_deck":"Postless","material":"Stainless Steel","compatible_with":"Steam Crave Meson RTA","connection":"510"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-rta-single-coil-deck-5976.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-rta-single-coil-deck-5976.webp"},"brand":"Steam Crave","series":"Meson RTA"},{"id":"steam-crave-meson-rta-single-coil-deck-12351","source_id":"12351","name":"Meson RTA Single Coil Deck","price_aud":14.99,"currency":"AUD","specs":{"deck_type":"Single Coil","build_deck":"Postless","material":"Stainless Steel","compatible_with":"Steam Crave Meson RTA","connection":"510"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-rta-single-coil-deck-12351.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-rta-single-coil-deck-12351.webp"},"brand":"Steam Crave","series":"Meson RTA"},{"id":"geekvape-aegis-boost-atomiser-rba-7906","source_id":"7906","name":"Aegis Boost Atomiser – RBA","price_aud":14.99,"currency":"AUD","specs":{"atomizer_type":"RBA","compatible_with":"GeekVape Aegis Boost series","build_deck":"Single coil","adjustable_airflow":"Yes","e-liquid_capacity":"2ml","refill_method":"Top fill","material":"Stainless steel, PCTG","thread":"Proprietary","intended_use":"DIY coil building"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/geekvape-aegis-boost-atomiser-rba-7906.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/geekvape-aegis-boost-atomiser-rba-7906.webp"},"brand":"GeekVape","series":"Aegis Boost RBA"},{"id":"geekvape-aegis-boost-atomiser-rba-11961","source_id":"11961","name":"Aegis Boost Atomiser – RBA","price_aud":14.99,"currency":"AUD","specs":{"atomizer_type":"RBA","compatible_with":"GeekVape Aegis Boost series","build_deck":"Single coil","adjustable_airflow":"Yes","e-liquid_capacity":"2ml","refill_method":"Top fill","material":"Stainless steel, PCTG","thread":"Proprietary","intended_use":"DIY coil building"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/geekvape-aegis-boost-atomiser-rba-11961.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/geekvape-aegis-boost-atomiser-rba-11961.webp"},"brand":"GeekVape","series":"Aegis Boost RBA"}]}
+{
+  "path": [
+    "accessories",
+    "coils-&-atomizers",
+    "atomizers"
+  ],
+  "file": "accessories/coils-&-atomizers/atomizers.json",
+  "brands": [
+    {
+      "name": "Ooze",
+      "slug": "ooze",
+      "product_count": 1
+    },
+    {
+      "name": "Lost Vape",
+      "slug": "lost-vape",
+      "product_count": 2
+    },
+    {
+      "name": "Steam Crave",
+      "slug": "steam-crave",
+      "product_count": 4
+    },
+    {
+      "name": "GeekVape",
+      "slug": "geekvape",
+      "product_count": 2
+    }
+  ],
+  "series_index": {
+    "Ooze": [
+      "Slim Twist Pro"
+    ],
+    "Lost Vape": [
+      "E-Plus RBA Cartridge"
+    ],
+    "Steam Crave": [
+      "Meson AIO",
+      "Meson RTA"
+    ],
+    "GeekVape": [
+      "Aegis Boost RBA"
+    ]
+  },
+  "products": [
+    {
+      "id": "ooze-slim-twist-pro-wax-vape-tank-2553",
+      "source_id": "2553",
+      "name": "Slim Twist Pro Wax Vape Tank",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "Wax",
+        "connection": "510 Thread",
+        "adjustable_airflow": "Yes",
+        "material": "Quartz",
+        "coil_type": "Dual Quartz Coil",
+        "preheat_function": "Yes",
+        "voltage_settings": "Adjustable",
+        "voltage_range": "3.0V - 4.0V",
+        "resistance": "1.0 ohm",
+        "tank_capacity": "0.5g",
+        "features": "Visual Window"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-slim-twist-pro-wax-vape-tank-2553.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-slim-twist-pro-wax-vape-tank-2553.webp"
+      },
+      "brand": "Ooze",
+      "series": "Slim Twist Pro"
+    },
+    {
+      "id": "lost-vape-e-plus-rba-cartridge-4143",
+      "source_id": "4143",
+      "name": "E-Plus RBA Cartridge",
+      "price_aud": 34.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "Lost Vape Ursa Series",
+        "build_deck": "Single Coil",
+        "airflow": "Adjustable",
+        "material": "Stainless Steel",
+        "connection": "Proprietary",
+        "quantity_per_pack": "1"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lost-vape-e-plus-rba-cartridge-4143.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lost-vape-e-plus-rba-cartridge-4143.webp"
+      },
+      "brand": "Lost Vape",
+      "series": "E-Plus RBA Cartridge"
+    },
+    {
+      "id": "lost-vape-e-plus-rba-cartridge-10471",
+      "source_id": "10471",
+      "name": "E-Plus RBA Cartridge",
+      "price_aud": 34.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "Lost Vape Ursa Series",
+        "build_deck": "Single Coil",
+        "airflow": "Adjustable",
+        "material": "Stainless Steel",
+        "connection": "Proprietary",
+        "quantity_per_pack": "1"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/lost-vape-e-plus-rba-cartridge-10471.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/lost-vape-e-plus-rba-cartridge-10471.webp"
+      },
+      "brand": "Lost Vape",
+      "series": "E-Plus RBA Cartridge"
+    },
+    {
+      "id": "steam-crave-meson-aio-decks-5938",
+      "source_id": "5938",
+      "name": "Meson AIO Decks",
+      "price_aud": 34.99,
+      "currency": "AUD",
+      "specs": {
+        "deck_type": "single coil",
+        "build_style": "clamp system",
+        "material": "stainless steel",
+        "compatible_with": "Steam Crave Meson AIO",
+        "airflow": "adjustable",
+        "diameter": "24mm"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-aio-decks-5938.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-aio-decks-5938.webp"
+      },
+      "brand": "Steam Crave",
+      "series": "Meson AIO"
+    },
+    {
+      "id": "steam-crave-meson-aio-decks-12350",
+      "source_id": "12350",
+      "name": "Meson AIO Decks",
+      "price_aud": 34.99,
+      "currency": "AUD",
+      "specs": {
+        "deck_type": "single coil",
+        "build_style": "clamp system",
+        "material": "stainless steel",
+        "compatible_with": "Steam Crave Meson AIO",
+        "airflow": "adjustable",
+        "diameter": "24mm"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-aio-decks-12350.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-aio-decks-12350.webp"
+      },
+      "brand": "Steam Crave",
+      "series": "Meson AIO"
+    },
+    {
+      "id": "steam-crave-meson-rta-single-coil-deck-5976",
+      "source_id": "5976",
+      "name": "Meson RTA Single Coil Deck",
+      "price_aud": 19.99,
+      "currency": "AUD",
+      "specs": {
+        "deck_type": "Single Coil",
+        "build_deck": "Postless",
+        "material": "Stainless Steel",
+        "compatible_with": "Steam Crave Meson RTA",
+        "connection": "510"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-rta-single-coil-deck-5976.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-rta-single-coil-deck-5976.webp"
+      },
+      "brand": "Steam Crave",
+      "series": "Meson RTA"
+    },
+    {
+      "id": "steam-crave-meson-rta-single-coil-deck-12351",
+      "source_id": "12351",
+      "name": "Meson RTA Single Coil Deck",
+      "price_aud": 19.99,
+      "currency": "AUD",
+      "specs": {
+        "deck_type": "Single Coil",
+        "build_deck": "Postless",
+        "material": "Stainless Steel",
+        "compatible_with": "Steam Crave Meson RTA",
+        "connection": "510"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-rta-single-coil-deck-12351.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/steam-crave-meson-rta-single-coil-deck-12351.webp"
+      },
+      "brand": "Steam Crave",
+      "series": "Meson RTA"
+    },
+    {
+      "id": "geekvape-aegis-boost-atomiser-rba-7906",
+      "source_id": "7906",
+      "name": "Aegis Boost Atomiser – RBA",
+      "price_aud": 19.99,
+      "currency": "AUD",
+      "specs": {
+        "atomizer_type": "RBA",
+        "compatible_with": "GeekVape Aegis Boost series",
+        "build_deck": "Single coil",
+        "adjustable_airflow": "Yes",
+        "e-liquid_capacity": "2ml",
+        "refill_method": "Top fill",
+        "material": "Stainless steel, PCTG",
+        "thread": "Proprietary",
+        "intended_use": "DIY coil building"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/geekvape-aegis-boost-atomiser-rba-7906.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/geekvape-aegis-boost-atomiser-rba-7906.webp"
+      },
+      "brand": "GeekVape",
+      "series": "Aegis Boost RBA"
+    },
+    {
+      "id": "geekvape-aegis-boost-atomiser-rba-11961",
+      "source_id": "11961",
+      "name": "Aegis Boost Atomiser – RBA",
+      "price_aud": 19.99,
+      "currency": "AUD",
+      "specs": {
+        "atomizer_type": "RBA",
+        "compatible_with": "GeekVape Aegis Boost series",
+        "build_deck": "Single coil",
+        "adjustable_airflow": "Yes",
+        "e-liquid_capacity": "2ml",
+        "refill_method": "Top fill",
+        "material": "Stainless steel, PCTG",
+        "thread": "Proprietary",
+        "intended_use": "DIY coil building"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/geekvape-aegis-boost-atomiser-rba-11961.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/geekvape-aegis-boost-atomiser-rba-11961.webp"
+      },
+      "brand": "GeekVape",
+      "series": "Aegis Boost RBA"
+    }
+  ]
+}

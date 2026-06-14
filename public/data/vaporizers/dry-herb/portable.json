@@ -1,1 +1,2081 @@
-{"path":["vaporizers","dry-herb","portable"],"file":"vaporizers/dry-herb/portable.json","brands":[{"name":"Yocan","slug":"yocan","product_count":5},{"name":"PAX","slug":"pax","product_count":8},{"name":"Arizer","slug":"arizer","product_count":18},{"name":"G Pen","slug":"g-pen","product_count":5},{"name":"DaVinci","slug":"davinci","product_count":4},{"name":"DynaVap","slug":"dynavap","product_count":8},{"name":"Eyce","slug":"eyce","product_count":1},{"name":"Firefly","slug":"firefly","product_count":1},{"name":"Tyson 2.0","slug":"tyson-2.0","product_count":1},{"name":"XVape","slug":"xvape","product_count":1},{"name":"Flowermate","slug":"flowermate","product_count":2},{"name":"Boundless","slug":"boundless","product_count":4},{"name":"Healthy Rips","slug":"healthy-rips","product_count":2},{"name":"XMAX","slug":"xmax","product_count":2},{"name":"Fenix","slug":"fenix","product_count":2},{"name":"Smono","slug":"smono","product_count":1},{"name":"Storz & Bickel","slug":"storz-&-bickel","product_count":1},{"name":"Ooze","slug":"ooze","product_count":2},{"name":"Airistech","slug":"airistech","product_count":2},{"name":"Gethi","slug":"gethi","product_count":1},{"name":"Ciga Fun","slug":"ciga-fun","product_count":1}],"series_index":{"Arizer":["Solo","Air","ArGo","Air "],"DaVinci":["IQ","Miqro-C"],"Boundless":["CF","CFX"]},"products":[{"id":"yocan-falcon-6-in-1-concentratedry-herb-vaporizer-3126","source_id":"3126","name":"Falcon 6 in 1 Concentrate/Dry Herb Vaporizer","price_aud":149.95,"currency":"AUD","specs":{"material":"Stainless Steel","height":"168mm","diameter":"28mm","weight":"200g","battery_capacity":"1000mAh","voltage_levels":"3.2V, 3.7V, 4.2V","charging_type":"USB-C","heat_up_time":"20-30 seconds","compatible_with":"Concentrates, Dry Herb","chamber_capacity":"0.3g (Dry Herb)","available_colors":"Black, Silver, Red, Blue, Gold","features":"Replaceable Quartz Glass Attachment, Multi-Functional Tool, Magnetic Base","airflow":"Adjustable","coil_type":"QDC (Quartz Dual Coil)","temperature_control":"Yes","display_screen":"No"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-falcon-6-in-1-concentratedry-herb-vaporizer-3126.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-falcon-6-in-1-concentratedry-herb-vaporizer-3126.webp"},"brand":"Yocan","series":""},{"id":"yocan-evolve-d-plus-dry-herb-pen-vaporizer-3143","source_id":"3143","name":"Evolve-D Plus Dry Herb Pen Vaporizer","price_aud":69.95,"currency":"AUD","specs":{"material":"Metal","heating_chamber_material":"Ceramic","battery_capacity":"1100mAh","adjustable_voltage":"Yes","voltage_settings":"3.2V-4.2V","charging_type":"Micro-USB","coil_type":"Dual Coil","compatible_with":"Dry Herb","dimensions":"120mm x 19mm","weight":"70g","available_colors":"Black, Silver, Blue, Red, Gold, Green","preheat_function":"Yes","airflow_control":"Yes","warranty":"3-month"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-evolve-d-plus-dry-herb-pen-vaporizer-3143.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-evolve-d-plus-dry-herb-pen-vaporizer-3143.webp"},"brand":"Yocan","series":""},{"id":"yocan-evolve-d-dry-herb-vaporizer-pen-650mah-3250","source_id":"3250","name":"Evolve-D Dry Herb Vaporizer Pen – 650mAh","price_aud":49.95,"currency":"AUD","specs":{"battery_capacity":"650mAh","coil_type":"Dual Coil","material_compatibility":"Dry Herb","voltage_output":"3.8V","height":"120mm","diameter":"14mm","charging_type":"Micro-USB","available_colors":"Black, Silver, Blue, Red, Orange, Green"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-evolve-d-dry-herb-vaporizer-pen-650mah-3250.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-evolve-d-dry-herb-vaporizer-pen-650mah-3250.webp"},"brand":"Yocan","series":""},{"id":"yocan-hit-functional-portable-dry-herb-vaporizer-10258","source_id":"10258","name":"Hit Functional Portable Dry Herb Vaporizer","price_aud":99.95,"currency":"AUD","specs":{"material":"Aluminum Alloy","size":"117mm * 23mm","battery_capacity":"1400mAh","temperature_range":"200°F - 480°F","heating_chamber":"Ceramic","heating_style":"Conduction","automatic_shutoff":"3 or 5 minutes","screen_type":"OLED","charging_type":"USB-C","available_colors":"Black, Silver, Red, Blue, Gold"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-hit-functional-portable-dry-herb-vaporizer-10258.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-hit-functional-portable-dry-herb-vaporizer-10258.webp"},"brand":"Yocan","series":""},{"id":"yocan-falcon-6-in-1-vaporiser-10260","source_id":"10260","name":"Falcon 6 In 1 Vaporiser","price_aud":149.95,"currency":"AUD","specs":{"material":"Stainless Steel","height":"157mm","diameter":"28mm","weight":"160g","battery_capacity":"1000mAh","voltage_levels":"3.2V, 3.7V, 4.2V","charging_type":"USB-C","coil_compatibility":"QTC Coil, XTAL Tip, Pancake Coil","chamber_capacity":"0.4g","heat_up_time":"3 seconds","airflow":"Adjustable","multi_function_tool":"Dab Tool, Pick Tool","features":"Magnetic Connections, Glass Bubbler Attachment, Wax Container","includes":"Yocan Falcon Device, QTC Coil, XTAL Tip, Dab Tool, Cleaning Brush, USB-C Cable, User Manual"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-falcon-6-in-1-vaporiser-10260.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-falcon-6-in-1-vaporiser-10260.webp"},"brand":"Yocan","series":""},{"id":"pax-plus-2-in-1-vaporizer-3300mah-3128","source_id":"3128","name":"Plus 2-in-1 Vaporizer – 3300mAh","price_aud":399,"currency":"AUD","specs":{"battery_capacity":"3300mAh","compatible_material":"Dry Herb & Concentrate","temperature_settings":"4","heat_up_time":"22 seconds","dimensions":"9.8 x 3.2 x 2.2 cm","weight":"91g","warranty":"10-year limited warranty","charging_time":"2 hours","features":"Haptic feedback, LED indicator, Bluetooth connectivity","available_colors":"Onyx, Sage, Periwinkle, Elderberry"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-plus-2-in-1-vaporizer-3300mah-3128.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-plus-2-in-1-vaporizer-3300mah-3128.webp"},"brand":"PAX","series":""},{"id":"pax-era-pro-pod-vaporizer-onyx-3140","source_id":"3140","name":"ERA Pro Pod Vaporizer – Onyx","price_aud":99.99,"currency":"AUD","specs":{"dimensions":"3.3\" H x 0.5\" W x 0.5\" D","weight":"0.14 lbs","battery_capacity":"240mAh","temperature_settings":"520°F / 270°C to 840°F / 450°C","heat_time":"Instant","compatible_concentrates":"Oil","connection":"Bluetooth","smart_features":"Pod ID, ExpertTemp, Dose Control","material":"Aluminum","haptic_feedback":"Yes","charging_time":"45 minutes","charging_type":"USB-C","pod_compatibility":"PAX Era Pods","available_colors":"Onyx, Silver, Black, Jade, Rose Gold"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-era-pro-pod-vaporizer-onyx-3140.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-era-pro-pod-vaporizer-onyx-3140.webp"},"brand":"PAX","series":""},{"id":"pax-mini-dry-herb-vaporizer-3300mahonyx-3306","source_id":"3306","name":"Mini Dry Herb Vaporizer – 3300mAh/Onyx","price_aud":249,"currency":"AUD","specs":{"battery_capacity":"3300mAh","dimensions":"3.17cm x 2.29cm x 9.3cm","heat_up_time":"22 seconds","oven_capacity":"0.25g","temperature_settings":"Single optimized temperature","materials":"Aluminum","weight":"89g","compatible_with":"Dry Herb","charging_time":"2.5 hours","warranty":"2-year limited warranty"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-mini-dry-herb-vaporizer-3300mahonyx-3306.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-mini-dry-herb-vaporizer-3300mahonyx-3306.webp"},"brand":"PAX","series":""},{"id":"pax-era-variable-voltage-vape-pen-210mah-3698","source_id":"3698","name":"ERA Variable Voltage Vape Pen | 210mAh","price_aud":99.99,"currency":"AUD","specs":{"dimensions":"3.3\" H x 0.5\" W x 0.5\" D","weight":"0.14 lbs","battery_capacity":"240mAh","temperature_settings":"520°F / 270°C to 840°F / 450°C","heat_time":"Instant","compatible_concentrates":"Oil","connection":"Bluetooth","smart_features":"Pod ID, ExpertTemp, Dose Control","material":"Aluminum","haptic_feedback":"Yes","charging_time":"45 minutes","charging_type":"USB-C","pod_compatibility":"PAX Era Pods","available_colors":"Onyx, Silver, Black, Jade, Rose Gold"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-era-variable-voltage-vape-pen-210mah-3698.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-era-variable-voltage-vape-pen-210mah-3698.webp"},"brand":"PAX","series":""},{"id":"pax-era-go-vape-pen-210mah-3748","source_id":"3748","name":"ERA Go Vape Pen | 210mAh","price_aud":99.99,"currency":"AUD","specs":{"dimensions":"3.3\" H x 0.5\" W x 0.5\" D","weight":"0.14 lbs","battery_capacity":"240mAh","temperature_settings":"520°F / 270°C to 840°F / 450°C","heat_time":"Instant","compatible_concentrates":"Oil","connection":"Bluetooth","smart_features":"Pod ID, ExpertTemp, Dose Control","material":"Aluminum","haptic_feedback":"Yes","charging_time":"45 minutes","charging_type":"USB-C","pod_compatibility":"PAX Era Pods","available_colors":"Onyx, Silver, Black, Jade, Rose Gold"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-era-go-vape-pen-210mah-3748.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-era-go-vape-pen-210mah-3748.webp"},"brand":"PAX","series":""},{"id":"pax-3-vaporizer-7639","source_id":"7639","name":"3 Vaporizer","price_aud":379,"currency":"AUD","specs":{"dimensions":"9.8 x 3.1 x 2.2 cm","weight":"93 g","battery_capacity":"3000mAh","heat_time":"15-22 seconds","temperature_range":"182°C - 215°C (360°F - 420°F)","compatible_materials":"Dry Herb & Concentrates","oven_capacity":"0.3g","charging_time":"90 minutes","warranty":"10-year limited warranty","features":"Haptic feedback, Bluetooth connectivity, Customizable LED display, Multiple temperature settings, Lip sensing technology","construction":"Anodized aluminum","available_colors":"Onyx, Sage, Sand, Burgundy"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-3-vaporizer-7639.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-3-vaporizer-7639.webp"},"brand":"PAX","series":""},{"id":"pax-mini-vaporizer-7686","source_id":"7686","name":"Mini Vaporizer","price_aud":250,"currency":"AUD","specs":{"dimensions":"3.66 H x 1.26 W x 0.83 D inches","battery_capacity":"3000mAh","heat_time":"22 seconds","oven_capacity":"0.25g","temperature_settings":"Single optimized temperature","materials":"Dry Herb","charging_time":"2.5 hours","warranty":"2-year limited warranty","features":"Pocket-friendly, Simple interface, Magnetic oven lid"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-mini-vaporizer-7686.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-mini-vaporizer-7686.webp"},"brand":"PAX","series":""},{"id":"pax-plus-vaporizer-7687","source_id":"7687","name":"Plus Vaporizer","price_aud":399,"currency":"AUD","specs":{"compatible_with":"Dry Herb & Concentrate","battery_capacity":"3000mAh","heat_time":"22 seconds","oven_capacity":"0.5g","dimensions":"9.8 x 3.1 x 2.2 cm","weight":"91g","temperature_settings":"4","materials":"Aluminum","haptic_feedback":"Yes","smart_features":"Auto Shut-off, Party Mode","warranty":"10-year limited warranty"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-plus-vaporizer-7687.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-plus-vaporizer-7687.webp"},"brand":"PAX","series":""},{"id":"arizer-solo-ii-mystic-blue-3129","source_id":"3129","name":"Solo II – Mystic Blue","price_aud":349,"currency":"AUD","specs":{"color":"Mystic Blue","dimensions":"11.4 cm x 3.5 cm","weight":"210g","battery_type":"Internal Lithium-Ion","battery_capacity":"3400mAh","temperature_range":"50°C - 220°C (122°F - 428°F)","heat_up_time":"30 seconds","session_time":"Up to 3 hours per charge","charging_time":"3 hours","display_type":"OLED","material_compatibility":"Dry Herb","warranty":"2-Year Limited Warranty","features":"Precise Temperature Control, Custom Session Settings, Isolated Airpath, All-Glass Vapor Path"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-mystic-blue-3129.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-mystic-blue-3129.webp"},"brand":"Arizer","series":"Solo"},{"id":"arizer-solo-ii-carbon-black-3138","source_id":"3138","name":"Solo II - Carbon Black","price_aud":349,"currency":"AUD","specs":{"color":"Carbon Black","dimensions":"11.4 cm x 3.5 cm x 2.8 cm","weight":"210g","battery_type":"Internal Lithium-Ion","battery_capacity":"3400mAh","temperature_range":"50°C - 220°C (122°F - 428°F)","heat_up_time":"30 seconds","session_time":"Up to 3 hours","display":"OLED","material_compatibility":"Dry Herb","warranty":"2 Year Limited","features":"Precise Temperature Control, Custom Session Settings, Isolated Airpath, All-Glass Vapor Path"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-carbon-black-3138.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-carbon-black-3138.webp"},"brand":"Arizer","series":"Solo"},{"id":"arizer-solo-ii-dry-herb-portable-vaporizer-3400mah-3282","source_id":"3282","name":"Solo II Dry Herb Portable Vaporizer | 3400mAh","price_aud":329,"currency":"AUD","specs":{"battery_capacity":"3400mAh","temperature_range":"50°C - 220°C (122°F - 428°F)","heating_style":"Conduction","heat_up_time":"30 seconds","dimensions":"11.4 cm x 3.8 cm x 2.5 cm","weight":"210g","materials":"Borosilicate glass, stainless steel","display":"LED","automatic_shutoff":"Yes","warranty":"2-year limited warranty","compatible_with":"Dry Herb","charging_time":"3 hours","session_time":"Up to 3 hours","features":"Precise temperature control, isolated airpath, all-glass vapor path"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-dry-herb-portable-vaporizer-3400mah-3282.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-dry-herb-portable-vaporizer-3400mah-3282.webp"},"brand":"Arizer","series":"Solo"},{"id":"arizer-solo-ii-max-3283","source_id":"3283","name":"Solo II MAX","price_aud":379,"currency":"AUD","specs":{"dimensions":"11.4 cm x 3.5 cm x 2.8 cm","weight":"227g","battery_type":"Lithium-ion","battery_capacity":"3400mAh","temperature_range":"50°C - 220°C (122°F - 428°F)","heat_up_time":"30 seconds","heating_method":"Hybrid (convection and conduction)","chamber_material":"Glass","compatible_materials":"Dry Herb","display_type":"OLED","adjustable_temperature":"Yes","automatic_shut_off":"Yes","warranty":"2-year limited warranty","features":"Automatic Screen Inversion, Dark Mode, Rapid Heating","charging_time":"3 hours","charger_type":"USB-C"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-max-3283.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-max-3283.webp"},"brand":"Arizer","series":"Solo"},{"id":"arizer-solo-iii-3301","source_id":"3301","name":"Solo III","price_aud":543,"currency":"AUD","specs":{"heating_style":"conduction and convection","compatible_material":"dry herb","temperature_control":"precise","temperature_range":"50°C - 220°C (122°F - 428°F)","heat_up_time":"15-20 seconds","battery_type":"internal","display":"OLED","dimensions":"11.4 cm x 3.8 cm x 2.5 cm","features":"isolated airpath, custom session settings, automatic shut-off","new_features":"XL glass pod system, double capacity, increased airflow"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-solo-iii-3301.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-solo-iii-3301.webp"},"brand":"Arizer","series":"Solo"},{"id":"arizer-solo-iii-4029","source_id":"4029","name":"Solo III","price_aud":543,"currency":"AUD","specs":{"heating_style":"conduction and convection","compatible_material":"dry herb","temperature_control":"precise","temperature_range":"50°C - 220°C (122°F - 428°F)","heat_up_time":"15-20 seconds","battery_type":"internal","display":"OLED","dimensions":"11.4 cm x 3.8 cm x 2.5 cm","features":"isolated airpath, custom session settings, automatic shut-off","new_features":"XL glass pod system, double capacity, increased airflow"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-solo-iii-4029.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-solo-iii-4029.webp"},"brand":"Arizer","series":"Solo"},{"id":"arizer-air-max-3130","source_id":"3130","name":"Air MAX","price_aud":399,"currency":"AUD","specs":{"compatible_material":"Dry Herb","battery_type":"26650","battery_capacity":"5500mAh","temperature_range":"50°C - 220°C (122°F - 428°F)","heat_up_time":"Under 60 seconds","dimensions":"13.5cm x 3cm x 3cm","weight":"164g","oven_material":"Ceramic","heat_source":"Hybrid (Convection & Conduction)","session_timer":"Adjustable","display_type":"OLED","charging_type":"USB-C","features":"Isolated Airpath, Automatic Inversion, Dark Mode, Custom Session Settings","included":"Air MAX Vaporizer, USB-C Charger, Glass Aroma Tube (70mm), Frosted Glass Aroma Tube (14mm), Glass Aroma Dish, Stainless Steel Stirring Tool, Screen Pack, PVC Travel Tube"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-max-3130.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-max-3130.webp"},"brand":"Arizer","series":"Air"},{"id":"arizer-air-se-blue-haze-3131","source_id":"3131","name":"Air SE – Blue Haze","price_aud":129,"currency":"AUD","specs":{"colour":"Blue Haze","dimensions":"11cm x 3cm x 2cm","weight":"94g","battery_type":"Lithium-ion","heat_up_time":"60-90 seconds","temperature_range":"180°C - 210°C","chamber_capacity":"0.1 - 0.2 grams","compatible_materials":"Dry Herb","warranty":"2 Year Limited Warranty"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-se-blue-haze-3131.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-se-blue-haze-3131.webp"},"brand":"Arizer","series":"Air"},{"id":"arizer-air-se-reefer-white-3137","source_id":"3137","name":"Air SE – Reefer White","price_aud":149,"currency":"AUD","specs":{"vaporizer_type":"portable","compatible_material":"dry herb","heating_style":"convection","heat_up_time":"60 seconds","temperature_control":"5 preset temperatures","temperature_range":"180°C - 210°C (356°F - 410°F)","battery_type":"internal","battery_capacity":"800mAh","charging_time":"90 minutes","dimensions":"11cm x 2.9cm x 2.9cm","weight":"94g","features":"isolated airpath, borosilicate glass aroma tube","available_colors":"reefer white"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-se-reefer-white-3137.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-se-reefer-white-3137.webp"},"brand":"Arizer","series":"Air"},{"id":"arizer-air-max-dry-herb-vaporizer-5500mah-3139","source_id":"3139","name":"Air MAX Dry Herb Vaporizer – 5500mAh","price_aud":399,"currency":"AUD","specs":{"battery_capacity":"5500mAh","adjustable_temperature":"Yes","temperature_range":"50°C - 220°C (122°F - 428°F)","heating_style":"Conduction","heat_up_time":"Under 60 seconds","vapor_pathway_material":"Glass","compatible_with":"Dry Herb","dimensions":"13.5cm x 3cm x 2.5cm","weight":"164g","display_type":"OLED","haptic_feedback":"Yes","charging_type":"USB-C","session_timer":"Adjustable","automatic_shutoff":"Yes","warranty":"Limited Lifetime"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-max-dry-herb-vaporizer-5500mah-3139.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-max-dry-herb-vaporizer-5500mah-3139.webp"},"brand":"Arizer","series":"Air"},{"id":"arizer-air-2-vaporizer-3995","source_id":"3995","name":"Air 2 Vaporizer","price_aud":249,"currency":"AUD","specs":{"dimensions":"122 x 30 mm","weight":"116 g","battery_type":"18650","battery_capacity":"3000mAh","temperature_range":"50°C - 220°C (122°F - 428°F)","heat_up_time":"60-90 seconds","heating_style":"conduction","oven_capacity":"0.25g","display_type":"OLED","material":"borosilicate glass, aluminum","features":"adjustable brightness, automatic shut-off, customizable settings","included":"Air II Vaporizer, Battery, Charger / USB, Glass Aroma Tube (70mm), Glass Aroma Tube (70mm) with Tip, Glass Aroma Dish, Stirring Tool, 4 x Filter Screens, Protective Travel Tube, PVC Travel Tube with Cap"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-2-vaporizer-3995.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-2-vaporizer-3995.webp"},"brand":"Arizer","series":"Air"},{"id":"arizer-air-2-vaporizer-7641","source_id":"7641","name":"Air 2 Vaporizer","price_aud":249,"currency":"AUD","specs":{"dimensions":"122 x 30 mm","weight":"116 g","battery_type":"18650","battery_capacity":"3000mAh","temperature_range":"50°C - 220°C (122°F - 428°F)","heat_up_time":"60-90 seconds","heating_style":"conduction","oven_capacity":"0.25g","display_type":"OLED","material":"borosilicate glass, aluminum","features":"adjustable brightness, automatic shut-off, customizable settings","included":"Air II Vaporizer, Battery, Charger / USB, Glass Aroma Tube (70mm), Glass Aroma Tube (70mm) with Tip, Glass Aroma Dish, Stirring Tool, 4 x Filter Screens, Protective Travel Tube, PVC Travel Tube with Cap"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-2-vaporizer-7641.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-2-vaporizer-7641.webp"},"brand":"Arizer","series":"Air"},{"id":"arizer-argo-3133","source_id":"3133","name":"ArGo","price_aud":269,"currency":"AUD","specs":{"dimensions":"9.3 x 5.2 x 2.4 cm","weight":"96g","battery_type":"18650","battery_capacity":"3000mAh","temperature_range":"50°C - 220°C (122°F - 428°F)","heating_style":"conduction","heat_up_time":"30-60 seconds","oven_material":"ceramic","display":"OLED","adjustable_temperature":"yes","automatic_shutoff":"yes","warranty":"2 years","compatible_materials":"dry herb","replaceable_battery":"yes","charging_time":"3.5 hours","features":"compact design, precise temperature control, digital display, all-glass vapor path, isolated airpath"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-argo-3133.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-argo-3133.webp"},"brand":"Arizer","series":"ArGo"},{"id":"arizer-argo-dry-herb-vaporizer-3400mah-3281","source_id":"3281","name":"ArGo Dry Herb Vaporizer – 3400mAh","price_aud":279,"currency":"AUD","specs":{"battery_capacity":"3400mAh","adjustable_temperature":"Yes","heat_up_time":"30-90 seconds","temperature_range":"50°C - 220°C (122°F - 428°F)","dimensions":"52mm x 24mm x 93mm","weight":"96g","heating_style":"Conduction","compatible_with":"Dry Herb","digital_display":"OLED","automatic_shutoff":"Yes","warranty":"2 Year","replaceable_battery":"No","material":"Aluminum","country_of_origin":"Canada"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-argo-dry-herb-vaporizer-3400mah-3281.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-argo-dry-herb-vaporizer-3400mah-3281.webp"},"brand":"Arizer","series":"ArGo"},{"id":"arizer-argo-vaporizer-4027","source_id":"4027","name":"ArGo Vaporizer","price_aud":269,"currency":"AUD","specs":{"dimensions":"5.19 x 1.28 x 2.05 inches","weight":"3.4 oz","battery_type":"18650","battery_capacity":"3000mAh","temperature_range":"50°C - 220°C (122°F - 428°F)","heat_up_time":"30-60 seconds","heating_style":"conduction","compatible_materials":"dry herb","display_type":"OLED","replaceable_battery":"yes","adjustable_airflow":"no","haptic_feedback":"no","automatic_shutoff":"yes","warranty":"2 year","features":"Isolated Airpath, Digital Temperature Control, Compact Size, Retractable Glass Stem"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-argo-vaporizer-4027.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-argo-vaporizer-4027.webp"},"brand":"Arizer","series":"ArGo"},{"id":"arizer-argo-vaporizer-7681","source_id":"7681","name":"ArGo Vaporizer","price_aud":269,"currency":"AUD","specs":{"dimensions":"5.19 x 1.28 x 2.05 inches","weight":"3.4 oz","battery_type":"18650","battery_capacity":"3000mAh","temperature_range":"50°C - 220°C (122°F - 428°F)","heat_up_time":"30-60 seconds","heating_style":"conduction","compatible_materials":"dry herb","display_type":"OLED","replaceable_battery":"yes","adjustable_airflow":"no","haptic_feedback":"no","automatic_shutoff":"yes","warranty":"2 year","features":"Isolated Airpath, Digital Temperature Control, Compact Size, Retractable Glass Stem"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-argo-vaporizer-7681.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-argo-vaporizer-7681.webp"},"brand":"Arizer","series":"ArGo"},{"id":"arizer-air-se-3993","source_id":"3993","name":"Air SE","price_aud":149,"currency":"AUD","specs":{"compatible_material":"dry herb","battery_type":"internal","heat_up_time":"60-90 seconds","temperature_control":"preset","temperature_range":"180°C - 210°C (356°F - 410°F)","oven_capacity":"0.1-0.2 grams","dimensions":"122mm x 29mm x 29mm","weight":"96g","available_colors":"black, white","features":"isolated airpath, borosilicate glass vapor path, USB charging","warranty":"2 year"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-se-3993.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-se-3993.webp"},"brand":"Arizer","series":"Air "},{"id":"arizer-air-se-7638","source_id":"7638","name":"Air SE","price_aud":149,"currency":"AUD","specs":{"compatible_material":"dry herb","battery_type":"internal","heat_up_time":"60-90 seconds","temperature_control":"preset","temperature_range":"180°C - 210°C (356°F - 410°F)","oven_capacity":"0.1-0.2 grams","dimensions":"122mm x 29mm x 29mm","weight":"96g","available_colors":"black, white","features":"isolated airpath, borosilicate glass vapor path, USB charging","warranty":"2 year"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-se-7638.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-se-7638.webp"},"brand":"Arizer","series":"Air "},{"id":"g-pen-dash-vaporizer-3132","source_id":"3132","name":"Dash Vaporizer","price_aud":129.95,"currency":"AUD","specs":{"compatible_with":"Dry Herb","battery_capacity":"950mAh","heat_up_time":"20 seconds","temperature_settings":"320°F, 356°F, 392°F","dimensions":"4.5\" x 0.5\" x 0.5\"","weight":"0.2 lbs","material":"Aluminum Alloy","features":"Pass-Through Charging, Haptic Feedback, Magnetic Mouthpiece","included":"G Pen Dash Vaporizer, USB Charging Cable, Cleaning Tool"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-dash-vaporizer-3132.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-dash-vaporizer-3132.webp"},"brand":"G Pen","series":""},{"id":"g-pen-elite-20-vaporizer-3134","source_id":"3134","name":"Elite 2.0 Vaporizer","price_aud":249,"currency":"AUD","specs":{"compatible_material":"Dry Herb","battery_capacity":"2100mAh","temperature_range":"200° - 430°F (93° - 221°C)","heat_up_time":"30 seconds","oven_material":"Ceramic","display_type":"TFT","haptic_feedback":"Yes","charging_port":"USB-C","dimensions":"117mm x 30.5mm x 26mm","weight":"88g","warranty":"1-Year Limited"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-elite-20-vaporizer-3134.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-elite-20-vaporizer-3134.webp"},"brand":"G Pen","series":""},{"id":"grenco-science-g-pen-elite-ii-herb-vaporizer-2100mah-3141","source_id":"3141","name":"G-Pen Elite II Herb Vaporizer – 2100mAh","price_aud":399,"currency":"AUD","specs":{"battery_capacity":"2100mAh","heat_up_time":"30 seconds","temperature_range":"200°F - 430°F (93°C - 221°C)","heating_style":"convection","chamber_material":"ceramic","display_type":"TFT","dimensions":"1.77 x 1.18 x 4.53 inches","weight":"0.4 lbs","materials":"zinc alloy, silicone","features":"haptic feedback, full-color display, airflow control, USB-C charging","included":"G Pen Elite II Vaporizer, G Pen Elite II Case, Pick Tool, USB Charging Cable"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/grenco-science-g-pen-elite-ii-herb-vaporizer-2100mah-3141.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/grenco-science-g-pen-elite-ii-herb-vaporizer-2100mah-3141.webp"},"brand":"G Pen","series":""},{"id":"g-pen-dash-vaporizer-3249","source_id":"3249","name":"Dash+ Vaporizer","price_aud":149,"currency":"AUD","specs":{"vaporizer_type":"portable dry herb vaporizer","compatible_material":"dry herb","heating_method":"conduction","temperature_control":"precise temperature control","temperature_range":"320°F - 428°F (160°C - 220°C)","heat_up_time":"20-30 seconds","battery_capacity":"1800mAh","battery_life":"10-12 sessions","charging_time":"1-2 hours","charging_type":"USB-C","dimensions":"4.5\" x 1.5\" x 0.9\"","weight":"0.2 lbs","materials":"aluminum alloy, glass","chamber_capacity":"0.25g","display":"LED","haptic_feedback":"yes","automatic_shutoff":"yes","warranty":"1 year"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-dash-vaporizer-3249.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-dash-vaporizer-3249.webp"},"brand":"G Pen","series":""},{"id":"g-pen-elite-vaporizer-3309","source_id":"3309","name":"Elite Vaporizer","price_aud":229.95,"currency":"AUD","specs":{"compatible_material":"Dry Herb","battery_capacity":"2200mAh","temperature_range":"93°C - 220°C (200°F - 428°F)","heat_up_time":"30 seconds","heating_style":"conduction","dimensions":"114mm x 30mm x 25mm","display_type":"LED","haptic_feedback":"yes","charging_time":"2-3 hours","chamber_material":"ceramic","adjustable_temperature":"yes","automatic_shutoff":"yes","warranty":"1 year"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-elite-vaporizer-3309.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-elite-vaporizer-3309.webp"},"brand":"G Pen","series":""},{"id":"davinci-iqc-precision-vaporizer-3135","source_id":"3135","name":"IQC Precision Vaporizer","price_aud":499,"currency":"AUD","specs":{"material_compatibility":"dry herb","heating_style":"conduction","heat_up_time":"60 seconds","temperature_range":"320-430°F (160-221°C)","battery_type":"18650","battery_capacity":"3000mAh","battery_life":"1 hour","replaceable_battery":"yes","charging_time":"6 hours","dimensions":"4.5 x 1.75 x 0.95 inches","weight":"5.6 oz","warranty":"10 year","features":"adjustable airflow, dosage control, mobile app integration, zirconia ceramic vapor path"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/davinci-iqc-precision-vaporizer-3135.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/davinci-iqc-precision-vaporizer-3135.webp"},"brand":"DaVinci","series":"IQ"},{"id":"davinci-iq2-dual-use-vaporizer-3307","source_id":"3307","name":"IQ2 Dual Use Vaporizer","price_aud":499,"currency":"AUD","specs":{"compatible_material":"dry herb & concentrates","heating_style":"conduction","heat_up_time":"60 seconds","temperature_range":"320°F - 430°F (160°C - 221°C)","battery_type":"18650","battery_capacity":"3500mAh","battery_life":"up to 1 hour","charge_time":"6 hours","dimensions":"4.5cm x 2.5cm x 9.2cm","weight":"159g","materials":"aluminum, ceramic","warranty":"10 year","features":"adjustable airflow, dosage control, smartphone app integration"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/davinci-iq2-dual-use-vaporizer-3307.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/davinci-iq2-dual-use-vaporizer-3307.webp"},"brand":"DaVinci","series":"IQ"},{"id":"davinci-iq3-8428","source_id":"8428","name":"IQ3","price_aud":399,"currency":"AUD","specs":{"material_compatibility":"Dry Herb","heat_up_time":"30 seconds","temperature_range":"32°F - 430°F (0°C - 221°C)","battery_type":"18650","battery_capacity":"3000mAh","charging_time":"2-3 hours","dimensions":"4.5cm x 2.5cm x 8.7cm","weight":"150g","features":"Precision Temperature Control, Haptic Feedback, Bluetooth App Integration, Smart Paths, Dosage Control","construction":"Sandblasted Aluminum Shell, Glass Lined Oven","oven_capacity":"0.5g","warranty":"10 Year Limited Warranty"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/davinci-iq3-8428.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/davinci-iq3-8428.webp"},"brand":"DaVinci","series":"IQ"},{"id":"davinci-miqro-c-dry-herb-vaporizer-900mah-3208","source_id":"3208","name":"Miqro-C Dry Herb Vaporizer | 900mAh","price_aud":149,"currency":"AUD","specs":{"battery_capacity":"900mAh","heat_up_time":"39 seconds","temperature_range":"350-430°F (176-221°C)","oven_material":"Ceramic","dimensions":"1.57 x 1.34 x 3.13 inches","weight":"2.4 oz","compatible_materials":"Dry Herb","adjustable_airflow":"Yes","replaceable_battery":"No","charging_time":"1.5-2 hours","warranty":"5 Year Limited"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/davinci-miqro-c-dry-herb-vaporizer-900mah-3208.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/davinci-miqro-c-dry-herb-vaporizer-900mah-3208.webp"},"brand":"DaVinci","series":"Miqro-C"},{"id":"dynavap-woodwynd-3207","source_id":"3207","name":"WoodWynd","price_aud":299,"currency":"AUD","specs":{"material":"Stainless Steel, Wood","heating_style":"Conduction","compatible_with":"Dry Herb","airflow":"Adjustable","vapourizer_type":"Butane Powered","features":"Modular, tactile airport","assembled_length":"92 mm"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-woodwynd-3207.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-woodwynd-3207.webp"},"brand":"DynaVap","series":""},{"id":"dynavap-m-7-starter-pack-3300","source_id":"3300","name":"“M” 7 Starter Pack","price_aud":170,"currency":"AUD","specs":{"vaporizer_type":"dry herb","heating_style":"conduction","heat_up_time":"5-10 seconds","temperature_control":"manual","material":"stainless steel","dimensions":"92 mm","weight":"19 grams","features":"modular, tactile temperature indication","included":"DynaVap M 7, DynaStash, lighter, pipe cleaners, cotton swabs"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-m-7-starter-pack-3300.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-m-7-starter-pack-3300.webp"},"brand":"DynaVap","series":""},{"id":"dynavap-woodwynd-starter-pack-3303","source_id":"3303","name":"WoodWynd Starter Pack","price_aud":375,"currency":"AUD","specs":{"material":"Stainless Steel, Wood","heating_style":"Conduction","compatible_with":"Dry Herb","temperature_control":"Manual","oven_capacity":"0.1g","heat_up_time":"5-10 seconds","dimensions":"92 mm","weight":"19g","features":"Adjustable Bowl, Airport","included":"WoodWynd Vaporizer, DynaStash, DynaWax, Pipe Cleaners, Cotton Pipe Cleaners, Condenser O-Rings, High-Temp O-Rings, CCD"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-woodwynd-starter-pack-3303.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-woodwynd-starter-pack-3303.webp"},"brand":"DynaVap","series":""},{"id":"dynavap-the-bb6-vaporizer-3665","source_id":"3665","name":"The BB6 Vaporizer","price_aud":120,"currency":"AUD","specs":{"material":"Borosilicate Glass","compatible_with":"DynaVap VapCap","features":"6mm Beads, Airport, Tapered Mouthpiece","intended_for":"Dry Herb","color_options":"Pink, Green, Blue","dimensions":"3.5 inches"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-the-bb6-vaporizer-3665.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-the-bb6-vaporizer-3665.webp"},"brand":"DynaVap","series":""},{"id":"dynavap-the-vong-starter-kit-5872","source_id":"5872","name":"The VonG Starter Kit","price_aud":320,"currency":"AUD","specs":{"compatible_with":"Dry Herb","heating_style":"Conduction","heat_source":"Butane Torch","material":"Titanium, Stainless Steel, Wood","vapourizer_type":"Mechanical","features":"Modular, Adjustable Bowl","includes":"The VonG (i) Vaporizer, DynaStash, Cyclone Triple Torch, Pipe Cleaners, Cotton Pipe Cleaners, Condenser O-Rings, High-Temp O-Rings, CCD","country_of_origin":"USA"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-the-vong-starter-kit-5872.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-the-vong-starter-kit-5872.webp"},"brand":"DynaVap","series":""},{"id":"dynavap-m7-xl-5873","source_id":"5873","name":"M7 XL","price_aud":149,"currency":"AUD","specs":{"vaporizer_type":"dry herb","heating_style":"conduction","material":"stainless steel","compatible_with":"dry herb","heating_time":"5-10 seconds","temperature_control":"manual","airflow_adjustment":"yes","dimensions":"109 mm","features":"XL condenser, adjustable bowl","color_options":"stainless steel, phantom, omni"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-m7-xl-5873.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-m7-xl-5873.webp"},"brand":"DynaVap","series":""},{"id":"dynavap-the-vong-starter-kit-8425","source_id":"8425","name":"The VonG Starter Kit","price_aud":320,"currency":"AUD","specs":{"compatible_with":"Dry Herb","material":"Titanium, Wood","heating_style":"Conduction","heat_up_time":"5-10 seconds","temperature_control":"Manual","vaporizer_features":"Modular, Butane Powered","dimensions":"92 mm length","manufacturer_country":"USA"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-the-vong-starter-kit-8425.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-the-vong-starter-kit-8425.webp"},"brand":"DynaVap","series":""},{"id":"dynavap-m7-xl-8426","source_id":"8426","name":"M7 XL","price_aud":149,"currency":"AUD","specs":{"vaporizer_type":"dry herb","heating_style":"conduction","material":"stainless steel","compatible_with":"dry herb","heating_time":"5-10 seconds","temperature_control":"manual","airflow_adjustment":"yes","dimensions":"109 mm","features":"XL condenser, adjustable bowl","color_options":"stainless steel, phantom, omni"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-m7-xl-8426.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-m7-xl-8426.webp"},"brand":"DynaVap","series":""},{"id":"eyce-pv1-dry-herb-vaporizer-3000mah-3248","source_id":"3248","name":"PV1 Dry Herb Vaporizer | 3000mAh","price_aud":149.95,"currency":"AUD","specs":{"battery_capacity":"3000mAh","adjustable_temperature":"Yes","heat_up_time":"30 seconds","dimensions":"118mm x 32mm x 26mm","weight":"120g","material":"Silicone, Aluminum","chamber_capacity":"0.5g","charging_time":"2-3 hours","charging_type":"USB-C","display_screen":"OLED","temperature_range":"176°C - 221°C (350°F - 430°F)","automatic_shutoff":"Yes","warranty":"1-year limited"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/eyce-pv1-dry-herb-vaporizer-3000mah-3248.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/eyce-pv1-dry-herb-vaporizer-3000mah-3248.webp"},"brand":"Eyce","series":""},{"id":"firefly-2-portable-vaporizer-3302","source_id":"3302","name":"2+ Portable Vaporizer","price_aud":329,"currency":"AUD","specs":{"vaporizer_type":"portable","compatible_material":"dry herb","heating_style":"convection","heat_up_time":"3 seconds","temperature_control":"app & touch sensor","temperature_range":"200°F - 500°F","battery_type":"internal","battery_capacity":"770mAh","charging_time":"45 minutes","dimensions":"5.1 x 1.4 x 0.95 inches","weight":"5.5 ounces","materials":"borosilicate glass vapor path, magnesium alloy","features":"dynamic convection heating, smartphone app integration, touch sensor activation"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/firefly-2-portable-vaporizer-3302.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/firefly-2-portable-vaporizer-3302.webp"},"brand":"Firefly","series":""},{"id":"tyson-20-x-g-pen-dash-vaporizer-3643","source_id":"3643","name":"X G Pen Dash Vaporizer","price_aud":129.95,"currency":"AUD","specs":{"vaporizer_type":"portable","compatible_material":"dry herb","battery_capacity":"900mAh","heat_up_time":"20 seconds","temperature_settings":"3 temperature settings","temperature_range":"190°C - 220°C","dimensions":"90mm x 25mm x 20mm","weight":"45g","chamber_material":"stainless steel","haptic_feedback":"yes","charging_port":"micro-USB","construction":"aluminum alloy","warranty":"1 year limited"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/tyson-20-x-g-pen-dash-vaporizer-3643.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/tyson-20-x-g-pen-dash-vaporizer-3643.webp"},"brand":"Tyson 2.0","series":""},{"id":"xvape-mambo-cheech-and-chong-dry-herb-vaporizer-1000mah-3701","source_id":"3701","name":"Mambo Cheech and Chong Dry Herb Vaporizer – 1000mAh","price_aud":149,"currency":"AUD","specs":{"battery_capacity":"1000mAh","adjustable_temperature":"Yes","heat_up_time":"20 Seconds","dimensions":"108mm x 30mm x 24mm","weight":"85g","chamber_material":"Ceramic","compatible_with":"Dry Herb","heat_source":"Conduction","display_screen":"OLED","temperature_range":"160°C - 221°C (320°F - 430°F)","charging_time":"1-2 hours","construction":"Aluminum Alloy","features":"Haptic Feedback, Isolated Airflow"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/xvape-mambo-cheech-and-chong-dry-herb-vaporizer-1000mah-3701.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/xvape-mambo-cheech-and-chong-dry-herb-vaporizer-1000mah-3701.webp"},"brand":"XVape","series":""},{"id":"flowermate-v50-pro-vaporizer-3994","source_id":"3994","name":"V5.0 Pro Vaporizer","price_aud":149,"currency":"AUD","specs":{"compatible_material":"Dry Herb","battery_capacity":"2500mAh","temperature_range":"40°C - 230°C (104°F - 446°F)","heat_up_time":"30 seconds","heating_style":"Conduction","dimensions":"8.2cm x 4.5cm x 2.2cm","display":"OLED","adjustable_airflow":"Yes","replaceable_battery":"No","charging_time":"2.5 hours","features":"Haptic feedback, adjustable airflow, isolated air path, memory function","construction":"Anodized Aluminum","warranty":"1 Year"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/flowermate-v50-pro-vaporizer-3994.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/flowermate-v50-pro-vaporizer-3994.webp"},"brand":"Flowermate","series":""},{"id":"flowermate-v50-pro-vaporizer-7640","source_id":"7640","name":"V5.0 Pro Vaporizer","price_aud":149,"currency":"AUD","specs":{"compatible_material":"Dry Herb","battery_capacity":"2500mAh","temperature_range":"40°C - 230°C (104°F - 446°F)","heat_up_time":"30 seconds","heating_style":"Conduction","dimensions":"8.2cm x 4.5cm x 2.2cm","display":"OLED","adjustable_airflow":"Yes","replaceable_battery":"No","charging_time":"2.5 hours","features":"Haptic feedback, adjustable airflow, isolated air path, memory function","construction":"Anodized Aluminum","warranty":"1 Year"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/flowermate-v50-pro-vaporizer-7640.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/flowermate-v50-pro-vaporizer-7640.webp"},"brand":"Flowermate","series":""},{"id":"boundless-cf-vaporizer-3996","source_id":"3996","name":"CF Vaporizer","price_aud":149,"currency":"AUD","specs":{"vaporizer_type":"portable","compatible_material":"dry herb","heating_method":"conduction","temperature_control":"preset","temperature_range":"200-415°F (93-213°C)","heat_up_time":"30-40 seconds","battery_type":"internal","battery_capacity":"1300mAh","charging_time":"2-3 hours","dimensions":"10.2 x 5.8 x 3.3 cm","weight":"136g","features":"5 preset temperatures, haptic feedback, isolated air path"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/boundless-cf-vaporizer-3996.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/boundless-cf-vaporizer-3996.webp"},"brand":"Boundless","series":"CF"},{"id":"boundless-cf-vaporizer-7650","source_id":"7650","name":"CF Vaporizer","price_aud":149,"currency":"AUD","specs":{"vaporizer_type":"portable","compatible_material":"dry herb","heating_method":"conduction","temperature_control":"preset","temperature_range":"200-415°F (93-213°C)","heat_up_time":"30-40 seconds","battery_type":"internal","battery_capacity":"1300mAh","charging_time":"2-3 hours","dimensions":"10.2 x 5.8 x 3.3 cm","weight":"136g","features":"5 preset temperatures, haptic feedback, isolated air path"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/boundless-cf-vaporizer-7650.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/boundless-cf-vaporizer-7650.webp"},"brand":"Boundless","series":"CF"},{"id":"boundless-cfx-vaporizer-3997","source_id":"3997","name":"CFX Vaporizer","price_aud":249,"currency":"AUD","specs":{"vaporizer_type":"portable","compatible_material":"dry herb","heating_style":"conduction","heat_up_time":"20-30 seconds","temperature_range":"100°F - 430°F (37.8°C - 221.1°C)","battery_type":"internal","battery_capacity":"2500mAh","charging_time":"2-3 hours","dimensions":"12.7cm x 6.99cm x 3.05cm","display_type":"OLED","haptic_feedback":"yes","automatic_shutoff":"5 minutes","warranty":"3-year manufacturer warranty"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/boundless-cfx-vaporizer-3997.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/boundless-cfx-vaporizer-3997.webp"},"brand":"Boundless","series":"CFX"},{"id":"boundless-cfx-vaporizer-7680","source_id":"7680","name":"CFX Vaporizer","price_aud":249,"currency":"AUD","specs":{"vaporizer_type":"portable","compatible_material":"dry herb","heating_style":"conduction","heat_up_time":"20-30 seconds","temperature_range":"100°F - 430°F (37.8°C - 221.1°C)","battery_type":"internal","battery_capacity":"2500mAh","charging_time":"2-3 hours","dimensions":"12.7cm x 6.99cm x 3.05cm","display_type":"OLED","haptic_feedback":"yes","automatic_shutoff":"5 minutes","warranty":"3-year manufacturer warranty"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/boundless-cfx-vaporizer-7680.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/boundless-cfx-vaporizer-7680.webp"},"brand":"Boundless","series":"CFX"},{"id":"healthy-rips-rogue-se-bundle-4061","source_id":"4061","name":"Rogue SE Bundle","price_aud":239,"currency":"AUD","specs":{"vaporizer_type":"portable","compatible_material":"dry herb","heating_method":"convection","temperature_control":"precise","temperature_range":"160°C - 221°C (320°F - 430°F)","battery_capacity":"3000mAh","battery_type":"internal","charging_time":"2-3 hours","dimensions":"92mm x 57mm x 28mm","weight":"170g","heat_up_time":"25-30 seconds","oven_capacity":"0.15-0.2g","material":"aluminum alloy","features":"haptic feedback, OLED display, adjustable session timer","included":"Rogue SE vaporizer, USB-C charging cable, concentrate pad, cleaning brush, packing tool, spare screens, o-rings"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/healthy-rips-rogue-se-bundle-4061.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/healthy-rips-rogue-se-bundle-4061.webp"},"brand":"Healthy Rips","series":""},{"id":"healthy-rips-rogue-se-bundle-7684","source_id":"7684","name":"Rogue SE Bundle","price_aud":239,"currency":"AUD","specs":{"vaporizer_type":"portable","compatible_material":"dry herb","heating_method":"convection","temperature_control":"precise","temperature_range":"160°C - 221°C (320°F - 430°F)","battery_capacity":"3000mAh","battery_type":"internal","charging_time":"2-3 hours","dimensions":"92mm x 57mm x 28mm","weight":"170g","heat_up_time":"25-30 seconds","oven_capacity":"0.15-0.2g","material":"aluminum alloy","features":"haptic feedback, OLED display, adjustable session timer","included":"Rogue SE vaporizer, USB-C charging cable, concentrate pad, cleaning brush, packing tool, spare screens, o-rings"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/healthy-rips-rogue-se-bundle-7684.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/healthy-rips-rogue-se-bundle-7684.webp"},"brand":"Healthy Rips","series":""},{"id":"xmax-fog-pro-5366","source_id":"5366","name":"FOG PRO","price_aud":249,"currency":"AUD","specs":{"material_compatibility":"dry herb","heating_style":"convection","temperature_control":"precise","temperature_range":"100°C - 220°C (212°F - 428°F)","battery_type":"18650","battery_capacity":"2600mAh","replaceable_battery":"yes","charging_port":"USB-C","heat_up_time":"20-30 seconds","dimensions":"107*58*28mm","weight":"180g","chamber_material":"titanium","construction_material":"aluminum alloy","screen_type":"OLED","haptic_feedback":"yes","available_colors":"black"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/xmax-fog-pro-5366.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/xmax-fog-pro-5366.webp"},"brand":"XMAX","series":""},{"id":"xmax-v3-pro-7683","source_id":"7683","name":"V3 Pro","price_aud":149,"currency":"AUD","specs":{"compatible_with":"Dry Herb","battery_capacity":"2600mAh","heat_up_time":"15 Seconds","temperature_range":"100°C - 220°C (212°F - 428°F)","oven_capacity":"0.15g","charging_time":"2 Hours","dimensions":"27mm x 24mm x 150mm","weight":"107g","features":"Haptic Feedback, Replaceable Battery, Isolated Airflow, Magnetic Mouthpiece","available_colors":"Black, Blue, Green, Coffee, Grey"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/xmax-v3-pro-7683.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/xmax-v3-pro-7683.webp"},"brand":"XMAX","series":""},{"id":"fenix-neo-5874","source_id":"5874","name":"NEO","price_aud":249,"currency":"AUD","specs":{"vaporizer_type":"portable","compatible_with":"dry herb","heating_style":"convection","heat_up_time":"30 seconds","temperature_range":"160°C - 220°C","temperature_control":"precise","battery_capacity":"3000mAh","battery_type":"internal","charging_time":"2.5 hours","charger_type":"USB-C","dimensions":"88 x 45 x 25 mm","weight":"115g","screen_type":"OLED","automatic_shutoff":"yes","warranty":"1 year"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/fenix-neo-5874.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/fenix-neo-5874.webp"},"brand":"Fenix","series":""},{"id":"fenix-neo-8427","source_id":"8427","name":"NEO","price_aud":249,"currency":"AUD","specs":{"vaporizer_type":"portable","compatible_with":"dry herb","heating_style":"convection","heat_up_time":"30 seconds","temperature_range":"160°C - 220°C","temperature_control":"precise","battery_capacity":"3000mAh","battery_type":"internal","charging_time":"2.5 hours","charger_type":"USB-C","dimensions":"88 x 45 x 25 mm","weight":"115g","screen_type":"OLED","automatic_shutoff":"yes","warranty":"1 year"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/fenix-neo-8427.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/fenix-neo-8427.webp"},"brand":"Fenix","series":""},{"id":"smono-sunshine-5875","source_id":"5875","name":"Sunshine","price_aud":149,"currency":"AUD","specs":{"compatible_material":"dry herb","heating_style":"conduction","temperature_control":"precise","temperature_range":"160°C - 221°C","heat_up_time":"30 seconds","oven_capacity":"0.3g","battery_capacity":"1600mAh","dimensions":"11.8 x 3.4 x 2.6 cm","weight":"82g","features":"OLED display, haptic feedback, automatic shut-off","included":"Cleaning brush, packing tool, USB cable"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/smono-sunshine-5875.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/smono-sunshine-5875.webp"},"brand":"Smono","series":""},{"id":"storz-bickel-mighty-portable-usb-c-vaporizer-7637","source_id":"7637","name":"Mighty+ Portable Usb-c Vaporizer","price_aud":549,"currency":"AUD","specs":{"dimensions":"14.0 x 8.0 x 3.0 cm","weight":"230 g","heat_up_time":"Approx. 60 seconds","temperature_range":"40°C - 210°C (104°F - 410°F)","heating_method":"Hybrid (convection and conduction)","battery_type":"Integrated Lithium-Ion","charging_time":"Approx. 3 hours","charger_type":"USB-C","automatic_shutoff":"Yes","materials":"Medical grade","vibration":"Yes","display":"LED","warranty":"2-year","country_of_origin":"Germany","features":"Pre-set Superbooster Temperature","compatible_with":"Dry Herb","chamber_capacity":"1.4 g"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/storz-bickel-mighty-portable-usb-c-vaporizer-7637.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/storz-bickel-mighty-portable-usb-c-vaporizer-7637.webp"},"brand":"Storz & Bickel","series":""},{"id":"ooze-brink-dry-herb-vaporizer-8284","source_id":"8284","name":"BRINK DRY HERB VAPORIZER","price_aud":149.99,"currency":"AUD","specs":{"battery_capacity":"1800mAh","chamber_capacity":"0.5 gram","heating_style":"conduction","compatible_material":"dry herb","features":"nano-glazed C-Core chamber, adjustable airflow, auto shut-off, haptic feedback"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-brink-dry-herb-vaporizer-8284.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-brink-dry-herb-vaporizer-8284.webp"},"brand":"Ooze","series":""},{"id":"ooze-verge-dry-herb-vaporizer-8552","source_id":"8552","name":"Verge Dry Herb Vaporizer","price_aud":129.95,"currency":"AUD","specs":{"compatible_with":"Dry Herb","battery_capacity":"1600mAh","temperature_range":"300°F - 480°F","heat_up_time":"30 seconds","charging_time":"2 hours","charger_type":"USB-C","screen_type":"OLED","adjustable_airflow":"Yes","haptic_feedback":"Yes","material":"Aluminum Alloy","dimensions":"4.5 x 1.5 x 1 inches","weight":"4.8 ounces","automatic_shutoff":"Yes","session_timer":"Adjustable","warranty":"1 Year Limited"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-verge-dry-herb-vaporizer-8552.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-verge-dry-herb-vaporizer-8552.webp"},"brand":"Ooze","series":""},{"id":"airis-herbva-5g-dry-herb-pocket-vaporizer-10261","source_id":"10261","name":"Herbva 5G Dry Herb Pocket Vaporizer","price_aud":79.95,"currency":"AUD","specs":{"compatible_material":"dry herb","battery_capacity":"1000mAh","adjustable_temperature":"Yes","temperature_range":"390-435°F (199-224°C)","heat_up_time":"20-30 seconds","oven_material":"ceramic","dimensions":"107*24*24mm","weight":"65g","charging_time":"2-3 hours","charging_type":"Micro-USB","features":"pocket-sized, magnetic mouthpiece, 3 temperature settings, haptic feedback"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/airis-herbva-5g-dry-herb-pocket-vaporizer-10261.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/airis-herbva-5g-dry-herb-pocket-vaporizer-10261.webp"},"brand":"Airistech","series":""},{"id":"airis-switch-3-in1-vaporizer-dry-herb-wax-oil-ceramic-heating-10263","source_id":"10263","name":"Switch 3 In1 Vaporizer Dry Herb Wax Oil Ceramic Heating","price_aud":149.99,"currency":"AUD","specs":{"vaporizer_type":"portable","compatible_with":"dry herb, wax, oil","heating_element":"ceramic","temperature_control":"yes","temperature_range":"149-232°C (300-450°F)","battery_capacity":"2200mAh","charging_time":"2-3 hours","dimensions":"102mm x 38mm x 25mm","weight":"150g","available_colors":"black, silver, grey","features":"isolated airflow, haptic feedback, magnetic mouthpiece","includes":"device, wax atomizer, oil atomizer, cleaning brush, dab tool, USB charging cable, user manual"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/airis-switch-3-in1-vaporizer-dry-herb-wax-oil-ceramic-heating-10263.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/airis-switch-3-in1-vaporizer-dry-herb-wax-oil-ceramic-heating-10263.webp"},"brand":"Airistech","series":""},{"id":"gethi-g6-10262","source_id":"10262","name":"G6","price_aud":102,"currency":"AUD","specs":{"compatible_material":"dry herb","battery_capacity":"1500mAh","temperature_range":"200-480°F","heat_up_time":"30 seconds","dimensions":"100mm x 30mm x 20mm","weight":"80g","features":"haptic feedback, OLED display, adjustable airflow"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/gethi-g6-10262.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/gethi-g6-10262.webp"},"brand":"Gethi","series":""},{"id":"ciga-fun-x1-dry-herbwax-2-in-1-vaporizer-10264","source_id":"10264","name":"X1 Dry Herb/Wax 2 In 1 Vaporizer","price_aud":170,"currency":"AUD","specs":{"compatible_with":"dry herb, wax","temperature_range":"200°F - 480°F","battery_capacity":"1500mAh","charging_type":"USB-C","display":"OLED","material":"aluminum alloy","dimensions":"105mm x 35mm x 25mm","heat_up_time":"20 seconds","features":"haptic feedback, adjustable airflow"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ciga-fun-x1-dry-herbwax-2-in-1-vaporizer-10264.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ciga-fun-x1-dry-herbwax-2-in-1-vaporizer-10264.webp"},"brand":"Ciga Fun","series":""}]}
+{
+  "path": [
+    "vaporizers",
+    "dry-herb",
+    "portable"
+  ],
+  "file": "vaporizers/dry-herb/portable.json",
+  "brands": [
+    {
+      "name": "Yocan",
+      "slug": "yocan",
+      "product_count": 5
+    },
+    {
+      "name": "PAX",
+      "slug": "pax",
+      "product_count": 8
+    },
+    {
+      "name": "Arizer",
+      "slug": "arizer",
+      "product_count": 18
+    },
+    {
+      "name": "G Pen",
+      "slug": "g-pen",
+      "product_count": 5
+    },
+    {
+      "name": "DaVinci",
+      "slug": "davinci",
+      "product_count": 4
+    },
+    {
+      "name": "DynaVap",
+      "slug": "dynavap",
+      "product_count": 8
+    },
+    {
+      "name": "Eyce",
+      "slug": "eyce",
+      "product_count": 1
+    },
+    {
+      "name": "Firefly",
+      "slug": "firefly",
+      "product_count": 1
+    },
+    {
+      "name": "Tyson 2.0",
+      "slug": "tyson-2.0",
+      "product_count": 1
+    },
+    {
+      "name": "XVape",
+      "slug": "xvape",
+      "product_count": 1
+    },
+    {
+      "name": "Flowermate",
+      "slug": "flowermate",
+      "product_count": 2
+    },
+    {
+      "name": "Boundless",
+      "slug": "boundless",
+      "product_count": 4
+    },
+    {
+      "name": "Healthy Rips",
+      "slug": "healthy-rips",
+      "product_count": 2
+    },
+    {
+      "name": "XMAX",
+      "slug": "xmax",
+      "product_count": 2
+    },
+    {
+      "name": "Fenix",
+      "slug": "fenix",
+      "product_count": 2
+    },
+    {
+      "name": "Smono",
+      "slug": "smono",
+      "product_count": 1
+    },
+    {
+      "name": "Storz & Bickel",
+      "slug": "storz-&-bickel",
+      "product_count": 1
+    },
+    {
+      "name": "Ooze",
+      "slug": "ooze",
+      "product_count": 2
+    },
+    {
+      "name": "Airistech",
+      "slug": "airistech",
+      "product_count": 2
+    },
+    {
+      "name": "Gethi",
+      "slug": "gethi",
+      "product_count": 1
+    },
+    {
+      "name": "Ciga Fun",
+      "slug": "ciga-fun",
+      "product_count": 1
+    }
+  ],
+  "series_index": {
+    "Arizer": [
+      "Solo",
+      "Air",
+      "ArGo",
+      "Air "
+    ],
+    "DaVinci": [
+      "IQ",
+      "Miqro-C"
+    ],
+    "Boundless": [
+      "CF",
+      "CFX"
+    ]
+  },
+  "products": [
+    {
+      "id": "yocan-falcon-6-in-1-concentratedry-herb-vaporizer-3126",
+      "source_id": "3126",
+      "name": "Falcon 6 in 1 Concentrate/Dry Herb Vaporizer",
+      "price_aud": 169.99,
+      "currency": "AUD",
+      "specs": {
+        "material": "Stainless Steel",
+        "height": "168mm",
+        "diameter": "28mm",
+        "weight": "200g",
+        "battery_capacity": "1000mAh",
+        "voltage_levels": "3.2V, 3.7V, 4.2V",
+        "charging_type": "USB-C",
+        "heat_up_time": "20-30 seconds",
+        "compatible_with": "Concentrates, Dry Herb",
+        "chamber_capacity": "0.3g (Dry Herb)",
+        "available_colors": "Black, Silver, Red, Blue, Gold",
+        "features": "Replaceable Quartz Glass Attachment, Multi-Functional Tool, Magnetic Base",
+        "airflow": "Adjustable",
+        "coil_type": "QDC (Quartz Dual Coil)",
+        "temperature_control": "Yes",
+        "display_screen": "No"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-falcon-6-in-1-concentratedry-herb-vaporizer-3126.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-falcon-6-in-1-concentratedry-herb-vaporizer-3126.webp"
+      },
+      "brand": "Yocan",
+      "series": ""
+    },
+    {
+      "id": "yocan-evolve-d-plus-dry-herb-pen-vaporizer-3143",
+      "source_id": "3143",
+      "name": "Evolve-D Plus Dry Herb Pen Vaporizer",
+      "price_aud": 99.99,
+      "currency": "AUD",
+      "specs": {
+        "material": "Metal",
+        "heating_chamber_material": "Ceramic",
+        "battery_capacity": "1100mAh",
+        "adjustable_voltage": "Yes",
+        "voltage_settings": "3.2V-4.2V",
+        "charging_type": "Micro-USB",
+        "coil_type": "Dual Coil",
+        "compatible_with": "Dry Herb",
+        "dimensions": "120mm x 19mm",
+        "weight": "70g",
+        "available_colors": "Black, Silver, Blue, Red, Gold, Green",
+        "preheat_function": "Yes",
+        "airflow_control": "Yes",
+        "warranty": "3-month"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-evolve-d-plus-dry-herb-pen-vaporizer-3143.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-evolve-d-plus-dry-herb-pen-vaporizer-3143.webp"
+      },
+      "brand": "Yocan",
+      "series": ""
+    },
+    {
+      "id": "yocan-evolve-d-dry-herb-vaporizer-pen-650mah-3250",
+      "source_id": "3250",
+      "name": "Evolve-D Dry Herb Vaporizer Pen – 650mAh",
+      "price_aud": 99.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "coil_type": "Dual Coil",
+        "material_compatibility": "Dry Herb",
+        "voltage_output": "3.8V",
+        "height": "120mm",
+        "diameter": "14mm",
+        "charging_type": "Micro-USB",
+        "available_colors": "Black, Silver, Blue, Red, Orange, Green"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-evolve-d-dry-herb-vaporizer-pen-650mah-3250.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-evolve-d-dry-herb-vaporizer-pen-650mah-3250.webp"
+      },
+      "brand": "Yocan",
+      "series": ""
+    },
+    {
+      "id": "yocan-hit-functional-portable-dry-herb-vaporizer-10258",
+      "source_id": "10258",
+      "name": "Hit Functional Portable Dry Herb Vaporizer",
+      "price_aud": 119.99,
+      "currency": "AUD",
+      "specs": {
+        "material": "Aluminum Alloy",
+        "size": "117mm * 23mm",
+        "battery_capacity": "1400mAh",
+        "temperature_range": "200°F - 480°F",
+        "heating_chamber": "Ceramic",
+        "heating_style": "Conduction",
+        "automatic_shutoff": "3 or 5 minutes",
+        "screen_type": "OLED",
+        "charging_type": "USB-C",
+        "available_colors": "Black, Silver, Red, Blue, Gold"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-hit-functional-portable-dry-herb-vaporizer-10258.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-hit-functional-portable-dry-herb-vaporizer-10258.webp"
+      },
+      "brand": "Yocan",
+      "series": ""
+    },
+    {
+      "id": "yocan-falcon-6-in-1-vaporiser-10260",
+      "source_id": "10260",
+      "name": "Falcon 6 In 1 Vaporiser",
+      "price_aud": 169.99,
+      "currency": "AUD",
+      "specs": {
+        "material": "Stainless Steel",
+        "height": "157mm",
+        "diameter": "28mm",
+        "weight": "160g",
+        "battery_capacity": "1000mAh",
+        "voltage_levels": "3.2V, 3.7V, 4.2V",
+        "charging_type": "USB-C",
+        "coil_compatibility": "QTC Coil, XTAL Tip, Pancake Coil",
+        "chamber_capacity": "0.4g",
+        "heat_up_time": "3 seconds",
+        "airflow": "Adjustable",
+        "multi_function_tool": "Dab Tool, Pick Tool",
+        "features": "Magnetic Connections, Glass Bubbler Attachment, Wax Container",
+        "includes": "Yocan Falcon Device, QTC Coil, XTAL Tip, Dab Tool, Cleaning Brush, USB-C Cable, User Manual"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/yocan-falcon-6-in-1-vaporiser-10260.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/yocan-falcon-6-in-1-vaporiser-10260.webp"
+      },
+      "brand": "Yocan",
+      "series": ""
+    },
+    {
+      "id": "pax-plus-2-in-1-vaporizer-3300mah-3128",
+      "source_id": "3128",
+      "name": "Plus 2-in-1 Vaporizer – 3300mAh",
+      "price_aud": 418.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "3300mAh",
+        "compatible_material": "Dry Herb & Concentrate",
+        "temperature_settings": "4",
+        "heat_up_time": "22 seconds",
+        "dimensions": "9.8 x 3.2 x 2.2 cm",
+        "weight": "91g",
+        "warranty": "10-year limited warranty",
+        "charging_time": "2 hours",
+        "features": "Haptic feedback, LED indicator, Bluetooth connectivity",
+        "available_colors": "Onyx, Sage, Periwinkle, Elderberry"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-plus-2-in-1-vaporizer-3300mah-3128.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-plus-2-in-1-vaporizer-3300mah-3128.webp"
+      },
+      "brand": "PAX",
+      "series": ""
+    },
+    {
+      "id": "pax-era-pro-pod-vaporizer-onyx-3140",
+      "source_id": "3140",
+      "name": "ERA Pro Pod Vaporizer – Onyx",
+      "price_aud": 169.99,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "3.3\" H x 0.5\" W x 0.5\" D",
+        "weight": "0.14 lbs",
+        "battery_capacity": "240mAh",
+        "temperature_settings": "520°F / 270°C to 840°F / 450°C",
+        "heat_time": "Instant",
+        "compatible_concentrates": "Oil",
+        "connection": "Bluetooth",
+        "smart_features": "Pod ID, ExpertTemp, Dose Control",
+        "material": "Aluminum",
+        "haptic_feedback": "Yes",
+        "charging_time": "45 minutes",
+        "charging_type": "USB-C",
+        "pod_compatibility": "PAX Era Pods",
+        "available_colors": "Onyx, Silver, Black, Jade, Rose Gold"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-era-pro-pod-vaporizer-onyx-3140.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-era-pro-pod-vaporizer-onyx-3140.webp"
+      },
+      "brand": "PAX",
+      "series": ""
+    },
+    {
+      "id": "pax-mini-dry-herb-vaporizer-3300mahonyx-3306",
+      "source_id": "3306",
+      "name": "Mini Dry Herb Vaporizer – 3300mAh/Onyx",
+      "price_aud": 268.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "3300mAh",
+        "dimensions": "3.17cm x 2.29cm x 9.3cm",
+        "heat_up_time": "22 seconds",
+        "oven_capacity": "0.25g",
+        "temperature_settings": "Single optimized temperature",
+        "materials": "Aluminum",
+        "weight": "89g",
+        "compatible_with": "Dry Herb",
+        "charging_time": "2.5 hours",
+        "warranty": "2-year limited warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-mini-dry-herb-vaporizer-3300mahonyx-3306.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-mini-dry-herb-vaporizer-3300mahonyx-3306.webp"
+      },
+      "brand": "PAX",
+      "series": ""
+    },
+    {
+      "id": "pax-era-variable-voltage-vape-pen-210mah-3698",
+      "source_id": "3698",
+      "name": "ERA Variable Voltage Vape Pen | 210mAh",
+      "price_aud": 169.99,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "3.3\" H x 0.5\" W x 0.5\" D",
+        "weight": "0.14 lbs",
+        "battery_capacity": "240mAh",
+        "temperature_settings": "520°F / 270°C to 840°F / 450°C",
+        "heat_time": "Instant",
+        "compatible_concentrates": "Oil",
+        "connection": "Bluetooth",
+        "smart_features": "Pod ID, ExpertTemp, Dose Control",
+        "material": "Aluminum",
+        "haptic_feedback": "Yes",
+        "charging_time": "45 minutes",
+        "charging_type": "USB-C",
+        "pod_compatibility": "PAX Era Pods",
+        "available_colors": "Onyx, Silver, Black, Jade, Rose Gold"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-era-variable-voltage-vape-pen-210mah-3698.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-era-variable-voltage-vape-pen-210mah-3698.webp"
+      },
+      "brand": "PAX",
+      "series": ""
+    },
+    {
+      "id": "pax-era-go-vape-pen-210mah-3748",
+      "source_id": "3748",
+      "name": "ERA Go Vape Pen | 210mAh",
+      "price_aud": 169.99,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "3.3\" H x 0.5\" W x 0.5\" D",
+        "weight": "0.14 lbs",
+        "battery_capacity": "240mAh",
+        "temperature_settings": "520°F / 270°C to 840°F / 450°C",
+        "heat_time": "Instant",
+        "compatible_concentrates": "Oil",
+        "connection": "Bluetooth",
+        "smart_features": "Pod ID, ExpertTemp, Dose Control",
+        "material": "Aluminum",
+        "haptic_feedback": "Yes",
+        "charging_time": "45 minutes",
+        "charging_type": "USB-C",
+        "pod_compatibility": "PAX Era Pods",
+        "available_colors": "Onyx, Silver, Black, Jade, Rose Gold"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-era-go-vape-pen-210mah-3748.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-era-go-vape-pen-210mah-3748.webp"
+      },
+      "brand": "PAX",
+      "series": ""
+    },
+    {
+      "id": "pax-3-vaporizer-7639",
+      "source_id": "7639",
+      "name": "3 Vaporizer",
+      "price_aud": 398.99,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "9.8 x 3.1 x 2.2 cm",
+        "weight": "93 g",
+        "battery_capacity": "3000mAh",
+        "heat_time": "15-22 seconds",
+        "temperature_range": "182°C - 215°C (360°F - 420°F)",
+        "compatible_materials": "Dry Herb & Concentrates",
+        "oven_capacity": "0.3g",
+        "charging_time": "90 minutes",
+        "warranty": "10-year limited warranty",
+        "features": "Haptic feedback, Bluetooth connectivity, Customizable LED display, Multiple temperature settings, Lip sensing technology",
+        "construction": "Anodized aluminum",
+        "available_colors": "Onyx, Sage, Sand, Burgundy"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-3-vaporizer-7639.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-3-vaporizer-7639.webp"
+      },
+      "brand": "PAX",
+      "series": ""
+    },
+    {
+      "id": "pax-mini-vaporizer-7686",
+      "source_id": "7686",
+      "name": "Mini Vaporizer",
+      "price_aud": 269.99,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "3.66 H x 1.26 W x 0.83 D inches",
+        "battery_capacity": "3000mAh",
+        "heat_time": "22 seconds",
+        "oven_capacity": "0.25g",
+        "temperature_settings": "Single optimized temperature",
+        "materials": "Dry Herb",
+        "charging_time": "2.5 hours",
+        "warranty": "2-year limited warranty",
+        "features": "Pocket-friendly, Simple interface, Magnetic oven lid"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-mini-vaporizer-7686.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-mini-vaporizer-7686.webp"
+      },
+      "brand": "PAX",
+      "series": ""
+    },
+    {
+      "id": "pax-plus-vaporizer-7687",
+      "source_id": "7687",
+      "name": "Plus Vaporizer",
+      "price_aud": 418.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "Dry Herb & Concentrate",
+        "battery_capacity": "3000mAh",
+        "heat_time": "22 seconds",
+        "oven_capacity": "0.5g",
+        "dimensions": "9.8 x 3.1 x 2.2 cm",
+        "weight": "91g",
+        "temperature_settings": "4",
+        "materials": "Aluminum",
+        "haptic_feedback": "Yes",
+        "smart_features": "Auto Shut-off, Party Mode",
+        "warranty": "10-year limited warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/pax-plus-vaporizer-7687.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/pax-plus-vaporizer-7687.webp"
+      },
+      "brand": "PAX",
+      "series": ""
+    },
+    {
+      "id": "arizer-solo-ii-mystic-blue-3129",
+      "source_id": "3129",
+      "name": "Solo II – Mystic Blue",
+      "price_aud": 419.99,
+      "currency": "AUD",
+      "specs": {
+        "color": "Mystic Blue",
+        "dimensions": "11.4 cm x 3.5 cm",
+        "weight": "210g",
+        "battery_type": "Internal Lithium-Ion",
+        "battery_capacity": "3400mAh",
+        "temperature_range": "50°C - 220°C (122°F - 428°F)",
+        "heat_up_time": "30 seconds",
+        "session_time": "Up to 3 hours per charge",
+        "charging_time": "3 hours",
+        "display_type": "OLED",
+        "material_compatibility": "Dry Herb",
+        "warranty": "2-Year Limited Warranty",
+        "features": "Precise Temperature Control, Custom Session Settings, Isolated Airpath, All-Glass Vapor Path"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-mystic-blue-3129.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-mystic-blue-3129.webp"
+      },
+      "brand": "Arizer",
+      "series": "Solo"
+    },
+    {
+      "id": "arizer-solo-ii-carbon-black-3138",
+      "source_id": "3138",
+      "name": "Solo II - Carbon Black",
+      "price_aud": 419.99,
+      "currency": "AUD",
+      "specs": {
+        "color": "Carbon Black",
+        "dimensions": "11.4 cm x 3.5 cm x 2.8 cm",
+        "weight": "210g",
+        "battery_type": "Internal Lithium-Ion",
+        "battery_capacity": "3400mAh",
+        "temperature_range": "50°C - 220°C (122°F - 428°F)",
+        "heat_up_time": "30 seconds",
+        "session_time": "Up to 3 hours",
+        "display": "OLED",
+        "material_compatibility": "Dry Herb",
+        "warranty": "2 Year Limited",
+        "features": "Precise Temperature Control, Custom Session Settings, Isolated Airpath, All-Glass Vapor Path"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-carbon-black-3138.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-carbon-black-3138.webp"
+      },
+      "brand": "Arizer",
+      "series": "Solo"
+    },
+    {
+      "id": "arizer-solo-ii-dry-herb-portable-vaporizer-3400mah-3282",
+      "source_id": "3282",
+      "name": "Solo II Dry Herb Portable Vaporizer | 3400mAh",
+      "price_aud": 419.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "3400mAh",
+        "temperature_range": "50°C - 220°C (122°F - 428°F)",
+        "heating_style": "Conduction",
+        "heat_up_time": "30 seconds",
+        "dimensions": "11.4 cm x 3.8 cm x 2.5 cm",
+        "weight": "210g",
+        "materials": "Borosilicate glass, stainless steel",
+        "display": "LED",
+        "automatic_shutoff": "Yes",
+        "warranty": "2-year limited warranty",
+        "compatible_with": "Dry Herb",
+        "charging_time": "3 hours",
+        "session_time": "Up to 3 hours",
+        "features": "Precise temperature control, isolated airpath, all-glass vapor path"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-dry-herb-portable-vaporizer-3400mah-3282.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-dry-herb-portable-vaporizer-3400mah-3282.webp"
+      },
+      "brand": "Arizer",
+      "series": "Solo"
+    },
+    {
+      "id": "arizer-solo-ii-max-3283",
+      "source_id": "3283",
+      "name": "Solo II MAX",
+      "price_aud": 419.99,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "11.4 cm x 3.5 cm x 2.8 cm",
+        "weight": "227g",
+        "battery_type": "Lithium-ion",
+        "battery_capacity": "3400mAh",
+        "temperature_range": "50°C - 220°C (122°F - 428°F)",
+        "heat_up_time": "30 seconds",
+        "heating_method": "Hybrid (convection and conduction)",
+        "chamber_material": "Glass",
+        "compatible_materials": "Dry Herb",
+        "display_type": "OLED",
+        "adjustable_temperature": "Yes",
+        "automatic_shut_off": "Yes",
+        "warranty": "2-year limited warranty",
+        "features": "Automatic Screen Inversion, Dark Mode, Rapid Heating",
+        "charging_time": "3 hours",
+        "charger_type": "USB-C"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-max-3283.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-solo-ii-max-3283.webp"
+      },
+      "brand": "Arizer",
+      "series": "Solo"
+    },
+    {
+      "id": "arizer-solo-iii-3301",
+      "source_id": "3301",
+      "name": "Solo III",
+      "price_aud": 562.99,
+      "currency": "AUD",
+      "specs": {
+        "heating_style": "conduction and convection",
+        "compatible_material": "dry herb",
+        "temperature_control": "precise",
+        "temperature_range": "50°C - 220°C (122°F - 428°F)",
+        "heat_up_time": "15-20 seconds",
+        "battery_type": "internal",
+        "display": "OLED",
+        "dimensions": "11.4 cm x 3.8 cm x 2.5 cm",
+        "features": "isolated airpath, custom session settings, automatic shut-off",
+        "new_features": "XL glass pod system, double capacity, increased airflow"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-solo-iii-3301.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-solo-iii-3301.webp"
+      },
+      "brand": "Arizer",
+      "series": "Solo"
+    },
+    {
+      "id": "arizer-solo-iii-4029",
+      "source_id": "4029",
+      "name": "Solo III",
+      "price_aud": 562.99,
+      "currency": "AUD",
+      "specs": {
+        "heating_style": "conduction and convection",
+        "compatible_material": "dry herb",
+        "temperature_control": "precise",
+        "temperature_range": "50°C - 220°C (122°F - 428°F)",
+        "heat_up_time": "15-20 seconds",
+        "battery_type": "internal",
+        "display": "OLED",
+        "dimensions": "11.4 cm x 3.8 cm x 2.5 cm",
+        "features": "isolated airpath, custom session settings, automatic shut-off",
+        "new_features": "XL glass pod system, double capacity, increased airflow"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-solo-iii-4029.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-solo-iii-4029.webp"
+      },
+      "brand": "Arizer",
+      "series": "Solo"
+    },
+    {
+      "id": "arizer-air-max-3130",
+      "source_id": "3130",
+      "name": "Air MAX",
+      "price_aud": 418.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_material": "Dry Herb",
+        "battery_type": "26650",
+        "battery_capacity": "5500mAh",
+        "temperature_range": "50°C - 220°C (122°F - 428°F)",
+        "heat_up_time": "Under 60 seconds",
+        "dimensions": "13.5cm x 3cm x 3cm",
+        "weight": "164g",
+        "oven_material": "Ceramic",
+        "heat_source": "Hybrid (Convection & Conduction)",
+        "session_timer": "Adjustable",
+        "display_type": "OLED",
+        "charging_type": "USB-C",
+        "features": "Isolated Airpath, Automatic Inversion, Dark Mode, Custom Session Settings",
+        "included": "Air MAX Vaporizer, USB-C Charger, Glass Aroma Tube (70mm), Frosted Glass Aroma Tube (14mm), Glass Aroma Dish, Stainless Steel Stirring Tool, Screen Pack, PVC Travel Tube"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-max-3130.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-max-3130.webp"
+      },
+      "brand": "Arizer",
+      "series": "Air"
+    },
+    {
+      "id": "arizer-air-se-blue-haze-3131",
+      "source_id": "3131",
+      "name": "Air SE – Blue Haze",
+      "price_aud": 199.99,
+      "currency": "AUD",
+      "specs": {
+        "colour": "Blue Haze",
+        "dimensions": "11cm x 3cm x 2cm",
+        "weight": "94g",
+        "battery_type": "Lithium-ion",
+        "heat_up_time": "60-90 seconds",
+        "temperature_range": "180°C - 210°C",
+        "chamber_capacity": "0.1 - 0.2 grams",
+        "compatible_materials": "Dry Herb",
+        "warranty": "2 Year Limited Warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-se-blue-haze-3131.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-se-blue-haze-3131.webp"
+      },
+      "brand": "Arizer",
+      "series": "Air"
+    },
+    {
+      "id": "arizer-air-se-reefer-white-3137",
+      "source_id": "3137",
+      "name": "Air SE – Reefer White",
+      "price_aud": 199.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable",
+        "compatible_material": "dry herb",
+        "heating_style": "convection",
+        "heat_up_time": "60 seconds",
+        "temperature_control": "5 preset temperatures",
+        "temperature_range": "180°C - 210°C (356°F - 410°F)",
+        "battery_type": "internal",
+        "battery_capacity": "800mAh",
+        "charging_time": "90 minutes",
+        "dimensions": "11cm x 2.9cm x 2.9cm",
+        "weight": "94g",
+        "features": "isolated airpath, borosilicate glass aroma tube",
+        "available_colors": "reefer white"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-se-reefer-white-3137.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-se-reefer-white-3137.webp"
+      },
+      "brand": "Arizer",
+      "series": "Air"
+    },
+    {
+      "id": "arizer-air-max-dry-herb-vaporizer-5500mah-3139",
+      "source_id": "3139",
+      "name": "Air MAX Dry Herb Vaporizer – 5500mAh",
+      "price_aud": 418.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "5500mAh",
+        "adjustable_temperature": "Yes",
+        "temperature_range": "50°C - 220°C (122°F - 428°F)",
+        "heating_style": "Conduction",
+        "heat_up_time": "Under 60 seconds",
+        "vapor_pathway_material": "Glass",
+        "compatible_with": "Dry Herb",
+        "dimensions": "13.5cm x 3cm x 2.5cm",
+        "weight": "164g",
+        "display_type": "OLED",
+        "haptic_feedback": "Yes",
+        "charging_type": "USB-C",
+        "session_timer": "Adjustable",
+        "automatic_shutoff": "Yes",
+        "warranty": "Limited Lifetime"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-max-dry-herb-vaporizer-5500mah-3139.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-max-dry-herb-vaporizer-5500mah-3139.webp"
+      },
+      "brand": "Arizer",
+      "series": "Air"
+    },
+    {
+      "id": "arizer-air-2-vaporizer-3995",
+      "source_id": "3995",
+      "name": "Air 2 Vaporizer",
+      "price_aud": 268.99,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "122 x 30 mm",
+        "weight": "116 g",
+        "battery_type": "18650",
+        "battery_capacity": "3000mAh",
+        "temperature_range": "50°C - 220°C (122°F - 428°F)",
+        "heat_up_time": "60-90 seconds",
+        "heating_style": "conduction",
+        "oven_capacity": "0.25g",
+        "display_type": "OLED",
+        "material": "borosilicate glass, aluminum",
+        "features": "adjustable brightness, automatic shut-off, customizable settings",
+        "included": "Air II Vaporizer, Battery, Charger / USB, Glass Aroma Tube (70mm), Glass Aroma Tube (70mm) with Tip, Glass Aroma Dish, Stirring Tool, 4 x Filter Screens, Protective Travel Tube, PVC Travel Tube with Cap"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-2-vaporizer-3995.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-2-vaporizer-3995.webp"
+      },
+      "brand": "Arizer",
+      "series": "Air"
+    },
+    {
+      "id": "arizer-air-2-vaporizer-7641",
+      "source_id": "7641",
+      "name": "Air 2 Vaporizer",
+      "price_aud": 268.99,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "122 x 30 mm",
+        "weight": "116 g",
+        "battery_type": "18650",
+        "battery_capacity": "3000mAh",
+        "temperature_range": "50°C - 220°C (122°F - 428°F)",
+        "heat_up_time": "60-90 seconds",
+        "heating_style": "conduction",
+        "oven_capacity": "0.25g",
+        "display_type": "OLED",
+        "material": "borosilicate glass, aluminum",
+        "features": "adjustable brightness, automatic shut-off, customizable settings",
+        "included": "Air II Vaporizer, Battery, Charger / USB, Glass Aroma Tube (70mm), Glass Aroma Tube (70mm) with Tip, Glass Aroma Dish, Stirring Tool, 4 x Filter Screens, Protective Travel Tube, PVC Travel Tube with Cap"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-2-vaporizer-7641.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-2-vaporizer-7641.webp"
+      },
+      "brand": "Arizer",
+      "series": "Air"
+    },
+    {
+      "id": "arizer-argo-3133",
+      "source_id": "3133",
+      "name": "ArGo",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "9.3 x 5.2 x 2.4 cm",
+        "weight": "96g",
+        "battery_type": "18650",
+        "battery_capacity": "3000mAh",
+        "temperature_range": "50°C - 220°C (122°F - 428°F)",
+        "heating_style": "conduction",
+        "heat_up_time": "30-60 seconds",
+        "oven_material": "ceramic",
+        "display": "OLED",
+        "adjustable_temperature": "yes",
+        "automatic_shutoff": "yes",
+        "warranty": "2 years",
+        "compatible_materials": "dry herb",
+        "replaceable_battery": "yes",
+        "charging_time": "3.5 hours",
+        "features": "compact design, precise temperature control, digital display, all-glass vapor path, isolated airpath"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-argo-3133.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-argo-3133.webp"
+      },
+      "brand": "Arizer",
+      "series": "ArGo"
+    },
+    {
+      "id": "arizer-argo-dry-herb-vaporizer-3400mah-3281",
+      "source_id": "3281",
+      "name": "ArGo Dry Herb Vaporizer – 3400mAh",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "3400mAh",
+        "adjustable_temperature": "Yes",
+        "heat_up_time": "30-90 seconds",
+        "temperature_range": "50°C - 220°C (122°F - 428°F)",
+        "dimensions": "52mm x 24mm x 93mm",
+        "weight": "96g",
+        "heating_style": "Conduction",
+        "compatible_with": "Dry Herb",
+        "digital_display": "OLED",
+        "automatic_shutoff": "Yes",
+        "warranty": "2 Year",
+        "replaceable_battery": "No",
+        "material": "Aluminum",
+        "country_of_origin": "Canada"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-argo-dry-herb-vaporizer-3400mah-3281.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-argo-dry-herb-vaporizer-3400mah-3281.webp"
+      },
+      "brand": "Arizer",
+      "series": "ArGo"
+    },
+    {
+      "id": "arizer-argo-vaporizer-4027",
+      "source_id": "4027",
+      "name": "ArGo Vaporizer",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "5.19 x 1.28 x 2.05 inches",
+        "weight": "3.4 oz",
+        "battery_type": "18650",
+        "battery_capacity": "3000mAh",
+        "temperature_range": "50°C - 220°C (122°F - 428°F)",
+        "heat_up_time": "30-60 seconds",
+        "heating_style": "conduction",
+        "compatible_materials": "dry herb",
+        "display_type": "OLED",
+        "replaceable_battery": "yes",
+        "adjustable_airflow": "no",
+        "haptic_feedback": "no",
+        "automatic_shutoff": "yes",
+        "warranty": "2 year",
+        "features": "Isolated Airpath, Digital Temperature Control, Compact Size, Retractable Glass Stem"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-argo-vaporizer-4027.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-argo-vaporizer-4027.webp"
+      },
+      "brand": "Arizer",
+      "series": "ArGo"
+    },
+    {
+      "id": "arizer-argo-vaporizer-7681",
+      "source_id": "7681",
+      "name": "ArGo Vaporizer",
+      "price_aud": 319.99,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "5.19 x 1.28 x 2.05 inches",
+        "weight": "3.4 oz",
+        "battery_type": "18650",
+        "battery_capacity": "3000mAh",
+        "temperature_range": "50°C - 220°C (122°F - 428°F)",
+        "heat_up_time": "30-60 seconds",
+        "heating_style": "conduction",
+        "compatible_materials": "dry herb",
+        "display_type": "OLED",
+        "replaceable_battery": "yes",
+        "adjustable_airflow": "no",
+        "haptic_feedback": "no",
+        "automatic_shutoff": "yes",
+        "warranty": "2 year",
+        "features": "Isolated Airpath, Digital Temperature Control, Compact Size, Retractable Glass Stem"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-argo-vaporizer-7681.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-argo-vaporizer-7681.webp"
+      },
+      "brand": "Arizer",
+      "series": "ArGo"
+    },
+    {
+      "id": "arizer-air-se-3993",
+      "source_id": "3993",
+      "name": "Air SE",
+      "price_aud": 168.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_material": "dry herb",
+        "battery_type": "internal",
+        "heat_up_time": "60-90 seconds",
+        "temperature_control": "preset",
+        "temperature_range": "180°C - 210°C (356°F - 410°F)",
+        "oven_capacity": "0.1-0.2 grams",
+        "dimensions": "122mm x 29mm x 29mm",
+        "weight": "96g",
+        "available_colors": "black, white",
+        "features": "isolated airpath, borosilicate glass vapor path, USB charging",
+        "warranty": "2 year"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-se-3993.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-se-3993.webp"
+      },
+      "brand": "Arizer",
+      "series": "Air "
+    },
+    {
+      "id": "arizer-air-se-7638",
+      "source_id": "7638",
+      "name": "Air SE",
+      "price_aud": 168.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_material": "dry herb",
+        "battery_type": "internal",
+        "heat_up_time": "60-90 seconds",
+        "temperature_control": "preset",
+        "temperature_range": "180°C - 210°C (356°F - 410°F)",
+        "oven_capacity": "0.1-0.2 grams",
+        "dimensions": "122mm x 29mm x 29mm",
+        "weight": "96g",
+        "available_colors": "black, white",
+        "features": "isolated airpath, borosilicate glass vapor path, USB charging",
+        "warranty": "2 year"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/arizer-air-se-7638.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/arizer-air-se-7638.webp"
+      },
+      "brand": "Arizer",
+      "series": "Air "
+    },
+    {
+      "id": "g-pen-dash-vaporizer-3132",
+      "source_id": "3132",
+      "name": "Dash Vaporizer",
+      "price_aud": 199.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "Dry Herb",
+        "battery_capacity": "950mAh",
+        "heat_up_time": "20 seconds",
+        "temperature_settings": "320°F, 356°F, 392°F",
+        "dimensions": "4.5\" x 0.5\" x 0.5\"",
+        "weight": "0.2 lbs",
+        "material": "Aluminum Alloy",
+        "features": "Pass-Through Charging, Haptic Feedback, Magnetic Mouthpiece",
+        "included": "G Pen Dash Vaporizer, USB Charging Cable, Cleaning Tool"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-dash-vaporizer-3132.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-dash-vaporizer-3132.webp"
+      },
+      "brand": "G Pen",
+      "series": ""
+    },
+    {
+      "id": "g-pen-elite-20-vaporizer-3134",
+      "source_id": "3134",
+      "name": "Elite 2.0 Vaporizer",
+      "price_aud": 268.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_material": "Dry Herb",
+        "battery_capacity": "2100mAh",
+        "temperature_range": "200° - 430°F (93° - 221°C)",
+        "heat_up_time": "30 seconds",
+        "oven_material": "Ceramic",
+        "display_type": "TFT",
+        "haptic_feedback": "Yes",
+        "charging_port": "USB-C",
+        "dimensions": "117mm x 30.5mm x 26mm",
+        "weight": "88g",
+        "warranty": "1-Year Limited"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-elite-20-vaporizer-3134.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-elite-20-vaporizer-3134.webp"
+      },
+      "brand": "G Pen",
+      "series": ""
+    },
+    {
+      "id": "grenco-science-g-pen-elite-ii-herb-vaporizer-2100mah-3141",
+      "source_id": "3141",
+      "name": "G-Pen Elite II Herb Vaporizer – 2100mAh",
+      "price_aud": 418.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2100mAh",
+        "heat_up_time": "30 seconds",
+        "temperature_range": "200°F - 430°F (93°C - 221°C)",
+        "heating_style": "convection",
+        "chamber_material": "ceramic",
+        "display_type": "TFT",
+        "dimensions": "1.77 x 1.18 x 4.53 inches",
+        "weight": "0.4 lbs",
+        "materials": "zinc alloy, silicone",
+        "features": "haptic feedback, full-color display, airflow control, USB-C charging",
+        "included": "G Pen Elite II Vaporizer, G Pen Elite II Case, Pick Tool, USB Charging Cable"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/grenco-science-g-pen-elite-ii-herb-vaporizer-2100mah-3141.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/grenco-science-g-pen-elite-ii-herb-vaporizer-2100mah-3141.webp"
+      },
+      "brand": "G Pen",
+      "series": ""
+    },
+    {
+      "id": "g-pen-dash-vaporizer-3249",
+      "source_id": "3249",
+      "name": "Dash+ Vaporizer",
+      "price_aud": 199.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable dry herb vaporizer",
+        "compatible_material": "dry herb",
+        "heating_method": "conduction",
+        "temperature_control": "precise temperature control",
+        "temperature_range": "320°F - 428°F (160°C - 220°C)",
+        "heat_up_time": "20-30 seconds",
+        "battery_capacity": "1800mAh",
+        "battery_life": "10-12 sessions",
+        "charging_time": "1-2 hours",
+        "charging_type": "USB-C",
+        "dimensions": "4.5\" x 1.5\" x 0.9\"",
+        "weight": "0.2 lbs",
+        "materials": "aluminum alloy, glass",
+        "chamber_capacity": "0.25g",
+        "display": "LED",
+        "haptic_feedback": "yes",
+        "automatic_shutoff": "yes",
+        "warranty": "1 year"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-dash-vaporizer-3249.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-dash-vaporizer-3249.webp"
+      },
+      "brand": "G Pen",
+      "series": ""
+    },
+    {
+      "id": "g-pen-elite-vaporizer-3309",
+      "source_id": "3309",
+      "name": "Elite Vaporizer",
+      "price_aud": 249.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_material": "Dry Herb",
+        "battery_capacity": "2200mAh",
+        "temperature_range": "93°C - 220°C (200°F - 428°F)",
+        "heat_up_time": "30 seconds",
+        "heating_style": "conduction",
+        "dimensions": "114mm x 30mm x 25mm",
+        "display_type": "LED",
+        "haptic_feedback": "yes",
+        "charging_time": "2-3 hours",
+        "chamber_material": "ceramic",
+        "adjustable_temperature": "yes",
+        "automatic_shutoff": "yes",
+        "warranty": "1 year"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/g-pen-elite-vaporizer-3309.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/g-pen-elite-vaporizer-3309.webp"
+      },
+      "brand": "G Pen",
+      "series": ""
+    },
+    {
+      "id": "davinci-iqc-precision-vaporizer-3135",
+      "source_id": "3135",
+      "name": "IQC Precision Vaporizer",
+      "price_aud": 518.99,
+      "currency": "AUD",
+      "specs": {
+        "material_compatibility": "dry herb",
+        "heating_style": "conduction",
+        "heat_up_time": "60 seconds",
+        "temperature_range": "320-430°F (160-221°C)",
+        "battery_type": "18650",
+        "battery_capacity": "3000mAh",
+        "battery_life": "1 hour",
+        "replaceable_battery": "yes",
+        "charging_time": "6 hours",
+        "dimensions": "4.5 x 1.75 x 0.95 inches",
+        "weight": "5.6 oz",
+        "warranty": "10 year",
+        "features": "adjustable airflow, dosage control, mobile app integration, zirconia ceramic vapor path"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/davinci-iqc-precision-vaporizer-3135.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/davinci-iqc-precision-vaporizer-3135.webp"
+      },
+      "brand": "DaVinci",
+      "series": "IQ"
+    },
+    {
+      "id": "davinci-iq2-dual-use-vaporizer-3307",
+      "source_id": "3307",
+      "name": "IQ2 Dual Use Vaporizer",
+      "price_aud": 518.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_material": "dry herb & concentrates",
+        "heating_style": "conduction",
+        "heat_up_time": "60 seconds",
+        "temperature_range": "320°F - 430°F (160°C - 221°C)",
+        "battery_type": "18650",
+        "battery_capacity": "3500mAh",
+        "battery_life": "up to 1 hour",
+        "charge_time": "6 hours",
+        "dimensions": "4.5cm x 2.5cm x 9.2cm",
+        "weight": "159g",
+        "materials": "aluminum, ceramic",
+        "warranty": "10 year",
+        "features": "adjustable airflow, dosage control, smartphone app integration"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/davinci-iq2-dual-use-vaporizer-3307.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/davinci-iq2-dual-use-vaporizer-3307.webp"
+      },
+      "brand": "DaVinci",
+      "series": "IQ"
+    },
+    {
+      "id": "davinci-iq3-8428",
+      "source_id": "8428",
+      "name": "IQ3",
+      "price_aud": 469.99,
+      "currency": "AUD",
+      "specs": {
+        "material_compatibility": "Dry Herb",
+        "heat_up_time": "30 seconds",
+        "temperature_range": "32°F - 430°F (0°C - 221°C)",
+        "battery_type": "18650",
+        "battery_capacity": "3000mAh",
+        "charging_time": "2-3 hours",
+        "dimensions": "4.5cm x 2.5cm x 8.7cm",
+        "weight": "150g",
+        "features": "Precision Temperature Control, Haptic Feedback, Bluetooth App Integration, Smart Paths, Dosage Control",
+        "construction": "Sandblasted Aluminum Shell, Glass Lined Oven",
+        "oven_capacity": "0.5g",
+        "warranty": "10 Year Limited Warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/davinci-iq3-8428.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/davinci-iq3-8428.webp"
+      },
+      "brand": "DaVinci",
+      "series": "IQ"
+    },
+    {
+      "id": "davinci-miqro-c-dry-herb-vaporizer-900mah-3208",
+      "source_id": "3208",
+      "name": "Miqro-C Dry Herb Vaporizer | 900mAh",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "900mAh",
+        "heat_up_time": "39 seconds",
+        "temperature_range": "350-430°F (176-221°C)",
+        "oven_material": "Ceramic",
+        "dimensions": "1.57 x 1.34 x 3.13 inches",
+        "weight": "2.4 oz",
+        "compatible_materials": "Dry Herb",
+        "adjustable_airflow": "Yes",
+        "replaceable_battery": "No",
+        "charging_time": "1.5-2 hours",
+        "warranty": "5 Year Limited"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/davinci-miqro-c-dry-herb-vaporizer-900mah-3208.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/davinci-miqro-c-dry-herb-vaporizer-900mah-3208.webp"
+      },
+      "brand": "DaVinci",
+      "series": "Miqro-C"
+    },
+    {
+      "id": "dynavap-woodwynd-3207",
+      "source_id": "3207",
+      "name": "WoodWynd",
+      "price_aud": 318.99,
+      "currency": "AUD",
+      "specs": {
+        "material": "Stainless Steel, Wood",
+        "heating_style": "Conduction",
+        "compatible_with": "Dry Herb",
+        "airflow": "Adjustable",
+        "vapourizer_type": "Butane Powered",
+        "features": "Modular, tactile airport",
+        "assembled_length": "92 mm"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-woodwynd-3207.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-woodwynd-3207.webp"
+      },
+      "brand": "DynaVap",
+      "series": ""
+    },
+    {
+      "id": "dynavap-m-7-starter-pack-3300",
+      "source_id": "3300",
+      "name": "“M” 7 Starter Pack",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "dry herb",
+        "heating_style": "conduction",
+        "heat_up_time": "5-10 seconds",
+        "temperature_control": "manual",
+        "material": "stainless steel",
+        "dimensions": "92 mm",
+        "weight": "19 grams",
+        "features": "modular, tactile temperature indication",
+        "included": "DynaVap M 7, DynaStash, lighter, pipe cleaners, cotton swabs"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-m-7-starter-pack-3300.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-m-7-starter-pack-3300.webp"
+      },
+      "brand": "DynaVap",
+      "series": ""
+    },
+    {
+      "id": "dynavap-woodwynd-starter-pack-3303",
+      "source_id": "3303",
+      "name": "WoodWynd Starter Pack",
+      "price_aud": 394.99,
+      "currency": "AUD",
+      "specs": {
+        "material": "Stainless Steel, Wood",
+        "heating_style": "Conduction",
+        "compatible_with": "Dry Herb",
+        "temperature_control": "Manual",
+        "oven_capacity": "0.1g",
+        "heat_up_time": "5-10 seconds",
+        "dimensions": "92 mm",
+        "weight": "19g",
+        "features": "Adjustable Bowl, Airport",
+        "included": "WoodWynd Vaporizer, DynaStash, DynaWax, Pipe Cleaners, Cotton Pipe Cleaners, Condenser O-Rings, High-Temp O-Rings, CCD"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-woodwynd-starter-pack-3303.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-woodwynd-starter-pack-3303.webp"
+      },
+      "brand": "DynaVap",
+      "series": ""
+    },
+    {
+      "id": "dynavap-the-bb6-vaporizer-3665",
+      "source_id": "3665",
+      "name": "The BB6 Vaporizer",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "material": "Borosilicate Glass",
+        "compatible_with": "DynaVap VapCap",
+        "features": "6mm Beads, Airport, Tapered Mouthpiece",
+        "intended_for": "Dry Herb",
+        "color_options": "Pink, Green, Blue",
+        "dimensions": "3.5 inches"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-the-bb6-vaporizer-3665.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-the-bb6-vaporizer-3665.webp"
+      },
+      "brand": "DynaVap",
+      "series": ""
+    },
+    {
+      "id": "dynavap-the-vong-starter-kit-5872",
+      "source_id": "5872",
+      "name": "The VonG Starter Kit",
+      "price_aud": 339.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "Dry Herb",
+        "heating_style": "Conduction",
+        "heat_source": "Butane Torch",
+        "material": "Titanium, Stainless Steel, Wood",
+        "vapourizer_type": "Mechanical",
+        "features": "Modular, Adjustable Bowl",
+        "includes": "The VonG (i) Vaporizer, DynaStash, Cyclone Triple Torch, Pipe Cleaners, Cotton Pipe Cleaners, Condenser O-Rings, High-Temp O-Rings, CCD",
+        "country_of_origin": "USA"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-the-vong-starter-kit-5872.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-the-vong-starter-kit-5872.webp"
+      },
+      "brand": "DynaVap",
+      "series": ""
+    },
+    {
+      "id": "dynavap-m7-xl-5873",
+      "source_id": "5873",
+      "name": "M7 XL",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "dry herb",
+        "heating_style": "conduction",
+        "material": "stainless steel",
+        "compatible_with": "dry herb",
+        "heating_time": "5-10 seconds",
+        "temperature_control": "manual",
+        "airflow_adjustment": "yes",
+        "dimensions": "109 mm",
+        "features": "XL condenser, adjustable bowl",
+        "color_options": "stainless steel, phantom, omni"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-m7-xl-5873.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-m7-xl-5873.webp"
+      },
+      "brand": "DynaVap",
+      "series": ""
+    },
+    {
+      "id": "dynavap-the-vong-starter-kit-8425",
+      "source_id": "8425",
+      "name": "The VonG Starter Kit",
+      "price_aud": 339.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "Dry Herb",
+        "material": "Titanium, Wood",
+        "heating_style": "Conduction",
+        "heat_up_time": "5-10 seconds",
+        "temperature_control": "Manual",
+        "vaporizer_features": "Modular, Butane Powered",
+        "dimensions": "92 mm length",
+        "manufacturer_country": "USA"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-the-vong-starter-kit-8425.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-the-vong-starter-kit-8425.webp"
+      },
+      "brand": "DynaVap",
+      "series": ""
+    },
+    {
+      "id": "dynavap-m7-xl-8426",
+      "source_id": "8426",
+      "name": "M7 XL",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "dry herb",
+        "heating_style": "conduction",
+        "material": "stainless steel",
+        "compatible_with": "dry herb",
+        "heating_time": "5-10 seconds",
+        "temperature_control": "manual",
+        "airflow_adjustment": "yes",
+        "dimensions": "109 mm",
+        "features": "XL condenser, adjustable bowl",
+        "color_options": "stainless steel, phantom, omni"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/dynavap-m7-xl-8426.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/dynavap-m7-xl-8426.webp"
+      },
+      "brand": "DynaVap",
+      "series": ""
+    },
+    {
+      "id": "eyce-pv1-dry-herb-vaporizer-3000mah-3248",
+      "source_id": "3248",
+      "name": "PV1 Dry Herb Vaporizer | 3000mAh",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "3000mAh",
+        "adjustable_temperature": "Yes",
+        "heat_up_time": "30 seconds",
+        "dimensions": "118mm x 32mm x 26mm",
+        "weight": "120g",
+        "material": "Silicone, Aluminum",
+        "chamber_capacity": "0.5g",
+        "charging_time": "2-3 hours",
+        "charging_type": "USB-C",
+        "display_screen": "OLED",
+        "temperature_range": "176°C - 221°C (350°F - 430°F)",
+        "automatic_shutoff": "Yes",
+        "warranty": "1-year limited"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/eyce-pv1-dry-herb-vaporizer-3000mah-3248.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/eyce-pv1-dry-herb-vaporizer-3000mah-3248.webp"
+      },
+      "brand": "Eyce",
+      "series": ""
+    },
+    {
+      "id": "firefly-2-portable-vaporizer-3302",
+      "source_id": "3302",
+      "name": "2+ Portable Vaporizer",
+      "price_aud": 369.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable",
+        "compatible_material": "dry herb",
+        "heating_style": "convection",
+        "heat_up_time": "3 seconds",
+        "temperature_control": "app & touch sensor",
+        "temperature_range": "200°F - 500°F",
+        "battery_type": "internal",
+        "battery_capacity": "770mAh",
+        "charging_time": "45 minutes",
+        "dimensions": "5.1 x 1.4 x 0.95 inches",
+        "weight": "5.5 ounces",
+        "materials": "borosilicate glass vapor path, magnesium alloy",
+        "features": "dynamic convection heating, smartphone app integration, touch sensor activation"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/firefly-2-portable-vaporizer-3302.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/firefly-2-portable-vaporizer-3302.webp"
+      },
+      "brand": "Firefly",
+      "series": ""
+    },
+    {
+      "id": "tyson-20-x-g-pen-dash-vaporizer-3643",
+      "source_id": "3643",
+      "name": "X G Pen Dash Vaporizer",
+      "price_aud": 169.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable",
+        "compatible_material": "dry herb",
+        "battery_capacity": "900mAh",
+        "heat_up_time": "20 seconds",
+        "temperature_settings": "3 temperature settings",
+        "temperature_range": "190°C - 220°C",
+        "dimensions": "90mm x 25mm x 20mm",
+        "weight": "45g",
+        "chamber_material": "stainless steel",
+        "haptic_feedback": "yes",
+        "charging_port": "micro-USB",
+        "construction": "aluminum alloy",
+        "warranty": "1 year limited"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/tyson-20-x-g-pen-dash-vaporizer-3643.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/tyson-20-x-g-pen-dash-vaporizer-3643.webp"
+      },
+      "brand": "Tyson 2.0",
+      "series": ""
+    },
+    {
+      "id": "xvape-mambo-cheech-and-chong-dry-herb-vaporizer-1000mah-3701",
+      "source_id": "3701",
+      "name": "Mambo Cheech and Chong Dry Herb Vaporizer – 1000mAh",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "1000mAh",
+        "adjustable_temperature": "Yes",
+        "heat_up_time": "20 Seconds",
+        "dimensions": "108mm x 30mm x 24mm",
+        "weight": "85g",
+        "chamber_material": "Ceramic",
+        "compatible_with": "Dry Herb",
+        "heat_source": "Conduction",
+        "display_screen": "OLED",
+        "temperature_range": "160°C - 221°C (320°F - 430°F)",
+        "charging_time": "1-2 hours",
+        "construction": "Aluminum Alloy",
+        "features": "Haptic Feedback, Isolated Airflow"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/xvape-mambo-cheech-and-chong-dry-herb-vaporizer-1000mah-3701.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/xvape-mambo-cheech-and-chong-dry-herb-vaporizer-1000mah-3701.webp"
+      },
+      "brand": "XVape",
+      "series": ""
+    },
+    {
+      "id": "flowermate-v50-pro-vaporizer-3994",
+      "source_id": "3994",
+      "name": "V5.0 Pro Vaporizer",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_material": "Dry Herb",
+        "battery_capacity": "2500mAh",
+        "temperature_range": "40°C - 230°C (104°F - 446°F)",
+        "heat_up_time": "30 seconds",
+        "heating_style": "Conduction",
+        "dimensions": "8.2cm x 4.5cm x 2.2cm",
+        "display": "OLED",
+        "adjustable_airflow": "Yes",
+        "replaceable_battery": "No",
+        "charging_time": "2.5 hours",
+        "features": "Haptic feedback, adjustable airflow, isolated air path, memory function",
+        "construction": "Anodized Aluminum",
+        "warranty": "1 Year"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/flowermate-v50-pro-vaporizer-3994.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/flowermate-v50-pro-vaporizer-3994.webp"
+      },
+      "brand": "Flowermate",
+      "series": ""
+    },
+    {
+      "id": "flowermate-v50-pro-vaporizer-7640",
+      "source_id": "7640",
+      "name": "V5.0 Pro Vaporizer",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_material": "Dry Herb",
+        "battery_capacity": "2500mAh",
+        "temperature_range": "40°C - 230°C (104°F - 446°F)",
+        "heat_up_time": "30 seconds",
+        "heating_style": "Conduction",
+        "dimensions": "8.2cm x 4.5cm x 2.2cm",
+        "display": "OLED",
+        "adjustable_airflow": "Yes",
+        "replaceable_battery": "No",
+        "charging_time": "2.5 hours",
+        "features": "Haptic feedback, adjustable airflow, isolated air path, memory function",
+        "construction": "Anodized Aluminum",
+        "warranty": "1 Year"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/flowermate-v50-pro-vaporizer-7640.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/flowermate-v50-pro-vaporizer-7640.webp"
+      },
+      "brand": "Flowermate",
+      "series": ""
+    },
+    {
+      "id": "boundless-cf-vaporizer-3996",
+      "source_id": "3996",
+      "name": "CF Vaporizer",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable",
+        "compatible_material": "dry herb",
+        "heating_method": "conduction",
+        "temperature_control": "preset",
+        "temperature_range": "200-415°F (93-213°C)",
+        "heat_up_time": "30-40 seconds",
+        "battery_type": "internal",
+        "battery_capacity": "1300mAh",
+        "charging_time": "2-3 hours",
+        "dimensions": "10.2 x 5.8 x 3.3 cm",
+        "weight": "136g",
+        "features": "5 preset temperatures, haptic feedback, isolated air path"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/boundless-cf-vaporizer-3996.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/boundless-cf-vaporizer-3996.webp"
+      },
+      "brand": "Boundless",
+      "series": "CF"
+    },
+    {
+      "id": "boundless-cf-vaporizer-7650",
+      "source_id": "7650",
+      "name": "CF Vaporizer",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable",
+        "compatible_material": "dry herb",
+        "heating_method": "conduction",
+        "temperature_control": "preset",
+        "temperature_range": "200-415°F (93-213°C)",
+        "heat_up_time": "30-40 seconds",
+        "battery_type": "internal",
+        "battery_capacity": "1300mAh",
+        "charging_time": "2-3 hours",
+        "dimensions": "10.2 x 5.8 x 3.3 cm",
+        "weight": "136g",
+        "features": "5 preset temperatures, haptic feedback, isolated air path"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/boundless-cf-vaporizer-7650.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/boundless-cf-vaporizer-7650.webp"
+      },
+      "brand": "Boundless",
+      "series": "CF"
+    },
+    {
+      "id": "boundless-cfx-vaporizer-3997",
+      "source_id": "3997",
+      "name": "CFX Vaporizer",
+      "price_aud": 289.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable",
+        "compatible_material": "dry herb",
+        "heating_style": "conduction",
+        "heat_up_time": "20-30 seconds",
+        "temperature_range": "100°F - 430°F (37.8°C - 221.1°C)",
+        "battery_type": "internal",
+        "battery_capacity": "2500mAh",
+        "charging_time": "2-3 hours",
+        "dimensions": "12.7cm x 6.99cm x 3.05cm",
+        "display_type": "OLED",
+        "haptic_feedback": "yes",
+        "automatic_shutoff": "5 minutes",
+        "warranty": "3-year manufacturer warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/boundless-cfx-vaporizer-3997.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/boundless-cfx-vaporizer-3997.webp"
+      },
+      "brand": "Boundless",
+      "series": "CFX"
+    },
+    {
+      "id": "boundless-cfx-vaporizer-7680",
+      "source_id": "7680",
+      "name": "CFX Vaporizer",
+      "price_aud": 289.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable",
+        "compatible_material": "dry herb",
+        "heating_style": "conduction",
+        "heat_up_time": "20-30 seconds",
+        "temperature_range": "100°F - 430°F (37.8°C - 221.1°C)",
+        "battery_type": "internal",
+        "battery_capacity": "2500mAh",
+        "charging_time": "2-3 hours",
+        "dimensions": "12.7cm x 6.99cm x 3.05cm",
+        "display_type": "OLED",
+        "haptic_feedback": "yes",
+        "automatic_shutoff": "5 minutes",
+        "warranty": "3-year manufacturer warranty"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/boundless-cfx-vaporizer-7680.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/boundless-cfx-vaporizer-7680.webp"
+      },
+      "brand": "Boundless",
+      "series": "CFX"
+    },
+    {
+      "id": "healthy-rips-rogue-se-bundle-4061",
+      "source_id": "4061",
+      "name": "Rogue SE Bundle",
+      "price_aud": 279.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable",
+        "compatible_material": "dry herb",
+        "heating_method": "convection",
+        "temperature_control": "precise",
+        "temperature_range": "160°C - 221°C (320°F - 430°F)",
+        "battery_capacity": "3000mAh",
+        "battery_type": "internal",
+        "charging_time": "2-3 hours",
+        "dimensions": "92mm x 57mm x 28mm",
+        "weight": "170g",
+        "heat_up_time": "25-30 seconds",
+        "oven_capacity": "0.15-0.2g",
+        "material": "aluminum alloy",
+        "features": "haptic feedback, OLED display, adjustable session timer",
+        "included": "Rogue SE vaporizer, USB-C charging cable, concentrate pad, cleaning brush, packing tool, spare screens, o-rings"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/healthy-rips-rogue-se-bundle-4061.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/healthy-rips-rogue-se-bundle-4061.webp"
+      },
+      "brand": "Healthy Rips",
+      "series": ""
+    },
+    {
+      "id": "healthy-rips-rogue-se-bundle-7684",
+      "source_id": "7684",
+      "name": "Rogue SE Bundle",
+      "price_aud": 279.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable",
+        "compatible_material": "dry herb",
+        "heating_method": "convection",
+        "temperature_control": "precise",
+        "temperature_range": "160°C - 221°C (320°F - 430°F)",
+        "battery_capacity": "3000mAh",
+        "battery_type": "internal",
+        "charging_time": "2-3 hours",
+        "dimensions": "92mm x 57mm x 28mm",
+        "weight": "170g",
+        "heat_up_time": "25-30 seconds",
+        "oven_capacity": "0.15-0.2g",
+        "material": "aluminum alloy",
+        "features": "haptic feedback, OLED display, adjustable session timer",
+        "included": "Rogue SE vaporizer, USB-C charging cable, concentrate pad, cleaning brush, packing tool, spare screens, o-rings"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/healthy-rips-rogue-se-bundle-7684.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/healthy-rips-rogue-se-bundle-7684.webp"
+      },
+      "brand": "Healthy Rips",
+      "series": ""
+    },
+    {
+      "id": "xmax-fog-pro-5366",
+      "source_id": "5366",
+      "name": "FOG PRO",
+      "price_aud": 268.99,
+      "currency": "AUD",
+      "specs": {
+        "material_compatibility": "dry herb",
+        "heating_style": "convection",
+        "temperature_control": "precise",
+        "temperature_range": "100°C - 220°C (212°F - 428°F)",
+        "battery_type": "18650",
+        "battery_capacity": "2600mAh",
+        "replaceable_battery": "yes",
+        "charging_port": "USB-C",
+        "heat_up_time": "20-30 seconds",
+        "dimensions": "107*58*28mm",
+        "weight": "180g",
+        "chamber_material": "titanium",
+        "construction_material": "aluminum alloy",
+        "screen_type": "OLED",
+        "haptic_feedback": "yes",
+        "available_colors": "black"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/xmax-fog-pro-5366.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/xmax-fog-pro-5366.webp"
+      },
+      "brand": "XMAX",
+      "series": ""
+    },
+    {
+      "id": "xmax-v3-pro-7683",
+      "source_id": "7683",
+      "name": "V3 Pro",
+      "price_aud": 199.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "Dry Herb",
+        "battery_capacity": "2600mAh",
+        "heat_up_time": "15 Seconds",
+        "temperature_range": "100°C - 220°C (212°F - 428°F)",
+        "oven_capacity": "0.15g",
+        "charging_time": "2 Hours",
+        "dimensions": "27mm x 24mm x 150mm",
+        "weight": "107g",
+        "features": "Haptic Feedback, Replaceable Battery, Isolated Airflow, Magnetic Mouthpiece",
+        "available_colors": "Black, Blue, Green, Coffee, Grey"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/xmax-v3-pro-7683.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/xmax-v3-pro-7683.webp"
+      },
+      "brand": "XMAX",
+      "series": ""
+    },
+    {
+      "id": "fenix-neo-5874",
+      "source_id": "5874",
+      "name": "NEO",
+      "price_aud": 289.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable",
+        "compatible_with": "dry herb",
+        "heating_style": "convection",
+        "heat_up_time": "30 seconds",
+        "temperature_range": "160°C - 220°C",
+        "temperature_control": "precise",
+        "battery_capacity": "3000mAh",
+        "battery_type": "internal",
+        "charging_time": "2.5 hours",
+        "charger_type": "USB-C",
+        "dimensions": "88 x 45 x 25 mm",
+        "weight": "115g",
+        "screen_type": "OLED",
+        "automatic_shutoff": "yes",
+        "warranty": "1 year"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/fenix-neo-5874.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/fenix-neo-5874.webp"
+      },
+      "brand": "Fenix",
+      "series": ""
+    },
+    {
+      "id": "fenix-neo-8427",
+      "source_id": "8427",
+      "name": "NEO",
+      "price_aud": 289.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable",
+        "compatible_with": "dry herb",
+        "heating_style": "convection",
+        "heat_up_time": "30 seconds",
+        "temperature_range": "160°C - 220°C",
+        "temperature_control": "precise",
+        "battery_capacity": "3000mAh",
+        "battery_type": "internal",
+        "charging_time": "2.5 hours",
+        "charger_type": "USB-C",
+        "dimensions": "88 x 45 x 25 mm",
+        "weight": "115g",
+        "screen_type": "OLED",
+        "automatic_shutoff": "yes",
+        "warranty": "1 year"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/fenix-neo-8427.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/fenix-neo-8427.webp"
+      },
+      "brand": "Fenix",
+      "series": ""
+    },
+    {
+      "id": "smono-sunshine-5875",
+      "source_id": "5875",
+      "name": "Sunshine",
+      "price_aud": 168.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_material": "dry herb",
+        "heating_style": "conduction",
+        "temperature_control": "precise",
+        "temperature_range": "160°C - 221°C",
+        "heat_up_time": "30 seconds",
+        "oven_capacity": "0.3g",
+        "battery_capacity": "1600mAh",
+        "dimensions": "11.8 x 3.4 x 2.6 cm",
+        "weight": "82g",
+        "features": "OLED display, haptic feedback, automatic shut-off",
+        "included": "Cleaning brush, packing tool, USB cable"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/smono-sunshine-5875.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/smono-sunshine-5875.webp"
+      },
+      "brand": "Smono",
+      "series": ""
+    },
+    {
+      "id": "storz-bickel-mighty-portable-usb-c-vaporizer-7637",
+      "source_id": "7637",
+      "name": "Mighty+ Portable Usb-c Vaporizer",
+      "price_aud": 589.99,
+      "currency": "AUD",
+      "specs": {
+        "dimensions": "14.0 x 8.0 x 3.0 cm",
+        "weight": "230 g",
+        "heat_up_time": "Approx. 60 seconds",
+        "temperature_range": "40°C - 210°C (104°F - 410°F)",
+        "heating_method": "Hybrid (convection and conduction)",
+        "battery_type": "Integrated Lithium-Ion",
+        "charging_time": "Approx. 3 hours",
+        "charger_type": "USB-C",
+        "automatic_shutoff": "Yes",
+        "materials": "Medical grade",
+        "vibration": "Yes",
+        "display": "LED",
+        "warranty": "2-year",
+        "country_of_origin": "Germany",
+        "features": "Pre-set Superbooster Temperature",
+        "compatible_with": "Dry Herb",
+        "chamber_capacity": "1.4 g"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/storz-bickel-mighty-portable-usb-c-vaporizer-7637.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/storz-bickel-mighty-portable-usb-c-vaporizer-7637.webp"
+      },
+      "brand": "Storz & Bickel",
+      "series": ""
+    },
+    {
+      "id": "ooze-brink-dry-herb-vaporizer-8284",
+      "source_id": "8284",
+      "name": "BRINK DRY HERB VAPORIZER",
+      "price_aud": 169.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "1800mAh",
+        "chamber_capacity": "0.5 gram",
+        "heating_style": "conduction",
+        "compatible_material": "dry herb",
+        "features": "nano-glazed C-Core chamber, adjustable airflow, auto shut-off, haptic feedback"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-brink-dry-herb-vaporizer-8284.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-brink-dry-herb-vaporizer-8284.webp"
+      },
+      "brand": "Ooze",
+      "series": ""
+    },
+    {
+      "id": "ooze-verge-dry-herb-vaporizer-8552",
+      "source_id": "8552",
+      "name": "Verge Dry Herb Vaporizer",
+      "price_aud": 149.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "Dry Herb",
+        "battery_capacity": "1600mAh",
+        "temperature_range": "300°F - 480°F",
+        "heat_up_time": "30 seconds",
+        "charging_time": "2 hours",
+        "charger_type": "USB-C",
+        "screen_type": "OLED",
+        "adjustable_airflow": "Yes",
+        "haptic_feedback": "Yes",
+        "material": "Aluminum Alloy",
+        "dimensions": "4.5 x 1.5 x 1 inches",
+        "weight": "4.8 ounces",
+        "automatic_shutoff": "Yes",
+        "session_timer": "Adjustable",
+        "warranty": "1 Year Limited"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ooze-verge-dry-herb-vaporizer-8552.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ooze-verge-dry-herb-vaporizer-8552.webp"
+      },
+      "brand": "Ooze",
+      "series": ""
+    },
+    {
+      "id": "airis-herbva-5g-dry-herb-pocket-vaporizer-10261",
+      "source_id": "10261",
+      "name": "Herbva 5G Dry Herb Pocket Vaporizer",
+      "price_aud": 119.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_material": "dry herb",
+        "battery_capacity": "1000mAh",
+        "adjustable_temperature": "Yes",
+        "temperature_range": "390-435°F (199-224°C)",
+        "heat_up_time": "20-30 seconds",
+        "oven_material": "ceramic",
+        "dimensions": "107*24*24mm",
+        "weight": "65g",
+        "charging_time": "2-3 hours",
+        "charging_type": "Micro-USB",
+        "features": "pocket-sized, magnetic mouthpiece, 3 temperature settings, haptic feedback"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/airis-herbva-5g-dry-herb-pocket-vaporizer-10261.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/airis-herbva-5g-dry-herb-pocket-vaporizer-10261.webp"
+      },
+      "brand": "Airistech",
+      "series": ""
+    },
+    {
+      "id": "airis-switch-3-in1-vaporizer-dry-herb-wax-oil-ceramic-heating-10263",
+      "source_id": "10263",
+      "name": "Switch 3 In1 Vaporizer Dry Herb Wax Oil Ceramic Heating",
+      "price_aud": 169.99,
+      "currency": "AUD",
+      "specs": {
+        "vaporizer_type": "portable",
+        "compatible_with": "dry herb, wax, oil",
+        "heating_element": "ceramic",
+        "temperature_control": "yes",
+        "temperature_range": "149-232°C (300-450°F)",
+        "battery_capacity": "2200mAh",
+        "charging_time": "2-3 hours",
+        "dimensions": "102mm x 38mm x 25mm",
+        "weight": "150g",
+        "available_colors": "black, silver, grey",
+        "features": "isolated airflow, haptic feedback, magnetic mouthpiece",
+        "includes": "device, wax atomizer, oil atomizer, cleaning brush, dab tool, USB charging cable, user manual"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/airis-switch-3-in1-vaporizer-dry-herb-wax-oil-ceramic-heating-10263.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/airis-switch-3-in1-vaporizer-dry-herb-wax-oil-ceramic-heating-10263.webp"
+      },
+      "brand": "Airistech",
+      "series": ""
+    },
+    {
+      "id": "gethi-g6-10262",
+      "source_id": "10262",
+      "name": "G6",
+      "price_aud": 121.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_material": "dry herb",
+        "battery_capacity": "1500mAh",
+        "temperature_range": "200-480°F",
+        "heat_up_time": "30 seconds",
+        "dimensions": "100mm x 30mm x 20mm",
+        "weight": "80g",
+        "features": "haptic feedback, OLED display, adjustable airflow"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/gethi-g6-10262.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/gethi-g6-10262.webp"
+      },
+      "brand": "Gethi",
+      "series": ""
+    },
+    {
+      "id": "ciga-fun-x1-dry-herbwax-2-in-1-vaporizer-10264",
+      "source_id": "10264",
+      "name": "X1 Dry Herb/Wax 2 In 1 Vaporizer",
+      "price_aud": 189.99,
+      "currency": "AUD",
+      "specs": {
+        "compatible_with": "dry herb, wax",
+        "temperature_range": "200°F - 480°F",
+        "battery_capacity": "1500mAh",
+        "charging_type": "USB-C",
+        "display": "OLED",
+        "material": "aluminum alloy",
+        "dimensions": "105mm x 35mm x 25mm",
+        "heat_up_time": "20 seconds",
+        "features": "haptic feedback, adjustable airflow"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ciga-fun-x1-dry-herbwax-2-in-1-vaporizer-10264.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ciga-fun-x1-dry-herbwax-2-in-1-vaporizer-10264.webp"
+      },
+      "brand": "Ciga Fun",
+      "series": ""
+    }
+  ]
+}

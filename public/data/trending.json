@@ -7,7 +7,7 @@
       "id": "geek-bar-pulse-x-platinum-disposable-vape-20ml-8126",
       "source_id": "8126",
       "name": "Pulse X Platinum Disposable Vape 20mL",
-      "price_aud": 39.99,
+      "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
         "nicotine_strength": "5% (50mg/mL)",
@@ -29,7 +29,7 @@
       "id": "iget-moon-k5000-watermelon-ice-13113",
       "source_id": "13113",
       "name": "MOON K5000 Watermelon Ice",
-      "price_aud": 39.99,
+      "price_aud": 49.99,
       "currency": "AUD",
       "specs": {
         "puff_count": "5000",
@@ -50,7 +50,7 @@
       "id": "alibarbar-ingot-pineapple-coconut-2136",
       "source_id": "2136",
       "name": "Ingot Pineapple Coconut",
-      "price_aud": 44.99,
+      "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
         "battery_capacity": "2350mAh",
@@ -121,7 +121,7 @@
       "id": "relx-sparta-peach-strawberry-2261",
       "source_id": "2261",
       "name": "SPARTA Peach Strawberry",
-      "price_aud": 44.99,
+      "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
         "battery_capacity": "780mAh",
@@ -143,7 +143,7 @@
       "id": "gunnpod-evo-frost-cola-fizz-2303",
       "source_id": "2303",
       "name": "EVO Frost Cola Fizz",
-      "price_aud": 39.99,
+      "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
         "battery_capacity": "2500mAh",
@@ -185,7 +185,7 @@
       "id": "veipus-blueberry-lemonade-2344",
       "source_id": "2344",
       "name": "Blueberry Lemonade",
-      "price_aud": 39.99,
+      "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
         "nicotine_strength": "5%",
@@ -207,7 +207,7 @@
       "id": "vigor-storm-golden-tobacco-prime-2422",
       "source_id": "2422",
       "name": "Golden Tobacco – PRIME",
-      "price_aud": 39.99,
+      "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
         "battery_capacity": "800mAh",
@@ -230,7 +230,7 @@
       "id": "vigor-storm-elite-strawberry-kiwi-13794",
       "source_id": "13794",
       "name": "Elite Strawberry Kiwi",
-      "price_aud": 30,
+      "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
         "nicotine_strength": "5% (50mg/mL)",
@@ -251,7 +251,7 @@
       "id": "hqd-titan-rainbow-7000-puffs-4254",
       "source_id": "4254",
       "name": "TITAN RAINBOW 7000 PUFFS",
-      "price_aud": 39.99,
+      "price_aud": 49.99,
       "currency": "AUD",
       "specs": {
         "nicotine_strength": "50mg/ml",
@@ -272,7 +272,7 @@
       "id": "hqd-cuvie-slick-13016",
       "source_id": "13016",
       "name": "CUVIE SLICK",
-      "price_aud": 39.99,
+      "price_aud": 49.99,
       "currency": "AUD",
       "specs": {
         "battery_capacity": "1400mAh",
@@ -294,7 +294,7 @@
       "id": "solo-max-pod-kit-blueberry-raspberry-4336",
       "source_id": "4336",
       "name": "MAX Pod Kit Blueberry Raspberry",
-      "price_aud": 39.99,
+      "price_aud": 49.99,
       "currency": "AUD",
       "specs": {
         "puff_count": "7000",
@@ -313,7 +313,7 @@
       "id": "lost-mary-bm6000-watermelon-ice-disposable-vape-20mg-11458",
       "source_id": "11458",
       "name": "BM6000 Watermelon Ice Disposable Vape – 20mg",
-      "price_aud": 34.99,
+      "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
         "battery_capacity": "650mAh",
@@ -337,7 +337,7 @@
       "id": "fum-pebble-strawberry-banana-8471",
       "source_id": "8471",
       "name": "Pebble Strawberry Banana",
-      "price_aud": 37.99,
+      "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
         "puff_count": "6000",
@@ -359,7 +359,7 @@
       "id": "rabbeats-rc10000-clear-13708",
       "source_id": "13708",
       "name": "RC10000 Clear",
-      "price_aud": 29,
+      "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
         "puff_count": "10000",
@@ -379,7 +379,7 @@
       "id": "merrymi-panda-x-40000-fanta-e-cigarettes-14278",
       "source_id": "14278",
       "name": "Panda X 40000 Fanta e-cigarettes",
-      "price_aud": 39.99,
+      "price_aud": 84.99,
       "currency": "AUD",
       "specs": {
         "puff_count": "40000",
@@ -403,7 +403,7 @@
       "id": "geekvape-aegis-legend-3-carrera-edition-8639",
       "source_id": "8639",
       "name": "Aegis Legend 3 Carrera Edition",
-      "price_aud": 99.95,
+      "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
         "wattage": "5-200W",
@@ -435,7 +435,7 @@
       "id": "aspire-rover-plus-kit-11197",
       "source_id": "11197",
       "name": "ROVER PLUS KIT",
-      "price_aud": 99.95,
+      "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
         "dimensions": "84 mm x 50.7 mm x 26 mm",
@@ -467,7 +467,7 @@
       "id": "voopoo-argus-mt-uforce-l-kit-6723",
       "source_id": "6723",
       "name": "ARGUS MT UFORCE-L KIT",
-      "price_aud": 99.95,
+      "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
         "wattage": "5-100W",
@@ -495,7 +495,7 @@
       "id": "vaporesso-xros-3-r-kit-7413",
       "source_id": "7413",
       "name": "Xros 3 R Kit",
-      "price_aud": 39.95,
+      "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
         "dimensions": "13.7 x 23.6 x 115.1 mm",
@@ -521,7 +521,7 @@
       "id": "vaporesso-luxe-xr-max-kit-4586",
       "source_id": "4586",
       "name": "LUXE XR MAX KIT",
-      "price_aud": 69.95,
+      "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
         "dimensions": "106.5mm x 32.1mm x 26mm",
@@ -552,7 +552,7 @@
       "id": "gunnpod-moss-kit-13510",
       "source_id": "13510",
       "name": "MOSS - KIT",
-      "price_aud": 49.95,
+      "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
         "pod_capacity": "15mL",
@@ -580,7 +580,7 @@
       "id": "geekvape-digi-max-kit-9137",
       "source_id": "9137",
       "name": "DIGI MAX KIT",
-      "price_aud": 39.95,
+      "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
         "battery_capacity": "1000mAh",
@@ -607,7 +607,7 @@
       "id": "voom-roasted-coffee-pods-12686",
       "source_id": "12686",
       "name": "Roasted Coffee Pods",
-      "price_aud": 19.99,
+      "price_aud": 24.99,
       "currency": "AUD",
       "specs": {
         "nicotine_strength": "20mg/mL",
@@ -627,7 +627,7 @@
       "id": "geekvape-u-pod-3pack-11960",
       "source_id": "11960",
       "name": "U Pod 3–Pack",
-      "price_aud": 14.99,
+      "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
         "pod_capacity": "2ml",
@@ -648,7 +648,7 @@
       "id": "iget-cola-ice-bar-plus-13067",
       "source_id": "13067",
       "name": "Cola Ice - BAR Plus",
-      "price_aud": 14.99,
+      "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
         "puff_count": "6000",
@@ -670,7 +670,7 @@
       "id": "nasty-juice-salt-strawberry-e-liquid-10219",
       "source_id": "10219",
       "name": "SALT STRAWBERRY E-LIQUID",
-      "price_aud": 14.99,
+      "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
         "pg_vg": "50/50",
@@ -689,7 +689,7 @@
       "id": "nasty-juice-salt-pineapple-lemon-e-liquid-10220",
       "source_id": "10220",
       "name": "SALT PINEAPPLE LEMON E-LIQUID",
-      "price_aud": 14.99,
+      "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
         "pg_vg": "50/50",
@@ -708,7 +708,7 @@
       "id": "vaporesso-apple-peach-deliciu-e-liquid-8927",
       "source_id": "8927",
       "name": "Apple Peach Deliciu E-Liquid",
-      "price_aud": 14.99,
+      "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
         "nicotine_type": "Nicotine Salts",
@@ -727,7 +727,7 @@
       "id": "naked-100-cuban-blend-60ml-8281",
       "source_id": "8281",
       "name": "CUBAN BLEND 60ML",
-      "price_aud": 29.95,
+      "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
         "bottle_size": "60ml",
@@ -747,7 +747,7 @@
       "id": "six-licks-bluemonia-100ml-4637",
       "source_id": "4637",
       "name": "Bluemonia 100ml",
-      "price_aud": 34.95,
+      "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
         "bottle_size": "100ml",
@@ -767,7 +767,7 @@
       "id": "wake-vape-cactus-fruit-cooler-100ml-4629",
       "source_id": "4629",
       "name": "Cactus Fruit Cooler 100ml",
-      "price_aud": 24.99,
+      "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
         "size": "100ml",
@@ -788,7 +788,7 @@
       "id": "innokin-zlide-tank-4147",
       "source_id": "4147",
       "name": "ZLIDE TANK",
-      "price_aud": 39.95,
+      "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
         "diameter": "24mm",
@@ -816,7 +816,7 @@
       "id": "innokin-t22-pro-tank-7416",
       "source_id": "7416",
       "name": "T22 Pro Tank",
-      "price_aud": 32.95,
+      "price_aud": 37.99,
       "currency": "AUD",
       "specs": {
         "tank_capacity": "4.5ml",
@@ -840,7 +840,7 @@
       "id": "uwell-valyrian-iii-3-subohm-tank-4549",
       "source_id": "4549",
       "name": "Valyrian III (3) Subohm Tank",
-      "price_aud": 59.95,
+      "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
         "tank_capacity": "6 mL",
@@ -869,7 +869,7 @@
       "id": "pax-era-variable-voltage-vape-pen-210mah-3698",
       "source_id": "3698",
       "name": "ERA Variable Voltage Vape Pen | 210mAh",
-      "price_aud": 99.99,
+      "price_aud": 169.99,
       "currency": "AUD",
       "specs": {
         "dimensions": "3.3\" H x 0.5\" W x 0.5\" D",
@@ -899,7 +899,7 @@
       "id": "storz-bickel-volcano-hybrid-vaporizer-2470",
       "source_id": "2470",
       "name": "Volcano Hybrid Vaporizer",
-      "price_aud": 949,
+      "price_aud": 989.99,
       "currency": "AUD",
       "specs": {
         "heating_style": "convection and conduction",
@@ -925,7 +925,7 @@
       "id": "storz-bickel-mighty-portable-usb-c-vaporizer-7637",
       "source_id": "7637",
       "name": "Mighty+ Portable Usb-c Vaporizer",
-      "price_aud": 549,
+      "price_aud": 589.99,
       "currency": "AUD",
       "specs": {
         "dimensions": "14.0 x 8.0 x 3.0 cm",
@@ -958,7 +958,7 @@
       "id": "lookah-swordfish-concentrate-vape-pen-950mah-2619",
       "source_id": "2619",
       "name": "Swordfish Concentrate Vape Pen – 950mAh",
-      "price_aud": 79.95,
+      "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
         "battery_capacity": "950mAh",
@@ -986,7 +986,7 @@
       "id": "vaporesso-gti-replacement-coils-5834",
       "source_id": "5834",
       "name": "GTi Replacement Coils",
-      "price_aud": 21.95,
+      "price_aud": 26.99,
       "currency": "AUD",
       "specs": {
         "coil_resistance": "0.15Ω / 0.2Ω / 0.4Ω",
@@ -1007,7 +1007,7 @@
       "id": "pulsar-510-dl-auto-draw-variable-voltage-vape-pen-3440",
       "source_id": "3440",
       "name": "510 DL Auto-Draw Variable Voltage Vape Pen",
-      "price_aud": 49.95,
+      "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
         "battery_capacity": "650mAh",
@@ -1037,7 +1037,7 @@
       "id": "canna-river-delta-8-thc-gummies-lemon-raspberry-canna-river-10896",
       "source_id": "10896",
       "name": "DELTA 8 THC GUMMIES – LEMON RASPBERRY – CANNA RIVER",
-      "price_aud": 34.99,
+      "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
         "quantity": "30 gummies",
@@ -1058,7 +1058,7 @@
       "id": "lucy-nicotine-pouches-winter-green-7462",
       "source_id": "7462",
       "name": "Nicotine Pouches – Winter Green",
-      "price_aud": 7,
+      "price_aud": 11.99,
       "currency": "AUD",
       "specs": {
         "nicotine_strength": "8mg",
@@ -1079,7 +1079,7 @@
       "id": "alibarbar-nicotine-pouches-strawberry-raspberry-8112",
       "source_id": "8112",
       "name": "Nicotine Pouches Strawberry Raspberry",
-      "price_aud": 19.99,
+      "price_aud": 24.99,
       "currency": "AUD",
       "specs": {
         "nicotine_strength": "6mg",
@@ -1099,7 +1099,7 @@
       "id": "snu-grape-nic-pouches-9971",
       "source_id": "9971",
       "name": "Grape Nic Pouches",
-      "price_aud": 7,
+      "price_aud": 11.99,
       "currency": "AUD",
       "specs": {
         "nicotine_strength": "60mg per gram",
@@ -1118,7 +1118,7 @@
       "id": "trē-house-cookies-screams-magic-mushroom-chocolate-bar-5250",
       "source_id": "5250",
       "name": "COOKIES & SCREAMS MAGIC MUSHROOM CHOCOLATE BAR",
-      "price_aud": 34.99,
+      "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
         "flavor": "Fruity Cereal",

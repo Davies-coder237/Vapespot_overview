@@ -1,1 +1,441 @@
-{"path":["cannabinoids","cannabinoids-vapes","thc-vapes"],"file":"cannabinoids/cannabinoids-vapes/thc-vapes.json","brands":[{"name":"Ghost","slug":"ghost","product_count":2},{"name":"Golden Goat","slug":"golden-goat","product_count":8},{"name":"Exodus","slug":"exodus","product_count":1},{"name":"Erth Wellness","slug":"erth-wellness","product_count":1},{"name":"Cookies","slug":"cookies","product_count":8}],"series_index":{"Ghost":["Carts","Torch"],"Golden Goat":["XCEL"],"Exodus":["Amanita Multiplex"],"Erth Wellness":["Skinny Blend"]},"products":[{"id":"ghost-ghostcarts-24k-gold-1970","source_id":"1970","name":"GhostCarts 24K Gold","price_aud":50,"currency":"AUD","specs":{"strain":"24K Gold","type":"Hybrid","cartridge_capacity":"1 gram","cannabinoid_content":"THC","battery_included":"yes","oil_type":"live resin"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ghost-ghostcarts-24k-gold-1970.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ghost-ghostcarts-24k-gold-1970.webp"},"brand":"Ghost","series":"Carts"},{"id":"torch-banana-smoothie-ghost-2053","source_id":"2053","name":"BANANA SMOOTHIE Ghost","price_aud":50,"currency":"AUD","specs":{"strain":"sativa","cartridge_capacity":"2g","oil_type":"live resin diamonds","charge_port":"USB-C","net_weight":"2g (0.07oz)","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/torch-banana-smoothie-ghost-2053.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/torch-banana-smoothie-ghost-2053.webp"},"brand":"Ghost","series":"Torch"},{"id":"golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-gelato-3629","source_id":"3629","name":"HHC Vape Device, 2000mg, Rechargeable/Disposable – Gelato","price_aud":109,"currency":"AUD","specs":{"cartridge_capacity":"2.2mL","cannabinoid":"HHC","total_cannabinoids":"2000mg","disposable":"yes","rechargeable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-gelato-3629.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-gelato-3629.webp"},"brand":"Golden Goat","series":"XCEL"},{"id":"golden-goat-hhc-vape-device-2000mg-pineapple-kush-3630","source_id":"3630","name":"HHC Vape Device 2000mg Pineapple Kush","price_aud":109,"currency":"AUD","specs":{"cartridge_capacity":"2.2mL","cannabinoid":"HHC","total_cannabinoids":"2000mg","disposable":"yes","rechargeable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-pineapple-kush-3630.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-pineapple-kush-3630.webp"},"brand":"Golden Goat","series":"XCEL"},{"id":"golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-sunset-sherbert-3631","source_id":"3631","name":"HHC Vape Device, 2000mg, Rechargeable/Disposable – Sunset Sherbert","price_aud":109,"currency":"AUD","specs":{"cartridge_capacity":"2.2mL","cannabinoid":"HHC","total_cannabinoids":"2000mg","disposable":"yes","rechargeable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-sunset-sherbert-3631.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-sunset-sherbert-3631.webp"},"brand":"Golden Goat","series":"XCEL"},{"id":"golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-mango-kush-3632","source_id":"3632","name":"HHC Vape Device, 2000mg, Rechargeable/Disposable – Mango Kush","price_aud":109,"currency":"AUD","specs":{"cartridge_capacity":"2.2mL","cannabinoid":"HHC","total_cannabinoids":"2000mg","disposable":"yes","rechargeable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-mango-kush-3632.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-mango-kush-3632.webp"},"brand":"Golden Goat","series":"XCEL"},{"id":"golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-grand-daddy-purp-3633","source_id":"3633","name":"HHC Vape Device, 2000mg, Rechargeable/Disposable – Grand Daddy Purp","price_aud":109,"currency":"AUD","specs":{"cartridge_capacity":"2.2mL","cannabinoid":"HHC","total_cannabinoids":"2000mg","disposable":"yes","rechargeable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-grand-daddy-purp-3633.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-grand-daddy-purp-3633.webp"},"brand":"Golden Goat","series":"XCEL"},{"id":"golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-train-wreck-3634","source_id":"3634","name":"HHC Vape Device, 2000mg, Rechargeable/Disposable – Train Wreck","price_aud":109,"currency":"AUD","specs":{"cartridge_capacity":"2.2mL","cannabinoid":"HHC","total_cannabinoids":"2000mg","disposable":"yes","rechargeable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-train-wreck-3634.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-train-wreck-3634.webp"},"brand":"Golden Goat","series":"XCEL"},{"id":"golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-wedding-cake-3635","source_id":"3635","name":"HHC Vape Device, 2000mg, Rechargeable/Disposable – Wedding Cake","price_aud":109,"currency":"AUD","specs":{"cartridge_capacity":"2.2mL","cannabinoid":"HHC","total_cannabinoids":"2000mg","disposable":"yes","rechargeable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-wedding-cake-3635.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-wedding-cake-3635.webp"},"brand":"Golden Goat","series":"XCEL"},{"id":"golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-tangie-3636","source_id":"3636","name":"HHC Vape Device, 2000mg, Rechargeable/Disposable – Tangie","price_aud":109,"currency":"AUD","specs":{"cartridge_capacity":"2.2mL","cannabinoid":"HHC","total_cannabinoids":"2000mg","disposable":"yes","rechargeable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-tangie-3636.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-tangie-3636.webp"},"brand":"Golden Goat","series":"XCEL"},{"id":"exodus-amanita-hhc-multiplex-disposable-vape-22g-3961","source_id":"3961","name":"Amanita HHC Multiplex Disposable Vape | 2.2g","price_aud":349.98,"currency":"AUD","specs":{"cartridge_capacity":"2.2g","cannabinoid":"HHC","disposable":"yes","flavor":"Grape Punch, Blood Orange, Blueberry Blast"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/exodus-amanita-hhc-multiplex-disposable-vape-22g-3961.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/exodus-amanita-hhc-multiplex-disposable-vape-22g-3961.webp"},"brand":"Exodus","series":"Amanita Multiplex"},{"id":"erth-wellness-live-resin-thcv-vape-pen-skinny-blend-2g-10949","source_id":"10949","name":"LIVE RESIN THCV VAPE PEN – SKINNY BLEND – 2G","price_aud":69.95,"currency":"AUD","specs":{"cartridge_capacity":"2g","cannabinoid":"THCV + Live Resin Terpenes","lab_tested":"Yes, 3rd Party (ISO 17025)","ingredients":"100% Natural","battery":"Rechargeable","other":"No MCT, PG, VG, PEG, or Vitamin E"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/erth-wellness-live-resin-thcv-vape-pen-skinny-blend-2g-10949.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/erth-wellness-live-resin-thcv-vape-pen-skinny-blend-2g-10949.webp"},"brand":"Erth Wellness","series":"Skinny Blend"},{"id":"cookies-tequila-sunrise-thc-disposable-5g-11350","source_id":"11350","name":"Tequila Sunrise THC Disposable 5G","price_aud":70,"currency":"AUD","specs":{"strain":"Sativa","cartridge_capacity":"5g","type":"disposable"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-tequila-sunrise-thc-disposable-5g-11350.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-tequila-sunrise-thc-disposable-5g-11350.webp"},"brand":"Cookies","series":""},{"id":"cookies-long-island-cookies-thc-disposable-5g-11351","source_id":"11351","name":"Long Island Cookies THC Disposable 5G","price_aud":30,"currency":"AUD","specs":{"strain":"Indica Hybrid","cartridge_capacity":"3g","cannabinoid":"Delta 8","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-long-island-cookies-thc-disposable-5g-11351.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-long-island-cookies-thc-disposable-5g-11351.webp"},"brand":"Cookies","series":""},{"id":"cookies-thc-disposable-5g-11352","source_id":"11352","name":"THC Disposable 5G","price_aud":70,"currency":"AUD","specs":{"strain":"Sativa","cartridge_capacity":"5g","type":"disposable"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-thc-disposable-5g-11352.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-thc-disposable-5g-11352.webp"},"brand":"Cookies","series":""},{"id":"cookies-hawaiian-rain-thc-disposable-5g-11379","source_id":"11379","name":"Hawaiian Rain THC Disposable 5G","price_aud":70,"currency":"AUD","specs":{"strain":"Sativa","cartridge_capacity":"5g","type":"disposable"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-hawaiian-rain-thc-disposable-5g-11379.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-hawaiian-rain-thc-disposable-5g-11379.webp"},"brand":"Cookies","series":""},{"id":"cookies-blueberry-banana-cookies-thc-disposable-5g-11380","source_id":"11380","name":"Blueberry Banana Cookies THC Disposable 5G","price_aud":30,"currency":"AUD","specs":{"strain":"Indica Hybrid","cartridge_capacity":"3g","cannabinoid":"Delta 8","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-blueberry-banana-cookies-thc-disposable-5g-11380.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-blueberry-banana-cookies-thc-disposable-5g-11380.webp"},"brand":"Cookies","series":""},{"id":"cookies-blue-razz-thc-disposable-5g-11381","source_id":"11381","name":"Blue Razz THC Disposable 5G","price_aud":70,"currency":"AUD","specs":{"strain":"Sativa","cartridge_capacity":"5g","type":"disposable"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-blue-razz-thc-disposable-5g-11381.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-blue-razz-thc-disposable-5g-11381.webp"},"brand":"Cookies","series":""},{"id":"cookies-bernie-hana-butter-cookies-thc-disposable-5g-11382","source_id":"11382","name":"Bernie Hana Butter COOKIES THC DISPOSABLE 5G","price_aud":30,"currency":"AUD","specs":{"strain":"Indica Hybrid","cartridge_capacity":"3g","cannabinoid":"Delta 8","disposable":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-bernie-hana-butter-cookies-thc-disposable-5g-11382.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-bernie-hana-butter-cookies-thc-disposable-5g-11382.webp"},"brand":"Cookies","series":""},{"id":"cookies-apples-bananas-thc-5gr-vape-11383","source_id":"11383","name":"Apples & Bananas THC 5GR Vape","price_aud":70,"currency":"AUD","specs":{"strain":"Sativa","cartridge_capacity":"5g","type":"disposable"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-apples-bananas-thc-5gr-vape-11383.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-apples-bananas-thc-5gr-vape-11383.webp"},"brand":"Cookies","series":""}]}
+{
+  "path": [
+    "cannabinoids",
+    "cannabinoids-vapes",
+    "thc-vapes"
+  ],
+  "file": "cannabinoids/cannabinoids-vapes/thc-vapes.json",
+  "brands": [
+    {
+      "name": "Ghost",
+      "slug": "ghost",
+      "product_count": 2
+    },
+    {
+      "name": "Golden Goat",
+      "slug": "golden-goat",
+      "product_count": 8
+    },
+    {
+      "name": "Exodus",
+      "slug": "exodus",
+      "product_count": 1
+    },
+    {
+      "name": "Erth Wellness",
+      "slug": "erth-wellness",
+      "product_count": 1
+    },
+    {
+      "name": "Cookies",
+      "slug": "cookies",
+      "product_count": 8
+    }
+  ],
+  "series_index": {
+    "Ghost": [
+      "Carts",
+      "Torch"
+    ],
+    "Golden Goat": [
+      "XCEL"
+    ],
+    "Exodus": [
+      "Amanita Multiplex"
+    ],
+    "Erth Wellness": [
+      "Skinny Blend"
+    ]
+  },
+  "products": [
+    {
+      "id": "ghost-ghostcarts-24k-gold-1970",
+      "source_id": "1970",
+      "name": "GhostCarts 24K Gold",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "24K Gold",
+        "type": "Hybrid",
+        "cartridge_capacity": "1 gram",
+        "cannabinoid_content": "THC",
+        "battery_included": "yes",
+        "oil_type": "live resin"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/ghost-ghostcarts-24k-gold-1970.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/ghost-ghostcarts-24k-gold-1970.webp"
+      },
+      "brand": "Ghost",
+      "series": "Carts"
+    },
+    {
+      "id": "torch-banana-smoothie-ghost-2053",
+      "source_id": "2053",
+      "name": "BANANA SMOOTHIE Ghost",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "sativa",
+        "cartridge_capacity": "2g",
+        "oil_type": "live resin diamonds",
+        "charge_port": "USB-C",
+        "net_weight": "2g (0.07oz)",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/torch-banana-smoothie-ghost-2053.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/torch-banana-smoothie-ghost-2053.webp"
+      },
+      "brand": "Ghost",
+      "series": "Torch"
+    },
+    {
+      "id": "golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-gelato-3629",
+      "source_id": "3629",
+      "name": "HHC Vape Device, 2000mg, Rechargeable/Disposable – Gelato",
+      "price_aud": 118.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "2.2mL",
+        "cannabinoid": "HHC",
+        "total_cannabinoids": "2000mg",
+        "disposable": "yes",
+        "rechargeable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-gelato-3629.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-gelato-3629.webp"
+      },
+      "brand": "Golden Goat",
+      "series": "XCEL"
+    },
+    {
+      "id": "golden-goat-hhc-vape-device-2000mg-pineapple-kush-3630",
+      "source_id": "3630",
+      "name": "HHC Vape Device 2000mg Pineapple Kush",
+      "price_aud": 118.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "2.2mL",
+        "cannabinoid": "HHC",
+        "total_cannabinoids": "2000mg",
+        "disposable": "yes",
+        "rechargeable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-pineapple-kush-3630.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-pineapple-kush-3630.webp"
+      },
+      "brand": "Golden Goat",
+      "series": "XCEL"
+    },
+    {
+      "id": "golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-sunset-sherbert-3631",
+      "source_id": "3631",
+      "name": "HHC Vape Device, 2000mg, Rechargeable/Disposable – Sunset Sherbert",
+      "price_aud": 118.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "2.2mL",
+        "cannabinoid": "HHC",
+        "total_cannabinoids": "2000mg",
+        "disposable": "yes",
+        "rechargeable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-sunset-sherbert-3631.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-sunset-sherbert-3631.webp"
+      },
+      "brand": "Golden Goat",
+      "series": "XCEL"
+    },
+    {
+      "id": "golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-mango-kush-3632",
+      "source_id": "3632",
+      "name": "HHC Vape Device, 2000mg, Rechargeable/Disposable – Mango Kush",
+      "price_aud": 118.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "2.2mL",
+        "cannabinoid": "HHC",
+        "total_cannabinoids": "2000mg",
+        "disposable": "yes",
+        "rechargeable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-mango-kush-3632.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-mango-kush-3632.webp"
+      },
+      "brand": "Golden Goat",
+      "series": "XCEL"
+    },
+    {
+      "id": "golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-grand-daddy-purp-3633",
+      "source_id": "3633",
+      "name": "HHC Vape Device, 2000mg, Rechargeable/Disposable – Grand Daddy Purp",
+      "price_aud": 118.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "2.2mL",
+        "cannabinoid": "HHC",
+        "total_cannabinoids": "2000mg",
+        "disposable": "yes",
+        "rechargeable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-grand-daddy-purp-3633.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-grand-daddy-purp-3633.webp"
+      },
+      "brand": "Golden Goat",
+      "series": "XCEL"
+    },
+    {
+      "id": "golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-train-wreck-3634",
+      "source_id": "3634",
+      "name": "HHC Vape Device, 2000mg, Rechargeable/Disposable – Train Wreck",
+      "price_aud": 118.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "2.2mL",
+        "cannabinoid": "HHC",
+        "total_cannabinoids": "2000mg",
+        "disposable": "yes",
+        "rechargeable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-train-wreck-3634.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-train-wreck-3634.webp"
+      },
+      "brand": "Golden Goat",
+      "series": "XCEL"
+    },
+    {
+      "id": "golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-wedding-cake-3635",
+      "source_id": "3635",
+      "name": "HHC Vape Device, 2000mg, Rechargeable/Disposable – Wedding Cake",
+      "price_aud": 118.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "2.2mL",
+        "cannabinoid": "HHC",
+        "total_cannabinoids": "2000mg",
+        "disposable": "yes",
+        "rechargeable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-wedding-cake-3635.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-wedding-cake-3635.webp"
+      },
+      "brand": "Golden Goat",
+      "series": "XCEL"
+    },
+    {
+      "id": "golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-tangie-3636",
+      "source_id": "3636",
+      "name": "HHC Vape Device, 2000mg, Rechargeable/Disposable – Tangie",
+      "price_aud": 118.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "2.2mL",
+        "cannabinoid": "HHC",
+        "total_cannabinoids": "2000mg",
+        "disposable": "yes",
+        "rechargeable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-tangie-3636.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/golden-goat-hhc-vape-device-2000mg-rechargeabledisposable-tangie-3636.webp"
+      },
+      "brand": "Golden Goat",
+      "series": "XCEL"
+    },
+    {
+      "id": "exodus-amanita-hhc-multiplex-disposable-vape-22g-3961",
+      "source_id": "3961",
+      "name": "Amanita HHC Multiplex Disposable Vape | 2.2g",
+      "price_aud": 359.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "2.2g",
+        "cannabinoid": "HHC",
+        "disposable": "yes",
+        "flavor": "Grape Punch, Blood Orange, Blueberry Blast"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/exodus-amanita-hhc-multiplex-disposable-vape-22g-3961.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/exodus-amanita-hhc-multiplex-disposable-vape-22g-3961.webp"
+      },
+      "brand": "Exodus",
+      "series": "Amanita Multiplex"
+    },
+    {
+      "id": "erth-wellness-live-resin-thcv-vape-pen-skinny-blend-2g-10949",
+      "source_id": "10949",
+      "name": "LIVE RESIN THCV VAPE PEN – SKINNY BLEND – 2G",
+      "price_aud": 79.99,
+      "currency": "AUD",
+      "specs": {
+        "cartridge_capacity": "2g",
+        "cannabinoid": "THCV + Live Resin Terpenes",
+        "lab_tested": "Yes, 3rd Party (ISO 17025)",
+        "ingredients": "100% Natural",
+        "battery": "Rechargeable",
+        "other": "No MCT, PG, VG, PEG, or Vitamin E"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/erth-wellness-live-resin-thcv-vape-pen-skinny-blend-2g-10949.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/erth-wellness-live-resin-thcv-vape-pen-skinny-blend-2g-10949.webp"
+      },
+      "brand": "Erth Wellness",
+      "series": "Skinny Blend"
+    },
+    {
+      "id": "cookies-tequila-sunrise-thc-disposable-5g-11350",
+      "source_id": "11350",
+      "name": "Tequila Sunrise THC Disposable 5G",
+      "price_aud": 79.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Sativa",
+        "cartridge_capacity": "5g",
+        "type": "disposable"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-tequila-sunrise-thc-disposable-5g-11350.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-tequila-sunrise-thc-disposable-5g-11350.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "cookies-long-island-cookies-thc-disposable-5g-11351",
+      "source_id": "11351",
+      "name": "Long Island Cookies THC Disposable 5G",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Indica Hybrid",
+        "cartridge_capacity": "3g",
+        "cannabinoid": "Delta 8",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-long-island-cookies-thc-disposable-5g-11351.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-long-island-cookies-thc-disposable-5g-11351.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "cookies-thc-disposable-5g-11352",
+      "source_id": "11352",
+      "name": "THC Disposable 5G",
+      "price_aud": 79.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Sativa",
+        "cartridge_capacity": "5g",
+        "type": "disposable"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-thc-disposable-5g-11352.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-thc-disposable-5g-11352.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "cookies-hawaiian-rain-thc-disposable-5g-11379",
+      "source_id": "11379",
+      "name": "Hawaiian Rain THC Disposable 5G",
+      "price_aud": 79.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Sativa",
+        "cartridge_capacity": "5g",
+        "type": "disposable"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-hawaiian-rain-thc-disposable-5g-11379.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-hawaiian-rain-thc-disposable-5g-11379.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "cookies-blueberry-banana-cookies-thc-disposable-5g-11380",
+      "source_id": "11380",
+      "name": "Blueberry Banana Cookies THC Disposable 5G",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Indica Hybrid",
+        "cartridge_capacity": "3g",
+        "cannabinoid": "Delta 8",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-blueberry-banana-cookies-thc-disposable-5g-11380.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-blueberry-banana-cookies-thc-disposable-5g-11380.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "cookies-blue-razz-thc-disposable-5g-11381",
+      "source_id": "11381",
+      "name": "Blue Razz THC Disposable 5G",
+      "price_aud": 79.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Sativa",
+        "cartridge_capacity": "5g",
+        "type": "disposable"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-blue-razz-thc-disposable-5g-11381.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-blue-razz-thc-disposable-5g-11381.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "cookies-bernie-hana-butter-cookies-thc-disposable-5g-11382",
+      "source_id": "11382",
+      "name": "Bernie Hana Butter COOKIES THC DISPOSABLE 5G",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Indica Hybrid",
+        "cartridge_capacity": "3g",
+        "cannabinoid": "Delta 8",
+        "disposable": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-bernie-hana-butter-cookies-thc-disposable-5g-11382.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-bernie-hana-butter-cookies-thc-disposable-5g-11382.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    },
+    {
+      "id": "cookies-apples-bananas-thc-5gr-vape-11383",
+      "source_id": "11383",
+      "name": "Apples & Bananas THC 5GR Vape",
+      "price_aud": 79.99,
+      "currency": "AUD",
+      "specs": {
+        "strain": "Sativa",
+        "cartridge_capacity": "5g",
+        "type": "disposable"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cookies-apples-bananas-thc-5gr-vape-11383.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cookies-apples-bananas-thc-5gr-vape-11383.webp"
+      },
+      "brand": "Cookies",
+      "series": ""
+    }
+  ]
+}

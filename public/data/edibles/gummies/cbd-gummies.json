@@ -1,1 +1,1117 @@
-{"path":["edibles","gummies","cbd-gummies"],"file":"edibles/gummies/cbd-gummies.json","brands":[{"name":"CBD Calm","slug":"cbd-calm","product_count":4},{"name":"Why So CBD","slug":"why-so-cbd","product_count":5},{"name":"Orange County CBD","slug":"orange-county-cbd","product_count":2},{"name":"Medterra","slug":"medterra","product_count":2},{"name":"CBDfx","slug":"cbdfx","product_count":2},{"name":"Supreme CBD","slug":"supreme-cbd","product_count":34}],"series_index":{"CBD Calm":["Worms","Variety Pack"],"Medterra":["True Full Spectrum CBD + THC Gummies"],"CBDfx":["Full Spectrum"],"Supreme CBD":["CBD 400mg","CBD 800mg","CBD 1200mg","CBD 200mg","CBD 3200mg","CBD 1600mg","CBD 4800mg"]},"products":[{"id":"cbd-calm-worms-gummies-750mg-4475","source_id":"4475","name":"Worms Gummies 750mg","price_aud":39.95,"currency":"AUD","specs":{"cbd_content":"750mg","flavor":"Assorted","form":"Gummies","ingredients":"Corn Syrup, Sugar, Gelatin, Citric Acid, Natural and Artificial Flavors, FD&C Red No. 40, Yellow No. 5, Blue No. 1","quantity":"30","serving_size":"1 gummy","total_weight":"250g"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cbd-calm-worms-gummies-750mg-4475.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cbd-calm-worms-gummies-750mg-4475.webp"},"brand":"CBD Calm","series":"Worms"},{"id":"cbd-calm-worms-gummies-750mg-10594","source_id":"10594","name":"Worms Gummies 750mg","price_aud":39.95,"currency":"AUD","specs":{"cbd_content":"750mg","flavor":"Assorted","form":"Gummies","ingredients":"Corn Syrup, Sugar, Gelatin, Citric Acid, Natural and Artificial Flavors, FD&C Red No. 40, Yellow No. 5, Blue No. 1","quantity":"30","serving_size":"1 gummy","total_weight":"250g"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cbd-calm-worms-gummies-750mg-10594.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cbd-calm-worms-gummies-750mg-10594.webp"},"brand":"CBD Calm","series":"Worms"},{"id":"cbd-calm-jellies-gummies-300mg-10595","source_id":"10595","name":"Jellies Gummies 300mg","price_aud":39.95,"currency":"AUD","specs":{"cbd_content":"750mg","flavor":"Assorted","form":"Gummies","ingredients":"Corn Syrup, Sugar, Gelatin, Citric Acid, Natural and Artificial Flavors, FD&C Red No. 40, Yellow No. 5, Blue No. 1","quantity":"30","serving_size":"1 gummy","total_weight":"250g"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cbd-calm-jellies-gummies-300mg-10595.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cbd-calm-jellies-gummies-300mg-10595.webp"},"brand":"CBD Calm","series":"Worms"},{"id":"cbd-calm-variety-pack-10652","source_id":"10652","name":"Variety Pack","price_aud":169.99,"currency":"AUD","specs":{"cbd_content":"300mg","flavor":"Blueberry","form":"Spray","isolate":"Pure CBD Isolate","volume":"30ml","cbd_concentration":"3000mg"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cbd-calm-variety-pack-10652.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cbd-calm-variety-pack-10652.webp"},"brand":"CBD Calm","series":"Variety Pack"},{"id":"why-so-cbd-watermelon-slices-gummies-500mg-4477","source_id":"4477","name":"Watermelon Slices Gummies 500mg","price_aud":14.99,"currency":"AUD","specs":{"cbd_content":"500mg","serving_size":"1 gummy","cbd_per_serving":"16mg","vegan":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/why-so-cbd-watermelon-slices-gummies-500mg-4477.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/why-so-cbd-watermelon-slices-gummies-500mg-4477.webp"},"brand":"Why So CBD","series":""},{"id":"why-so-cbd-bubblegum-bottles-500mg-4478","source_id":"4478","name":"Bubblegum Bottles 500mg","price_aud":14.99,"currency":"AUD","specs":{"cbd_content":"500mg","serving_size":"1 gummy","cbd_per_serving":"16mg","vegan":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/why-so-cbd-bubblegum-bottles-500mg-4478.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/why-so-cbd-bubblegum-bottles-500mg-4478.webp"},"brand":"Why So CBD","series":""},{"id":"why-so-cbd-strawberries-gummies-500mg-10596","source_id":"10596","name":"Strawberries Gummies 500mg","price_aud":14.99,"currency":"AUD","specs":{"cbd_content":"500mg","serving_size":"1 gummy","cbd_per_serving":"16mg","vegan":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/why-so-cbd-strawberries-gummies-500mg-10596.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/why-so-cbd-strawberries-gummies-500mg-10596.webp"},"brand":"Why So CBD","series":""},{"id":"why-so-cbd-watermelon-slices-gummies-500mg-10597","source_id":"10597","name":"Watermelon Slices Gummies 500mg","price_aud":14.99,"currency":"AUD","specs":{"cbd_content":"500mg","serving_size":"1 gummy","cbd_per_serving":"16mg","vegan":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/why-so-cbd-watermelon-slices-gummies-500mg-10597.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/why-so-cbd-watermelon-slices-gummies-500mg-10597.webp"},"brand":"Why So CBD","series":""},{"id":"why-so-cbd-bubblegum-bottles-500mg-10598","source_id":"10598","name":"Bubblegum Bottles 500mg","price_aud":14.99,"currency":"AUD","specs":{"cbd_content":"500mg","serving_size":"1 gummy","cbd_per_serving":"16mg","vegan":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/why-so-cbd-bubblegum-bottles-500mg-10598.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/why-so-cbd-bubblegum-bottles-500mg-10598.webp"},"brand":"Why So CBD","series":""},{"id":"orange-county-cbd-mixed-fruit-cubes-200mg-4479","source_id":"4479","name":"Mixed Fruit Cubes 200mg","price_aud":14.99,"currency":"AUD","specs":{"cbd_content":"200mg","quantity_per_package":"12 edibles","weight":"50g","flavor":"Mixed Fruit"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/orange-county-cbd-mixed-fruit-cubes-200mg-4479.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/orange-county-cbd-mixed-fruit-cubes-200mg-4479.webp"},"brand":"Orange County CBD","series":""},{"id":"orange-county-cbd-mixed-fruit-cubes-200mg-10599","source_id":"10599","name":"Mixed Fruit Cubes 200mg","price_aud":14.99,"currency":"AUD","specs":{"cbd_content":"200mg","quantity_per_package":"12 edibles","weight":"50g","flavor":"Mixed Fruit"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/orange-county-cbd-mixed-fruit-cubes-200mg-10599.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/orange-county-cbd-mixed-fruit-cubes-200mg-10599.webp"},"brand":"Orange County CBD","series":""},{"id":"medterra-true-full-spectrum-cbd-thc-gummies-citrus-5279","source_id":"5279","name":"TRUE FULL SPECTRUM CBD + THC GUMMIES – CITRUS","price_aud":104,"currency":"AUD","specs":{"flavor":"Citrus","cbd_content_per_gummy":"25mg","thc_content_per_gummy":"2mg","total_count":"30","vegan":"yes","spectrum":"Full Spectrum"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/medterra-true-full-spectrum-cbd-thc-gummies-citrus-5279.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/medterra-true-full-spectrum-cbd-thc-gummies-citrus-5279.webp"},"brand":"Medterra","series":"True Full Spectrum CBD + THC Gummies"},{"id":"medterra-true-full-spectrum-cbd-thc-gummies-citrus-10937","source_id":"10937","name":"TRUE FULL SPECTRUM CBD + THC GUMMIES – CITRUS","price_aud":104,"currency":"AUD","specs":{"flavor":"Citrus","cbd_content_per_gummy":"25mg","thc_content_per_gummy":"2mg","total_count":"30","vegan":"yes","spectrum":"Full Spectrum"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/medterra-true-full-spectrum-cbd-thc-gummies-citrus-10937.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/medterra-true-full-spectrum-cbd-thc-gummies-citrus-10937.webp"},"brand":"Medterra","series":"True Full Spectrum CBD + THC Gummies"},{"id":"cbdfx-full-spectrum-gummies-5281","source_id":"5281","name":"Full Spectrum Gummies","price_aud":69.99,"currency":"AUD","specs":{"cbd_content":"1500mg","thc_content":"1.5mg per serving","serving_size":"2 gummies","servings_per_container":"30","ingredients":"Organic Tapioca Syrup, Water, Organic Cane Sugar, Pectin, Natural Flavors, Citric Acid, Sodium Citrate, Vegetable Juice (For Color), Hemp Extract","spectrum_type":"Full Spectrum","lab_tested":"Yes","vegan":"Yes","gluten_free":"Yes","allergen_information":"May contain traces of milk, soy, peanuts, tree nuts, and wheat.","country_of_origin":"USA","storage_instructions":"Store in a cool, dry place away from direct sunlight.","additional_information":"Hemp-derived, <0.3% Delta-9 THC"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cbdfx-full-spectrum-gummies-5281.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cbdfx-full-spectrum-gummies-5281.webp"},"brand":"CBDfx","series":"Full Spectrum"},{"id":"cbdfx-full-spectrum-gummies-10939","source_id":"10939","name":"Full Spectrum Gummies","price_aud":69.99,"currency":"AUD","specs":{"cbd_content":"1500mg","thc_content":"1.5mg per serving","serving_size":"2 gummies","servings_per_container":"30","ingredients":"Organic Tapioca Syrup, Water, Organic Cane Sugar, Pectin, Natural Flavors, Citric Acid, Sodium Citrate, Vegetable Juice (For Color), Hemp Extract","spectrum_type":"Full Spectrum","lab_tested":"Yes","vegan":"Yes","gluten_free":"Yes","allergen_information":"May contain traces of milk, soy, peanuts, tree nuts, and wheat.","country_of_origin":"USA","storage_instructions":"Store in a cool, dry place away from direct sunlight.","additional_information":"Hemp-derived, <0.3% Delta-9 THC"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cbdfx-full-spectrum-gummies-10939.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cbdfx-full-spectrum-gummies-10939.webp"},"brand":"CBDfx","series":"Full Spectrum"},{"id":"supreme-cbd-cbd-bottles-400mg-5601","source_id":"5601","name":"CBD Bottles (400mg)","price_aud":56,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_piece":"15mg","total_cbd_content":"400mg","type":"Sweets"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bottles-400mg-5601.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bottles-400mg-5601.webp"},"brand":"Supreme CBD","series":"CBD 400mg"},{"id":"supreme-cbd-cbd-strawberries-400mg-5629","source_id":"5629","name":"CBD Strawberries (400mg)","price_aud":56,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_piece":"15mg","total_cbd_content":"400mg","type":"Sweets"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-400mg-5629.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-400mg-5629.webp"},"brand":"Supreme CBD","series":"CBD 400mg"},{"id":"supreme-cbd-cbd-bottles-11047","source_id":"11047","name":"CBD Bottles","price_aud":56,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_piece":"15mg","total_cbd_content":"400mg","type":"Sweets"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bottles-11047.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bottles-11047.webp"},"brand":"Supreme CBD","series":"CBD 400mg"},{"id":"supreme-cbd-cbd-strawberries-400mg-11048","source_id":"11048","name":"CBD Strawberries (400mg)","price_aud":56,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_piece":"15mg","total_cbd_content":"400mg","type":"Sweets"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-400mg-11048.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-400mg-11048.webp"},"brand":"Supreme CBD","series":"CBD 400mg"},{"id":"supreme-cbd-cbd-strawberries-800mg-5630","source_id":"5630","name":"CBD Strawberries (800mg)","price_aud":29.99,"currency":"AUD","specs":{"cbd_content_per_tub":"800mg","cbd_content_per_gummy":"40mg","flavor":"Strawberry","vegan":"Yes","weight":"150g","approximate_count":"20 gummies"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-800mg-5630.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-800mg-5630.webp"},"brand":"Supreme CBD","series":"CBD 800mg"},{"id":"supreme-cbd-gummy-cherries-800mg-5631","source_id":"5631","name":"Gummy Cherries (800mg","price_aud":29.99,"currency":"AUD","specs":{"cbd_content_per_tub":"800mg","cbd_content_per_gummy":"40mg","flavor":"Strawberry","vegan":"Yes","weight":"150g","approximate_count":"20 gummies"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-cherries-800mg-5631.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-cherries-800mg-5631.webp"},"brand":"Supreme CBD","series":"CBD 800mg"},{"id":"supreme-cbd-gummy-strawberries-800mg-11049","source_id":"11049","name":"Gummy Strawberries (800mg)","price_aud":29.99,"currency":"AUD","specs":{"cbd_content_per_tub":"800mg","cbd_content_per_gummy":"40mg","flavor":"Strawberry","vegan":"Yes","weight":"150g","approximate_count":"20 gummies"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-strawberries-800mg-11049.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-strawberries-800mg-11049.webp"},"brand":"Supreme CBD","series":"CBD 800mg"},{"id":"supreme-cbd-gummy-cherries-800mg-11050","source_id":"11050","name":"Gummy Cherries (800mg","price_aud":29.99,"currency":"AUD","specs":{"cbd_content_per_tub":"800mg","cbd_content_per_gummy":"40mg","flavor":"Strawberry","vegan":"Yes","weight":"150g","approximate_count":"20 gummies"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-cherries-800mg-11050.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-cherries-800mg-11050.webp"},"brand":"Supreme CBD","series":"CBD 800mg"},{"id":"supreme-cbd-gummy-cubes-1200mg-5632","source_id":"5632","name":"Gummy Cubes (1200mg)","price_aud":67,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_tub":"1200mg","cbd_content_per_piece":"48mg","weight":"150g","approximate_pieces_per_tub":"25","food_supplement":"yes","vegan":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-cubes-1200mg-5632.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-cubes-1200mg-5632.webp"},"brand":"Supreme CBD","series":"CBD 1200mg"},{"id":"supreme-cbd-gummy-strawberries-1200mg-5633","source_id":"5633","name":"Gummy Strawberries (1200mg)","price_aud":67,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_tub":"1200mg","cbd_content_per_piece":"48mg","weight":"150g","approximate_pieces_per_tub":"25","food_supplement":"yes","vegan":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-strawberries-1200mg-5633.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-strawberries-1200mg-5633.webp"},"brand":"Supreme CBD","series":"CBD 1200mg"},{"id":"supreme-cbd-cbd-cherries-1200mg-5634","source_id":"5634","name":"CBD Cherries (1200mg)","price_aud":67,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_tub":"1200mg","cbd_content_per_piece":"48mg","weight":"150g","approximate_pieces_per_tub":"25","food_supplement":"yes","vegan":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-cherries-1200mg-5634.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-cherries-1200mg-5634.webp"},"brand":"Supreme CBD","series":"CBD 1200mg"},{"id":"supreme-cbd-cbd-rings-peach-flavoured-edibles-1200mg-5670","source_id":"5670","name":"CBD Rings Peach Flavoured Edibles (1200mg)","price_aud":67,"currency":"AUD","specs":{"cbd_content_per_tub":"1200mg","cbd_content_per_piece":"40mg","weight":"150g","vegan":"yes","pieces_per_container":"30"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavoured-edibles-1200mg-5670.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavoured-edibles-1200mg-5670.webp"},"brand":"Supreme CBD","series":"CBD 1200mg"},{"id":"supreme-cbd-gummy-bottles-1200mg-5705","source_id":"5705","name":"Gummy Bottles (1200mg)","price_aud":67,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_tub":"1200mg","cbd_content_per_piece":"48mg","weight":"150g","approximate_pieces_per_tub":"25","food_supplement":"yes","vegan":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-bottles-1200mg-5705.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-bottles-1200mg-5705.webp"},"brand":"Supreme CBD","series":"CBD 1200mg"},{"id":"supreme-cbd-cbd-gummy-cubes-1200mg-11080","source_id":"11080","name":"CBD Gummy Cubes (1200mg)","price_aud":67,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_tub":"1200mg","cbd_content_per_piece":"48mg","weight":"150g","approximate_pieces_per_tub":"25","food_supplement":"yes","vegan":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-gummy-cubes-1200mg-11080.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-gummy-cubes-1200mg-11080.webp"},"brand":"Supreme CBD","series":"CBD 1200mg"},{"id":"supreme-cbd-cbd-strawberries-1200mg-11081","source_id":"11081","name":"CBD Strawberries (1200mg)","price_aud":67,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_tub":"1200mg","cbd_content_per_piece":"48mg","weight":"150g","approximate_pieces_per_tub":"25","food_supplement":"yes","vegan":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-1200mg-11081.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-1200mg-11081.webp"},"brand":"Supreme CBD","series":"CBD 1200mg"},{"id":"supreme-cbd-cbd-cherries-1200mg-11082","source_id":"11082","name":"CBD Cherries (1200mg)","price_aud":67,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_tub":"1200mg","cbd_content_per_piece":"48mg","weight":"150g","approximate_pieces_per_tub":"25","food_supplement":"yes","vegan":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-cherries-1200mg-11082.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-cherries-1200mg-11082.webp"},"brand":"Supreme CBD","series":"CBD 1200mg"},{"id":"supreme-cbd-cbd-rings-peach-flavoured-edibles-1200mg-11083","source_id":"11083","name":"CBD Rings Peach Flavoured Edibles (1200mg)","price_aud":67,"currency":"AUD","specs":{"cbd_content_per_tub":"1200mg","cbd_content_per_piece":"40mg","weight":"150g","vegan":"yes","pieces_per_container":"30"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavoured-edibles-1200mg-11083.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavoured-edibles-1200mg-11083.webp"},"brand":"Supreme CBD","series":"CBD 1200mg"},{"id":"supreme-cbd-gummy-bottles-1200mg-11092","source_id":"11092","name":"Gummy Bottles (1200mg)","price_aud":67,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_tub":"1200mg","cbd_content_per_piece":"48mg","weight":"150g","approximate_pieces_per_tub":"25","food_supplement":"yes","vegan":"yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-bottles-1200mg-11092.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-bottles-1200mg-11092.webp"},"brand":"Supreme CBD","series":"CBD 1200mg"},{"id":"supreme-cbd-fruit-cubes-grab-bag-200mg-5671","source_id":"5671","name":"Fruit Cubes Grab Bag (200mg)","price_aud":14.99,"currency":"AUD","specs":{"cbd_content_per_bag":"200mg","cbd_content_per_piece":"17mg","pieces_per_bag":"12","weight":"50g","flavor":"Mixed Fruit","ingredients":"Not specified","vegan":"Yes","food_supplement":"Yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-cubes-grab-bag-200mg-5671.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-cubes-grab-bag-200mg-5671.webp"},"brand":"Supreme CBD","series":"CBD 200mg"},{"id":"supreme-cbd-gummy-strawberries-grab-bag-200mg-5672","source_id":"5672","name":"Gummy Strawberries Grab Bag (200mg)","price_aud":14.99,"currency":"AUD","specs":{"cbd_content_per_bag":"200mg","cbd_content_per_piece":"17mg","pieces_per_bag":"12","weight":"50g","flavor":"Mixed Fruit","ingredients":"Not specified","vegan":"Yes","food_supplement":"Yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-strawberries-grab-bag-200mg-5672.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-strawberries-grab-bag-200mg-5672.webp"},"brand":"Supreme CBD","series":"CBD 200mg"},{"id":"supreme-cbd-bears-mixed-fruit-flavoured-edibles-12-edibles-per-bag-5673","source_id":"5673","name":"Bears Mixed Fruit Flavoured Edibles (12 Edibles Per Bag)","price_aud":14.99,"currency":"AUD","specs":{"cbd_content_per_bag":"200mg","cbd_content_per_piece":"17mg","pieces_per_bag":"12","weight":"50g","flavor":"Mixed Fruit","ingredients":"Not specified","vegan":"Yes","food_supplement":"Yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-bears-mixed-fruit-flavoured-edibles-12-edibles-per-bag-5673.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-bears-mixed-fruit-flavoured-edibles-12-edibles-per-bag-5673.webp"},"brand":"Supreme CBD","series":"CBD 200mg"},{"id":"supreme-cbd-cbd-gummy-bottles-grab-bag-200mg-5674","source_id":"5674","name":"CBD Gummy Bottles Grab Bag (200mg)","price_aud":14.99,"currency":"AUD","specs":{"cbd_content_per_bag":"200mg","cbd_content_per_piece":"17mg","pieces_per_bag":"12","weight":"50g","flavor":"Mixed Fruit","ingredients":"Not specified","vegan":"Yes","food_supplement":"Yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-gummy-bottles-grab-bag-200mg-5674.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-gummy-bottles-grab-bag-200mg-5674.webp"},"brand":"Supreme CBD","series":"CBD 200mg"},{"id":"supreme-cbd-cbd-rings-peach-flavored-edibles-200mg-5701","source_id":"5701","name":"CBD Rings Peach Flavored Edibles (200mg)","price_aud":14.99,"currency":"AUD","specs":{"cbd_content_per_bag":"200mg","cbd_content_per_piece":"17mg","pieces_per_bag":"12","weight":"50g","flavor":"Mixed Fruit","ingredients":"Not specified","vegan":"Yes","food_supplement":"Yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavored-edibles-200mg-5701.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavored-edibles-200mg-5701.webp"},"brand":"Supreme CBD","series":"CBD 200mg"},{"id":"supreme-cbd-fruit-cubes-grab-bag-200mg-11084","source_id":"11084","name":"Fruit Cubes Grab Bag (200mg)","price_aud":14.99,"currency":"AUD","specs":{"cbd_content_per_bag":"200mg","cbd_content_per_piece":"17mg","pieces_per_bag":"12","weight":"50g","flavor":"Mixed Fruit","ingredients":"Not specified","vegan":"Yes","food_supplement":"Yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-cubes-grab-bag-200mg-11084.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-cubes-grab-bag-200mg-11084.webp"},"brand":"Supreme CBD","series":"CBD 200mg"},{"id":"supreme-cbd-cbd-strawberry-grab-bag-200mg-11085","source_id":"11085","name":"CBD Strawberry Grab Bag (200mg)","price_aud":14.99,"currency":"AUD","specs":{"cbd_content_per_bag":"200mg","cbd_content_per_piece":"17mg","pieces_per_bag":"12","weight":"50g","flavor":"Mixed Fruit","ingredients":"Not specified","vegan":"Yes","food_supplement":"Yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberry-grab-bag-200mg-11085.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberry-grab-bag-200mg-11085.webp"},"brand":"Supreme CBD","series":"CBD 200mg"},{"id":"supreme-cbd-cbd-bears-grab-bag-200mg-11086","source_id":"11086","name":"CBD Bears Grab Bag (200mg)","price_aud":14.99,"currency":"AUD","specs":{"cbd_content_per_bag":"200mg","cbd_content_per_piece":"17mg","pieces_per_bag":"12","weight":"50g","flavor":"Mixed Fruit","ingredients":"Not specified","vegan":"Yes","food_supplement":"Yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bears-grab-bag-200mg-11086.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bears-grab-bag-200mg-11086.webp"},"brand":"Supreme CBD","series":"CBD 200mg"},{"id":"supreme-cbd-cbd-bottles-grab-bag-200mg-11087","source_id":"11087","name":"CBD Bottles Grab Bag (200mg)","price_aud":14.99,"currency":"AUD","specs":{"cbd_content_per_bag":"200mg","cbd_content_per_piece":"17mg","pieces_per_bag":"12","weight":"50g","flavor":"Mixed Fruit","ingredients":"Not specified","vegan":"Yes","food_supplement":"Yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bottles-grab-bag-200mg-11087.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bottles-grab-bag-200mg-11087.webp"},"brand":"Supreme CBD","series":"CBD 200mg"},{"id":"supreme-cbd-cbd-rings-peach-flavored-edibles-11088","source_id":"11088","name":"CBD Rings Peach Flavored Edibles","price_aud":14.99,"currency":"AUD","specs":{"cbd_content_per_bag":"200mg","cbd_content_per_piece":"17mg","pieces_per_bag":"12","weight":"50g","flavor":"Mixed Fruit","ingredients":"Not specified","vegan":"Yes","food_supplement":"Yes"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavored-edibles-11088.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavored-edibles-11088.webp"},"brand":"Supreme CBD","series":"CBD 200mg"},{"id":"supreme-cbd-large-gummy-bottles-3200mg-5702","source_id":"5702","name":"Large Gummy Bottles (3200mg)","price_aud":89.95,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_gummy":"32mg","total_cbd_content":"3200mg","quantity":"100 gummies","ingredients":"Glucose Syrup, Sugar, Water, Gelatine, Acid: Citric Acid, Maltodextrin, Flavourings, Colour: E102, E129, E133, Vegetable Oil (Palm), Glazing Agent (Carnauba Wax), CBD Isolate","thc_content":"Less than 0.2%","country_of_origin":"UK"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-large-gummy-bottles-3200mg-5702.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-large-gummy-bottles-3200mg-5702.webp"},"brand":"Supreme CBD","series":"CBD 3200mg"},{"id":"supreme-cbd-large-gummy-bottles-3200mg-11089","source_id":"11089","name":"Large Gummy Bottles (3200mg)","price_aud":89.95,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_gummy":"32mg","total_cbd_content":"3200mg","quantity":"100 gummies","ingredients":"Glucose Syrup, Sugar, Water, Gelatine, Acid: Citric Acid, Maltodextrin, Flavourings, Colour: E102, E129, E133, Vegetable Oil (Palm), Glazing Agent (Carnauba Wax), CBD Isolate","thc_content":"Less than 0.2%","country_of_origin":"UK"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-large-gummy-bottles-3200mg-11089.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-large-gummy-bottles-3200mg-11089.webp"},"brand":"Supreme CBD","series":"CBD 3200mg"},{"id":"supreme-cbd-large-gummy-bears-1600mg-5703","source_id":"5703","name":"Large Gummy Bears (1600mg)","price_aud":69.95,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_piece":"16mg","total_cbd_content":"1600mg","quantity":"100","ingredients":"Glucose Syrup, Sugar, Water, Gelatine, Acid: Citric Acid, Maltodextrin, Flavourings, Colour: E100, E141, E161b, E163, Vegetable Oil (Coconut, Palm Kernel), Glazing Agents: Beeswax, Carnauba Wax, CBD Isolate","country_of_origin":"UK","thc_content":"Less than 0.2%"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-large-gummy-bears-1600mg-5703.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-large-gummy-bears-1600mg-5703.webp"},"brand":"Supreme CBD","series":"CBD 1600mg"},{"id":"supreme-cbd-cbd-bears-1600mg-11090","source_id":"11090","name":"CBD Bears (1600mg)","price_aud":69.95,"currency":"AUD","specs":{"flavor":"Mixed Fruit","cbd_content_per_piece":"16mg","total_cbd_content":"1600mg","quantity":"100","ingredients":"Glucose Syrup, Sugar, Water, Gelatine, Acid: Citric Acid, Maltodextrin, Flavourings, Colour: E100, E141, E161b, E163, Vegetable Oil (Coconut, Palm Kernel), Glazing Agents: Beeswax, Carnauba Wax, CBD Isolate","country_of_origin":"UK","thc_content":"Less than 0.2%"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bears-1600mg-11090.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bears-1600mg-11090.webp"},"brand":"Supreme CBD","series":"CBD 1600mg"},{"id":"supreme-cbd-mixed-fruit-flavoured-sweets-cubes-4800mg-5704","source_id":"5704","name":"Mixed Fruit Flavoured Sweets Cubes (4800mg)","price_aud":109.95,"currency":"AUD","specs":{"cbd_content":"4800mg","quantity":"50 sweets","flavor":"Mixed Fruit","ingredients":"Sugar, Glucose Syrup, Modified Starch, Citric Acid, Malic Acid, Sodium Malates, Flavourings, Colours (E100, E141, E163, E160e), CBD Isolate","storage":"Store in a cool, dry place away from direct sunlight","country_of_origin":"UK"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-mixed-fruit-flavoured-sweets-cubes-4800mg-5704.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-mixed-fruit-flavoured-sweets-cubes-4800mg-5704.webp"},"brand":"Supreme CBD","series":"CBD 4800mg"},{"id":"supreme-cbd-fruit-cubes-4800mg-11091","source_id":"11091","name":"Fruit Cubes (4800mg)","price_aud":109.95,"currency":"AUD","specs":{"cbd_content":"4800mg","quantity":"50 sweets","flavor":"Mixed Fruit","ingredients":"Sugar, Glucose Syrup, Modified Starch, Citric Acid, Malic Acid, Sodium Malates, Flavourings, Colours (E100, E141, E163, E160e), CBD Isolate","storage":"Store in a cool, dry place away from direct sunlight","country_of_origin":"UK"},"image":{"thumb":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-cubes-4800mg-11091.webp","card":"https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-cubes-4800mg-11091.webp"},"brand":"Supreme CBD","series":"CBD 4800mg"}]}
+{
+  "path": [
+    "edibles",
+    "gummies",
+    "cbd-gummies"
+  ],
+  "file": "edibles/gummies/cbd-gummies.json",
+  "brands": [
+    {
+      "name": "CBD Calm",
+      "slug": "cbd-calm",
+      "product_count": 4
+    },
+    {
+      "name": "Why So CBD",
+      "slug": "why-so-cbd",
+      "product_count": 5
+    },
+    {
+      "name": "Orange County CBD",
+      "slug": "orange-county-cbd",
+      "product_count": 2
+    },
+    {
+      "name": "Medterra",
+      "slug": "medterra",
+      "product_count": 2
+    },
+    {
+      "name": "CBDfx",
+      "slug": "cbdfx",
+      "product_count": 2
+    },
+    {
+      "name": "Supreme CBD",
+      "slug": "supreme-cbd",
+      "product_count": 34
+    }
+  ],
+  "series_index": {
+    "CBD Calm": [
+      "Worms",
+      "Variety Pack"
+    ],
+    "Medterra": [
+      "True Full Spectrum CBD + THC Gummies"
+    ],
+    "CBDfx": [
+      "Full Spectrum"
+    ],
+    "Supreme CBD": [
+      "CBD 400mg",
+      "CBD 800mg",
+      "CBD 1200mg",
+      "CBD 200mg",
+      "CBD 3200mg",
+      "CBD 1600mg",
+      "CBD 4800mg"
+    ]
+  },
+  "products": [
+    {
+      "id": "cbd-calm-worms-gummies-750mg-4475",
+      "source_id": "4475",
+      "name": "Worms Gummies 750mg",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content": "750mg",
+        "flavor": "Assorted",
+        "form": "Gummies",
+        "ingredients": "Corn Syrup, Sugar, Gelatin, Citric Acid, Natural and Artificial Flavors, FD&C Red No. 40, Yellow No. 5, Blue No. 1",
+        "quantity": "30",
+        "serving_size": "1 gummy",
+        "total_weight": "250g"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cbd-calm-worms-gummies-750mg-4475.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cbd-calm-worms-gummies-750mg-4475.webp"
+      },
+      "brand": "CBD Calm",
+      "series": "Worms"
+    },
+    {
+      "id": "cbd-calm-worms-gummies-750mg-10594",
+      "source_id": "10594",
+      "name": "Worms Gummies 750mg",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content": "750mg",
+        "flavor": "Assorted",
+        "form": "Gummies",
+        "ingredients": "Corn Syrup, Sugar, Gelatin, Citric Acid, Natural and Artificial Flavors, FD&C Red No. 40, Yellow No. 5, Blue No. 1",
+        "quantity": "30",
+        "serving_size": "1 gummy",
+        "total_weight": "250g"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cbd-calm-worms-gummies-750mg-10594.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cbd-calm-worms-gummies-750mg-10594.webp"
+      },
+      "brand": "CBD Calm",
+      "series": "Worms"
+    },
+    {
+      "id": "cbd-calm-jellies-gummies-300mg-10595",
+      "source_id": "10595",
+      "name": "Jellies Gummies 300mg",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content": "750mg",
+        "flavor": "Assorted",
+        "form": "Gummies",
+        "ingredients": "Corn Syrup, Sugar, Gelatin, Citric Acid, Natural and Artificial Flavors, FD&C Red No. 40, Yellow No. 5, Blue No. 1",
+        "quantity": "30",
+        "serving_size": "1 gummy",
+        "total_weight": "250g"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cbd-calm-jellies-gummies-300mg-10595.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cbd-calm-jellies-gummies-300mg-10595.webp"
+      },
+      "brand": "CBD Calm",
+      "series": "Worms"
+    },
+    {
+      "id": "cbd-calm-variety-pack-10652",
+      "source_id": "10652",
+      "name": "Variety Pack",
+      "price_aud": 179.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content": "300mg",
+        "flavor": "Blueberry",
+        "form": "Spray",
+        "isolate": "Pure CBD Isolate",
+        "volume": "30ml",
+        "cbd_concentration": "3000mg"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cbd-calm-variety-pack-10652.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cbd-calm-variety-pack-10652.webp"
+      },
+      "brand": "CBD Calm",
+      "series": "Variety Pack"
+    },
+    {
+      "id": "why-so-cbd-watermelon-slices-gummies-500mg-4477",
+      "source_id": "4477",
+      "name": "Watermelon Slices Gummies 500mg",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content": "500mg",
+        "serving_size": "1 gummy",
+        "cbd_per_serving": "16mg",
+        "vegan": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/why-so-cbd-watermelon-slices-gummies-500mg-4477.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/why-so-cbd-watermelon-slices-gummies-500mg-4477.webp"
+      },
+      "brand": "Why So CBD",
+      "series": ""
+    },
+    {
+      "id": "why-so-cbd-bubblegum-bottles-500mg-4478",
+      "source_id": "4478",
+      "name": "Bubblegum Bottles 500mg",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content": "500mg",
+        "serving_size": "1 gummy",
+        "cbd_per_serving": "16mg",
+        "vegan": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/why-so-cbd-bubblegum-bottles-500mg-4478.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/why-so-cbd-bubblegum-bottles-500mg-4478.webp"
+      },
+      "brand": "Why So CBD",
+      "series": ""
+    },
+    {
+      "id": "why-so-cbd-strawberries-gummies-500mg-10596",
+      "source_id": "10596",
+      "name": "Strawberries Gummies 500mg",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content": "500mg",
+        "serving_size": "1 gummy",
+        "cbd_per_serving": "16mg",
+        "vegan": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/why-so-cbd-strawberries-gummies-500mg-10596.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/why-so-cbd-strawberries-gummies-500mg-10596.webp"
+      },
+      "brand": "Why So CBD",
+      "series": ""
+    },
+    {
+      "id": "why-so-cbd-watermelon-slices-gummies-500mg-10597",
+      "source_id": "10597",
+      "name": "Watermelon Slices Gummies 500mg",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content": "500mg",
+        "serving_size": "1 gummy",
+        "cbd_per_serving": "16mg",
+        "vegan": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/why-so-cbd-watermelon-slices-gummies-500mg-10597.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/why-so-cbd-watermelon-slices-gummies-500mg-10597.webp"
+      },
+      "brand": "Why So CBD",
+      "series": ""
+    },
+    {
+      "id": "why-so-cbd-bubblegum-bottles-500mg-10598",
+      "source_id": "10598",
+      "name": "Bubblegum Bottles 500mg",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content": "500mg",
+        "serving_size": "1 gummy",
+        "cbd_per_serving": "16mg",
+        "vegan": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/why-so-cbd-bubblegum-bottles-500mg-10598.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/why-so-cbd-bubblegum-bottles-500mg-10598.webp"
+      },
+      "brand": "Why So CBD",
+      "series": ""
+    },
+    {
+      "id": "orange-county-cbd-mixed-fruit-cubes-200mg-4479",
+      "source_id": "4479",
+      "name": "Mixed Fruit Cubes 200mg",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content": "200mg",
+        "quantity_per_package": "12 edibles",
+        "weight": "50g",
+        "flavor": "Mixed Fruit"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/orange-county-cbd-mixed-fruit-cubes-200mg-4479.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/orange-county-cbd-mixed-fruit-cubes-200mg-4479.webp"
+      },
+      "brand": "Orange County CBD",
+      "series": ""
+    },
+    {
+      "id": "orange-county-cbd-mixed-fruit-cubes-200mg-10599",
+      "source_id": "10599",
+      "name": "Mixed Fruit Cubes 200mg",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content": "200mg",
+        "quantity_per_package": "12 edibles",
+        "weight": "50g",
+        "flavor": "Mixed Fruit"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/orange-county-cbd-mixed-fruit-cubes-200mg-10599.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/orange-county-cbd-mixed-fruit-cubes-200mg-10599.webp"
+      },
+      "brand": "Orange County CBD",
+      "series": ""
+    },
+    {
+      "id": "medterra-true-full-spectrum-cbd-thc-gummies-citrus-5279",
+      "source_id": "5279",
+      "name": "TRUE FULL SPECTRUM CBD + THC GUMMIES – CITRUS",
+      "price_aud": 113.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Citrus",
+        "cbd_content_per_gummy": "25mg",
+        "thc_content_per_gummy": "2mg",
+        "total_count": "30",
+        "vegan": "yes",
+        "spectrum": "Full Spectrum"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/medterra-true-full-spectrum-cbd-thc-gummies-citrus-5279.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/medterra-true-full-spectrum-cbd-thc-gummies-citrus-5279.webp"
+      },
+      "brand": "Medterra",
+      "series": "True Full Spectrum CBD + THC Gummies"
+    },
+    {
+      "id": "medterra-true-full-spectrum-cbd-thc-gummies-citrus-10937",
+      "source_id": "10937",
+      "name": "TRUE FULL SPECTRUM CBD + THC GUMMIES – CITRUS",
+      "price_aud": 113.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Citrus",
+        "cbd_content_per_gummy": "25mg",
+        "thc_content_per_gummy": "2mg",
+        "total_count": "30",
+        "vegan": "yes",
+        "spectrum": "Full Spectrum"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/medterra-true-full-spectrum-cbd-thc-gummies-citrus-10937.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/medterra-true-full-spectrum-cbd-thc-gummies-citrus-10937.webp"
+      },
+      "brand": "Medterra",
+      "series": "True Full Spectrum CBD + THC Gummies"
+    },
+    {
+      "id": "cbdfx-full-spectrum-gummies-5281",
+      "source_id": "5281",
+      "name": "Full Spectrum Gummies",
+      "price_aud": 79.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content": "1500mg",
+        "thc_content": "1.5mg per serving",
+        "serving_size": "2 gummies",
+        "servings_per_container": "30",
+        "ingredients": "Organic Tapioca Syrup, Water, Organic Cane Sugar, Pectin, Natural Flavors, Citric Acid, Sodium Citrate, Vegetable Juice (For Color), Hemp Extract",
+        "spectrum_type": "Full Spectrum",
+        "lab_tested": "Yes",
+        "vegan": "Yes",
+        "gluten_free": "Yes",
+        "allergen_information": "May contain traces of milk, soy, peanuts, tree nuts, and wheat.",
+        "country_of_origin": "USA",
+        "storage_instructions": "Store in a cool, dry place away from direct sunlight.",
+        "additional_information": "Hemp-derived, <0.3% Delta-9 THC"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cbdfx-full-spectrum-gummies-5281.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cbdfx-full-spectrum-gummies-5281.webp"
+      },
+      "brand": "CBDfx",
+      "series": "Full Spectrum"
+    },
+    {
+      "id": "cbdfx-full-spectrum-gummies-10939",
+      "source_id": "10939",
+      "name": "Full Spectrum Gummies",
+      "price_aud": 79.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content": "1500mg",
+        "thc_content": "1.5mg per serving",
+        "serving_size": "2 gummies",
+        "servings_per_container": "30",
+        "ingredients": "Organic Tapioca Syrup, Water, Organic Cane Sugar, Pectin, Natural Flavors, Citric Acid, Sodium Citrate, Vegetable Juice (For Color), Hemp Extract",
+        "spectrum_type": "Full Spectrum",
+        "lab_tested": "Yes",
+        "vegan": "Yes",
+        "gluten_free": "Yes",
+        "allergen_information": "May contain traces of milk, soy, peanuts, tree nuts, and wheat.",
+        "country_of_origin": "USA",
+        "storage_instructions": "Store in a cool, dry place away from direct sunlight.",
+        "additional_information": "Hemp-derived, <0.3% Delta-9 THC"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/cbdfx-full-spectrum-gummies-10939.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/cbdfx-full-spectrum-gummies-10939.webp"
+      },
+      "brand": "CBDfx",
+      "series": "Full Spectrum"
+    },
+    {
+      "id": "supreme-cbd-cbd-bottles-400mg-5601",
+      "source_id": "5601",
+      "name": "CBD Bottles (400mg)",
+      "price_aud": 65.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_piece": "15mg",
+        "total_cbd_content": "400mg",
+        "type": "Sweets"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bottles-400mg-5601.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bottles-400mg-5601.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 400mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-strawberries-400mg-5629",
+      "source_id": "5629",
+      "name": "CBD Strawberries (400mg)",
+      "price_aud": 65.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_piece": "15mg",
+        "total_cbd_content": "400mg",
+        "type": "Sweets"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-400mg-5629.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-400mg-5629.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 400mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-bottles-11047",
+      "source_id": "11047",
+      "name": "CBD Bottles",
+      "price_aud": 65.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_piece": "15mg",
+        "total_cbd_content": "400mg",
+        "type": "Sweets"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bottles-11047.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bottles-11047.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 400mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-strawberries-400mg-11048",
+      "source_id": "11048",
+      "name": "CBD Strawberries (400mg)",
+      "price_aud": 65.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_piece": "15mg",
+        "total_cbd_content": "400mg",
+        "type": "Sweets"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-400mg-11048.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-400mg-11048.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 400mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-strawberries-800mg-5630",
+      "source_id": "5630",
+      "name": "CBD Strawberries (800mg)",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_tub": "800mg",
+        "cbd_content_per_gummy": "40mg",
+        "flavor": "Strawberry",
+        "vegan": "Yes",
+        "weight": "150g",
+        "approximate_count": "20 gummies"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-800mg-5630.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-800mg-5630.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 800mg"
+    },
+    {
+      "id": "supreme-cbd-gummy-cherries-800mg-5631",
+      "source_id": "5631",
+      "name": "Gummy Cherries (800mg",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_tub": "800mg",
+        "cbd_content_per_gummy": "40mg",
+        "flavor": "Strawberry",
+        "vegan": "Yes",
+        "weight": "150g",
+        "approximate_count": "20 gummies"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-cherries-800mg-5631.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-cherries-800mg-5631.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 800mg"
+    },
+    {
+      "id": "supreme-cbd-gummy-strawberries-800mg-11049",
+      "source_id": "11049",
+      "name": "Gummy Strawberries (800mg)",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_tub": "800mg",
+        "cbd_content_per_gummy": "40mg",
+        "flavor": "Strawberry",
+        "vegan": "Yes",
+        "weight": "150g",
+        "approximate_count": "20 gummies"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-strawberries-800mg-11049.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-strawberries-800mg-11049.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 800mg"
+    },
+    {
+      "id": "supreme-cbd-gummy-cherries-800mg-11050",
+      "source_id": "11050",
+      "name": "Gummy Cherries (800mg",
+      "price_aud": 39.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_tub": "800mg",
+        "cbd_content_per_gummy": "40mg",
+        "flavor": "Strawberry",
+        "vegan": "Yes",
+        "weight": "150g",
+        "approximate_count": "20 gummies"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-cherries-800mg-11050.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-cherries-800mg-11050.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 800mg"
+    },
+    {
+      "id": "supreme-cbd-gummy-cubes-1200mg-5632",
+      "source_id": "5632",
+      "name": "Gummy Cubes (1200mg)",
+      "price_aud": 76.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_tub": "1200mg",
+        "cbd_content_per_piece": "48mg",
+        "weight": "150g",
+        "approximate_pieces_per_tub": "25",
+        "food_supplement": "yes",
+        "vegan": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-cubes-1200mg-5632.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-cubes-1200mg-5632.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 1200mg"
+    },
+    {
+      "id": "supreme-cbd-gummy-strawberries-1200mg-5633",
+      "source_id": "5633",
+      "name": "Gummy Strawberries (1200mg)",
+      "price_aud": 76.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_tub": "1200mg",
+        "cbd_content_per_piece": "48mg",
+        "weight": "150g",
+        "approximate_pieces_per_tub": "25",
+        "food_supplement": "yes",
+        "vegan": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-strawberries-1200mg-5633.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-strawberries-1200mg-5633.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 1200mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-cherries-1200mg-5634",
+      "source_id": "5634",
+      "name": "CBD Cherries (1200mg)",
+      "price_aud": 76.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_tub": "1200mg",
+        "cbd_content_per_piece": "48mg",
+        "weight": "150g",
+        "approximate_pieces_per_tub": "25",
+        "food_supplement": "yes",
+        "vegan": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-cherries-1200mg-5634.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-cherries-1200mg-5634.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 1200mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-rings-peach-flavoured-edibles-1200mg-5670",
+      "source_id": "5670",
+      "name": "CBD Rings Peach Flavoured Edibles (1200mg)",
+      "price_aud": 76.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_tub": "1200mg",
+        "cbd_content_per_piece": "40mg",
+        "weight": "150g",
+        "vegan": "yes",
+        "pieces_per_container": "30"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavoured-edibles-1200mg-5670.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavoured-edibles-1200mg-5670.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 1200mg"
+    },
+    {
+      "id": "supreme-cbd-gummy-bottles-1200mg-5705",
+      "source_id": "5705",
+      "name": "Gummy Bottles (1200mg)",
+      "price_aud": 76.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_tub": "1200mg",
+        "cbd_content_per_piece": "48mg",
+        "weight": "150g",
+        "approximate_pieces_per_tub": "25",
+        "food_supplement": "yes",
+        "vegan": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-bottles-1200mg-5705.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-bottles-1200mg-5705.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 1200mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-gummy-cubes-1200mg-11080",
+      "source_id": "11080",
+      "name": "CBD Gummy Cubes (1200mg)",
+      "price_aud": 76.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_tub": "1200mg",
+        "cbd_content_per_piece": "48mg",
+        "weight": "150g",
+        "approximate_pieces_per_tub": "25",
+        "food_supplement": "yes",
+        "vegan": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-gummy-cubes-1200mg-11080.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-gummy-cubes-1200mg-11080.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 1200mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-strawberries-1200mg-11081",
+      "source_id": "11081",
+      "name": "CBD Strawberries (1200mg)",
+      "price_aud": 76.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_tub": "1200mg",
+        "cbd_content_per_piece": "48mg",
+        "weight": "150g",
+        "approximate_pieces_per_tub": "25",
+        "food_supplement": "yes",
+        "vegan": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-1200mg-11081.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberries-1200mg-11081.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 1200mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-cherries-1200mg-11082",
+      "source_id": "11082",
+      "name": "CBD Cherries (1200mg)",
+      "price_aud": 76.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_tub": "1200mg",
+        "cbd_content_per_piece": "48mg",
+        "weight": "150g",
+        "approximate_pieces_per_tub": "25",
+        "food_supplement": "yes",
+        "vegan": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-cherries-1200mg-11082.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-cherries-1200mg-11082.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 1200mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-rings-peach-flavoured-edibles-1200mg-11083",
+      "source_id": "11083",
+      "name": "CBD Rings Peach Flavoured Edibles (1200mg)",
+      "price_aud": 76.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_tub": "1200mg",
+        "cbd_content_per_piece": "40mg",
+        "weight": "150g",
+        "vegan": "yes",
+        "pieces_per_container": "30"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavoured-edibles-1200mg-11083.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavoured-edibles-1200mg-11083.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 1200mg"
+    },
+    {
+      "id": "supreme-cbd-gummy-bottles-1200mg-11092",
+      "source_id": "11092",
+      "name": "Gummy Bottles (1200mg)",
+      "price_aud": 76.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_tub": "1200mg",
+        "cbd_content_per_piece": "48mg",
+        "weight": "150g",
+        "approximate_pieces_per_tub": "25",
+        "food_supplement": "yes",
+        "vegan": "yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-bottles-1200mg-11092.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-bottles-1200mg-11092.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 1200mg"
+    },
+    {
+      "id": "supreme-cbd-fruit-cubes-grab-bag-200mg-5671",
+      "source_id": "5671",
+      "name": "Fruit Cubes Grab Bag (200mg)",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_bag": "200mg",
+        "cbd_content_per_piece": "17mg",
+        "pieces_per_bag": "12",
+        "weight": "50g",
+        "flavor": "Mixed Fruit",
+        "ingredients": "Not specified",
+        "vegan": "Yes",
+        "food_supplement": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-cubes-grab-bag-200mg-5671.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-cubes-grab-bag-200mg-5671.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 200mg"
+    },
+    {
+      "id": "supreme-cbd-gummy-strawberries-grab-bag-200mg-5672",
+      "source_id": "5672",
+      "name": "Gummy Strawberries Grab Bag (200mg)",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_bag": "200mg",
+        "cbd_content_per_piece": "17mg",
+        "pieces_per_bag": "12",
+        "weight": "50g",
+        "flavor": "Mixed Fruit",
+        "ingredients": "Not specified",
+        "vegan": "Yes",
+        "food_supplement": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-strawberries-grab-bag-200mg-5672.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-gummy-strawberries-grab-bag-200mg-5672.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 200mg"
+    },
+    {
+      "id": "supreme-cbd-bears-mixed-fruit-flavoured-edibles-12-edibles-per-bag-5673",
+      "source_id": "5673",
+      "name": "Bears Mixed Fruit Flavoured Edibles (12 Edibles Per Bag)",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_bag": "200mg",
+        "cbd_content_per_piece": "17mg",
+        "pieces_per_bag": "12",
+        "weight": "50g",
+        "flavor": "Mixed Fruit",
+        "ingredients": "Not specified",
+        "vegan": "Yes",
+        "food_supplement": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-bears-mixed-fruit-flavoured-edibles-12-edibles-per-bag-5673.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-bears-mixed-fruit-flavoured-edibles-12-edibles-per-bag-5673.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 200mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-gummy-bottles-grab-bag-200mg-5674",
+      "source_id": "5674",
+      "name": "CBD Gummy Bottles Grab Bag (200mg)",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_bag": "200mg",
+        "cbd_content_per_piece": "17mg",
+        "pieces_per_bag": "12",
+        "weight": "50g",
+        "flavor": "Mixed Fruit",
+        "ingredients": "Not specified",
+        "vegan": "Yes",
+        "food_supplement": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-gummy-bottles-grab-bag-200mg-5674.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-gummy-bottles-grab-bag-200mg-5674.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 200mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-rings-peach-flavored-edibles-200mg-5701",
+      "source_id": "5701",
+      "name": "CBD Rings Peach Flavored Edibles (200mg)",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_bag": "200mg",
+        "cbd_content_per_piece": "17mg",
+        "pieces_per_bag": "12",
+        "weight": "50g",
+        "flavor": "Mixed Fruit",
+        "ingredients": "Not specified",
+        "vegan": "Yes",
+        "food_supplement": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavored-edibles-200mg-5701.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavored-edibles-200mg-5701.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 200mg"
+    },
+    {
+      "id": "supreme-cbd-fruit-cubes-grab-bag-200mg-11084",
+      "source_id": "11084",
+      "name": "Fruit Cubes Grab Bag (200mg)",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_bag": "200mg",
+        "cbd_content_per_piece": "17mg",
+        "pieces_per_bag": "12",
+        "weight": "50g",
+        "flavor": "Mixed Fruit",
+        "ingredients": "Not specified",
+        "vegan": "Yes",
+        "food_supplement": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-cubes-grab-bag-200mg-11084.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-cubes-grab-bag-200mg-11084.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 200mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-strawberry-grab-bag-200mg-11085",
+      "source_id": "11085",
+      "name": "CBD Strawberry Grab Bag (200mg)",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_bag": "200mg",
+        "cbd_content_per_piece": "17mg",
+        "pieces_per_bag": "12",
+        "weight": "50g",
+        "flavor": "Mixed Fruit",
+        "ingredients": "Not specified",
+        "vegan": "Yes",
+        "food_supplement": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberry-grab-bag-200mg-11085.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-strawberry-grab-bag-200mg-11085.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 200mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-bears-grab-bag-200mg-11086",
+      "source_id": "11086",
+      "name": "CBD Bears Grab Bag (200mg)",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_bag": "200mg",
+        "cbd_content_per_piece": "17mg",
+        "pieces_per_bag": "12",
+        "weight": "50g",
+        "flavor": "Mixed Fruit",
+        "ingredients": "Not specified",
+        "vegan": "Yes",
+        "food_supplement": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bears-grab-bag-200mg-11086.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bears-grab-bag-200mg-11086.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 200mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-bottles-grab-bag-200mg-11087",
+      "source_id": "11087",
+      "name": "CBD Bottles Grab Bag (200mg)",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_bag": "200mg",
+        "cbd_content_per_piece": "17mg",
+        "pieces_per_bag": "12",
+        "weight": "50g",
+        "flavor": "Mixed Fruit",
+        "ingredients": "Not specified",
+        "vegan": "Yes",
+        "food_supplement": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bottles-grab-bag-200mg-11087.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bottles-grab-bag-200mg-11087.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 200mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-rings-peach-flavored-edibles-11088",
+      "source_id": "11088",
+      "name": "CBD Rings Peach Flavored Edibles",
+      "price_aud": 24.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content_per_bag": "200mg",
+        "cbd_content_per_piece": "17mg",
+        "pieces_per_bag": "12",
+        "weight": "50g",
+        "flavor": "Mixed Fruit",
+        "ingredients": "Not specified",
+        "vegan": "Yes",
+        "food_supplement": "Yes"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavored-edibles-11088.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-rings-peach-flavored-edibles-11088.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 200mg"
+    },
+    {
+      "id": "supreme-cbd-large-gummy-bottles-3200mg-5702",
+      "source_id": "5702",
+      "name": "Large Gummy Bottles (3200mg)",
+      "price_aud": 99.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_gummy": "32mg",
+        "total_cbd_content": "3200mg",
+        "quantity": "100 gummies",
+        "ingredients": "Glucose Syrup, Sugar, Water, Gelatine, Acid: Citric Acid, Maltodextrin, Flavourings, Colour: E102, E129, E133, Vegetable Oil (Palm), Glazing Agent (Carnauba Wax), CBD Isolate",
+        "thc_content": "Less than 0.2%",
+        "country_of_origin": "UK"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-large-gummy-bottles-3200mg-5702.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-large-gummy-bottles-3200mg-5702.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 3200mg"
+    },
+    {
+      "id": "supreme-cbd-large-gummy-bottles-3200mg-11089",
+      "source_id": "11089",
+      "name": "Large Gummy Bottles (3200mg)",
+      "price_aud": 99.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_gummy": "32mg",
+        "total_cbd_content": "3200mg",
+        "quantity": "100 gummies",
+        "ingredients": "Glucose Syrup, Sugar, Water, Gelatine, Acid: Citric Acid, Maltodextrin, Flavourings, Colour: E102, E129, E133, Vegetable Oil (Palm), Glazing Agent (Carnauba Wax), CBD Isolate",
+        "thc_content": "Less than 0.2%",
+        "country_of_origin": "UK"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-large-gummy-bottles-3200mg-11089.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-large-gummy-bottles-3200mg-11089.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 3200mg"
+    },
+    {
+      "id": "supreme-cbd-large-gummy-bears-1600mg-5703",
+      "source_id": "5703",
+      "name": "Large Gummy Bears (1600mg)",
+      "price_aud": 79.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_piece": "16mg",
+        "total_cbd_content": "1600mg",
+        "quantity": "100",
+        "ingredients": "Glucose Syrup, Sugar, Water, Gelatine, Acid: Citric Acid, Maltodextrin, Flavourings, Colour: E100, E141, E161b, E163, Vegetable Oil (Coconut, Palm Kernel), Glazing Agents: Beeswax, Carnauba Wax, CBD Isolate",
+        "country_of_origin": "UK",
+        "thc_content": "Less than 0.2%"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-large-gummy-bears-1600mg-5703.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-large-gummy-bears-1600mg-5703.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 1600mg"
+    },
+    {
+      "id": "supreme-cbd-cbd-bears-1600mg-11090",
+      "source_id": "11090",
+      "name": "CBD Bears (1600mg)",
+      "price_aud": 79.99,
+      "currency": "AUD",
+      "specs": {
+        "flavor": "Mixed Fruit",
+        "cbd_content_per_piece": "16mg",
+        "total_cbd_content": "1600mg",
+        "quantity": "100",
+        "ingredients": "Glucose Syrup, Sugar, Water, Gelatine, Acid: Citric Acid, Maltodextrin, Flavourings, Colour: E100, E141, E161b, E163, Vegetable Oil (Coconut, Palm Kernel), Glazing Agents: Beeswax, Carnauba Wax, CBD Isolate",
+        "country_of_origin": "UK",
+        "thc_content": "Less than 0.2%"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bears-1600mg-11090.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-cbd-bears-1600mg-11090.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 1600mg"
+    },
+    {
+      "id": "supreme-cbd-mixed-fruit-flavoured-sweets-cubes-4800mg-5704",
+      "source_id": "5704",
+      "name": "Mixed Fruit Flavoured Sweets Cubes (4800mg)",
+      "price_aud": 119.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content": "4800mg",
+        "quantity": "50 sweets",
+        "flavor": "Mixed Fruit",
+        "ingredients": "Sugar, Glucose Syrup, Modified Starch, Citric Acid, Malic Acid, Sodium Malates, Flavourings, Colours (E100, E141, E163, E160e), CBD Isolate",
+        "storage": "Store in a cool, dry place away from direct sunlight",
+        "country_of_origin": "UK"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-mixed-fruit-flavoured-sweets-cubes-4800mg-5704.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-mixed-fruit-flavoured-sweets-cubes-4800mg-5704.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 4800mg"
+    },
+    {
+      "id": "supreme-cbd-fruit-cubes-4800mg-11091",
+      "source_id": "11091",
+      "name": "Fruit Cubes (4800mg)",
+      "price_aud": 119.99,
+      "currency": "AUD",
+      "specs": {
+        "cbd_content": "4800mg",
+        "quantity": "50 sweets",
+        "flavor": "Mixed Fruit",
+        "ingredients": "Sugar, Glucose Syrup, Modified Starch, Citric Acid, Malic Acid, Sodium Malates, Flavourings, Colours (E100, E141, E163, E160e), CBD Isolate",
+        "storage": "Store in a cool, dry place away from direct sunlight",
+        "country_of_origin": "UK"
+      },
+      "image": {
+        "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-cubes-4800mg-11091.webp",
+        "card": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_420,h_420,f_webp,q_auto:good/vapespot-v9/supreme-cbd-fruit-cubes-4800mg-11091.webp"
+      },
+      "brand": "Supreme CBD",
+      "series": "CBD 4800mg"
+    }
+  ]
+}
