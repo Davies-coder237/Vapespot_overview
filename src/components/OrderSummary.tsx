@@ -115,6 +115,9 @@ export function OrderSummary() {
           <span className="ml-1.5 text-[14px] font-bold text-[#6E6E73]">AUD</span>
         </p>
       </div>
+      <p className="text-[12px] text-[#9E9E9E] mt-1 text-center lg:text-left">
+        Minimum order: A$50.00
+      </p>
 
       {/* ── Payment notice ── */}
       <div className="bg-[#F0EEFF] p-5 md:p-7 lg:p-8 space-y-5 md:space-y-6">
@@ -238,15 +241,30 @@ export function OrderSummary() {
       </div>
 
       {/* ── Telegram CTA ── */}
-      <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-full inline-flex items-center justify-center gap-2 bg-black text-white rounded-none py-5 text-[16px] font-bold hover:opacity-90 transition-opacity"
-      >
-        <Send className="h-4 w-4" strokeWidth={2} />
-        Contact us on Telegram
-      </a>
+      {ordersTotal(lines) >= 50 ? (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 w-full bg-black text-white py-4 text-[15px] font-semibold hover:bg-[#1a1a1a] transition-colors"
+        >
+          <Send className="h-4 w-4" />
+          Contact us on Telegram
+        </a>
+      ) : (
+        <div className="w-full">
+          <button
+            disabled
+            className="flex items-center justify-center gap-2 w-full bg-[#E5E5E5] text-[#9E9E9E] py-4 text-[15px] font-semibold cursor-not-allowed"
+          >
+            <Send className="h-4 w-4" />
+            Contact us on Telegram
+          </button>
+          <p className="text-center text-[13px] text-[#E53E3E] mt-2 font-medium">
+            Minimum order not reached. Add A${(50 - ordersTotal(lines)).toFixed(2)} more to place your order.
+          </p>
+        </div>
+      )}
 
       <div className="flex items-center justify-center gap-1.5 text-xs text-[#9E9E9E]">
         <Lock className="h-3 w-3" />
