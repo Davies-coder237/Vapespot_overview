@@ -115,7 +115,7 @@ export function OrderSummary() {
           <span className="ml-1.5 text-[14px] font-bold text-[#6E6E73]">AUD</span>
         </p>
       </div>
-      <p className="text-[12px] text-[#9E9E9E] mt-1 text-center lg:text-left">
+      <p className="text-[12px] text-[#1F1F1F] mt-1 text-center lg:text-left">
         Minimum order: A$50.00
       </p>
 
@@ -260,7 +260,7 @@ export function OrderSummary() {
             <Send className="h-4 w-4" />
             Contact us on Telegram
           </button>
-          <p className="text-center text-[13px] text-[#E53E3E] mt-2 font-medium">
+          <p className="text-center text-[13px] text-[#E53E3E] mt-2 font-bold">
             Minimum order not reached. Add A${(50 - ordersTotal(lines)).toFixed(2)} more to place your order.
           </p>
         </div>
