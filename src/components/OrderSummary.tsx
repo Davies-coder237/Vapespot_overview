@@ -162,13 +162,13 @@ export function OrderSummary() {
               <p className="text-[13px] md:text-[15px] font-bold text-[#0A0A0A]">🛵 Local Courier</p>
               <p className="text-[11px] md:text-[13px] text-[#6E6E73]">Usually 30 min–2hrs, depending on your location</p>
             </div>
-            {deliveryMethod === "courier" && (
-              <div className="shrink-0 h-5 w-5 rounded-full bg-[#5B3DF5] flex items-center justify-center">
-                <svg viewBox="0 0 10 8" className="h-3 w-3 text-white" fill="none" stroke="currentColor" strokeWidth={2}>
-                  <polyline points="1,4 4,7 9,1" />
-                </svg>
-              </div>
-            )}
+            <div className={`shrink-0 h-5 w-5 rounded-full border-2 flex items-center justify-center transition-colors ${
+              deliveryMethod === "courier" ? "border-[#5B3DF5] bg-white" : "border-[#C4B8F0] bg-white"
+            }`}>
+              {deliveryMethod === "courier" && (
+                <div className="h-2.5 w-2.5 rounded-full bg-[#5B3DF5]" />
+              )}
+            </div>
           </button>
 
           {/* Option 2 — Australia Post */}
@@ -193,13 +193,13 @@ export function OrderSummary() {
               <p className="text-[13px] md:text-[15px] font-bold text-[#0A0A0A]">📮 Australia Post</p>
               <p className="text-[11px] md:text-[13px] text-[#6E6E73]">1–3 business days, depending on your location</p>
             </div>
-            {deliveryMethod === "australia_post" && (
-              <div className="shrink-0 h-5 w-5 rounded-full bg-[#5B3DF5] flex items-center justify-center">
-                <svg viewBox="0 0 10 8" className="h-3 w-3 text-white" fill="none" stroke="currentColor" strokeWidth={2}>
-                  <polyline points="1,4 4,7 9,1" />
-                </svg>
-              </div>
-            )}
+            <div className={`shrink-0 h-5 w-5 rounded-full border-2 flex items-center justify-center transition-colors ${
+              deliveryMethod === "australia_post" ? "border-[#5B3DF5] bg-white" : "border-[#C4B8F0] bg-white"
+            }`}>
+              {deliveryMethod === "australia_post" && (
+                <div className="h-2.5 w-2.5 rounded-full bg-[#5B3DF5]" />
+              )}
+            </div>
           </button>
         </div>
 
