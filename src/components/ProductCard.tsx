@@ -79,6 +79,9 @@ export function ProductCard({
               {formatPrice(product.price_aud)}
               <span className="ml-1 text-[12px] font-semibold text-[#9E9E9E]">AUD</span>
             </span>
+            <span className="mt-0.5 text-[11px] font-semibold text-[#7C3AED]">
+              🛵 30 min–2hr delivery
+            </span>
           </Link>
         </div>
 

@@ -3,8 +3,8 @@ import { Truck, ShieldCheck, BadgeCheck, Send } from "lucide-react";
 const BLOCKS = [
   {
     icon: Truck,
-    title: "Fast Delivery",
-    subtitle: "1-3 business days to all states.",
+    title: "Courier Delivery",
+    subtitle: "Usually 30 min–2hrs, or via Australia Post.",
   },
   {
     icon: ShieldCheck,

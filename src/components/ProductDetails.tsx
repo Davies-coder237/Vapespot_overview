@@ -123,6 +123,9 @@ export function ProductDetails({ product }: { product: Product }) {
             <p className="text-[26px] font-bold text-black">
               {formatPrice(product.price_aud)}
             </p>
+            <p className="text-[13px] md:text-[14px] text-[#7C3AED] font-semibold">
+              🛵 Local courier delivery — usually 30 min to 2 hrs, or via Australia Post.
+            </p>
           </header>
 
           <div className="flex items-center gap-3">

@@ -70,6 +70,18 @@ export function AgeGate({ children }: { children: React.ReactNode }) {
             This website contains vaping products intended for adults only.
           </p>
 
+          <p
+            style={{
+              marginTop: "10px",
+              fontSize: "13px",
+              color: "#7C3AED",
+              fontWeight: 600,
+              lineHeight: 1.4,
+            }}
+          >
+            🛵 Local courier delivery, usually 30 min–2hrs — or via Australia Post.
+          </p>
+
           {/* Buttons */}
           <div style={{ marginTop: "36px", width: "100%", display: "flex", flexDirection: "column", gap: "12px" }}>
             <button

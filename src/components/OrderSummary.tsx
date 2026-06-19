@@ -16,6 +16,7 @@ export function OrderSummary() {
   const { items } = useMyList();
   const [products, setProducts] = useState<Product[]>([]);
   const [deliveryAddress, setDeliveryAddress] = useState("");
+  const [deliveryMethod, setDeliveryMethod] = useState<"courier" | "australia_post">("courier");
 
   useEffect(() => {
     let cancelled = false;
@@ -26,7 +27,7 @@ export function OrderSummary() {
   }, [items]);
 
   const lines = buildOrderLines(items, products);
-  const url = buildTelegramUrl(buildTelegramMessage(lines, deliveryAddress));
+  const url = buildTelegramUrl(buildTelegramMessage(lines, deliveryAddress, deliveryMethod));
 
   if (lines.length === 0) {
     return (
@@ -134,46 +135,72 @@ export function OrderSummary() {
           </div>
         </div>
 
-        {/* ── Fast & Reliable Delivery card ── */}
-        <div className="bg-[#F9F7FF] border border-[#E4DEFF] rounded-xl px-4 py-3.5 md:px-6 md:py-5 lg:px-7 lg:py-6 flex items-center gap-4 md:gap-6 lg:gap-7">
-          {/* Left — icon */}
-          <div className="shrink-0 h-12 w-12 md:h-16 md:w-16 lg:h-[72px] lg:w-[72px] rounded-full bg-[#EDE9FF] flex items-center justify-center">
-            <Timer className="h-[22px] w-[22px] md:h-8 md:w-8 lg:h-9 lg:w-9 text-[#5B3DF5]" strokeWidth={1.75} />
-          </div>
+        {/* ── Delivery Method selector ── */}
+        <div className="space-y-2">
+          <p className="text-[13px] md:text-[15px] font-extrabold text-[#0A0A0A]">Choose delivery method</p>
 
-          {/* Right — content */}
-          <div className="flex-1 min-w-0 space-y-2 md:space-y-3">
-            <p className="text-[13.5px] md:text-[16px] lg:text-[18px] font-extrabold text-[#0A0A0A] tracking-tight whitespace-nowrap">
-              Fast &amp; Reliable Delivery
-            </p>
-
-            <div className="space-y-1.5 md:space-y-2">
-              {/* Local */}
-              <div className="flex items-center gap-2 md:gap-3">
-                <div className="h-5 w-5 md:h-7 md:w-7 rounded-full bg-[#EDE9FF] flex items-center justify-center shrink-0">
-                  <Zap className="h-2.5 w-2.5 md:h-3.5 md:w-3.5 text-[#5B3DF5]" fill="#5B3DF5" strokeWidth={0} />
-                </div>
-                <div className="min-w-0">
-                  <span className="text-[12px] md:text-[14px] lg:text-[15px] font-semibold text-[#2D2D2D]">Local area :</span>
-                  <span className="text-[12px] md:text-[14px] lg:text-[15px] font-bold text-[#5B3DF5]">within 1 hour</span>
-                </div>
-              </div>
-
-              {/* Separator */}
-              <div className="ml-7 md:ml-10 h-px bg-[#EDE9FF]" />
-
-              {/* Nationwide */}
-              <div className="flex items-center gap-2 md:gap-3">
-                <div className="h-5 w-5 md:h-7 md:w-7 rounded-full bg-[#EDE9FF] flex items-center justify-center shrink-0">
-                  <Truck className="h-2.5 w-2.5 md:h-3.5 md:w-3.5 text-[#5B3DF5]" strokeWidth={1.75} />
-                </div>
-                <div className="min-w-0">
-                  <span className="text-[12px] md:text-[14px] lg:text-[15px] font-semibold text-[#2D2D2D]">Nationwide :</span>
-                  <span className="text-[12px] md:text-[14px] lg:text-[15px] font-bold text-[#5B3DF5]">1–3 business days</span>
-                </div>
-              </div>
+          {/* Option 1 — Local courier */}
+          <button
+            type="button"
+            onClick={() => setDeliveryMethod("courier")}
+            className={`w-full text-left rounded-xl px-4 py-3.5 md:px-5 md:py-4 flex items-center gap-3 border-2 transition-colors ${
+              deliveryMethod === "courier"
+                ? "bg-[#F0EEFF] border-[#5B3DF5]"
+                : "bg-[#F9F7FF] border-[#E4DEFF]"
+            }`}
+          >
+            <div className={`shrink-0 h-10 w-10 rounded-full flex items-center justify-center ${
+              deliveryMethod === "courier" ? "bg-[#5B3DF5]" : "bg-[#EDE9FF]"
+            }`}>
+              <Zap
+                className={`h-5 w-5 ${deliveryMethod === "courier" ? "text-white" : "text-[#5B3DF5]"}`}
+                fill={deliveryMethod === "courier" ? "white" : "#5B3DF5"}
+                strokeWidth={0}
+              />
             </div>
-          </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-[13px] md:text-[15px] font-bold text-[#0A0A0A]">🛵 Local Courier</p>
+              <p className="text-[11px] md:text-[13px] text-[#6E6E73]">Usually 30 min–2hrs, depending on your location</p>
+            </div>
+            {deliveryMethod === "courier" && (
+              <div className="shrink-0 h-5 w-5 rounded-full bg-[#5B3DF5] flex items-center justify-center">
+                <svg viewBox="0 0 10 8" className="h-3 w-3 text-white" fill="none" stroke="currentColor" strokeWidth={2}>
+                  <polyline points="1,4 4,7 9,1" />
+                </svg>
+              </div>
+            )}
+          </button>
+
+          {/* Option 2 — Australia Post */}
+          <button
+            type="button"
+            onClick={() => setDeliveryMethod("australia_post")}
+            className={`w-full text-left rounded-xl px-4 py-3.5 md:px-5 md:py-4 flex items-center gap-3 border-2 transition-colors ${
+              deliveryMethod === "australia_post"
+                ? "bg-[#F0EEFF] border-[#5B3DF5]"
+                : "bg-[#F9F7FF] border-[#E4DEFF]"
+            }`}
+          >
+            <div className={`shrink-0 h-10 w-10 rounded-full flex items-center justify-center ${
+              deliveryMethod === "australia_post" ? "bg-[#5B3DF5]" : "bg-[#EDE9FF]"
+            }`}>
+              <Truck
+                className={`h-5 w-5 ${deliveryMethod === "australia_post" ? "text-white" : "text-[#5B3DF5]"}`}
+                strokeWidth={1.75}
+              />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-[13px] md:text-[15px] font-bold text-[#0A0A0A]">📮 Australia Post</p>
+              <p className="text-[11px] md:text-[13px] text-[#6E6E73]">1–3 business days, depending on your location</p>
+            </div>
+            {deliveryMethod === "australia_post" && (
+              <div className="shrink-0 h-5 w-5 rounded-full bg-[#5B3DF5] flex items-center justify-center">
+                <svg viewBox="0 0 10 8" className="h-3 w-3 text-white" fill="none" stroke="currentColor" strokeWidth={2}>
+                  <polyline points="1,4 4,7 9,1" />
+                </svg>
+              </div>
+            )}
+          </button>
         </div>
 
         {/* ── Delivery address ── */}
