@@ -1,0 +1,56 @@
+Applique exactement les deux changements suivants, fichier par fichier, sans modifier quoi que ce soit d'autre (mise en page, couleurs, structure des composants) :
+
+──────────────────────────────────────
+
+src/components/MyList.tsx
+──────────────────────────────────────
+Dans la section "Order CTA", trouve le <Link to="/order-summary"> qui contient :
+<Send className="h-4 w-4" strokeWidth={2} />
+Contact us on Telegram
+Remplace uniquement le texte "Contact us on Telegram" par "Place Order" :
+
+<Send className="h-4 w-4" strokeWidth={2} />
+Place Order
+──────────────────────────────────────
+2) src/components/OrderSummary.tsx
+──────────────────────────────────────
+a) Ajoute cet import en haut du fichier (s'il n'est pas déjà présent) :
+
+import { toast } from "sonner";
+b) Juste après la ligne qui définit const lines = buildOrderLines(items, products);, remplace :
+
+const url = buildTelegramUrl(buildTelegramMessage(lines, deliveryAddress, deliveryMethod));
+par :
+
+const message = buildTelegramMessage(lines, deliveryAddress, deliveryMethod);
+const url = buildTelegramUrl(message);
+const handleTelegramClick = async () => {
+  try {
+    await navigator.clipboard.writeText(message);
+    toast.success("Order copied — paste it if it doesn't appear automatically.");
+  } catch {
+    // Clipboard may be unavailable; Telegram link still opens normally.
+  }
+};
+c) Trouve le <a> du bouton "Contact us on Telegram" (celui avec href={url} et target="_blank"), et ajoute l'attribut onClick={handleTelegramClick} juste après rel="noopener noreferrer" :
+
+<a
+  href={url}
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={handleTelegramClick}
+  className="flex items-center justify-center gap-2 w-full bg-black text-white py-4 text-[15px] font-semibold hover:bg-[#1a1a1a] transition-colors"
+>
+  <Send className="h-4 w-4" />
+  Contact us on Telegram
+</a>
+Ne touche à rien d'autre dans aucun des deux fichiers.
+
+Next, I can add order confirmation numbers generated when a customer places an order, so they have a reference to mention on Telegram if they need to follow up. Would you like me to do that?
+
+
+
+Search tools…
+
+
+

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
+import { toast } from "sonner";
 import { Send, ShieldAlert, Wallet, Landmark, Lock, Timer, Zap, Truck, MapPin, Bitcoin } from "lucide-react";
 import { findProduct, formatPrice, onImageError, productCard } from "@/lib/data";
 import { useMyList } from "@/lib/storage";
@@ -27,7 +28,16 @@ export function OrderSummary() {
   }, [items]);
 
   const lines = buildOrderLines(items, products);
-  const url = buildTelegramUrl(buildTelegramMessage(lines, deliveryAddress, deliveryMethod));
+  const message = buildTelegramMessage(lines, deliveryAddress, deliveryMethod);
+  const url = buildTelegramUrl(message);
+  const handleTelegramClick = async () => {
+    try {
+      await navigator.clipboard.writeText(message);
+      toast.success("Order copied — paste it if it doesn't appear automatically.");
+    } catch {
+      // Clipboard may be unavailable; Telegram link still opens normally.
+    }
+  };
 
   if (lines.length === 0) {
     return (
@@ -273,6 +283,7 @@ export function OrderSummary() {
           href={url}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={handleTelegramClick}
           className="flex items-center justify-center gap-2 w-full bg-black text-white py-4 text-[15px] font-semibold hover:bg-[#1a1a1a] transition-colors"
         >
           <Send className="h-4 w-4" />

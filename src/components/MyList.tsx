@@ -152,7 +152,7 @@ export function MyList() {
           className="w-full inline-flex items-center justify-center gap-2 bg-black text-white rounded-none py-5 text-[16px] font-bold hover:opacity-90 transition-opacity"
         >
           <Send className="h-4 w-4" strokeWidth={2} />
-          Contact us on Telegram
+          Place Order
         </Link>
         <p className="text-center text-xs text-[#9E9E9E]">
           Review your order before sending.
