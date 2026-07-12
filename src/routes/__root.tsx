@@ -4,6 +4,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
+  useRouterState,
 } from "@tanstack/react-router";
 import { useEffect } from "react";
 
@@ -83,20 +84,30 @@ import { Toaster } from "@/components/ui/sonner";
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const isListing = useRouterState({
+    select: (s) => s.matches.some((m) => m.routeId === "/$slug"),
+  });
 
   return (
     <QueryClientProvider client={queryClient}>
-      <AgeGate>
-        <div className="flex flex-col bg-white">
-          <Header />
-          <main className="flex-1 w-full">
-            <Outlet />
-          </main>
-          <Footer />
-          <MobileBottomNav />
-        </div>
-      </AgeGate>
-      <Toaster />
+      {isListing ? (
+        <>
+          <Outlet />
+          <Toaster />
+        </>
+      ) : (
+        <AgeGate>
+          <div className="flex flex-col bg-white">
+            <Header />
+            <main className="flex-1 w-full">
+              <Outlet />
+            </main>
+            <Footer />
+            <MobileBottomNav />
+          </div>
+        </AgeGate>
+      )}
+      {!isListing && <Toaster />}
     </QueryClientProvider>
   );
 }
