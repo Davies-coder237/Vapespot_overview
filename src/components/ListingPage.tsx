@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import { Link } from "@tanstack/react-router";
+import schemas from "@/data/schema-data.json";
 
 interface Listing {
   slug: string;
@@ -16,6 +18,19 @@ interface ListingPageProps {
 }
 
 export function ListingPage({ listing }: ListingPageProps) {
+  useEffect(() => {
+    const entry = schemas.find((s) => s.slug === listing.slug);
+    if (!entry) return;
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = `schema-${listing.slug}`;
+    script.textContent = JSON.stringify(entry.schema);
+    document.head.appendChild(script);
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, [listing.slug]);
+
   return (
     <div className="min-h-screen bg-white flex flex-col items-center px-4 py-10">
       <div className="w-full max-w-sm flex flex-col items-center gap-6">
