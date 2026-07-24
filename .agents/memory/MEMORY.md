@@ -1,0 +1,2 @@
+- [TanStack Router scripts head](tanstack-scripts-head.md) — scripts: [] dans head() ne fonctionne pas en v1.170.x, utiliser useEffect dans le composant
+- [VapeSpot listing system](vapespot-listings.md) — architecture des 101 pages listing et règles d'ajout
