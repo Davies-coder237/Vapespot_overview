@@ -2,15 +2,15 @@
   {
     "slug": "vape-shop-aus",
     "businessName": "Vape Shop AUS",
-    "category": "Vaporizer store",
+    "category": "Vaporiser store",
     "cityTag": "Newtown NSW",
     "address": "567 A36, Newtown NSW 2042, Australia",
-    "description": "Located in Newtown, NSW, Vape Shop AUS offers a curated selection of vaporizers, mods, pods, and e-liquids to suit every style and budget. Our knowledgeable team is here to help you find the right device — no pressure, just honest advice from people who actually vape."
+    "description": "Located in Newtown, NSW, Vape Shop AUS offers a curated selection of vaporisers, mods, pods, and e-liquids to suit every style and budget. Our knowledgeable team is here to help you find the right device — no pressure, just honest advice from people who actually vape."
   },
   {
     "slug": "vapespot-sydney-cbd",
     "businessName": "VapeSpot Sydney CBD",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Sydney CBD NSW",
     "address": "117 Clarence St, Sydney NSW 2000, Australia",
     "hours": "Open 24/7",
@@ -19,7 +19,7 @@
   {
     "slug": "vapespot-parramatta",
     "businessName": "VapeSpot Parramatta",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Parramatta NSW",
     "address": "159 Church St, Parramatta NSW 2150, Australia",
     "hours": "Open 24/7",
@@ -28,7 +28,7 @@
   {
     "slug": "vapespot-blacktown",
     "businessName": "VapeSpot Blacktown",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Blacktown NSW",
     "address": "6 Alpha St, Blacktown NSW 2148, Australia",
     "hours": "Open 24/7",
@@ -37,7 +37,7 @@
   {
     "slug": "vapespot-liverpool",
     "businessName": "VapeSpot Liverpool",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Liverpool NSW",
     "address": "146 Macquarie St, Liverpool NSW 2170",
     "hours": "Open 24/7",
@@ -46,7 +46,7 @@
   {
     "slug": "vapespot-chatswood",
     "businessName": "VapeSpot Chatswood",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Chatswood NSW",
     "address": "Freechoice Shop 33 Chatswood Interchange, 436 Victoria Ave, Chatswood NSW 2067, Australia",
     "hours": "Open 24/7",
@@ -55,7 +55,7 @@
   {
     "slug": "vapespot-bondi-junction",
     "businessName": "VapeSpot Bondi Junction",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Bondi Junction NSW",
     "address": "9/157 Oxford St, Bondi Junction NSW 2022, Australia",
     "hours": "Open 24/7",
@@ -64,7 +64,7 @@
   {
     "slug": "vapespot-surry-hills",
     "businessName": "VapeSpot Surry Hills",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Surry Hills NSW",
     "address": "74 Devonshire St, Surry Hills NSW 2010, Australia",
     "hours": "Open 24/7",
@@ -73,7 +73,7 @@
   {
     "slug": "vapespot-newtown",
     "businessName": "VapeSpot Newtown",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Newtown NSW",
     "address": "215 King St, Newtown NSW 2042, Australia",
     "hours": "Open 24/7",
@@ -82,7 +82,7 @@
   {
     "slug": "vapespot-penrith",
     "businessName": "VapeSpot Penrith",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Penrith NSW",
     "address": "133 Henry St, Penrith NSW 2750, Australia",
     "hours": "Open 24/7",
@@ -91,7 +91,7 @@
   {
     "slug": "vapespot-campbelltown",
     "businessName": "VapeSpot Campbelltown",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Campbelltown NSW",
     "address": "42 Queen St, Campbelltown NSW 2560, Australia",
     "hours": "Open 24/7",
@@ -100,7 +100,7 @@
   {
     "slug": "vapespot-hornsby",
     "businessName": "VapeSpot Hornsby",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Hornsby NSW",
     "address": "1/16 Hunter St, Hornsby NSW 2077, Australia",
     "hours": "Open 24/7",
@@ -109,7 +109,7 @@
   {
     "slug": "vapespot-miranda",
     "businessName": "VapeSpot Miranda",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Miranda NSW",
     "address": "Westfield Miranda, Level 4/600 Kingsway, Miranda NSW 2228",
     "hours": "Open 24/7",
@@ -118,7 +118,7 @@
   {
     "slug": "vapespot-bondi-beach",
     "businessName": "VapeSpot Bondi Beach",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Bondi Beach NSW",
     "address": "49 Francis St, Bondi Beach NSW 2026, Australia",
     "hours": "Open 24/7",
@@ -127,7 +127,7 @@
   {
     "slug": "vapespot-manly",
     "businessName": "VapeSpot Manly",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Manly NSW",
     "address": "N Steyne, Manly NSW 2095, Australia",
     "hours": "Open 24/7",
@@ -136,7 +136,7 @@
   {
     "slug": "vapespot-cronulla",
     "businessName": "VapeSpot Cronulla",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Cronulla NSW",
     "address": "1/57 Cronulla St, Cronulla NSW 2230, Australia",
     "hours": "Open 24/7",
@@ -145,7 +145,7 @@
   {
     "slug": "vapespot-neutral-bay",
     "businessName": "VapeSpot Neutral Bay",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Neutral Bay NSW",
     "address": "116 Military Rd, Neutral Bay NSW 2089",
     "hours": "Open 24/7",
@@ -154,7 +154,7 @@
   {
     "slug": "vapespot-beverly-hills",
     "businessName": "VapeSpot Beverly Hills",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Beverly Hills NSW",
     "address": "56 Kingsway, Beverly Hills NSW 2209, Australia",
     "hours": "Open 24/7",
@@ -163,7 +163,7 @@
   {
     "slug": "vapespot-cabramatta",
     "businessName": "VapeSpot Cabramatta",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Cabramatta NSW",
     "address": "8 Dutton Ln, Cabramatta NSW 2166",
     "hours": "Open 24/7",
@@ -172,7 +172,7 @@
   {
     "slug": "vapespot-burwood",
     "businessName": "VapeSpot Burwood",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Burwood NSW",
     "address": "234 Burwood Rd, Burwood NSW 2134, Australia",
     "hours": "Open 24/7",
@@ -181,7 +181,7 @@
   {
     "slug": "vapespot-hurstville",
     "businessName": "VapeSpot Hurstville",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Hurstville NSW",
     "address": "Australia St, Hurstville NSW 2220, Australia",
     "hours": "Open 24/7",
@@ -190,7 +190,7 @@
   {
     "slug": "vapespot-strathfield",
     "businessName": "VapeSpot Strathfield",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Strathfield NSW",
     "address": "Suite1/26A The Boulevarde, Strathfield NSW 2135, Australia",
     "hours": "Open 24/7",
@@ -199,7 +199,7 @@
   {
     "slug": "vapespot-epping",
     "businessName": "VapeSpot Epping",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Epping NSW",
     "address": "28 Langston Pl, Epping NSW 2121",
     "hours": "Open 24/7",
@@ -208,7 +208,7 @@
   {
     "slug": "vapespot-castle-hill",
     "businessName": "VapeSpot Castle Hill",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Castle Hill NSW",
     "address": "26B Old Northern Rd, Baulkham Hills NSW 2153, Australia",
     "hours": "Open 24/7",
@@ -217,7 +217,7 @@
   {
     "slug": "vapespot-mosman",
     "businessName": "VapeSpot Mosman",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Mosman NSW",
     "address": "T9/3 Brady St, Mosman NSW 2088",
     "hours": "Open 24/7",
@@ -226,7 +226,7 @@
   {
     "slug": "vapespot-redfern",
     "businessName": "VapeSpot Redfern",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Redfern NSW",
     "address": "158 Redfern St, Redfern NSW 2016, Australia",
     "hours": "Open 24/7",
@@ -235,7 +235,7 @@
   {
     "slug": "vapespot-melbourne-cbd",
     "businessName": "VapeSpot Melbourne CBD",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Melbourne CBD VIC",
     "address": "1 Bank St, South Melbourne VIC 3205, Australia",
     "hours": "Open 24/7",
@@ -244,7 +244,7 @@
   {
     "slug": "vapespot-st-kilda",
     "businessName": "VapeSpot St Kilda",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "St Kilda VIC",
     "address": "117 Acland St, St Kilda VIC 3182",
     "hours": "Open 24/7",
@@ -253,7 +253,7 @@
   {
     "slug": "vapespot-richmond",
     "businessName": "VapeSpot Richmond",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Richmond VIC",
     "address": "620 Victoria St, Richmond VIC 3121",
     "hours": "Open 24/7",
@@ -262,7 +262,7 @@
   {
     "slug": "vapespot-brunswick",
     "businessName": "VapeSpot Brunswick",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Brunswick VIC",
     "address": "Sparta Pl, Brunswick VIC 3056",
     "hours": "Open 24/7",
@@ -271,7 +271,7 @@
   {
     "slug": "vapespot-fitzroy",
     "businessName": "VapeSpot Fitzroy",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Fitzroy VIC",
     "address": "75 Rose St, Fitzroy VIC 3065",
     "hours": "Open 24/7",
@@ -280,7 +280,7 @@
   {
     "slug": "vapespot-south-yarra",
     "businessName": "VapeSpot South Yarra",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "South Yarra VIC",
     "address": "Toorak Rd, South Yarra VIC 3141",
     "hours": "Open 24/7",
@@ -289,7 +289,7 @@
   {
     "slug": "vapespot-carlton",
     "businessName": "VapeSpot Carlton",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Carlton VIC",
     "address": "194 Elgin St, Carlton VIC 3053",
     "hours": "Open 24/7",
@@ -298,7 +298,7 @@
   {
     "slug": "vapespot-collingwood",
     "businessName": "VapeSpot Collingwood",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Collingwood VIC",
     "address": "428 Smith St, Collingwood VIC 3066",
     "hours": "Open 24/7",
@@ -307,7 +307,7 @@
   {
     "slug": "vapespot-footscray",
     "businessName": "VapeSpot Footscray",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Footscray VIC",
     "address": "18 Albert St, Footscray VIC 3011",
     "hours": "Open 24/7",
@@ -316,7 +316,7 @@
   {
     "slug": "vapespot-prahran",
     "businessName": "VapeSpot Prahran",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Prahran VIC",
     "address": "28 Regent St, Prahran VIC 3181",
     "hours": "Open 24/7",
@@ -325,7 +325,7 @@
   {
     "slug": "vapespot-dandenong",
     "businessName": "VapeSpot Dandenong",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Dandenong VIC",
     "address": "McCrae St, Dandenong VIC 3175",
     "hours": "Open 24/7",
@@ -334,7 +334,7 @@
   {
     "slug": "vapespot-frankston",
     "businessName": "VapeSpot Frankston",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Frankston VIC",
     "address": "330 Cranbourne Rd, Frankston VIC 3199",
     "hours": "Open 24/7",
@@ -343,7 +343,7 @@
   {
     "slug": "vapespot-box-hill",
     "businessName": "VapeSpot Box Hill",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Box Hill VIC",
     "address": "1 Main St, Box Hill VIC 3128",
     "hours": "Open 24/7",
@@ -352,7 +352,7 @@
   {
     "slug": "vapespot-glen-waverley",
     "businessName": "VapeSpot Glen Waverley",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Glen Waverley VIC",
     "address": "Ground Floor of Novotel, 285 Springvale Rd, Glen Waverley VIC 3150",
     "hours": "Open 24/7",
@@ -361,7 +361,7 @@
   {
     "slug": "vapespot-werribee",
     "businessName": "VapeSpot Werribee",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Werribee VIC",
     "address": "143/145 Watton St, Werribee VIC 3030",
     "hours": "Open 24/7",
@@ -370,7 +370,7 @@
   {
     "slug": "vapespot-doncaster",
     "businessName": "VapeSpot Doncaster",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Doncaster VIC",
     "address": "690 Doncaster Rd, Doncaster VIC 3108",
     "hours": "Open 24/7",
@@ -379,7 +379,7 @@
   {
     "slug": "vapespot-preston",
     "businessName": "VapeSpot Preston",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Preston VIC",
     "address": "High St, Preston VIC 3072",
     "hours": "Open 24/7",
@@ -388,7 +388,7 @@
   {
     "slug": "vapespot-bundoora",
     "businessName": "VapeSpot Bundoora",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Bundoora VIC",
     "address": "Bundoora Square, Bundoora VIC 3083",
     "hours": "Open 24/7",
@@ -397,7 +397,7 @@
   {
     "slug": "vapespot-cheltenham",
     "businessName": "VapeSpot Cheltenham",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Cheltenham VIC",
     "address": "1239 Nepean Hwy, Cheltenham VIC 3192",
     "hours": "Open 24/7",
@@ -406,7 +406,7 @@
   {
     "slug": "vapespot-fountain-gate",
     "businessName": "VapeSpot Fountain Gate",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Fountain Gate VIC",
     "address": "Shop 2107/352 Princes Hwy, Narre Warren VIC 3805",
     "hours": "Open 24/7",
@@ -415,7 +415,7 @@
   {
     "slug": "vapespot-moonee-ponds",
     "businessName": "VapeSpot Moonee Ponds",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Moonee Ponds VIC",
     "address": "Central, Homer St &, Eddy St, Moonee Ponds VIC 3039",
     "hours": "Open 24/7",
@@ -424,7 +424,7 @@
   {
     "slug": "vapespot-hawthorn",
     "businessName": "VapeSpot Hawthorn",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Hawthorn VIC",
     "address": "742 Toorak Rd, Hawthorn East VIC 3123",
     "hours": "Open 24/7",
@@ -433,7 +433,7 @@
   {
     "slug": "vapespot-kew",
     "businessName": "VapeSpot Kew",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Kew VIC",
     "address": "Cotham Rd &, High St, Kew VIC 3101",
     "hours": "Open 24/7",
@@ -442,7 +442,7 @@
   {
     "slug": "vapespot-balaclava",
     "businessName": "VapeSpot Balaclava",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Balaclava VIC",
     "address": "208-218 Carlisle St, Balaclava VIC 3183",
     "hours": "Open 24/7",
@@ -451,7 +451,7 @@
   {
     "slug": "vapespot-port-melbourne",
     "businessName": "VapeSpot Port Melbourne",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Port Melbourne VIC",
     "address": "Melbourne Pl, Port Melbourne VIC 3004, Australia",
     "hours": "Open 24/7",
@@ -460,7 +460,7 @@
   {
     "slug": "vapespot-brisbane-cbd",
     "businessName": "VapeSpot Brisbane CBD",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Brisbane CBD QLD",
     "address": "102 Adelaide St, Brisbane City QLD 4000, Australia",
     "hours": "Open 24/7",
@@ -469,7 +469,7 @@
   {
     "slug": "vapespot-fortitude-valley",
     "businessName": "VapeSpot Fortitude Valley",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Fortitude Valley QLD",
     "address": "159 Wickham St, Fortitude Valley QLD 4006, Australia",
     "hours": "Open 24/7",
@@ -478,7 +478,7 @@
   {
     "slug": "vapespot-south-brisbane",
     "businessName": "VapeSpot South Brisbane",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "South Brisbane QLD",
     "address": "Melbourne St, South Brisbane QLD 4101, Australia",
     "hours": "Open 24/7",
@@ -487,7 +487,7 @@
   {
     "slug": "vapespot-chermside",
     "businessName": "VapeSpot Chermside",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Chermside QLD",
     "address": "Gympie Rd, Chermside QLD 4032",
     "hours": "Open 24/7",
@@ -496,7 +496,7 @@
   {
     "slug": "vapespot-indooroopilly",
     "businessName": "VapeSpot Indooroopilly",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Indooroopilly QLD",
     "address": "322 Moggill Rd, Indooroopilly QLD 4068",
     "hours": "Open 24/7",
@@ -505,7 +505,7 @@
   {
     "slug": "vapespot-carindale",
     "businessName": "VapeSpot Carindale",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Carindale QLD",
     "address": "Unit 2/61 Scrub Rd, Carindale QLD 4152",
     "hours": "Open 24/7",
@@ -514,7 +514,7 @@
   {
     "slug": "vapespot-mount-gravatt",
     "businessName": "VapeSpot Mount Gravatt",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Mount Gravatt QLD",
     "address": "55 Creek Rd, Mount Gravatt QLD 4122",
     "hours": "Open 24/7",
@@ -523,7 +523,7 @@
   {
     "slug": "vapespot-toowong",
     "businessName": "VapeSpot Toowong",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Toowong QLD",
     "address": "9 Sherwood Road GA39 TOOWONG VILLAGE, Toowong QLD 4066",
     "hours": "Open 24/7",
@@ -532,7 +532,7 @@
   {
     "slug": "vapespot-newstead",
     "businessName": "VapeSpot Newstead",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Newstead QLD",
     "address": "1/142 Breakfast Creek Rd, Newstead QLD 4006",
     "hours": "Open 24/7",
@@ -541,7 +541,7 @@
   {
     "slug": "vapespot-kangaroo-point",
     "businessName": "VapeSpot Kangaroo Point",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Kangaroo Point QLD",
     "address": "411 Main St, Kangaroo Point QLD 4169",
     "hours": "Open 24/7",
@@ -550,7 +550,7 @@
   {
     "slug": "vapespot-woolloongabba",
     "businessName": "VapeSpot Woolloongabba",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Woolloongabba QLD",
     "address": "264 Ipswich Rd, Woolloongabba QLD 4102",
     "hours": "Open 24/7",
@@ -559,7 +559,7 @@
   {
     "slug": "vapespot-hamilton",
     "businessName": "VapeSpot Hamilton",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Hamilton QLD",
     "address": "39 Hercules St, Hamilton QLD 4007",
     "hours": "Open 24/7",
@@ -568,7 +568,7 @@
   {
     "slug": "vapespot-west-end",
     "businessName": "VapeSpot West End",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "West End QLD",
     "address": "8 Vulture St, West End QLD 4101, Australia",
     "hours": "Open 24/7",
@@ -577,7 +577,7 @@
   {
     "slug": "vapespot-coorparoo",
     "businessName": "VapeSpot Coorparoo",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Coorparoo QLD",
     "address": "300 Old Cleveland Rd, Coorparoo QLD 4151",
     "hours": "Open 24/7",
@@ -586,7 +586,7 @@
   {
     "slug": "vapespot-upper-mount-gravatt",
     "businessName": "VapeSpot Upper Mount Gravatt",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Upper Mount Gravatt QLD",
     "address": "Logan Rd, Upper Mount Gravatt QLD 4122",
     "hours": "Open 24/7",
@@ -595,7 +595,7 @@
   {
     "slug": "vapespot-perth-cbd",
     "businessName": "VapeSpot Perth CBD",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Perth CBD WA",
     "address": "111 St Georges Terrace, Perth WA 6000, Australia",
     "hours": "Open 24/7",
@@ -604,7 +604,7 @@
   {
     "slug": "vapespot-fremantle",
     "businessName": "VapeSpot Fremantle",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Fremantle WA",
     "address": "7/195 Hampton Rd, South Fremantle WA 6162",
     "hours": "Open 24/7",
@@ -613,7 +613,7 @@
   {
     "slug": "vapespot-scarborough",
     "businessName": "VapeSpot Scarborough",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Scarborough WA",
     "address": "Luna Maxi Mart Shopping Centre, 6 Scarborough Beach Rd, Scarborough WA 6019",
     "hours": "Open 24/7",
@@ -622,7 +622,7 @@
   {
     "slug": "vapespot-northbridge",
     "businessName": "VapeSpot Northbridge",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Northbridge WA",
     "address": "163 James St, Northbridge WA 6003",
     "hours": "Open 24/7",
@@ -631,7 +631,7 @@
   {
     "slug": "vapespot-joondalup",
     "businessName": "VapeSpot Joondalup",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Joondalup WA",
     "address": "3 Sundew Rise, Joondalup WA 6027",
     "hours": "Open 24/7",
@@ -640,7 +640,7 @@
   {
     "slug": "vapespot-midland",
     "businessName": "VapeSpot Midland",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Midland WA",
     "address": "307 Great Eastern Hwy, Midland WA 6056",
     "hours": "Open 24/7",
@@ -649,7 +649,7 @@
   {
     "slug": "vapespot-rockingham",
     "businessName": "VapeSpot Rockingham",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Rockingham WA",
     "address": "1 Council Ave, Rockingham WA 6168",
     "hours": "Open 24/7",
@@ -658,7 +658,7 @@
   {
     "slug": "vapespot-subiaco",
     "businessName": "VapeSpot Subiaco",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Subiaco WA",
     "address": "531 Hay St, Subiaco WA 6008",
     "hours": "Open 24/7",
@@ -667,7 +667,7 @@
   {
     "slug": "vapespot-cannington",
     "businessName": "VapeSpot Cannington",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Cannington WA",
     "address": "100 George Way, Cannington WA 6107, Australia",
     "hours": "Open 24/7",
@@ -676,7 +676,7 @@
   {
     "slug": "vapespot-mirrabooka",
     "businessName": "VapeSpot Mirrabooka",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Mirrabooka WA",
     "address": "43 Yirrigan Dr, Mirrabooka WA 6061",
     "hours": "Open 24/7",
@@ -685,7 +685,7 @@
   {
     "slug": "vapespot-morley",
     "businessName": "VapeSpot Morley",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Morley WA",
     "address": "243-253 Walter Rd W, Morley WA 6062",
     "hours": "Open 24/7",
@@ -694,7 +694,7 @@
   {
     "slug": "vapespot-mandurah",
     "businessName": "VapeSpot Mandurah",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Mandurah WA",
     "address": "4 Zephyr Mews, Mandurah WA 6210",
     "hours": "Open 24/7",
@@ -703,7 +703,7 @@
   {
     "slug": "vapespot-adelaide-cbd",
     "businessName": "VapeSpot Adelaide CBD",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Adelaide CBD SA",
     "address": "122 Gouger St, Adelaide SA 5000, Australia",
     "hours": "Open 24/7",
@@ -712,7 +712,7 @@
   {
     "slug": "vapespot-glenelg",
     "businessName": "VapeSpot Glenelg",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Glenelg SA",
     "address": "Partridge Street &, Bath St, Glenelg South SA 5045",
     "hours": "Open 24/7",
@@ -721,7 +721,7 @@
   {
     "slug": "vapespot-norwood",
     "businessName": "VapeSpot Norwood",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Norwood SA",
     "address": "177-197 The Parade, Norwood SA 5067",
     "hours": "Open 24/7",
@@ -730,7 +730,7 @@
   {
     "slug": "vapespot-port-adelaide",
     "businessName": "VapeSpot Port Adelaide",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Port Adelaide SA",
     "address": "178 St Vincent St, Port Adelaide SA 5015",
     "hours": "Open 24/7",
@@ -739,7 +739,7 @@
   {
     "slug": "vapespot-marion",
     "businessName": "VapeSpot Marion",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Marion SA",
     "address": "750 Marion Rd, Marion SA 5043",
     "hours": "Open 24/7",
@@ -748,7 +748,7 @@
   {
     "slug": "vapespot-tea-tree-gully",
     "businessName": "VapeSpot Tea Tree Gully",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Tea Tree Gully SA",
     "address": "1362 North East Road, Tea Tree Gully SA 5091",
     "hours": "Open 24/7",
@@ -757,7 +757,7 @@
   {
     "slug": "vapespot-elizabeth",
     "businessName": "VapeSpot Elizabeth",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Elizabeth SA",
     "address": "1 Philip Hwy, Elizabeth SA 5112",
     "hours": "Open 24/7",
@@ -766,7 +766,7 @@
   {
     "slug": "vapespot-morphett-vale",
     "businessName": "VapeSpot Morphett Vale",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Morphett Vale SA",
     "address": "Cnr Bains & Panalatinga Rds, Morphett Vale SA 5162",
     "hours": "Open 24/7",
@@ -775,7 +775,7 @@
   {
     "slug": "vapespot-salisbury",
     "businessName": "VapeSpot Salisbury",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Salisbury SA",
     "address": "Corner Saints Road &, Main N Rd, Salisbury Plain SA 5109",
     "hours": "Open 24/7",
@@ -784,7 +784,7 @@
   {
     "slug": "vapespot-unley",
     "businessName": "VapeSpot Unley",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Unley SA",
     "address": "204 Unley Rd, Unley SA 5061",
     "hours": "Open 24/7",
@@ -793,7 +793,7 @@
   {
     "slug": "vapespot-canberra-cbd",
     "businessName": "VapeSpot Canberra CBD",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Canberra CBD ACT",
     "address": "148 Bunda St, Canberra ACT 2601, Australia",
     "hours": "Open 24/7",
@@ -802,7 +802,7 @@
   {
     "slug": "vapespot-belconnen",
     "businessName": "VapeSpot Belconnen",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Belconnen ACT",
     "address": "Abode Belconnen, 3 Grazier La, Belconnen ACT 2617",
     "hours": "Open 24/7",
@@ -811,7 +811,7 @@
   {
     "slug": "vapespot-woden",
     "businessName": "VapeSpot Woden",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Woden ACT",
     "address": "98 Corinna St, Phillip ACT 2606",
     "hours": "Open 24/7",
@@ -820,7 +820,7 @@
   {
     "slug": "vapespot-tuggeranong",
     "businessName": "VapeSpot Tuggeranong",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Tuggeranong ACT",
     "address": "5 Kingscote Cres, Bonython ACT 2905",
     "hours": "Open 24/7",
@@ -829,7 +829,7 @@
   {
     "slug": "vapespot-gungahlin",
     "businessName": "VapeSpot Gungahlin",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Gungahlin ACT",
     "address": "Gungahlin Pl, Gungahlin ACT 2912",
     "hours": "Open 24/7",
@@ -838,7 +838,7 @@
   {
     "slug": "vapespot-surfers-paradise",
     "businessName": "VapeSpot Surfers Paradise",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Surfers Paradise QLD",
     "address": "3/3290 Surfers Paradise Blvd, Surfers Paradise QLD 4217, Australia",
     "hours": "Open 24/7",
@@ -847,7 +847,7 @@
   {
     "slug": "vapespot-southport",
     "businessName": "VapeSpot Southport",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Southport QLD",
     "address": "515 Olsen Ave, Southport QLD 4215, Australia",
     "hours": "Open 24/7",
@@ -856,7 +856,7 @@
   {
     "slug": "vapespot-broadbeach",
     "businessName": "VapeSpot Broadbeach",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Broadbeach QLD",
     "address": "Broadbeach Blvd, Broadbeach QLD 4218, Australia",
     "hours": "Open 24/7",
@@ -865,7 +865,7 @@
   {
     "slug": "vapespot-burleigh-heads",
     "businessName": "VapeSpot Burleigh Heads",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Burleigh Heads QLD",
     "address": "25 The Esplanade, Burleigh Heads QLD 4218, Australia",
     "hours": "Open 24/7",
@@ -874,7 +874,7 @@
   {
     "slug": "vapespot-coolangatta",
     "businessName": "VapeSpot Coolangatta",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Coolangatta QLD",
     "address": "Shop 14/52/58 Marine Parade, Coolangatta QLD 4225",
     "hours": "Open 24/7",
@@ -883,7 +883,7 @@
   {
     "slug": "vapespot-hobart-cbd",
     "businessName": "VapeSpot Hobart CBD",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Hobart CBD TAS",
     "address": "111 Macquarie St, Hobart TAS 7000, Australia",
     "hours": "Open 24/7",
@@ -892,7 +892,7 @@
   {
     "slug": "vapespot-sandy-bay",
     "businessName": "VapeSpot Sandy Bay",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Sandy Bay TAS",
     "address": "Corner of TT Flynn Street and, 2 Churchill Ave, Sandy Bay TAS 7005",
     "hours": "Open 24/7",
@@ -901,7 +901,7 @@
   {
     "slug": "vapespot-darwin-city",
     "businessName": "VapeSpot Darwin City",
-    "category": "Vaporizer Store",
+    "category": "Vaporiser Store",
     "cityTag": "Darwin City NT",
     "address": "Westlane Arcade, 3/27 The Mall, Darwin City NT 0800, Australia",
     "hours": "Open 24/7",
