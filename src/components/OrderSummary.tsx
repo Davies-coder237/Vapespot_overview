@@ -246,7 +246,7 @@ export function OrderSummary() {
         </div>
 
         {/* Methods */}
-        <div className="grid grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
           <div className="flex items-center gap-1.5 md:gap-4">
             <div className="h-9 w-9 md:h-16 md:w-16 lg:h-[72px] lg:w-[72px] rounded-full bg-[#DDD6FF] flex items-center justify-center text-[#5B3DF5] shrink-0">
               <Wallet className="h-4 w-4 md:h-8 md:w-8 lg:h-9 lg:w-9" />
