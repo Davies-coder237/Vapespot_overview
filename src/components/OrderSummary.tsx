@@ -3,7 +3,8 @@ import { Link } from "@tanstack/react-router";
 import { toast } from "sonner";
 import { Send, ShieldAlert, Wallet, Landmark, Lock, Timer, Zap, Truck, MapPin, Bitcoin, Gift } from "lucide-react";
 import { findProduct, formatPrice, onImageError, productCard } from "@/lib/data";
-import { useMyList } from "@/lib/storage";
+import { captureClickId, useMyList } from "@/lib/storage";
+import { trackPopcashConversion } from "@/lib/conversion";
 import type { Product } from "@/lib/types";
 import {
   buildOrderLines,
@@ -27,10 +28,18 @@ export function OrderSummary() {
     return () => { cancelled = true; };
   }, [items]);
 
+  // Un visiteur pub qui atteint le panier = micro-conversion (Conv. 1 PopCash)
+  useEffect(() => {
+    captureClickId();
+    trackPopcashConversion(1);
+  }, []);
+
   const lines = buildOrderLines(items, products);
   const message = buildTelegramMessage(lines, deliveryAddress, deliveryMethod);
   const url = buildTelegramUrl(message);
   const handleTelegramClick = async () => {
+    // Clic "Contact us on Telegram" = tentative de commande (Conv. 2 PopCash)
+    trackPopcashConversion(2);
     try {
       await navigator.clipboard.writeText(message);
       toast.success("Order copied — paste it if it doesn't appear automatically.");

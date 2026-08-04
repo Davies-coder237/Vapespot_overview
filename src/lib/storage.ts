@@ -4,6 +4,7 @@ import type { ListItem } from "./types";
 const KEYS = {
   age: "ageVerified",
   list: "vape:my-list",
+  clickId: "vape:click-id",
 } as const;
 
 function read<T>(key: string, fallback: T): T {
@@ -27,6 +28,22 @@ function write<T>(key: string, value: T) {
 function hasAdBypass(): boolean {
   if (typeof window === "undefined") return false;
   return new URLSearchParams(window.location.search).get("age") === "18";
+}
+
+// Conversion tracking PopCash : on garde le clickid de la campagne pub
+// (reçu via l'URL ?clickid=[clickid]) pour le renvoyer à PopCash plus tard
+// quand le visiteur atteint une étape clé (panier, envoi de commande).
+export function captureClickId(): string | null {
+  if (typeof window === "undefined") return null;
+  const id = new URLSearchParams(window.location.search).get("clickid");
+  if (id) {
+    window.localStorage.setItem(KEYS.clickId, JSON.stringify(id));
+  }
+  return getClickId();
+}
+
+export function getClickId(): string | null {
+  return read<string | null>(KEYS.clickId, null);
 }
 
 export function useAgeVerified() {
