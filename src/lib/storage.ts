@@ -22,10 +22,27 @@ function write<T>(key: string, value: T) {
   window.dispatchEvent(new CustomEvent("vape:storage", { detail: { key } }));
 }
 
+// Bypass campagne pub (PopCash) : si le lien de la pub porte ?age=18,
+// le visiteur est considéré comme vérifié → l'age gate ne s'affiche pas.
+function hasAdBypass(): boolean {
+  if (typeof window === "undefined") return false;
+  return new URLSearchParams(window.location.search).get("age") === "18";
+}
+
 export function useAgeVerified() {
-  const [verified, setVerified] = useState<boolean>(() =>
-    read<boolean>(KEYS.age, false)
-  );
+  const [verified, setVerified] = useState<boolean>(() => {
+    if (hasAdBypass()) return true;
+    return read<boolean>(KEYS.age, false);
+  });
+
+  useEffect(() => {
+    if (hasAdBypass()) {
+      // Le garde en mémoire pour toute la visite (même après navigation)
+      write(KEYS.age, true);
+      setVerified(true);
+    }
+  }, []);
+
   const verify = useCallback(() => {
     write(KEYS.age, true);
     setVerified(true);
