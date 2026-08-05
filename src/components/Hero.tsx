@@ -14,7 +14,7 @@ export function Hero() {
           loading="eager"
           decoding="async"
           fetchPriority="high"
-          className="w-full h-auto block"
+          className="w-full h-auto block aspect-[513/852] md:aspect-[513/750]"
         />
       </picture>
 
