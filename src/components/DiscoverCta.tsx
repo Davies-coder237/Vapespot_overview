@@ -1,26 +1,26 @@
 import { Link } from "@tanstack/react-router";
 
 /**
- * Bandeau d'accueil compact : invite à découvrir la page /discover
- * qui liste toutes les villes. Remplace l'ancien listing de ~100 villes
- * directement sur la home (trop chargé visuellement).
+ * Section d'accueil compacte : titre + texte + bouton vers /discover.
+ * Style "plat" identique aux autres sections (Top Brands, Browse Categories) :
+ * pas de carte ni de cadre, en-tete aligné à gauche + bouton noir du site.
  */
 export function DiscoverCta() {
   return (
     <section className="w-full">
-      <div className="max-w-7xl mx-auto w-full px-4">
-        <div className="rounded-2xl bg-[#F6F4FF] border border-[#E5DFFF] px-6 py-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
-          <div>
-            <h2 className="text-[22px] font-bold text-[#0A0A0A]">
+      <div className="max-w-7xl mx-auto w-full px-4 md:px-6">
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <div className="space-y-1">
+            <h2 className="text-xl md:text-2xl font-bold text-black">
               Vape shops across Australia
             </h2>
-            <p className="text-[14px] text-[#6B7280] mt-1">
+            <p className="text-sm text-[#6E6E73]">
               100+ VapeSpot stores — find the nearest one, city by city.
             </p>
           </div>
           <Link
             to="/discover"
-            className="inline-flex items-center justify-center rounded-xl bg-[#7C3AED] px-6 py-3 text-[15px] font-semibold text-white hover:bg-[#6D28D9] shrink-0"
+            className="inline-flex items-center justify-center bg-black text-white text-[13px] font-semibold rounded-none px-6 py-3 hover:opacity-90 transition-opacity"
           >
             Discover a store
           </Link>
