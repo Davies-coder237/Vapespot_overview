@@ -93,6 +93,25 @@ async function main() {
     );
   }
 
+  console.log("\n=== 2b) SEARCH ANALYTICS — TOP REQUÊTES (ce qui ramène des clients) ===");
+  const sq = await gscJson(`/webmasters/v3/sites/${encodeURIComponent(site)}/searchAnalytics/query`, access, "POST", {
+    startDate: iso(90),
+    endDate: iso(0),
+    dimensions: ["query"],
+    rowLimit: 25,
+    type: "web",
+  });
+  if (!sq.ok) { console.error("Top requêtes KO:", JSON.stringify(sq.data)); }
+  else {
+    const rows = sq.data.rows || [];
+    console.log(`${rows.length} requêtes ont apporté des impressions/clics :`);
+    rows.forEach((r) =>
+      console.log(
+        `   "${r.keys[0]}"  — ${r.clicks} clics / ${r.impressions} impressions / pos moy ${r.position ? r.position.toFixed(1) : "-"}`
+      )
+    );
+  }
+
   console.log("\n=== 3) URL INSPECTION — quelques pages ville ===");
   const urls = [
     "https://vapespot.store/",
@@ -103,10 +122,15 @@ async function main() {
     "https://vapespot.store/vapespot-perth-cbd",
   ];
   for (const u of urls) {
-    const ins = await gscJson("/v1/urlInspection/index:inspect", access, "POST", {
-      inspectionUrl: u,
-      siteUrl: site,
+    // NOTE : l'URL Inspection vit sur searchconsole.googleapis.com (pas www.googleapis.com)
+    const resp = await fetch("https://searchconsole.googleapis.com/v1/urlInspection/index:inspect", {
+      method: "POST",
+      headers: { Authorization: "Bearer " + access, "Content-Type": "application/json" },
+      body: JSON.stringify({ inspectionUrl: u, siteUrl: site }),
     });
+    const raw = await resp.text();
+    let ins = { ok: resp.ok, status: resp.status, data: {} };
+    try { ins.data = JSON.parse(raw); } catch { ins.data = raw; }
     if (!ins.ok) {
       console.log(`   ${u}  — INSPECTION KO: ${ins.status}`);
       continue;

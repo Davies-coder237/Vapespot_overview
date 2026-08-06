@@ -122,7 +122,97 @@ for (const listing of listings) {
   }
 }
 
-console.log(`\n✅ ${count} pages statiques générées dans dist/`);
+// ════ 4. Pages produit statiques (une par produit de search.json) ════
+// Même logique que les villes : un index.html unique par produit, avec
+// title/description/JSON-LD Product → Google voit du contenu direct.
+const searchIndex = JSON.parse(
+  readFileSync(join(ROOT, "public", "data", "search.json"), "utf-8")
+);
+
+const leafCache = new Map();
+function loadLeaf(file) {
+  if (!leafCache.has(file)) {
+    leafCache.set(
+      file,
+      JSON.parse(readFileSync(join(ROOT, "public", "data", file), "utf-8"))
+    );
+  }
+  return leafCache.get(file);
+}
+
+// Assets du build réutilisés (une seule fois, produits partagent le template)
+const prodScriptM = template.match(
+  /<script type="module"[^>]+src="([^"]+)"[^>]*><\/script>/
+);
+const prodCssM = template.match(
+  /<link[^>]+rel="stylesheet"[^>]+href="([^"]+)"[^>]*\/?>/
+);
+const prodScriptTag = prodScriptM ? prodScriptM[0] : "";
+const prodCssTag = prodCssM ? prodCssM[0] : "";
+
+// Ordre de préférence des specs pour construire une description unique.
+const PRODUCT_SPEC_ORDER = [
+  "puff_count",
+  "puffs",
+  "flavor",
+  "nicotine_concentration",
+  "nicotine_strength",
+  "e-liquid_capacity",
+  "e-liquid_capacity_ml",
+  "battery_capacity",
+  "battery_capacity_mah",
+  "volume",
+  "strength",
+];
+
+let prodCount = 0;
+const seenIds = new Set();
+for (const entry of searchIndex) {
+  if (!entry.id || seenIds.has(String(entry.id))) continue;
+  seenIds.add(String(entry.id));
+
+  const leaf = loadLeaf(entry.file);
+  const p = leaf.products.find((x) => x.id === entry.id);
+  if (!p) continue;
+
+  const idSafe = String(entry.id).replace(/[\\/]/g, "-");
+  const canonicalUrl = `https://vapespot.store/product/${entry.id}`;
+  const title = buildProductTitle(p);
+  const desc = buildProductDescription(p);
+  const img = p.image?.card || p.image?.thumb || "";
+
+  const headTags = [
+    `<title>${escapeHtml(title)}</title>`,
+    `<meta name="description" content="${escapeHtml(desc)}" />`,
+    `<meta property="og:title" content="${escapeHtml(title)}" />`,
+    `<meta property="og:description" content="${escapeHtml(desc)}" />`,
+    `<meta property="og:url" content="${canonicalUrl}" />`,
+    `<meta property="og:type" content="product" />`,
+    img ? `<meta property="og:image" content="${escapeHtml(img)}" />` : "",
+    `<meta name="twitter:card" content="summary_large_image" />`,
+    `<link rel="canonical" href="${canonicalUrl}" />`,
+    `<link rel="icon" href="/favicon.ico" sizes="48x48" />`,
+    `<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />`,
+    `<link rel="apple-touch-icon" href="/apple-touch-icon.png" />`,
+    `<script type="application/ld+json">${JSON.stringify(
+      buildProductLd(p, canonicalUrl, desc, img)
+    )}</script>`,
+  ].filter(Boolean);
+
+  const headContent = headTags.join("\n    ");
+  const newHead = `${headContent}\n    ${prodScriptTag}\n    ${prodCssTag}\n  </head>`;
+  let html = template.replace(
+    /<head>[\s\S]*?<\/head>/,
+    `<head>\n    ${newHead}`
+  );
+
+  const outDir = join(DIST, "product", idSafe);
+  mkdirSync(outDir, { recursive: true });
+  writeFileSync(join(outDir, "index.html"), html, "utf-8");
+  prodCount++;
+}
+
+console.log(`\n✅ ${count} pages ville + ${prodCount} pages produit statiques générées dans dist/`);
 
 // ── Helper ──────────────────────────────────────────────────────────
 function escapeHtml(str) {
@@ -168,4 +258,80 @@ function buildCityFaq(listing) {
       a: `${business} is ${hours}.`,
     },
   ];
+}
+
+// ── Helpers produits ────────────────────────────────────────────────
+
+/**
+ * Titre produit : "Brand Name" — sans dupliquer la marque déjà dans le nom
+ * (ex. name "RANDM Tornado 15000", brand "RandM" → "RANDM Tornado 15000").
+ * ≤ 58 caractères pour un bon rendu SERP.
+ */
+function buildProductTitle(p) {
+  const name = (p.name || "").trim();
+  const brand = (p.brand || "").trim();
+  let t = "";
+  if (brand && !name.toLowerCase().includes(brand.toLowerCase())) t = brand + " ";
+  t += name;
+  if (!t.trim()) t = "Vape Product";
+  if (t.length > 58) t = t.slice(0, 55).trim() + "…";
+  return `${t} | Vape Spot Australia`;
+}
+
+/** Description méta unique : nom + marque + prix + specs clés + livraison. */
+function buildProductDescription(p) {
+  const specs = p.specs || {};
+  const brand = p.brand ? `${p.brand} ` : "";
+  const name = p.name || "this vape";
+  let lead = `Shop the ${brand}${name}`;
+  if (typeof p.price_aud === "number" && !Number.isNaN(p.price_aud)) {
+    lead += ` from A$${p.price_aud}`;
+  }
+  lead += " at Vape Spot Australia.";
+  const feats = [];
+  for (const k of PRODUCT_SPEC_ORDER) {
+    const v = specs[k];
+    if (v != null && String(v).trim()) feats.push(String(v).trim());
+  }
+  // Termine toujours par la phrase de livraison entière ; on n'ajoute des
+  // specs que si ça tient (aucune coupure en plein mot).
+  const delivery = " Order online with fast courier delivery across Australia.";
+  let sentence = lead;
+  for (const f of feats) {
+    if (`${sentence} ${f}.${delivery}`.length <= 158) {
+      sentence += ` ${f}.`;
+    } else {
+      break;
+    }
+  }
+  return sentence + delivery;
+}
+
+/** JSON-LD Product : nom, image, marque, offre AUD (si prix connu). */
+function buildProductLd(p, url, desc, img) {
+  const ld = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: p.name,
+    description: desc,
+    image: img || undefined,
+    url,
+  };
+  if (p.brand) ld.brand = { "@type": "Brand", name: p.brand };
+  if (p["category"]) ld.category = p.category;
+  if (
+    typeof p.price_aud === "number" &&
+    !Number.isNaN(p.price_aud)
+  ) {
+    const offers = {
+      "@type": "Offer",
+      priceCurrency: "AUD",
+      price: p.price_aud,
+      availability: "https://schema.org/InStock",
+      url,
+    };
+    if (p.source_id) offers.sku = p.source_id;
+    ld.offers = offers;
+  }
+  return ld;
 }
