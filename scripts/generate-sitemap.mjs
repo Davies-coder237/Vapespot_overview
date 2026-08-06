@@ -13,6 +13,7 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 const OUT = join(ROOT, "public", "sitemap.xml");
+const REDIRECTS = join(ROOT, "public", "_redirects");
 
 const DOMAIN = "https://vapespot.store";
 const listings = JSON.parse(
@@ -40,3 +41,14 @@ ${urls.join("\n")}
 
 writeFileSync(OUT, xml, "utf-8");
 console.log(`✅ sitemap.xml régénéré : ${urls.length} URLs (lastmod ${today})`);
+
+// --- _redirects (Cloudflare Pages) ---
+// Idée : Googlebot crawle "/v2slug" (sans slash). Cloudflare répond normalement
+// un 308 vers "/v2slug/" et Google le logue en "Redirect error" → pages non indexées.
+// Ici on force un REWRITE (code 200) : "/v2slug" sert la sortie du dossier "/v2slug/"
+// directement en HTTP 200, SANS redirect. Google crawle donc l'URL telle quelle → indexée.
+const redirects = listings.map(
+  (l) => `/${l.slug}  /${l.slug}/  200`
+);
+writeFileSync(REDIRECTS, redirects.join("\n") + "\n", "utf-8");
+console.log(`✅ _redirects régénéré : ${listings.length} rewrites ville (code 200) — sans redirect, "/v2slug" sert le contenu en HTTP 200`);
