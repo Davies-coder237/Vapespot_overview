@@ -62,6 +62,10 @@ for (const listing of listings) {
     `<meta name="geo.country" content="AU" />`,
     `<meta name="geo.placename" content="${escapeHtml(cityTag || "Australia")}" />`,
     `<link rel="alternate" hreflang="en-AU" href="https://vapespot.store" />`,
+    // Favicons (photo shop, circulaire) — présents sur toutes les pages
+    `<link rel="icon" href="/favicon.ico" sizes="48x48" />`,
+    `<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />`,
+    `<link rel="apple-touch-icon" href="/apple-touch-icon.png" />`,
   ];
 
   // ── Schema.org JSON-LD ─────────────────────────────────────────

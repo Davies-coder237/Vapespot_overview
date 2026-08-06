@@ -9,7 +9,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Vape Spot — Premium Vape Catalogue" },
-      { name: "description", content: "Browse our curated catalogue and order via Telegram." },
+      { name: "description", content: "Curated vape products for the Australian market. Fast courier delivery." },
     ],
   }),
   component: Home,

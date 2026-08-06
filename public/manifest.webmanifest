@@ -1,7 +1,7 @@
 {
   "name": "Vape Spot — Premium Vape Catalogue",
   "short_name": "Vape Spot",
-  "description": "Curated vape products for the Australian market. Order via Telegram.",
+  "description": "Curated vape products for the Australian market. Fast courier delivery.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
