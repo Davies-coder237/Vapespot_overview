@@ -71,7 +71,7 @@ export function buildTelegramMessage(lines: OrderLine[], deliveryAddress = "", d
 
   const payment = [
     "💳  PAYMENT",
-    "    PayID, Bank Transfer or Crypto — payment required before delivery.",
+    "    PayID, Bank Transfer, Crypto or Gift Card — payment required before delivery.",
   ].join("\n");
 
   const footer = "Please reply to confirm this order. Thank you! 🙏";
