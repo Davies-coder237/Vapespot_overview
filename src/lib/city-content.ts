@@ -22,7 +22,14 @@ export function cityName(listing: Listing): string {
 
 export function localBlurb(listing: Listing): string {
   const cn = cityName(listing);
-  const hours = listing.hours ? `Open ${listing.hours.toLowerCase()}` : "Open every day";
+  // Évite le doublon "Open open 24/7" quand hours commence déjà par "Open".
+  let hours: string;
+  if (!listing.hours) {
+    hours = "open every day";
+  } else {
+    const lower = listing.hours.toLowerCase();
+    hours = lower.startsWith("open ") ? lower : `open ${lower}`;
+  }
   return `Planning to vape in ${cn}? VapeSpot's ${listing.cityTag} store is easy to get to and ${hours}. Whether you need a new pod, a spare coil, or just straight advice, the team at ${listing.businessName} will sort you out — no pressure, no upselling.`;
 }
 
