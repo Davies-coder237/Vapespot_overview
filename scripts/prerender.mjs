@@ -176,7 +176,8 @@ for (const entry of searchIndex) {
   if (!p) continue;
 
   const idSafe = String(entry.id).replace(/[\\/]/g, "-");
-  const canonicalUrl = `https://vapespot.store/product/${entry.id}`;
+  // URL AVEC slash final ➡ dossier dist/product/<id>/ servi en 200 direct (fini le 308)
+  const canonicalUrl = `https://vapespot.store/product/${entry.id}/`;
   const title = buildProductTitle(p);
   const desc = buildProductDescription(p);
   const img = p.image?.card || p.image?.thumb || "";

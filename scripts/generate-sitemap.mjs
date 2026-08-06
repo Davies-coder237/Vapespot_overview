@@ -37,8 +37,11 @@ const urls = [
   ...listings.map((l) =>
     url(`${DOMAIN}/${l.slug}`, today, "weekly", "0.8")
   ),
+  // URLs produit AVEC slash final → servies directement en 200 par le dossier
+  // dist/product/<id>/index.html (fini le 308). Les rewrites _redirects étant
+  // limitées (~2000 règles Cloudflare), on NE met PAS de ligne rewrite par produit.
   ...productIds.map((id) =>
-    url(`${DOMAIN}/product/${id}`, today, "weekly", "0.6")
+    url(`${DOMAIN}/product/${id}/`, today, "weekly", "0.6")
   ),
 ];
 
@@ -56,11 +59,12 @@ console.log(`✅ sitemap.xml régénéré : ${urls.length} URLs (lastmod ${today
 // un 308 vers "/v2slug/" et Google le logue en "Redirect error" → pages non indexées.
 // Ici on force un REWRITE (code 200) : "/v2slug" sert la sortie du dossier "/v2slug/"
 // directement en HTTP 200, SANS redirect. Google crawle donc l'URL telle quelle → indexée.
+// ⚠️ LIMITE : Cloudflare Pages n'honore que ~2000 règles dans _redirects.
+// 3052 produits dépassent → on ne met QUE les villes (101, sous la limite).
+// Les produits sont désormais en URL AVEC slash final (sitemap + canonical)
+// servies direct en 200 par le dossier physique → pas besoin de rewrite.
 const redirects = listings.map(
   (l) => `/${l.slug}  /${l.slug}/  200`
 );
-const productRedirects = productIds.map(
-  (id) => `/product/${id}  /product/${id}/  200`
-);
-writeFileSync(REDIRECTS, [...redirects, ...productRedirects].join("\n") + "\n", "utf-8");
-console.log(`✅ _redirects régénéré : ${listings.length} rewrites ville (code 200) — sans redirect, "/v2slug" sert le contenu en HTTP 200`);
+writeFileSync(REDIRECTS, redirects.join("\n") + "\n", "utf-8");
+console.log(`✅ _redirects régénéré : ${redirects.length} rewrites ville (code 200), sous la limite Cloudflare (~2000). Produits : URL slash direct (pas de rewrite).`);

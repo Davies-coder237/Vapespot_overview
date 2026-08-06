@@ -1,0 +1,14 @@
+SEO fix: produits en URL slash final (fini le 308 + limite _redirects depassee)
+
+Diagnostic: Cloudflare Pages ne honore que ~2000 regles dans _redirects.
+On avait 3153 lignes (101 villes + 3052 produits) -> les produits au-dela
+de la regle ~2000 retombaient sur le 308 bloquant (confirmé en prod: idx>1900).
+
+Correctif (URL produit AVEC slash final, servie direct en 200 par le dossier):
+- generate-sitemap.mjs: sitemap /product/<id>/ (slash) + _redirects réduit aux
+  101 villes seules (sous la limite). Plus de ligne rewrite par produit.
+- prerender.mjs: canonical + OG + JSON-LD Product url en trailing slash.
+- Le routeur SPA accepte les deux (verifie), les liens internes restent no-slash.
+
+Resultat attendu: Google ne crawle que /product/<id>/ -> 200 -> indexation,
+fini le 308 pour tous les 3052 produits.
