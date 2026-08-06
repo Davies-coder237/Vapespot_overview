@@ -31,3 +31,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Analyse de bundle (artefact local)
+dist-analyze
+
+# Credentials OAuth Search Console (à ne JAMAIS committer)
+gsc-client.json
+gsc-token.json
