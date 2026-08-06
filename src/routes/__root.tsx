@@ -1,8 +1,7 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
   Link,
-  createRootRouteWithContext,
+  createRootRoute,
   useRouter,
   useRouterState,
 } from "@tanstack/react-router";
@@ -70,7 +69,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
-export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
+export const Route = createRootRoute({
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
@@ -83,31 +82,28 @@ import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { Toaster } from "@/components/ui/sonner";
 
 function RootComponent() {
-  const { queryClient } = Route.useRouteContext();
   const isListing = useRouterState({
     select: (s) => s.matches.some((m) => m.routeId === "/$slug"),
   });
 
-  return (
-    <QueryClientProvider client={queryClient}>
-      {isListing ? (
-        <>
-          <Outlet />
-          <Toaster />
-        </>
-      ) : (
-        <AgeGate>
-          <div className="flex flex-col bg-white">
-            <Header />
-            <main className="flex-1 w-full">
-              <Outlet />
-            </main>
-            <Footer />
-            <MobileBottomNav />
-          </div>
-        </AgeGate>
-      )}
-      {!isListing && <Toaster />}
-    </QueryClientProvider>
+  return isListing ? (
+    <>
+      <Outlet />
+      <Toaster />
+    </>
+  ) : (
+    <>
+      <AgeGate>
+        <div className="flex flex-col bg-white">
+          <Header />
+          <main className="flex-1 w-full">
+            <Outlet />
+          </main>
+          <Footer />
+          <MobileBottomNav />
+        </div>
+      </AgeGate>
+      <Toaster />
+    </>
   );
 }

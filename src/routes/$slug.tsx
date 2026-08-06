@@ -1,18 +1,22 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { ListingPage } from "@/components/ListingPage";
-import listings from "@/data/listings.json";
-import schemas from "@/data/schema-data.json";
 
 export const Route = createFileRoute("/$slug")({
   component: SlugPage,
-  head: ({ params }) => {
+  head: async ({ params }) => {
+    // SEO sur navigation SPA : mêmes imports différés que le loader,
+    // le navigateur met en cache les chunks JSON entre les deux.
+    const [{ default: listings }, { default: schemas }] = await Promise.all([
+      import("@/data/listings.json"),
+      import("@/data/schema-data.json"),
+    ]);
     const listing = listings.find((l) => l.slug === params.slug);
-    const schema = schemas.find((s) => s.slug === params.slug);
     if (!listing) return {};
+    const schema = schemas.find((s) => s.slug === params.slug);
     return {
       meta: [
-        { title: `${listing.businessName} | Vape Spot` },
+        { title: `${listing.businessName} | Vape Spot Australia` },
         { name: "description", content: listing.description },
       ],
       scripts: schema
@@ -25,10 +29,17 @@ export const Route = createFileRoute("/$slug")({
         : [],
     };
   },
-  loader: ({ params }) => {
+  loader: async ({ params }) => {
+    // Chargement différé : les JSON (166 KB) ne pèsent que sur les pages
+    // ville, pas sur le bundle principal chargé à l'accueil.
+    const [{ default: listings }, { default: schemas }] = await Promise.all([
+      import("@/data/listings.json"),
+      import("@/data/schema-data.json"),
+    ]);
     const listing = listings.find((l) => l.slug === params.slug);
     if (!listing) throw notFound();
-    return { listing };
+    const schema = schemas.find((s) => s.slug === params.slug);
+    return { listing, schema };
   },
 });
 
