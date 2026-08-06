@@ -78,6 +78,22 @@ for (const listing of listings) {
     );
   }
 
+  // ── FAQPage JSON-LD unique à la ville (miroir du composant client) ──
+  const faq = buildCityFaq(listing);
+  if (faq.length > 0) {
+    headTags.push(
+      `<script type="application/ld+json">${JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faq.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      })}</script>`
+    );
+  }
+
   // ── Conserver les balises <script> et <link> du build ───────────
   // Les noms de fichiers changent à chaque build (hash)
   const scriptMatch = template.match(/<script type="module"[^>]+src="([^"]+)"[^>]*><\/script>/);
@@ -116,4 +132,40 @@ function escapeHtml(str) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
+}
+
+/** Extrait un nom de ville propre : "Sydney CBD NSW" -> "Sydney CBD". */
+function cityName(listing) {
+  const m = listing.cityTag.match(/^(.+?)\s+(?:NSW|VIC|QLD|WA|SA|TAS|NT|ACT)\b/i);
+  return m ? m[1].trim() : listing.cityTag;
+}
+
+/**
+ * 4 questions propres à la ville — miroir de cityFaq() côté client
+ * (src/lib/city-content.ts) pour que le HTML statique et la SPA
+ * produisent exactement le même JSON-LD.
+ */
+function buildCityFaq(listing) {
+  const cn = cityName(listing);
+  const business = listing.businessName;
+  const hours = listing.hours ?? "open 24/7";
+  const at = listing.address ? `, at ${listing.address}` : "";
+  return [
+    {
+      q: `Is there a vape shop in ${cn}?`,
+      a: `Yes — ${business} is a vaporiser store in ${listing.cityTag}${at}.`,
+    },
+    {
+      q: `What brands does ${business} stock?`,
+      a: `${business} carries a curated range of vaporisers, pods, mods and e-liquids, including the brands featured on vapespot.store.`,
+    },
+    {
+      q: `Does VapeSpot deliver to ${cn}?`,
+      a: `Yes. VapeSpot offers fast courier delivery to ${cn} and nearby suburbs — usually within 30 minutes to 2 hours — or via Australia Post for longer distances.`,
+    },
+    {
+      q: `What are the opening hours in ${cn}?`,
+      a: `${business} is ${hours}.`,
+    },
+  ];
 }

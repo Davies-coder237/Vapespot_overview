@@ -14,19 +14,36 @@ export const Route = createFileRoute("/$slug")({
     const listing = listings.find((l) => l.slug === params.slug);
     if (!listing) return {};
     const schema = schemas.find((s) => s.slug === params.slug);
+    const scripts = schema
+      ? [
+          {
+            type: "application/ld+json",
+            children: JSON.stringify(schema.schema),
+          },
+        ]
+      : [];
+    const { cityFaq } = await import("@/lib/city-content");
+    const faqMainEntity = cityFaq(listing).map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    }));
+    if (faqMainEntity.length > 0) {
+      scripts.push({
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqMainEntity,
+        }),
+      });
+    }
     return {
       meta: [
         { title: `${listing.businessName} | Vape Spot Australia` },
         { name: "description", content: listing.description },
       ],
-      scripts: schema
-        ? [
-            {
-              type: "application/ld+json",
-              children: JSON.stringify(schema.schema),
-            },
-          ]
-        : [],
+      scripts,
     };
   },
   loader: async ({ params }) => {

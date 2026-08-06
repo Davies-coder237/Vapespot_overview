@@ -4,6 +4,7 @@ import { CategoryCarousel } from "@/components/CategoryCarousel";
 import { TrendingProducts } from "@/components/TrendingProducts";
 import { BrandCarousel } from "@/components/BrandCarousel";
 import { Reassurance } from "@/components/Reassurance";
+import { CityLocations } from "@/components/CityLocations";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,6 +25,7 @@ function Home() {
         <TrendingProducts />
         <BrandCarousel />
       </div>
+      <CityLocations />
       <Reassurance />
     </div>
   );
