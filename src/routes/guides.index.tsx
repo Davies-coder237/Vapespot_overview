@@ -18,7 +18,7 @@ export const Route = createFileRoute("/guides/")({
 function GuidesHome() {
   return (
     <div className="w-full bg-white">
-      <div className="mx-auto max-w-7xl px-4 md:px-6 py-12 space-y-10">
+      <div className="mx-auto max-w-3xl px-4 md:px-6 py-12 space-y-10">
         <header className="space-y-2">
           <p className="text-[11px] font-semibold uppercase tracking-widest text-[#7C3AED]">
             Vape Spot Guides
@@ -32,7 +32,7 @@ function GuidesHome() {
           </p>
         </header>
 
-        <ul className="grid gap-4 md:grid-cols-2">
+        <ul className="space-y-4">
           {guides.guides.map((g) => (
             <li key={g.slug}>
               <Link

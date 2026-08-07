@@ -361,6 +361,10 @@ for (const entry of searchIndex) {
     img ? `<meta property="og:image" content="${escapeHtml(img)}" />` : "",
     `<meta name="twitter:card" content="summary_large_image" />`,
     `<link rel="canonical" href="${canonicalUrl}" />`,
+    // Ciblage australien (même signal que villes/guides) : geo + hreflang en-AU
+    `<meta name="geo.country" content="AU" />`,
+    `<meta name="geo.placename" content="Australia" />`,
+    `<link rel="alternate" hreflang="en-AU" href="${canonicalUrl}" />`,
     `<link rel="icon" href="/favicon.ico" sizes="48x48" />`,
     `<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />`,
     `<link rel="apple-touch-icon" href="/apple-touch-icon.png" />`,
