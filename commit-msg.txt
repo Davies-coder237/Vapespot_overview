@@ -1,7 +1,0 @@
-Affichage villes: other locations 2 colonnes mobile + carrousel /discover
-
-- Page ville "Other locations": chaque liste de villes passe en 2 colonnes sur
-  mobile (columns-2, lg:columns-1) -> scroll moitie moins long; PC inchangé
-  (4 colonnes d'Etats).
-- /discover: bandeau horizontal "Most popular stores" (8 CBD, identite
-  carrousel) au-dessus de la grille verticale. StoreLocations accepte un titre.
