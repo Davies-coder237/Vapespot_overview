@@ -190,6 +190,9 @@ for (const listing of listings) {
   // ── Balises head ──────────────────────────────────────────────
   const headTags = [
     `<title>${escapeHtml(title)}</title>`,
+    // Indispensable : SANS ce meta, mobile rend à ~980px puis zoom-out
+    // ("mode ordi" au refresh). La home l'a par défaut via index.html.
+    `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`,
     `<meta name="description" content="${escapeHtml(description)}" />`,
     `<meta property="og:title" content="${escapeHtml(title)}" />`,
     `<meta property="og:description" content="${escapeHtml(description)}" />`,
@@ -347,6 +350,9 @@ for (const entry of searchIndex) {
 
   const headTags = [
     `<title>${escapeHtml(title)}</title>`,
+    // Indispensable : SANS ce meta, mobile rend à ~980px puis zoom-out
+    // ("mode ordi" au refresh).
+    `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`,
     `<meta name="description" content="${escapeHtml(desc)}" />`,
     `<meta property="og:title" content="${escapeHtml(title)}" />`,
     `<meta property="og:description" content="${escapeHtml(desc)}" />`,
