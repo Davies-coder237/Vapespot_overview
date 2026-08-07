@@ -477,6 +477,11 @@ const gIdxHead = [
   `<meta property="og:type" content="website" />`,
   `<meta property="og:url" content="${GUIDE_BASE}" />`,
   `<link rel="canonical" href="${GUIDE_BASE}" />`,
+  // Ciblage australien : hreflang en-AU + geo → signale clairement à Google
+  // que la page est destinée au public d'Australie (pas de signal US).
+  `<link rel="alternate" hreflang="en-AU" href="${GUIDE_BASE}" />`,
+  `<meta name="geo.country" content="AU" />`,
+  `<meta name="geo.placename" content="Australia" />`,
   ...gBaseHead,
   `<script type="application/ld+json">${JSON.stringify({
     "@context": "https://schema.org",
@@ -511,6 +516,11 @@ for (const g of guides.guides) {
     `<meta property="og:type" content="article" />`,
     `<meta property="og:image" content="${escapeHtml(g.hero.image)}" />`,
     `<link rel="canonical" href="${canonical}" />`,
+    // Ciblage australien : hreflang en-AU + geo (même signal que les villes,
+    // requis pour dire à Google que l'article vise le public AU).
+    `<link rel="alternate" hreflang="en-AU" href="${canonical}" />`,
+    `<meta name="geo.country" content="AU" />`,
+    `<meta name="geo.placename" content="Australia" />`,
     ...gBaseHead,
     `<script type="application/ld+json">${JSON.stringify(guideArticleLd(g))}</script>`,
   ];

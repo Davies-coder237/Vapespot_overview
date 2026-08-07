@@ -94,16 +94,16 @@ function GuidePage() {
             </h2>
             <div className="grid gap-3 sm:grid-cols-2">
               {g.links.map((l) => (
-                <Link
+                <a
                   key={l.to}
-                  to={l.to as never}
-                  className="border border-[#E5E7EB] p-4 hover:border-[#7C3AED]/50 transition-colors"
+                  href={l.to}
+                  className="block border border-[#E5E7EB] p-4 hover:border-[#7C3AED]/50 transition-colors"
                 >
                   <span className="block text-sm font-semibold text-[#0A0A0A]">{l.label}</span>
                   <span className="mt-1 inline-flex items-center gap-1 text-[13px] font-medium text-[#7C3AED]">
                     View product →
                   </span>
-                </Link>
+                </a>
               ))}
             </div>
           </section>
@@ -133,12 +133,12 @@ function GuidePage() {
         <div className="border border-[#F0EEFF] bg-[#F0EEFF]/60 p-6 space-y-3">
           <h2 className="text-[18px] font-bold text-[#0A0A0A]">{g.cta.title}</h2>
           <p className="text-[15px] text-[#3F3F46]">{g.cta.text}</p>
-          <Link
-            to={g.cta.to as never}
+          <a
+            href={g.cta.to}
             className="inline-flex items-center justify-center rounded-none bg-black px-5 py-3 text-sm font-semibold text-white hover:opacity-90"
           >
             Browse the catalogue
-          </Link>
+          </a>
         </div>
       </div>
     </div>
