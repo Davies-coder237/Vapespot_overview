@@ -1,0 +1,122 @@
+{
+  "randm vape": {
+    "New South Wales": 0.0,
+    "Victoria": 0.0,
+    "Queensland": 0.0,
+    "Western Australia": 0.0,
+    "South Australia": 0.0,
+    "Tasmania": 0.0,
+    "Australian Capital Territory": 0.0,
+    "Northern Territory": 0.0
+  },
+  "voopoo": {
+    "New South Wales": 21.5,
+    "Victoria": 24.6,
+    "Queensland": 24.9,
+    "Western Australia": 27.6,
+    "South Australia": 1.4,
+    "Tasmania": 0.0,
+    "Australian Capital Territory": 0.0,
+    "Northern Territory": 0.0
+  },
+  "iget vape": {
+    "New South Wales": 7.4,
+    "Victoria": 10.3,
+    "Queensland": 12.3,
+    "Western Australia": 13.3,
+    "South Australia": 14.3,
+    "Tasmania": 24.6,
+    "Australian Capital Territory": 6.4,
+    "Northern Territory": 11.5
+  },
+  "elf bar": {
+    "New South Wales": 15.2,
+    "Victoria": 16.6,
+    "Queensland": 15.8,
+    "Western Australia": 22.5,
+    "South Australia": 28.2,
+    "Tasmania": 0.0,
+    "Australian Capital Territory": 1.7,
+    "Northern Territory": 0.0
+  },
+  "geek bar": {
+    "New South Wales": 12.9,
+    "Victoria": 16.0,
+    "Queensland": 19.0,
+    "Western Australia": 9.8,
+    "South Australia": 18.6,
+    "Tasmania": 23.8,
+    "Australian Capital Territory": 0.0,
+    "Northern Territory": 0.0
+  },
+  "airbar": {
+    "New South Wales": 0.0,
+    "Victoria": 0.0,
+    "Queensland": 0.0,
+    "Western Australia": 0.0,
+    "South Australia": 0.0,
+    "Tasmania": 0.0,
+    "Australian Capital Territory": 0.0,
+    "Northern Territory": 0.0
+  },
+  "hayati": {
+    "New South Wales": 25.7,
+    "Victoria": 24.9,
+    "Queensland": 12.9,
+    "Western Australia": 20.8,
+    "South Australia": 15.7,
+    "Tasmania": 0.0,
+    "Australian Capital Territory": 0.0,
+    "Northern Territory": 0.0
+  },
+  "lost vape": {
+    "New South Wales": 12.2,
+    "Victoria": 16.9,
+    "Queensland": 12.5,
+    "Western Australia": 27.2,
+    "South Australia": 31.2,
+    "Tasmania": 0.0,
+    "Australian Capital Territory": 0.0,
+    "Northern Territory": 0.0
+  },
+  "smok vape": {
+    "New South Wales": 17.0,
+    "Victoria": 17.7,
+    "Queensland": 27.5,
+    "Western Australia": 37.7,
+    "South Australia": 0.0,
+    "Tasmania": 0.0,
+    "Australian Capital Territory": 0.0,
+    "Northern Territory": 0.0
+  },
+  "vaporesso": {
+    "New South Wales": 15.2,
+    "Victoria": 12.5,
+    "Queensland": 19.2,
+    "Western Australia": 18.3,
+    "South Australia": 16.9,
+    "Tasmania": 0.0,
+    "Australian Capital Territory": 17.9,
+    "Northern Territory": 0.0
+  },
+  "disposable vape": {
+    "New South Wales": 11.1,
+    "Victoria": 10.5,
+    "Queensland": 16.6,
+    "Western Australia": 19.8,
+    "South Australia": 16.0,
+    "Tasmania": 15.8,
+    "Australian Capital Territory": 9.1,
+    "Northern Territory": 1.2
+  },
+  "pod vape": {
+    "New South Wales": 14.6,
+    "Victoria": 18.6,
+    "Queensland": 18.2,
+    "Western Australia": 18.9,
+    "South Australia": 13.4,
+    "Tasmania": 16.3,
+    "Australian Capital Territory": 0.0,
+    "Northern Territory": 0.0
+  }
+}

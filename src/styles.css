@@ -142,3 +142,25 @@
     color: var(--color-foreground);
   }
 }
+
+/* ════ Blocs SEO (maillage interne) injectés dans le HTML statique ════
+   .seo-dupe  : doublon d'une section live (TrendingProducts / YouMayAlsoLike)
+                → masqué dès que le JS tourne (html.js), la section live prend le relais.
+   .seo-city  / .seo-stores : maillage sans version live → restent visibles. */
+html.js .seo-block.seo-dupe { display: none; }
+
+.seo-block { padding: 24px 16px; max-width: 1100px; margin-inline: auto; }
+.seo-block h2 { font-size: 1.25rem; font-weight: 700; color: #0a0a0a; margin: 0 0 16px; }
+.seo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 14px; }
+.seo-card {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  text-align: center; text-decoration: none; border: 1px solid #eee;
+  border-radius: 10px; padding: 10px; background: #fff; color: #0a0a0a;
+}
+.seo-card img { width: 100px; height: 100px; object-fit: contain; border-radius: 6px; background: #fafafa; }
+.seo-name { font-size: 0.78rem; font-weight: 600; line-height: 1.2; }
+.seo-price { font-size: 0.75rem; color: #6b21a8; font-weight: 700; }
+.seo-store {
+  display: inline-block; margin: 4px; padding: 6px 12px; border: 1px solid #e5e7eb;
+  border-radius: 999px; font-size: 0.8rem; color: #111827; text-decoration: none; background: #fff;
+}

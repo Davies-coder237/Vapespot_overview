@@ -33,7 +33,142 @@ for (const s of schemas) {
 }
 
 // ── 2. Lire le template ────────────────────────────────────────────
-const template = readFileSync(templatePath, "utf-8");
+// Purge les blocs <section class="seo-block ..."> éventuellement injectés
+// par un run précédent dans dist/index.html → on repart toujours du shell
+// vite propre, même si prerender est relancé sans rebuild (idempotent).
+const template = readFileSync(templatePath, "utf-8")
+  .replace(/<section class="seo-block[\s\S]*?<\/section>/g, "");
+
+// ════ MAILLAGE INTERNE — blocs de liens produits dans le HTML statique ════
+// But : plus aucun produit orphelin. Google découvre les produits en suivant
+// les liens depuis des pages INDEXÉES (home + villes), qui relient vers des
+// produits, eux-mêmes reliés entre eux (« related ») → tout le catalogue est
+// atteignable sans lier les 3052 produits depuis la home.
+// Les blocs .seo-dupe sont masqués quand le JS tourne (html.js .seo-dupe
+// {display:none}) car les composants live (TrendingProducts / YouMayAlsoLike)
+// rendent déjà le même maillage côté interactif. Les autres blocs restent.
+
+const HOME_N = 16, CITY_N = 14, RELATED_N = 12, STORE_N = 8;
+
+// ── Mapping état (abbr -> nom complet Trends) ─────────────────────
+const STATE_ABBR = {
+  NSW: "New South Wales", VIC: "Victoria", QLD: "Queensland",
+  WA: "Western Australia", SA: "South Australia", TAS: "Tasmania",
+  ACT: "Australian Capital Territory", NT: "Northern Territory",
+};
+function stateYears(cityTag) {
+  const m = String(cityTag || "").match(/ (NSW|VIC|QLD|WA|SA|TAS|ACT|NT)$/);
+  return m ? m[1] : null;
+}
+
+// ── Pool « best sellers » (public/data/trending.json, 48 produits) ──
+let trendPool = [];
+try {
+  const tj = JSON.parse(readFileSync(join(ROOT, "public", "data", "trending.json"), "utf-8"));
+  trendPool = (tj.products || []).filter((p) => p && p.id);
+} catch {}
+
+// ── Intérêt par marque × état (scripts/state-top.json, produit par trends-state-map.py) ──
+// Query Trends -> regex marque, pour scorer chaque produit par état.
+const Q2BRAND = [
+  [/voopoo/i, "voopoo"], [/geek\s*bar/i, "geek bar"], [/iget/i, "iget vape"],
+  [/elf\s*bar/i, "elf bar"], [/airbar/i, "airbar"], [/hayati/i, "hayati"],
+  [/lost\s*vape/i, "lost vape"], [/smok/i, "smok vape"], [/pod/i, "pod vape"],
+];
+let stateIndex = null;
+try {
+  stateIndex = JSON.parse(readFileSync(join(ROOT, "scripts", "state-top.json"), "utf-8"));
+} catch {}
+function brandStateScore(brand, abbr) {
+  if (!stateIndex || !abbr) return 0;
+  const st = STATE_ABBR[abbr];
+  if (!st) return 0;
+  let s = 0;
+  for (const [re, q] of Q2BRAND) {
+    if (re.test(brand || "")) s += Number(stateIndex[q]?.[st] || 0);
+  }
+  return Math.round(s * 100);
+}
+// Petit stable hash (slug -> index) pour la rotation déterministe quand un
+// état n'est pas identifiable (aucune donnée Trends).
+function stableIdx(s) {
+  let h = 0;
+  for (const c of String(s || "")) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+  return h;
+}
+
+// Sélection de produits pour une page : re-scorée par marque/état, puis
+// rotation déterministe PAR VILLE (rotationKey = slug) pour que Sydney,
+// Parramatta, Blacktown… affichent des sous-ensembles différents, même au
+// sein d'un même état. La variété de marques est garantie (1 par marque
+// d'abord, max 2 ensuite). Sans état (ou sans Trends) : rotation pure.
+function pickProducts(abbr, pool, count, rotationKey) {
+  const list = pool.map((x, i) => ({ x, i, s: abbr ? brandStateScore(x.brand, abbr) : 0 }));
+  let ordered = list.slice().sort((a, b) => (b.s - a.s) || (a.i - b.i));
+  // rotation par ville (même état => villes différentes)
+  const off = stableIdx(rotationKey || "") % Math.max(1, ordered.length);
+  ordered = ordered.slice(off).concat(ordered.slice(0, off));
+
+  const out = [], used = new Set();
+  // phase 1 : un produit par marque (ordre de `ordered` = état pondéré + rotation)
+  const perBrand = new Map();
+  for (const it of ordered) {
+    const b = it.x.brand || "";
+    if (!perBrand.has(b)) perBrand.set(b, it);
+  }
+  for (const it of perBrand.values()) {
+    if (out.length >= count) break;
+    out.push(it.x); used.add(it.x.id);
+  }
+  // phase 2 : remplir (max 2 par marque) en suivant `ordered`
+  for (const it of ordered) {
+    if (out.length >= count) break;
+    if (used.has(it.x.id)) continue;
+    const b = it.x.brand || "";
+    if ([...out].filter((o) => (o.brand || "") === b).length >= 2) continue;
+    out.push(it.x); used.add(it.x.id);
+  }
+  return out;
+}
+
+// HTML d'une carte produit (image + nom + prix + lien slash final = 200).
+function cardHTML(p) {
+  const url = `https://vapespot.store/product/${p.id}/`;
+  const img = p.image?.card || p.image?.thumb || p.thumb || "";
+  let name = String(p.name || p.series || p.brand || "Vape product").trim();
+  if (name.length > 60) name = name.slice(0, 57).trim() + "…";
+  const price = typeof p.price_aud === "number" && !Number.isNaN(p.price_aud)
+    ? `A$${p.price_aud}` : "";
+  return `<a class="seo-card" href="${escapeHtml(url)}">` +
+    `<img loading="lazy" src="${escapeHtml(img)}" alt="${escapeHtml(p.name || name)}" width="100" height="100">` +
+    `<span class="seo-name">${escapeHtml(name)}</span>` +
+    (price ? `<span class="seo-price">${escapeHtml(price)}</span>` : "") +
+    `</a>`;
+}
+
+// Bloc <section> de liens produits injecté dans le HTML statique.
+function seoBlock(title, klass, anchors) {
+  if (!anchors || anchors.length === 0) return "";
+  return `\n<section class="seo-block ${klass}">` +
+    `<h2>${escapeHtml(title)}</h2>` +
+    `<div class="seo-grid">${anchors}</div></section>`;
+}
+
+// Liens « Available in stores » : un produit -> les principales villes.
+const CITY_LINK_CANDIDATES = [
+  "vapespot-sydney-cbd", "vapespot-melbourne-cbd", "vapespot-brisbane-cbd",
+  "vapespot-perth-cbd", "vapespot-adelaide-cbd", "vapespot-hobart-cbd",
+  "vapespot-darwin-city", "vapespot-canberra-cbd",
+];
+function storeLinksHTML(storeSlugs) {
+  const links = storeSlugs.slice(0, STORE_N).map(
+    (slug) => `<a class="seo-store" href="/${slug}">${escapeHtml(humanSlug(slug))}</a>`
+  );
+  return links.join("");
+}
+function humanSlug(slug) {
+  return slug.replace(/^vapespot-/, "").replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
 
 // ── 3. Générer une page par slug ───────────────────────────────────
 let count = 0;
@@ -111,6 +246,16 @@ for (const listing of listings) {
     `<head>\n    ${newHead}`
   );
 
+  // ── Maillage interne : blocs de produits locaux (HTML statique) ──
+  const st = stateYears(cityTag);
+  const cityPool = st ? pickProducts(st, trendPool, CITY_N, slug)
+                      : pickProducts(null, trendPool, CITY_N, slug);
+  const cityCards = cityPool.map(cardHTML).join("\n        ");
+  const cityTitle = `Popular vape products ${cityName(listing) ? "in " + cityName(listing) : "near you"}`;
+  if (cityCards) {
+    html = html.replace("</body>", seoBlock(cityTitle, "seo-city", cityCards) + "\n  </body>");
+  }
+
   // ── Écrire le fichier ─────────────────────────────────────────
   const outDir = join(DIST, slug);
   mkdirSync(outDir, { recursive: true });
@@ -167,6 +312,11 @@ const PRODUCT_SPEC_ORDER = [
 
 let prodCount = 0;
 const seenIds = new Set();
+
+// Slugs de villes réels (pour le bloc « Available in stores » d'un produit)
+const allCitySlugs = new Set(listings.map((l) => l.slug));
+const storeSlugs = CITY_LINK_CANDIDATES.filter((s) => allCitySlugs.has(s));
+
 for (const entry of searchIndex) {
   if (!entry.id || seenIds.has(String(entry.id))) continue;
   seenIds.add(String(entry.id));
@@ -207,10 +357,47 @@ for (const entry of searchIndex) {
     `<head>\n    ${newHead}`
   );
 
+  // ── Maillage interne : related (même marque, sinon même catégorie) ──
+  const related = [];
+  const relPool = (leaf?.products || []).filter((x) => x && x.id && x.id !== p.id);
+  const sameBrand = relPool.filter(
+    (x) => p.brand && x.brand && String(x.brand).toLowerCase() === String(p.brand).toLowerCase()
+  );
+  const seenRel = new Set();
+  for (const el of [...sameBrand, ...relPool].slice(0, RELATED_N)) {
+    if (seenRel.has(el.id)) continue;
+    seenRel.add(el.id);
+    related.push(el);
+  }
+  const relatedCards = related.slice(0, RELATED_N).map(cardHTML).join("\n        ");
+  // ── Available in stores : le produit -> les principales villes ──
+  const storeAnchors = storeLinksHTML(storeSlugs);
+
+  let bodySeo = "";
+  if (relatedCards) bodySeo += seoBlock("You may also like", "seo-dupe", relatedCards);
+  if (storeAnchors) {
+    bodySeo += `\n<section class="seo-block seo-stores"><h2>Available in our stores</h2>` +
+      `<div class="seo-grid">${storeAnchors}</div></section>`;
+  }
+  if (bodySeo) html = html.replace("</body>", bodySeo + "\n  </body>");
+
   const outDir = join(DIST, "product", idSafe);
   mkdirSync(outDir, { recursive: true });
   writeFileSync(join(outDir, "index.html"), html, "utf-8");
   prodCount++;
+}
+
+// ════ 3c. Homepage : bloc « Popular Products » statique ──────────
+// (masqué quand JS actif : le composant live TrendingProducts rend déjà
+//  la même section interactive → class seo-dupe.)
+const homePool = pickProducts(null, trendPool, HOME_N, "vapespot-home");
+const homeCards = homePool.map(cardHTML).join("\n        ");
+if (homeCards) {
+  const homeHtml = template.replace(
+    "</body>",
+    seoBlock("Popular Products", "seo-dupe", homeCards) + "\n  </body>"
+  );
+  writeFileSync(join(DIST, "index.html"), homeHtml, "utf-8");
 }
 
 console.log(`\n✅ ${count} pages ville + ${prodCount} pages produit statiques générées dans dist/`);

@@ -5,6 +5,11 @@ import { getRouter } from "./router";
 import { captureClickId } from "./lib/storage";
 import "./styles.css";
 
+// Marque le DOM comme « JS actif » → css `html.js .seo-block.seo-dupe{display:none}`
+// masque les blocs SEO qui doublonnent une section live (Trending/Related), sans
+// casser le maillage pour les crawlers sans JS (qui voient le HTML statique).
+document.documentElement.classList.add("js");
+
 // Désactive l'invite PWA "Installer l'application" (bouton navigateur + widget bureau).
 // Le manifest sert uniquement aux favicons/maskable, pas à l'installation.
 window.addEventListener("beforeinstallprompt", (e) => e.preventDefault());
