@@ -408,6 +408,133 @@ for (const entry of searchIndex) {
   prodCount++;
 }
 
+// ════ 4b. Guides (blog) — /guides/ + /guides/<slug>/ ══════════════
+// Articles Soro : pages statiques double couche (head SEO + JSON-LD Article/
+// FAQPage + bloog contenu en .seo-block masqué au JS). Google lit le HTML
+// direct ; l'humain reçoit la SPA React qui rend la même idée (§ parité).
+let guides = { guides: [] };
+try {
+  guides = JSON.parse(readFileSync(join(ROOT, "src", "data", "guides.json"), "utf-8"));
+} catch {}
+
+const GUIDE_BASE = "https://vapespot.store/guides/";
+const guideScriptTag = prodScriptTag;
+const guideCssTag = prodCssTag;
+
+function guideContentHTML(g) {
+  const esc = escapeHtml;
+  const sections = (g.sections || []).map((s) => {
+    const body = (s.body || []).map((p) => `<p>${esc(p)}</p>`).join("");
+    const list = s.list && s.list.length
+      ? `<ul>${s.list.map((li) => `<li>${esc(li)}</li>`).join("")}</ul>` : "";
+    return `<h2>${esc(s.heading)}</h2>${body}${list}`;
+  }).join("");
+  const faq = (g.faq || []).length
+    ? `<h2>Frequently asked questions</h2>` +
+      g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join("") : "";
+  const related = (g.links || []).map((l) =>
+    `<p><a href="${esc(`https://vapespot.store${l.to}`)}">${esc(l.label)}</a></p>`).join("");
+  return `<p>${esc(g.date)} · ${esc(g.readTime)}</p>` +
+    `<p><img src="${esc(g.hero.image)}" alt="${esc(g.hero.alt)}"></p>` +
+    `<p>${esc(g.intro)}</p>${sections}` +
+    (related ? `<p><strong>Related products:</strong></p>${related}` : "") +
+    faq +
+    `<p><a href="${esc(`https://vapespot.store${g.cta.to}`)}">${esc(g.cta.title)}</a></p>`;
+}
+
+function guideArticleLd(g) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: g.title,
+    description: g.metaDescription,
+    image: g.hero.image,
+    datePublished: g.date,
+    author: { "@type": "Organization", name: "Vape Spot", url: "https://vapespot.store/" },
+    publisher: { "@type": "Organization", name: "Vape Spot" },
+    mainEntityOfPage: `${GUIDE_BASE}${g.slug}/`,
+  };
+}
+
+// Page index /guides/ : liste des guides + JSON-LD ItemList.
+const gBaseHead = [
+  `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`,
+  `<link rel="icon" href="/favicon.ico" sizes="48x48" />`,
+  `<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />`,
+  `<link rel="apple-touch-icon" href="/apple-touch-icon.png" />`,
+  `<script>document.documentElement.classList.add("js")</script>`,
+];
+const gIdxCards = guides.guides.map((g) =>
+  `\n  <article><h2>${escapeHtml(g.title)}</h2>` +
+  `<p>${escapeHtml(g.category)} · ${escapeHtml(g.readTime)}</p>` +
+  `<p>${escapeHtml(g.intro)}</p>` +
+  `<p><a href="${GUIDE_BASE}${g.slug}/">Read guide</a></p></article>`
+).join("");
+const gIdxHead = [
+  `<title>Vape Guides Australia — Vape Spot</title>`,
+  `<meta name="description" content="Practical vape guides for Australia: how to fix a dry hit, does vaping smell, vape laws, puff counts and more." />`,
+  `<meta property="og:title" content="Vape Guides Australia — Vape Spot" />`,
+  `<meta property="og:type" content="website" />`,
+  `<meta property="og:url" content="${GUIDE_BASE}" />`,
+  `<link rel="canonical" href="${GUIDE_BASE}" />`,
+  ...gBaseHead,
+  `<script type="application/ld+json">${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: guides.guides.map((g, i) => ({
+      "@type": "ListItem", position: i + 1,
+      url: `${GUIDE_BASE}${g.slug}/`, name: g.title,
+    })),
+  })}</script>`,
+].join("\n    ");
+const gIdxPage = template.replace(
+  /<head>[\s\S]*?<\/head>/,
+  `<head>\n    ${gIdxHead}\n    ${guideScriptTag}\n    ${guideCssTag}\n  </head>`
+).replace("</body>",
+  `<section class="seo-block seo-guides"></section>`.replace("</section>", `${gIdxCards}\n  </section>`).replace("</body>", "</body>")
+);
+// NOTE: le bloc ci-dessus doit rester masqué quand JS actif → le composant
+// GuidesHome rend déjà la même liste. On injecte les cartes.
+mkdirSync(join(DIST, "guides"), { recursive: true });
+writeFileSync(join(DIST, "guides", "index.html"), gIdxPage, "utf-8");
+
+// Page par article.
+for (const g of guides.guides) {
+  const canonical = `${GUIDE_BASE}${g.slug}/`;
+  const head = [
+    `<title>${escapeHtml(g.title)} — Vape Spot</title>`,
+    `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`,
+    `<meta name="description" content="${escapeHtml(g.metaDescription)}" />`,
+    `<meta property="og:title" content="${escapeHtml(g.title)}" />`,
+    `<meta property="og:description" content="${escapeHtml(g.metaDescription)}" />`,
+    `<meta property="og:url" content="${canonical}" />`,
+    `<meta property="og:type" content="article" />`,
+    `<meta property="og:image" content="${escapeHtml(g.hero.image)}" />`,
+    `<link rel="canonical" href="${canonical}" />`,
+    ...gBaseHead,
+    `<script type="application/ld+json">${JSON.stringify(guideArticleLd(g))}</script>`,
+  ];
+  if (g.faq && g.faq.length) {
+    head.push(`<script type="application/ld+json">${JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: g.faq.map((f) => ({
+        "@type": "Question", name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    })}</script>`);
+  }
+  let html = template.replace(
+    /<head>[\s\S]*?<\/head>/,
+    `<head>\n    ${head.join("\n    ")}\n    ${guideScriptTag}\n    ${guideCssTag}\n  </head>`
+  ).replace("</body>",
+    `\n<section class="seo-block seo-guide">${guideContentHTML(g)}</section>\n  </body>`);
+
+  const outDir = join(DIST, "guides", g.slug);
+  mkdirSync(outDir, { recursive: true });
+  writeFileSync(join(outDir, "index.html"), html, "utf-8");
+}
+
 // ════ 3c. Homepage : bloc « Popular Products » statique ──────────
 // (masqué quand JS actif : le composant live TrendingProducts rend déjà
 //  la même section interactive → class seo-dupe.)

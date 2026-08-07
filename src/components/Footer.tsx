@@ -1,7 +1,16 @@
+import { Link } from "@tanstack/react-router";
+
 export function Footer() {
   return (
     <footer className="w-full bg-white" style={{ borderTop: "1px solid #E5E7EB" }}>
       <div className="flex flex-col items-center pt-8 pb-20 md:pb-8 lg:py-10" style={{ gap: "6px" }}>
+        <Link
+          to="/guides"
+          className="text-[13px] lg:text-sm font-medium hover:underline"
+          style={{ color: "#6B7280" }}
+        >
+          Vape Guides
+        </Link>
         <p
           className="text-[13px] lg:text-sm"
           style={{ color: "#1F1F1F", fontWeight: 600, letterSpacing: "0.01em" }}

@@ -26,6 +26,15 @@ const searchIndex = JSON.parse(
 );
 const productIds = [...new Set(searchIndex.map((s) => s.id))];
 
+// Guides (blog Soro) : /guides/ + un slug par article, URL slash final servie
+// en 200 par le dossier physique dist/guides/<slug>/index.html (comme produits).
+let guidesData = { guides: [] };
+try {
+  guidesData = JSON.parse(
+    readFileSync(join(ROOT, "src", "data", "guides.json"), "utf-8")
+  );
+} catch {}
+
 // Date ISO du jour : lastmod frais, signal de re-crawl.
 const today = new Date().toISOString().slice(0, 10);
 
@@ -42,6 +51,11 @@ const urls = [
   // limitées (~2000 règles Cloudflare), on NE met PAS de ligne rewrite par produit.
   ...productIds.map((id) =>
     url(`${DOMAIN}/product/${id}/`, today, "weekly", "0.6")
+  ),
+  // Section guides : index + un URL par article (priorité plus haute que produits)
+  url(`${DOMAIN}/guides/`, today, "weekly", "0.8"),
+  ...guidesData.guides.map((g) =>
+    url(`${DOMAIN}/guides/${g.slug}/`, today, "weekly", "0.7")
   ),
 ];
 

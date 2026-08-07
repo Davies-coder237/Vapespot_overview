@@ -1,0 +1,99 @@
+{
+  "guides": [
+    {
+      "slug": "what-happens-if-you-vape-without-juice-dry-hit",
+      "title": "What Happens If You Vape Without Juice? (And How to Fix a Dry Hit)",
+      "metaDescription": "Hitting a vape with no juice causes a dry hit — burnt coil, harsh throat hit and a bad taste. Here's what actually happens and how to fix or avoid it.",
+      "category": "Troubleshooting",
+      "date": "2026-08-07",
+      "readTime": "4 min read",
+      "hero": {
+        "image": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_1200,h_630,f_webp,q_auto:good/vapespot-v9/vaporesso-xros-3-r-kit-7413.webp",
+        "alt": "Vaporesso XROS 3 pod kit — checking for dry hits when your pod runs out of juice"
+      },
+      "intro": "If you've ever taken a hit from a vape with an empty tank or dry coil, you know it immediately: a harsh, burnt taste that stings your throat and lingers for minutes. That's a dry hit. Here's what actually happens in the coil, why it tastes so awful, and — most importantly — how to avoid it and fix it when you can.",
+      "sections": [
+        {
+          "heading": "The short answer",
+          "body": [
+            "When you vape with no e-liquid, the heating coil has nothing to vaporise. Instead of turning liquid into vapour, it burns the dry cotton wick around it. That fibre-glass taste and rough throat hit is the coil flash-frying, not the liquid.",
+            "It's not dangerous in a single hit, but it does two things: it ruins the coil (the burnt cotton never recovers) and it can leave you feeling choked or coughing. Repeated dry hits also shorten your coil and battery life."
+          ]
+        },
+        {
+          "heading": "What actually causes a dry hit",
+          "body": [],
+          "list": [
+            "Your tank or pod ran out of e-liquid — the number one cause.",
+            "Your coil wick couldn't saturate fast enough — common after a fresh coil — if you vaped before waiting for it to soak.",
+            "The e-liquid is too thick for the coil (usually a high-VG 70/30 mix in a mouth-to-lung kit).",
+            "You took too many long puffs in a row without giving the wick time to re-soak.",
+            "A burnt coil you've simply used past its life."
+          ]
+        },
+        {
+          "heading": "How to know you've burned your coil",
+          "body": [
+            "A dry hit usually means the coil is toast — especially the moment you let it run dry. Signs a coil is burnt: the taste stays even after you fill the tank back up, the colour darkens and turns muddy, the vapour gets thin, and every hit is harsh again."
+          ]
+        },
+        {
+          "heading": "How to fix a dry hit step by step",
+          "body": [],
+          "list": [
+            "Stop and let the device rest for 5–10 minutes so the wick can absorb available liquid again.",
+            "Refill your tank or pod with fresh juice (see our salt nicotine e-liquids).",
+            "Tilt the device so the juice directions into the wick ports (the two tiny holes on the side of the coil).",
+            "If the burnt taste remains after refilling, the coil is damaged — replace it .",
+            "Prime a new coil first: drip a few drops of juice inside the wick, wait 5 minutes, take a few slow dry puffs you don't actually hit, then start vaping."
+          ]
+        },
+        {
+          "heading": "How to prevent it (so it never happens)",
+          "body": [],
+          "list": [
+            "Keep your tank full — low juice is the silent killer of coils.",
+            "Wait 5–10 minutes after a new coil or a refill before vaping.",
+            "Use the right coil for the e-liquid (don't put thick 60VG liquid in a small pod coil).",
+            "Don't chain-vape back to back — give the wick time to re-soak.",
+            "Lower your wattage a touch if you chain consistently get harsh hits.",
+            "Always have a spare pod or coil so you never vape a burnt one out of desperation."
+          ]
+        },
+        {
+          "heading": "What should you vape instead",
+          "body": [
+            "A fresh coil + properly saturated wick makes all the difference. If your current pod kit keeps torturing you with burnt hits, a pod system with replaceable coils like the Vaporesso XROS 3 is one of the easiest to keep reliably juicy — replace the coil (not the whole device) and you're back to clean flavour for a fraction of the cost of a new disposable."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is vaping without juice dangerous?",
+          "a": "A single dry hit isn't dangerous — it's just harsh and tastes awful. The real risk is recurring dry hits, which repeatedly burn cotton and force you to vape burnt material, plus they destroy your coil. Always vape with liquid in the tank."
+        },
+        {
+          "q": "Why does a dry hit make me cough?",
+          "a": "A dry hit pulls burning cotton smoke instead of vapour. The hot, dry air and the burnt taste irritate your throat, which triggers your cough reflex — that's the same rough burn you feel."
+        },
+        {
+          "q": "Does a dry hit damage my vape?",
+          "a": "It damages the coil, not the whole device. Once the coil is burned, the taste stays bad no matter how much you refill, so you need to replace the coil / pod. Replace the coil and the rest of the device is fine."
+        },
+        {
+          "q": "How long after replacing the coil should I wait?",
+          "a": "After dripping juice into the wick, wait 5–10 minutes, then take a few slow pulls without firing to help saturation. Then vape slowly. This 'priming' step is what prevents a dry hit in a new coil."
+        }
+      ],
+      "links": [
+        { "to": "/product/vaporesso-xros-3-r-kit-7413/", "label": "Vaporesso XROS 3 kit" },
+        { "to": "/product/nasty-juice-salt-strawberry-e-liquid-10219/", "label": "Nasty Juice salt e-liquid (strawberry)" }
+      ],
+      "cta": {
+        "title": "The right gear makes dry hits a non-issue",
+        "text": "Browse our coils, pods and salt e-liquids — fast courier delivery across Australia.",
+        "to": "/products/accessories"
+      }
+    }
+  ]
+}
