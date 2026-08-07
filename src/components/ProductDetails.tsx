@@ -5,6 +5,7 @@ import type { Product } from "@/lib/types";
 import { QuantitySelector } from "./QuantitySelector";
 import { SpecificationsTable } from "./SpecificationsTable";
 import { ProductCard } from "./ProductCard";
+import { StoreLocations } from "./StoreLocations";
 import { useMyList } from "@/lib/storage";
 import { toast } from "sonner";
 import {
@@ -213,6 +214,9 @@ export function ProductDetails({ product }: { product: Product }) {
           </div>
         </div>
       )}
+
+      {/* Stores — vraies cartes villes + scroll horizontal (identité du site) */}
+      <StoreLocations />
     </article>
   );
 }

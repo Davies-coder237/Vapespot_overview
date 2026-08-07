@@ -3,6 +3,7 @@ import { Link } from "@tanstack/react-router";
 import schemas from "@/data/schema-data.json";
 import listings from "@/data/listings.json";
 import { cityFaq, cityName, localBlurb, type Listing } from "@/lib/city-content";
+import { CityProducts } from "./CityProducts";
 
 interface ListingPageProps {
   listing: Listing;
@@ -95,6 +96,12 @@ export function ListingPage({ listing }: ListingPageProps) {
             </div>
           ))}
         </section>
+
+        <div className="w-full border-t border-[#F0F0F0]" />
+
+        {/* Produits populaires de la ville — vraies cartes + scroll horizontal
+            (parité avec les liens statiques lus par Google) */}
+        <CityProducts slug={listing.slug} title={`Popular vape products in ${cn}`} />
 
         <div className="w-full border-t border-[#F0F0F0]" />
 

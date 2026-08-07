@@ -144,12 +144,18 @@
 }
 
 /* ════ Blocs SEO (maillage interne) injectés dans le HTML statique ════
-   .seo-dupe  : doublon d'une section live (TrendingProducts / YouMayAlsoLike)
-                → masqué dès que le JS tourne (html.js), la section live prend le relais.
-   .seo-city  / .seo-stores : maillage sans version live → restent visibles. */
-html.js .seo-block.seo-dupe { display: none; }
-
-.seo-block { padding: 24px 16px; max-width: 1100px; margin-inline: auto; }
+   Ces blocs (liens produits / villes en HTML brut) servent UNIQUEMENT à
+   Google (crawler sans JS). Dès que le JS tourne (html.js), ils sont masqués
+   : les sections live React (TrendingProducts / CityProducts / StoreLocations…)
+   rendent leur propre contenu aux visiteurs, dans l'identité du site.
+   La classe .js est posée par un script inline du <head> (pas de flash au F5)
+   + en fallback dans main.tsx. */
+html.js .seo-block { display: none; }
+.seo-block {
+  padding: 24px 16px; max-width: 1100px; margin-inline: auto;
+  /* Grisé pour Google ? non : le crawler lit les liens quelle que soit la
+     mise en forme ; on garde un rendu simple mais lisible. */
+}
 .seo-block h2 { font-size: 1.25rem; font-weight: 700; color: #0a0a0a; margin: 0 0 16px; }
 .seo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 14px; }
 .seo-card {

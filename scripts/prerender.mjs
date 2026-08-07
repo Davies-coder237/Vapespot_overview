@@ -172,6 +172,10 @@ function humanSlug(slug) {
 
 // ── 3. Générer une page par slug ───────────────────────────────────
 let count = 0;
+// Map slug -> [ids produits] : écrite dans dist/data/city-products.json pour
+// que le composant live CityProducts affiche EXACTEMENT la même liste que
+// les liens statiques vus par Google (parité humain/crawler).
+const cityProductsMap = {};
 
 for (const listing of listings) {
   const { slug, businessName, description, address, cityTag } = listing;
@@ -197,6 +201,9 @@ for (const listing of listings) {
     `<meta name="geo.country" content="AU" />`,
     `<meta name="geo.placename" content="${escapeHtml(cityTag || "Australia")}" />`,
     `<link rel="alternate" hreflang="en-AU" href="https://vapespot.store" />`,
+    // Pose la classe .js avant le premier rendu : masque les blocs SEO
+    // statiques (html.js .seo-block{display:none}) → aucun flash au F5.
+    `<script>document.documentElement.classList.add("js")</script>`,
     // Favicons (photo shop, circulaire) — présents sur toutes les pages
     `<link rel="icon" href="/favicon.ico" sizes="48x48" />`,
     `<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />`,
@@ -251,6 +258,7 @@ for (const listing of listings) {
   const cityPool = st ? pickProducts(st, trendPool, CITY_N, slug)
                       : pickProducts(null, trendPool, CITY_N, slug);
   const cityCards = cityPool.map(cardHTML).join("\n        ");
+  cityProductsMap[slug] = cityPool.map((p) => p.id);
   const cityTitle = `Popular vape products ${cityName(listing) ? "in " + cityName(listing) : "near you"}`;
   if (cityCards) {
     html = html.replace("</body>", seoBlock(cityTitle, "seo-city", cityCards) + "\n  </body>");
@@ -266,6 +274,11 @@ for (const listing of listings) {
     console.log(`  ✓ ${count}/${listings.length} pages générées`);
   }
 }
+
+// Map ville -> [ids produits] pour le composant live CityProducts
+const cityDataDir = join(DIST, "data");
+mkdirSync(cityDataDir, { recursive: true });
+writeFileSync(join(cityDataDir, "city-products.json"), JSON.stringify(cityProductsMap), "utf-8");
 
 // ════ 4. Pages produit statiques (une par produit de search.json) ════
 // Même logique que les villes : un index.html unique par produit, avec
@@ -345,6 +358,8 @@ for (const entry of searchIndex) {
     `<link rel="icon" href="/favicon.ico" sizes="48x48" />`,
     `<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />`,
     `<link rel="apple-touch-icon" href="/apple-touch-icon.png" />`,
+    // Classe .js avant le premier rendu → blocs SEO statiques masqués (no-flash)
+    `<script>document.documentElement.classList.add("js")</script>`,
     `<script type="application/ld+json">${JSON.stringify(
       buildProductLd(p, canonicalUrl, desc, img)
     )}</script>`,
