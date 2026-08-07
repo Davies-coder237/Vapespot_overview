@@ -128,9 +128,9 @@ export function ListingPage({ listing }: ListingPageProps) {
                 <h3 className="text-[12px] font-bold uppercase tracking-[0.14em] text-[#7C3AED]">
                   {STATE_NAMES[g.code] ?? g.code}
                 </h3>
-                <ul className="mt-3 space-y-1.5">
+                <ul className="mt-3 gap-x-8 columns-2 lg:columns-1">
                   {g.items.map((o) => (
-                    <li key={o.slug}>
+                    <li key={o.slug} className="mb-1.5 break-inside-avoid">
                       <Link
                         to={`/${o.slug}`}
                         className="text-[13px] text-[#0A0A0A] hover:text-[#7C3AED] hover:underline"

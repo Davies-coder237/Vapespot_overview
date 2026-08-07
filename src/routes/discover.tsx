@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { StoreLocator } from "@/components/StoreLocator";
+import { StoreLocations } from "@/components/StoreLocations";
 
 export const Route = createFileRoute("/discover")({
   head: () => ({
@@ -30,6 +31,12 @@ function Discover() {
           nearest one.
         </p>
       </header>
+
+      {/* Carrousel identité — les 8 CBD majeures */}
+      <StoreLocations title="Most popular stores" />
+
+      <div className="border-t border-[#F0F0F0]" />
+
       <StoreLocator />
     </div>
   );

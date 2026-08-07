@@ -15,7 +15,7 @@ const STORES: { slug: string; name: string; state: string }[] = [
   { slug: "vapespot-darwin-city", name: "Darwin", state: STATE_NAMES.NT },
 ];
 
-export function StoreLocations() {
+export function StoreLocations({ title = "Available in our stores" }: { title?: string }) {
   const scrollerRef = useRef<HTMLDivElement>(null);
 
   // Scroll horizontal « infini » : liste dupliquée, reset silencieux à mi-parcours.
@@ -38,11 +38,11 @@ export function StoreLocations() {
   return (
     <section className="mt-6 space-y-3">
       <h2 className="lg:hidden px-4 md:px-6 text-[20px] font-bold text-black">
-        Available in our stores
+        {title}
       </h2>
 
       <div className="hidden lg:flex items-center justify-between px-4 md:px-6">
-        <h2 className="text-xl font-bold text-black">Available in our stores</h2>
+        <h2 className="text-xl font-bold text-black">{title}</h2>
         <div className="flex items-center gap-2">
           <button
             type="button"
