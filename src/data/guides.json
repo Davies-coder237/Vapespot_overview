@@ -94,6 +94,448 @@
         "text": "Browse our coils, pods and salt e-liquids — fast courier delivery across Australia.",
         "to": "/products/accessories"
       }
+    },
+    {
+      "slug": "does-a-vape-smell-like-cigarettes",
+      "title": "Does a Vape Smell Like Cigarettes? (The Honest Answer)",
+      "metaDescription": "Vapes don't smell like cigarettes: the vapour smells like fruit or mint and fades in minutes, instead of clinging to clothes for hours. Here's the honest difference.",
+      "category": "General",
+      "date": "2026-08-07",
+      "readTime": "4 min read",
+      "hero": {
+        "image": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_1200,h_630,f_webp,q_auto:good/vapespot-v9/vaporesso-xros-3-r-kit-7413.webp",
+        "alt": "Vaporesso XROS 3 pod vape — vape vapour smells sweet and fades fast, unlike cigarette smoke"
+      },
+      "intro": "No — a vape doesn't smell like a cigarette at all. Cigarette smoke leaves a dense, stale smell that clings to clothes, hair and rooms for hours. Vape vapour smells like the flavour inside the pod or tank — fruit, mint, dessert — and it usually dissipates within minutes. Here's the honest breakdown of the difference, including the few cases where a vape can smell a little closer to tobacco.",
+      "sections": [
+        {
+          "heading": "The short answer",
+          "body": [
+            "Vape vapour smells like the e-liquid flavour, not like smoke. Because there's no combustion — nothing is actually burning — there's no tar or ash smell and no lingering stale smoke odour. A disposable or pod filled with watermelon ice leaves a light, sweet scent for a minute or two, then it's gone.",
+            "Cigarette smoke is different chemistry: burning tobacco releases particles that land on surfaces and stick. That's why a smoker's car and jacket still smell long after the cigarette is finished. Vapour is mostly water, vegetable glycerin and flavouring, so it behaves more like scented breath than smoke."
+          ]
+        },
+        {
+          "heading": "What does vape actually smell like?",
+          "body": [],
+          "list": [
+            "Fruit and berry flavours — the dominant scent: sweet, like a fruit lolly.",
+            "Mint and menthol (often labelled ice) — a cool, fresh smell similar to breath mints.",
+            "Dessert and candy flavours — vanilla, custard, bubblegum; sweet but light.",
+            "Tobacco flavours — the closest to a cigarette, but more like a smoky toffee than burning smoke.",
+            "Unflavoured or zero-nicotine juice — almost no detectable smell at all."
+          ]
+        },
+        {
+          "heading": "Does the smell stick to clothes, hair or rooms?",
+          "body": [
+            "Much less than smoke. Vapour hangs in the air briefly and mostly evaporates. In a closed room after chain-vaping you can notice a faint sweet note, and over months a light film can build up on car windows in heavy use — but it's nowhere near cigarette tar.",
+            "One honest caveat: clouds. High-VG cloud-chasing devices produce a lot of vapour, and in a sealed car that can fog the windows and leave a stronger scent. A small pod or standard disposable barely registers."
+          ]
+        },
+        {
+          "heading": "When a vape can smell closer to a cigarette",
+          "body": [
+            "Tobacco-flavoured e-liquid is the closest you'll get: roasted, nutty, sweet-tobacco notes. Some people find it nostalgic; nobody mistakes it for a burning cigarette.",
+            "A dry hit or a burnt coil also smells — burnt cotton, like singed fabric — which is a sign to change the coil or stop chain-vaping, not a normal vape smell."
+          ]
+        },
+        {
+          "heading": "Vaping indoors, in cars and in public",
+          "body": [
+            "Because the smell fades fast, indoor vaping is far less noticeable than smoking. Still, respect the rules: most Australian states treat vaping with children in the car, and in smoke-free areas, the same as smoking. Scent aside, it's the law you need to watch, not the odour."
+          ]
+        },
+        {
+          "heading": "Why this matters if you're switching from smoking",
+          "body": [
+            "If you're swapping cigarettes for a vape, one of the first things you'll notice is that you no longer smell of smoke. Partners, kids and colleagues notice too. It's one of the less obvious wins of switching — and most vapers find the sweet, light scent of a fruity pod far more pleasant on their clothes."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does vaping smell like smoke?",
+          "a": "No. Vaping produces vapour, not smoke — there's no combustion, so no tar, ash or burnt smell. The scent is simply the flavour of the e-liquid, and it usually fades within a couple of minutes."
+        },
+        {
+          "q": "How long does vape smell last in a room?",
+          "a": "Usually a few minutes with the window open, up to 15–20 minutes in a sealed room. At most it leaves a faint sweet note, unlike cigarette smoke which can hang around for hours."
+        },
+        {
+          "q": "Does vape smell stick to clothes?",
+          "a": "Very little. Vapour doesn't cling the way smoke does. A heavy cloud-chasing session indoors can leave a light sweet scent on fabric, but a normal pod or disposable won't."
+        },
+        {
+          "q": "Does nicotine make a vape smell like cigarettes?",
+          "a": "No. Nicotine is essentially odourless when vaporised. If a vape smells tobacco-like, it's the tobacco flavour you chose, not the nicotine."
+        },
+        {
+          "q": "What's the vape that smells least?",
+          "a": "Any small pod or disposable with a light fruit or mint flavour. Mint and ice flavours are usually the most neutral to other people, and a low-power pod produces barely any lingering scent."
+        }
+      ],
+      "links": [
+        { "to": "/product/vaporesso-xros-3-r-kit-7413/", "label": "Vaporesso XROS 3 pod kit" },
+        { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500 (fruity disposable)" }
+      ],
+      "cta": {
+        "title": "Switch without the smoke smell",
+        "text": "Browse our pod kits and fruity disposables — fast courier delivery across Australia.",
+        "to": "/products/e-cigarettes"
+      }
+    },
+    {
+      "slug": "why-does-my-vape-blink-when-i-hit-it",
+      "title": "Why Does My Vape Blink When I Hit It? (Causes & Quick Fixes)",
+      "metaDescription": "A vape blinks for a reason: low battery, a loose connection, blocked airflow or an overheating coil. Here's what each blink pattern means and how to fix it fast.",
+      "category": "Troubleshooting",
+      "date": "2026-08-07",
+      "readTime": "4 min read",
+      "hero": {
+        "image": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_1200,h_630,f_webp,q_auto:good/vapespot-v9/iget-bar-3500-banana-ice-2047.webp",
+        "alt": "IGET Bar disposable vape — a blinking light is the device signalling low battery or a connection issue"
+      },
+      "intro": "A blinking light on your vape is its way of talking — it's telling you something needs attention. The most common causes are a low battery, a poor connection between the battery and the coil or pod, or the device protecting itself from heat. Different devices blink different patterns, but the fix is almost always one of the steps below.",
+      "sections": [
+        {
+          "heading": "The short answer",
+          "body": [
+            "A blinking light is a safety and status signal, not a random fault. When you inhale and the light blinks instead of staying solid, the device is telling you one of a few things: not enough power, a connection that isn't being detected, or a protective shut-off that's kicked in. Ten to one it's the battery."
+          ]
+        },
+        {
+          "heading": "The most common causes",
+          "body": [],
+          "list": [
+            "Low battery — most devices blink when the battery is nearly empty: plug it in and the light usually goes solid or changes colour while charging.",
+            "Poor connection — a loose pod, coil or tank makes the battery 'see' nothing and blink a warning: pull the pod off, wipe the contacts, refit it firmly.",
+            "Overheating protection — long chain-vaping sessions can trigger a thermal cut-off: let the device rest 5–10 minutes.",
+            "Blocked airflow or mouthpiece — if air can't flow, an auto-draw sensor blinks to signal a problem.",
+            "Coil not detected or shorted — on refillable kits the device flashes to say the coil isn't seated or has shorted.",
+            "The 10-second cut-off — a long continuous hit triggers the safety timer; that blinking is by design."
+          ]
+        },
+        {
+          "heading": "What the different blink patterns mean",
+          "body": [],
+          "list": [
+            "Blink the moment you inhale — usually a low or dead battery.",
+            "Rapid flashing when you insert the pod — a connection or short issue.",
+            "A flash after 8–10 seconds of inhaling — the puff-time cut-off, working as intended.",
+            "Three quick flashes — check the device manual: on most brands it means battery or connection."
+          ]
+        },
+        {
+          "heading": "How to fix it step by step",
+          "body": [],
+          "list": [
+            "Plug it in (or into the USB-C port) and give it 10 minutes — low battery is the number-one cause.",
+            "Clean the contacts: a cotton bud with a little isopropyl alcohol on the metal pins of the pod and the device.",
+            "Refit the pod or coil firmly, and make sure a replaceable coil is clicked fully into place.",
+            "Leave a hot device to cool for 10–15 minutes if you've been chain-vaping.",
+            "If a sealed disposable still blinks after a full charge, the battery has aged out — it's time to replace the device."
+          ]
+        },
+        {
+          "heading": "Why a disposable blinks differently",
+          "body": [
+            "Disposables blink mainly for one reason: low battery. Because the battery is sealed in, there's no coil to reseat and no contacts to clean. Charge it through its USB-C port — the larger pens and bars are rechargeable — and once the light blinks on every hit after a full charge, the device is done."
+          ]
+        },
+        {
+          "heading": "When blinking is actually normal",
+          "body": [
+            "Remember the puff cut-off: most devices are set to stop a hit at around 10 seconds and to flash to tell you it's happened. That's a safety feature, not a fault. Many devices also pulse a light while charging. Read the manual once and you'll recognise the difference between a warning and business as usual."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why is my vape blinking but not hitting?",
+          "a": "Usually a dead or low battery, a loose pod connection or blocked airflow. Charge it, wipe the contacts and refit the pod. If it still won't fire, the coil or battery is likely dead."
+        },
+        {
+          "q": "Why does my disposable vape blink when I inhale?",
+          "a": "Almost always low battery or slightly cold. Charge it via the USB-C port at room temperature; if it keeps blinking after a full charge, the sealed battery has worn out and the disposable is spent."
+        },
+        {
+          "q": "Why does my vape blink 10 times?",
+          "a": "On many devices, ten flashes is an overheating or short-circuit protection alert. Let it cool down, then check the coil and pod connection before hitting again."
+        },
+        {
+          "q": "Why does my vape blink while charging?",
+          "a": "A blinking or pulsing light during charging is normal on many devices and usually turns solid or changes colour when full. A rapid red flash while charging usually means a charging fault — stop and check the cable and port."
+        },
+        {
+          "q": "Can I fix a vape that keeps blinking?",
+          "a": "For most causes, yes: charge it, clean the contacts, refit the pod and let it cool. The one thing you can't fix is a dead sealed battery in a disposable — that's the end of that device."
+        }
+      ],
+      "links": [
+        { "to": "/product/vaporesso-xros-3-r-kit-7413/", "label": "Vaporesso XROS 3 (refillable kit)" },
+        { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500 disposable" }
+      ],
+      "cta": {
+        "title": "Replace the device, not the frustration",
+        "text": "Shop kits and disposables with reliable batteries — fast courier delivery across Australia.",
+        "to": "/products/e-cigarettes"
+      }
+    },
+    {
+      "slug": "how-many-puffs-is-an-alibarbar-ingot-30000",
+      "title": "How Many Puffs Is an Alibarbar Ingot 30000? (9000 vs 15000 vs 30000)",
+      "metaDescription": "Alibarbar Ingot models advertise 9000, 15000 or 30000 puffs — but the real-world count is lower. Here's what the numbers mean and how many puffs you actually get.",
+      "category": "Buying Guide",
+      "date": "2026-08-07",
+      "readTime": "5 min read",
+      "hero": {
+        "image": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_1200,h_630,f_webp,q_auto:good/vapespot-v9/alibarbar-ingot-pineapple-coconut-2136.webp",
+        "alt": "Alibarbar Ingot disposable vape — advertised puff counts are measured under test conditions, real use varies"
+      },
+      "intro": "The advertised count on an Alibarbar Ingot refers to the device's battery-and-liquid capacity: the Ingot 9000 is sized for roughly 9,000 puffs, the Ingot 15000 for around 15,000, and the Ingot 30000 for about 30,000. But those numbers are measured under test conditions — in real use you can expect less, and here's exactly what that means in practice.",
+      "sections": [
+        {
+          "heading": "The short answer",
+          "body": [
+            "Alibarbar Ingot models carry three sizes: 9000, 15000 and 30000 puffs. The number is the capacity stated by the brand under a standard 1-second draw in a lab. Here's what that translates to in the real world."
+          ]
+        },
+        {
+          "heading": "What the numbers actually mean",
+          "body": [],
+          "list": [
+            "Ingot 9000: about 9,000 puffs advertised — a typical user gets closer to 4,000–6,000 real hits before it runs dry.",
+            "Ingot 15000: about 15,000 advertised — expect something like 7,000–10,000 real puffs.",
+            "Ingot 30000: the top end — about 30,000 advertised, realistically 15,000–20,000 puffs depending on how long you draw.",
+            "30,000 in heavy daily use often lasts three to five weeks; light use can stretch much further."
+          ]
+        },
+        {
+          "heading": "Why the real count is lower",
+          "body": [
+            "Manufacturers count puffs on a fixed testing machine: short draw, consistent power, fresh battery. Your real hits are longer, and as the battery drains it delivers a bit less vapour per drop of liquid. That's normal for every high-capacity disposable, not a defect in the Ingot itself."
+          ]
+        },
+        {
+          "heading": "How to make an Ingot last longer",
+          "body": [],
+          "list": [
+            "Take short, steady draws instead of long, deep hits.",
+            "Don't chain-vape for hours — give the coil a moment to re-saturate between hits.",
+            "Keep it upright and at room temperature; heat and leaks waste liquid.",
+            "Store it our of direct sun and extreme heat."
+          ]
+        },
+        {
+          "heading": "The honest buying advice",
+          "body": [
+            "Use the puff count as a size guide, not a promise. If you're a heavy vaper, the Ingot 30000 (or another 30K disposable) is worth the money over a smaller bar. If you vape lightly, a 9000 will already last you a long time. Match the size to your habit and you'll rarely feel shortchanged."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How many puffs does an Alibarbar Ingot 30000 really give?",
+          "a": "Advertised at 30,000 puffs, real-world is more like 15,000–20,000 for an average user taking 1–2 second draws. Draw length changes the number a lot."
+        },
+        {
+          "q": "Is an Ingot 9000 better than a 15000?",
+          "a": "Only in size and price. The 9000 is lighter and cheaper, with roughly 9,000 advertised puffs; the 15000 nearly doubles capacity. Choose by how much you vape each day, not which sounds 'better'."
+        },
+        {
+          "q": "How long does an Alibarbar Ingot last?",
+          "a": "A 9000 can last a light vaper a few weeks; a 30000 can easily stretch over a month for a moderate user. Heavy use and consistent long draws shorten it."
+        },
+        {
+          "q": "Are Alibarbar Ingot vapes rechargeable?",
+          "a": "The larger Ingot models include USB-C charging so you can use every last drop of liquid. Charge when the light blinks and you'll get closer to the full stated capacity."
+        },
+        {
+          "q": "What do the 9000, 15000, 30000 numbers mean?",
+          "a": "They're the manufacturer's advertised puff count measured under a short 1-second draw in test conditions. The real count is lower — roughly half to two-thirds depending on your draw length."
+        }
+      ],
+      "links": [
+        { "to": "/product/alibarbar-ingot-pineapple-coconut-2136/", "label": "Alibarbar Ingot 9000 (Pineapple Coconut)" },
+        { "to": "/product/airmez-matrix-pro-30000-puffs-blueberry-raspberry-1982/", "label": "Airmez Matrix Pro 30000" }
+      ],
+      "cta": {
+        "title": "Pick the size that matches your habit",
+        "text": "Shop Ingot and high-capacity disposables from A$43.99 — fast courier delivery across Australia.",
+        "to": "/products/e-cigarettes"
+      }
+    },
+    {
+      "slug": "how-to-charge-a-disposable-vape-without-a-charger",
+      "title": "How to Charge a Disposable Vape Without a Charger (5 Safe Ways)",
+      "metaDescription": "No charger handy? Most disposable vapes charge from any USB-C port — laptop, power bank, car USB or the wall adaptor you already own. Here's how to do it safely.",
+      "category": "Troubleshooting",
+      "date": "2026-08-07",
+      "readTime": "4 min read",
+      "hero": {
+        "image": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_1200,h_630,f_webp,q_auto:good/vapespot-v9/airmez-matrix-pro-30000-puffs-blueberry-raspberry-1982.webp",
+        "alt": "Rechargeable disposable vape with a USB-C port — charge from a laptop, power bank or phone adaptor"
+      },
+      "intro": "Almost every modern disposable vape recharges from a standard USB-C port — the same one your phone uses. If you've lost a 'charger', you don't need one: any USB-C cable plugged into a laptop, power bank, car USB port or a phone wall adaptor will do. Here's how to charge safely, how long it takes, and the common mistakes that are dangerous.",
+      "sections": [
+        {
+          "heading": "The short answer",
+          "body": [
+            "Look for a USB-C or micro-USB port on the bottom or side of the device. Plug in a normal cable to a steady low-power source and let it charge. You don't tell a special 'vape charger' — any standard cable and a 5V source works."
+          ]
+        },
+        {
+          "heading": "Which cable you actually need",
+          "body": [
+            "If the port is USB-C (most vapes made since about 2023), any phone cable works. If it's the older micro-USB, use that cable — don't force a USB-C in. A standard 5V/1A–2A adaptor is ideal; a fast phone charger in high-watt mode can be more than the small battery wants.",
+            "(A note on the name: 'disposable' doesn't mean it can't be charged. Many are rechargeable through a USB-C port, while truly single-use ones have no port at all.)"
+          ]
+        },
+        {
+          "heading": "5 safe ways to charge it",
+          "body": [],
+          "list": [
+            "A laptop or PC USB port — steady 5V, easy and reliable.",
+            "A power bank — great on the go; use the low-power output if it has one.",
+            "A car USB port — fine while driving, but don't leave it charging in a hot car.",
+            "The wall adaptor that came with your phone — as long as it's not a high-watt fast-charger left in boost mode.",
+            "USB ports on TVs, monitors or consoles — steady and safe at low current."
+          ]
+        },
+        {
+          "heading": "How long to charge, and how to know it's done",
+          "body": [
+            "Most disposables take 30–60 minutes for a useful charge and 1–2 hours to full battery. Many blink while charging and go solid or turn off when full. Don't leave a disposable charging overnight unattended — once the light stops blinking or the device feels warm, unplug it."
+          ]
+        },
+        {
+          "heading": "What NOT to do (safety)",
+          "body": [],
+          "list": [
+            "Never strip wires or press a bare USB cable against the battery contacts — that's a short circuit and a fire risk.",
+            "Never charge on a bed, couch or under a pillow — the battery needs airflow to stay cool.",
+            "Avoid a high-wattage fast charger on repeat; it's more current than a small sealed battery wants.",
+            "If the device swells, smells odd, or gets very hot fast, stop charging and dispose of it properly."
+          ]
+        },
+        {
+          "heading": "How to know if a disposable is even rechargeable",
+          "body": [
+            "Just look for a charging port. No port means single-use — it's not designed to be recharged, and opening the shell to force a charge is dangerous and pointless. A port means USB-C or micro-USB, and you can charge as above. When vapour gets weak and the light blinks on every hit even after a charge, the battery or liquid has run its course — time to replace."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can you charge a disposable vape with a phone charger?",
+          "a": "You can plug it into the USB-C or micro-USB cable with a 5V phone adaptor. Just avoid a fast charger at full wattage — a laptop USB port or the low-power port on a power bank is safest."
+        },
+        {
+          "q": "How do I charge a disposable vape with no USB port?",
+          "a": "If the device has no port, it's not designed to be recharged. Do not open it up or touch wires onto it — that's a fire risk. That device is single-use and should be replaced."
+        },
+        {
+          "q": "How long does a disposable vape take to charge?",
+          "a": "Usually 30–60 minutes for a useful charge, or 1–2 hours to full. Unplug once the light stops blinking or turns solid — don't leave it charging overnight."
+        },
+        {
+          "q": "Why is my disposable vape not charging at all?",
+          "a": "Often a dirty port, a damaged cable or a dead battery. Clean the port, try another cable and another power source. If it still won't charge, the sealed battery is done — replace the device."
+        },
+        {
+          "q": "Is it bad to charge a disposable vape with a fast charger?",
+          "a": "It's not ideal. Fast charges can push more current than the small battery wants, which heats it up. Use a 5V/1–2A source — a laptop, a low-power power bank or a standard phone adaptor — and you'll be fine."
+        }
+      ],
+      "links": [
+        { "to": "/product/airmez-matrix-pro-30000-puffs-blueberry-raspberry-1982/", "label": "Airmez Matrix Pro 30000 (rechargeable)" },
+        { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500 (USB-C)" }
+      ],
+      "cta": {
+        "title": "A vape you can trust to keep charging",
+        "text": "Shop rechargeable disposables and kits — fast courier delivery across Australia.",
+        "to": "/products/e-cigarettes"
+      }
+    },
+    {
+      "slug": "how-to-spot-a-fake-disposable-vape-in-australia",
+      "title": "How to Spot a Fake Disposable Vape in Australia (9 Checks)",
+      "metaDescription": "Fake vapes flood the market and many have never been safety tested. Here's how to spot a counterfeit disposable in Australia: packaging, batch codes, taste, price and where you buy it.",
+      "category": "Buying Guide",
+      "date": "2026-08-07",
+      "readTime": "5 min read",
+      "hero": {
+        "image": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_1200,h_630,f_webp,q_auto:good/vapespot-v9/digiflavor-x-geek-bar-lush-20k-disposable-10177.webp",
+        "alt": "Geek Bar Lush 20K — a authentic disposable carries a verification code, clean packaging and a trusted price"
+      },
+      "intro": "A fake disposable vape is a counterfeit copy of a known brand, usually sold cheap online, at markets or in places that don't check ID. The fast checks: the price is too good, the packaging is flimsy, the batch or verification code is missing or won't scan, the taste is burnt or chemical, and the place you bought it wasn't a real vape retailer. Buy from a store you can verify and you cut out almost all of the risk.",
+      "sections": [
+        {
+          "heading": "The short answer",
+          "body": [
+            "Counterfeit vapes aren't just a cheap knock-off — they can be genuinely dangerous. Fakes are often filled with unregulated e-liquid, made with untested batteries, and wrapped in packaging with fake health warnings. In Australia, legal vape products must meet labelling and nicotine rules, and illegal imports have been seized with worrying findings. Paying a few extra dollars for authenticity is buying peace of mind."
+          ]
+        },
+        {
+          "heading": "Why fakes are a real problem in Australia",
+          "body": [
+            "Australia has some of the strictest vape regulation in the world. A compliant vape carries clear warnings and proper compliance information. A fake skips all of that paperwork because the 'lab' has no interest in safety — the cheaper you paid, the more corners were cut."
+          ]
+        },
+        {
+          "heading": "9 checks to spot a fake",
+          "body": [],
+          "list": [
+            "The price is suspiciously low — a real high-capacity disposable rarely sells for almost nothing. Below-retail deals on known brands are the classic signal.",
+            "The packaging looks flimsy — blurry print, spelling errors, wrong logo proportions, or no batch or expiry date.",
+            "The verification code won't scan — most brands print a QR or code you can verify online; if it fails or leads nowhere, assume fake.",
+            "Missing nicotine warnings and compliance information — everything authentic sold in Australia carries clear labels; fakes often skip or mess them up.",
+            "The device doesn't feel right — wrong weight, cheap button, rough shell seam; fakes often feel hollow.",
+            "The flavour is off — burnt, chemical or metallic tastes no product should have; fakes use poor liquid.",
+            "It burns too hot or leaks instantly — genuine devices carry quality coils and seals; fakes often gurgle, leak or overheat.",
+            "The seller is dodgy — a market stall, a reseller on socials, or a site with no real contact details is where fakes live.",
+            "No ID required — a legitimate vape retailer in Australia verifies your age. No ID needed is a warning sign by itself."
+          ]
+        },
+        {
+          "heading": "How to buy authentic vapes in Australia",
+          "body": [
+            "Buy from a registered vape retailer with a real address, real contact details and proper age verification. Check the brand's official verification page with the code on the box. And if the deal looks too good to be true, it usually is. A few dollars more for an authentic product is a small price for knowing what's inside."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How can I tell if my vape is fake?",
+          "a": "Check the price, the packaging quality, the batch or verification codes, and how it tastes. A genuine product scans its code, carries clear warning labels, and won't taste burnt or chemical. When in doubt, compare it side-by-side."
+        },
+        {
+          "q": "Are fake vapes dangerous?",
+          "a": "They can be. Counterfeits can contain unregulated e-liquid and untested batteries, and seized fakes have shown worrying findings in testing. The risk isn't worth the savings — buy authentic."
+        },
+        {
+          "q": "Can you check a vape by serial number?",
+          "a": "Many brands let you: look for a QR or scratch-off code on the box and enter it on the brand's official verification page. If the code is missing or fails, treat the device as suspect."
+        },
+        {
+          "q": "Why is my disposable vape so cheap?",
+          "a": "Because it's probably a counterfeit. Real high-capacity disposals cost what they cost because of the liquid, the battery and the compliance. A big discount on a known brand is a classic fake signal."
+        },
+        {
+          "q": "Is it illegal to sell fake vapes in Australia?",
+          "a": "Yes. Selling counterfeit goods is illegal, and vape products must meet Australian labelling and nicotine rules. If you suspect a store, don't buy from it and consider reporting it."
+        }
+      ],
+      "links": [
+        { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500 (authentic)" },
+        { "to": "/product/digiflavor-x-geek-bar-lush-20k-disposable-10177/", "label": "Geek Bar Lush 20K" }
+      ],
+      "cta": {
+        "title": "Know what's in your vape",
+        "text": "Buy authentic, age-verified disposables — fast courier delivery across Australia.",
+        "to": "/products/e-cigarettes"
+      }
     }
   ]
 }
