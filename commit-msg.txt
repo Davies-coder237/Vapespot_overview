@@ -1,0 +1,14 @@
+UX: store locator (/discover) + skeletons anti-CLS + page ville responsive
+
+- StoreLocator: recherche + filtre par État + grille de cartes groupée par État
+  (remplace la liste de liens bruts de la page /discover).
+- CityCard: carte ville à l'identité du site (angles droits, accent violet).
+- StoreLocations (page produit): cartes 8 CBD reformulées avec CityCard.
+- Page ville: layout responsive 2 colonnes sur ordi (max-w-7xl),
+  produits pleine largeur, FAQ 2 colonnes, villes groupées par État.
+- Anti-saut au refresh: définie la classe scrollbar-none (inutilisée -> barre
+  horizontale) + squelettes de hauteur réservée sur les carrousels
+  (CityProducts, TrendingProducts, "You May Also Like").
+
+Le SEO statique est conservé : blocs de liens produits/villes inchangés
+(home, pages ville, pages produit).

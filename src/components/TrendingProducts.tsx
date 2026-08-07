@@ -15,13 +15,17 @@ function shuffle<T>(arr: T[]): T[] {
 
 export function TrendingProducts() {
   const [items, setItems] = useState<Product[]>([]);
+  const [loaded, setLoaded] = useState(false);
   const [activeDot, setActiveDot] = useState(0);
   const scrollerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     loadTrendingProducts()
-      .then((list) => setItems(shuffle(list)))
-      .catch(() => setItems([]));
+      .then((list) => {
+        setItems(shuffle(list));
+        setLoaded(true);
+      })
+      .catch(() => setLoaded(true));
   }, []);
 
   useEffect(() => {
@@ -45,6 +49,26 @@ export function TrendingProducts() {
 
   const scrollBy = (amount: number) =>
     scrollerRef.current?.scrollBy({ left: amount, behavior: "smooth" });
+
+  if (!loaded) {
+    return (
+      <section className="space-y-4">
+        <h2 className="lg:hidden text-xl md:text-2xl font-bold text-black px-4 md:px-6">
+          Trending Products
+        </h2>
+        <div className="hidden lg:flex items-center justify-between px-4 md:px-6">
+          <h2 className="text-2xl font-bold text-black">Trending Products</h2>
+        </div>
+        <div className="flex gap-4 overflow-hidden px-4 md:px-6 pb-2">
+          {[0, 1, 2].map((i) => (
+            <div key={i} className="shrink-0 w-[85vw] md:max-w-[420px] h-[280px]">
+              <div className="w-full h-full bg-[#F0F0F0] animate-pulse" />
+            </div>
+          ))}
+        </div>
+      </section>
+    );
+  }
 
   if (items.length === 0) return null;
 

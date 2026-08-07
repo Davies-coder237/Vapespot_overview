@@ -20,6 +20,7 @@ export function ProductDetails({ product }: { product: Product }) {
   const [qty, setQty] = useState(1);
   const { add } = useMyList();
   const [related, setRelated] = useState<Product[]>([]);
+  const [relatedLoaded, setRelatedLoaded] = useState(false);
   const [crumbs, setCrumbs] = useState<{ label: string; href?: string }[]>([]);
   const [activeDot, setActiveDot] = useState(0);
   const scrollerRef = useRef<HTMLDivElement>(null);
@@ -29,9 +30,9 @@ export function ProductDetails({ product }: { product: Product }) {
     (async () => {
       const idx = await loadSearchIndex();
       const hit = idx.find((s) => s.id === product.id);
-      if (!hit) return;
+      if (!hit) { setRelatedLoaded(true); return; }
       const leaf = await loadLeafFile(hit.file);
-      if (cancelled || !leaf) return;
+      if (cancelled || !leaf) { setRelatedLoaded(true); return; }
       const all = leaf.products;
       const curIdx = all.findIndex((p) => p.id === product.id);
       const total = all.length;
@@ -46,6 +47,7 @@ export function ProductDetails({ product }: { product: Product }) {
       const shuffled = pool.sort(() => Math.random() - 0.5);
       setRelated(shuffled);
       setCrumbs(hit.path.map((p) => ({ label: p })));
+      setRelatedLoaded(true);
     })();
     return () => { cancelled = true; };
   }, [product.id]);
@@ -155,7 +157,7 @@ export function ProductDetails({ product }: { product: Product }) {
       </div>
 
       {/* You May Also Like — full width below the 2-col grid */}
-      {related.length > 0 && (
+      {(related.length > 0 || !relatedLoaded) && (
         <div className="mt-6 px-4 md:px-6 space-y-3">
           {/* Mobile title */}
           <h2 className="lg:hidden text-lg font-bold text-black">You May Also Like</h2>
@@ -188,15 +190,21 @@ export function ProductDetails({ product }: { product: Product }) {
             className="flex gap-0 md:gap-4 lg:gap-4 overflow-x-auto scrollbar-none -mx-4 md:-mx-6 lg:mx-0 lg:px-0 pb-2"
             style={{ scrollSnapType: "x mandatory", WebkitOverflowScrolling: "touch" }}
           >
-            {doubledRelated.map((p, i) => (
-              <div
-                key={`${p.id}-${i}`}
-                className="shrink-0 w-screen md:w-[85vw] md:max-w-[420px] md:min-h-[280px] lg:w-auto lg:max-w-[420px] lg:h-[280px]"
-                style={{ scrollSnapAlign: "start" }}
-              >
-                <ProductCard product={p} />
-              </div>
-            ))}
+            {related.length === 0
+              ? Array.from({ length: 3 }).map((_, i) => (
+                  <div key={i} className="shrink-0 w-72 md:w-[420px] h-[280px]">
+                    <div className="w-full h-full bg-[#F0F0F0] animate-pulse" />
+                  </div>
+                ))
+              : doubledRelated.map((p, i) => (
+                  <div
+                    key={`${p.id}-${i}`}
+                    className="shrink-0 w-screen md:w-[85vw] md:max-w-[420px] md:min-h-[280px] lg:w-auto lg:max-w-[420px] lg:h-[280px]"
+                    style={{ scrollSnapAlign: "start" }}
+                  >
+                    <ProductCard product={p} />
+                  </div>
+                ))}
           </div>
 
           {/* Animated dots — mobile only */}

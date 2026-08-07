@@ -19,6 +19,7 @@ function loadCityMap(): Promise<Record<string, string[]>> {
 
 export function CityProducts({ slug, title }: { slug: string; title: string }) {
   const [items, setItems] = useState<Product[]>([]);
+  const [loaded, setLoaded] = useState(false);
   const [activeDot, setActiveDot] = useState(0);
   const scrollerRef = useRef<HTMLDivElement>(null);
 
@@ -34,7 +35,10 @@ export function CityProducts({ slug, title }: { slug: string; title: string }) {
       const list = ids
         .map((id) => byId.get(id))
         .filter((p): p is Product => Boolean(p));
-      if (run) setItems(list);
+      if (run) {
+        setItems(list);
+        setLoaded(true);
+      }
     })();
     return () => {
       cancelled = true;
@@ -59,6 +63,7 @@ export function CityProducts({ slug, title }: { slug: string; title: string }) {
   const scrollBy = (amount: number) =>
     scrollerRef.current?.scrollBy({ left: amount, behavior: "smooth" });
 
+  if (!loaded) return <CityProductsSkeleton title={title} />;
   if (items.length === 0) return null;
 
   const doubled = [...items, ...items];
@@ -115,6 +120,33 @@ export function CityProducts({ slug, title }: { slug: string; title: string }) {
               backgroundColor: activeDot === i ? "#0A0A0A" : "#D1D5DB",
             }}
           />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+/** Squelette : même hauteur que le carrousel chargé (anti-saut au refresh). */
+function CityProductsSkeleton({ title }: { title: string }) {
+  return (
+    <section className="w-full space-y-4">
+      <h2 className="lg:hidden text-xl md:text-2xl font-bold text-black px-4 md:px-6">
+        {title}
+      </h2>
+
+      <div className="hidden lg:flex items-center justify-between px-4 md:px-6">
+        <h2 className="text-2xl font-bold text-black">{title}</h2>
+        <div className="flex items-center gap-2">
+          <div className="h-9 w-9 rounded-full bg-[#F0F0F0] animate-pulse" />
+          <div className="h-9 w-9 rounded-full bg-[#F0F0F0] animate-pulse" />
+        </div>
+      </div>
+
+      <div className="flex gap-4 overflow-hidden px-4 md:px-6 lg:px-6 pb-2">
+        {[0, 1, 2].map((i) => (
+          <div key={i} className="shrink-0 w-[85vw] md:max-w-[420px] h-[280px]">
+            <div className="w-full h-full bg-[#F0F0F0] animate-pulse" />
+          </div>
         ))}
       </div>
     </section>

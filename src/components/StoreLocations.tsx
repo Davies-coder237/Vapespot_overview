@@ -1,17 +1,18 @@
 import { useEffect, useRef } from "react";
-import { Link } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight, ChevronRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { CityCard } from "./CityCard";
+import { STATE_NAMES } from "./CityCard";
 
 // Les 8 stores principaux (mêmes que ceux du bloc statique SEO en prod).
-const STORES = [
-  { slug: "vapespot-sydney-cbd", name: "Sydney CBD", meta: "New South Wales" },
-  { slug: "vapespot-melbourne-cbd", name: "Melbourne CBD", meta: "Victoria" },
-  { slug: "vapespot-brisbane-cbd", name: "Brisbane CBD", meta: "Queensland" },
-  { slug: "vapespot-perth-cbd", name: "Perth CBD", meta: "Western Australia" },
-  { slug: "vapespot-adelaide-cbd", name: "Adelaide CBD", meta: "South Australia" },
-  { slug: "vapespot-hobart-cbd", name: "Hobart CBD", meta: "Tasmania" },
-  { slug: "vapespot-canberra-cbd", name: "Canberra CBD", meta: "ACT" },
-  { slug: "vapespot-darwin-city", name: "Darwin", meta: "Northern Territory" },
+const STORES: { slug: string; name: string; state: string }[] = [
+  { slug: "vapespot-sydney-cbd", name: "Sydney CBD", state: STATE_NAMES.NSW },
+  { slug: "vapespot-melbourne-cbd", name: "Melbourne CBD", state: STATE_NAMES.VIC },
+  { slug: "vapespot-brisbane-cbd", name: "Brisbane CBD", state: STATE_NAMES.QLD },
+  { slug: "vapespot-perth-cbd", name: "Perth CBD", state: STATE_NAMES.WA },
+  { slug: "vapespot-adelaide-cbd", name: "Adelaide CBD", state: STATE_NAMES.SA },
+  { slug: "vapespot-hobart-cbd", name: "Hobart CBD", state: STATE_NAMES.TAS },
+  { slug: "vapespot-canberra-cbd", name: "Canberra CBD", state: STATE_NAMES.ACT },
+  { slug: "vapespot-darwin-city", name: "Darwin", state: STATE_NAMES.NT },
 ];
 
 export function StoreLocations() {
@@ -68,24 +69,12 @@ export function StoreLocations() {
         style={{ WebkitOverflowScrolling: "touch" }}
       >
         {doubled.map((s, i) => (
-          <Link
+          <div
             key={`${s.slug}-${i}`}
-            to={`/${s.slug}`}
-            className="shrink-0 w-[210px] lg:w-[220px] flex flex-col justify-between rounded-xl border border-[#E5E7EB] bg-white p-4 hover:border-[#7C3AED]/40 hover:shadow-sm transition-colors"
+            className="shrink-0 w-[210px] lg:w-[220px]"
           >
-            <div className="space-y-1.5">
-              <span className="block text-[11px] font-bold uppercase tracking-[0.14em] text-[#7C3AED]">
-                Vape Spot
-              </span>
-              <span className="block text-[17px] font-bold text-black leading-snug">
-                {s.name}
-              </span>
-              <span className="block text-[12px] text-[#9E9E9E]">{s.meta}</span>
-            </div>
-            <span className="mt-3 inline-flex items-center gap-1 text-[13px] font-semibold text-[#7C3AED]">
-              Visit store <ChevronRight className="h-4 w-4" strokeWidth={2} />
-            </span>
-          </Link>
+            <CityCard slug={s.slug} city={s.name} state={s.state} />
+          </div>
         ))}
       </div>
     </section>

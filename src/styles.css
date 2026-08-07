@@ -170,3 +170,11 @@ html.js .seo-block { display: none; }
   display: inline-block; margin: 4px; padding: 6px 12px; border: 1px solid #e5e7eb;
   border-radius: 999px; font-size: 0.8rem; color: #111827; text-decoration: none; background: #fff;
 }
+
+/* ════ Scrollbars masquées pour les carrousels horizontaux ════
+   La classe `scrollbar-none` est utilisée par les carrousels (Trending,
+   CityProducts, StoreLocations…) mais n'était définie nulle part → une vraie
+   barre horizontale s'affichait sur desktop. La définir élimine le « shift »
+   visuel au refresh ET le feeling « mode ordi sur téléphone ». */
+.scrollbar-none { scrollbar-width: none; -ms-overflow-style: none; }
+.scrollbar-none::-webkit-scrollbar { display: none; }
