@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://vapespot.store/sitemap.xml
+# deploy marker 2026-08-08
