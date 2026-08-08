@@ -373,6 +373,12 @@ for (const entry of searchIndex) {
     `<script type="application/ld+json">${JSON.stringify(
       buildProductLd(p, canonicalUrl, desc, img)
     )}</script>`,
+    `<script type="application/ld+json">${JSON.stringify(
+      buildBreadcrumbLd([
+        { name: "Home", url: "https://vapespot.store/" },
+        { name: title, url: canonicalUrl },
+      ])
+    )}</script>`,
   ].filter(Boolean);
 
   const headContent = headTags.join("\n    ");
@@ -460,6 +466,23 @@ function guideArticleLd(g) {
   };
 }
 
+/**
+ * JSON-LD BreadcrumbList générique : [Home, ...pages] — le dernier item porte
+ * l'URL de la page courante. Google affiche le fil d'Ariane dans les SERPs.
+ */
+function buildBreadcrumbLd(path) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: path.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: p.name,
+      ...(p.url ? { item: p.url } : {}),
+    })),
+  };
+}
+
 // Page index /guides/ : liste des guides + JSON-LD ItemList.
 const gBaseHead = [
   `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`,
@@ -495,6 +518,12 @@ const gIdxHead = [
       url: `${GUIDE_BASE}${g.slug}/`, name: g.title,
     })),
   })}</script>`,
+  `<script type="application/ld+json">${JSON.stringify(
+    buildBreadcrumbLd([
+      { name: "Home", url: "https://vapespot.store/" },
+      { name: "Vape Guides", url: GUIDE_BASE },
+    ])
+  )}</script>`,
 ].join("\n    ");
 const gIdxPage = template.replace(
   /<head>[\s\S]*?<\/head>/,
@@ -527,6 +556,13 @@ for (const g of guides.guides) {
     `<meta name="geo.placename" content="Australia" />`,
     ...gBaseHead,
     `<script type="application/ld+json">${JSON.stringify(guideArticleLd(g))}</script>`,
+    `<script type="application/ld+json">${JSON.stringify(
+      buildBreadcrumbLd([
+        { name: "Home", url: "https://vapespot.store/" },
+        { name: "Vape Guides", url: GUIDE_BASE },
+        { name: g.title, url: canonical },
+      ])
+    )}</script>`,
   ];
   if (g.faq && g.faq.length) {
     head.push(`<script type="application/ld+json">${JSON.stringify({
@@ -555,10 +591,40 @@ for (const g of guides.guides) {
 const homePool = pickProducts(null, trendPool, HOME_N, "vapespot-home");
 const homeCards = homePool.map(cardHTML).join("\n        ");
 if (homeCards) {
-  const homeHtml = template.replace(
-    "</body>",
-    seoBlock("Popular Products", "seo-dupe", homeCards) + "\n  </body>"
-  );
+  // Schema.org homepage : Organization + WebSite (@graph) → dit à Google
+  // qui est le site. Pas de SearchAction : le site n'a pas de page de
+  // recherche par URL (dialog uniquement) et Google pénalise les
+  // searchboxes factices qui n'affichent pas de résultats.
+  const homeLd = JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://vapespot.store/#org",
+        name: "Vape Spot",
+        url: "https://vapespot.store/",
+        logo: { "@type": "ImageObject", url: "https://vapespot.store/favicon-192.png" },
+        areaServed: "AU",
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://vapespot.store/#website",
+        name: "Vape Spot",
+        url: "https://vapespot.store/",
+        publisher: { "@id": "https://vapespot.store/#org" },
+        inLanguage: "en-AU",
+      },
+    ],
+  });
+  const homeHtml = template
+    .replace(
+      "</head>",
+      `\n    <script type="application/ld+json">${homeLd}</script>\n  </head>`
+    )
+    .replace(
+      "</body>",
+      seoBlock("Popular Products", "seo-dupe", homeCards) + "\n  </body>"
+    );
   writeFileSync(join(DIST, "index.html"), homeHtml, "utf-8");
 }
 

@@ -77,8 +77,14 @@ console.log(`✅ sitemap.xml régénéré : ${urls.length} URLs (lastmod ${today
 // 3052 produits dépassent → on ne met QUE les villes (101, sous la limite).
 // Les produits sont désormais en URL AVEC slash final (sitemap + canonical)
 // servies direct en 200 par le dossier physique → pas besoin de rewrite.
-const redirects = listings.map(
-  (l) => `/${l.slug}  /${l.slug}/  200`
-);
+const redirects = [
+  ...listings.map((l) => `/${l.slug}  /${l.slug}/  200`),
+  // Guides (blog) : même protection anti-308 que les villes. Google crawle
+  // "/guides/<slug>" sans slash → sans cette règle Cloudflare renvoie un 308
+  // et GSC logue en "Redirect error" (observé 08/08). ⚠️ TOUT NOUVEL ARTICLE
+  // DOIT être ajouté ici (slug issu de guides.json, ajouté automatiquement).
+  "/guides  /guides/  200",
+  ...guidesData.guides.map((g) => `/guides/${g.slug}  /guides/${g.slug}/  200`),
+];
 writeFileSync(REDIRECTS, redirects.join("\n") + "\n", "utf-8");
-console.log(`✅ _redirects régénéré : ${redirects.length} rewrites ville (code 200), sous la limite Cloudflare (~2000). Produits : URL slash direct (pas de rewrite).`);
+console.log(`✅ _redirects régénéré : ${redirects.length} rewrites (101 villes + ${guidesData.guides.length} guides, code 200), sous la limite Cloudflare (~2000). Produits : URL slash direct (pas de rewrite).`);
