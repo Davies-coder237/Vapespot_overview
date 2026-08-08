@@ -500,7 +500,10 @@ for (const cat of catalogueMeta.categories) {
     `<script type="application/ld+json">${JSON.stringify(
       buildBreadcrumbLd([
         { name: "Home", url: "https://vapespot.store/" },
-        { name: "Products" },
+        // Pas de niveau « Products » : il n'existe pas de page /products/ à
+        // laquelle pointer un `item`, or Google exige `item` sur chaque
+        // ListItem sauf le dernier → breadcrumb Home > <Label> où chaque
+        // item a une URL valide (corrige l'« invalid item » GSC 08/08).
         { name: label, url: canonicalUrl },
       ])
     )}</script>`,
