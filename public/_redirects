@@ -99,3 +99,12 @@
 /vapespot-hobart-cbd  /vapespot-hobart-cbd/  200
 /vapespot-sandy-bay  /vapespot-sandy-bay/  200
 /vapespot-darwin-city  /vapespot-darwin-city/  200
+
+# ---- Guides: serve non-slash variant with 200 (no 308, avoids GSC "Redirect error") ----
+/guides  /guides/  200
+/guides/what-happens-if-you-vape-without-juice-dry-hit /guides/what-happens-if-you-vape-without-juice-dry-hit/ 200
+/guides/does-a-vape-smell-like-cigarettes /guides/does-a-vape-smell-like-cigarettes/ 200
+/guides/why-does-my-vape-blink-when-i-hit-it /guides/why-does-my-vape-blink-when-i-hit-it/ 200
+/guides/how-many-puffs-is-an-alibarbar-ingot-30000 /guides/how-many-puffs-is-an-alibarbar-ingot-30000/ 200
+/guides/how-to-charge-a-disposable-vape-without-a-charger /guides/how-to-charge-a-disposable-vape-without-a-charger/ 200
+/guides/how-to-spot-a-fake-disposable-vape-in-australia /guides/how-to-spot-a-fake-disposable-vape-in-australia/ 200
