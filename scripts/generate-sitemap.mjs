@@ -35,6 +35,16 @@ try {
   );
 } catch {}
 
+// Catégories produit (prérendues) : /products/<slug>/ pour chaque catégorie
+// top-level. Sources : meta.json (labels/slugs). Servies en 200 direct par le
+// dossier dist/products/<slug>/index.html + rewrite anti-308 sans slash.
+let metaData = { categories: [] };
+try {
+  metaData = JSON.parse(
+    readFileSync(join(ROOT, "public", "data", "meta.json"), "utf-8")
+  );
+} catch {}
+
 // Date ISO du jour : lastmod frais, signal de re-crawl.
 const today = new Date().toISOString().slice(0, 10);
 
@@ -52,6 +62,13 @@ const urls = [
   ...productIds.map((id) =>
     url(`${DOMAIN}/product/${id}/`, today, "weekly", "0.6")
   ),
+  // Catégories produit (prérendues) : portes d'entrée → priorité haute,
+  // plus fraîches que les produits (le catalogue bouge souvent).
+  ...metaData.categories
+    .filter((c) => c && c.slug)
+    .map((c) =>
+      url(`${DOMAIN}/products/${c.slug}/`, today, "daily", "0.7")
+    ),
   // Section guides : index + un URL par article (priorité plus haute que produits)
   url(`${DOMAIN}/guides/`, today, "weekly", "0.8"),
   ...guidesData.guides.map((g) =>
@@ -79,6 +96,11 @@ console.log(`✅ sitemap.xml régénéré : ${urls.length} URLs (lastmod ${today
 // servies direct en 200 par le dossier physique → pas besoin de rewrite.
 const redirects = [
   ...listings.map((l) => `/${l.slug}  /${l.slug}/  200`),
+  // Catégories produit : même protection anti-308 que villes/guides. Google
+  // crawle "/products/<slug>" sans slash → 200 direct (sinon Cloudflare 308).
+  ...metaData.categories
+    .filter((c) => c && c.slug)
+    .map((c) => `/products/${c.slug}  /products/${c.slug}/  200`),
   // Guides (blog) : même protection anti-308 que les villes. Google crawle
   // "/guides/<slug>" sans slash → sans cette règle Cloudflare renvoie un 308
   // et GSC logue en "Redirect error" (observé 08/08). ⚠️ TOUT NOUVEL ARTICLE
@@ -87,4 +109,4 @@ const redirects = [
   ...guidesData.guides.map((g) => `/guides/${g.slug}  /guides/${g.slug}/  200`),
 ];
 writeFileSync(REDIRECTS, redirects.join("\n") + "\n", "utf-8");
-console.log(`✅ _redirects régénéré : ${redirects.length} rewrites (101 villes + ${guidesData.guides.length} guides, code 200), sous la limite Cloudflare (~2000). Produits : URL slash direct (pas de rewrite).`);
+console.log(`✅ _redirects régénéré : ${redirects.length} rewrites (101 villes + ${metaData.categories.filter((c) => c && c.slug).length} catégories + ${guidesData.guides.length} guides, code 200), sous la limite Cloudflare (~2000). Produits : URL slash direct (pas de rewrite).`);

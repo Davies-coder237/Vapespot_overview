@@ -418,7 +418,113 @@ for (const entry of searchIndex) {
   prodCount++;
 }
 
-// ════ 4b. Guides (blog) — /guides/ + /guides/<slug>/ ══════════════
+// ════ 4b. Catégories (e-commerce) — /products/<slug>/ ═══════════════
+// Pages « portes d'entrée » du catalogue : prérendues pour Google,
+// miroir exact de la SPA (resolveLeaf côté client). 2 cas :
+//  - catégorie avec leaf (file) → liste de produits (ItemList + cartes),
+//  - catégorie sans leaf → « CategoryPicker » : liens vers chaque
+//    sous-catégorie (avec ?sub= et ?subsub= si besoin).
+const catalogueMeta = JSON.parse(
+  readFileSync(join(ROOT, "public", "data", "meta.json"), "utf-8")
+);
+const CAT_BASE = "https://vapespot.store/products/";
+let catCount = 0;
+
+/** Produits d'une catégorie si elle a un fichier leaf direct, sinon null. */
+function catProducts(cat) {
+  if (!cat.file) return null;
+  try {
+    const leaf = loadLeaf(cat.file);
+    return Array.isArray(leaf?.products) ? leaf.products.filter((p) => p && p.id) : null;
+  } catch {
+    return null;
+  }
+}
+
+for (const cat of catalogueMeta.categories) {
+  if (!cat || !cat.slug) continue;
+  const label = cat.label || cat.slug;
+  const canonicalUrl = `${CAT_BASE}${cat.slug}/`;
+
+  const products = catProducts(cat);
+  let desc, blockTitle, blockContent, listItems;
+  if (products) {
+    listItems = products.slice(0, 100).map((p) => ({
+      name: String(p.name || p.series || p.brand || label).trim(),
+      url: `https://vapespot.store/product/${p.id}/`,
+    }));
+    desc = `Shop ${label} at Vape Spot Australia — ${products.length} products from genuine brands. Fast courier delivery across Australia.`;
+    blockTitle = `Shop ${label} (${products.length} products)`;
+    blockContent = products.slice(0, 60).map(cardHTML).join("\n        ");
+  } else {
+    // Picker : chaque sous-catégorie (ou sous-sous) qui mène à un fichier.
+    const entries = [];
+    for (const sub of cat.subcategories || []) {
+      if (sub.file) {
+        entries.push({ label: sub.label, url: `${CAT_BASE}${cat.slug}/?sub=${sub.slug}`, count: sub.count });
+      } else {
+        for (const ss of sub.sub_subcategories || []) {
+          if (ss.file) {
+            entries.push({ label: ss.label, url: `${CAT_BASE}${cat.slug}/?sub=${sub.slug}&subsub=${ss.slug}`, count: ss.count });
+          }
+        }
+      }
+    }
+    listItems = entries.map((e) => ({ name: e.label, url: e.url }));
+    desc = `Browse ${label} at Vape Spot Australia — ${entries.length} categories. Genuine brands, fast AU delivery.`;
+    blockTitle = `Browse ${label}`;
+    blockContent = entries.map(
+      (e) => `<a class="seo-link" href="${escapeHtml(e.url)}"><span class="seo-name">${escapeHtml(e.label)}${e.count ? ` (${e.count})` : ""}</span></a>`
+    ).join("\n        ");
+  }
+
+  if (!listItems || listItems.length === 0) continue;
+
+  const headTags = [
+    `<title>${escapeHtml(label)} | Vape Spot Australia</title>`,
+    `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`,
+    `<meta name="description" content="${escapeHtml(desc)}" />`,
+    `<meta property="og:title" content="${escapeHtml(label)} | Vape Spot Australia" />`,
+    `<meta property="og:description" content="${escapeHtml(desc)}" />`,
+    `<meta property="og:url" content="${canonicalUrl}" />`,
+    `<meta property="og:type" content="website" />`,
+    `<meta name="twitter:card" content="summary" />`,
+    `<link rel="canonical" href="${canonicalUrl}" />`,
+    `<meta name="geo.country" content="AU" />`,
+    `<meta name="geo.placename" content="Australia" />`,
+    `<link rel="alternate" hreflang="en-AU" href="${canonicalUrl}" />`,
+    `<link rel="icon" href="/favicon.ico" sizes="48x48" />`,
+    `<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />`,
+    `<link rel="apple-touch-icon" href="/apple-touch-icon.png" />`,
+    `<script>document.documentElement.classList.add("js")</script>`,
+    `<script type="application/ld+json">${JSON.stringify(
+      buildBreadcrumbLd([
+        { name: "Home", url: "https://vapespot.store/" },
+        { name: "Products" },
+        { name: label, url: canonicalUrl },
+      ])
+    )}</script>`,
+    `<script type="application/ld+json">${JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      itemListElement: listItems.slice(0, 100).map((it, i) => ({
+        "@type": "ListItem", position: i + 1, name: it.name, url: it.url,
+      })),
+    })}</script>`,
+  ];
+
+  const headContent = headTags.join("\n    ");
+  const newHead = `${headContent}\n    ${prodScriptTag}\n    ${prodCssTag}\n  </head>`;
+  let html = template.replace(/<head>[\s\S]*?<\/head>/, `<head>\n    ${newHead}`);
+  html = html.replace("</body>", seoBlock(blockTitle, "seo-cat", blockContent) + "\n  </body>");
+
+  const outDir = join(DIST, "products", cat.slug);
+  mkdirSync(outDir, { recursive: true });
+  writeFileSync(join(outDir, "index.html"), html, "utf-8");
+  catCount++;
+}
+
+// ════ 4c. Guides (blog) — /guides/ + /guides/<slug>/ ══════════════
 // Articles Soro : pages statiques double couche (head SEO + JSON-LD Article/
 // FAQPage + bloog contenu en .seo-block masqué au JS). Google lit le HTML
 // direct ; l'humain reçoit la SPA React qui rend la même idée (§ parité).
@@ -628,7 +734,7 @@ if (homeCards) {
   writeFileSync(join(DIST, "index.html"), homeHtml, "utf-8");
 }
 
-console.log(`\n✅ ${count} pages ville + ${prodCount} pages produit statiques générées dans dist/`);
+console.log(`\n✅ ${count} pages ville + ${prodCount} pages produit + ${catCount} pages catégorie statiques générées dans dist/`);
 
 // ── Helper ──────────────────────────────────────────────────────────
 function escapeHtml(str) {
