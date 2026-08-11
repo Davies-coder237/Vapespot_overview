@@ -184,8 +184,11 @@ for (const listing of listings) {
   // Construire le title
   const title = `${businessName} | Vape Spot Australia`;
 
-  // Construire l'URL canonique
-  const canonicalUrl = `https://vapespot.store/${slug}`;
+  // Construire l'URL canonique — AVEC slash final (11/08) : uniforme avec le
+  // sitemap + produits/catégories/guides. La forme sans slash reste servie en
+  // 200 par le rewrite _redirects (les 22 villes déjà indexées sans slash ne
+  // cassent pas) mais le canonical impose la forme slash à Google.
+  const canonicalUrl = `https://vapespot.store/${slug}/`;
 
   // ── Balises head ──────────────────────────────────────────────
   const headTags = [

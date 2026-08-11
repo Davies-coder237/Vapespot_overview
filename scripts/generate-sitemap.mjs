@@ -54,7 +54,11 @@ const url = (loc, lastmod, changefreq, priority) =>
 const urls = [
   url(`${DOMAIN}/`, today, "daily", "1.0"),
   ...listings.map((l) =>
-    url(`${DOMAIN}/${l.slug}`, today, "weekly", "0.8")
+    // Villes : URL AVEC slash final (décision 11/08) — uniforme avec produits,
+    // catégories et guides. Le rewrite _redirects "/slug  /slug/  200" est
+    // conservé : les 22 villes déjà indexées SANS slash restent servies en 200
+    // et Google consolide via le canonical slash de la page.
+    url(`${DOMAIN}/${l.slug}/`, today, "weekly", "0.8")
   ),
   // URLs produit AVEC slash final → servies directement en 200 par le dossier
   // dist/product/<id>/index.html (fini le 308). Les rewrites _redirects étant
