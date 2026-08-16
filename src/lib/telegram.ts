@@ -1,4 +1,6 @@
 import type { ListItem, Product } from "./types";
+import { CRYPTO_DISCOUNT_PERCENT, PACK_TIERS, packPrice } from "./packs";
+import { cryptoDiscounted } from "./checkout";
 
 export const TELEGRAM_HANDLE = "vapespot_store";
 
@@ -17,7 +19,7 @@ export function buildOrderLines(items: ListItem[], products: Product[]): OrderLi
 }
 
 export function lineTotal(line: OrderLine): number {
-  return (line.product.price_aud ?? 0) * line.quantity;
+  return packPrice(line.product.price_aud, line.quantity) ?? 0;
 }
 
 export function ordersTotal(lines: OrderLine[]): number {
@@ -46,9 +48,13 @@ export function buildTelegramMessage(lines: OrderLine[], deliveryAddress = "", d
 
   const productLines = lines
     .map((l, i) => {
-      const unit = l.product.price_aud == null ? "Price on request" : fmt(l.product.price_aud);
-      const total = l.product.price_aud == null ? "—" : fmt(lineTotal(l));
-      return `${i + 1}. ${l.product.name}\n     ${unit} × ${l.quantity} = ${total}`;
+      const totalNum = lineTotal(l);
+      const total = l.product.price_aud == null ? "—" : fmt(totalNum);
+      // Pour un pack, on affiche le prix unitaire réellement appliqué (total/qty).
+      const effUnit = l.quantity > 0 && l.product.price_aud != null ? totalNum / l.quantity : l.product.price_aud;
+      const unit = l.product.price_aud == null ? "Price on request" : fmt(effUnit);
+      const isPack = PACK_TIERS.some((t) => t.qty === l.quantity);
+      return `${i + 1}. ${l.product.name}\n     ${unit} × ${l.quantity} = ${total}${isPack ? "  (pack of " + l.quantity + ")" : ""}`;
     })
     .join("\n\n");
 
@@ -69,9 +75,13 @@ export function buildTelegramMessage(lines: OrderLine[], deliveryAddress = "", d
         "    Via Australia Post — 1–3 business days, depending on location.",
       ].join("\n");
 
+  const total = ordersTotal(lines);
+  const cryptoTotal = cryptoDiscounted(total);
   const payment = [
     "💳  PAYMENT",
-    "    PayID, Bank Transfer, Crypto or Gift Card — payment required before delivery.",
+    `    PayID or Bank Transfer :  ${fmt(total)}`,
+    `    Crypto or Gift Card :     ${fmt(cryptoTotal)}  (save ${CRYPTO_DISCOUNT_PERCENT}%)`,
+    "    Payment required before delivery.",
   ].join("\n");
 
   const footer = "Please reply to confirm this order. Thank you! 🙏";

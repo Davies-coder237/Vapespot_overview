@@ -15,6 +15,7 @@ import {
   onImageError,
   productCard,
 } from "@/lib/data";
+import { CRYPTO_DISCOUNT_PERCENT, packOptions } from "@/lib/packs";
 
 export function ProductDetails({ product }: { product: Product }) {
   const [qty, setQty] = useState(1);
@@ -129,7 +130,55 @@ export function ProductDetails({ product }: { product: Product }) {
             <p className="text-[13px] md:text-[14px] text-[#7C3AED] font-semibold">
               🛵 Local courier delivery — usually 30 min to 2 hrs, or via Australia Post.
             </p>
+            <p className="text-[12px] md:text-[13px] font-semibold text-[#5B3DF5]">
+              💳 Pay with Crypto or Gift Card → save {CRYPTO_DISCOUNT_PERCENT}% on your order
+            </p>
           </header>
+
+          {/* ── Buy in Packs ── */}
+          <section className="border border-[#E8E8E8] bg-white">
+            <div className="flex items-center justify-between px-4 py-2.5 border-b border-[#E8E8E8]">
+              <p className="text-[13px] font-extrabold text-black uppercase tracking-wide">Buy in packs</p>
+              <span className="text-[11px] text-[#9E9E9E]">Select a pack below</span>
+            </div>
+            <div className="divide-y divide-[#F0F0F0]">
+              {packOptions(product.price_aud).map((o) => {
+                const selected = qty === o.qty;
+                return (
+                  <button
+                    key={o.qty}
+                    type="button"
+                    onClick={() => setQty(o.qty)}
+                    className={`w-full flex items-center justify-between px-4 py-3 text-left transition-colors ${
+                      selected ? "bg-[#F0EEFF]" : "bg-white hover:bg-[#FAFAFA]"
+                    }`}
+                  >
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <span
+                        className={`shrink-0 h-5 w-5 rounded-full border-2 flex items-center justify-center transition-colors ${
+                          selected ? "border-[#5B3DF5] bg-[#5B3DF5]" : "border-[#C4B8F0] bg-white"
+                        }`}
+                      >
+                        {selected && <span className="h-2.5 w-2.5 rounded-full bg-white" />}
+                      </span>
+                      <span className="text-[14px] font-bold text-black">×{o.qty}</span>
+                      {o.bestValue && (
+                        <span className="text-[10px] font-extrabold uppercase tracking-wide text-[#5B3DF5]">
+                          Best value
+                        </span>
+                      )}
+                    </div>
+                    <div className="text-right shrink-0">
+                      <p className="text-[14px] font-bold text-black">{formatPrice(o.price)}</p>
+                      {o.save != null && o.save > 0 && (
+                        <p className="text-[11px] font-semibold text-[#7C3AED]">save {formatPrice(o.save)}</p>
+                      )}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </section>
 
           <div className="flex items-center gap-3">
             <QuantitySelector value={qty} onChange={(v) => setQty(Math.max(1, v))} min={1} />
@@ -142,7 +191,7 @@ export function ProductDetails({ product }: { product: Product }) {
               className="flex-1 lg:flex-none lg:min-w-[260px] lg:px-10 h-11 inline-flex items-center justify-center gap-2 bg-black text-white text-[15px] font-semibold rounded-none hover:opacity-90"
             >
               <Plus className="h-4 w-4" strokeWidth={2.5} />
-              Add to My List
+              {qty === 1 ? "Add to My List" : `Add ×${qty} to My List`}
             </button>
           </div>
 

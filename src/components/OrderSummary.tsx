@@ -13,6 +13,8 @@ import {
   lineTotal,
   ordersTotal,
 } from "@/lib/telegram";
+import { CRYPTO_DISCOUNT_PERCENT } from "@/lib/packs";
+import { MIN_ORDER_AUD, cryptoDiscounted } from "@/lib/checkout";
 
 export function OrderSummary() {
   const { items } = useMyList();
@@ -35,6 +37,8 @@ export function OrderSummary() {
   }, []);
 
   const lines = buildOrderLines(items, products);
+  const total = ordersTotal(lines);
+  const cryptoTotal = cryptoDiscounted(total);
   const message = buildTelegramMessage(lines, deliveryAddress, deliveryMethod);
   const url = buildTelegramUrl(message);
   const handleTelegramClick = async () => {
@@ -131,12 +135,19 @@ export function OrderSummary() {
           <p className="text-xs text-[#6E6E73] mt-0.5">Including products only</p>
         </div>
         <p className="text-[26px] font-extrabold text-black leading-none">
-          {formatPrice(ordersTotal(lines))}
+          {formatPrice(total)}
           <span className="ml-1.5 text-[14px] font-bold text-[#6E6E73]">AUD</span>
         </p>
       </div>
+      <div className="flex items-center justify-between px-4 py-2.5 bg-[#F0EEFF] border border-[#E4DEFF]">
+        <p className="text-[13px] font-bold text-[#5B3DF5]">Pay with Crypto or Gift Card</p>
+        <p className="text-[14px] font-extrabold text-[#5B3DF5]">
+          {formatPrice(cryptoTotal)}
+          <span className="ml-1 text-[11px] font-bold">(save {CRYPTO_DISCOUNT_PERCENT}%)</span>
+        </p>
+      </div>
       <p className="text-[12px] text-[#1F1F1F] mt-1 text-center lg:text-left">
-        Minimum order: A$50.00
+        Minimum order: {formatPrice(MIN_ORDER_AUD)}
       </p>
 
       {/* ── Payment notice ── */}
@@ -297,7 +308,7 @@ export function OrderSummary() {
       </div>
 
       {/* ── Telegram CTA ── */}
-      {ordersTotal(lines) >= 50 ? (
+      {total >= MIN_ORDER_AUD ? (
         <a
           href={url}
           target="_blank"
@@ -306,7 +317,7 @@ export function OrderSummary() {
           className="flex items-center justify-center gap-2 w-full bg-black text-white py-4 text-[15px] font-semibold hover:bg-[#1a1a1a] transition-colors"
         >
           <Send className="h-4 w-4" />
-          Contact us on Telegram
+          Proceed to Checkout
         </a>
       ) : (
         <div className="w-full">
@@ -315,10 +326,10 @@ export function OrderSummary() {
             className="flex items-center justify-center gap-2 w-full bg-[#E5E5E5] text-[#9E9E9E] py-4 text-[15px] font-semibold cursor-not-allowed"
           >
             <Send className="h-4 w-4" />
-            Contact us on Telegram
+            Proceed to Checkout
           </button>
           <p className="text-center text-[13px] text-[#E53E3E] mt-2 font-bold">
-            Minimum order not reached. Add A${(50 - ordersTotal(lines)).toFixed(2)} more to place your order.
+            Minimum order not reached. Add A${(MIN_ORDER_AUD - total).toFixed(2)} more to place your order.
           </p>
         </div>
       )}

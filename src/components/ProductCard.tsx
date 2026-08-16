@@ -1,8 +1,10 @@
 import { Link } from "@tanstack/react-router";
+import { Boxes } from "lucide-react";
 import type { Product } from "@/lib/types";
 import { formatPrice, onImageError, productCard } from "@/lib/data";
 import { useMyList } from "@/lib/storage";
 import { toast } from "sonner";
+import { PACK_TIERS, packPrice } from "@/lib/packs";
 
 export function ProductCard({
   product,
@@ -27,7 +29,7 @@ export function ProductCard({
         to="/product/$id"
         params={{ id: product.id }}
         onClick={onClick}
-        className="shrink-0 w-[150px] md:w-[180px] lg:w-[200px] flex items-center justify-center py-4 px-4"
+        className="relative shrink-0 w-[150px] md:w-[180px] lg:w-[200px] flex items-center justify-center py-4 px-4"
       >
         <img
           src={productCard(product)}
@@ -36,6 +38,10 @@ export function ProductCard({
           onError={onImageError}
           className="w-full h-full object-contain max-h-[200px]"
         />
+        <span className="absolute top-1.5 left-1.5 z-10 h-[50px] w-[50px] rounded-full bg-[#5B3DF5] text-white flex flex-col items-center justify-center border-2 border-white shadow">
+          <Boxes className="h-4 w-4" strokeWidth={2.25} />
+          <span className="mt-0.5 text-[7px] font-extrabold tracking-widest leading-none">PACKS</span>
+        </span>
       </Link>
 
       {/* Text + button — RIGHT */}
@@ -85,11 +91,34 @@ export function ProductCard({
           </Link>
         </div>
 
-        {/* Button stays at bottom */}
+        {/* Pack chips — quick add a pack */}
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {PACK_TIERS.map((t) => {
+            const price = packPrice(product.price_aud, t.qty);
+            if (price == null) return null;
+            return (
+              <button
+                key={t.qty}
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  add(product.id, t.qty);
+                  toast.success(`${t.qty}-pack of ${product.name} added to your list`);
+                }}
+                className="px-2.5 py-1.5 text-[11px] font-bold rounded-full border border-[#5B3DF5] text-[#5B3DF5] hover:bg-[#F0EEFF] transition-colors"
+              >
+                ×{t.qty} A${price}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Button stays at bottom — single unit (×1) */}
         <button
           type="button"
           onClick={handleAdd}
-          className="mt-3 w-full lg:w-[220px] bg-black text-white text-[13px] font-semibold rounded-none py-3 px-4 hover:opacity-90 transition-opacity"
+          className="mt-2 w-full lg:w-[220px] bg-black text-white text-[13px] font-semibold rounded-none py-3 px-4 hover:opacity-90 transition-opacity"
         >
           Add to My List
         </button>
