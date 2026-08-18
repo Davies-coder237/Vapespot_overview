@@ -108,20 +108,25 @@ export function ProductCard({
               className="relative flex flex-col items-start justify-between rounded-[14px] px-2.5 py-2 h-[90px] text-left text-white transition-transform duration-150 hover:-translate-y-0.5"
               style={{ background: "linear-gradient(180deg, #9670F5 0%, #5C36C9 100%)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.25)" }}
             >
-              <span className="text-[12px] md:text-[13px] font-bold">PACK {t.qty}</span>
+              {/* Percentage badge (top-right) */}
               <span className="absolute top-1.5 right-1.5 bg-white text-[#5C36C9] text-[9px] font-bold px-1.5 py-0.5 rounded leading-none">-{pct}%</span>
-              <span className="w-full text-[13px] md:text-[14px] font-bold">A${price}</span>
-              <span className="w-full text-[9px] md:text-[10px] font-semibold text-white/80">SAVE A${save}</span>
+
+              {/* PACK text positioned under the percentage */}
+              <span className="absolute top-[24px] right-1.5 text-[12px] md:text-[13px] font-bold">PACK {t.qty}</span>
+
+              {/* Price and save text with tightened spacing */}
+              <span className="mt-[32px] w-full text-[13px] md:text-[14px] font-bold">A${price}</span>
+              <span className="mt-1 w-full text-[9px] md:text-[10px] font-semibold text-white/80">SAVE A${save}</span>
             </button>
           );
         })}
       </div>
 
-      {/* Button — square, not touching edges */}
+      {/* Button — rectangular with horizontal margins, bottom border visible */}
       <button
         type="button"
         onClick={handleAdd}
-        className="mx-4 mt-4 w-[80px] h-[80px] rounded-[10px] bg-black text-white text-[13px] font-semibold flex items-center justify-center hover:opacity-90 transition-opacity"
+        className="mx-6 mt-4 w-[calc(100%-1.5rem)] px-4 h-[44px] rounded-[10px] bg-black text-white text-[13px] font-semibold flex items-center justify-center hover:opacity-90 transition-opacity"
       >
         Add to My List
       </button>
