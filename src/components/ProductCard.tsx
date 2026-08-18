@@ -91,11 +91,14 @@ export function ProductCard({
           </Link>
         </div>
 
-        {/* Pack chips — quick add a pack */}
-        <div className="mt-3 flex flex-wrap gap-1.5">
+        {/* Pack badges — full width */}
+        <div className="grid grid-cols-4 gap-2 md:gap-3 px-2 md:px-3 mt-3">
           {PACK_TIERS.map((t) => {
             const price = packPrice(product.price_aud, t.qty);
             if (price == null) return null;
+            const full = product.price_aud * t.qty;
+            const pct = Math.round((1 - price / full) * 100);
+            const save = Math.round(full - price);
             return (
               <button
                 key={t.qty}
@@ -106,9 +109,13 @@ export function ProductCard({
                   add(product.id, t.qty);
                   toast.success(`${t.qty}-pack of ${product.name} added to your list`);
                 }}
-                className="px-2.5 py-1.5 text-[11px] font-bold rounded-full border border-[#5B3DF5] text-[#5B3DF5] hover:bg-[#F0EEFF] transition-colors"
+                className="relative flex flex-col items-start justify-between rounded-[14px] px-2.5 py-2 h-[90px] text-left text-white transition-transform duration-150 hover:-translate-y-0.5"
+                style={{ background: "linear-gradient(180deg, #9670F5 0%, #5C36C9 100%)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.25)" }}
               >
-                ×{t.qty} A${price}
+                <span className="text-[12px] md:text-[13px] font-bold">PACK {t.qty}</span>
+                <span className="absolute top-1.5 right-1.5 bg-white text-[#5C36C9] text-[9px] font-bold px-1.5 py-0.5 rounded leading-none">-{pct}%</span>
+                <span className="w-full text-[13px] md:text-[14px] font-bold">A${price}</span>
+                <span className="w-full text-[9px] md:text-[10px] font-semibold text-white/80">SAVE A${save}</span>
               </button>
             );
           })}
@@ -118,7 +125,7 @@ export function ProductCard({
         <button
           type="button"
           onClick={handleAdd}
-          className="mt-2 w-full lg:w-[220px] bg-black text-white text-[13px] font-semibold rounded-none py-3 px-4 hover:opacity-90 transition-opacity"
+          className="mt-2 w-full rounded-[10px] bg-black text-white text-[13px] font-semibold py-3 px-4 hover:opacity-90 transition-opacity"
         >
           Add to My List
         </button>

@@ -15,7 +15,7 @@ import {
   onImageError,
   productCard,
 } from "@/lib/data";
-import { CRYPTO_DISCOUNT_PERCENT, packOptions } from "@/lib/packs";
+import { CRYPTO_DISCOUNT_PERCENT, packOptions, packPrice } from "@/lib/packs";
 
 export function ProductDetails({ product }: { product: Product }) {
   const [qty, setQty] = useState(1);
@@ -73,6 +73,7 @@ export function ProductDetails({ product }: { product: Product }) {
     scrollerRef.current?.scrollBy({ left: amount, behavior: "smooth" });
 
   const doubledRelated = [...related, ...related];
+  const lineTotal = packPrice(product.price_aud, qty);
 
   return (
     <article className="pb-8">
@@ -182,6 +183,20 @@ export function ProductDetails({ product }: { product: Product }) {
 
           <div className="flex items-center gap-3">
             <QuantitySelector value={qty} onChange={(v) => setQty(Math.max(1, v))} min={1} />
+            <div className="text-right space-y-1">
+              <p className="text-[14px] font-bold text-black">
+                {lineTotal !== null ? formatPrice(lineTotal) : formatPrice(product.price_aud)}
+              </p>
+              {lineTotal !== null && qty > 1 ? (
+                <>
+                  {PACK_TIERS.some((t) => t.qty === qty) ? (
+                    <p className="text-[10px] text-[#6E6E73]">(pack of {qty})</p>
+                  ) : (
+                    <p className="text-[10px] text-[#6E6E73]">(pack pricing)</p>
+                  )}
+                </>
+              ) : null}
+            </div>
             <button
               type="button"
               onClick={() => {

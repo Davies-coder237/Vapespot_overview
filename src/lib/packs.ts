@@ -3,7 +3,7 @@
 // à n'importe quel produit, puis le total du pack est arrondi à l'entier.
 // Le prix unitaire, lui, garde ses décimales.
 
-export const CRYPTO_DISCOUNT_PERCENT = 10;
+export const CRYPTO_DISCOUNT_PERCENT = 15;
 
 export interface PackTier {
   qty: number;
@@ -18,18 +18,36 @@ export const PACK_TIERS: PackTier[] = [
   { qty: 10, multiplier: 0.6364793598836152 },
 ];
 
+/** Prix d'un morceau unique : 1 unité simple ou exactement un pack (arrondi entier AUD). */
+function packOf(unitPrice: number, qty: number): number {
+  const tier = PACK_TIERS.find((t) => t.qty === qty);
+  if (!tier) return unitPrice;
+  return Math.round(unitPrice * qty * tier.multiplier);
+}
+
 /**
- * Prix d'une quantité donnée :
- * - qty <= 1             → prix unitaire (décimales conservées)
- * - qty dans un pack     → total du pack, arrondi à l'entier AUD
- * - autre quantité (>1)  → prix plein unitaire × qty (aucun pack défini)
+ * Prix d'une quantité donnée, TOUJOURS sur la base des packs :
+ * - qty <= 1          → prix unitaire (décimales conservées)
+ * - qty = 2/3/5/10    → prix exact du pack (inchangé)
+ * - qty autre (>1)    → composition optimale des packs, la moins chère
+ *                       (ex. 4 = 3-pack + 1 → 130+55, 7 = 5-pack + 2-pack → 200+100).
  */
 export function packPrice(unitPrice: number | null, qty: number): number | null {
   if (unitPrice == null) return null;
   if (qty <= 1) return unitPrice;
-  const tier = PACK_TIERS.find((t) => t.qty === qty);
-  if (!tier) return unitPrice * qty;
-  return Math.round(unitPrice * qty * tier.multiplier);
+
+  // Prog. dynamique ascendante : coût minimal pour atteindre EXACTEMENT q unités.
+  const memo = new Map<number, number>([[0, 0]]);
+  for (let q = 1; q <= qty; q++) {
+    let best = Number.POSITIVE_INFINITY;
+    for (const piece of [1, ...PACK_TIERS.map((t) => t.qty)]) {
+      if (piece > q) continue;
+      const candidate = memo.get(q - piece)! + packOf(unitPrice, piece);
+      if (candidate < best) best = candidate;
+    }
+    memo.set(q, best);
+  }
+  return memo.get(qty)!;
 }
 
 export interface PackOption {
