@@ -105,20 +105,23 @@ export function ProductCard({
                 add(product.id, t.qty);
                 toast.success(`${t.qty}-pack of ${product.name} added to your list`);
               }}
-              className="flex flex-col items-start gap-2 px-3 py-2 text-[11px] font-bold rounded-full border border-[#5B3DF5] text-[#5B3DF5] hover:bg-[#F0EEFF] transition-colors"
+              className="relative flex flex-col items-start justify-between rounded-[14px] px-2.5 py-2 h-[90px] text-left text-white transition-transform duration-150 hover:-translate-y-0.5"
+              style={{ background: "linear-gradient(180deg, #9670F5 0%, #5C36C9 100%)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.25)" }}
             >
-              <span>×{t.qty} A${price}</span>
-              <span className="text-[9px] text-[#5B36C9]">-{pct}%</span>
+              <span className="text-[12px] md:text-[13px] font-bold">PACK {t.qty}</span>
+              <span className="absolute top-1.5 right-1.5 bg-white text-[#5C36C9] text-[9px] font-bold px-1.5 py-0.5 rounded leading-none">-{pct}%</span>
+              <span className="w-full text-[13px] md:text-[14px] font-bold">A${price}</span>
+              <span className="w-full text-[9px] md:text-[10px] font-semibold text-white/80">SAVE A${save}</span>
             </button>
           );
         })}
       </div>
 
-      {/* Button — full width */}
+      {/* Button — square, not touching edges */}
       <button
         type="button"
         onClick={handleAdd}
-        className="mt-4 w-full rounded-[10px] bg-black text-white text-[13px] font-semibold py-3 px-4 hover:opacity-90 transition-opacity"
+        className="mx-4 mt-4 w-[80px] h-[80px] rounded-[10px] bg-black text-white text-[13px] font-semibold flex items-center justify-center hover:opacity-90 transition-opacity"
       >
         Add to My List
       </button>
