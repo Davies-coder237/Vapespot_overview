@@ -22,7 +22,7 @@ export function ProductCard({
   };
 
   return (
-    <div className="w-full min-h-[260px] lg:h-full flex flex-col border-t border-b border-gray-200 bg-[#F5F5F5]">
+    <div className="w-full min-h-[280px] lg:h-full flex flex-col border-t border-b border-gray-200 bg-[#F5F5F5] pb-6">
       {/* Image + Text row */}
       <div className="flex-1 flex items-stretch">
         {/* Image — LEFT */}
@@ -111,22 +111,24 @@ export function ProductCard({
               {/* Percentage badge (top-right) */}
               <span className="absolute top-1.5 right-1.5 bg-white text-[#5C36C9] text-[9px] font-bold px-1.5 py-0.5 rounded leading-none">-{pct}%</span>
 
-              {/* PACK text positioned under the percentage */}
-              <span className="absolute top-[24px] right-1.5 text-[12px] md:text-[13px] font-bold">PACK {t.qty}</span>
+              {/* PACK text (left-aligned, under percentage) */}
+              <span className="mt-2 text-[12px] md:text-[13px] font-bold">PACK {t.qty}</span>
 
-              {/* Price and save text with tightened spacing */}
-              <span className="mt-[32px] w-full text-[13px] md:text-[14px] font-bold">A${price}</span>
-              <span className="mt-1 w-full text-[9px] md:text-[10px] font-semibold text-white/80">SAVE A${save}</span>
+              {/* Price (left-aligned) */}
+              <span className="mt-2 w-full text-[13px] md:text-[14px] font-bold">A${price}</span>
+
+              {/* Save text (left-aligned) */}
+              <span className="mt-2 w-full text-[9px] md:text-[10px] font-semibold text-white/80">SAVE A${save}</span>
             </button>
           );
         })}
       </div>
 
-      {/* Button — rectangular with horizontal margins, bottom border visible */}
+      {/* Button — centered, rectangular, straight borders */}
       <button
         type="button"
         onClick={handleAdd}
-        className="mx-6 mt-4 w-[calc(100%-1.5rem)] px-4 h-[44px] rounded-[10px] bg-black text-white text-[13px] font-semibold flex items-center justify-center hover:opacity-90 transition-opacity"
+        className="mx-auto mt-6 w-[calc(100%-3rem)] max-w-xs rounded-none px-4 py-3 bg-black text-white text-[13px] font-semibold flex items-center justify-center hover:opacity-90 transition-opacity"
       >
         Add to My List
       </button>
