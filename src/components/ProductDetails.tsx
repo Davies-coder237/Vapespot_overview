@@ -73,7 +73,7 @@ export function ProductDetails({ product }: { product: Product }) {
     scrollerRef.current?.scrollBy({ left: amount, behavior: "smooth" });
 
   const doubledRelated = [...related, ...related];
-  const lineTotal = packPrice(product.price_aud, qty);
+  const lineTotal = packPrice(product.price_aud, qty) ?? product.price_aud;
 
   return (
     <article className="pb-8">
