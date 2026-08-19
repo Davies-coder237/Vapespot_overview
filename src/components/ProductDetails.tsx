@@ -126,7 +126,7 @@ export function ProductDetails({ product }: { product: Product }) {
             <h1 className="text-3xl md:text-4xl font-bold text-black leading-tight">
               {product.name}
             </h1>
-            <p className="text-[26px] font-bold text-black">
+            <p translate="no" className="text-[26px] font-bold text-black">
               {formatPrice(safePrice)}
             </p>
             <p className="text-[13px] md:text-[14px] text-[#7C3AED] font-semibold">
@@ -171,9 +171,9 @@ export function ProductDetails({ product }: { product: Product }) {
                       )}
                     </div>
                     <div className="text-right shrink-0">
-                      <p className="text-[14px] font-bold text-black">{formatPrice(o.price)}</p>
+                      <p translate="no" className="text-[14px] font-bold text-black">{formatPrice(o.price)}</p>
                       {o.save != null && o.save > 0 && (
-                        <p className="text-[11px] font-semibold text-[#7C3AED]">save {formatPrice(o.save)}</p>
+                        <p translate="no" className="text-[11px] font-semibold text-[#7C3AED]">save {formatPrice(o.save)}</p>
                       )}
                     </div>
                   </button>
@@ -185,7 +185,7 @@ export function ProductDetails({ product }: { product: Product }) {
           <div className="flex items-center gap-3">
             <QuantitySelector value={qty} onChange={(v) => setQty(Math.max(1, v))} min={1} />
             <div className="text-right space-y-1">
-              <p className="text-[14px] font-bold text-black">
+              <p translate="no" className="text-[14px] font-bold text-black">
                 {formatPrice(lineTotal)}
               </p>
               {qty > 1 ? (

@@ -99,7 +99,7 @@ export function MyList() {
                       ) : null;
                     })()}
 
-                    <span className="mt-1 text-[18px] lg:text-[22px] font-bold text-black">
+                    <span translate="no" className="mt-1 text-[18px] lg:text-[22px] font-bold text-black">
                       {formatPrice(packPrice(product.price_aud, item.quantity) ?? product.price_aud)}
                       <span className="ml-1 text-[12px] font-semibold text-[#9E9E9E]">AUD</span>
                     </span>

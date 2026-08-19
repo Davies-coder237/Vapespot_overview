@@ -109,7 +109,7 @@ export function OrderSummary() {
                 </div>
 
                 {/* Price */}
-                <span className="text-right text-[13px] lg:text-[15px] text-[#6E6E73] whitespace-nowrap">
+                <span translate="no" className="text-right text-[13px] lg:text-[15px] text-[#6E6E73] whitespace-nowrap">
                   {formatPrice(l.product.price_aud)}
                 </span>
 
@@ -119,7 +119,7 @@ export function OrderSummary() {
                 </span>
 
                 {/* Line total */}
-                <span className="text-right text-[14px] lg:text-[15px] font-bold text-black whitespace-nowrap">
+                <span translate="no" className="text-right text-[14px] lg:text-[15px] font-bold text-black whitespace-nowrap">
                   {formatPrice(lineTotal(l))}
                 </span>
               </li>
@@ -134,19 +134,19 @@ export function OrderSummary() {
           <p className="font-bold text-black text-[15px]">Estimated Total</p>
           <p className="text-xs text-[#6E6E73] mt-0.5">Including products only</p>
         </div>
-        <p className="text-[26px] font-extrabold text-black leading-none">
+        <p translate="no" className="text-[26px] font-extrabold text-black leading-none">
           {formatPrice(total)}
           <span className="ml-1.5 text-[14px] font-bold text-[#6E6E73]">AUD</span>
         </p>
       </div>
       <div className="flex items-center justify-between px-4 py-2.5 bg-[#F0EEFF] border border-[#E4DEFF]">
         <p className="text-[13px] font-bold text-[#5B3DF5]">Pay with Crypto or Gift Card</p>
-        <p className="text-[14px] font-extrabold text-[#5B3DF5]">
+        <p translate="no" className="text-[14px] font-extrabold text-[#5B3DF5]">
           {formatPrice(cryptoTotal)}
           <span className="ml-1 text-[11px] font-bold">(save {CRYPTO_DISCOUNT_PERCENT}%)</span>
         </p>
       </div>
-      <p className="text-[12px] text-[#1F1F1F] mt-1 text-center lg:text-left">
+      <p translate="no" className="text-[12px] text-[#1F1F1F] mt-1 text-center lg:text-left">
         Minimum order: {formatPrice(MIN_ORDER_AUD)}
       </p>
 
@@ -329,7 +329,7 @@ export function OrderSummary() {
             Proceed to Checkout
           </button>
           <p className="text-center text-[13px] text-[#E53E3E] mt-2 font-bold">
-            Minimum order not reached. Add A${(MIN_ORDER_AUD - total).toFixed(2)} more to place your order.
+            Minimum order not reached. Add <span translate="no">A${(MIN_ORDER_AUD - total).toFixed(2)}</span> more to place your order.
           </p>
         </div>
       )}

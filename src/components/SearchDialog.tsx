@@ -87,7 +87,7 @@ export function SearchDialog({
                       {r.series ? ` · ${r.series}` : ""} · {r.path.join(" / ")}
                     </p>
                   </div>
-                  <span className="text-sm font-semibold">{formatPrice(r.price_aud)}</span>
+                  <span translate="no" className="text-sm font-semibold">{formatPrice(r.price_aud)}</span>
                 </Link>
               </li>
             ))}

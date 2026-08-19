@@ -76,7 +76,7 @@ export function ProductCard({
               ) : null;
             })()}
 
-            <span className="mt-1 text-[18px] font-bold text-black">
+            <span translate="no" className="mt-1 text-[18px] font-bold text-black">
               {formatPrice(product.price_aud)}
               <span className="ml-1 text-[12px] font-semibold text-[#9E9E9E]">AUD</span>
             </span>
@@ -105,6 +105,7 @@ export function ProductCard({
                 add(product.id, t.qty);
                 toast.success(`${t.qty}-pack of ${product.name} added to your list`);
               }}
+              translate="no"
               className="relative flex flex-col items-start justify-between rounded-[14px] px-1.5 sm:px-2.5 py-2 h-[84px] sm:h-[90px] text-left text-white transition-transform duration-150 hover:-translate-y-0.5"
               style={{ background: "linear-gradient(180deg, #9670F5 0%, #5C36C9 100%)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.25)" }}
             >
