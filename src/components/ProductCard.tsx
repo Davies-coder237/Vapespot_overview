@@ -119,7 +119,7 @@ export function ProductCard({
               <span className="mt-1.5 w-full text-[12px] sm:text-[13px] md:text-[14px] font-bold">A${price}</span>
 
               {/* Save text (left-aligned) */}
-              <span className="mt-1.5 w-full truncate text-[8px] sm:text-[9px] md:text-[10px] font-semibold text-white/80">SAVE A${save}</span>
+              <span className="mt-1.5 w-full truncate text-[8px] sm:text-[9px] md:text-[9px] lg:text-[10px] font-semibold text-white/80">SAVE A${save}</span>
             </button>
           );
         })}
