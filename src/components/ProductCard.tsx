@@ -88,7 +88,7 @@ export function ProductCard({
       </div>
 
       {/* Pack badges — single horizontal line */}
-      <div className="grid grid-cols-4 gap-4 px-4 mt-4">
+      <div className="grid grid-cols-4 gap-2 sm:gap-4 px-2 sm:px-4 mt-4">
         {PACK_TIERS.map((t) => {
           const price = packPrice(product.price_aud, t.qty);
           if (price == null) return null;
@@ -105,20 +105,20 @@ export function ProductCard({
                 add(product.id, t.qty);
                 toast.success(`${t.qty}-pack of ${product.name} added to your list`);
               }}
-              className="relative flex flex-col items-start justify-between rounded-[14px] px-2.5 py-2 h-[90px] text-left text-white transition-transform duration-150 hover:-translate-y-0.5"
+              className="relative flex flex-col items-start justify-between rounded-[14px] px-1.5 sm:px-2.5 py-2 h-[84px] sm:h-[90px] text-left text-white transition-transform duration-150 hover:-translate-y-0.5"
               style={{ background: "linear-gradient(180deg, #9670F5 0%, #5C36C9 100%)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.25)" }}
             >
               {/* Percentage badge (top-right) */}
-              <span className="absolute top-1.5 right-1.5 bg-white text-[#5C36C9] text-[9px] font-bold px-1.5 py-0.5 rounded leading-none">-{pct}%</span>
+              <span className="absolute top-1.5 right-1.5 bg-white text-[#5C36C9] text-[8px] sm:text-[9px] font-bold px-1 sm:px-1.5 py-0.5 rounded leading-none">-{pct}%</span>
 
               {/* PACK text (left-aligned, under percentage) */}
-              <span className="mt-2 text-[12px] md:text-[13px] font-bold">PACK {t.qty}</span>
+              <span className="mt-2 text-[11px] sm:text-[12px] md:text-[13px] font-bold">PACK {t.qty}</span>
 
               {/* Price (left-aligned) */}
-              <span className="mt-2 w-full text-[13px] md:text-[14px] font-bold">A${price}</span>
+              <span className="mt-2 w-full text-[12px] sm:text-[13px] md:text-[14px] font-bold">A${price}</span>
 
               {/* Save text (left-aligned) */}
-              <span className="mt-2 w-full text-[9px] md:text-[10px] font-semibold text-white/80">SAVE A${save}</span>
+              <span className="mt-2 w-full truncate text-[8px] sm:text-[9px] md:text-[10px] font-semibold text-white/80">SAVE A${save}</span>
             </button>
           );
         })}
