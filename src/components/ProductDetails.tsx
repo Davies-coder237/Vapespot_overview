@@ -25,6 +25,7 @@ export function ProductDetails({ product }: { product: Product }) {
   const [crumbs, setCrumbs] = useState<{ label: string; href?: string }[]>([]);
   const [activeDot, setActiveDot] = useState(0);
   const scrollerRef = useRef<HTMLDivElement>(null);
+  const safePrice = product.price_aud ?? 0;
 
   useEffect(() => {
     let cancelled = false;
@@ -73,7 +74,7 @@ export function ProductDetails({ product }: { product: Product }) {
     scrollerRef.current?.scrollBy({ left: amount, behavior: "smooth" });
 
   const doubledRelated = [...related, ...related];
-  const lineTotal = packPrice(product.price_aud, qty) ?? product.price_aud;
+  const lineTotal = packPrice(safePrice, qty);
 
   return (
     <article className="pb-8">
@@ -126,7 +127,7 @@ export function ProductDetails({ product }: { product: Product }) {
               {product.name}
             </h1>
             <p className="text-[26px] font-bold text-black">
-              {formatPrice(product.price_aud)}
+              {formatPrice(safePrice)}
             </p>
             <p className="text-[13px] md:text-[14px] text-[#7C3AED] font-semibold">
               🛵 Local courier delivery — usually 30 min to 2 hrs, or via Australia Post.
@@ -143,7 +144,7 @@ export function ProductDetails({ product }: { product: Product }) {
               <span className="text-[11px] text-[#9E9E9E]">Select a pack below</span>
             </div>
             <div className="divide-y divide-[#F0F0F0]">
-              {packOptions(product.price_aud).map((o) => {
+              {packOptions(safePrice).map((o) => {
                 const selected = qty === o.qty;
                 return (
                   <button
@@ -185,9 +186,9 @@ export function ProductDetails({ product }: { product: Product }) {
             <QuantitySelector value={qty} onChange={(v) => setQty(Math.max(1, v))} min={1} />
             <div className="text-right space-y-1">
               <p className="text-[14px] font-bold text-black">
-                {lineTotal !== null ? formatPrice(lineTotal) : formatPrice(product.price_aud)}
+                {formatPrice(lineTotal)}
               </p>
-              {lineTotal !== null && qty > 1 ? (
+              {qty > 1 ? (
                 <>
                   {PACK_TIERS.some((t) => t.qty === qty) ? (
                     <p className="text-[10px] text-[#6E6E73]">(pack of {qty})</p>
