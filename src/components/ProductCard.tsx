@@ -22,7 +22,7 @@ export function ProductCard({
   };
 
   return (
-    <div className="w-full min-h-[280px] lg:h-full flex flex-col border-t border-b border-gray-200 bg-[#F5F5F5] pb-6">
+    <div className="w-full min-h-[280px] lg:min-h-[340px] lg:h-full flex flex-col border-t border-b border-gray-200 bg-[#F5F5F5] pb-6">
       {/* Image + Text row */}
       <div className="flex-1 flex items-stretch">
         {/* Image — LEFT */}
@@ -113,13 +113,13 @@ export function ProductCard({
               <span className="absolute top-1.5 right-1.5 bg-white text-[#5C36C9] text-[8px] sm:text-[9px] font-bold px-1 sm:px-1.5 py-0.5 rounded leading-none">-{pct}%</span>
 
               {/* PACK text (left-aligned, under percentage) */}
-              <span className="mt-2 text-[11px] sm:text-[12px] md:text-[13px] font-bold">PACK {t.qty}</span>
+              <span className="mt-1.5 text-[11px] sm:text-[12px] md:text-[13px] font-bold">PACK {t.qty}</span>
 
               {/* Price (left-aligned) */}
-              <span className="mt-2 w-full text-[12px] sm:text-[13px] md:text-[14px] font-bold">A${price}</span>
+              <span className="mt-1.5 w-full text-[12px] sm:text-[13px] md:text-[14px] font-bold">A${price}</span>
 
               {/* Save text (left-aligned) */}
-              <span className="mt-2 w-full truncate text-[8px] sm:text-[9px] md:text-[10px] font-semibold text-white/80">SAVE A${save}</span>
+              <span className="mt-1.5 w-full truncate text-[8px] sm:text-[9px] md:text-[10px] font-semibold text-white/80">SAVE A${save}</span>
             </button>
           );
         })}

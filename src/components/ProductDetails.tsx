@@ -264,7 +264,7 @@ export function ProductDetails({ product }: { product: Product }) {
               : doubledRelated.map((p, i) => (
                   <div
                     key={`${p.id}-${i}`}
-                    className="shrink-0 w-screen md:w-[85vw] md:max-w-[420px] md:min-h-[280px] lg:w-auto lg:max-w-[420px] lg:h-[280px]"
+                    className="shrink-0 w-screen md:w-[85vw] md:max-w-[420px] md:min-h-[280px] lg:w-auto lg:max-w-[420px] lg:min-h-[340px]"
                     style={{ scrollSnapAlign: "start" }}
                   >
                     <ProductCard product={p} />
