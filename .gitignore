@@ -38,3 +38,8 @@ dist-analyze
 # Credentials OAuth Search Console (à ne JAMAIS committer)
 gsc-client.json
 gsc-token.json
+
+# Artefacts de suivi SEO (indexation / scan Search Console) — à garder hors du repo
+cities-no-slash-scan.json
+indexed-products.json
+progress-products.json
