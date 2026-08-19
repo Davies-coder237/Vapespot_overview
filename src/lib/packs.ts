@@ -18,6 +18,11 @@ export const PACK_TIERS: PackTier[] = [
   { qty: 10, multiplier: 0.6364793598836152 },
 ];
 
+/** true si qty est un palier de pack exact (×2, ×3, ×5, ×10). */
+export function isPackQty(qty: number): boolean {
+  return PACK_TIERS.some((t) => t.qty === qty);
+}
+
 /** Prix d'un morceau unique : 1 unité simple ou exactement un pack (arrondi entier AUD). */
 function packOf(unitPrice: number, qty: number): number {
   const tier = PACK_TIERS.find((t) => t.qty === qty);
@@ -26,11 +31,39 @@ function packOf(unitPrice: number, qty: number): number {
 }
 
 /**
+ * Remise ("multiplier") d'un pack VIRTUEL pour une quantité intermédiaire
+ * (ex. ×4, ×6, ×7, ×8, ×9) : la remise est interpolée linéairement entre les
+ * deux paliers réels qui encadrent la quantité. Retourne null si la quantité
+ * n'est pas éligible (≤×1, palier exact, ou au-delà du dernier palier ×10).
+ */
+function virtualLevelMultiplier(qty: number): number | null {
+  const maxTier = PACK_TIERS[PACK_TIERS.length - 1].qty;
+  if (qty <= 1 || qty >= maxTier || isPackQty(qty)) return null;
+
+  let lower: PackTier | null = null;
+  let upper: PackTier | null = null;
+  for (const t of PACK_TIERS) {
+    if (t.qty < qty) lower = t;
+    else if (t.qty > qty) {
+      upper = t;
+      break;
+    }
+  }
+  if (!lower || !upper) return null;
+
+  const t = (qty - lower.qty) / (upper.qty - lower.qty);
+  return lower.multiplier + t * (upper.multiplier - lower.multiplier);
+}
+
+/**
  * Prix d'une quantité donnée, TOUJOURS sur la base des packs :
  * - qty <= 1          → prix unitaire (décimales conservées)
  * - qty = 2/3/5/10    → prix exact du pack (inchangé)
- * - qty autre (>1)    → composition optimale des packs, la moins chère
- *                       (ex. 4 = 3-pack + 1 → 130+55, 7 = 5-pack + 2-pack → 200+100).
+ * - qty intermédiaire → le MEILLEUR prix entre la composition optimale des packs
+ *                       réels (ex. 4 = 3-pack + 1) et le pack "virtuel" interpolé :
+ *                       le client profite de la remise du pack même pour une
+ *                       quantité non affichée sur le site (ex. ×4, ×6, ×7, ×8, ×9).
+ * - qty > 10          → composition optimale des packs réels, sans extension de remise.
  */
 export function packPrice(unitPrice: number | null, qty: number): number | null {
   if (unitPrice == null) return null;
@@ -47,7 +80,15 @@ export function packPrice(unitPrice: number | null, qty: number): number | null 
     }
     memo.set(q, best);
   }
-  return memo.get(qty)!;
+  const composed = memo.get(qty)!;
+
+  // Pack "virtuel" : la remise du pack s'applique aussi aux quantités intermédiaires.
+  const multiplier = virtualLevelMultiplier(qty);
+  if (multiplier != null) {
+    const virtual = Math.round(unitPrice * qty * multiplier);
+    return Math.min(composed, virtual);
+  }
+  return composed;
 }
 
 export interface PackOption {

@@ -15,7 +15,7 @@ import {
   onImageError,
   productCard,
 } from "@/lib/data";
-import { CRYPTO_DISCOUNT_PERCENT, packOptions, packPrice } from "@/lib/packs";
+import { CRYPTO_DISCOUNT_PERCENT, isPackQty, packOptions, packPrice } from "@/lib/packs";
 
 export function ProductDetails({ product }: { product: Product }) {
   const [qty, setQty] = useState(1);
@@ -190,7 +190,7 @@ export function ProductDetails({ product }: { product: Product }) {
               </p>
               {qty > 1 ? (
                 <>
-                  {PACK_TIERS.some((t) => t.qty === qty) ? (
+                  {isPackQty(qty) ? (
                     <p className="text-[10px] text-[#6E6E73]">(pack of {qty})</p>
                   ) : (
                     <p className="text-[10px] text-[#6E6E73]">(pack pricing)</p>
