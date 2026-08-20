@@ -697,6 +697,49 @@ for (const g of guides.guides) {
   writeFileSync(join(outDir, "index.html"), html, "utf-8");
 }
 
+// ════ 4d. Pages utilitaires client-only (shell SPA) ─────────────────
+// Routes sans contenu SEO statique (discover / my-list / order-summary)
+// + /products/ (index = <Navigate> client vers la home). Pré-rendues en
+// shell vite pur (assets SPA + <div id="root">) → Cloudflare sert un vrai
+// fichier 200, et la 404.html racine (ajoutée pour couper le soft-404 du
+// fallback SPA) ne les transforme pas en 404. noindex : aucun contenu à
+// indexer. Placé après les guides, avant la home : ordre d'écriture sans
+// dépendance — chaque page est autonome (template vite pur réutilisé).
+const UTILITY_PAGES = [
+  { slug: "products",       title: "Vape Spot Australia — Vape Products",        canonical: "products/" },
+  { slug: "discover",       title: "Discover Vape Stores | Vape Spot Australia",  canonical: "discover/" },
+  { slug: "my-list",        title: "My List | Vape Spot Australia",              canonical: "my-list/" },
+  { slug: "order-summary",  title: "Order Summary | Vape Spot Australia",        canonical: "order-summary/" },
+];
+{
+  const baseline = [
+    `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`,
+    `<meta name="robots" content="noindex, nofollow" />`,
+    `<meta name="geo.country" content="AU" />`,
+    `<link rel="icon" href="/favicon.ico" sizes="48x48" />`,
+    `<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />`,
+    `<link rel="apple-touch-icon" href="/apple-touch-icon.png" />`,
+    `<script>document.documentElement.classList.add("js")</script>`,
+  ];
+  for (const pg of UTILITY_PAGES) {
+    const canonical = `https://vapespot.store/${pg.canonical}`;
+    const head = [
+      `<title>${escapeHtml(pg.title)}</title>`,
+      ...baseline,
+      `<link rel="canonical" href="${escapeHtml(canonical)}" />`,
+      `<meta property="og:url" content="${escapeHtml(canonical)}" />`,
+    ].join("\n    ");
+    let html = template.replace(
+      /<head>[\s\S]*?<\/head>/,
+      `<head>\n    ${head}\n    ${guideScriptTag}\n    ${guideCssTag}\n  </head>`
+    );
+    const outDir = join(DIST, pg.slug);
+    mkdirSync(outDir, { recursive: true });
+    writeFileSync(join(outDir, "index.html"), html, "utf-8");
+  }
+  console.log(`  ✓ ${UTILITY_PAGES.length} pages utilitaires (shell SPA) générées`);
+}
+
 // ════ 3c. Homepage : bloc « Popular Products » statique ──────────
 // (masqué quand JS actif : le composant live TrendingProducts rend déjà
 //  la même section interactive → class seo-dupe.)

@@ -111,6 +111,14 @@ const redirects = [
   // DOIT être ajouté ici (slug issu de guides.json, ajouté automatiquement).
   "/guides  /guides/  200",
   ...guidesData.guides.map((g) => `/guides/${g.slug}  /guides/${g.slug}/  200`),
+  // Routes utilitaires client-only (discover / my-list / order-summary) :
+  // prérendues en shell statique (voir prerender.mjs) → même protection
+  // anti-308 que villes/catégories/guides. SANS ces lignes, la forme sans
+  // slash renverrait un 308 (et le fallback SPA serait coupé par 404.html).
+  "/products  /products/  200",
+  "/discover  /discover/  200",
+  "/my-list  /my-list/  200",
+  "/order-summary  /order-summary/  200",
 ];
 writeFileSync(REDIRECTS, redirects.join("\n") + "\n", "utf-8");
 console.log(`✅ _redirects régénéré : ${redirects.length} rewrites (101 villes + ${metaData.categories.filter((c) => c && c.slug).length} catégories + ${guidesData.guides.length} guides, code 200), sous la limite Cloudflare (~2000). Produits : URL slash direct (pas de rewrite).`);
