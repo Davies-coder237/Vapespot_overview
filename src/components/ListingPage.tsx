@@ -68,14 +68,12 @@ export function ListingPage({ listing }: ListingPageProps) {
 
         <div className="mt-8 border-t border-[#F0F0F0]" />
 
-        {/* Infos + description — 2 colonnes sur ordi, pleine largeur mobile */}
+        {/* Livraison + description — 2 colonnes sur ordi, pleine largeur mobile */}
         <section className="py-8 md:py-10 grid gap-8 md:grid-cols-2 md:gap-12">
           <div className="space-y-5">
-            <div className="space-y-2 text-[14px] text-[#0A0A0A]">
-              {listing.address && <p>{listing.address}</p>}
-              {listing.phone && <p>{listing.phone}</p>}
-              {listing.hours && <p>{listing.hours}</p>}
-            </div>
+            <p className="text-[14px] text-[#9E9E9E] leading-relaxed">
+              {listing.description}
+            </p>
             <Link
               to="/"
               className="inline-flex items-center justify-center w-full md:w-auto md:px-8 bg-black text-white py-4 text-[15px] font-semibold rounded-none hover:bg-[#1a1a1a] transition-colors"
@@ -85,9 +83,6 @@ export function ListingPage({ listing }: ListingPageProps) {
           </div>
 
           <div className="space-y-4">
-            <p className="text-[14px] text-[#9E9E9E] leading-relaxed">
-              {listing.description}
-            </p>
             <p className="text-[14px] text-[#0A0A0A] leading-relaxed">
               {localBlurb(listing)}
             </p>

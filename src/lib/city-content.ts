@@ -22,15 +22,7 @@ export function cityName(listing: Listing): string {
 
 export function localBlurb(listing: Listing): string {
   const cn = cityName(listing);
-  // Évite le doublon "Open open 24/7" quand hours commence déjà par "Open".
-  let hours: string;
-  if (!listing.hours) {
-    hours = "24/7";
-  } else {
-    const lower = listing.hours.toLowerCase();
-    hours = lower.startsWith("open ") ? lower : `open ${lower}`;
-  }
-  return `Planning to vape in ${cn}? VapeSpot delivers to ${listing.cityTag} and nearby suburbs, ${hours}. Whether you need a new pod, a spare coil, or some straight advice, order from VapeSpot and the team at ${listing.businessName} will sort you out — delivered to you, no queues, no upselling.`;
+  return `Planning to vape in ${cn}? VapeSpot delivers to ${listing.cityTag} and nearby suburbs, 24/7. Whether you need a new pod, a spare coil, or some straight advice, order from VapeSpot and the team at ${listing.businessName} will sort you out — delivered to you, no queues, no upselling.`;
 }
 
 export interface FaqItem {
@@ -38,16 +30,14 @@ export interface FaqItem {
   a: string;
 }
 
-/** 4 questions propres à la ville (nom, adresse, horaires injectés). */
+/** 3 questions propres à la ville (nom, marques, livraison). */
 export function cityFaq(listing: Listing): FaqItem[] {
   const cn = cityName(listing);
   const business = listing.businessName;
-  const hours = listing.hours ?? "open 24/7";
-  const at = listing.address ? `, at ${listing.address}` : "";
   return [
     {
       q: `Is there a vape shop in ${cn}?`,
-      a: `Yes — ${business} delivers vaporisers, pods and mods to ${listing.cityTag} and nearby suburbs${at}, with fast delivery and 24/7 ordering.`,
+      a: `Yes — ${business} delivers vaporisers, pods and mods to ${listing.cityTag} and nearby suburbs, with fast delivery and 24/7 ordering.`,
     },
     {
       q: `What brands does ${business} stock?`,
@@ -56,10 +46,6 @@ export function cityFaq(listing: Listing): FaqItem[] {
     {
       q: `Does VapeSpot deliver to ${cn}?`,
       a: `Yes. VapeSpot offers fast courier delivery to ${cn} and nearby suburbs — usually within 30 minutes to 2 hours — or via Australia Post for longer distances.`,
-    },
-    {
-      q: `What are the opening hours in ${cn}?`,
-      a: `${business} is ${hours}.`,
     },
   ];
 }
