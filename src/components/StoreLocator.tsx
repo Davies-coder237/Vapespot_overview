@@ -100,7 +100,7 @@ export function StoreLocator() {
         </div>
       ) : groups.length === 0 ? (
         <p className="text-[14px] text-[#6E6E73] py-8 text-center">
-          No store matches “{query}”.
+          No delivery area matches “{query}”.
         </p>
       ) : (
         groups.map((g) => (

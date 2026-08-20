@@ -80,7 +80,7 @@ export function ListingPage({ listing }: ListingPageProps) {
               to="/"
               className="inline-flex items-center justify-center w-full md:w-auto md:px-8 bg-black text-white py-4 text-[15px] font-semibold rounded-none hover:bg-[#1a1a1a] transition-colors"
             >
-              Discover the shop
+              Order delivery
             </Link>
           </div>
 
@@ -120,7 +120,7 @@ export function ListingPage({ listing }: ListingPageProps) {
         <section className="py-8 md:py-10">
           <h2 className="text-[16px] font-bold text-[#0A0A0A]">Other locations</h2>
           <p className="text-[13px] text-[#616161] mt-1">
-            VapeSpot has stores across Australia. Find yours:
+            VapeSpot delivers across Australia. Find your delivery area:
           </p>
           <div className="mt-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {groups.map((g) => (

@@ -15,7 +15,7 @@ const STORES: { slug: string; name: string; state: string }[] = [
   { slug: "vapespot-darwin-city", name: "Darwin", state: STATE_NAMES.NT },
 ];
 
-export function StoreLocations({ title = "Available in our stores" }: { title?: string }) {
+export function StoreLocations({ title = "Delivery available in these cities" }: { title?: string }) {
   const scrollerRef = useRef<HTMLDivElement>(null);
 
   // Scroll horizontal « infini » : liste dupliquée, reset silencieux à mi-parcours.

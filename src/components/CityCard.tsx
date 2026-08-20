@@ -53,7 +53,7 @@ export function CityCard({
       </span>
 
       <span className="inline-flex items-center gap-1 text-[13px] font-semibold text-[#7C3AED] group-hover:underline">
-        Visit store <ChevronRight className="h-4 w-4" strokeWidth={2} />
+        We deliver here <ChevronRight className="h-4 w-4" strokeWidth={2} />
       </span>
     </Link>
   );

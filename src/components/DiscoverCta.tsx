@@ -12,17 +12,17 @@ export function DiscoverCta() {
       <div className="max-w-7xl mx-auto w-full px-4 md:px-6 py-6 md:py-8 flex flex-wrap items-center justify-between gap-4">
         <div className="space-y-1">
           <h2 className="text-[15px] lg:text-[18px] font-bold text-black leading-tight">
-            Vape shops across Australia
+            VapeSpot delivery across Australia
           </h2>
           <p className="text-[13px] lg:text-[15px] text-[#6E6E73] mt-1 leading-snug">
-            100+ VapeSpot stores — find the nearest one, city by city.
+            We deliver to 100+ areas across the country — order from anywhere in your city.
           </p>
         </div>
         <Link
           to="/discover"
           className="inline-flex items-center justify-center bg-black text-white text-[13px] font-semibold rounded-none px-6 py-3 hover:opacity-90 transition-opacity"
         >
-          Discover a store
+          Discover delivery areas
         </Link>
       </div>
     </section>
