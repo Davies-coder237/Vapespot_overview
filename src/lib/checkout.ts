@@ -1,7 +1,7 @@
 import { CRYPTO_DISCOUNT_PERCENT } from "./packs";
 
 // Commande minimale (AUD) avant de pouvoir passer commande.
-export const MIN_ORDER_AUD = 200;
+export const MIN_ORDER_AUD = 100;
 
 export function cryptoDiscountAmount(price: number): number {
   return (price * CRYPTO_DISCOUNT_PERCENT) / 100;
