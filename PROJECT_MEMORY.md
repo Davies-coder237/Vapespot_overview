@@ -84,3 +84,5 @@ Si `phone`, `hours` sont vides/absents dans les données, ne pas les afficher da
 
 - Le message est copié dans le presse-papiers au clic + toast de confirmation
 - Le lien Telegram s'ouvre en parallèle
+
+- Minimum de commande : passage de **A$100.00** à **A$150.00**.
