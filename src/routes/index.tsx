@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { CategoryCarousel } from "@/components/CategoryCarousel";
 import { TrendingProducts } from "@/components/TrendingProducts";
 import { BrandCarousel } from "@/components/BrandCarousel";
+import { ReviewsCarousel } from "@/components/ReviewsCarousel";
 import { Reassurance } from "@/components/Reassurance";
 import { DiscoverCta } from "@/components/DiscoverCta";
 
@@ -25,6 +26,7 @@ function Home() {
         <TrendingProducts />
         <BrandCarousel />
       </div>
+      <ReviewsCarousel />
       <DiscoverCta />
       <Reassurance />
     </div>

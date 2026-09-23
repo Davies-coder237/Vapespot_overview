@@ -462,17 +462,28 @@ for (const r of reviewsData) {
   if (!reviewsByProduct.has(r.productId)) reviewsByProduct.set(r.productId, []);
   reviewsByProduct.get(r.productId).push(r);
 }
+function reviewCardHTML(r) {
+  const full = String(r.rating || 0) + "/5";
+  return `<blockquote class="seo-review"><p>“${escapeHtml(r.text)}”</p>` +
+    `<footer>${escapeHtml(r.author)}, ${escapeHtml(r.city)} · ${escapeHtml(r.date)} · ${full}` +
+    (r.verified ? ` · <span class="seo-review-badge">Verified order</span>` : "") +
+    `</footer></blockquote>`;
+}
 function reviewsBlockHTML(productId) {
   const mine = reviewsByProduct.get(productId) || [];
   if (!mine.length) return "";
-  const cards = mine.map((r) => {
-    const full = String(r.rating || 0) + "/5";
-    return `<blockquote class="seo-review"><p>“${escapeHtml(r.text)}”</p>` +
-      `<footer>${escapeHtml(r.author)}, ${escapeHtml(r.city)} · ${escapeHtml(r.date)} · ${full}` +
-      (r.verified ? ` · <span class="seo-review-badge">Verified order</span>` : "") +
-      `</footer></blockquote>`;
-  }).join("");
+  const cards = mine.map(reviewCardHTML).join("");
   return `\n<section class="seo-block seo-reviews"><h2>What our customers say</h2>` +
+    `<div class="seo-grid">${cards}</div></section>`;
+}
+/** Bloc avis de la HOMEPAGE : les 200 avis du site en texte (miroir Google
+ *  du carrousel infini ReviewsCarousel.tsx). TEXTE seul, jamais de schema
+ *  étoiles — même règle stricte que les pages produit. */
+function reviewsHomeBlockHTML() {
+  if (!reviewsData.length) return "";
+  const cards = reviewsData.map(reviewCardHTML).join("");
+  return `\n<section class="seo-block seo-reviews"><h2>What our customers say</h2>` +
+    `<p>${reviewsData.length} verified customer reviews for vapespot.store — real feedback from verified orders across Australia.</p>` +
     `<div class="seo-grid">${cards}</div></section>`;
 }
 
@@ -1402,7 +1413,9 @@ if (homeCards) {
     )
     .replace(
       "</body>",
-      seoBlock("Popular Products", "seo-dupe", homeCards) + "\n  </body>"
+      seoBlock("Popular Products", "seo-dupe", homeCards) +
+        reviewsHomeBlockHTML() +
+        "\n  </body>"
     );
   writeFileSync(join(DIST, "index.html"), homeHtml, "utf-8");
 }
