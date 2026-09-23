@@ -697,6 +697,276 @@ for (const g of guides.guides) {
   writeFileSync(join(outDir, "index.html"), html, "utf-8");
 }
 
+// ════ 4c. Pages marques /brands/ — Tâche 2 du cahier des charges ═══
+// Les marques top-volume du catalogue réel (comptées dans search.json) ont
+// une page statique chacune : H1 "<Brand> Australia", intro éditoriale,
+// tableau comparatif des principaux modèles (puffs / prix / prix-per-puff /
+// rechargeable), FAQ (People Also Ask), grille produits (liens internes →
+// /product/) et liens vers les villes. Même pattern que villes/guides.
+// Le même contenu est écrit dans dist/data/brand-products.json → le
+// composant SPA brands.$slug fait exactement le même rendu (parité).
+let brandsData = { brands: [] };
+try {
+  brandsData = JSON.parse(readFileSync(join(ROOT, "src", "data", "brands.json"), "utf-8"));
+} catch {}
+
+const BRAND_BASE = "https://vapespot.store/brands/";
+const SHOW_MODELS = 8;   // lignes du tableau comparatif
+const SHOW_CARDS = 12;   // cartes produit de la grille (liens internes)
+const esc = escapeHtml;
+
+// Nombre de produits d'une marque dans le catalogue réel (search index).
+function productsCountFor(name) {
+  const n = String(name || "").trim().toLowerCase();
+  return searchIndex.filter((e) => String(e.brand || "").trim().toLowerCase() === n).length;
+}
+
+/**
+ * Regroupe les produits d'une marque PAR SÉRIE → 1 « modèle » par série
+ * (le moins cher) : un appareil IGET Bar 3500 = 1 ligne au tableau, pas ses
+ * 25 variantes de goût. Specs (puffs / rechargeable) lues dans le fichier
+ * leaf du produit (le search index ne contient pas specs).
+ */
+function brandModels(products) {
+  const bySeries = new Map();
+  for (const e of products) {
+    const leaf = loadLeaf(e.file);
+    const full = leaf?.products?.find((x) => x.id === e.id);
+    const specs = full?.specs || {};
+    const puffs = Number(String(specs.puff_count || specs.puffs || "").replace(/[^0-9.]/g, "")) || 0;
+    const re = !/none|not recharge/i.test(String(specs.charging_port || ""));
+    const row = {
+      id: e.id,
+      name: e.name,
+      series: e.series || e.name,
+      price_aud: e.price_aud,
+      puffs,
+      rechargeable: re,
+      img: full?.image?.card || e.thumb || "",
+    };
+    const key = String(row.series).toLowerCase().trim();
+    if (!bySeries.has(key) || row.price_aud < bySeries.get(key).price_aud) bySeries.set(key, row);
+  }
+  return [...bySeries.values()].sort((a, b) => a.price_aud - b.price_aud);
+}
+
+// Tableau comparatif : les <n> principaux modèles de la marque.
+function brandTableHTML(models) {
+  if (!models.length) return "";
+  const rows = models.slice(0, SHOW_MODELS).map((m) => {
+    const per1k = m.puffs > 0 ? (m.price_aud / m.puffs * 1000).toFixed(2) : "—";
+    return `<tr>` +
+      `<td><a href="https://vapespot.store/product/${esc(m.id)}/">${esc(m.series)}</a></td>` +
+      `<td>${m.puffs ? m.puffs.toLocaleString("en-AU") : "—"}</td>` +
+      `<td>A$${m.price_aud}</td>` +
+      `<td>${m.puffs > 0 ? `A$${per1k}` : "—"}</td>` +
+      `<td>${m.rechargeable ? "Yes" : "No"}</td></tr>`;
+  }).join("");
+  return `<table class="seo-table"><thead><tr>` +
+    `<th>Device</th><th>Puffs</th><th>Price (AUD)</th><th>A$ per 1,000 puffs</th><th>Rechargeable</th>` +
+    `</tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+// Grille produits : jusqu'à SHOW_CARDS cartes = un produit par série d'abord
+// (familles diverses), puis des variantes de goût des mêmes séries (quand une
+// marque n'a que 3 familles — HQD/RELX — on pioche 4 variantes par série pour
+// garder un vrai maillage interne). Retourne les objets bruts : le HTML
+// statique et le JSON de parité SPA sont construits depuis la même liste.
+function brandGridCards(products) {
+  const sorted = products.slice().sort((a, b) => a.price_aud - b.price_aud);
+  const picked = [];
+  const seriesCount = new Map();
+  const seenId = new Set();
+
+  // passe 1 : un produit par série
+  const perSeries = new Map();
+  for (const e of sorted) {
+    const key = String(e.series || e.name).toLowerCase().trim();
+    if (!perSeries.has(key)) perSeries.set(key, e);
+  }
+  for (const e of perSeries.values()) {
+    if (picked.length >= SHOW_CARDS) break;
+    picked.push(e); seenId.add(e.id);
+    const key = String(e.series || e.name).toLowerCase().trim();
+    seriesCount.set(key, (seriesCount.get(key) || 0) + 1);
+  }
+  // passe 2 : variantes de goût (max 2 par série)
+  for (const e of sorted) {
+    if (picked.length >= SHOW_CARDS) break;
+    if (seenId.has(e.id)) continue;
+    const key = String(e.series || e.name).toLowerCase().trim();
+    if ((seriesCount.get(key) || 0) >= 2) continue;
+    picked.push(e); seenId.add(e.id);
+    seriesCount.set(key, (seriesCount.get(key) || 0) + 1);
+  }
+
+  // objets minimalistes pour carte + JSON de parité
+  return picked.map((e) => {
+    const leaf = loadLeaf(e.file);
+    const full = leaf?.products?.find((x) => x.id === e.id);
+    return {
+      id: e.id,
+      name: e.name,
+      price_aud: e.price_aud,
+      img: full?.image?.card || e.thumb || "",
+    };
+  });
+}
+
+// ── pages marques ──
+const brandProductsJson = {};
+let brandCount = 0;
+for (const b of (brandsData.brands || [])) {
+  const products = searchIndex.filter(
+    (e) => String(e.brand || "").trim().toLowerCase() === String(b.name).trim().toLowerCase()
+  );
+  if (!products.length) continue;
+  const models = brandModels(products);
+  const canonical = `${BRAND_BASE}${b.slug}/`;
+  const intro = (b.intro || []).map((p) => `<p>${esc(p)}</p>`).join("");
+  const faq = (b.faq || []).length
+    ? `<h2>Frequently asked questions about ${esc(b.name)}</h2>` +
+      b.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join("") : "";
+  const table = brandTableHTML(models);
+  const gridObjs = brandGridCards(products);
+  const cards = gridObjs.map((o) => cardHTML({ id: o.id, name: o.name, image: { card: o.img }, price_aud: o.price_aud })).join("\n        ");
+  const storeAnchors = storeLinksHTML(storeSlugs);
+
+  const head = [
+    `<title>${esc(b.title)} | Vape Spot Australia</title>`,
+    `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`,
+    `<meta name="description" content="${esc(b.metaDescription)}" />`,
+    `<meta property="og:title" content="${esc(b.title)}" />`,
+    `<meta property="og:description" content="${esc(b.metaDescription)}" />`,
+    `<meta property="og:url" content="${canonical}" />`,
+    `<meta property="og:type" content="website" />`,
+    `<link rel="canonical" href="${canonical}" />`,
+    `<link rel="alternate" hreflang="en-AU" href="${canonical}" />`,
+    `<meta name="geo.country" content="AU" />`,
+    `<meta name="geo.placename" content="Australia" />`,
+    `<link rel="icon" href="/favicon.ico" sizes="48x48" />`,
+    `<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />`,
+    `<link rel="apple-touch-icon" href="/apple-touch-icon.png" />`,
+    `<script>document.documentElement.classList.add("js")</script>`,
+    `<script type="application/ld+json">${JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      itemListElement: gridObjs.map((m, i) => ({
+        "@type": "ListItem", position: i + 1,
+        url: `https://vapespot.store/product/${m.id}/`, name: m.name,
+      })),
+    })}</script>`,
+    `<script type="application/ld+json">${JSON.stringify(
+      buildBreadcrumbLd([
+        { name: "Home", url: "https://vapespot.store/" },
+        { name: "Vape Brands", url: BRAND_BASE },
+        { name: `${b.name} Australia`, url: canonical },
+      ])
+    )}</script>`,
+  ];
+  if ((b.faq || []).length) {
+    head.push(`<script type="application/ld+json">${JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: b.faq.map((f) => ({
+        "@type": "Question", name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    })}</script>`);
+  }
+
+  let html = template.replace(
+    /<head>[\s\S]*?<\/head>/,
+    `<head>\n    ${head.join("\n    ")}\n    ${guideScriptTag}\n    ${guideCssTag}\n  </head>`
+  );
+  const content =
+    `<section class="seo-block seo-brand"><h1>${esc(b.name)} Australia</h1>` +
+    `${intro}` +
+    `<h2>Compare ${esc(b.name)} models</h2>${table}` +
+    `<h2>Shop popular ${esc(b.name)} products</h2>` +
+    `<div class="seo-grid">${cards}</div>${faq}` +
+    seoBlock("Available in our stores", "seo-stores", storeAnchors) +
+    `</section>`;
+  html = html.replace("</body>", `\n${content}\n  </body>`);
+
+  const outDir = join(DIST, "brands", b.slug);
+  mkdirSync(outDir, { recursive: true });
+  writeFileSync(join(outDir, "index.html"), html, "utf-8");
+  brandProductsJson[b.slug] = { name: b.name, models, grid: gridObjs };
+  brandCount++;
+  console.log(`  ✓ page marque ${b.name} (${products.length} produits, ${models.length} modèles)`);
+}
+
+// ── index /brands/ : hub + tableau comparatif transversal ──
+if (brandsData.brands && brandsData.brands.length) {
+  const B_BASE = BRAND_BASE;
+  const brandRows = [];
+  for (const b of brandsData.brands) {
+    const n = (brandProductsJson[b.slug]?.models || []).length;
+    brandRows.push(`<tr><td><a href="${B_BASE}${b.slug}/">${esc(b.name)}</a></td>` +
+      `<td>${productsCountFor(b.name)}</td>` +
+      `<td>${n}</td></tr>`);
+  }
+  const bIdxCards = (brandsData.brands || []).map((b) =>
+    `<article class="seo-card"><a href="${B_BASE}${b.slug}/">` +
+    `<span class="seo-name">${esc(b.name)} Australia</span>` +
+    `<span class="seo-price">${productsCountFor(b.name)} products</span></a></article>`
+  ).join("");
+  const bIdxHead = [
+    `<title>Vape Brands Australia — IGET, Alibarbar, GeekVape & More | Vape Spot Australia</title>`,
+    `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`,
+    `<meta name="description" content="All the vape brands Vape Spot stocks in Australia: IGET, Alibarbar, GeekVape, Gunnpod, VooPoo, Vaporesso, HQD and RELX — with model comparisons, prices and fast courier delivery." />`,
+    `<meta property="og:title" content="Vape Brands Australia — Vape Spot" />`,
+    `<meta property="og:url" content="${B_BASE}" />`,
+    `<meta property="og:type" content="website" />`,
+    `<link rel="canonical" href="${B_BASE}" />`,
+    `<link rel="alternate" hreflang="en-AU" href="${B_BASE}" />`,
+    `<meta name="geo.country" content="AU" />`,
+    `<meta name="geo.placename" content="Australia" />`,
+    `<link rel="icon" href="/favicon.ico" sizes="48x48" />`,
+    `<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />`,
+    `<link rel="apple-touch-icon" href="/apple-touch-icon.png" />`,
+    `<script>document.documentElement.classList.add("js")</script>`,
+    `<script type="application/ld+json">${JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      itemListElement: (brandsData.brands || []).map((b, i) => ({
+        "@type": "ListItem", position: i + 1,
+        url: `${B_BASE}${b.slug}/`, name: `${b.name} Australia`,
+      })),
+    })}</script>`,
+    `<script type="application/ld+json">${JSON.stringify(
+      buildBreadcrumbLd([
+        { name: "Home", url: "https://vapespot.store/" },
+        { name: "Vape Brands", url: B_BASE },
+      ])
+    )}</script>`,
+  ].join("\n    ");
+
+  const bIdxPage = template.replace(
+    /<head>[\s\S]*?<\/head>/,
+    `<head>\n    ${bIdxHead}\n    ${guideScriptTag}\n    ${guideCssTag}\n  </head>`
+  ).replace("</body>",
+    `\n<section class="seo-block seo-brand">` +
+    `<h1>Vape Brands Australia</h1>` +
+    `<p>Vape Spot stocks the brands Australian vapers actually search for. Compare models, puffs and prices across each range, then order for fast courier delivery in Sydney, Melbourne, Brisbane, Perth, Adelaide, Hobart, Darwin and Canberra.</p>` +
+    `<h2>Our brands at a glance</h2>` +
+    `<table class="seo-table"><thead><tr><th>Brand</th><th>Products</th><th>Model families</th></tr></thead><tbody>${brandRows.join("")}</tbody></table>` +
+    `<h2>Shop by brand</h2><div class="seo-grid">${bIdxCards}</div>` +
+    `</section>\n  </body>`
+  );
+  mkdirSync(join(DIST, "brands"), { recursive: true });
+  writeFileSync(join(DIST, "brands", "index.html"), bIdxPage, "utf-8");
+}
+
+// Parité SPA : mêmes listes de modèles que le HTML statique.
+if (Object.keys(brandProductsJson).length) {
+  const outDir = join(DIST, "data");
+  mkdirSync(outDir, { recursive: true });
+  writeFileSync(join(outDir, "brand-products.json"), JSON.stringify(brandProductsJson, null, 2), "utf-8");
+  console.log(`  ✓ ${Object.keys(brandProductsJson).length} marques → dist/data/brand-products.json (parité SPA)`);
+}
+
 // ════ 4d. Pages utilitaires client-only (shell SPA) ─────────────────
 // Routes sans contenu SEO statique (discover / my-list / order-summary)
 // + /products/ (index = <Navigate> client vers la home). Pré-rendues en

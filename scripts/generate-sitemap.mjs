@@ -45,6 +45,15 @@ try {
   );
 } catch {}
 
+// Pages marques (Tâche 2) : /brands/ + un slug par marque, URL slash final
+// servie en 200 par le dossier dist/brands/<slug>/index.html (comme guides).
+let brandsData = { brands: [] };
+try {
+  brandsData = JSON.parse(
+    readFileSync(join(ROOT, "src", "data", "brands.json"), "utf-8")
+  );
+} catch {}
+
 // Date ISO du jour : lastmod frais, signal de re-crawl.
 const today = new Date().toISOString().slice(0, 10);
 
@@ -77,6 +86,11 @@ const urls = [
   url(`${DOMAIN}/guides/`, today, "weekly", "0.8"),
   ...guidesData.guides.map((g) =>
     url(`${DOMAIN}/guides/${g.slug}/`, today, "weekly", "0.7")
+  ),
+  // Section marques (Tâche 2) : hub + un URL par grande marque du catalogue
+  url(`${DOMAIN}/brands/`, today, "weekly", "0.8"),
+  ...brandsData.brands.map((b) =>
+    url(`${DOMAIN}/brands/${b.slug}/`, today, "weekly", "0.7")
   ),
 ];
 
@@ -111,6 +125,9 @@ const redirects = [
   // DOIT être ajouté ici (slug issu de guides.json, ajouté automatiquement).
   "/guides  /guides/  200",
   ...guidesData.guides.map((g) => `/guides/${g.slug}  /guides/${g.slug}/  200`),
+  // Pages marques (Tâche 2) : anti-308, même protection que villes/guides.
+  "/brands  /brands/  200",
+  ...brandsData.brands.map((b) => `/brands/${b.slug}  /brands/${b.slug}/  200`),
   // Routes utilitaires client-only (discover / my-list / order-summary) :
   // prérendues en shell statique (voir prerender.mjs) → même protection
   // anti-308 que villes/catégories/guides. SANS ces lignes, la forme sans
@@ -121,4 +138,4 @@ const redirects = [
   "/order-summary  /order-summary/  200",
 ];
 writeFileSync(REDIRECTS, redirects.join("\n") + "\n", "utf-8");
-console.log(`✅ _redirects régénéré : ${redirects.length} rewrites (101 villes + ${metaData.categories.filter((c) => c && c.slug).length} catégories + ${guidesData.guides.length} guides, code 200), sous la limite Cloudflare (~2000). Produits : URL slash direct (pas de rewrite).`);
+console.log(`✅ _redirects régénéré : ${redirects.length} rewrites (101 villes + ${metaData.categories.filter((c) => c && c.slug).length} catégories + ${guidesData.guides.length} guides + ${brandsData.brands.length} marques, code 200), sous la limite Cloudflare (~2000). Produits : URL slash direct (pas de rewrite).`);

@@ -17,9 +17,11 @@ import { Route as SlugRouteImport } from './routes/$slug'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductsIndexRouteImport } from './routes/products.index'
 import { Route as GuidesIndexRouteImport } from './routes/guides.index'
+import { Route as BrandsIndexRouteImport } from './routes/brands.index'
 import { Route as ProductsCategoryRouteImport } from './routes/products.$category'
 import { Route as ProductIdRouteImport } from './routes/product.$id'
 import { Route as GuidesSlugRouteImport } from './routes/guides.$slug'
+import { Route as BrandsSlugRouteImport } from './routes/brands.$slug'
 
 const OrderSummaryRoute = OrderSummaryRouteImport.update({
   id: '/order-summary',
@@ -61,6 +63,11 @@ const GuidesIndexRoute = GuidesIndexRouteImport.update({
   path: '/',
   getParentRoute: () => GuidesRoute,
 } as any)
+const BrandsIndexRoute = BrandsIndexRouteImport.update({
+  id: '/brands/',
+  path: '/brands/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProductsCategoryRoute = ProductsCategoryRouteImport.update({
   id: '/products/$category',
   path: '/products/$category',
@@ -76,6 +83,11 @@ const GuidesSlugRoute = GuidesSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => GuidesRoute,
 } as any)
+const BrandsSlugRoute = BrandsSlugRouteImport.update({
+  id: '/brands/$slug',
+  path: '/brands/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -84,9 +96,11 @@ export interface FileRoutesByFullPath {
   '/guides': typeof GuidesRouteWithChildren
   '/my-list': typeof MyListRoute
   '/order-summary': typeof OrderSummaryRoute
+  '/brands/$slug': typeof BrandsSlugRoute
   '/guides/$slug': typeof GuidesSlugRoute
   '/product/$id': typeof ProductIdRoute
   '/products/$category': typeof ProductsCategoryRoute
+  '/brands/': typeof BrandsIndexRoute
   '/guides/': typeof GuidesIndexRoute
   '/products/': typeof ProductsIndexRoute
 }
@@ -96,9 +110,11 @@ export interface FileRoutesByTo {
   '/discover': typeof DiscoverRoute
   '/my-list': typeof MyListRoute
   '/order-summary': typeof OrderSummaryRoute
+  '/brands/$slug': typeof BrandsSlugRoute
   '/guides/$slug': typeof GuidesSlugRoute
   '/product/$id': typeof ProductIdRoute
   '/products/$category': typeof ProductsCategoryRoute
+  '/brands': typeof BrandsIndexRoute
   '/guides': typeof GuidesIndexRoute
   '/products': typeof ProductsIndexRoute
 }
@@ -110,9 +126,11 @@ export interface FileRoutesById {
   '/guides': typeof GuidesRouteWithChildren
   '/my-list': typeof MyListRoute
   '/order-summary': typeof OrderSummaryRoute
+  '/brands/$slug': typeof BrandsSlugRoute
   '/guides/$slug': typeof GuidesSlugRoute
   '/product/$id': typeof ProductIdRoute
   '/products/$category': typeof ProductsCategoryRoute
+  '/brands/': typeof BrandsIndexRoute
   '/guides/': typeof GuidesIndexRoute
   '/products/': typeof ProductsIndexRoute
 }
@@ -125,9 +143,11 @@ export interface FileRouteTypes {
     | '/guides'
     | '/my-list'
     | '/order-summary'
+    | '/brands/$slug'
     | '/guides/$slug'
     | '/product/$id'
     | '/products/$category'
+    | '/brands/'
     | '/guides/'
     | '/products/'
   fileRoutesByTo: FileRoutesByTo
@@ -137,9 +157,11 @@ export interface FileRouteTypes {
     | '/discover'
     | '/my-list'
     | '/order-summary'
+    | '/brands/$slug'
     | '/guides/$slug'
     | '/product/$id'
     | '/products/$category'
+    | '/brands'
     | '/guides'
     | '/products'
   id:
@@ -150,9 +172,11 @@ export interface FileRouteTypes {
     | '/guides'
     | '/my-list'
     | '/order-summary'
+    | '/brands/$slug'
     | '/guides/$slug'
     | '/product/$id'
     | '/products/$category'
+    | '/brands/'
     | '/guides/'
     | '/products/'
   fileRoutesById: FileRoutesById
@@ -164,8 +188,10 @@ export interface RootRouteChildren {
   GuidesRoute: typeof GuidesRouteWithChildren
   MyListRoute: typeof MyListRoute
   OrderSummaryRoute: typeof OrderSummaryRoute
+  BrandsSlugRoute: typeof BrandsSlugRoute
   ProductIdRoute: typeof ProductIdRoute
   ProductsCategoryRoute: typeof ProductsCategoryRoute
+  BrandsIndexRoute: typeof BrandsIndexRoute
   ProductsIndexRoute: typeof ProductsIndexRoute
 }
 
@@ -227,6 +253,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GuidesIndexRouteImport
       parentRoute: typeof GuidesRoute
     }
+    '/brands/': {
+      id: '/brands/'
+      path: '/brands'
+      fullPath: '/brands/'
+      preLoaderRoute: typeof BrandsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/products/$category': {
       id: '/products/$category'
       path: '/products/$category'
@@ -247,6 +280,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/guides/$slug'
       preLoaderRoute: typeof GuidesSlugRouteImport
       parentRoute: typeof GuidesRoute
+    }
+    '/brands/$slug': {
+      id: '/brands/$slug'
+      path: '/brands/$slug'
+      fullPath: '/brands/$slug'
+      preLoaderRoute: typeof BrandsSlugRouteImport
+      parentRoute: typeof rootRouteImport
     }
   }
 }
@@ -271,8 +311,10 @@ const rootRouteChildren: RootRouteChildren = {
   GuidesRoute: GuidesRouteWithChildren,
   MyListRoute: MyListRoute,
   OrderSummaryRoute: OrderSummaryRoute,
+  BrandsSlugRoute: BrandsSlugRoute,
   ProductIdRoute: ProductIdRoute,
   ProductsCategoryRoute: ProductsCategoryRoute,
+  BrandsIndexRoute: BrandsIndexRoute,
   ProductsIndexRoute: ProductsIndexRoute,
 }
 export const routeTree = rootRouteImport

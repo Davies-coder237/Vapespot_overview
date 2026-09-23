@@ -170,6 +170,17 @@ html.js .seo-block { display: none; }
   display: inline-block; margin: 4px; padding: 6px 12px; border: 1px solid #e5e7eb;
   border-radius: 999px; font-size: 0.8rem; color: #111827; text-decoration: none; background: #fff;
 }
+.seo-block h1 { font-size: 1.75rem; font-weight: 800; color: #0a0a0a; margin: 0 0 12px; }
+.seo-block p { font-size: 0.95rem; line-height: 1.65; color: #3f3f46; margin: 0 0 14px; }
+.seo-block h3 { font-size: 1.05rem; font-weight: 700; color: #0a0a0a; margin: 18px 0 6px; }
+.seo-table {
+  width: 100%; max-width: 720px; border-collapse: collapse; margin: 0 0 24px; font-size: 0.88rem;
+}
+.seo-table th, .seo-table td {
+  border: 1px solid #e5e7eb; padding: 8px 12px; text-align: left; color: #111827; vertical-align: top;
+}
+.seo-table th { background: #fafafa; font-weight: 700; }
+.seo-table a { color: #6b21a8; text-decoration: none; font-weight: 600; }
 
 /* ════ Scrollbars masquées pour les carrousels horizontaux ════
    La classe `scrollbar-none` est utilisée par les carrousels (Trending,
