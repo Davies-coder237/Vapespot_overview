@@ -852,9 +852,14 @@ function buildProductTitle(p) {
 /** Description méta unique : nom + marque + prix + specs clés + livraison. */
 function buildProductDescription(p) {
   const specs = p.specs || {};
-  const brand = p.brand ? `${p.brand} ` : "";
   const name = p.name || "this vape";
+  // NB depuis rewrite-product-names : name porte déjà la marque → on ne la
+  // re-préfixe que si absente (même garde-fou que buildProductTitle), sinon « IGET IGET ».
+  const brandMissing = p.brand && !name.toLowerCase().includes(p.brand.toLowerCase());
+  const brand = brandMissing ? `${p.brand} ` : "";
   let lead = `Shop the ${brand}${name}`;
+  // Marques commençant par « The » (The One, The Finest…) : « Shop the The One … » → « Shop the One … »
+  lead = lead.replace(/\bthe The\b/gi, "the");
   if (typeof p.price_aud === "number" && !Number.isNaN(p.price_aud)) {
     lead += ` from A$${p.price_aud}`;
   }

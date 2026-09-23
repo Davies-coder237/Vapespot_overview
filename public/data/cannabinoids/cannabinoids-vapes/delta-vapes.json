@@ -41,7 +41,7 @@
     {
       "id": "ghost-zkittles-5-one-gram-disposables-1973",
       "source_id": "1973",
-      "name": "Zkittles (5) One Gram Disposables",
+      "name": "Ghost Zkittles (5) One Gram Disposables",
       "price_aud": 107.99,
       "currency": "AUD",
       "specs": {
@@ -58,7 +58,7 @@
     {
       "id": "haze-hybrid-surreal-blend-disposable-vape-3ml-cotton-candy-6pc-display-3957",
       "source_id": "3957",
-      "name": "Hybrid Surreal Blend Disposable Vape – 3mL / Cotton Candy – 6PC DISPLAY",
+      "name": "Haze Hybrid Surreal Blend Disposable Vape – 3mL / Cotton Candy – 6PC DISPLAY",
       "price_aud": 239.99,
       "currency": "AUD",
       "specs": {
@@ -80,7 +80,7 @@
     {
       "id": "elf-thc-amanita-dream-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9189",
       "source_id": "9189",
-      "name": "Amanita Dream High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "name": "ELF THC Amanita Dream High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -98,7 +98,7 @@
     {
       "id": "elf-thc-black-domina-x-24k-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9190",
       "source_id": "9190",
-      "name": "Black Domina X 24K High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "name": "ELF THC Black Domina X 24K High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -116,7 +116,7 @@
     {
       "id": "elf-thc-blue-magic-og-x-3000-9191",
       "source_id": "9191",
-      "name": "Blue Magic OG X 3000",
+      "name": "ELF THC Blue Magic OG X 3000",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -134,7 +134,7 @@
     {
       "id": "elf-thc-grape-slur-p-4-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9192",
       "source_id": "9192",
-      "name": "Grape Slur-P #4 High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "name": "ELF THC Grape Slur-P #4 High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -152,7 +152,7 @@
     {
       "id": "elf-thc-thc3000-supreme-jellybean-kush-9193",
       "source_id": "9193",
-      "name": "THC3000 Supreme Jellybean Kush",
+      "name": "ELF THC THC3000 Supreme Jellybean Kush",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -170,7 +170,7 @@
     {
       "id": "elf-thc-lazer-lime-haze-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9194",
       "source_id": "9194",
-      "name": "Lazer Lime Haze High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "name": "ELF THC Lazer Lime Haze High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -188,7 +188,7 @@
     {
       "id": "elf-thc-octane-orange-xl-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9195",
       "source_id": "9195",
-      "name": "Octane Orange XL High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "name": "ELF THC Octane Orange XL High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -206,7 +206,7 @@
     {
       "id": "elf-thc-sour-pink-lemonade-thc3000-9196",
       "source_id": "9196",
-      "name": "Sour Pink Lemonade THC3000",
+      "name": "ELF THC Sour Pink Lemonade THC3000",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -224,7 +224,7 @@
     {
       "id": "elf-thc-haha-psycho-punch-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9226",
       "source_id": "9226",
-      "name": "HaHa Psycho Punch High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "name": "ELF THC HaHa Psycho Punch High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -242,7 +242,7 @@
     {
       "id": "elf-thc-razz-tiger-express-auto-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9227",
       "source_id": "9227",
-      "name": "Razz Tiger Express Auto High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "name": "ELF THC Razz Tiger Express Auto High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -260,7 +260,7 @@
     {
       "id": "elf-thc-shark-shock-diesel-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-9228",
       "source_id": "9228",
-      "name": "Shark Shock Diesel High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "name": "ELF THC Shark Shock Diesel High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -278,7 +278,7 @@
     {
       "id": "elf-thc-amanita-dream-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11198",
       "source_id": "11198",
-      "name": "Amanita Dream High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "name": "ELF THC Amanita Dream High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -296,7 +296,7 @@
     {
       "id": "elf-thc-black-domina-x-24k-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11199",
       "source_id": "11199",
-      "name": "Black Domina X 24K High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "name": "ELF THC Black Domina X 24K High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -314,7 +314,7 @@
     {
       "id": "elf-thc-blue-magic-og-x-thc3000-11200",
       "source_id": "11200",
-      "name": "Blue Magic OG X THC3000",
+      "name": "ELF THC Blue Magic OG X THC3000",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -332,7 +332,7 @@
     {
       "id": "elf-thc-grape-slur-p-4-thc3000-11201",
       "source_id": "11201",
-      "name": "Grape Slur-P #4 THC3000",
+      "name": "ELF THC Grape Slur-P #4 THC3000",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -350,7 +350,7 @@
     {
       "id": "elf-thc-thc3000-supreme-jellybean-kush-11202",
       "source_id": "11202",
-      "name": "THC3000 Supreme Jellybean Kush",
+      "name": "ELF THC THC3000 Supreme Jellybean Kush",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -368,7 +368,7 @@
     {
       "id": "elf-thc-lazer-lime-haze-delta-8-thc-p-thc-x-3g-disposable-11203",
       "source_id": "11203",
-      "name": "Lazer Lime Haze Delta 8 + THC-P + THC-X 3g Disposable",
+      "name": "ELF THC Lazer Lime Haze Delta 8 + THC-P + THC-X 3g Disposable",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -386,7 +386,7 @@
     {
       "id": "elf-thc-octane-orange-xl-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11204",
       "source_id": "11204",
-      "name": "Octane Orange XL High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "name": "ELF THC Octane Orange XL High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -404,7 +404,7 @@
     {
       "id": "elf-thc-thc3000-sour-pink-lemonade-11205",
       "source_id": "11205",
-      "name": "THC3000 Sour Pink Lemonade",
+      "name": "ELF THC THC3000 Sour Pink Lemonade",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -422,7 +422,7 @@
     {
       "id": "elf-thc-haha-psycho-punch-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11206",
       "source_id": "11206",
-      "name": "HaHa Psycho Punch High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "name": "ELF THC HaHa Psycho Punch High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -440,7 +440,7 @@
     {
       "id": "elf-thc-razz-tiger-express-auto-thc3000-11207",
       "source_id": "11207",
-      "name": "Razz Tiger Express Auto THC3000",
+      "name": "ELF THC Razz Tiger Express Auto THC3000",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -458,7 +458,7 @@
     {
       "id": "elf-thc-shark-shock-diesel-high-potency-blend-delta-8-thc-p-thc-x-3g-disposable-11208",
       "source_id": "11208",
-      "name": "Shark Shock Diesel High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
+      "name": "ELF THC Shark Shock Diesel High Potency Blend Delta 8 + THC-P + THC-X 3g Disposable",
       "price_aud": 83.99,
       "currency": "AUD",
       "specs": {
@@ -495,7 +495,7 @@
     {
       "id": "cookies-tequila-sunrise-indica-hybrid-delta-8-disposable-3g-11342",
       "source_id": "11342",
-      "name": "Tequila Sunrise (Indica Hybrid) Delta 8 Disposable 3G",
+      "name": "Cookies Tequila Sunrise (Indica Hybrid) Delta 8 Disposable 3G",
       "price_aud": 42.99,
       "currency": "AUD",
       "specs": {
@@ -514,7 +514,7 @@
     {
       "id": "cookies-london-pound-cake-75-sativa-hybrid-delta-8-disposable-3g-11343",
       "source_id": "11343",
-      "name": "London Pound Cake 75 (Sativa Hybrid) Delta 8 Disposable 3G",
+      "name": "Cookies London Pound Cake 75 (Sativa Hybrid) Delta 8 Disposable 3G",
       "price_aud": 42.99,
       "currency": "AUD",
       "specs": {
@@ -533,7 +533,7 @@
     {
       "id": "cookies-huckleberry-gelato-indica-hybrid-delta-8-disposable-3g-11344",
       "source_id": "11344",
-      "name": "Huckleberry Gelato (Indica Hybrid) Delta 8 Disposable 3G",
+      "name": "Cookies Huckleberry Gelato (Indica Hybrid) Delta 8 Disposable 3G",
       "price_aud": 42.99,
       "currency": "AUD",
       "specs": {
@@ -552,7 +552,7 @@
     {
       "id": "cookies-grandaddy-pluto-indica-hybrid-delta-8-disposable-3g-11345",
       "source_id": "11345",
-      "name": "Grandaddy Pluto (Indica Hybrid) Delta-8 Disposable 3G",
+      "name": "Cookies Grandaddy Pluto (Indica Hybrid) Delta-8 Disposable 3G",
       "price_aud": 42.99,
       "currency": "AUD",
       "specs": {
@@ -571,7 +571,7 @@
     {
       "id": "cookies-mexican-flan-delta-8-disposable-3g-11346",
       "source_id": "11346",
-      "name": "Mexican Flan – Delta-8 Disposable 3G",
+      "name": "Cookies Mexican Flan – Delta-8 Disposable 3G",
       "price_aud": 42.99,
       "currency": "AUD",
       "specs": {
@@ -590,7 +590,7 @@
     {
       "id": "cookies-fish-scale-indica-hybrid-delta-8-disposable-3g-11347",
       "source_id": "11347",
-      "name": "Fish Scale (Indica Hybrid) Delta 8 Disposable 3G",
+      "name": "Cookies Fish Scale (Indica Hybrid) Delta 8 Disposable 3G",
       "price_aud": 42.99,
       "currency": "AUD",
       "specs": {
@@ -609,7 +609,7 @@
     {
       "id": "cookies-cereal-a-la-mode-indica-hybrid-delta-8-disposable-3g-11348",
       "source_id": "11348",
-      "name": "Cereal A La Mode (Indica Hybrid) Delta 8 Disposable 3G",
+      "name": "Cookies Cereal A La Mode (Indica Hybrid) Delta 8 Disposable 3G",
       "price_aud": 42.99,
       "currency": "AUD",
       "specs": {
@@ -628,7 +628,7 @@
     {
       "id": "cookies-bernie-hana-butter-indica-hybrid-delta-8-disposable-3g-11349",
       "source_id": "11349",
-      "name": "Bernie Hana Butter (Indica Hybrid) Delta 8 Disposable 3G",
+      "name": "Cookies Bernie Hana Butter (Indica Hybrid) Delta 8 Disposable 3G",
       "price_aud": 42.99,
       "currency": "AUD",
       "specs": {
@@ -647,7 +647,7 @@
     {
       "id": "just-delta-delta-8-disposable-cartridge-1000mg-strawberry-cough-11417",
       "source_id": "11417",
-      "name": "Delta 8 Disposable Cartridge 1000mg Strawberry Cough",
+      "name": "Just Delta 8 Disposable Cartridge 1000mg Strawberry Cough",
       "price_aud": 49.99,
       "currency": "AUD",
       "specs": {
@@ -667,7 +667,7 @@
     {
       "id": "just-delta-delta-8-disposable-cartridge-1000mg-zkittlez-11418",
       "source_id": "11418",
-      "name": "Delta 8 Disposable Cartridge 1000mg Zkittlez",
+      "name": "Just Delta 8 Disposable Cartridge 1000mg Zkittlez",
       "price_aud": 49.99,
       "currency": "AUD",
       "specs": {
@@ -687,7 +687,7 @@
     {
       "id": "just-delta-8-cartridge-6-pack-bubble-gum-galaxy-11419",
       "source_id": "11419",
-      "name": "Delta 8 Cartridge 6 Pack Bubble Gum Galaxy",
+      "name": "Just Delta 8 Cartridge 6 Pack Bubble Gum Galaxy",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -706,7 +706,7 @@
     {
       "id": "just-delta-delta-8-cartridges-6-pack-solar-flare-lemonade-11420",
       "source_id": "11420",
-      "name": "Delta 8 Cartridges 6 Pack Solar Flare Lemonade",
+      "name": "Just Delta 8 Cartridges 6 Pack Solar Flare Lemonade",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -725,7 +725,7 @@
     {
       "id": "just-delta-delta-8-disposables-6-pack-zkittlez-11421",
       "source_id": "11421",
-      "name": "Delta 8 Disposables 6 Pack Zkittlez",
+      "name": "Just Delta 8 Disposables 6 Pack Zkittlez",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -744,7 +744,7 @@
     {
       "id": "just-delta-delta-8-disposables-6-pack-pineapple-express-11450",
       "source_id": "11450",
-      "name": "Delta 8 Disposables 6 Pack Pineapple Express",
+      "name": "Just Delta 8 Disposables 6 Pack Pineapple Express",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {

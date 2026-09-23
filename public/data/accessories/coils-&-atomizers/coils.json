@@ -199,7 +199,7 @@
     {
       "id": "pulsar-barb-fire-slim-kanthal-coil-2853",
       "source_id": "2853",
-      "name": "Barb Fire Slim Kanthal Coil",
+      "name": "Pulsar Barb Fire Slim Kanthal Coil",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -218,7 +218,7 @@
     {
       "id": "boundless-terp-pen-xl-dual-ceramic-replacement-coils-2pk-2968",
       "source_id": "2968",
-      "name": "Terp Pen XL Dual Ceramic Replacement Coils | 2pk",
+      "name": "Boundless Terp Pen XL Dual Ceramic Replacement Coils | 2pk",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -236,7 +236,7 @@
     {
       "id": "hellvape-p7-01-015ohm-coil-3pcs-4303",
       "source_id": "4303",
-      "name": "P7-01 0,15OHM COIL (3PCS)",
+      "name": "Hellvape P7-01 0,15OHM COIL (3PCS)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -255,7 +255,7 @@
     {
       "id": "hellvape-p7-01-015ohm-coil-3pcs-10511",
       "source_id": "10511",
-      "name": "P7-01 0,15OHM COIL (3PCS)",
+      "name": "Hellvape P7-01 0,15OHM COIL (3PCS)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -274,7 +274,7 @@
     {
       "id": "hellvape-p7-01-015ohm-coil-3pcs-11866",
       "source_id": "11866",
-      "name": "P7-01 0,15OHM COIL (3PCS)",
+      "name": "Hellvape P7-01 0,15OHM COIL (3PCS)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -293,7 +293,7 @@
     {
       "id": "hellvape-p7-02-02ohm-coil-3pcs-4304",
       "source_id": "4304",
-      "name": "P7-02 0,2OHM COIL (3PCS)",
+      "name": "Hellvape P7-02 0,2OHM COIL (3PCS)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -312,7 +312,7 @@
     {
       "id": "hellvape-p7-02-02ohm-coil-3pcs-10512",
       "source_id": "10512",
-      "name": "P7-02 0,2OHM COIL (3PCS)",
+      "name": "Hellvape P7-02 0,2OHM COIL (3PCS)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -331,7 +331,7 @@
     {
       "id": "hellvape-p7-02-02ohm-coil-3pcs-11867",
       "source_id": "11867",
-      "name": "P7-02 0,2OHM COIL (3PCS)",
+      "name": "Hellvape P7-02 0,2OHM COIL (3PCS)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -350,7 +350,7 @@
     {
       "id": "uwell-caliburn-g-un2-12ohm-coil-4pcs-4343",
       "source_id": "4343",
-      "name": "CALIBURN G UN2 (1,2OHM COIL )4PCS",
+      "name": "Uwell CALIBURN G UN2 (1,2OHM COIL )4PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -369,7 +369,7 @@
     {
       "id": "uwell-caliburn-g-coil-4344",
       "source_id": "4344",
-      "name": "CALIBURN G Coil",
+      "name": "Uwell CALIBURN G Coil",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -388,7 +388,7 @@
     {
       "id": "uwell-caliburn-g-un2-08ohm-coil-4pcs-4345",
       "source_id": "4345",
-      "name": "CALIBURN G UN2 0,8OHM COIL 4PCS",
+      "name": "Uwell CALIBURN G UN2 0,8OHM COIL 4PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -407,7 +407,7 @@
     {
       "id": "uwell-caliburn-g-un2-12-ohm-coil-4pcs-10547",
       "source_id": "10547",
-      "name": "CALIBURN G UN2 (1.2 OHM COIL) 4PCS",
+      "name": "Uwell CALIBURN G UN2 (1.2 OHM COIL) 4PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -426,7 +426,7 @@
     {
       "id": "uwell-caliburn-g-coil-4pcs-10548",
       "source_id": "10548",
-      "name": "CALIBURN G Coil 4PCS",
+      "name": "Uwell CALIBURN G Coil 4PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -445,7 +445,7 @@
     {
       "id": "uwell-caliburn-g2-coils-12ohm-4-pack-11691",
       "source_id": "11691",
-      "name": "Caliburn G2 Coils 1.2ohm – 4 Pack",
+      "name": "Uwell Caliburn G2 Coils 1.2ohm – 4 Pack",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -464,7 +464,7 @@
     {
       "id": "uwell-caliburn-g-un2-12ohm-coil-4pcs-11871",
       "source_id": "11871",
-      "name": "CALIBURN G UN2 (1,2OHM COIL )4PCS",
+      "name": "Uwell CALIBURN G UN2 (1,2OHM COIL )4PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -483,7 +483,7 @@
     {
       "id": "uwell-caliburn-g-coil-4pcs-11872",
       "source_id": "11872",
-      "name": "CALIBURN G Coil 4PCS",
+      "name": "Uwell CALIBURN G Coil 4PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -502,7 +502,7 @@
     {
       "id": "uwell-caliburn-g-un2-08ohm-coil-4pcs-11873",
       "source_id": "11873",
-      "name": "CALIBURN G UN2 0,8OHM COIL 4PCS",
+      "name": "Uwell CALIBURN G UN2 0,8OHM COIL 4PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -521,7 +521,7 @@
     {
       "id": "uwell-valyrian-iii-3-replacement-coils-4548",
       "source_id": "4548",
-      "name": "Valyrian III (3) Replacement Coils",
+      "name": "Uwell Valyrian III (3) Replacement Coils",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -541,7 +541,7 @@
     {
       "id": "uwell-valyrian-pod-coil-4-pack-5532",
       "source_id": "5532",
-      "name": "VALYRIAN POD COIL 4 PACK",
+      "name": "Uwell VALYRIAN POD COIL 4 PACK",
       "price_aud": 26.99,
       "currency": "AUD",
       "specs": {
@@ -560,7 +560,7 @@
     {
       "id": "uwell-valyrian-iii-3-replacement-coils-10654",
       "source_id": "10654",
-      "name": "Valyrian III (3) Replacement Coils",
+      "name": "Uwell Valyrian III (3) Replacement Coils",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -580,7 +580,7 @@
     {
       "id": "uwell-valyrian-2-un2-3-triple-meshed-016ohm-coils-2-pack-11657",
       "source_id": "11657",
-      "name": "Valyrian 2 UN2-3 Triple Meshed 0.16ohm Coils – 2 Pack",
+      "name": "Uwell Valyrian 2 UN2-3 Triple Meshed 0.16ohm Coils – 2 Pack",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -599,7 +599,7 @@
     {
       "id": "uwell-valyrian-2-un2-single-meshed-032ohm-coils-2-pack-11658",
       "source_id": "11658",
-      "name": "Valyrian 2 UN2 Single Meshed 0.32ohm Coils – 2 Pack",
+      "name": "Uwell Valyrian 2 UN2 Single Meshed 0.32ohm Coils – 2 Pack",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -619,7 +619,7 @@
     {
       "id": "uwell-crown-5-coils-4-pack-5539",
       "source_id": "5539",
-      "name": "CROWN 5 COILS 4 PACK",
+      "name": "Uwell CROWN 5 COILS 4 PACK",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -638,7 +638,7 @@
     {
       "id": "uwell-crown-v-coil-020-ohm-4-pack-11659",
       "source_id": "11659",
-      "name": "Crown V Coil 0.20 Ohm – 4 Pack",
+      "name": "Uwell Crown V Coil 0.20 Ohm – 4 Pack",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -657,7 +657,7 @@
     {
       "id": "uwell-crown-iv-023ohm-coil-4-pack-11663",
       "source_id": "11663",
-      "name": "Crown IV 0.23ohm Coil – 4 Pack",
+      "name": "Uwell Crown IV 0.23ohm Coil – 4 Pack",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -676,7 +676,7 @@
     {
       "id": "uwell-crown-dual-coil-025ohm-4-pack-11692",
       "source_id": "11692",
-      "name": "Crown Dual Coil 0.25ohm (4 Pack)",
+      "name": "Uwell Crown Dual Coil 0.25ohm (4 Pack)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -695,7 +695,7 @@
     {
       "id": "uwell-crown-5-coils-4-pack-12267",
       "source_id": "12267",
-      "name": "CROWN 5 COILS 4 PACK",
+      "name": "Uwell CROWN 5 COILS 4 PACK",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -714,7 +714,7 @@
     {
       "id": "uwell-aeglos-coils-08ohm-4-pack-11661",
       "source_id": "11661",
-      "name": "Aeglos Coils 0.8ohm – 4 Pack",
+      "name": "Uwell Aeglos Coils 0.8ohm – 4 Pack",
       "price_aud": 26.99,
       "currency": "AUD",
       "specs": {
@@ -734,7 +734,7 @@
     {
       "id": "uwell-pa-coil-11662",
       "source_id": "11662",
-      "name": "PA Coil",
+      "name": "Uwell PA Coil",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -754,7 +754,7 @@
     {
       "id": "vaporesso-gti-coils-5-pack-4384",
       "source_id": "4384",
-      "name": "GTI Coils (5-Pack)",
+      "name": "Vaporesso GTI Coils (5-Pack)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -774,7 +774,7 @@
     {
       "id": "vaporesso-gti-replacement-coils-5834",
       "source_id": "5834",
-      "name": "GTi Replacement Coils",
+      "name": "Vaporesso GTi Replacement Coils",
       "price_aud": 26.99,
       "currency": "AUD",
       "specs": {
@@ -794,7 +794,7 @@
     {
       "id": "vaporesso-gti-mesh-coils-5-pack-5835",
       "source_id": "5835",
-      "name": "GTI MESH COILS (5 PACK)",
+      "name": "Vaporesso GTI MESH COILS (5 PACK)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -815,7 +815,7 @@
     {
       "id": "vaporesso-gti-coils-5-pack-10549",
       "source_id": "10549",
-      "name": "GTI Coils (5-Pack)",
+      "name": "Vaporesso GTI Coils (5-Pack)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -835,7 +835,7 @@
     {
       "id": "vaporesso-gti-coils-5-pack-11878",
       "source_id": "11878",
-      "name": "GTI Coils (5-Pack)",
+      "name": "Vaporesso GTI Coils (5-Pack)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -855,7 +855,7 @@
     {
       "id": "vaporesso-gti-replacement-coils-12298",
       "source_id": "12298",
-      "name": "GTi Replacement Coils",
+      "name": "Vaporesso GTi Replacement Coils",
       "price_aud": 26.99,
       "currency": "AUD",
       "specs": {
@@ -875,7 +875,7 @@
     {
       "id": "vaporesso-gti-mesh-coils-5-pack-12299",
       "source_id": "12299",
-      "name": "GTI Mesh Coils (5 Pack)",
+      "name": "Vaporesso GTI Mesh Coils (5 Pack)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -896,7 +896,7 @@
     {
       "id": "vaporesso-gt-core-meshed-coils-3-pack-4420",
       "source_id": "4420",
-      "name": "GT Core Meshed Coils (3 pack)",
+      "name": "Vaporesso GT Core Meshed Coils (3 pack)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -916,7 +916,7 @@
     {
       "id": "vaporesso-gt-core-meshed-coils-3-pack-10550",
       "source_id": "10550",
-      "name": "GT Core Meshed Coils (3 pack)",
+      "name": "Vaporesso GT Core Meshed Coils (3 pack)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -936,7 +936,7 @@
     {
       "id": "vaporesso-gt-core-meshed-coils-3-pack-11880",
       "source_id": "11880",
-      "name": "GT Core Meshed Coils (3 pack)",
+      "name": "Vaporesso GT Core Meshed Coils (3 pack)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -956,7 +956,7 @@
     {
       "id": "vaporesso-eco-universal-euc-ccell-coils-4421",
       "source_id": "4421",
-      "name": "Eco Universal EUC CCELL Coils",
+      "name": "Vaporesso Eco Universal EUC CCELL Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -976,7 +976,7 @@
     {
       "id": "vaporesso-eco-universal-euc-ccell-coils-10551",
       "source_id": "10551",
-      "name": "Eco Universal EUC CCELL Coils",
+      "name": "Vaporesso Eco Universal EUC CCELL Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -996,7 +996,7 @@
     {
       "id": "vaporesso-eco-universal-euc-ccell-coils-11881",
       "source_id": "11881",
-      "name": "Eco Universal EUC CCELL Coils",
+      "name": "Vaporesso Eco Universal EUC CCELL Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1016,7 +1016,7 @@
     {
       "id": "vaporesso-qf-strip-4422",
       "source_id": "4422",
-      "name": "QF Strip",
+      "name": "Vaporesso QF Strip",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1038,7 +1038,7 @@
     {
       "id": "vaporesso-qf-strip-015ω-coils-10552",
       "source_id": "10552",
-      "name": "QF Strip 0.15Ω Coils",
+      "name": "Vaporesso QF Strip 0.15Ω Coils",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1060,7 +1060,7 @@
     {
       "id": "vaporesso-qf-strip-015ω-coils-3-pack-11911",
       "source_id": "11911",
-      "name": "QF Strip 0.15Ω Coils-(3 pack)",
+      "name": "Vaporesso QF Strip 0.15Ω Coils-(3 pack)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1082,7 +1082,7 @@
     {
       "id": "vaporesso-gt-mesh-replacement-coils-5833",
       "source_id": "5833",
-      "name": "GT Mesh Replacement Coils",
+      "name": "Vaporesso GT Mesh Replacement Coils",
       "price_aud": 26.99,
       "currency": "AUD",
       "specs": {
@@ -1103,7 +1103,7 @@
     {
       "id": "vaporesso-gt-mesh-replacement-coils-12271",
       "source_id": "12271",
-      "name": "GT Mesh Replacement Coils",
+      "name": "Vaporesso GT Mesh Replacement Coils",
       "price_aud": 26.99,
       "currency": "AUD",
       "specs": {
@@ -1124,7 +1124,7 @@
     {
       "id": "horizontech-falcon-king-coils-4424",
       "source_id": "4424",
-      "name": "Falcon King Coils",
+      "name": "HorizonTech Falcon King Coils",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1145,7 +1145,7 @@
     {
       "id": "horizontech-falcon-king-coils-10554",
       "source_id": "10554",
-      "name": "Falcon King Coils",
+      "name": "HorizonTech Falcon King Coils",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1166,7 +1166,7 @@
     {
       "id": "horizontech-falcon-coils-3-packs-7867",
       "source_id": "7867",
-      "name": "Falcon Coils-(3 packs)",
+      "name": "HorizonTech Falcon Coils-(3 packs)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1187,7 +1187,7 @@
     {
       "id": "horizontech-falcon-coils-3-packs-10553",
       "source_id": "10553",
-      "name": "Falcon Coils-(3 packs)",
+      "name": "HorizonTech Falcon Coils-(3 packs)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1208,7 +1208,7 @@
     {
       "id": "horizontech-falcon-coils-3-packs-11913",
       "source_id": "11913",
-      "name": "Falcon Coils-(3 packs)",
+      "name": "HorizonTech Falcon Coils-(3 packs)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1229,7 +1229,7 @@
     {
       "id": "voopoo-pnp-x-replacement-coils-5-pack-4427",
       "source_id": "4427",
-      "name": "PnP X Replacement Coils 5-Pack",
+      "name": "VooPoo PnP X Replacement Coils 5-Pack",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1250,7 +1250,7 @@
     {
       "id": "voopoo-pnp-x-replacement-coils-5-pack-10557",
       "source_id": "10557",
-      "name": "PnP X Replacement Coils 5-Pack",
+      "name": "VooPoo PnP X Replacement Coils 5-Pack",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1271,7 +1271,7 @@
     {
       "id": "voopoo-yc-r1-06ω-5pcs-4474",
       "source_id": "4474",
-      "name": "YC-R1 0.6Ω 5pcs",
+      "name": "VooPoo YC-R1 0.6Ω 5pcs",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1290,7 +1290,7 @@
     {
       "id": "voopoo-finic-yc-coils5-packs-10593",
       "source_id": "10593",
-      "name": "Finic YC Coils(5 Packs)",
+      "name": "VooPoo Finic YC Coils(5 Packs)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1309,7 +1309,7 @@
     {
       "id": "voopoo-finic-yc-coils5-packs-11958",
       "source_id": "11958",
-      "name": "Finic YC Coils(5 Packs)",
+      "name": "VooPoo Finic YC Coils(5 Packs)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1328,7 +1328,7 @@
     {
       "id": "voopoo-pnp-vm5-coils-11694",
       "source_id": "11694",
-      "name": "PnP-VM5 Coils",
+      "name": "VooPoo PnP-VM5 Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1348,7 +1348,7 @@
     {
       "id": "innokin-zf-replacement-coils-5-pack-4471",
       "source_id": "4471",
-      "name": "ZF Replacement Coils (5-Pack)",
+      "name": "Innokin ZF Replacement Coils (5-Pack)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1368,7 +1368,7 @@
     {
       "id": "innokin-zf-replacement-coils-5-pack-10590",
       "source_id": "10590",
-      "name": "ZF Replacement Coils (5-Pack)",
+      "name": "Innokin ZF Replacement Coils (5-Pack)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1388,7 +1388,7 @@
     {
       "id": "innokin-zf-replacement-coils-5-pack-11921",
       "source_id": "11921",
-      "name": "ZF Replacement Coils (5-Pack)",
+      "name": "Innokin ZF Replacement Coils (5-Pack)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1408,7 +1408,7 @@
     {
       "id": "innokin-prism-s-coils-5-pack-4473",
       "source_id": "4473",
-      "name": "Prism S Coils 5-Pack",
+      "name": "Innokin Prism S Coils 5-Pack",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1427,7 +1427,7 @@
     {
       "id": "innokin-prism-s-coils-5-pack-10592",
       "source_id": "10592",
-      "name": "Prism S Coils 5-Pack",
+      "name": "Innokin Prism S Coils 5-Pack",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1446,7 +1446,7 @@
     {
       "id": "innokin-prism-s-coils-5-pack-11957",
       "source_id": "11957",
-      "name": "Prism S Coils 5-Pack",
+      "name": "Innokin Prism S Coils 5-Pack",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1465,7 +1465,7 @@
     {
       "id": "innokin-zenith-coil-heads-pack-of-5-4706",
       "source_id": "4706",
-      "name": "ZENITH COIL HEADS (PACK OF 5)",
+      "name": "Innokin ZENITH COIL HEADS (PACK OF 5)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1485,7 +1485,7 @@
     {
       "id": "innokin-zenith-coil-heads-pack-of-5-10703",
       "source_id": "10703",
-      "name": "ZENITH COIL HEADS (PACK OF 5)",
+      "name": "Innokin ZENITH COIL HEADS (PACK OF 5)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1505,7 +1505,7 @@
     {
       "id": "tecc-arc-4-arc-5-replacement-coil-15-ohm-4738",
       "source_id": "4738",
-      "name": "arc 4 / arc 5 Replacement Coil 1.5 ohm",
+      "name": "TECC arc 4 / arc 5 Replacement Coil 1.5 ohm",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1525,7 +1525,7 @@
     {
       "id": "tecc-arc-4-arc-5-replacement-coil-15-ohm-10705",
       "source_id": "10705",
-      "name": "arc 4 / arc 5 Replacement Coil 1.5 ohm",
+      "name": "TECC arc 4 / arc 5 Replacement Coil 1.5 ohm",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1545,7 +1545,7 @@
     {
       "id": "tecc-gt-coils-10706",
       "source_id": "10706",
-      "name": "GT Coils",
+      "name": "TECC GT Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1564,7 +1564,7 @@
     {
       "id": "smok-stick-v9-replacement-coil-3pcs-4812",
       "source_id": "4812",
-      "name": "Stick V9 Replacement Coil 3pcs",
+      "name": "SMOK Stick V9 Replacement Coil 3pcs",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1585,7 +1585,7 @@
     {
       "id": "smok-stick-v9-replacement-coil-3pcs-10743",
       "source_id": "10743",
-      "name": "Stick V9 Replacement Coil 3pcs",
+      "name": "SMOK Stick V9 Replacement Coil 3pcs",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1606,7 +1606,7 @@
     {
       "id": "smok-stick-v9-replacement-coil-3pcs-12032",
       "source_id": "12032",
-      "name": "Stick V9 Replacement Coil 3pcs",
+      "name": "SMOK Stick V9 Replacement Coil 3pcs",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1627,7 +1627,7 @@
     {
       "id": "smok-tfv9-coil-meshed-015ω-4813",
       "source_id": "4813",
-      "name": "TFV9 COIL Meshed 0.15Ω",
+      "name": "SMOK TFV9 COIL Meshed 0.15Ω",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1646,7 +1646,7 @@
     {
       "id": "smok-v9-replacement-coils-5-packs-4814",
       "source_id": "4814",
-      "name": "V9 Replacement Coils – (5 Packs",
+      "name": "SMOK V9 Replacement Coils – (5 Packs",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1666,7 +1666,7 @@
     {
       "id": "smok-tfv9-coil-meshed-015ω-10744",
       "source_id": "10744",
-      "name": "TFV9 COIL Meshed 0.15Ω",
+      "name": "SMOK TFV9 COIL Meshed 0.15Ω",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1685,7 +1685,7 @@
     {
       "id": "smok-tfv9-coil-meshed-015ω-12033",
       "source_id": "12033",
-      "name": "TFV9 COIL Meshed 0.15Ω",
+      "name": "SMOK TFV9 COIL Meshed 0.15Ω",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1704,7 +1704,7 @@
     {
       "id": "smok-v9-replacement-coils-5-packs-12034",
       "source_id": "12034",
-      "name": "V9 Replacement Coils – (5 Packs)",
+      "name": "SMOK V9 Replacement Coils – (5 Packs)",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1724,7 +1724,7 @@
     {
       "id": "smok-ta-mesh-coils-6130",
       "source_id": "6130",
-      "name": "TA Mesh Coils",
+      "name": "SMOK TA Mesh Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1745,7 +1745,7 @@
     {
       "id": "smok-ta-mesh-coils-12441",
       "source_id": "12441",
-      "name": "TA Mesh Coils",
+      "name": "SMOK TA Mesh Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1766,7 +1766,7 @@
     {
       "id": "smok-rpm-coils-5pk-6192",
       "source_id": "6192",
-      "name": "RPM Coils (5pk)",
+      "name": "SMOK RPM Coils (5pk)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1787,7 +1787,7 @@
     {
       "id": "smok-rpm-3-coil-5pk-6193",
       "source_id": "6193",
-      "name": "RPM 3 Coil (5pk)",
+      "name": "SMOK RPM 3 Coil (5pk)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1808,7 +1808,7 @@
     {
       "id": "smok-rpm-coils-5pk-12442",
       "source_id": "12442",
-      "name": "RPM Coils (5pk)",
+      "name": "SMOK RPM Coils (5pk)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1829,7 +1829,7 @@
     {
       "id": "smok-rpm-3-coil-5pk-12443",
       "source_id": "12443",
-      "name": "RPM 3 Coil (5pk)",
+      "name": "SMOK RPM 3 Coil (5pk)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1850,7 +1850,7 @@
     {
       "id": "ijoy-shogun-univkatana-km-coil-s-5325",
       "source_id": "5325",
-      "name": "Shogun Univ/Katana KM Coil S",
+      "name": "iJoy Shogun Univ/Katana KM Coil S",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1871,7 +1871,7 @@
     {
       "id": "ijoy-shogun-univkatana-km-coil-s-10955",
       "source_id": "10955",
-      "name": "Shogun Univ/Katana KM Coil S",
+      "name": "iJoy Shogun Univ/Katana KM Coil S",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1892,7 +1892,7 @@
     {
       "id": "ijoy-shogun-univkatana-km-coil-s-12124",
       "source_id": "12124",
-      "name": "Shogun Univ/Katana KM Coil S",
+      "name": "iJoy Shogun Univ/Katana KM Coil S",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1913,7 +1913,7 @@
     {
       "id": "vandy-vape-mtl-fused-clapton-5378",
       "source_id": "5378",
-      "name": "MTL Fused Clapton",
+      "name": "Vandy Vape MTL Fused Clapton",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1936,7 +1936,7 @@
     {
       "id": "vandy-vape-prebuilt-coils-10pcs-5379",
       "source_id": "5379",
-      "name": "PREBUILT COILS 10PCS",
+      "name": "Vandy Vape PREBUILT COILS 10PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1959,7 +1959,7 @@
     {
       "id": "vandy-vape-fine-mtl-fused-clapto-11001",
       "source_id": "11001",
-      "name": "fine MTL Fused Clapto",
+      "name": "Vandy Vape fine MTL Fused Clapto",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1982,7 +1982,7 @@
     {
       "id": "vandy-vape-prebuilt-coils-10pcs-11002",
       "source_id": "11002",
-      "name": "PREBUILT COILS 10PCS",
+      "name": "Vandy Vape PREBUILT COILS 10PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2005,7 +2005,7 @@
     {
       "id": "vandy-vape-fine-mtl-fused-clapton-12258",
       "source_id": "12258",
-      "name": "fine MTL Fused Clapton",
+      "name": "Vandy Vape fine MTL Fused Clapton",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2028,7 +2028,7 @@
     {
       "id": "vandy-vape-prebuilt-coils-10pcs-12259",
       "source_id": "12259",
-      "name": "PREBUILT COILS 10PCS",
+      "name": "Vandy Vape PREBUILT COILS 10PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2051,7 +2051,7 @@
     {
       "id": "vandy-vape-vvc-replacement-coils-4pcs-5415",
       "source_id": "5415",
-      "name": "VVC REPLACEMENT COILS 4PCS",
+      "name": "Vandy Vape VVC REPLACEMENT COILS 4PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2070,7 +2070,7 @@
     {
       "id": "vandy-vape-vvc-replacement-coils-4pcs-12260",
       "source_id": "12260",
-      "name": "VVC REPLACEMENT COILS 4PCS",
+      "name": "Vandy Vape VVC REPLACEMENT COILS 4PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2089,7 +2089,7 @@
     {
       "id": "vaper-empire-vibe-series-coil-replacement-set-5-pack-7370",
       "source_id": "7370",
-      "name": "Vibe Series Coil Replacement Set (5-pack)",
+      "name": "Vaper Empire Vibe Series Coil Replacement Set (5-pack)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2109,7 +2109,7 @@
     {
       "id": "geekvape-z025-dual-coil-7856",
       "source_id": "7856",
-      "name": "Z0.25 Dual Coil",
+      "name": "GeekVape Z0.25 Dual Coil",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2129,7 +2129,7 @@
     {
       "id": "geekvape-z-replacement-coils-10422",
       "source_id": "10422",
-      "name": "Z Replacement Coils",
+      "name": "GeekVape Z Replacement Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2149,7 +2149,7 @@
     {
       "id": "geekvape-m-02ω-triple-coil-10463",
       "source_id": "10463",
-      "name": "M 0.2Ω Triple Coil",
+      "name": "GeekVape M 0.2Ω Triple Coil",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -2169,7 +2169,7 @@
     {
       "id": "geekvape-z025-dual-coil-10504",
       "source_id": "10504",
-      "name": "Z0.25 Dual Coil",
+      "name": "GeekVape Z0.25 Dual Coil",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2189,7 +2189,7 @@
     {
       "id": "geekvape-z04-coil-11693",
       "source_id": "11693",
-      "name": "Z0.4 Coil",
+      "name": "GeekVape Z0.4 Coil",
       "price_aud": 26.99,
       "currency": "AUD",
       "specs": {
@@ -2208,7 +2208,7 @@
     {
       "id": "geekvape-z-coils-zeus-11695",
       "source_id": "11695",
-      "name": "Z Coils Zeus",
+      "name": "GeekVape Z Coils Zeus",
       "price_aud": 24.99,
       "currency": "AUD",
       "specs": {
@@ -2228,7 +2228,7 @@
     {
       "id": "geekvape-z025-dual-coil-11741",
       "source_id": "11741",
-      "name": "Z0.25 Dual Coil",
+      "name": "GeekVape Z0.25 Dual Coil",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2248,7 +2248,7 @@
     {
       "id": "geekvape-aegis-boost-coils5-packs-7862",
       "source_id": "7862",
-      "name": "Aegis Boost Coils(5 packs)",
+      "name": "GeekVape Aegis Boost Coils(5 packs)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2267,7 +2267,7 @@
     {
       "id": "geekvape-aegis-boost-replacement-coils-10392",
       "source_id": "10392",
-      "name": "Aegis Boost Replacement Coils",
+      "name": "GeekVape Aegis Boost Replacement Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2288,7 +2288,7 @@
     {
       "id": "geekvape-aegis-boost-coils5-packs-10510",
       "source_id": "10510",
-      "name": "Aegis Boost Coils(5 packs)",
+      "name": "GeekVape Aegis Boost Coils(5 packs)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2307,7 +2307,7 @@
     {
       "id": "geekvape-aegis-boost-coils-5-packs-11865",
       "source_id": "11865",
-      "name": "Aegis Boost Coils (5 packs)",
+      "name": "GeekVape Aegis Boost Coils (5 packs)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2326,7 +2326,7 @@
     {
       "id": "geekvape-j-series-replacement-coils-5-pcs-8285",
       "source_id": "8285",
-      "name": "J SERIES REPLACEMENT COILS 5 PCS",
+      "name": "GeekVape J SERIES REPLACEMENT COILS 5 PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2345,7 +2345,7 @@
     {
       "id": "geekvape-j-series-replacement-coils-5-pcs-11000",
       "source_id": "11000",
-      "name": "J SERIES REPLACEMENT COILS 5 PCS",
+      "name": "GeekVape J SERIES REPLACEMENT COILS 5 PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2364,7 +2364,7 @@
     {
       "id": "geekvape-j-series-replacement-coils-5-pcs-12257",
       "source_id": "12257",
-      "name": "J SERIES REPLACEMENT COILS 5 PCS",
+      "name": "GeekVape J SERIES REPLACEMENT COILS 5 PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2383,7 +2383,7 @@
     {
       "id": "geekvape-meshmellow-mm-coils-pack-of-3-8324",
       "source_id": "8324",
-      "name": "MeshMellow MM Coils Pack of 3",
+      "name": "GeekVape MeshMellow MM Coils Pack of 3",
       "price_aud": 26.99,
       "currency": "AUD",
       "specs": {
@@ -2402,7 +2402,7 @@
     {
       "id": "geekvape-meshmellow-mm-coils-pack-of-3-12268",
       "source_id": "12268",
-      "name": "MeshMellow MM Coils Pack of 3",
+      "name": "GeekVape MeshMellow MM Coils Pack of 3",
       "price_aud": 26.99,
       "currency": "AUD",
       "specs": {
@@ -2421,7 +2421,7 @@
     {
       "id": "geekvape-im-super-mesh-coils-5-pack-8325",
       "source_id": "8325",
-      "name": "IM & SUPER MESH COILS 5 PACK",
+      "name": "GeekVape IM & SUPER MESH COILS 5 PACK",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2441,7 +2441,7 @@
     {
       "id": "geekvape-im-super-mesh-coils-5-pack-12269",
       "source_id": "12269",
-      "name": "IM & SUPER MESH COILS 5 PACK",
+      "name": "GeekVape IM & SUPER MESH COILS 5 PACK",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2461,7 +2461,7 @@
     {
       "id": "geekvape-aegis-g-pod-replacement-coils-9081",
       "source_id": "9081",
-      "name": "Aegis G POD Replacement Coils",
+      "name": "GeekVape Aegis G POD Replacement Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2480,7 +2480,7 @@
     {
       "id": "geekvape-aegis-g-pod-replacement-coils-12555",
       "source_id": "12555",
-      "name": "Aegis G POD Replacement Coils",
+      "name": "GeekVape Aegis G POD Replacement Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2499,7 +2499,7 @@
     {
       "id": "geekvape-g-series-coil-heads-pack-of-5-9653",
       "source_id": "9653",
-      "name": "G SERIES COIL HEADS (PACK OF 5)",
+      "name": "GeekVape G SERIES COIL HEADS (PACK OF 5)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2519,7 +2519,7 @@
     {
       "id": "geekvape-m-series-coil-heads-pack-of-5-9686",
       "source_id": "9686",
-      "name": "M Series Coil Heads (Pack of 5)",
+      "name": "GeekVape M Series Coil Heads (Pack of 5)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2540,7 +2540,7 @@
     {
       "id": "geekvape-p-series-coil-heads-pack-of-5-9714",
       "source_id": "9714",
-      "name": "P Series Coil Heads (Pack of 5)",
+      "name": "GeekVape P Series Coil Heads (Pack of 5)",
       "price_aud": 27.99,
       "currency": "AUD",
       "specs": {
@@ -2559,7 +2559,7 @@
     {
       "id": "geekvape-p-replacement-coils-10428",
       "source_id": "10428",
-      "name": "P Replacement Coils",
+      "name": "GeekVape P Replacement Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2578,7 +2578,7 @@
     {
       "id": "geekvape-6-in-1-coils-pack-10393",
       "source_id": "10393",
-      "name": "6 In 1 Coils pack",
+      "name": "GeekVape 6 In 1 Coils pack",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2623,7 +2623,7 @@
     {
       "id": "geekvape-aegis-pod-g-mesh-replacement-coils-10421",
       "source_id": "10421",
-      "name": "Aegis Pod G Mesh Replacement Coils",
+      "name": "GeekVape Aegis Pod G Mesh Replacement Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2642,7 +2642,7 @@
     {
       "id": "geekvape-b-series-aegis-boost-coils-11700",
       "source_id": "11700",
-      "name": "B series Aegis Boost Coils",
+      "name": "GeekVape B series Aegis Boost Coils",
       "price_aud": 24.99,
       "currency": "AUD",
       "specs": {
@@ -2663,7 +2663,7 @@
     {
       "id": "freemax-gx-p-1ohm-mesh-coil-5pcs-7863",
       "source_id": "7863",
-      "name": "GX-P 1OHM MESH COIL (5PCS)",
+      "name": "FreeMax GX-P 1OHM MESH COIL (5PCS)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2682,7 +2682,7 @@
     {
       "id": "freemax-gx-p-1ohm-mesh-coil-5pcs-10513",
       "source_id": "10513",
-      "name": "GX-P 1OHM MESH COIL (5PCS)",
+      "name": "FreeMax GX-P 1OHM MESH COIL (5PCS)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2701,7 +2701,7 @@
     {
       "id": "freemax-gx-p-1ohm-mesh-coil-5pcs-11868",
       "source_id": "11868",
-      "name": "GX-P 1OHM MESH COIL (5PCS)",
+      "name": "FreeMax GX-P 1OHM MESH COIL (5PCS)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2720,7 +2720,7 @@
     {
       "id": "freemax-gx-1ohm-mesh-coil-5pcs-11870",
       "source_id": "11870",
-      "name": "GX 1OHM MESH COIL (5PCS)",
+      "name": "FreeMax GX 1OHM MESH COIL (5PCS)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2739,7 +2739,7 @@
     {
       "id": "freemax-gx-08ohm-mesh-coil-5pcs-7864",
       "source_id": "7864",
-      "name": "GX 0,8OHM MESH COIL (5PCS)",
+      "name": "FreeMax GX 0,8OHM MESH COIL (5PCS)",
       "price_aud": 26.99,
       "currency": "AUD",
       "specs": {
@@ -2759,7 +2759,7 @@
     {
       "id": "freemax-gx-mesh-coil-5pcs-7865",
       "source_id": "7865",
-      "name": "GX Mesh Coil (5pcs)",
+      "name": "FreeMax GX Mesh Coil (5pcs)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2778,7 +2778,7 @@
     {
       "id": "freemax-gx-08ohm-mesh-coil-5pcs-10514",
       "source_id": "10514",
-      "name": "GX 0,8OHM MESH COIL (5PCS)",
+      "name": "FreeMax GX 0,8OHM MESH COIL (5PCS)",
       "price_aud": 26.99,
       "currency": "AUD",
       "specs": {
@@ -2798,7 +2798,7 @@
     {
       "id": "freemax-gx-mesh-coil-5pcs-10515",
       "source_id": "10515",
-      "name": "GX Mesh Coil (5pcs)",
+      "name": "FreeMax GX Mesh Coil (5pcs)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2817,7 +2817,7 @@
     {
       "id": "freemax-gx-08ohm-mesh-coil-5pcs-11869",
       "source_id": "11869",
-      "name": "GX 0,8OHM MESH COIL (5PCS)",
+      "name": "FreeMax GX 0,8OHM MESH COIL (5PCS)",
       "price_aud": 26.99,
       "currency": "AUD",
       "specs": {
@@ -2837,7 +2837,7 @@
     {
       "id": "freemax-mesh-pro-kanthal-coils-7868",
       "source_id": "7868",
-      "name": "Mesh Pro (Kanthal) Coils",
+      "name": "FreeMax Mesh Pro (Kanthal) Coils",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2858,7 +2858,7 @@
     {
       "id": "freemax-mesh-pro-replacement-coils-3pcs-8318",
       "source_id": "8318",
-      "name": "MESH PRO REPLACEMENT COILS 3PCS",
+      "name": "FreeMax MESH PRO REPLACEMENT COILS 3PCS",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2879,7 +2879,7 @@
     {
       "id": "freemax-mesh-pro-kanthal-coils-10591",
       "source_id": "10591",
-      "name": "Mesh Pro (Kanthal) Coils",
+      "name": "FreeMax Mesh Pro (Kanthal) Coils",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2900,7 +2900,7 @@
     {
       "id": "freemax-mesh-pro-replacement-coils-3pcs-11005",
       "source_id": "11005",
-      "name": "MESH PRO REPLACEMENT COILS 3PCS",
+      "name": "FreeMax MESH PRO REPLACEMENT COILS 3PCS",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2921,7 +2921,7 @@
     {
       "id": "freemax-mesh-pro-kanthal-coils-11956",
       "source_id": "11956",
-      "name": "Mesh Pro (Kanthal) Coils",
+      "name": "FreeMax Mesh Pro (Kanthal) Coils",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2942,7 +2942,7 @@
     {
       "id": "freemax-mesh-pro-replacement-coils-3pcs-12264",
       "source_id": "12264",
-      "name": "MESH PRO REPLACEMENT COILS 3PCS",
+      "name": "FreeMax MESH PRO REPLACEMENT COILS 3PCS",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2963,7 +2963,7 @@
     {
       "id": "freemax-x-904l-fireluke-11696",
       "source_id": "11696",
-      "name": "X 904L Fireluke",
+      "name": "FreeMax X 904L Fireluke",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2985,7 +2985,7 @@
     {
       "id": "freemax-x-904l-fireluke-11697",
       "source_id": "11697",
-      "name": "X 904L Fireluke",
+      "name": "FreeMax X 904L Fireluke",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -3007,7 +3007,7 @@
     {
       "id": "freemax-x-02ohm-coil-11698",
       "source_id": "11698",
-      "name": "X 0.2ohm Coil",
+      "name": "FreeMax X 0.2ohm Coil",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3029,7 +3029,7 @@
     {
       "id": "freemax-ox-coils-11699",
       "source_id": "11699",
-      "name": "OX Coils",
+      "name": "FreeMax OX Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -3048,7 +3048,7 @@
     {
       "id": "freemax-m-pro-2-904l-11701",
       "source_id": "11701",
-      "name": "M Pro 2 904L",
+      "name": "FreeMax M Pro 2 904L",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3068,7 +3068,7 @@
     {
       "id": "eleaf-gs-air-coil-atomizer-head-9082",
       "source_id": "9082",
-      "name": "GS Air Coil Atomizer Head",
+      "name": "Eleaf GS Air Coil Atomizer Head",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -3088,7 +3088,7 @@
     {
       "id": "eleaf-gs-air-coil-atomizer-head-12556",
       "source_id": "12556",
-      "name": "GS Air Coil Atomizer Head",
+      "name": "Eleaf GS Air Coil Atomizer Head",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -3108,7 +3108,7 @@
     {
       "id": "eleaf-ec-head-5pcs-9083",
       "source_id": "9083",
-      "name": "EC Head (5pcs)",
+      "name": "Eleaf EC Head (5pcs)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -3127,7 +3127,7 @@
     {
       "id": "eleaf-ec-head-12557",
       "source_id": "12557",
-      "name": "EC Head",
+      "name": "Eleaf EC Head",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -3146,7 +3146,7 @@
     {
       "id": "aspire-cleito-coils-5-packs-10555",
       "source_id": "10555",
-      "name": "Cleito Coils- (5 packs)",
+      "name": "Aspire Cleito Coils- (5 packs)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3166,7 +3166,7 @@
     {
       "id": "aspire-cleito-coils-5-packs-11914",
       "source_id": "11914",
-      "name": "Cleito Coils- (5 packs)",
+      "name": "Aspire Cleito Coils- (5 packs)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3186,7 +3186,7 @@
     {
       "id": "aspire-cleito-120-coils-10556",
       "source_id": "10556",
-      "name": "Cleito 120 Coils",
+      "name": "Aspire Cleito 120 Coils",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3207,7 +3207,7 @@
     {
       "id": "aspire-cleito-120-coils-11915",
       "source_id": "11915",
-      "name": "Cleito 120 Coils",
+      "name": "Aspire Cleito 120 Coils",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3228,7 +3228,7 @@
     {
       "id": "aspire-atlantis-se-coils-replacement-5-pcs-10995",
       "source_id": "10995",
-      "name": "ATLANTIS SE COILS REPLACEMENT 5 PCS",
+      "name": "Aspire ATLANTIS SE COILS REPLACEMENT 5 PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -3247,7 +3247,7 @@
     {
       "id": "aspire-atlantis-se-coils-replacement-5-pcs-12254",
       "source_id": "12254",
-      "name": "ATLANTIS SE COILS REPLACEMENT 5 PCS",
+      "name": "Aspire ATLANTIS SE COILS REPLACEMENT 5 PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -3266,7 +3266,7 @@
     {
       "id": "aspire-nautilus-mesh-coils-5pk-11154",
       "source_id": "11154",
-      "name": "Nautilus Mesh Coils (5pk)",
+      "name": "Aspire Nautilus Mesh Coils (5pk)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3286,7 +3286,7 @@
     {
       "id": "aspire-nautilus-mesh-coils-5pk-12400",
       "source_id": "12400",
-      "name": "Nautilus Mesh Coils (5pk)",
+      "name": "Aspire Nautilus Mesh Coils (5pk)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3306,7 +3306,7 @@
     {
       "id": "aspire-nautilus-x-coils-11155",
       "source_id": "11155",
-      "name": "Nautilus X Coils",
+      "name": "Aspire Nautilus X Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -3327,7 +3327,7 @@
     {
       "id": "aspire-nautilus-x-coils-12401",
       "source_id": "12401",
-      "name": "Nautilus X Coils",
+      "name": "Aspire Nautilus X Coils",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -3348,7 +3348,7 @@
     {
       "id": "aspire-nautilus-aio-replacement-atomizer-11156",
       "source_id": "11156",
-      "name": "Nautilus AIO Replacement Atomizer",
+      "name": "Aspire Nautilus AIO Replacement Atomizer",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -3368,7 +3368,7 @@
     {
       "id": "aspire-nautilus-aio-replacement-atomizer-12402",
       "source_id": "12402",
-      "name": "Nautilus AIO Replacement Atomizer",
+      "name": "Aspire Nautilus AIO Replacement Atomizer",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -3389,7 +3389,7 @@
     {
       "id": "oxva-xlim-c-replacement-coils-5-pcs-12256",
       "source_id": "12256",
-      "name": "XLIM C REPLACEMENT COILS 5 PCS",
+      "name": "OXVA XLIM C REPLACEMENT COILS 5 PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {

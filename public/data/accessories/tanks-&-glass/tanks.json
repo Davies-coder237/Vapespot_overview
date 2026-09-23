@@ -122,7 +122,7 @@
     {
       "id": "innokin-zlide-tank-4147",
       "source_id": "4147",
-      "name": "ZLIDE TANK",
+      "name": "Innokin ZLIDE TANK",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -149,7 +149,7 @@
     {
       "id": "innokin-zlide-tank-4736",
       "source_id": "4736",
-      "name": "ZLIDE TANK",
+      "name": "Innokin ZLIDE TANK",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -176,7 +176,7 @@
     {
       "id": "innokin-zlide-tank-10507",
       "source_id": "10507",
-      "name": "ZLIDE TANK",
+      "name": "Innokin ZLIDE TANK",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -203,7 +203,7 @@
     {
       "id": "innokin-zlide-tank-10704",
       "source_id": "10704",
-      "name": "ZLIDE TANK",
+      "name": "Innokin ZLIDE TANK",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -230,7 +230,7 @@
     {
       "id": "innokin-zlide-tank-11744",
       "source_id": "11744",
-      "name": "ZLIDE TANK",
+      "name": "Innokin ZLIDE TANK",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -257,7 +257,7 @@
     {
       "id": "innokin-go-z-tank-4150",
       "source_id": "4150",
-      "name": "GO Z TANK",
+      "name": "Innokin GO Z TANK",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -279,7 +279,7 @@
     {
       "id": "innokin-go-z-tank-10508",
       "source_id": "10508",
-      "name": "GO Z TANK",
+      "name": "Innokin GO Z TANK",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -301,7 +301,7 @@
     {
       "id": "innokin-go-z-tank-11745",
       "source_id": "11745",
-      "name": "GO Z TANK",
+      "name": "Innokin GO Z TANK",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -323,7 +323,7 @@
     {
       "id": "innokin-t22-pro-tank-7416",
       "source_id": "7416",
-      "name": "T22 Pro Tank",
+      "name": "Innokin T22 Pro Tank",
       "price_aud": 37.99,
       "currency": "AUD",
       "specs": {
@@ -346,7 +346,7 @@
     {
       "id": "innokin-t22-pro-tank-11614",
       "source_id": "11614",
-      "name": "T22 Pro Tank",
+      "name": "Innokin T22 Pro Tank",
       "price_aud": 37.99,
       "currency": "AUD",
       "specs": {
@@ -369,7 +369,7 @@
     {
       "id": "uwell-valyrian-iii-3-subohm-tank-4549",
       "source_id": "4549",
-      "name": "Valyrian III (3) Subohm Tank",
+      "name": "Uwell Valyrian III (3) Subohm Tank",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -397,7 +397,7 @@
     {
       "id": "uwell-valyrian-3-vape-tank-5533",
       "source_id": "5533",
-      "name": "VALYRIAN 3 VAPE TANK",
+      "name": "Uwell VALYRIAN 3 VAPE TANK",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -425,7 +425,7 @@
     {
       "id": "uwell-valyrian-iii-3-subohm-tank-10655",
       "source_id": "10655",
-      "name": "Valyrian III (3) Subohm Tank",
+      "name": "Uwell Valyrian III (3) Subohm Tank",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -453,7 +453,7 @@
     {
       "id": "smok-tfv9-tank-4811",
       "source_id": "4811",
-      "name": "TFV9 TANK",
+      "name": "SMOK TFV9 TANK",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -476,7 +476,7 @@
     {
       "id": "smok-tfv9-tank-10742",
       "source_id": "10742",
-      "name": "TFV9 TANK",
+      "name": "SMOK TFV9 TANK",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -499,7 +499,7 @@
     {
       "id": "smok-tfv9-vape-tank-12031",
       "source_id": "12031",
-      "name": "TFV9 VAPE TANK",
+      "name": "SMOK TFV9 VAPE TANK",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -522,7 +522,7 @@
     {
       "id": "smok-tfv18-tank-5904",
       "source_id": "5904",
-      "name": "TFV18 Tank",
+      "name": "SMOK TFV18 Tank",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -548,7 +548,7 @@
     {
       "id": "smok-tfv18-sub-ohm-tank-5905",
       "source_id": "5905",
-      "name": "TFV18 SUB-OHM TANK",
+      "name": "SMOK TFV18 SUB-OHM TANK",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -574,7 +574,7 @@
     {
       "id": "smok-tfv18-tank-12344",
       "source_id": "12344",
-      "name": "TFV18 Tank",
+      "name": "SMOK TFV18 Tank",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -600,7 +600,7 @@
     {
       "id": "smok-tfv18-sub-ohm-tank-12345",
       "source_id": "12345",
-      "name": "TFV18 SUB-OHM TANK",
+      "name": "SMOK TFV18 SUB-OHM TANK",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -626,7 +626,7 @@
     {
       "id": "smok-tfv16-tank-7419",
       "source_id": "7419",
-      "name": "TFV16 Tank",
+      "name": "SMOK TFV16 Tank",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -654,7 +654,7 @@
     {
       "id": "smok-tfv16-tank-11617",
       "source_id": "11617",
-      "name": "TFV16 Tank",
+      "name": "SMOK TFV16 Tank",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -682,7 +682,7 @@
     {
       "id": "smok-t-air-subtank-7420",
       "source_id": "7420",
-      "name": "T-Air Subtank",
+      "name": "SMOK T-Air Subtank",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -707,7 +707,7 @@
     {
       "id": "smok-t-air-subtank-11618",
       "source_id": "11618",
-      "name": "T-Air Subtank",
+      "name": "SMOK T-Air Subtank",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -732,7 +732,7 @@
     {
       "id": "vandy-vape-pulse-vessel-empty-tank-set-5416",
       "source_id": "5416",
-      "name": "PULSE VESSEL EMPTY TANK SET",
+      "name": "Vandy Vape PULSE VESSEL EMPTY TANK SET",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -754,7 +754,7 @@
     {
       "id": "vandy-vape-pulse-vessel-empty-replacement-tank-set-5ml-12261",
       "source_id": "12261",
-      "name": "PULSE VESSEL EMPTY REPLACEMENT TANK SET 5ML",
+      "name": "Vandy Vape PULSE VESSEL EMPTY REPLACEMENT TANK SET 5ML",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -776,7 +776,7 @@
     {
       "id": "freemax-maxus-pro-tank-metal-edition-m-pro-2-tank-5449",
       "source_id": "5449",
-      "name": "MAXUS PRO TANK METAL EDITION (M PRO 2 TANK)",
+      "name": "FreeMax MAXUS PRO TANK METAL EDITION (M PRO 2 TANK)",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -800,7 +800,7 @@
     {
       "id": "freemax-maxus-pro-tank-resin-edition-5450",
       "source_id": "5450",
-      "name": "MAXUS PRO TANK RESIN EDITION",
+      "name": "FreeMax MAXUS PRO TANK RESIN EDITION",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -825,7 +825,7 @@
     {
       "id": "freemax-maxus-pro-tank-metal-edition-m-pro-2-tank-8316",
       "source_id": "8316",
-      "name": "MAXUS PRO TANK METAL EDITION (M PRO 2 TANK)",
+      "name": "FreeMax MAXUS PRO TANK METAL EDITION (M PRO 2 TANK)",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -849,7 +849,7 @@
     {
       "id": "freemax-maxus-pro-tank-resin-edition-8317",
       "source_id": "8317",
-      "name": "MAXUS PRO TANK RESIN EDITION",
+      "name": "FreeMax MAXUS PRO TANK RESIN EDITION",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -874,7 +874,7 @@
     {
       "id": "freemax-maxus-pro-tank-metal-edition-m-pro-2-tank-11003",
       "source_id": "11003",
-      "name": "MAXUS PRO TANK METAL EDITION (M PRO 2 TANK)",
+      "name": "FreeMax MAXUS PRO TANK METAL EDITION (M PRO 2 TANK)",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -898,7 +898,7 @@
     {
       "id": "freemax-maxus-pro-tank-resin-edition-11004",
       "source_id": "11004",
-      "name": "MAXUS PRO TANK RESIN EDITION",
+      "name": "FreeMax MAXUS PRO TANK RESIN EDITION",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -923,7 +923,7 @@
     {
       "id": "freemax-maxus-pro-tank-metal-edition-m-pro-2-tank-12262",
       "source_id": "12262",
-      "name": "MAXUS PRO TANK METAL EDITION (M PRO 2 TANK)",
+      "name": "FreeMax MAXUS PRO TANK METAL EDITION (M PRO 2 TANK)",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -947,7 +947,7 @@
     {
       "id": "freemax-maxus-pro-tank-resin-edition-12263",
       "source_id": "12263",
-      "name": "MAXUS PRO TANK RESIN EDITION",
+      "name": "FreeMax MAXUS PRO TANK RESIN EDITION",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -972,7 +972,7 @@
     {
       "id": "freemax-m-pro-3-tank-5451",
       "source_id": "5451",
-      "name": "M PRO 3 TANK",
+      "name": "FreeMax M PRO 3 TANK",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -997,7 +997,7 @@
     {
       "id": "freemax-m-pro-3-tank-11006",
       "source_id": "11006",
-      "name": "M PRO 3 TANK",
+      "name": "FreeMax M PRO 3 TANK",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -1022,7 +1022,7 @@
     {
       "id": "freemax-m-pro-3-tank-12265",
       "source_id": "12265",
-      "name": "M PRO 3 TANK",
+      "name": "FreeMax M PRO 3 TANK",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -1047,7 +1047,7 @@
     {
       "id": "aspire-huracan-sub-ohm-tank-5452",
       "source_id": "5452",
-      "name": "HURACAN SUB-OHM TANK",
+      "name": "Aspire HURACAN SUB-OHM TANK",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -1072,7 +1072,7 @@
     {
       "id": "aspire-huracan-sub-ohm-tank-11008",
       "source_id": "11008",
-      "name": "HURACAN SUB-OHM TANK",
+      "name": "Aspire HURACAN SUB-OHM TANK",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -1097,7 +1097,7 @@
     {
       "id": "aspire-nautilus-gt-tank-6085",
       "source_id": "6085",
-      "name": "Nautilus GT Tank",
+      "name": "Aspire Nautilus GT Tank",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -1122,7 +1122,7 @@
     {
       "id": "aspire-nautilus-gt-tank-11157",
       "source_id": "11157",
-      "name": "Nautilus GT Tank",
+      "name": "Aspire Nautilus GT Tank",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -1147,7 +1147,7 @@
     {
       "id": "aspire-nautilus-gt-tank-12437",
       "source_id": "12437",
-      "name": "Nautilus GT Tank",
+      "name": "Aspire Nautilus GT Tank",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -1172,7 +1172,7 @@
     {
       "id": "aspire-mulus-e-liquid-chamber-10669",
       "source_id": "10669",
-      "name": "MULUS E-LIQUID CHAMBER",
+      "name": "Aspire MULUS E-LIQUID CHAMBER",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1193,7 +1193,7 @@
     {
       "id": "aspire-mulus-e-liquid-chamber-12026",
       "source_id": "12026",
-      "name": "MULUS E-LIQUID CHAMBER",
+      "name": "Aspire MULUS E-LIQUID CHAMBER",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1214,7 +1214,7 @@
     {
       "id": "aspire-atlantis-pt-tank-10992",
       "source_id": "10992",
-      "name": "Atlantis PT Tank",
+      "name": "Aspire Atlantis PT Tank",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -1238,7 +1238,7 @@
     {
       "id": "aspire-atlantis-pt-tank-12222",
       "source_id": "12222",
-      "name": "ATLANTIS PT TANK",
+      "name": "Aspire ATLANTIS PT TANK",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -1262,7 +1262,7 @@
     {
       "id": "aspire-atlantis-gt-tank-10993",
       "source_id": "10993",
-      "name": "ATLANTIS GT TANK",
+      "name": "Aspire ATLANTIS GT TANK",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -1288,7 +1288,7 @@
     {
       "id": "aspire-atlantis-gt-tank-12223",
       "source_id": "12223",
-      "name": "ATLANTIS GT TANK",
+      "name": "Aspire ATLANTIS GT TANK",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -1314,7 +1314,7 @@
     {
       "id": "steam-crave-ragnar-rdta-extension-kit-5907",
       "source_id": "5907",
-      "name": "Ragnar RDTA Extension Kit",
+      "name": "Steam Crave Ragnar RDTA Extension Kit",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -1333,7 +1333,7 @@
     {
       "id": "steam-crave-ragnar-rdta-extension-kit-12346",
       "source_id": "12346",
-      "name": "Ragnar RDTA Extension Kit",
+      "name": "Steam Crave Ragnar RDTA Extension Kit",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -1352,7 +1352,7 @@
     {
       "id": "steam-crave-meson-rta-5937",
       "source_id": "5937",
-      "name": "Meson RTA",
+      "name": "Steam Crave Meson RTA",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -1376,7 +1376,7 @@
     {
       "id": "steam-crave-meson-rta-12349",
       "source_id": "12349",
-      "name": "Meson RTA",
+      "name": "Steam Crave Meson RTA",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -1400,7 +1400,7 @@
     {
       "id": "voopoo-uforce-l-tank-7417",
       "source_id": "7417",
-      "name": "UForce L Tank",
+      "name": "VooPoo UForce L Tank",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1424,7 +1424,7 @@
     {
       "id": "voopoo-uforce-l-tank-11615",
       "source_id": "11615",
-      "name": "UForce L Tank",
+      "name": "VooPoo UForce L Tank",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1448,7 +1448,7 @@
     {
       "id": "voopoo-rta-pod-for-drag-sx-2ml-7421",
       "source_id": "7421",
-      "name": "RTA Pod for Drag S/X 2ml",
+      "name": "VooPoo RTA Pod for Drag S/X 2ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1470,7 +1470,7 @@
     {
       "id": "voopoo-rta-pod-for-drag-sx-2ml-11619",
       "source_id": "11619",
-      "name": "RTA Pod for Drag S/X 2ml",
+      "name": "VooPoo RTA Pod for Drag S/X 2ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1492,7 +1492,7 @@
     {
       "id": "lost-vape-centaurus-subohm-tank-7418",
       "source_id": "7418",
-      "name": "Centaurus Subohm Tank",
+      "name": "Lost Vape Centaurus Subohm Tank",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -1516,7 +1516,7 @@
     {
       "id": "lost-vape-centaurus-subohm-tank-11616",
       "source_id": "11616",
-      "name": "Centaurus Subohm Tank",
+      "name": "Lost Vape Centaurus Subohm Tank",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -1540,7 +1540,7 @@
     {
       "id": "geekvape-z-fli-tank-7422",
       "source_id": "7422",
-      "name": "Z Fli Tank",
+      "name": "GeekVape Z Fli Tank",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -1565,7 +1565,7 @@
     {
       "id": "geekvape-z-fli-tank-11620",
       "source_id": "11620",
-      "name": "Z Fli Tank",
+      "name": "GeekVape Z Fli Tank",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -1590,7 +1590,7 @@
     {
       "id": "geekvape-z-max-tank-7456",
       "source_id": "7456",
-      "name": "Z Max Tank",
+      "name": "GeekVape Z Max Tank",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -1615,7 +1615,7 @@
     {
       "id": "geekvape-z-max-tank-11651",
       "source_id": "11651",
-      "name": "Z Max Tank",
+      "name": "GeekVape Z Max Tank",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -1640,7 +1640,7 @@
     {
       "id": "vaporesso-itank-2-7423",
       "source_id": "7423",
-      "name": "ITANK 2",
+      "name": "Vaporesso ITANK 2",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -1663,7 +1663,7 @@
     {
       "id": "vaporesso-itank-t-6ml-7457",
       "source_id": "7457",
-      "name": "iTank T 6ml",
+      "name": "Vaporesso iTank T 6ml",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -1688,7 +1688,7 @@
     {
       "id": "vaporesso-itank-2-11621",
       "source_id": "11621",
-      "name": "ITANK 2",
+      "name": "Vaporesso ITANK 2",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -1711,7 +1711,7 @@
     {
       "id": "vaporesso-itank-t-6ml-11652",
       "source_id": "11652",
-      "name": "iTank T 6ml",
+      "name": "Vaporesso iTank T 6ml",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -1736,7 +1736,7 @@
     {
       "id": "hellvape-hellbeast-2-subohm-tank-7424",
       "source_id": "7424",
-      "name": "Hellbeast 2 Subohm Tank",
+      "name": "HELLVAPE Hellbeast 2 Subohm Tank",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -1760,7 +1760,7 @@
     {
       "id": "hellvape-hellbeast-2-subohm-tank-11622",
       "source_id": "11622",
-      "name": "Hellbeast 2 Subohm Tank",
+      "name": "HELLVAPE Hellbeast 2 Subohm Tank",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {

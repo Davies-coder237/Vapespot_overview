@@ -414,7 +414,7 @@
     {
       "id": "liquideo-american-mix-50-ml-2010",
       "source_id": "2010",
-      "name": "American Mix 50 ml",
+      "name": "Liquideo American Mix 50 ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -433,7 +433,7 @@
     {
       "id": "ferocious-7x-best-sellers-7030-shortfill-bundle-4481",
       "source_id": "4481",
-      "name": "7x Best Sellers | 70/30 Shortfill Bundle",
+      "name": "Ferocious 7x Best Sellers | 70/30 Shortfill Bundle",
       "price_aud": 147.99,
       "currency": "AUD",
       "specs": {
@@ -452,7 +452,7 @@
     {
       "id": "ferocious-4x-candy-sweets-5050-shortfill-bundle-7907",
       "source_id": "7907",
-      "name": "4x Candy & Sweets | 50/50 Shortfill Bundle",
+      "name": "Ferocious 4x Candy & Sweets | 50/50 Shortfill Bundle",
       "price_aud": 84.99,
       "currency": "AUD",
       "specs": {
@@ -473,7 +473,7 @@
     {
       "id": "ferocious-7x-best-sellers-7030-shortfill-bundle-7909",
       "source_id": "7909",
-      "name": "7x Best Sellers 70/30 Shortfill Bundle",
+      "name": "Ferocious 7x Best Sellers 70/30 Shortfill Bundle",
       "price_aud": 147.99,
       "currency": "AUD",
       "specs": {
@@ -494,7 +494,7 @@
     {
       "id": "ferocious-fruit-e-liquids-7030-bundle-7944",
       "source_id": "7944",
-      "name": "Fruit E-Liquids | 70/30 Bundle",
+      "name": "Ferocious Fruit E-Liquids | 70/30 Bundle",
       "price_aud": 204.99,
       "currency": "AUD",
       "specs": {
@@ -513,7 +513,7 @@
     {
       "id": "ferocious-5x-candy-sweets-7030-shortfill-bundle-11967",
       "source_id": "11967",
-      "name": "5x Candy & Sweets | 70/30 Shortfill Bundle",
+      "name": "Ferocious 5x Candy & Sweets | 70/30 Shortfill Bundle",
       "price_aud": 107.99,
       "currency": "AUD",
       "specs": {
@@ -534,7 +534,7 @@
     {
       "id": "ferocious-5x-desserts-7030-shortfill-bundle-11968",
       "source_id": "11968",
-      "name": "5x Desserts  70/30 Shortfill Bundle",
+      "name": "Ferocious 5x Desserts 70/30 Shortfill Bundle",
       "price_aud": 107.99,
       "currency": "AUD",
       "specs": {
@@ -554,7 +554,7 @@
     {
       "id": "ferocious-7x-best-sellers-7030-shortfill-bundle-11970",
       "source_id": "11970",
-      "name": "7x Best Sellers 70/30 Shortfill Bundle",
+      "name": "Ferocious 7x Best Sellers 70/30 Shortfill Bundle",
       "price_aud": 147.99,
       "currency": "AUD",
       "specs": {
@@ -573,7 +573,7 @@
     {
       "id": "wake-vape-cactus-fruit-cooler-100ml-4629",
       "source_id": "4629",
-      "name": "Cactus Fruit Cooler 100ml",
+      "name": "Wake & Vape Cactus Fruit Cooler 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -593,7 +593,7 @@
     {
       "id": "wake-vape-orange-sorbet-100ml-4630",
       "source_id": "4630",
-      "name": "Orange Sorbet 100ml",
+      "name": "Wake & Vape Orange Sorbet 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -613,7 +613,7 @@
     {
       "id": "wake-vape-blueberry-jam-danish-100ml-4631",
       "source_id": "4631",
-      "name": "Blueberry Jam Danish 100ml",
+      "name": "Wake & Vape Blueberry Jam Danish 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -633,7 +633,7 @@
     {
       "id": "wake-vape-blackcurrant-bubblegum-100ml-4632",
       "source_id": "4632",
-      "name": "Blackcurrant Bubblegum 100ml",
+      "name": "Wake & Vape Blackcurrant Bubblegum 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -653,7 +653,7 @@
     {
       "id": "wake-vape-strawberry-coconut-pineapple-100ml-4633",
       "source_id": "4633",
-      "name": "Strawberry, Coconut & Pineapple 100ml",
+      "name": "Wake & Vape Strawberry, Coconut & Pineapple 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -673,7 +673,7 @@
     {
       "id": "wake-vape-dark-fruits-citrus-100ml-4634",
       "source_id": "4634",
-      "name": "Dark Fruits & Citrus 100ml",
+      "name": "Wake & Vape Dark Fruits & Citrus 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -693,7 +693,7 @@
     {
       "id": "wake-vape-amsterdam-jam-100ml-4635",
       "source_id": "4635",
-      "name": "Amsterdam Jam 100ml",
+      "name": "Wake & Vape Amsterdam Jam 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -713,7 +713,7 @@
     {
       "id": "wake-vape-menthol-blast-100ml-4636",
       "source_id": "4636",
-      "name": "Menthol Blast 100ml",
+      "name": "Wake & Vape Menthol Blast 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -733,7 +733,7 @@
     {
       "id": "wake-vape-cactus-fruit-cooler-100ml-8023",
       "source_id": "8023",
-      "name": "Cactus Fruit Cooler 100ml",
+      "name": "Wake & Vape Cactus Fruit Cooler 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -753,7 +753,7 @@
     {
       "id": "wake-vape-orange-sorbet-100ml-8024",
       "source_id": "8024",
-      "name": "Orange Sorbet 100ml",
+      "name": "Wake & Vape Orange Sorbet 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -773,7 +773,7 @@
     {
       "id": "wake-vape-blueberry-jam-danish-100ml-8025",
       "source_id": "8025",
-      "name": "Blueberry Jam Danish 100ml",
+      "name": "Wake & Vape Blueberry Jam Danish 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -793,7 +793,7 @@
     {
       "id": "wake-vape-blackcurrant-bubblegum-100ml-8026",
       "source_id": "8026",
-      "name": "Blackcurrant Bubblegum 100ml",
+      "name": "Wake & Vape Blackcurrant Bubblegum 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -813,7 +813,7 @@
     {
       "id": "wake-vape-strawberry-coconut-pineapple-100ml-8027",
       "source_id": "8027",
-      "name": "Strawberry, Coconut & Pineapple 100ml",
+      "name": "Wake & Vape Strawberry, Coconut & Pineapple 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -833,7 +833,7 @@
     {
       "id": "wake-vape-dark-fruits-citrus-100ml-8028",
       "source_id": "8028",
-      "name": "Dark Fruits & Citrus 100ml",
+      "name": "Wake & Vape Dark Fruits & Citrus 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -853,7 +853,7 @@
     {
       "id": "wake-vape-amsterdam-jam-100ml-8029",
       "source_id": "8029",
-      "name": "Amsterdam Jam 100ml",
+      "name": "Wake & Vape Amsterdam Jam 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -873,7 +873,7 @@
     {
       "id": "wake-vape-menthol-blast-100ml-8061",
       "source_id": "8061",
-      "name": "Menthol Blast 100ml",
+      "name": "Wake & Vape Menthol Blast 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -893,7 +893,7 @@
     {
       "id": "wake-vape-cactus-fruit-cooler-100ml-11977",
       "source_id": "11977",
-      "name": "Cactus Fruit Cooler 100ml",
+      "name": "Wake & Vape Cactus Fruit Cooler 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -913,7 +913,7 @@
     {
       "id": "wake-vape-orange-sorbet-100ml-11978",
       "source_id": "11978",
-      "name": "Orange Sorbet 100ml",
+      "name": "Wake & Vape Orange Sorbet 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -933,7 +933,7 @@
     {
       "id": "wake-vape-blueberry-jam-danish-100ml-11979",
       "source_id": "11979",
-      "name": "Blueberry Jam Danish 100ml",
+      "name": "Wake & Vape Blueberry Jam Danish 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -953,7 +953,7 @@
     {
       "id": "wake-vape-blackcurrant-bubblegum-100ml-11980",
       "source_id": "11980",
-      "name": "Blackcurrant Bubblegum 100ml",
+      "name": "Wake & Vape Blackcurrant Bubblegum 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -973,7 +973,7 @@
     {
       "id": "wake-vape-strawberry-coconut-pineapple-100ml-11981",
       "source_id": "11981",
-      "name": "Strawberry, Coconut & Pineapple 100ml",
+      "name": "Wake & Vape Strawberry, Coconut & Pineapple 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -993,7 +993,7 @@
     {
       "id": "wake-vape-dark-fruits-citrus-100ml-11982",
       "source_id": "11982",
-      "name": "Dark Fruits & Citrus 100ml",
+      "name": "Wake & Vape Dark Fruits & Citrus 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1013,7 +1013,7 @@
     {
       "id": "wake-vape-amsterdam-jam-100ml-11983",
       "source_id": "11983",
-      "name": "Amsterdam Jam 100ml",
+      "name": "Wake & Vape Amsterdam Jam 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1033,7 +1033,7 @@
     {
       "id": "wake-vape-menthol-blast-100ml-12016",
       "source_id": "12016",
-      "name": "Menthol Blast 100ml",
+      "name": "Wake & Vape Menthol Blast 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1053,7 +1053,7 @@
     {
       "id": "six-licks-bluemonia-100ml-4637",
       "source_id": "4637",
-      "name": "Bluemonia 100ml",
+      "name": "Six Licks Bluemonia 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1072,7 +1072,7 @@
     {
       "id": "six-licks-bite-the-bullet-100ml-4638",
       "source_id": "4638",
-      "name": "Bite The Bullet 100ml",
+      "name": "Six Licks Bite The Bullet 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1091,7 +1091,7 @@
     {
       "id": "six-licks-love-bite-100ml-4639",
       "source_id": "4639",
-      "name": "Love Bite 100ml",
+      "name": "Six Licks Love Bite 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1110,7 +1110,7 @@
     {
       "id": "six-licks-melon-on-my-mind-100ml-4668",
       "source_id": "4668",
-      "name": "Melon On My Mind 100ml",
+      "name": "Six Licks Melon On My Mind 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1129,7 +1129,7 @@
     {
       "id": "six-licks-liquid-gold-100ml-4669",
       "source_id": "4669",
-      "name": "Liquid Gold 100ml",
+      "name": "Six Licks Liquid Gold 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1148,7 +1148,7 @@
     {
       "id": "six-licks-truth-or-pear-100ml-4670",
       "source_id": "4670",
-      "name": "Truth Or Pear 100ml",
+      "name": "Six Licks Truth Or Pear 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1167,7 +1167,7 @@
     {
       "id": "six-licks-bluemonia-100ml-8062",
       "source_id": "8062",
-      "name": "Bluemonia 100ml",
+      "name": "Six Licks Bluemonia 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1186,7 +1186,7 @@
     {
       "id": "six-licks-bite-the-bullet-100ml-8063",
       "source_id": "8063",
-      "name": "Bite The Bullet 100ml",
+      "name": "Six Licks Bite The Bullet 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1205,7 +1205,7 @@
     {
       "id": "six-licks-love-bite-100ml-8064",
       "source_id": "8064",
-      "name": "Love Bite 100ml",
+      "name": "Six Licks Love Bite 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1224,7 +1224,7 @@
     {
       "id": "six-licks-melon-on-my-mind-100ml-8065",
       "source_id": "8065",
-      "name": "Melon On My Mind 100ml",
+      "name": "Six Licks Melon On My Mind 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1243,7 +1243,7 @@
     {
       "id": "six-licks-liquid-gold-100ml-8066",
       "source_id": "8066",
-      "name": "Liquid Gold 100ml",
+      "name": "Six Licks Liquid Gold 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1262,7 +1262,7 @@
     {
       "id": "six-licks-truth-or-pear-100ml-8067",
       "source_id": "8067",
-      "name": "Truth Or Pear 100ml",
+      "name": "Six Licks Truth Or Pear 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1281,7 +1281,7 @@
     {
       "id": "six-licks-blueberry-raspberry-bluemonia-e-liquid-10217",
       "source_id": "10217",
-      "name": "BLUEBERRY RASPBERRY (BLUEMONIA) E-LIQUID",
+      "name": "Six Licks BLUEBERRY RASPBERRY (BLUEMONIA) E-LIQUID",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1300,7 +1300,7 @@
     {
       "id": "six-licks-blackberry-apple-10218",
       "source_id": "10218",
-      "name": "Blackberry Apple",
+      "name": "Six Licks Blackberry Apple",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1319,7 +1319,7 @@
     {
       "id": "six-licks-bluemonia-100ml-12017",
       "source_id": "12017",
-      "name": "Bluemonia 100ml",
+      "name": "Six Licks Bluemonia 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1338,7 +1338,7 @@
     {
       "id": "six-licks-bite-the-bullet-100ml-12018",
       "source_id": "12018",
-      "name": "Bite The Bullet 100ml",
+      "name": "Six Licks Bite The Bullet 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1357,7 +1357,7 @@
     {
       "id": "six-licks-love-bite-100ml-12019",
       "source_id": "12019",
-      "name": "Love Bite 100ml",
+      "name": "Six Licks Love Bite 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1376,7 +1376,7 @@
     {
       "id": "six-licks-melon-on-my-mind-100ml-12020",
       "source_id": "12020",
-      "name": "Melon On My Mind 100ml",
+      "name": "Six Licks Melon On My Mind 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -1395,7 +1395,7 @@
     {
       "id": "nasty-juice-trap-queen-50ml-6046",
       "source_id": "6046",
-      "name": "Trap Queen 50ml",
+      "name": "Nasty Juice Trap Queen 50ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1416,7 +1416,7 @@
     {
       "id": "nasty-juice-modmate-lychee-50ml-shortfill-6258",
       "source_id": "6258",
-      "name": "ModMate – Lychee 50ml Shortfill",
+      "name": "Nasty Juice ModMate – Lychee 50ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1435,7 +1435,7 @@
     {
       "id": "nasty-juice-modmate-watermelon-ice-50ml-shortfill-6285",
       "source_id": "6285",
-      "name": "ModMate – Watermelon Ice 50ml Shortfill",
+      "name": "Nasty Juice ModMate – Watermelon Ice 50ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1454,7 +1454,7 @@
     {
       "id": "nasty-juice-modmate-strawberry-kiwi-50ml-shortfill-6286",
       "source_id": "6286",
-      "name": "ModMate – Strawberry & Kiwi 50ml Shortfill",
+      "name": "Nasty Juice ModMate – Strawberry & Kiwi 50ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1473,7 +1473,7 @@
     {
       "id": "nasty-juice-modmate-peach-lemonade-50ml-shortfill-6287",
       "source_id": "6287",
-      "name": "ModMate – Peach Lemonade 50ml Shortfill",
+      "name": "Nasty Juice ModMate – Peach Lemonade 50ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1492,7 +1492,7 @@
     {
       "id": "nasty-juice-modmate-mango-ice-50ml-shortfill-6315",
       "source_id": "6315",
-      "name": "ModMate – Mango Ice 50ml Shortfill",
+      "name": "Nasty Juice ModMate – Mango Ice 50ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1511,7 +1511,7 @@
     {
       "id": "nasty-juice-cush-man-series-mango-banana-6318",
       "source_id": "6318",
-      "name": "CUSH MAN SERIES – Mango Banana",
+      "name": "Nasty Juice CUSH MAN SERIES – Mango Banana",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1530,7 +1530,7 @@
     {
       "id": "nasty-juice-50ml-shortfill-cush-man-series-mango-strawberry-6319",
       "source_id": "6319",
-      "name": "50ML SHORTFILL – CUSH MAN SERIES – Mango Strawberry",
+      "name": "Nasty Juice 50ML SHORTFILL – CUSH MAN SERIES – Mango Strawberry",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1549,7 +1549,7 @@
     {
       "id": "nasty-juice-10ml-e-liquid-honeydew-5050-6493",
       "source_id": "6493",
-      "name": "10ml E-Liquid – Honeydew 50/50",
+      "name": "Nasty Juice 10ml E-Liquid – Honeydew 50/50",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1568,7 +1568,7 @@
     {
       "id": "nasty-juice-green-ape-60ml-6497",
       "source_id": "6497",
-      "name": "Green Ape 60ml",
+      "name": "Nasty Juice Green Ape 60ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1587,7 +1587,7 @@
     {
       "id": "nasty-juice-trap-queen-50ml-8593",
       "source_id": "8593",
-      "name": "Trap Queen 50ml",
+      "name": "Nasty Juice Trap Queen 50ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1606,7 +1606,7 @@
     {
       "id": "nasty-juice-fat-boy-5-pack-8757",
       "source_id": "8757",
-      "name": "Fat Boy 5 Pack",
+      "name": "Nasty Juice Fat Boy 5 Pack",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1625,7 +1625,7 @@
     {
       "id": "nasty-juice-modmate-lychee-50ml-shortfill-8835",
       "source_id": "8835",
-      "name": "ModMate – Lychee 50ml Shortfill",
+      "name": "Nasty Juice ModMate – Lychee 50ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1644,7 +1644,7 @@
     {
       "id": "nasty-juice-modmate-watermelon-ice-50ml-shortfill-8836",
       "source_id": "8836",
-      "name": "ModMate – Watermelon Ice 50ml Shortfill",
+      "name": "Nasty Juice ModMate – Watermelon Ice 50ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1663,7 +1663,7 @@
     {
       "id": "nasty-juice-modmate-strawberry-kiwi-50ml-shortfill-8837",
       "source_id": "8837",
-      "name": "ModMate – Strawberry & Kiwi 50ml Shortfill",
+      "name": "Nasty Juice ModMate – Strawberry & Kiwi 50ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1682,7 +1682,7 @@
     {
       "id": "nasty-juice-modmate-peach-lemonade-50ml-shortfill-8838",
       "source_id": "8838",
-      "name": "ModMate – Peach Lemonade 50ml Shortfill",
+      "name": "Nasty Juice ModMate – Peach Lemonade 50ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1701,7 +1701,7 @@
     {
       "id": "nasty-juice-modmate-mango-ice-50ml-shortfill-8870",
       "source_id": "8870",
-      "name": "ModMate – Mango Ice 50ml Shortfill",
+      "name": "Nasty Juice ModMate – Mango Ice 50ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1720,7 +1720,7 @@
     {
       "id": "nasty-juice-cush-man-series-mango-banana-8873",
       "source_id": "8873",
-      "name": "CUSH MAN SERIES – Mango Banana",
+      "name": "Nasty Juice CUSH MAN SERIES – Mango Banana",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1739,7 +1739,7 @@
     {
       "id": "nasty-juice-mango-strawberry-60ml-8874",
       "source_id": "8874",
-      "name": "MANGO Strawberry 60ml",
+      "name": "Nasty Juice MANGO Strawberry 60ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1758,7 +1758,7 @@
     {
       "id": "nasty-juice-10ml-e-liquid-fat-boy-green-mango-5050-9086",
       "source_id": "9086",
-      "name": "10ml E-Liquid – Fat Boy – Green Mango 50/50",
+      "name": "Nasty Juice 10ml E-Liquid – Fat Boy – Green Mango 50/50",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1777,7 +1777,7 @@
     {
       "id": "nasty-juice-10ml-e-liquid-honeydew-5050-9090",
       "source_id": "9090",
-      "name": "10ml E-Liquid – Honeydew 50/50",
+      "name": "Nasty Juice 10ml E-Liquid – Honeydew 50/50",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1796,7 +1796,7 @@
     {
       "id": "nasty-juice-50ml-shortfill-green-ape-green-apple-9094",
       "source_id": "9094",
-      "name": "50ML SHORTFILL – Green Ape – Green Apple",
+      "name": "Nasty Juice 50ML SHORTFILL – Green Ape – Green Apple",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1815,7 +1815,7 @@
     {
       "id": "nasty-juice-bad-blood-60ml-9866",
       "source_id": "9866",
-      "name": "Bad Blood 60ml",
+      "name": "Nasty Juice Bad Blood 60ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1834,7 +1834,7 @@
     {
       "id": "nasty-juice-fat-boy-low-mint-5-pack-12445",
       "source_id": "12445",
-      "name": "Fat Boy Low Mint 5 Pack",
+      "name": "Nasty Juice Fat Boy Low Mint 5 Pack",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1853,7 +1853,7 @@
     {
       "id": "nasty-juice-modmate-lychee-50ml-shortfill-12459",
       "source_id": "12459",
-      "name": "ModMate – Lychee 50ml Shortfill",
+      "name": "Nasty Juice ModMate – Lychee 50ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1872,7 +1872,7 @@
     {
       "id": "nasty-juice-modmate-watermelon-ice-50ml-shortfill-12460",
       "source_id": "12460",
-      "name": "ModMate – Watermelon Ice 50ml Shortfill",
+      "name": "Nasty Juice ModMate – Watermelon Ice 50ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1891,7 +1891,7 @@
     {
       "id": "nasty-juice-modmate-strawberry-kiwi-50ml-shortfill-12461",
       "source_id": "12461",
-      "name": "ModMate – Strawberry & Kiwi 50ml Shortfill",
+      "name": "Nasty Juice ModMate – Strawberry & Kiwi 50ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1910,7 +1910,7 @@
     {
       "id": "nasty-juice-modmate-peach-lemonade-50ml-shortfill-12462",
       "source_id": "12462",
-      "name": "ModMate – Peach Lemonade 50ml Shortfill",
+      "name": "Nasty Juice ModMate – Peach Lemonade 50ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1929,7 +1929,7 @@
     {
       "id": "nasty-juice-modmate-mango-ice-50ml-shortfill-12463",
       "source_id": "12463",
-      "name": "ModMate – Mango Ice 50ml Shortfill",
+      "name": "Nasty Juice ModMate – Mango Ice 50ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1948,7 +1948,7 @@
     {
       "id": "nasty-juice-mango-banana-12496",
       "source_id": "12496",
-      "name": "Mango Banana",
+      "name": "Nasty Juice Mango Banana",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1967,7 +1967,7 @@
     {
       "id": "nasty-juice-50ml-shortfill-cush-man-series-mango-strawberry-12497",
       "source_id": "12497",
-      "name": "50ML SHORTFILL – CUSH MAN SERIES – Mango Strawberry",
+      "name": "Nasty Juice 50ML SHORTFILL – CUSH MAN SERIES – Mango Strawberry",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1986,7 +1986,7 @@
     {
       "id": "cookie-king-lemon-wafer-120ml-6220",
       "source_id": "6220",
-      "name": "Lemon Wafer 120ml",
+      "name": "Cookie King Lemon Wafer 120ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -2008,7 +2008,7 @@
     {
       "id": "cookie-king-lemon-wafer-120ml-8756",
       "source_id": "8756",
-      "name": "Lemon Wafer 120ml",
+      "name": "Cookie King Lemon Wafer 120ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -2030,7 +2030,7 @@
     {
       "id": "cookie-king-lemon-wafer-120ml-12444",
       "source_id": "12444",
-      "name": "Lemon Wafer 120ml",
+      "name": "Cookie King Lemon Wafer 120ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -2052,7 +2052,7 @@
     {
       "id": "killa-kandy-100ml-shortfill-0mg-80vg20pg-6221",
       "source_id": "6221",
-      "name": "100ml Shortfill 0mg (80VG/20PG)",
+      "name": "Killa Kandy 100ml Shortfill 0mg (80VG/20PG)",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2072,7 +2072,7 @@
     {
       "id": "killa-kandy-100ml-shortfill-0mg-80vg20pg-8758",
       "source_id": "8758",
-      "name": "100ml Shortfill 0mg (80VG/20PG)",
+      "name": "Killa Kandy 100ml Shortfill 0mg (80VG/20PG)",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2092,7 +2092,7 @@
     {
       "id": "fizzy-king-100ml-shortfill-0mg-70vg30pg-6222",
       "source_id": "6222",
-      "name": "100ml Shortfill 0mg (70VG/30PG)",
+      "name": "Fizzy King 100ml Shortfill 0mg (70VG/30PG)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2113,7 +2113,7 @@
     {
       "id": "fizzy-king-100ml-shortfill-8760",
       "source_id": "8760",
-      "name": "100ml Shortfill",
+      "name": "Fizzy King 100ml Shortfill",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2134,7 +2134,7 @@
     {
       "id": "fizzy-king-100ml-shortfill-0mg-70vg30pg-12447",
       "source_id": "12447",
-      "name": "100ml Shortfill 0mg (70VG/30PG)",
+      "name": "Fizzy King 100ml Shortfill 0mg (70VG/30PG)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2155,7 +2155,7 @@
     {
       "id": "kingston-cola-120ml-shortfill-0mg-70vg30pg-6223",
       "source_id": "6223",
-      "name": "Cola 120ml Shortfill 0mg (70VG/30PG)",
+      "name": "Kingston Cola 120ml Shortfill 0mg (70VG/30PG)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2174,7 +2174,7 @@
     {
       "id": "kingston-sweet-candy-floss-120ml-shortfill-6254",
       "source_id": "6254",
-      "name": "Sweet Candy Floss 120ml Shortfill",
+      "name": "Kingston Sweet Candy Floss 120ml Shortfill",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2193,7 +2193,7 @@
     {
       "id": "kingston-cola-120ml-shortfill-0mg-70vg30pg-8762",
       "source_id": "8762",
-      "name": "Cola 120ml Shortfill 0mg (70VG/30PG)",
+      "name": "Kingston Cola 120ml Shortfill 0mg (70VG/30PG)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2212,7 +2212,7 @@
     {
       "id": "kingston-sweet-candy-floss-120ml-shortfill-8795",
       "source_id": "8795",
-      "name": "Sweet Candy Floss 120ml Shortfill",
+      "name": "Kingston Sweet Candy Floss 120ml Shortfill",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2231,7 +2231,7 @@
     {
       "id": "kingston-cola-120ml-shortfill-0mg-70vg30pg-12448",
       "source_id": "12448",
-      "name": "Cola 120ml Shortfill 0mg (70VG/30PG)",
+      "name": "Kingston Cola 120ml Shortfill 0mg (70VG/30PG)",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2250,7 +2250,7 @@
     {
       "id": "kingston-sweet-candy-floss-120ml-shortfill-12451",
       "source_id": "12451",
-      "name": "Sweet Candy Floss 120ml Shortfill",
+      "name": "Kingston Sweet Candy Floss 120ml Shortfill",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -2329,7 +2329,7 @@
     {
       "id": "big-tasty-exotic-100ml-shortfill-6253",
       "source_id": "6253",
-      "name": "Exotic 100ml Shortfill",
+      "name": "The Big Tasty Exotic 100ml Shortfill",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -2348,7 +2348,7 @@
     {
       "id": "big-tasty-exotic-100ml-shortfill-12450",
       "source_id": "12450",
-      "name": "Exotic 100ml Shortfill",
+      "name": "The Big Tasty Exotic 100ml Shortfill",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -2367,7 +2367,7 @@
     {
       "id": "no-frills-collection-coffee-shop-80ml-shortfill-0mg-80vg20pg-6256",
       "source_id": "6256",
-      "name": "Collection Coffee Shop 80ml Shortfill 0mg (80VG/20PG)",
+      "name": "No Frills Collection Coffee Shop 80ml Shortfill 0mg (80VG/20PG)",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2388,7 +2388,7 @@
     {
       "id": "no-frills-collection-coffee-shop-80ml-shortfill-8799",
       "source_id": "8799",
-      "name": "Coffee Shop 80ml Shortfill",
+      "name": "No Frills Coffee Shop 80ml Shortfill",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2409,7 +2409,7 @@
     {
       "id": "naked-100-e-liquid-50ml-shortfill-brain-freeze-6257",
       "source_id": "6257",
-      "name": "E-Liquid 50ml Shortfill – Brain Freeze",
+      "name": "Naked 100 E-Liquid 50ml Shortfill – Brain Freeze",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2428,7 +2428,7 @@
     {
       "id": "naked-100-e-liquid-50ml-shortfill-euro-gold-8831",
       "source_id": "8831",
-      "name": "E-Liquid 50ml Shortfill – Euro Gold",
+      "name": "Naked 100 E-Liquid 50ml Shortfill – Euro Gold",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2447,7 +2447,7 @@
     {
       "id": "naked-100-e-liquid-50ml-shortfill-brain-freeze-8832",
       "source_id": "8832",
-      "name": "E-Liquid 50ml Shortfill – Brain Freeze",
+      "name": "Naked 100 E-Liquid 50ml Shortfill – Brain Freeze",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2466,7 +2466,7 @@
     {
       "id": "naked-100-e-liquid-50ml-shortfill-lava-flow-8833",
       "source_id": "8833",
-      "name": "E-Liquid 50ml Shortfill – Lava Flow",
+      "name": "Naked 100 E-Liquid 50ml Shortfill – Lava Flow",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2485,7 +2485,7 @@
     {
       "id": "naked-100-e-liquid-50ml-shotfill-polar-breeze-8834",
       "source_id": "8834",
-      "name": "E-Liquid 50ml Shotfill – Polar Breeze",
+      "name": "Naked 100 E-Liquid 50ml Shotfill – Polar Breeze",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2504,7 +2504,7 @@
     {
       "id": "naked-100-e-liquid-50ml-shortfill-euro-gold-12455",
       "source_id": "12455",
-      "name": "E-Liquid 50ml Shortfill – Euro Gold",
+      "name": "Naked 100 E-Liquid 50ml Shortfill – Euro Gold",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2523,7 +2523,7 @@
     {
       "id": "naked-100-e-liquid-50ml-shortfill-brain-freeze-12456",
       "source_id": "12456",
-      "name": "E-Liquid 50ml Shortfill – Brain Freeze",
+      "name": "Naked 100 E-Liquid 50ml Shortfill – Brain Freeze",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2542,7 +2542,7 @@
     {
       "id": "naked-100-e-liquid-50ml-shortfill-lava-flow-12457",
       "source_id": "12457",
-      "name": "E-Liquid 50ml Shortfill – Lava Flow",
+      "name": "Naked 100 E-Liquid 50ml Shortfill – Lava Flow",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2561,7 +2561,7 @@
     {
       "id": "naked-100-e-liquid-50ml-shotfill-polar-breeze-12458",
       "source_id": "12458",
-      "name": "E-Liquid 50ml Shotfill – Polar Breeze",
+      "name": "Naked 100 E-Liquid 50ml Shotfill – Polar Breeze",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2580,7 +2580,7 @@
     {
       "id": "witchcraft-50ml-shortfill-menthol-x-6316",
       "source_id": "6316",
-      "name": "50ml Shortfill – Menthol X",
+      "name": "Witchcraft 50ml Shortfill – Menthol X",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2600,7 +2600,7 @@
     {
       "id": "witchcraft-50ml-shortfill-forest-fruits-6317",
       "source_id": "6317",
-      "name": "50ml Shortfill – Forest Fruits",
+      "name": "Witchcraft 50ml Shortfill – Forest Fruits",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2620,7 +2620,7 @@
     {
       "id": "witchcraft-50ml-shortfill-menthol-x-8871",
       "source_id": "8871",
-      "name": "50ml Shortfill – Menthol X",
+      "name": "Witchcraft 50ml Shortfill – Menthol X",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2640,7 +2640,7 @@
     {
       "id": "witchcraft-50ml-shortfill-forest-fruits-8872",
       "source_id": "8872",
-      "name": "50ml Shortfill – Forest Fruits",
+      "name": "Witchcraft 50ml Shortfill – Forest Fruits",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2660,7 +2660,7 @@
     {
       "id": "witchcraft-50ml-shortfill-menthol-x-12494",
       "source_id": "12494",
-      "name": "50ml Shortfill – Menthol X",
+      "name": "Witchcraft 50ml Shortfill – Menthol X",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2680,7 +2680,7 @@
     {
       "id": "witchcraft-50ml-shortfill-forest-fruits-12495",
       "source_id": "12495",
-      "name": "50ml Shortfill – Forest Fruits",
+      "name": "Witchcraft 50ml Shortfill – Forest Fruits",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2700,7 +2700,7 @@
     {
       "id": "ossem-fusion-nightshade-vanilla-hazelnut-coffee-50ml-6358",
       "source_id": "6358",
-      "name": "Fusion – Nightshade – Vanilla Hazelnut Coffee 50ml",
+      "name": "Ossem Fusion – Nightshade – Vanilla Hazelnut Coffee 50ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2720,7 +2720,7 @@
     {
       "id": "ossem-fusion-nightshade-vanilla-hazelnut-coffee-50ml-8875",
       "source_id": "8875",
-      "name": "Fusion – Nightshade – Vanilla Hazelnut Coffee 50ml",
+      "name": "Ossem Fusion – Nightshade – Vanilla Hazelnut Coffee 50ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2740,7 +2740,7 @@
     {
       "id": "ossem-fusion-nightshade-vanilla-hazelnut-coffee-50ml-12498",
       "source_id": "12498",
-      "name": "Fusion – Nightshade – Vanilla Hazelnut Coffee 50ml",
+      "name": "Ossem Fusion – Nightshade – Vanilla Hazelnut Coffee 50ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -2760,7 +2760,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-e-liquid-cola-shades-summer-holidays-series-6359",
       "source_id": "6359",
-      "name": "50ml Shortfill E-Liquid – Cola Shades – Summer Holidays Series",
+      "name": "Dinner Lady 50ml Shortfill E-Liquid – Cola Shades – Summer Holidays Series",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2779,7 +2779,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-e-liquid-6360",
       "source_id": "6360",
-      "name": "50ml Shortfill E-Liquid",
+      "name": "Dinner Lady 50ml Shortfill E-Liquid",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2798,7 +2798,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-e-liquid-mango-tart-6361",
       "source_id": "6361",
-      "name": "50ml Shortfill E-Liquid – Mango Tart",
+      "name": "Dinner Lady 50ml Shortfill E-Liquid – Mango Tart",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2817,7 +2817,7 @@
     {
       "id": "dinner-lady-50ml-sweet-shortfill-e-liquid-apple-sours-6362",
       "source_id": "6362",
-      "name": "50ml Sweet Shortfill E-Liquid – Apple Sours",
+      "name": "Dinner Lady 50ml Sweet Shortfill E-Liquid – Apple Sours",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2836,7 +2836,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-tobacco-range-caramel-tobacco-6363",
       "source_id": "6363",
-      "name": "50ml Shortfill – Tobacco Range – Caramel Tobacco",
+      "name": "Dinner Lady 50ml Shortfill – Tobacco Range – Caramel Tobacco",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2855,7 +2855,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-tobacco-range-cafe-tobacco-6364",
       "source_id": "6364",
-      "name": "50ml Shortfill – Tobacco Range – Cafe Tobacco",
+      "name": "Dinner Lady 50ml Shortfill – Tobacco Range – Cafe Tobacco",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2874,7 +2874,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-tobacco-range-smooth-tobacco-6395",
       "source_id": "6395",
-      "name": "50ml Shortfill – Tobacco Range – Smooth Tobacco",
+      "name": "Dinner Lady 50ml Shortfill – Tobacco Range – Smooth Tobacco",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2893,7 +2893,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-e-liquid-cola-shades-summer-holidays-series-8876",
       "source_id": "8876",
-      "name": "50ml Shortfill E-Liquid – Cola Shades – Summer Holidays Series",
+      "name": "Dinner Lady 50ml Shortfill E-Liquid – Cola Shades – Summer Holidays Series",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2912,7 +2912,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-e-liquid-melon-twist-8877",
       "source_id": "8877",
-      "name": "50ml Shortfill E-Liquid – Melon Twist",
+      "name": "Dinner Lady 50ml Shortfill E-Liquid – Melon Twist",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2931,7 +2931,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-e-liquid-mango-tart-8878",
       "source_id": "8878",
-      "name": "50ml Shortfill E-Liquid – Mango Tart",
+      "name": "Dinner Lady 50ml Shortfill E-Liquid – Mango Tart",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2950,7 +2950,7 @@
     {
       "id": "dinner-lady-50ml-sweet-shortfill-e-liquid-apple-sours-8879",
       "source_id": "8879",
-      "name": "50ml Sweet Shortfill E-Liquid – Apple Sours",
+      "name": "Dinner Lady 50ml Sweet Shortfill E-Liquid – Apple Sours",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2969,7 +2969,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-tobacco-range-caramel-tobacco-8880",
       "source_id": "8880",
-      "name": "50ml Shortfill – Tobacco Range – Caramel Tobacco",
+      "name": "Dinner Lady 50ml Shortfill – Tobacco Range – Caramel Tobacco",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -2988,7 +2988,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-tobacco-range-cafe-tobacco-8881",
       "source_id": "8881",
-      "name": "50ml Shortfill – Tobacco Range – Cafe Tobacco",
+      "name": "Dinner Lady 50ml Shortfill – Tobacco Range – Cafe Tobacco",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -3007,7 +3007,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-tobacco-range-smooth-tobacco-8882",
       "source_id": "8882",
-      "name": "50ml Shortfill – Tobacco Range – Smooth Tobacco",
+      "name": "Dinner Lady 50ml Shortfill – Tobacco Range – Smooth Tobacco",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -3026,7 +3026,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-e-liquid-cola-shades-summer-holidays-series-12499",
       "source_id": "12499",
-      "name": "50ml Shortfill E-Liquid – Cola Shades – Summer Holidays Series",
+      "name": "Dinner Lady 50ml Shortfill E-Liquid – Cola Shades – Summer Holidays Series",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -3045,7 +3045,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-e-liquid-melon-twist-12500",
       "source_id": "12500",
-      "name": "50ml Shortfill E-Liquid – Melon Twist",
+      "name": "Dinner Lady 50ml Shortfill E-Liquid – Melon Twist",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -3064,7 +3064,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-e-liquid-mango-tart-12501",
       "source_id": "12501",
-      "name": "50ml Shortfill E-Liquid – Mango Tart",
+      "name": "Dinner Lady 50ml Shortfill E-Liquid – Mango Tart",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -3083,7 +3083,7 @@
     {
       "id": "dinner-lady-50ml-sweet-shortfill-e-liquid-apple-sours-12502",
       "source_id": "12502",
-      "name": "50ml Sweet Shortfill E-Liquid – Apple Sours",
+      "name": "Dinner Lady 50ml Sweet Shortfill E-Liquid – Apple Sours",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -3102,7 +3102,7 @@
     {
       "id": "dinner-lady-50ml-shortfill-tobacco-range-caramel-tobacco-12503",
       "source_id": "12503",
-      "name": "50ml Shortfill – Tobacco Range – Caramel Tobacco",
+      "name": "Dinner Lady 50ml Shortfill – Tobacco Range – Caramel Tobacco",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -3121,7 +3121,7 @@
     {
       "id": "aisu-50ml-shortfill-aloe-vera-6396",
       "source_id": "6396",
-      "name": "50ml Shortfill – Aloe Vera",
+      "name": "AISU 50ml Shortfill – Aloe Vera",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3142,7 +3142,7 @@
     {
       "id": "aisu-50ml-shortfill-pink-guava-6397",
       "source_id": "6397",
-      "name": "50ml Shortfill – Pink Guava",
+      "name": "AISU 50ml Shortfill – Pink Guava",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3163,7 +3163,7 @@
     {
       "id": "aisu-50ml-shortfill-cucumber-6398",
       "source_id": "6398",
-      "name": "50ml Shortfill – Cucumber",
+      "name": "AISU 50ml Shortfill – Cucumber",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3184,7 +3184,7 @@
     {
       "id": "aisu-50ml-shortfill-dragon-fruit-6399",
       "source_id": "6399",
-      "name": "50ml Shortfill – Dragon Fruit",
+      "name": "AISU 50ml Shortfill – Dragon Fruit",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3205,7 +3205,7 @@
     {
       "id": "aisu-50ml-shortfill-green-apple-6400",
       "source_id": "6400",
-      "name": "50ml Shortfill – Green Apple",
+      "name": "AISU 50ml Shortfill – Green Apple",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3226,7 +3226,7 @@
     {
       "id": "aisu-50ml-shortfill-blue-raspberry-6401",
       "source_id": "6401",
-      "name": "50ml Shortfill – Blue Raspberry",
+      "name": "AISU 50ml Shortfill – Blue Raspberry",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3247,7 +3247,7 @@
     {
       "id": "aisu-50ml-shortfill-aloe-vera-8883",
       "source_id": "8883",
-      "name": "50ml Shortfill – Aloe Vera",
+      "name": "AISU 50ml Shortfill – Aloe Vera",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3268,7 +3268,7 @@
     {
       "id": "aisu-50ml-shortfill-pink-guava-8884",
       "source_id": "8884",
-      "name": "50ml Shortfill – Pink Guava",
+      "name": "AISU 50ml Shortfill – Pink Guava",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3289,7 +3289,7 @@
     {
       "id": "aisu-50ml-shortfill-cucumber-8885",
       "source_id": "8885",
-      "name": "50ml Shortfill – Cucumber",
+      "name": "AISU 50ml Shortfill – Cucumber",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3310,7 +3310,7 @@
     {
       "id": "aisu-50ml-shortfill-dragon-fruit-8886",
       "source_id": "8886",
-      "name": "50ml Shortfill – Dragon Fruit",
+      "name": "AISU 50ml Shortfill – Dragon Fruit",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3331,7 +3331,7 @@
     {
       "id": "aisu-50ml-shortfill-green-apple-8887",
       "source_id": "8887",
-      "name": "50ml Shortfill – Green Apple",
+      "name": "AISU 50ml Shortfill – Green Apple",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3352,7 +3352,7 @@
     {
       "id": "aisu-50ml-shortfill-blue-raspberry-8920",
       "source_id": "8920",
-      "name": "50ml Shortfill – Blue Raspberry",
+      "name": "AISU 50ml Shortfill – Blue Raspberry",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3373,7 +3373,7 @@
     {
       "id": "aisu-50ml-shortfill-cucumber-11160",
       "source_id": "11160",
-      "name": "50ml Shortfill – Cucumber",
+      "name": "AISU 50ml Shortfill – Cucumber",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3394,7 +3394,7 @@
     {
       "id": "aisu-50ml-shortfill-aloe-vera-12504",
       "source_id": "12504",
-      "name": "50ml Shortfill – Aloe Vera",
+      "name": "AISU 50ml Shortfill – Aloe Vera",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3415,7 +3415,7 @@
     {
       "id": "aisu-50ml-shortfill-pink-guava-12505",
       "source_id": "12505",
-      "name": "50ml Shortfill – Pink Guava",
+      "name": "AISU 50ml Shortfill – Pink Guava",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3436,7 +3436,7 @@
     {
       "id": "aisu-50ml-shortfill-cucumber-12506",
       "source_id": "12506",
-      "name": "50ml Shortfill – Cucumber",
+      "name": "AISU 50ml Shortfill – Cucumber",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3457,7 +3457,7 @@
     {
       "id": "aisu-50ml-shortfill-dragon-fruit-12507",
       "source_id": "12507",
-      "name": "50ml Shortfill – Dragon Fruit",
+      "name": "AISU 50ml Shortfill – Dragon Fruit",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3478,7 +3478,7 @@
     {
       "id": "aisu-50ml-shortfill-green-apple-12508",
       "source_id": "12508",
-      "name": "50ml Shortfill – Green Apple",
+      "name": "AISU 50ml Shortfill – Green Apple",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3499,7 +3499,7 @@
     {
       "id": "aisu-50ml-shortfill-blue-raspberry-12509",
       "source_id": "12509",
-      "name": "50ml Shortfill – Blue Raspberry",
+      "name": "AISU 50ml Shortfill – Blue Raspberry",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -3520,7 +3520,7 @@
     {
       "id": "cuttwood-blueberry-infused-tobacco-the-tobacconist-100ml-6403",
       "source_id": "6403",
-      "name": "Blueberry Infused Tobacco | The Tobacconist  100ml",
+      "name": "Cuttwood Blueberry Infused Tobacco | The Tobacconist 100ml",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -3538,7 +3538,7 @@
     {
       "id": "cuttwood-the-tobacconist-6404",
       "source_id": "6404",
-      "name": "The Tobacconist",
+      "name": "Cuttwood The Tobacconist",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -3556,7 +3556,7 @@
     {
       "id": "cuttwood-caramel-infused-tobacco-the-tobacconist-100ml-short-fill-6405",
       "source_id": "6405",
-      "name": "Caramel Infused Tobacco | The Tobacconist 100ml Short Fill",
+      "name": "Cuttwood Caramel Infused Tobacco | The Tobacconist 100ml Short Fill",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -3574,7 +3574,7 @@
     {
       "id": "cuttwood-black-cherries-infused-tobacco-the-tobacconist-100ml-6406",
       "source_id": "6406",
-      "name": "Black Cherries Infused Tobacco | The Tobacconist  100ml",
+      "name": "Cuttwood Black Cherries Infused Tobacco | The Tobacconist 100ml",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -3592,7 +3592,7 @@
     {
       "id": "cuttwood-the-tobacconist-after-mint-infused-tobacco-100ml-6439",
       "source_id": "6439",
-      "name": "The Tobacconist After Mint Infused Tobacco 100ml",
+      "name": "Cuttwood The Tobacconist After Mint Infused Tobacco 100ml",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -3610,7 +3610,7 @@
     {
       "id": "cuttwood-blueberry-infused-tobacco-the-tobacconist-100ml-short-fill-8980",
       "source_id": "8980",
-      "name": "Blueberry Infused Tobacco | The Tobacconist  100ml Short Fill",
+      "name": "Cuttwood Blueberry Infused Tobacco | The Tobacconist 100ml Short Fill",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -3628,7 +3628,7 @@
     {
       "id": "cuttwood-the-tobacconist-strawberry-milk-infused-tobacco-8981",
       "source_id": "8981",
-      "name": "The Tobacconist - Strawberry Milk Infused Tobacco",
+      "name": "Cuttwood The Tobacconist - Strawberry Milk Infused Tobacco",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -3646,7 +3646,7 @@
     {
       "id": "cuttwood-caramel-infused-tobacco-the-tobacconist-100ml-short-fill-8982",
       "source_id": "8982",
-      "name": "Caramel Infused Tobacco | The Tobacconist 100ml Short Fill",
+      "name": "Cuttwood Caramel Infused Tobacco | The Tobacconist 100ml Short Fill",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -3664,7 +3664,7 @@
     {
       "id": "cuttwood-black-cherries-infused-tobacco-the-tobacconist-100ml-9004",
       "source_id": "9004",
-      "name": "Black Cherries Infused Tobacco | The Tobacconist  100ml",
+      "name": "Cuttwood Black Cherries Infused Tobacco | The Tobacconist 100ml",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -3682,7 +3682,7 @@
     {
       "id": "cuttwood-after-mint-infused-tobacco-the-tobacconist-100ml-9005",
       "source_id": "9005",
-      "name": "After Mint Infused Tobacco | The Tobacconist 100ml",
+      "name": "Cuttwood After Mint Infused Tobacco | The Tobacconist 100ml",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -3700,7 +3700,7 @@
     {
       "id": "cuttwood-blueberry-infused-tobacco-the-tobacconist-100ml-short-fill-12510",
       "source_id": "12510",
-      "name": "Blueberry Infused Tobacco | The Tobacconist  100ml Short Fill",
+      "name": "Cuttwood Blueberry Infused Tobacco | The Tobacconist 100ml Short Fill",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -3718,7 +3718,7 @@
     {
       "id": "cuttwood-caramel-infused-tobacco-the-tobacconist-100ml-short-fill-12512",
       "source_id": "12512",
-      "name": "Caramel Infused Tobacco | The Tobacconist 100ml Short Fill",
+      "name": "Cuttwood Caramel Infused Tobacco | The Tobacconist 100ml Short Fill",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -3736,7 +3736,7 @@
     {
       "id": "cuttwood-black-cherries-infused-tobacco-the-tobacconist-100ml-12513",
       "source_id": "12513",
-      "name": "Black Cherries Infused Tobacco | The Tobacconist | 100ml",
+      "name": "Cuttwood Black Cherries Infused Tobacco | The Tobacconist | 100ml",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -3754,7 +3754,7 @@
     {
       "id": "cuttwood-after-mint-infused-tobacco-the-tobacconist-100ml-12514",
       "source_id": "12514",
-      "name": "After Mint Infused Tobacco | The Tobacconist 100ml",
+      "name": "Cuttwood After Mint Infused Tobacco | The Tobacconist 100ml",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -3772,7 +3772,7 @@
     {
       "id": "chubby-treatz-gold-bar-60ml-longfill-6440",
       "source_id": "6440",
-      "name": "Gold Bar | 60ml Longfill",
+      "name": "Chubby Treatz Gold Bar | 60ml Longfill",
       "price_aud": 27.99,
       "currency": "AUD",
       "specs": {
@@ -3789,7 +3789,7 @@
     {
       "id": "chubby-treatz-lemon-drizzle-60ml-longfill-6441",
       "source_id": "6441",
-      "name": "Lemon Drizzle | 60ml Longfill",
+      "name": "Chubby Treatz Lemon Drizzle | 60ml Longfill",
       "price_aud": 27.99,
       "currency": "AUD",
       "specs": {
@@ -3806,7 +3806,7 @@
     {
       "id": "chubby-treatz-screwball-60ml-longfill-6442",
       "source_id": "6442",
-      "name": "Screwball | 60ml Longfill",
+      "name": "Chubby Treatz Screwball | 60ml Longfill",
       "price_aud": 27.99,
       "currency": "AUD",
       "specs": {
@@ -3823,7 +3823,7 @@
     {
       "id": "chubby-treatz-gold-bar-60ml-longfill-9006",
       "source_id": "9006",
-      "name": "Gold Bar | 60ml Longfill",
+      "name": "Chubby Treatz Gold Bar | 60ml Longfill",
       "price_aud": 27.99,
       "currency": "AUD",
       "specs": {
@@ -3840,7 +3840,7 @@
     {
       "id": "chubby-treatz-lemon-drizzle-60ml-longfill-9007",
       "source_id": "9007",
-      "name": "Lemon Drizzle | 60ml Longfill",
+      "name": "Chubby Treatz Lemon Drizzle | 60ml Longfill",
       "price_aud": 27.99,
       "currency": "AUD",
       "specs": {
@@ -3857,7 +3857,7 @@
     {
       "id": "chubby-treatz-screwball-60ml-longfill-9008",
       "source_id": "9008",
-      "name": "Screwball 60ml Longfill",
+      "name": "Chubby Treatz Screwball 60ml Longfill",
       "price_aud": 27.99,
       "currency": "AUD",
       "specs": {
@@ -3874,7 +3874,7 @@
     {
       "id": "chubby-treatz-gold-bar-60ml-longfill-12515",
       "source_id": "12515",
-      "name": "Gold Bar | 60ml Longfill",
+      "name": "Chubby Treatz Gold Bar | 60ml Longfill",
       "price_aud": 27.99,
       "currency": "AUD",
       "specs": {
@@ -3891,7 +3891,7 @@
     {
       "id": "chubby-treatz-lemon-drizzle-60ml-longfill-12516",
       "source_id": "12516",
-      "name": "Lemon Drizzle | 60ml Longfill",
+      "name": "Chubby Treatz Lemon Drizzle | 60ml Longfill",
       "price_aud": 27.99,
       "currency": "AUD",
       "specs": {
@@ -3908,7 +3908,7 @@
     {
       "id": "chubby-treatz-screwball-60ml-longfill-12517",
       "source_id": "12517",
-      "name": "Screwball 60ml Longfill",
+      "name": "Chubby Treatz Screwball 60ml Longfill",
       "price_aud": 27.99,
       "currency": "AUD",
       "specs": {
@@ -3925,7 +3925,7 @@
     {
       "id": "dripping-desserts-gingerbread-custard-100ml-6443",
       "source_id": "6443",
-      "name": "Gingerbread Custard 100ml",
+      "name": "Dripping Desserts Gingerbread Custard 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -3945,7 +3945,7 @@
     {
       "id": "dripping-desserts-apple-crumble-custard-100ml-6444",
       "source_id": "6444",
-      "name": "Apple Crumble & Custard 100ml",
+      "name": "Dripping Desserts Apple Crumble & Custard 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -3965,7 +3965,7 @@
     {
       "id": "dripping-desserts-gingerbread-custard-100ml-9009",
       "source_id": "9009",
-      "name": "Gingerbread Custard 100ml",
+      "name": "Dripping Desserts Gingerbread Custard 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -3985,7 +3985,7 @@
     {
       "id": "dripping-desserts-apple-crumble-custard-100ml-9010",
       "source_id": "9010",
-      "name": "Apple Crumble & Custard 100ml",
+      "name": "Dripping Desserts Apple Crumble & Custard 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -4005,7 +4005,7 @@
     {
       "id": "dripping-desserts-gingerbread-custard-100ml-short-fill-12518",
       "source_id": "12518",
-      "name": "Gingerbread Custard 100ml Short Fill",
+      "name": "Dripping Desserts Gingerbread Custard 100ml Short Fill",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -4025,7 +4025,7 @@
     {
       "id": "dripping-desserts-apple-crumble-custard-100ml-12519",
       "source_id": "12519",
-      "name": "Apple Crumble & Custard 100ml",
+      "name": "Dripping Desserts Apple Crumble & Custard 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -4045,7 +4045,7 @@
     {
       "id": "chubby-juice-rhuberry-100ml-6445",
       "source_id": "6445",
-      "name": "Rhuberry 100ml",
+      "name": "Chubby Juice Rhuberry 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -4064,7 +4064,7 @@
     {
       "id": "chubby-juice-blue-raz-candy-100ml-6446",
       "source_id": "6446",
-      "name": "Blue Raz Candy 100ml",
+      "name": "Chubby Juice Blue Raz Candy 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -4083,7 +4083,7 @@
     {
       "id": "chubby-juice-black-breeze-100ml-6447",
       "source_id": "6447",
-      "name": "Black Breeze 100ml",
+      "name": "Chubby Juice Black Breeze 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -4102,7 +4102,7 @@
     {
       "id": "chubby-juice-the-berry-bowl-100ml-6448",
       "source_id": "6448",
-      "name": "The Berry Bowl 100ml",
+      "name": "Chubby Juice The Berry Bowl 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -4121,7 +4121,7 @@
     {
       "id": "chubby-juice-rhuberry-100ml-9011",
       "source_id": "9011",
-      "name": "Rhuberry 100ml",
+      "name": "Chubby Juice Rhuberry 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -4140,7 +4140,7 @@
     {
       "id": "chubby-juice-blue-raz-candy-100ml-9012",
       "source_id": "9012",
-      "name": "Blue Raz Candy | 100ml",
+      "name": "Chubby Juice Blue Raz Candy | 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -4159,7 +4159,7 @@
     {
       "id": "chubby-juice-black-breeze-100ml-9039",
       "source_id": "9039",
-      "name": "Black Breeze 100ml",
+      "name": "Chubby Juice Black Breeze 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -4178,7 +4178,7 @@
     {
       "id": "chubby-juice-the-berry-bowl-100ml-9040",
       "source_id": "9040",
-      "name": "The Berry Bowl | 100ml",
+      "name": "Chubby Juice The Berry Bowl | 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -4197,7 +4197,7 @@
     {
       "id": "chubby-juice-rhuberry-100ml-12520",
       "source_id": "12520",
-      "name": "Rhuberry 100ml",
+      "name": "Chubby Juice Rhuberry 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -4216,7 +4216,7 @@
     {
       "id": "chubby-juice-blue-raz-candy-100ml-12551",
       "source_id": "12551",
-      "name": "Blue Raz Candy 100ml",
+      "name": "Chubby Juice Blue Raz Candy 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -4235,7 +4235,7 @@
     {
       "id": "chubby-juice-black-breeze-100ml-12552",
       "source_id": "12552",
-      "name": "Black Breeze 100ml",
+      "name": "Chubby Juice Black Breeze 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -4254,7 +4254,7 @@
     {
       "id": "chubby-juice-the-berry-bowl-100ml-12553",
       "source_id": "12553",
-      "name": "The Berry Bowl | 100ml",
+      "name": "Chubby Juice The Berry Bowl | 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -4273,7 +4273,7 @@
     {
       "id": "fantasi-ice-e-liquid7030100ml-0-nicotine-6449",
       "source_id": "6449",
-      "name": "Ice E-Liquid(70/30)100ml 0 Nicotine",
+      "name": "Fantasi Ice E-Liquid(70/30)100ml 0 Nicotine",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4294,7 +4294,7 @@
     {
       "id": "fantasi-5x-iced-flavours-5050-bundle-7908",
       "source_id": "7908",
-      "name": "5x Iced Flavours | 50/50 Bundle",
+      "name": "Fantasi 5x Iced Flavours | 50/50 Bundle",
       "price_aud": 114.99,
       "currency": "AUD",
       "specs": {
@@ -4315,7 +4315,7 @@
     {
       "id": "fantasi-ice-e-liquid7030-100ml-0-nicotine-9041",
       "source_id": "9041",
-      "name": "Ice E-Liquid(70/30) 100ml 0 Nicotine",
+      "name": "Fantasi Ice E-Liquid(70/30) 100ml 0 Nicotine",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4336,7 +4336,7 @@
     {
       "id": "fantasi-7030-shortfill-bundle-11963",
       "source_id": "11963",
-      "name": "70/30 Shortfill Bundle",
+      "name": "Fantasi 70/30 Shortfill Bundle",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -4378,7 +4378,7 @@
     {
       "id": "fantasi-berries-ice-bundle-50ml-11965",
       "source_id": "11965",
-      "name": "Berries Ice Bundle 50ml",
+      "name": "Fantasi Berries Ice Bundle 50ml",
       "price_aud": 90.99,
       "currency": "AUD",
       "specs": {
@@ -4399,7 +4399,7 @@
     {
       "id": "fantasi-remix-bundle-7030-e-liquid-bundle-11966",
       "source_id": "11966",
-      "name": "Remix Bundle | 70/30 E-Liquid Bundle",
+      "name": "Fantasi Remix Bundle | 70/30 E-Liquid Bundle",
       "price_aud": 114.99,
       "currency": "AUD",
       "specs": {
@@ -4420,7 +4420,7 @@
     {
       "id": "fantasi-remix-7030-shortfill-bundle-11969",
       "source_id": "11969",
-      "name": "Remix | 70/30 Shortfill Bundle",
+      "name": "Fantasi Remix | 70/30 Shortfill Bundle",
       "price_aud": 126.99,
       "currency": "AUD",
       "specs": {
@@ -4441,7 +4441,7 @@
     {
       "id": "fantasi-bar-juice-5050-shortfill-bundle-11971",
       "source_id": "11971",
-      "name": "Bar Juice | 50/50 Shortfill Bundle",
+      "name": "Fantasi Bar Juice | 50/50 Shortfill Bundle",
       "price_aud": 254.99,
       "currency": "AUD",
       "specs": {
@@ -4462,7 +4462,7 @@
     {
       "id": "fantasi-7030-shortfill-bundle-11972",
       "source_id": "11972",
-      "name": "70/30 Shortfill Bundle",
+      "name": "Fantasi 70/30 Shortfill Bundle",
       "price_aud": 254.99,
       "currency": "AUD",
       "specs": {
@@ -4483,7 +4483,7 @@
     {
       "id": "fantasi-ice-e-liquid-7030-100ml-0-nicotine-12554",
       "source_id": "12554",
-      "name": "Ice E-Liquid (70/30) 100ml 0 Nicotine",
+      "name": "Fantasi Ice E-Liquid (70/30) 100ml 0 Nicotine",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4504,7 +4504,7 @@
     {
       "id": "ferocious-flavours-100ml-berry-licious-vape-juice-2000mg-cbd-7946",
       "source_id": "7946",
-      "name": "100ml Berry Licious Vape Juice & 2000mg CBD",
+      "name": "Ferocious Flavours 100ml Berry Licious Vape Juice & 2000mg CBD",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -4547,7 +4547,7 @@
     {
       "id": "the-finest-lemon-custard-e-juice-2x60ml-8278",
       "source_id": "8278",
-      "name": "LEMON CUSTARD E-JUICE 2X60ML",
+      "name": "The Finest LEMON CUSTARD E-JUICE 2X60ML",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -4587,7 +4587,7 @@
     {
       "id": "aus-vape-labs-30ml-e-liquid-bottle-8075",
       "source_id": "8075",
-      "name": "30ml E-Liquid Bottle",
+      "name": "AUS VAPE LABS 30ml E-Liquid Bottle",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -4605,7 +4605,7 @@
     {
       "id": "lawless-grape-e-liquid-120ml-8128",
       "source_id": "8128",
-      "name": "Grape E-liquid 120ml",
+      "name": "Lawless Grape E-liquid 120ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -4625,7 +4625,7 @@
     {
       "id": "crown-vapes-sweet-apple-e-liquid-120ml-8129",
       "source_id": "8129",
-      "name": "Sweet Apple E-liquid 120ml",
+      "name": "Crown Vapes Sweet Apple E-liquid 120ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -4642,7 +4642,7 @@
     {
       "id": "crown-vapes-sweet-apple-e-liquid-12123",
       "source_id": "12123",
-      "name": "Sweet Apple E-liquid",
+      "name": "Crown Vapes Sweet Apple E-liquid",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -4659,7 +4659,7 @@
     {
       "id": "sorbet-pop-tangerine-lime-100ml-8165",
       "source_id": "8165",
-      "name": "Tangerine Lime 100ml",
+      "name": "Sorbet Pop Tangerine Lime 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -4676,7 +4676,7 @@
     {
       "id": "sorbet-pop-tangerine-lime-100ml-12126",
       "source_id": "12126",
-      "name": "Tangerine Lime 100ml",
+      "name": "Sorbet Pop Tangerine Lime 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -4693,7 +4693,7 @@
     {
       "id": "skwezed-banana-100ml-8167",
       "source_id": "8167",
-      "name": "Banana 100ml",
+      "name": "Skwezed Banana 100ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4712,7 +4712,7 @@
     {
       "id": "skwezed-mango-e-liquid-juice-100ml-8238",
       "source_id": "8238",
-      "name": "Mango e-Liquid Juice – 100ml",
+      "name": "Skwezed Mango e-Liquid Juice – 100ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4731,7 +4731,7 @@
     {
       "id": "skwezed-lychee-e-liquid-juice-100ml-8239",
       "source_id": "8239",
-      "name": "Lychee e-Liquid Juice 100ml",
+      "name": "Skwezed Lychee e-Liquid Juice 100ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4750,7 +4750,7 @@
     {
       "id": "skwezed-watermelon-100ml-9279",
       "source_id": "9279",
-      "name": "Watermelon 100ml",
+      "name": "Skwezed Watermelon 100ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4769,7 +4769,7 @@
     {
       "id": "skwezed-lychee-e-liquid-juice-100ml-10958",
       "source_id": "10958",
-      "name": "Lychee e-Liquid Juice 100ml",
+      "name": "Skwezed Lychee e-Liquid Juice 100ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4788,7 +4788,7 @@
     {
       "id": "skwezed-banana-100ml-12127",
       "source_id": "12127",
-      "name": "Banana 100ml",
+      "name": "Skwezed Banana 100ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4807,7 +4807,7 @@
     {
       "id": "skwezed-strawberry-ice-100ml-12158",
       "source_id": "12158",
-      "name": "STRAWBERRY ICE 100ML",
+      "name": "Skwezed STRAWBERRY ICE 100ML",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4826,7 +4826,7 @@
     {
       "id": "skwezed-mango-e-liquid-juice-100ml-12159",
       "source_id": "12159",
-      "name": "Mango e-Liquid Juice 100ml",
+      "name": "Skwezed Mango e-Liquid Juice 100ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4845,7 +4845,7 @@
     {
       "id": "skwezed-lychee-e-liquid-juice-100ml-12160",
       "source_id": "12160",
-      "name": "Lychee e-Liquid Juice 100ml",
+      "name": "Skwezed Lychee e-Liquid Juice 100ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4864,7 +4864,7 @@
     {
       "id": "one-up-vapor-sour-belts-8168",
       "source_id": "8168",
-      "name": "Sour Belts",
+      "name": "One Up Vapor Sour Belts",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4882,7 +4882,7 @@
     {
       "id": "one-up-vapor-orgasm-ice-60ml-8170",
       "source_id": "8170",
-      "name": "Orgasm Ice 60ml",
+      "name": "One Up Vapor Orgasm Ice 60ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4900,7 +4900,7 @@
     {
       "id": "one-up-vapor-orgasm-ice-60ml-12157",
       "source_id": "12157",
-      "name": "Orgasm Ice 60ml",
+      "name": "One Up Vapor Orgasm Ice 60ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4918,7 +4918,7 @@
     {
       "id": "humble-e-liquid-grapefruit-peach-8235",
       "source_id": "8235",
-      "name": "Grapefruit Peach",
+      "name": "Humble Juice Co. Grapefruit Peach",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4938,7 +4938,7 @@
     {
       "id": "hmbl-strawberry-kiwi-8236",
       "source_id": "8236",
-      "name": "Strawberry Kiwi",
+      "name": "Humble Juice Co. Strawberry Kiwi",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4959,7 +4959,7 @@
     {
       "id": "humble-e-liquid-hmbl-watermelon-patch-8237",
       "source_id": "8237",
-      "name": "HMBL – Watermelon Patch",
+      "name": "Humble Juice Co. HMBL – Watermelon Patch",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -4979,7 +4979,7 @@
     {
       "id": "humble-juice-co-berry-blow-doe-120ml-2x60ml-9277",
       "source_id": "9277",
-      "name": "Berry Blow Doe 120ml (2x60ml)",
+      "name": "Humble Juice Co. Berry Blow Doe 120ml (2x60ml)",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -4999,7 +4999,7 @@
     {
       "id": "sugoi-vapor-neptune-berries-juice-dimension-8240",
       "source_id": "8240",
-      "name": "Neptune Berries - Juice Dimension",
+      "name": "Sugoi Vapor Neptune Berries - Juice Dimension",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5020,7 +5020,7 @@
     {
       "id": "yami-vapor-shaka-8241",
       "source_id": "8241",
-      "name": "Shaka",
+      "name": "Sugoi Vapor Shaka",
       "price_aud": 40.99,
       "currency": "AUD",
       "specs": {
@@ -5054,7 +5054,7 @@
     {
       "id": "sugoi-vapor-neptune-berries-juice-dimension-12161",
       "source_id": "12161",
-      "name": "Neptune Berries - Juice Dimension",
+      "name": "Sugoi Vapor Neptune Berries - Juice Dimension",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5075,7 +5075,7 @@
     {
       "id": "yami-vapor-shaka-12162",
       "source_id": "12162",
-      "name": "Shaka",
+      "name": "Sugoi Vapor Shaka",
       "price_aud": 40.99,
       "currency": "AUD",
       "specs": {
@@ -5109,7 +5109,7 @@
     {
       "id": "custard-monster-blackberry-100ml-8243",
       "source_id": "8243",
-      "name": "BLACKBERRY 100ML",
+      "name": "Monster Vape Labs BLACKBERRY 100ML",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5128,7 +5128,7 @@
     {
       "id": "custard-monster-blackberry-100ml-12167",
       "source_id": "12167",
-      "name": "BLACKBERRY 100ML",
+      "name": "Monster Vape Labs BLACKBERRY 100ML",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5147,7 +5147,7 @@
     {
       "id": "khali-vapors-devils-punchbowl-8393",
       "source_id": "8393",
-      "name": "DEVILS PUNCHBOWL",
+      "name": "Khali Vapors DEVILS PUNCHBOWL",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -5167,7 +5167,7 @@
     {
       "id": "cloud-nurdz-strawberry-mango-ice-100ml-shortfill-8556",
       "source_id": "8556",
-      "name": "Strawberry Mango Ice 100ml Shortfill",
+      "name": "Cloud Nurdz Strawberry Mango Ice 100ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -5185,7 +5185,7 @@
     {
       "id": "cloud-nurdz-watermelon-apple-100ml-9316",
       "source_id": "9316",
-      "name": "Watermelon Apple 100ml",
+      "name": "Cloud Nurdz Watermelon Apple 100ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -5203,7 +5203,7 @@
     {
       "id": "cloud-nurdz-watermelon-apple-iced-9321",
       "source_id": "9321",
-      "name": "Watermelon Apple Iced",
+      "name": "Cloud Nurdz Watermelon Apple Iced",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -5221,7 +5221,7 @@
     {
       "id": "wick-liquor-loco-cherry-good-cherry-100ml-8594",
       "source_id": "8594",
-      "name": "Loco Cherry Good Cherry 100ml",
+      "name": "Wick Liquor Loco Cherry Good Cherry 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5259,7 +5259,7 @@
     {
       "id": "wick-liquor-loco-cherry-good-cherry-100ml-12352",
       "source_id": "12352",
-      "name": "Loco Cherry Good Cherry 100ml",
+      "name": "Wick Liquor Loco Cherry Good Cherry 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5278,7 +5278,7 @@
     {
       "id": "urban-cherry-good-cherry-100ml-shortfill-e-liquid-12353",
       "source_id": "12353",
-      "name": "Cherry Good Cherry 100ml Shortfill E-Liquid",
+      "name": "Wick Liquor Cherry Good Cherry 100ml Shortfill E-Liquid",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -5297,7 +5297,7 @@
     {
       "id": "zeus-juice-vermilion-reloaded-100ml-8596",
       "source_id": "8596",
-      "name": "Vermilion Reloaded 100ml",
+      "name": "Zeus Juice Vermilion Reloaded 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5316,7 +5316,7 @@
     {
       "id": "zeus-juice-vermilion-reloaded-100ml-shortfill-e-liquid-12354",
       "source_id": "12354",
-      "name": "Vermilion Reloaded 100ml Shortfill E-Liquid",
+      "name": "Zeus Juice Vermilion Reloaded 100ml Shortfill E-Liquid",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5335,7 +5335,7 @@
     {
       "id": "seriously-fruity-blue-razz-berry-100ml-8688",
       "source_id": "8688",
-      "name": "Blue Razz Berry 100ml",
+      "name": "Doozy Vape Co Blue Razz Berry 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -5355,7 +5355,7 @@
     {
       "id": "seriously-fruity-strawberry-kiwi-100ml-8717",
       "source_id": "8717",
-      "name": "Strawberry Kiwi 100ml",
+      "name": "Doozy Vape Co Strawberry Kiwi 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -5375,7 +5375,7 @@
     {
       "id": "doozy-vape-seriously-fruity-100ml-shortfill-8800",
       "source_id": "8800",
-      "name": "Seriously Fruity 100ml Shortfill",
+      "name": "Doozy Vape Co Seriously Fruity 100ml Shortfill",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -5395,7 +5395,7 @@
     {
       "id": "seriously-fruity-blue-razz-berry-100ml-12395",
       "source_id": "12395",
-      "name": "Blue Razz Berry 100ml",
+      "name": "Doozy Vape Co Blue Razz Berry 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -5415,7 +5415,7 @@
     {
       "id": "doozy-vape-seriously-fruity-100ml-12454",
       "source_id": "12454",
-      "name": "Seriously Fruity 100ml",
+      "name": "Doozy Vape Co Seriously Fruity 100ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -5435,7 +5435,7 @@
     {
       "id": "seriously-slushy-lemon-lime-100ml-8689",
       "source_id": "8689",
-      "name": "Lemon Lime 100ml",
+      "name": "Doozy Vape Co Lemon Lime 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5455,7 +5455,7 @@
     {
       "id": "seriously-slushy-berry-watermelon-100ml-8715",
       "source_id": "8715",
-      "name": "Berry Watermelon 100ml",
+      "name": "Doozy Vape Co Berry Watermelon 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5475,7 +5475,7 @@
     {
       "id": "seriously-slushy-grape-soda-100ml-8716",
       "source_id": "8716",
-      "name": "Grape Soda 100ml",
+      "name": "Doozy Vape Co Grape Soda 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5495,7 +5495,7 @@
     {
       "id": "doozy-vape-seriously-slushy-100ml-shortfill-0mg-70vg30pg-8796",
       "source_id": "8796",
-      "name": "Seriously Slushy 100ml Shortfill 0mg (70VG/30PG)",
+      "name": "Doozy Vape Co Seriously Slushy 100ml Shortfill 0mg (70VG/30PG)",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5515,7 +5515,7 @@
     {
       "id": "seriously-slushy-lemon-lime-100ml-12396",
       "source_id": "12396",
-      "name": "Lemon Lime 100ml",
+      "name": "Doozy Vape Co Lemon Lime 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5535,7 +5535,7 @@
     {
       "id": "seriously-slushy-berry-watermelon-100ml-12398",
       "source_id": "12398",
-      "name": "Berry Watermelon 100ml",
+      "name": "Doozy Vape Co Berry Watermelon 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5555,7 +5555,7 @@
     {
       "id": "seriously-slushy-grape-soda-100ml-12399",
       "source_id": "12399",
-      "name": "Grape Soda 100ml",
+      "name": "Doozy Vape Co Grape Soda 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5575,7 +5575,7 @@
     {
       "id": "doozy-vape-seriously-slushy-100ml-shortfill-12452",
       "source_id": "12452",
-      "name": "Seriously Slushy 100ml Shortfill",
+      "name": "Doozy Vape Co Seriously Slushy 100ml Shortfill",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5595,7 +5595,7 @@
     {
       "id": "seriously-nice-cool-blackcurrant-lemonade-100ml-shortfill-e-liquid-8690",
       "source_id": "8690",
-      "name": "Cool Blackcurrant Lemonade 100ml Shortfill E-Liquid",
+      "name": "Doozy Vape Co Cool Blackcurrant Lemonade 100ml Shortfill E-Liquid",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -5615,7 +5615,7 @@
     {
       "id": "seriously-nice-cool-blackcurrant-lemonade-100ml-shortfill-e-liquid-12397",
       "source_id": "12397",
-      "name": "Cool Blackcurrant Lemonade 100ml Shortfill E-Liquid",
+      "name": "Doozy Vape Co Cool Blackcurrant Lemonade 100ml Shortfill E-Liquid",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -5635,7 +5635,7 @@
     {
       "id": "milk-king-strawberry-100ml-shortfill-0mg-70vg30pg-8759",
       "source_id": "8759",
-      "name": "Strawberry 100ml Shortfill 0mg (70VG/30PG)",
+      "name": "Milk King Strawberry 100ml Shortfill 0mg (70VG/30PG)",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -5656,7 +5656,7 @@
     {
       "id": "big-aquamelon-pome-100ml-8792",
       "source_id": "8792",
-      "name": "Aquamelon Pome 100ml",
+      "name": "BIG Aquamelon Pome 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5675,7 +5675,7 @@
     {
       "id": "fizzy-juice-king-bar-120ml-shortfill-8797",
       "source_id": "8797",
-      "name": "King Bar 120ml Shortfill",
+      "name": "Fizzy Juice King Bar 120ml Shortfill",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -5694,7 +5694,7 @@
     {
       "id": "fizzy-juice-king-bar-100ml-shortfill-12453",
       "source_id": "12453",
-      "name": "King Bar 100ml Shortfill",
+      "name": "Fizzy Juice King Bar 100ml Shortfill",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -5713,7 +5713,7 @@
     {
       "id": "impjar-50ml-fizzy-summer-fruits-lemonade-5050-shortfill-9049",
       "source_id": "9049",
-      "name": "50ml Fizzy – Summer Fruits & Lemonade 50/50 Shortfill",
+      "name": "IMPJAR 50ml Fizzy – Summer Fruits & Lemonade 50/50 Shortfill",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -5732,7 +5732,7 @@
     {
       "id": "impjar-50ml-fizzy-orange-5050-shortfill-9050",
       "source_id": "9050",
-      "name": "50ml – Fizzy Orange 50/50 Shortfill",
+      "name": "IMPJAR 50ml – Fizzy Orange 50/50 Shortfill",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -5751,7 +5751,7 @@
     {
       "id": "glas-basix-series-mango-tango-60ml-9230",
       "source_id": "9230",
-      "name": "Mango Tango 60ml",
+      "name": "Glas Mango Tango 60ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5771,7 +5771,7 @@
     {
       "id": "glas-basix-series-banana-cream-pie-60ml-9273",
       "source_id": "9273",
-      "name": "Basix Series Banana Cream Pie 60ml",
+      "name": "Glas Basix Series Banana Cream Pie 60ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5791,7 +5791,7 @@
     {
       "id": "twist-sour-red-120ml-2x60ml-9232",
       "source_id": "9232",
-      "name": "Sour Red 120ml (2x60ml)",
+      "name": "Twist E-Liquids Sour Red 120ml (2x60ml)",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -5810,7 +5810,7 @@
     {
       "id": "lemon-twist-green-no1-honeydew-melon-chew-120ml-2x60ml-9269",
       "source_id": "9269",
-      "name": "Green No.1 (Honeydew Melon Chew) 120ml (2x60ml)",
+      "name": "Twist E-Liquids Green No.1 (Honeydew Melon Chew) 120ml (2x60ml)",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -5829,7 +5829,7 @@
     {
       "id": "lemon-twist-berry-medley-lemonade-120ml-2x60ml-9276",
       "source_id": "9276",
-      "name": "Berry Medley Lemonade 120ml (2x60ml)",
+      "name": "Twist E-Liquids Berry Medley Lemonade 120ml (2x60ml)",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -5848,7 +5848,7 @@
     {
       "id": "pop-clouds-cotton-fluff-120ml-2x60ml-9266",
       "source_id": "9266",
-      "name": "Cotton Fluff 120ml (2x60ml)",
+      "name": "Pop Clouds Cotton Fluff 120ml (2x60ml)",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -5869,7 +5869,7 @@
     {
       "id": "juice-roll-upz-grape-120ml-2x60ml-9272",
       "source_id": "9272",
-      "name": "Grape 120ml (2x60ml)",
+      "name": "Juice Roll Upz Grape 120ml (2x60ml)",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -5891,7 +5891,7 @@
     {
       "id": "zonk-cotton-candy-100ml-9281",
       "source_id": "9281",
-      "name": "Cotton Candy 100ml",
+      "name": "Zonk! Cotton Candy 100ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -5912,7 +5912,7 @@
     {
       "id": "johnny-creampuff-strawberry-100ml-9315",
       "source_id": "9315",
-      "name": "Strawberry 100ml",
+      "name": "Johnny Creampuff Strawberry 100ml",
       "price_aud": 27.99,
       "currency": "AUD",
       "specs": {
@@ -5929,7 +5929,7 @@
     {
       "id": "johnny-creampuff-original-100ml-9317",
       "source_id": "9317",
-      "name": "Original 100ml",
+      "name": "Johnny Creampuff Original 100ml",
       "price_aud": 27.99,
       "currency": "AUD",
       "specs": {
@@ -5946,7 +5946,7 @@
     {
       "id": "juice-mans-frappe-100ml-9319",
       "source_id": "9319",
-      "name": "Frappe 100ml",
+      "name": "Juice Man Frappe 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -5966,7 +5966,7 @@
     {
       "id": "sydney-vape-co-sunset-cola-60ml-9322",
       "source_id": "9322",
-      "name": "Sunset Cola 60ml",
+      "name": "Sydney Vape Co Sunset Cola 60ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -5985,7 +5985,7 @@
     {
       "id": "sydney-vape-co-melon-heaven-60ml-9323",
       "source_id": "9323",
-      "name": "MELON HEAVEN 60ML",
+      "name": "Sydney Vape Co MELON HEAVEN 60ML",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -6004,7 +6004,7 @@
     {
       "id": "vampire-vape-all-day-grape-50ml-9399",
       "source_id": "9399",
-      "name": "ALL DAY GRAPE 50ML",
+      "name": "Vampire Vape ALL DAY GRAPE 50ML",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -6025,7 +6025,7 @@
     {
       "id": "dripp-ice-0mg-100ml-shortfill-70vg30pg-9400",
       "source_id": "9400",
-      "name": "0MG 100ml Shortfill (70VG/30PG)",
+      "name": "Dripp Ice 0MG 100ml Shortfill (70VG/30PG)",
       "price_aud": 45.99,
       "currency": "AUD",
       "specs": {
@@ -6044,7 +6044,7 @@
     {
       "id": "bar-juice-100ml-shortfill-0mg-9439",
       "source_id": "9439",
-      "name": "100ml Shortfill 0mg",
+      "name": "Bar Juice 100ml Shortfill 0mg",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -6063,7 +6063,7 @@
     {
       "id": "yeti-cotton-candy-short-fill-e-liquid-9563",
       "source_id": "9563",
-      "name": "COTTON CANDY SHORT FILL E-LIQUID",
+      "name": "Yeti COTTON CANDY SHORT FILL E-LIQUID",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -6083,7 +6083,7 @@
     {
       "id": "yeti-blizzard-series-short-fill-e-liquid-9564",
       "source_id": "9564",
-      "name": "BLIZZARD SERIES SHORT FILL E-LIQUID",
+      "name": "Yeti BLIZZARD SERIES SHORT FILL E-LIQUID",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -6103,7 +6103,7 @@
     {
       "id": "yeti-defrosted-no-ice-short-fill-e-liquid-9565",
       "source_id": "9565",
-      "name": "DEFROSTED (NO ICE) SHORT FILL E-LIQUID",
+      "name": "Yeti DEFROSTED (NO ICE) SHORT FILL E-LIQUID",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -6123,7 +6123,7 @@
     {
       "id": "yeti-sourz-short-fill-e-liquid-9566",
       "source_id": "9566",
-      "name": "SOURZ SHORT FILL E-LIQUID",
+      "name": "Yeti SOURZ SHORT FILL E-LIQUID",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -6143,7 +6143,7 @@
     {
       "id": "yeti-50ml-short-fill-e-liquid-9567",
       "source_id": "9567",
-      "name": "50ML SHORT FILL E-LIQUID",
+      "name": "Yeti 50ML SHORT FILL E-LIQUID",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -6163,7 +6163,7 @@
     {
       "id": "yeti-100ml-short-fill-e-liquid-9568",
       "source_id": "9568",
-      "name": "100ml Short Fill E-Liquid",
+      "name": "Yeti 100ml Short Fill E-Liquid",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -6183,7 +6183,7 @@
     {
       "id": "yeti-summit-series-mango-ice-100ml-shortfill-e-liquid-9939",
       "source_id": "9939",
-      "name": "Summit Series Mango Ice 100ml Shortfill E-Liquid",
+      "name": "Yeti Summit Series Mango Ice 100ml Shortfill E-Liquid",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -6203,7 +6203,7 @@
     {
       "id": "deep-rabbit-society-white-short-fill-e-liquid-9571",
       "source_id": "9571",
-      "name": "WHITE SHORT FILL E-LIQUID",
+      "name": "Deep Rabbit Society WHITE SHORT FILL E-LIQUID",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -6223,7 +6223,7 @@
     {
       "id": "dead-rabbit-society-freestyle-short-fill-e-liquid-9573",
       "source_id": "9573",
-      "name": "FREESTYLE SHORT FILL E-LIQUID",
+      "name": "Dead Rabbit Society FREESTYLE SHORT FILL E-LIQUID",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -6243,7 +6243,7 @@
     {
       "id": "drifter-kiwi-passion-guava-ice-100ml-5050-shortfill-e-liquid-9613",
       "source_id": "9613",
-      "name": "Kiwi Passion & Guava Ice 100ml (50/50) Shortfill E-Liquid",
+      "name": "Drifter Kiwi Passion & Guava Ice 100ml (50/50) Shortfill E-Liquid",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -6262,7 +6262,7 @@
     {
       "id": "electric-vape-sweet-watermelon-e-liquid-9758",
       "source_id": "9758",
-      "name": "SWEET WATERMELON E-LIQUID",
+      "name": "EV Electric Vape SWEET WATERMELON E-LIQUID",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -6281,7 +6281,7 @@
     {
       "id": "electric-vape-ice-edition-apple-strawberry-e-liquid-9803",
       "source_id": "9803",
-      "name": "ICE EDITION APPLE STRAWBERRY E-LIQUID",
+      "name": "EV Electric Vape ICE EDITION APPLE STRAWBERRY E-LIQUID",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -6300,7 +6300,7 @@
     {
       "id": "ev-ice-edition-kiwi-berry-e-liquid-9831",
       "source_id": "9831",
-      "name": "ICE EDITION Kiwi Berry E-LIQUID",
+      "name": "EV Electric Vape ICE EDITION Kiwi Berry E-LIQUID",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -6320,7 +6320,7 @@
     {
       "id": "double-drip-strawberry-raspberry-cherry-ice-100ml-shortfill-9867",
       "source_id": "9867",
-      "name": "Strawberry Raspberry Cherry Ice 100ml Shortfill",
+      "name": "Double Drip Strawberry Raspberry Cherry Ice 100ml Shortfill",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -6340,7 +6340,7 @@
     {
       "id": "double-drip-strawberry-kiwi-100ml-shortfill-9868",
       "source_id": "9868",
-      "name": "Strawberry Kiwi 100ml Shortfill",
+      "name": "Double Drip Strawberry Kiwi 100ml Shortfill",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -6360,7 +6360,7 @@
     {
       "id": "double-drip-raspberry-sherbet-short-fill-e-liquid-50ml-9906",
       "source_id": "9906",
-      "name": "Raspberry Sherbet Short Fill E-Liquid 50ml",
+      "name": "Double Drip Raspberry Sherbet Short Fill E-Liquid 50ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -6380,7 +6380,7 @@
     {
       "id": "double-drip-pineapple-ice-100ml-shortfill-9910",
       "source_id": "9910",
-      "name": "Pineapple Ice 100ml Shortfill",
+      "name": "Double Drip Pineapple Ice 100ml Shortfill",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -6400,7 +6400,7 @@
     {
       "id": "byron-bay-cloud-co-mango-maniac-120ml-9909",
       "source_id": "9909",
-      "name": "Mango Maniac 120ml",
+      "name": "Byron Bay Cloud Co Mango Maniac 120ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -6421,7 +6421,7 @@
     {
       "id": "anarchist-e-liquid-watermelon-100ml-9936",
       "source_id": "9936",
-      "name": "E-Liquid - Watermelon - 100ml",
+      "name": "Anarchist E-Liquid - Watermelon - 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -6441,7 +6441,7 @@
     {
       "id": "candy-king-strawberry-watermelon-bubblegum-on-ice-10178",
       "source_id": "10178",
-      "name": "Strawberry Watermelon Bubblegum on Ice",
+      "name": "Candy King Strawberry Watermelon Bubblegum on Ice",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -6461,7 +6461,7 @@
     {
       "id": "candy-king-strawberry-belts-10182",
       "source_id": "10182",
-      "name": "Strawberry Belts",
+      "name": "Candy King Strawberry Belts",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -6481,7 +6481,7 @@
     {
       "id": "aqua-tobacco-hydra-60ml-10226",
       "source_id": "10226",
-      "name": "Tobacco Hydra 60ml",
+      "name": "Aqua Tobacco Hydra 60ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -6501,7 +6501,7 @@
     {
       "id": "voodoo-magic-the-night-before-10257",
       "source_id": "10257",
-      "name": "THE NIGHT BEFORE",
+      "name": "Voodoo Magic THE NIGHT BEFORE",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -6521,7 +6521,7 @@
     {
       "id": "ten-pineapple-lemon-e-liquid-10309",
       "source_id": "10309",
-      "name": "Pineapple Lemon E-Liquid",
+      "name": "TEN Pineapple Lemon E-Liquid",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -6539,7 +6539,7 @@
     {
       "id": "ten-sweet-mango-e-liquid-10342",
       "source_id": "10342",
-      "name": "Sweet Mango E-Liquid",
+      "name": "TEN Sweet Mango E-Liquid",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -6557,7 +6557,7 @@
     {
       "id": "ten-lychee-peach-e-liquid-10344",
       "source_id": "10344",
-      "name": "Lychee Peach E-Liquid",
+      "name": "TEN Lychee Peach E-Liquid",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -6575,7 +6575,7 @@
     {
       "id": "tfn-sweet-cherry-e-liquid-10310",
       "source_id": "10310",
-      "name": "Sweet Cherry E-Liquid",
+      "name": "TFN Sweet Cherry E-Liquid",
       "price_aud": 61.99,
       "currency": "AUD",
       "specs": {
@@ -6593,7 +6593,7 @@
     {
       "id": "vapetasia-killer-fruits-blue-razz-100ml-12169",
       "source_id": "12169",
-      "name": "KILLER FRUITS BLUE RAZZ 100ML",
+      "name": "Vapetasia KILLER FRUITS BLUE RAZZ 100ML",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -6613,7 +6613,7 @@
     {
       "id": "drip-more-milk-king-100ml-shortfill-12446",
       "source_id": "12446",
-      "name": "Milk King 100ml Shortfill",
+      "name": "Drip More Milk King 100ml Shortfill",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {

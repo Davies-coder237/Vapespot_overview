@@ -132,7 +132,7 @@
     {
       "id": "yocan-falcon-6-in-1-concentratedry-herb-vaporizer-3126",
       "source_id": "3126",
-      "name": "Falcon 6 in 1 Concentrate/Dry Herb Vaporizer",
+      "name": "Yocan Falcon 6 in 1 Concentrate/Dry Herb Vaporizer",
       "price_aud": 169.99,
       "currency": "AUD",
       "specs": {
@@ -163,7 +163,7 @@
     {
       "id": "yocan-evolve-d-plus-dry-herb-pen-vaporizer-3143",
       "source_id": "3143",
-      "name": "Evolve-D Plus Dry Herb Pen Vaporizer",
+      "name": "Yocan Evolve-D Plus Dry Herb Pen Vaporizer",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -192,7 +192,7 @@
     {
       "id": "yocan-evolve-d-dry-herb-vaporizer-pen-650mah-3250",
       "source_id": "3250",
-      "name": "Evolve-D Dry Herb Vaporizer Pen – 650mAh",
+      "name": "Yocan Evolve-D Dry Herb Vaporizer Pen – 650mAh",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -215,7 +215,7 @@
     {
       "id": "yocan-hit-functional-portable-dry-herb-vaporizer-10258",
       "source_id": "10258",
-      "name": "Hit Functional Portable Dry Herb Vaporizer",
+      "name": "Yocan Hit Functional Portable Dry Herb Vaporizer",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -240,7 +240,7 @@
     {
       "id": "yocan-falcon-6-in-1-vaporiser-10260",
       "source_id": "10260",
-      "name": "Falcon 6 In 1 Vaporiser",
+      "name": "Yocan Falcon 6 In 1 Vaporiser",
       "price_aud": 169.99,
       "currency": "AUD",
       "specs": {
@@ -269,7 +269,7 @@
     {
       "id": "pax-plus-2-in-1-vaporizer-3300mah-3128",
       "source_id": "3128",
-      "name": "Plus 2-in-1 Vaporizer – 3300mAh",
+      "name": "PAX Plus 2-in-1 Vaporizer – 3300mAh",
       "price_aud": 418.99,
       "currency": "AUD",
       "specs": {
@@ -294,7 +294,7 @@
     {
       "id": "pax-era-pro-pod-vaporizer-onyx-3140",
       "source_id": "3140",
-      "name": "ERA Pro Pod Vaporizer – Onyx",
+      "name": "PAX ERA Pro Pod Vaporizer – Onyx",
       "price_aud": 169.99,
       "currency": "AUD",
       "specs": {
@@ -323,7 +323,7 @@
     {
       "id": "pax-mini-dry-herb-vaporizer-3300mahonyx-3306",
       "source_id": "3306",
-      "name": "Mini Dry Herb Vaporizer – 3300mAh/Onyx",
+      "name": "PAX Mini Dry Herb Vaporizer – 3300mAh/Onyx",
       "price_aud": 268.99,
       "currency": "AUD",
       "specs": {
@@ -348,7 +348,7 @@
     {
       "id": "pax-era-variable-voltage-vape-pen-210mah-3698",
       "source_id": "3698",
-      "name": "ERA Variable Voltage Vape Pen | 210mAh",
+      "name": "PAX ERA Variable Voltage Vape Pen | 210mAh",
       "price_aud": 169.99,
       "currency": "AUD",
       "specs": {
@@ -377,7 +377,7 @@
     {
       "id": "pax-era-go-vape-pen-210mah-3748",
       "source_id": "3748",
-      "name": "ERA Go Vape Pen | 210mAh",
+      "name": "PAX ERA Go Vape Pen | 210mAh",
       "price_aud": 169.99,
       "currency": "AUD",
       "specs": {
@@ -406,7 +406,7 @@
     {
       "id": "pax-3-vaporizer-7639",
       "source_id": "7639",
-      "name": "3 Vaporizer",
+      "name": "PAX 3 Vaporizer",
       "price_aud": 398.99,
       "currency": "AUD",
       "specs": {
@@ -433,7 +433,7 @@
     {
       "id": "pax-mini-vaporizer-7686",
       "source_id": "7686",
-      "name": "Mini Vaporizer",
+      "name": "PAX Mini Vaporizer",
       "price_aud": 269.99,
       "currency": "AUD",
       "specs": {
@@ -457,7 +457,7 @@
     {
       "id": "pax-plus-vaporizer-7687",
       "source_id": "7687",
-      "name": "Plus Vaporizer",
+      "name": "PAX Plus Vaporizer",
       "price_aud": 418.99,
       "currency": "AUD",
       "specs": {
@@ -483,7 +483,7 @@
     {
       "id": "arizer-solo-ii-mystic-blue-3129",
       "source_id": "3129",
-      "name": "Solo II – Mystic Blue",
+      "name": "Arizer Solo II – Mystic Blue",
       "price_aud": 419.99,
       "currency": "AUD",
       "specs": {
@@ -511,7 +511,7 @@
     {
       "id": "arizer-solo-ii-carbon-black-3138",
       "source_id": "3138",
-      "name": "Solo II - Carbon Black",
+      "name": "Arizer Solo II - Carbon Black",
       "price_aud": 419.99,
       "currency": "AUD",
       "specs": {
@@ -538,7 +538,7 @@
     {
       "id": "arizer-solo-ii-dry-herb-portable-vaporizer-3400mah-3282",
       "source_id": "3282",
-      "name": "Solo II Dry Herb Portable Vaporizer | 3400mAh",
+      "name": "Arizer Solo II Dry Herb Portable Vaporizer | 3400mAh",
       "price_aud": 419.99,
       "currency": "AUD",
       "specs": {
@@ -567,7 +567,7 @@
     {
       "id": "arizer-solo-ii-max-3283",
       "source_id": "3283",
-      "name": "Solo II MAX",
+      "name": "Arizer Solo II MAX",
       "price_aud": 419.99,
       "currency": "AUD",
       "specs": {
@@ -598,7 +598,7 @@
     {
       "id": "arizer-solo-iii-3301",
       "source_id": "3301",
-      "name": "Solo III",
+      "name": "Arizer Solo III",
       "price_aud": 562.99,
       "currency": "AUD",
       "specs": {
@@ -623,7 +623,7 @@
     {
       "id": "arizer-solo-iii-4029",
       "source_id": "4029",
-      "name": "Solo III",
+      "name": "Arizer Solo III",
       "price_aud": 562.99,
       "currency": "AUD",
       "specs": {
@@ -648,7 +648,7 @@
     {
       "id": "arizer-air-max-3130",
       "source_id": "3130",
-      "name": "Air MAX",
+      "name": "Arizer Air MAX",
       "price_aud": 418.99,
       "currency": "AUD",
       "specs": {
@@ -677,7 +677,7 @@
     {
       "id": "arizer-air-se-blue-haze-3131",
       "source_id": "3131",
-      "name": "Air SE – Blue Haze",
+      "name": "Arizer Air SE – Blue Haze",
       "price_aud": 199.99,
       "currency": "AUD",
       "specs": {
@@ -701,7 +701,7 @@
     {
       "id": "arizer-air-se-reefer-white-3137",
       "source_id": "3137",
-      "name": "Air SE – Reefer White",
+      "name": "Arizer Air SE – Reefer White",
       "price_aud": 199.99,
       "currency": "AUD",
       "specs": {
@@ -729,7 +729,7 @@
     {
       "id": "arizer-air-max-dry-herb-vaporizer-5500mah-3139",
       "source_id": "3139",
-      "name": "Air MAX Dry Herb Vaporizer – 5500mAh",
+      "name": "Arizer Air MAX Dry Herb Vaporizer – 5500mAh",
       "price_aud": 418.99,
       "currency": "AUD",
       "specs": {
@@ -759,7 +759,7 @@
     {
       "id": "arizer-air-2-vaporizer-3995",
       "source_id": "3995",
-      "name": "Air 2 Vaporizer",
+      "name": "Arizer Air 2 Vaporizer",
       "price_aud": 268.99,
       "currency": "AUD",
       "specs": {
@@ -786,7 +786,7 @@
     {
       "id": "arizer-air-2-vaporizer-7641",
       "source_id": "7641",
-      "name": "Air 2 Vaporizer",
+      "name": "Arizer Air 2 Vaporizer",
       "price_aud": 268.99,
       "currency": "AUD",
       "specs": {
@@ -813,7 +813,7 @@
     {
       "id": "arizer-argo-3133",
       "source_id": "3133",
-      "name": "ArGo",
+      "name": "Arizer ArGo",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -844,7 +844,7 @@
     {
       "id": "arizer-argo-dry-herb-vaporizer-3400mah-3281",
       "source_id": "3281",
-      "name": "ArGo Dry Herb Vaporizer – 3400mAh",
+      "name": "Arizer ArGo Dry Herb Vaporizer – 3400mAh",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -873,7 +873,7 @@
     {
       "id": "arizer-argo-vaporizer-4027",
       "source_id": "4027",
-      "name": "ArGo Vaporizer",
+      "name": "Arizer ArGo Vaporizer",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -903,7 +903,7 @@
     {
       "id": "arizer-argo-vaporizer-7681",
       "source_id": "7681",
-      "name": "ArGo Vaporizer",
+      "name": "Arizer ArGo Vaporizer",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -933,7 +933,7 @@
     {
       "id": "arizer-air-se-3993",
       "source_id": "3993",
-      "name": "Air SE",
+      "name": "Arizer Air SE",
       "price_aud": 168.99,
       "currency": "AUD",
       "specs": {
@@ -959,7 +959,7 @@
     {
       "id": "arizer-air-se-7638",
       "source_id": "7638",
-      "name": "Air SE",
+      "name": "Arizer Air SE",
       "price_aud": 168.99,
       "currency": "AUD",
       "specs": {
@@ -985,7 +985,7 @@
     {
       "id": "g-pen-dash-vaporizer-3132",
       "source_id": "3132",
-      "name": "Dash Vaporizer",
+      "name": "G Pen Dash Vaporizer",
       "price_aud": 199.99,
       "currency": "AUD",
       "specs": {
@@ -1009,7 +1009,7 @@
     {
       "id": "g-pen-elite-20-vaporizer-3134",
       "source_id": "3134",
-      "name": "Elite 2.0 Vaporizer",
+      "name": "G Pen Elite 2.0 Vaporizer",
       "price_aud": 268.99,
       "currency": "AUD",
       "specs": {
@@ -1035,7 +1035,7 @@
     {
       "id": "grenco-science-g-pen-elite-ii-herb-vaporizer-2100mah-3141",
       "source_id": "3141",
-      "name": "G-Pen Elite II Herb Vaporizer – 2100mAh",
+      "name": "G Pen G-Pen Elite II Herb Vaporizer – 2100mAh",
       "price_aud": 418.99,
       "currency": "AUD",
       "specs": {
@@ -1061,7 +1061,7 @@
     {
       "id": "g-pen-dash-vaporizer-3249",
       "source_id": "3249",
-      "name": "Dash+ Vaporizer",
+      "name": "G Pen Dash+ Vaporizer",
       "price_aud": 199.99,
       "currency": "AUD",
       "specs": {
@@ -1094,7 +1094,7 @@
     {
       "id": "g-pen-elite-vaporizer-3309",
       "source_id": "3309",
-      "name": "Elite Vaporizer",
+      "name": "G Pen Elite Vaporizer",
       "price_aud": 249.99,
       "currency": "AUD",
       "specs": {
@@ -1122,7 +1122,7 @@
     {
       "id": "davinci-iqc-precision-vaporizer-3135",
       "source_id": "3135",
-      "name": "IQC Precision Vaporizer",
+      "name": "DaVinci IQC Precision Vaporizer",
       "price_aud": 518.99,
       "currency": "AUD",
       "specs": {
@@ -1150,7 +1150,7 @@
     {
       "id": "davinci-iq2-dual-use-vaporizer-3307",
       "source_id": "3307",
-      "name": "IQ2 Dual Use Vaporizer",
+      "name": "DaVinci IQ2 Dual Use Vaporizer",
       "price_aud": 518.99,
       "currency": "AUD",
       "specs": {
@@ -1178,7 +1178,7 @@
     {
       "id": "davinci-iq3-8428",
       "source_id": "8428",
-      "name": "IQ3",
+      "name": "DaVinci IQ3",
       "price_aud": 469.99,
       "currency": "AUD",
       "specs": {
@@ -1205,7 +1205,7 @@
     {
       "id": "davinci-miqro-c-dry-herb-vaporizer-900mah-3208",
       "source_id": "3208",
-      "name": "Miqro-C Dry Herb Vaporizer | 900mAh",
+      "name": "DaVinci Miqro-C Dry Herb Vaporizer | 900mAh",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -1231,7 +1231,7 @@
     {
       "id": "dynavap-woodwynd-3207",
       "source_id": "3207",
-      "name": "WoodWynd",
+      "name": "DynaVap WoodWynd",
       "price_aud": 318.99,
       "currency": "AUD",
       "specs": {
@@ -1253,7 +1253,7 @@
     {
       "id": "dynavap-m-7-starter-pack-3300",
       "source_id": "3300",
-      "name": "“M” 7 Starter Pack",
+      "name": "DynaVap “M” 7 Starter Pack",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -1277,7 +1277,7 @@
     {
       "id": "dynavap-woodwynd-starter-pack-3303",
       "source_id": "3303",
-      "name": "WoodWynd Starter Pack",
+      "name": "DynaVap WoodWynd Starter Pack",
       "price_aud": 394.99,
       "currency": "AUD",
       "specs": {
@@ -1302,7 +1302,7 @@
     {
       "id": "dynavap-the-bb6-vaporizer-3665",
       "source_id": "3665",
-      "name": "The BB6 Vaporizer",
+      "name": "DynaVap The BB6 Vaporizer",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -1323,7 +1323,7 @@
     {
       "id": "dynavap-the-vong-starter-kit-5872",
       "source_id": "5872",
-      "name": "The VonG Starter Kit",
+      "name": "DynaVap The VonG Starter Kit",
       "price_aud": 339.99,
       "currency": "AUD",
       "specs": {
@@ -1346,7 +1346,7 @@
     {
       "id": "dynavap-m7-xl-5873",
       "source_id": "5873",
-      "name": "M7 XL",
+      "name": "DynaVap M7 XL",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -1371,7 +1371,7 @@
     {
       "id": "dynavap-the-vong-starter-kit-8425",
       "source_id": "8425",
-      "name": "The VonG Starter Kit",
+      "name": "DynaVap The VonG Starter Kit",
       "price_aud": 339.99,
       "currency": "AUD",
       "specs": {
@@ -1394,7 +1394,7 @@
     {
       "id": "dynavap-m7-xl-8426",
       "source_id": "8426",
-      "name": "M7 XL",
+      "name": "DynaVap M7 XL",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -1419,7 +1419,7 @@
     {
       "id": "eyce-pv1-dry-herb-vaporizer-3000mah-3248",
       "source_id": "3248",
-      "name": "PV1 Dry Herb Vaporizer | 3000mAh",
+      "name": "Eyce PV1 Dry Herb Vaporizer | 3000mAh",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -1447,7 +1447,7 @@
     {
       "id": "firefly-2-portable-vaporizer-3302",
       "source_id": "3302",
-      "name": "2+ Portable Vaporizer",
+      "name": "Firefly 2+ Portable Vaporizer",
       "price_aud": 369.99,
       "currency": "AUD",
       "specs": {
@@ -1475,7 +1475,7 @@
     {
       "id": "tyson-20-x-g-pen-dash-vaporizer-3643",
       "source_id": "3643",
-      "name": "X G Pen Dash Vaporizer",
+      "name": "Tyson 2.0 X G Pen Dash Vaporizer",
       "price_aud": 169.99,
       "currency": "AUD",
       "specs": {
@@ -1503,7 +1503,7 @@
     {
       "id": "xvape-mambo-cheech-and-chong-dry-herb-vaporizer-1000mah-3701",
       "source_id": "3701",
-      "name": "Mambo Cheech and Chong Dry Herb Vaporizer – 1000mAh",
+      "name": "XVape Mambo Cheech and Chong Dry Herb Vaporizer – 1000mAh",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -1531,7 +1531,7 @@
     {
       "id": "flowermate-v50-pro-vaporizer-3994",
       "source_id": "3994",
-      "name": "V5.0 Pro Vaporizer",
+      "name": "Flowermate V5.0 Pro Vaporizer",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -1559,7 +1559,7 @@
     {
       "id": "flowermate-v50-pro-vaporizer-7640",
       "source_id": "7640",
-      "name": "V5.0 Pro Vaporizer",
+      "name": "Flowermate V5.0 Pro Vaporizer",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -1587,7 +1587,7 @@
     {
       "id": "boundless-cf-vaporizer-3996",
       "source_id": "3996",
-      "name": "CF Vaporizer",
+      "name": "Boundless CF Vaporizer",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -1614,7 +1614,7 @@
     {
       "id": "boundless-cf-vaporizer-7650",
       "source_id": "7650",
-      "name": "CF Vaporizer",
+      "name": "Boundless CF Vaporizer",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -1641,7 +1641,7 @@
     {
       "id": "boundless-cfx-vaporizer-3997",
       "source_id": "3997",
-      "name": "CFX Vaporizer",
+      "name": "Boundless CFX Vaporizer",
       "price_aud": 289.99,
       "currency": "AUD",
       "specs": {
@@ -1669,7 +1669,7 @@
     {
       "id": "boundless-cfx-vaporizer-7680",
       "source_id": "7680",
-      "name": "CFX Vaporizer",
+      "name": "Boundless CFX Vaporizer",
       "price_aud": 289.99,
       "currency": "AUD",
       "specs": {
@@ -1697,7 +1697,7 @@
     {
       "id": "healthy-rips-rogue-se-bundle-4061",
       "source_id": "4061",
-      "name": "Rogue SE Bundle",
+      "name": "Healthy Rips Rogue SE Bundle",
       "price_aud": 279.99,
       "currency": "AUD",
       "specs": {
@@ -1727,7 +1727,7 @@
     {
       "id": "healthy-rips-rogue-se-bundle-7684",
       "source_id": "7684",
-      "name": "Rogue SE Bundle",
+      "name": "Healthy Rips Rogue SE Bundle",
       "price_aud": 279.99,
       "currency": "AUD",
       "specs": {
@@ -1757,7 +1757,7 @@
     {
       "id": "xmax-fog-pro-5366",
       "source_id": "5366",
-      "name": "FOG PRO",
+      "name": "XMAX FOG PRO",
       "price_aud": 268.99,
       "currency": "AUD",
       "specs": {
@@ -1788,7 +1788,7 @@
     {
       "id": "xmax-v3-pro-7683",
       "source_id": "7683",
-      "name": "V3 Pro",
+      "name": "XMAX V3 Pro",
       "price_aud": 199.99,
       "currency": "AUD",
       "specs": {
@@ -1813,7 +1813,7 @@
     {
       "id": "fenix-neo-5874",
       "source_id": "5874",
-      "name": "NEO",
+      "name": "Fenix NEO",
       "price_aud": 289.99,
       "currency": "AUD",
       "specs": {
@@ -1843,7 +1843,7 @@
     {
       "id": "fenix-neo-8427",
       "source_id": "8427",
-      "name": "NEO",
+      "name": "Fenix NEO",
       "price_aud": 289.99,
       "currency": "AUD",
       "specs": {
@@ -1873,7 +1873,7 @@
     {
       "id": "smono-sunshine-5875",
       "source_id": "5875",
-      "name": "Sunshine",
+      "name": "Smono Sunshine",
       "price_aud": 168.99,
       "currency": "AUD",
       "specs": {
@@ -1899,7 +1899,7 @@
     {
       "id": "storz-bickel-mighty-portable-usb-c-vaporizer-7637",
       "source_id": "7637",
-      "name": "Mighty+ Portable Usb-c Vaporizer",
+      "name": "Storz & Bickel Mighty+ Portable Usb-c Vaporizer",
       "price_aud": 589.99,
       "currency": "AUD",
       "specs": {
@@ -1931,7 +1931,7 @@
     {
       "id": "ooze-brink-dry-herb-vaporizer-8284",
       "source_id": "8284",
-      "name": "BRINK DRY HERB VAPORIZER",
+      "name": "Ooze BRINK DRY HERB VAPORIZER",
       "price_aud": 169.99,
       "currency": "AUD",
       "specs": {
@@ -1951,7 +1951,7 @@
     {
       "id": "ooze-verge-dry-herb-vaporizer-8552",
       "source_id": "8552",
-      "name": "Verge Dry Herb Vaporizer",
+      "name": "Ooze Verge Dry Herb Vaporizer",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -1981,7 +1981,7 @@
     {
       "id": "airis-herbva-5g-dry-herb-pocket-vaporizer-10261",
       "source_id": "10261",
-      "name": "Herbva 5G Dry Herb Pocket Vaporizer",
+      "name": "Airistech Herbva 5G Dry Herb Pocket Vaporizer",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2007,7 +2007,7 @@
     {
       "id": "airis-switch-3-in1-vaporizer-dry-herb-wax-oil-ceramic-heating-10263",
       "source_id": "10263",
-      "name": "Switch 3 In1 Vaporizer Dry Herb Wax Oil Ceramic Heating",
+      "name": "Airistech Switch 3 In1 Vaporizer Dry Herb Wax Oil Ceramic Heating",
       "price_aud": 169.99,
       "currency": "AUD",
       "specs": {
@@ -2034,7 +2034,7 @@
     {
       "id": "gethi-g6-10262",
       "source_id": "10262",
-      "name": "G6",
+      "name": "Gethi G6",
       "price_aud": 121.99,
       "currency": "AUD",
       "specs": {
@@ -2056,7 +2056,7 @@
     {
       "id": "ciga-fun-x1-dry-herbwax-2-in-1-vaporizer-10264",
       "source_id": "10264",
-      "name": "X1 Dry Herb/Wax 2 In 1 Vaporizer",
+      "name": "Ciga Fun X1 Dry Herb/Wax 2 In 1 Vaporizer",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {

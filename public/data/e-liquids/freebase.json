@@ -193,7 +193,7 @@
     {
       "id": "liquideo-american-mix-10-ml-2006",
       "source_id": "2006",
-      "name": "American Mix 10 ml",
+      "name": "Liquideo American Mix 10 ml",
       "price_aud": 12.99,
       "currency": "AUD",
       "specs": {
@@ -213,7 +213,7 @@
     {
       "id": "canada-e-juice-black-honey-tobacco-8071",
       "source_id": "8071",
-      "name": "Black Honey Tobacco",
+      "name": "Canada e-juice Black Honey Tobacco",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -232,7 +232,7 @@
     {
       "id": "pulp-black-honey-blend-8072",
       "source_id": "8072",
-      "name": "Black Honey Blend",
+      "name": "PULP Black Honey Blend",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -252,7 +252,7 @@
     {
       "id": "juice-man-cherry-blue-fizz-100ml-8166",
       "source_id": "8166",
-      "name": "Cherry Blue Fizz 100ml",
+      "name": "Juice Man Cherry Blue Fizz 100ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -273,7 +273,7 @@
     {
       "id": "shijin-vapor-phoenix-tears-200ml-2x100ml-8169",
       "source_id": "8169",
-      "name": "Phoenix Tears 200ml (2x100ml)",
+      "name": "Shijin Vapor Phoenix Tears 200ml (2x100ml)",
       "price_aud": 77.99,
       "currency": "AUD",
       "specs": {
@@ -294,7 +294,7 @@
     {
       "id": "shijin-vapor-cereal-series-frosted-os-100ml-9280",
       "source_id": "9280",
-      "name": "Cereal Series Frosted O's 100ml",
+      "name": "Shijin Vapor Cereal Series Frosted O's 100ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -313,7 +313,7 @@
     {
       "id": "skwezed-strawberry-ice-100ml-8174",
       "source_id": "8174",
-      "name": "STRAWBERRY ICE 100ML",
+      "name": "Skwezed STRAWBERRY ICE 100ML",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -333,7 +333,7 @@
     {
       "id": "vapetasia-killer-fruits-trapple-100ml-8245",
       "source_id": "8245",
-      "name": "KILLER FRUITS TRAPPLE 100ML",
+      "name": "Vapetasia KILLER FRUITS TRAPPLE 100ML",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -352,7 +352,7 @@
     {
       "id": "vapetasia-killer-fruits-blue-razz-tfn-e-juice-100ml-8276",
       "source_id": "8276",
-      "name": "KILLER FRUITS BLUE RAZZ TFN E-JUICE 100ML",
+      "name": "Vapetasia KILLER FRUITS BLUE RAZZ TFN E-JUICE 100ML",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -371,7 +371,7 @@
     {
       "id": "vapetasia-killer-fruits-straw-guaw-100ml-8277",
       "source_id": "8277",
-      "name": "KILLER FRUITS STRAW GUAW 100ML",
+      "name": "Vapetasia KILLER FRUITS STRAW GUAW 100ML",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -390,7 +390,7 @@
     {
       "id": "vapetasia-royalty-two-100ml-9318",
       "source_id": "9318",
-      "name": "Royalty Two 100ml",
+      "name": "Vapetasia Royalty Two 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -409,7 +409,7 @@
     {
       "id": "vapetasia-killer-fruits-trapple-100ml-12168",
       "source_id": "12168",
-      "name": "KILLER FRUITS TRAPPLE 100ML",
+      "name": "Vapetasia KILLER FRUITS TRAPPLE 100ML",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -428,7 +428,7 @@
     {
       "id": "vapetasia-killer-fruits-straw-guaw-100ml-12170",
       "source_id": "12170",
-      "name": "KILLER FRUITS STRAW GUAW 100ML",
+      "name": "Vapetasia KILLER FRUITS STRAW GUAW 100ML",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -447,7 +447,7 @@
     {
       "id": "the-finest-strawberry-custard-e-juice-2x60ml-8280",
       "source_id": "8280",
-      "name": "STRAWBERRY CUSTARD E-JUICE 2X60ML",
+      "name": "The Finest STRAWBERRY CUSTARD E-JUICE 2X60ML",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -487,7 +487,7 @@
     {
       "id": "naked-100-cuban-blend-60ml-8281",
       "source_id": "8281",
-      "name": "CUBAN BLEND 60ML",
+      "name": "Naked 100 CUBAN BLEND 60ML",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -506,7 +506,7 @@
     {
       "id": "naked-100-cuban-blend-60ml-12172",
       "source_id": "12172",
-      "name": "CUBAN BLEND 60ML",
+      "name": "Naked 100 CUBAN BLEND 60ML",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -524,7 +524,7 @@
     {
       "id": "naked-100-euro-gold-tobacco-60ml-8282",
       "source_id": "8282",
-      "name": "EURO GOLD TOBACCO 60ML",
+      "name": "Naked 100 EURO GOLD TOBACCO 60ML",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -544,7 +544,7 @@
     {
       "id": "naked-100-euro-gold-60ml-12173",
       "source_id": "12173",
-      "name": "EURO GOLD 60ML",
+      "name": "Naked 100 EURO GOLD 60ML",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -564,7 +564,7 @@
     {
       "id": "vapouriz-premium-classic-tobacco-e-liquid-10ml-8327",
       "source_id": "8327",
-      "name": "Premium Classic Tobacco E-Liquid 10ml",
+      "name": "Vapouriz Premium Classic Tobacco E-Liquid 10ml",
       "price_aud": 12.99,
       "currency": "AUD",
       "specs": {
@@ -584,7 +584,7 @@
     {
       "id": "four-seasons-american-tobacco-8364",
       "source_id": "8364",
-      "name": "AMERICAN TOBACCO",
+      "name": "FOUR SEASONS AMERICAN TOBACCO",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -604,7 +604,7 @@
     {
       "id": "khali-vapors-devils-punchbowl-iced-8392",
       "source_id": "8392",
-      "name": "DEVILS PUNCHBOWL ICED",
+      "name": "Khali Vapors DEVILS PUNCHBOWL ICED",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -623,7 +623,7 @@
     {
       "id": "khali-vapors-devils-punchbowl-60ml-9274",
       "source_id": "9274",
-      "name": "Devil’s Punchbowl 60ml",
+      "name": "Khali Vapors Devil’s Punchbowl 60ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -642,7 +642,7 @@
     {
       "id": "ycbg-forest-fruit-2000mg-cbg-e-liquid-60ml-8761",
       "source_id": "8761",
-      "name": "Forest Fruit 2000mg CBG E-liquid 60ml",
+      "name": "YCBG Forest Fruit 2000mg CBG E-liquid 60ml",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {
@@ -662,7 +662,7 @@
     {
       "id": "signature-apple-and-blackcurrant-8830",
       "source_id": "8830",
-      "name": "Apple and Blackcurrant",
+      "name": "Signature Apple and Blackcurrant",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -683,7 +683,7 @@
     {
       "id": "burst-duo-peach-raspberry-60ml-9229",
       "source_id": "9229",
-      "name": "Peach Raspberry 60ml",
+      "name": "Burst Duo Peach Raspberry 60ml",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -703,7 +703,7 @@
     {
       "id": "glas-basix-series-cool-melon-60ml-9231",
       "source_id": "9231",
-      "name": "Cool Melon 60ml",
+      "name": "Glas Basix Cool Melon 60ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -722,7 +722,7 @@
     {
       "id": "berry-twist-purple-grape-grape-berry-mix-120ml-2x60ml-9233",
       "source_id": "9233",
-      "name": "Purple Grape (Grape Berry Mix) 120ml (2x60ml",
+      "name": "Berry Twist Purple Grape (Grape Berry Mix) 120ml (2x60ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -742,7 +742,7 @@
     {
       "id": "decadent-pound-cake-60ml-9267",
       "source_id": "9267",
-      "name": "Pound Cake 60ml",
+      "name": "Decadent Pound Cake 60ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -762,7 +762,7 @@
     {
       "id": "dead-presidents-roosevelt-60ml-9268",
       "source_id": "9268",
-      "name": "Roosevelt 60ml",
+      "name": "Dead Presidents Roosevelt 60ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -782,7 +782,7 @@
     {
       "id": "candy-king-bubblegum-collection-blue-razz-120ml-2x60ml-9278",
       "source_id": "9278",
-      "name": "Bubblegum Collection Blue Razz 120ml (2x60ml)",
+      "name": "Candy King Bubblegum Collection Blue Razz 120ml (2x60ml)",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -803,7 +803,7 @@
     {
       "id": "candy-king-peachy-rings-10213",
       "source_id": "10213",
-      "name": "Peachy Rings",
+      "name": "Candy King Peachy Rings",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -823,7 +823,7 @@
     {
       "id": "the-one-milky-loops-100ml-9312",
       "source_id": "9312",
-      "name": "Milky Loops 100ml",
+      "name": "The One Milky Loops 100ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -862,7 +862,7 @@
     {
       "id": "sadboy-pumpkin-cookie-100ml-9314",
       "source_id": "9314",
-      "name": "Pumpkin Cookie 100ml",
+      "name": "Sadboy Pumpkin Cookie 100ml",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -881,7 +881,7 @@
     {
       "id": "smart-vape-e-liquid-strawberry-60ml-9324",
       "source_id": "9324",
-      "name": "E-LIQUID STRAWBERRY 60ml",
+      "name": "SMART vape E-LIQUID STRAWBERRY 60ml",
       "price_aud": 24.99,
       "currency": "AUD",
       "specs": {
@@ -900,7 +900,7 @@
     {
       "id": "smart-vape-e-liquid-juice-tobacco-60ml-9325",
       "source_id": "9325",
-      "name": "E-LIQUID JUICE TOBACCO (60ML)",
+      "name": "SMART vape E-LIQUID JUICE TOBACCO (60ML)",
       "price_aud": 24.99,
       "currency": "AUD",
       "specs": {
@@ -919,7 +919,7 @@
     {
       "id": "smart-vape-e-liquid-strawberry-kiwi-30ml-9355",
       "source_id": "9355",
-      "name": "E-LIQUID STRAWBERRY KIWI 30ml",
+      "name": "SMART vape E-LIQUID STRAWBERRY KIWI 30ml",
       "price_aud": 24.99,
       "currency": "AUD",
       "specs": {
@@ -938,7 +938,7 @@
     {
       "id": "smart-vape-e-liquid-blue-raspberry-30ml-9356",
       "source_id": "9356",
-      "name": "E-LIQUID BLUE RASPBERRY (30ml)",
+      "name": "SMART vape E-LIQUID BLUE RASPBERRY (30ml)",
       "price_aud": 24.99,
       "currency": "AUD",
       "specs": {
@@ -957,7 +957,7 @@
     {
       "id": "smart-vape-eliquid-bubblegum-30ml-9357",
       "source_id": "9357",
-      "name": "ELiquid Bubblegum 30ml",
+      "name": "SMART vape ELiquid Bubblegum 30ml",
       "price_aud": 24.99,
       "currency": "AUD",
       "specs": {
@@ -976,7 +976,7 @@
     {
       "id": "smart-vape-e-liquid-tobacco-10ml-9358",
       "source_id": "9358",
-      "name": "E-Liquid Tobacco 10ml",
+      "name": "SMART vape E-Liquid Tobacco 10ml",
       "price_aud": 24.99,
       "currency": "AUD",
       "specs": {
@@ -995,7 +995,7 @@
     {
       "id": "smart-vape-e-liquid-strawberry-60ml-11209",
       "source_id": "11209",
-      "name": "VAPE E-LIQUID STRAWBERRY 60ml",
+      "name": "SMART vape E-LIQUID STRAWBERRY 60ml",
       "price_aud": 24.99,
       "currency": "AUD",
       "specs": {
@@ -1014,7 +1014,7 @@
     {
       "id": "hollywood-sweet-tobacco-e-liquid-9864",
       "source_id": "9864",
-      "name": "Sweet Tobacco E-liquid",
+      "name": "Hollywood Sweet Tobacco E-liquid",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1034,7 +1034,7 @@
     {
       "id": "hollywood-menthol-tobacco-e-liquid-9865",
       "source_id": "9865",
-      "name": "Menthol Tobacco E-liquid",
+      "name": "Hollywood Menthol Tobacco E-liquid",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1054,7 +1054,7 @@
     {
       "id": "hollywood-tobacco-e-liquid-10307",
       "source_id": "10307",
-      "name": "Tobacco E-liquid",
+      "name": "Hollywood Tobacco E-liquid",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1074,7 +1074,7 @@
     {
       "id": "double-drip-raspberry-sherbet-e-liquid-10ml-9908",
       "source_id": "9908",
-      "name": "Raspberry Sherbet E-Liquid 10ml",
+      "name": "Double Drip Raspberry Sherbet E-Liquid 10ml",
       "price_aud": 12.99,
       "currency": "AUD",
       "specs": {
@@ -1094,7 +1094,7 @@
     {
       "id": "aqua-tobacco-rapid-american-red-60ml-10224",
       "source_id": "10224",
-      "name": "Tobacco Rapid American Red 60ml",
+      "name": "Aqua Tobacco Rapid American Red 60ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1114,7 +1114,7 @@
     {
       "id": "aqua-tobacco-blast-60ml-10225",
       "source_id": "10225",
-      "name": "Tobacco Blast 60ml",
+      "name": "Aqua Tobacco Blast 60ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1134,7 +1134,7 @@
     {
       "id": "voodoo-magic-the-original-10256",
       "source_id": "10256",
-      "name": "THE ORIGINAL",
+      "name": "Voodoo Magic THE ORIGINAL",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1154,7 +1154,7 @@
     {
       "id": "ten-sweet-berry-e-liquid-10343",
       "source_id": "10343",
-      "name": "Sweet Berry E-Liquid",
+      "name": "TEN Sweet Berry E-Liquid",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1172,7 +1172,7 @@
     {
       "id": "smoka-apple-menthol-e-liquid-10345",
       "source_id": "10345",
-      "name": "Apple Menthol E-liquid",
+      "name": "SMOKA Apple Menthol E-liquid",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {
@@ -1192,7 +1192,7 @@
     {
       "id": "smoka-vape-lychee-menthol-e-liquid-10346",
       "source_id": "10346",
-      "name": "Lychee Menthol E-liquid",
+      "name": "SMOKA Lychee Menthol E-liquid",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -1212,7 +1212,7 @@
     {
       "id": "vg-caramel-tobacco-120ml-10347",
       "source_id": "10347",
-      "name": "Caramel Tobacco 120ml",
+      "name": "VG Caramel Tobacco 120ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -1232,7 +1232,7 @@
     {
       "id": "cbd-calm-vape-liquid-tincture-variety-bundle-10651",
       "source_id": "10651",
-      "name": "Vape Liquid & Tincture Variety Bundle",
+      "name": "CBD Calm Vape Liquid & Tincture Variety Bundle",
       "price_aud": 134.99,
       "currency": "AUD",
       "specs": {
@@ -1254,7 +1254,7 @@
     {
       "id": "cbd-calm-e-liquid-1000mg10ml-cool-cola-menthol-cool-grape-berry-bliss-10653",
       "source_id": "10653",
-      "name": "E-Liquid 1000mg/10ml Cool Cola, Menthol, Cool Grape, Berry Bliss",
+      "name": "CBD Calm E-Liquid 1000mg/10ml Cool Cola, Menthol, Cool Grape, Berry Bliss",
       "price_aud": 93.99,
       "currency": "AUD",
       "specs": {
@@ -1274,7 +1274,7 @@
     {
       "id": "one-up-vapor-sour-belts-60ml-12128",
       "source_id": "12128",
-      "name": "Sour Belts 60ml",
+      "name": "One Up Vapor Sour Belts 60ml",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {

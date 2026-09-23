@@ -106,7 +106,7 @@
     {
       "id": "open-sesh-510-e-rig-2517",
       "source_id": "2517",
-      "name": "Sesh 510 e-rig",
+      "name": "O.pen Sesh 510 e-rig",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -132,7 +132,7 @@
     {
       "id": "open-20-conceal-vape-pen-battery-3750",
       "source_id": "3750",
-      "name": "2.0 Conceal Vape Pen Battery",
+      "name": "O.pen 2.0 Conceal Vape Pen Battery",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -162,7 +162,7 @@
     {
       "id": "evolv-cricket-portable-dab-rig-2518",
       "source_id": "2518",
-      "name": "Cricket Portable Dab Rig",
+      "name": "Evolv Cricket Portable Dab Rig",
       "price_aud": 289.99,
       "currency": "AUD",
       "specs": {
@@ -187,7 +187,7 @@
     {
       "id": "dr-dabber-ghost-concentrate-vaporizer-650mah-2519",
       "source_id": "2519",
-      "name": "Ghost Concentrate Vaporizer – 650mAh",
+      "name": "Dr. Dabber Ghost Concentrate Vaporizer – 650mAh",
       "price_aud": 639.99,
       "currency": "AUD",
       "specs": {
@@ -214,7 +214,7 @@
     {
       "id": "dr-dabber-light-vaporizer-kit-140mah-2852",
       "source_id": "2852",
-      "name": "Light Vaporizer Kit | 140mAh",
+      "name": "Dr. Dabber Light Vaporizer Kit | 140mAh",
       "price_aud": 639.99,
       "currency": "AUD",
       "specs": {
@@ -240,7 +240,7 @@
     {
       "id": "dr-dabber-light-vaporizer-kit-140mah-2970",
       "source_id": "2970",
-      "name": "Light Vaporizer Kit - 140mAh",
+      "name": "Dr. Dabber Light Vaporizer Kit - 140mAh",
       "price_aud": 639.99,
       "currency": "AUD",
       "specs": {
@@ -269,7 +269,7 @@
     {
       "id": "dr-dabber-stella-vaporizer-and-portable-wax-pen-3000",
       "source_id": "3000",
-      "name": "Stella Vaporizer and Portable Wax Pen",
+      "name": "Dr. Dabber Stella Vaporizer and Portable Wax Pen",
       "price_aud": 639.99,
       "currency": "AUD",
       "specs": {
@@ -299,7 +299,7 @@
     {
       "id": "puffco-plus-portable-concentrate-vaporizer-520mah-2520",
       "source_id": "2520",
-      "name": "Plus Portable Concentrate Vaporizer | 520mAh",
+      "name": "Puffco Plus Portable Concentrate Vaporizer | 520mAh",
       "price_aud": 219.99,
       "currency": "AUD",
       "specs": {
@@ -325,7 +325,7 @@
     {
       "id": "puffco-proxy-8395",
       "source_id": "8395",
-      "name": "Proxy",
+      "name": "Puffco Proxy",
       "price_aud": 469.99,
       "currency": "AUD",
       "specs": {
@@ -350,7 +350,7 @@
     {
       "id": "cookies-x-g-pen-roam-portable-e-rig-vaporizer-2521",
       "source_id": "2521",
-      "name": "X G Pen Roam – Portable E-Rig Vaporizer",
+      "name": "Cookies X G Pen Roam – Portable E-Rig Vaporizer",
       "price_aud": 289.99,
       "currency": "AUD",
       "specs": {
@@ -381,7 +381,7 @@
     {
       "id": "pulsar-apx-wax-v3-concentrate-vape-2522",
       "source_id": "2522",
-      "name": "APX Wax V3 Concentrate Vape",
+      "name": "Pulsar APX Wax V3 Concentrate Vape",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -420,7 +420,7 @@
     {
       "id": "pulsar-barb-fire-variable-voltage-wax-vaporizer-2582",
       "source_id": "2582",
-      "name": "Barb Fire Variable Voltage Wax Vaporizer",
+      "name": "Pulsar Barb Fire Variable Voltage Wax Vaporizer",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -446,7 +446,7 @@
     {
       "id": "pulsar-apx-volt-v3-vv-concentrate-vaporizer-1100mah-2583",
       "source_id": "2583",
-      "name": "APX Volt V3 VV Concentrate Vaporizer – 1100mAh",
+      "name": "Pulsar APX Volt V3 VV Concentrate Vaporizer – 1100mAh",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -472,7 +472,7 @@
     {
       "id": "pulsar-barb-fire-slim-variable-voltage-2-in-1-vape-800mah-2585",
       "source_id": "2585",
-      "name": "Barb Fire Slim Variable Voltage 2-in-1 Vape | 800mAh",
+      "name": "Pulsar Barb Fire Slim Variable Voltage 2-in-1 Vape | 800mAh",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -497,7 +497,7 @@
     {
       "id": "pulsar-duplocart-h2o-thick-oil-vaporizer-w-water-pipe-adapter-2618",
       "source_id": "2618",
-      "name": "DuploCart H2O Thick Oil Vaporizer w/ Water Pipe Adapter",
+      "name": "Pulsar DuploCart H2O Thick Oil Vaporizer w/ Water Pipe Adapter",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -526,7 +526,7 @@
     {
       "id": "pulsar-barb-fire-h2o-variable-voltage-wax-vape-kit-1450mah-2650",
       "source_id": "2650",
-      "name": "Barb Fire H2O Variable Voltage Wax Vape Kit – 1450mAh",
+      "name": "Pulsar Barb Fire H2O Variable Voltage Wax Vape Kit – 1450mAh",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -553,7 +553,7 @@
     {
       "id": "pulsar-range-modular-vape-2725",
       "source_id": "2725",
-      "name": "Range Modular Vape",
+      "name": "Pulsar Range Modular Vape",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -581,7 +581,7 @@
     {
       "id": "pulsar-dl-wax-vape-bar-650mah-2902",
       "source_id": "2902",
-      "name": "DL Wax Vape Bar | 650mAh",
+      "name": "Pulsar DL Wax Vape Bar | 650mAh",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -604,7 +604,7 @@
     {
       "id": "pulsar-boho-faces-variable-voltage-barb-fire-kit-1450mah-2967",
       "source_id": "2967",
-      "name": "Boho Faces Variable Voltage Barb Fire Kit -1450mAh",
+      "name": "Pulsar Boho Faces Variable Voltage Barb Fire Kit -1450mAh",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -622,7 +622,7 @@
     {
       "id": "pulsar-melting-mushrooms-variable-voltage-barb-fire-kit-1450mah-3067",
       "source_id": "3067",
-      "name": "Melting Mushrooms Variable Voltage Barb Fire Kit -1450mAh",
+      "name": "Pulsar Melting Mushrooms Variable Voltage Barb Fire Kit -1450mAh",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -648,7 +648,7 @@
     {
       "id": "pulsar-micro-dose-2-in-1-vaporizer-pen-3125",
       "source_id": "3125",
-      "name": "Micro Dose 2-in-1 Vaporizer Pen",
+      "name": "Pulsar Micro Dose 2-in-1 Vaporizer Pen",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -675,7 +675,7 @@
     {
       "id": "pulsar-gigi-oil-cartridge-vaporizer-3348",
       "source_id": "3348",
-      "name": "Gigi Oil Cartridge Vaporizer",
+      "name": "Pulsar Gigi Oil Cartridge Vaporizer",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -703,7 +703,7 @@
     {
       "id": "pulsar-510-dunk-2-in-1-variable-voltage-vaporizer-750mah-3486",
       "source_id": "3486",
-      "name": "510 Dunk 2-In-1 Variable Voltage Vaporizer -750mAh",
+      "name": "Pulsar 510 Dunk 2-In-1 Variable Voltage Vaporizer -750mAh",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -729,7 +729,7 @@
     {
       "id": "pulsar-gigi-h2o-510-battery-w-water-pipe-adapter-3487",
       "source_id": "3487",
-      "name": "GiGi H2O 510 Battery w/ Water Pipe Adapter",
+      "name": "Pulsar GiGi H2O 510 Battery w/ Water Pipe Adapter",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -782,7 +782,7 @@
     {
       "id": "groove-cara-pen-2523",
       "source_id": "2523",
-      "name": "Cara Pen",
+      "name": "Groove Cara Pen",
       "price_aud": 84.99,
       "currency": "AUD",
       "specs": {
@@ -804,7 +804,7 @@
     {
       "id": "yocan-armor-concentrate-pen-vaporizer-2524",
       "source_id": "2524",
-      "name": "Armor Concentrate Pen Vaporizer",
+      "name": "Yocan Armor Concentrate Pen Vaporizer",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -831,7 +831,7 @@
     {
       "id": "yocan-orbit-concentrate-vaporizer-1800mah-2586",
       "source_id": "2586",
-      "name": "Orbit Concentrate Vaporizer – 1800mAh",
+      "name": "Yocan Orbit Concentrate Vaporizer – 1800mAh",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -859,7 +859,7 @@
     {
       "id": "yocan-cubex-concentrate-vaporizer-1400mah-2701",
       "source_id": "2701",
-      "name": "Cubex Concentrate Vaporizer – 1400mAh",
+      "name": "Yocan Cubex Concentrate Vaporizer – 1400mAh",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -883,7 +883,7 @@
     {
       "id": "yocan-black-series-phaser-max-e-rig-1800mah-2937",
       "source_id": "2937",
-      "name": "Black Series Phaser MAX E-Rig | 1800mAh",
+      "name": "Yocan Black Series Phaser MAX E-Rig | 1800mAh",
       "price_aud": 169.99,
       "currency": "AUD",
       "specs": {
@@ -912,7 +912,7 @@
     {
       "id": "yocan-magneto-concentrate-vaporizer-2966",
       "source_id": "2966",
-      "name": "Magneto Concentrate Vaporizer",
+      "name": "Yocan Magneto Concentrate Vaporizer",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -935,7 +935,7 @@
     {
       "id": "yocan-x-pod-system-concentrate-vaporizer-500mah-3037",
       "source_id": "3037",
-      "name": "X Pod System Concentrate Vaporizer | 500mAh",
+      "name": "Yocan X Pod System Concentrate Vaporizer | 500mAh",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -958,7 +958,7 @@
     {
       "id": "yocan-evolve-plus-vaporizer-kit-3176",
       "source_id": "3176",
-      "name": "Evolve Plus Vaporizer Kit",
+      "name": "Yocan Evolve Plus Vaporizer Kit",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -990,7 +990,7 @@
     {
       "id": "yocan-evolve-plus-xl-2-in-1-vaporizer-10259",
       "source_id": "10259",
-      "name": "Evolve Plus Xl 2 In 1 Vaporizer",
+      "name": "Yocan Evolve Plus Xl 2 In 1 Vaporizer",
       "price_aud": 118.99,
       "currency": "AUD",
       "specs": {
@@ -1017,7 +1017,7 @@
     {
       "id": "lookah-seahorse-20-electric-dab-pen-2525",
       "source_id": "2525",
-      "name": "Seahorse 2.0 Electric Dab Pen",
+      "name": "Lookah Seahorse 2.0 Electric Dab Pen",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1044,7 +1044,7 @@
     {
       "id": "lookah-seahorse-pro-20-2587",
       "source_id": "2587",
-      "name": "Seahorse PRO 2.0",
+      "name": "Lookah Seahorse PRO 2.0",
       "price_aud": 168.99,
       "currency": "AUD",
       "specs": {
@@ -1070,7 +1070,7 @@
     {
       "id": "lookah-swordfish-concentrate-vape-pen-950mah-2619",
       "source_id": "2619",
-      "name": "Swordfish Concentrate Vape Pen – 950mAh",
+      "name": "Lookah Swordfish Concentrate Vape Pen – 950mAh",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1097,7 +1097,7 @@
     {
       "id": "lookah-seahorse-x-all-in-one-electric-dab-kit-3099",
       "source_id": "3099",
-      "name": "Seahorse X All In One Electric Dab Kit",
+      "name": "Lookah Seahorse X All In One Electric Dab Kit",
       "price_aud": 169.99,
       "currency": "AUD",
       "specs": {
@@ -1123,7 +1123,7 @@
     {
       "id": "ooze-beacon-slim-wax-pen-800mah-2584",
       "source_id": "2584",
-      "name": "Beacon Slim Wax Pen | 800mAh",
+      "name": "Ooze Beacon Slim Wax Pen | 800mAh",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -1147,7 +1147,7 @@
     {
       "id": "ooze-slim-twist-pro-concentrate-vape-kit-2855",
       "source_id": "2855",
-      "name": "Slim Twist PRO Concentrate Vape Kit",
+      "name": "Ooze Slim Twist PRO Concentrate Vape Kit",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -1175,7 +1175,7 @@
     {
       "id": "ooze-pronto-electronic-concentrate-vaporizer-900mah-2969",
       "source_id": "2969",
-      "name": "Pronto Electronic Concentrate Vaporizer – 900mAh",
+      "name": "Ooze Pronto Electronic Concentrate Vaporizer – 900mAh",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -1202,7 +1202,7 @@
     {
       "id": "ooze-signal-concentrate-vaporizer-pen-650mah-3036",
       "source_id": "3036",
-      "name": "Signal Concentrate Vaporizer Pen | 650mAh",
+      "name": "Ooze Signal Concentrate Vaporizer Pen | 650mAh",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -1230,7 +1230,7 @@
     {
       "id": "ooze-booster-extract-vaporizer-1100mah-3923",
       "source_id": "3923",
-      "name": "Booster Extract Vaporizer | 1100mAh",
+      "name": "Ooze Booster Extract Vaporizer | 1100mAh",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -1260,7 +1260,7 @@
     {
       "id": "g-pen-micro-concentrate-vaporizer-2617",
       "source_id": "2617",
-      "name": "Micro+ Concentrate Vaporizer",
+      "name": "G Pen Micro+ Concentrate Vaporizer",
       "price_aud": 199.99,
       "currency": "AUD",
       "specs": {
@@ -1289,7 +1289,7 @@
     {
       "id": "g-pen-micro-vaporizer-2620",
       "source_id": "2620",
-      "name": "Micro+ Vaporizer",
+      "name": "G Pen Micro+ Vaporizer",
       "price_aud": 199.99,
       "currency": "AUD",
       "specs": {
@@ -1343,7 +1343,7 @@
     {
       "id": "g-pen-micro-vaporizer-2649",
       "source_id": "2649",
-      "name": "Micro+ Vaporizer",
+      "name": "G Pen Micro+ Vaporizer",
       "price_aud": 199.99,
       "currency": "AUD",
       "specs": {
@@ -1371,7 +1371,7 @@
     {
       "id": "g-pen-roam-portable-e-rig-vaporizer-2854",
       "source_id": "2854",
-      "name": "Roam – Portable E-Rig Vaporizer",
+      "name": "G Pen Roam – Portable E-Rig Vaporizer",
       "price_aud": 369.99,
       "currency": "AUD",
       "specs": {
@@ -1398,7 +1398,7 @@
     {
       "id": "g-pen-roam-portable-e-rig-vaporizer-2891",
       "source_id": "2891",
-      "name": "Roam – Portable E-Rig Vaporizer",
+      "name": "G Pen Roam – Portable E-Rig Vaporizer",
       "price_aud": 369.99,
       "currency": "AUD",
       "specs": {
@@ -1455,7 +1455,7 @@
     {
       "id": "g-pen-roam-concentrate-vaporizer-2971",
       "source_id": "2971",
-      "name": "Roam Concentrate Vaporizer",
+      "name": "G Pen Roam Concentrate Vaporizer",
       "price_aud": 369.99,
       "currency": "AUD",
       "specs": {
@@ -1483,7 +1483,7 @@
     {
       "id": "boundless-vaporizer-terp-pen-2651",
       "source_id": "2651",
-      "name": "Terp Pen",
+      "name": "Boundless Vaporizers Terp Pen",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -1512,7 +1512,7 @@
     {
       "id": "focus-v-aeris-vaporizer-800mah-black-2812",
       "source_id": "2812",
-      "name": "AERIS Vaporizer – 800mAh / Black",
+      "name": "Focus V AERIS Vaporizer – 800mAh / Black",
       "price_aud": 339.99,
       "currency": "AUD",
       "specs": {
@@ -1540,7 +1540,7 @@
     {
       "id": "vivant-dabox-pro-wax-vaporizer-2999",
       "source_id": "2999",
-      "name": "Dabox Pro Wax Vaporizer",
+      "name": "Vivant Dabox Pro Wax Vaporizer",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -1570,7 +1570,7 @@
     {
       "id": "vivant-dabox-wax-vaporizer-3001",
       "source_id": "3001",
-      "name": "Dabox Wax Vaporizer",
+      "name": "Vivant Dabox Wax Vaporizer",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -1600,7 +1600,7 @@
     {
       "id": "xvape-fyra-dab-star-edition-3-in-1-vaporizer-1500mah-3127",
       "source_id": "3127",
-      "name": "Fyra Dab Star Edition 3-in-1 Vaporizer – 1500mAh",
+      "name": "XVape Fyra Dab Star Edition 3-in-1 Vaporizer – 1500mAh",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -1625,7 +1625,7 @@
     {
       "id": "hitoki-saber-portable-bundle-3304",
       "source_id": "3304",
-      "name": "Saber Portable Bundle",
+      "name": "Hitoki Saber Portable Bundle",
       "price_aud": 1239.99,
       "currency": "AUD",
       "specs": {
@@ -1651,7 +1651,7 @@
     {
       "id": "hitoki-saber-laser-vaporizer-and-bubbler-7682",
       "source_id": "7682",
-      "name": "Saber – Laser Vaporizer and Bubbler",
+      "name": "Hitoki Saber – Laser Vaporizer and Bubbler",
       "price_aud": 1239.99,
       "currency": "AUD",
       "specs": {
@@ -1676,7 +1676,7 @@
     {
       "id": "ispire-the-wand-8394",
       "source_id": "8394",
-      "name": "The Wand",
+      "name": "Ispire The Wand",
       "price_aud": 289.99,
       "currency": "AUD",
       "specs": {
@@ -1702,7 +1702,7 @@
     {
       "id": "origin-ii-vaporizer-10265",
       "source_id": "10265",
-      "name": "Ii Vaporizer",
+      "name": "Origin Ii Vaporizer",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {

@@ -98,7 +98,7 @@
     {
       "id": "raw-smoke-thrower-2481",
       "source_id": "2481",
-      "name": "Smoke Thrower",
+      "name": "RAW Smoke Thrower",
       "price_aud": 124.99,
       "currency": "AUD",
       "specs": {
@@ -118,7 +118,7 @@
     {
       "id": "her-highness-thigh-high-stash-box-2482",
       "source_id": "2482",
-      "name": "Thigh High Stash Box",
+      "name": "Her Highness Thigh High Stash Box",
       "price_aud": 124.99,
       "currency": "AUD",
       "specs": {
@@ -140,7 +140,7 @@
     {
       "id": "her-highness-the-de-lighter-2483",
       "source_id": "2483",
-      "name": "The De-Lighter",
+      "name": "Her Highness The De-Lighter",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -161,7 +161,7 @@
     {
       "id": "her-highness-lip-service-ashtray-2484",
       "source_id": "2484",
-      "name": "Lip Service Ashtray",
+      "name": "Her Highness Lip Service Ashtray",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {
@@ -183,7 +183,7 @@
     {
       "id": "pulsar-diamond-sherlock-concentrate-pipe-675-14mm-f-colors-vary-2726",
       "source_id": "2726",
-      "name": "Diamond Sherlock Concentrate Pipe | 6.75″ | 14mm F | Colors Vary",
+      "name": "Pulsar Diamond Sherlock Concentrate Pipe | 6.75″ | 14mm F | Colors Vary",
       "price_aud": 84.99,
       "currency": "AUD",
       "specs": {
@@ -210,7 +210,7 @@
     {
       "id": "ryot-verb-510-battery-650mah-3378",
       "source_id": "3378",
-      "name": "VERB 510 Battery – 650mAh",
+      "name": "RYOT VERB 510 Battery – 650mAh",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -235,7 +235,7 @@
     {
       "id": "vessel-scout-case-navy-3618",
       "source_id": "3618",
-      "name": "Scout Case [Navy]",
+      "name": "Vessel Scout Case [Navy]",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -256,7 +256,7 @@
     {
       "id": "hitoki-trident-adjustable-silicone-mouthpiece-3666",
       "source_id": "3666",
-      "name": "Trident Adjustable silicone mouthpiece",
+      "name": "Hitoki Trident Adjustable silicone mouthpiece",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -275,7 +275,7 @@
     {
       "id": "vaper-empire-leather-vape-carry-case-e-cig-carrying-pouch-7501",
       "source_id": "7501",
-      "name": "Leather Vape Carry Case & E-Cig Carrying Pouch",
+      "name": "Vaper Empire Leather Vape Carry Case & E-Cig Carrying Pouch",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -296,7 +296,7 @@
     {
       "id": "aspire-vape-snap-top-10pcs-10959",
       "source_id": "10959",
-      "name": "VAPE SNAP TOP 10PCS",
+      "name": "Aspire VAPE SNAP TOP 10PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -314,7 +314,7 @@
     {
       "id": "aspire-vape-snap-top-10pcs-12205",
       "source_id": "12205",
-      "name": "VAPE SNAP TOP 10PCS",
+      "name": "Aspire VAPE SNAP TOP 10PCS",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -332,7 +332,7 @@
     {
       "id": "aspire-slym-carry-case-11294",
       "source_id": "11294",
-      "name": "SLYM CARRY CASE",
+      "name": "Aspire SLYM CARRY CASE",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -354,7 +354,7 @@
     {
       "id": "aspire-slym-carry-case-12610",
       "source_id": "12610",
-      "name": "SLYM CARRY CASE",
+      "name": "Aspire SLYM CARRY CASE",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -375,7 +375,7 @@
     {
       "id": "storz-bickel-crafty-case-11702",
       "source_id": "11702",
-      "name": "Crafty Case",
+      "name": "Storz & Bickel Crafty Case",
       "price_aud": 53.99,
       "currency": "AUD",
       "specs": {
@@ -397,7 +397,7 @@
     {
       "id": "provape-vape-snaps-10-pack-12204",
       "source_id": "12204",
-      "name": "VAPE SNAPS 10 PACK",
+      "name": "ProVape VAPE SNAPS 10 PACK",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -415,7 +415,7 @@
     {
       "id": "davinci-iq3-zirconia-10mm-water-tool-adapter-12338",
       "source_id": "12338",
-      "name": "IQ3 Zirconia 10mm Water Tool Adapter",
+      "name": "DaVinci IQ3 Zirconia 10mm Water Tool Adapter",
       "price_aud": 44.99,
       "currency": "AUD",
       "specs": {

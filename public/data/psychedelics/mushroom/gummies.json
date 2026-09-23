@@ -80,7 +80,7 @@
     {
       "id": "shroom-bros-gummies-cola-candy-35g-5206",
       "source_id": "5206",
-      "name": "Gummies Cola Candy (3.5g)",
+      "name": "Shroom Bros Gummies Cola Candy (3.5g)",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -98,7 +98,7 @@
     {
       "id": "shroom-bros-gummies-blue-razz-35g-5207",
       "source_id": "5207",
-      "name": "Gummies Blue Razz (3.5G)",
+      "name": "Shroom Bros Gummies Blue Razz (3.5G)",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -116,7 +116,7 @@
     {
       "id": "shroom-bros-gummies-cola-candy-35g-10888",
       "source_id": "10888",
-      "name": "Gummies COLA Candy (3.5G)",
+      "name": "Shroom Bros Gummies COLA Candy (3.5G)",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -134,7 +134,7 @@
     {
       "id": "shroom-bros-gummies-blue-razz-35g-10889",
       "source_id": "10889",
-      "name": "Gummies Blue Razz (3.5g)",
+      "name": "Shroom Bros Gummies Blue Razz (3.5g)",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -152,7 +152,7 @@
     {
       "id": "shroomies-cherry-lime-gummies-edible-11571",
       "source_id": "11571",
-      "name": "cherry lime gummies edible",
+      "name": "Shroom Bros cherry lime gummies edible",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -170,7 +170,7 @@
     {
       "id": "shrooms-lions-mane-mushroom-gummies-5321",
       "source_id": "5321",
-      "name": "Lion’s Mane Mushroom Gummies",
+      "name": "Shroom Bros Lion’s Mane Mushroom Gummies",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -189,7 +189,7 @@
     {
       "id": "shrooms-lions-mane-mushroom-gummies-10954",
       "source_id": "10954",
-      "name": "Lion’s Mane Mushroom Gummies",
+      "name": "Shroom Bros Lion’s Mane Mushroom Gummies",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -208,7 +208,7 @@
     {
       "id": "cutleaf-mushroom-gummies-8pcs-5375",
       "source_id": "5375",
-      "name": "MUSHROOM GUMMIES 8PCS",
+      "name": "Cutleaf MUSHROOM GUMMIES 8PCS",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -228,7 +228,7 @@
     {
       "id": "cutleaf-euphoria-live-rosin-thc-mushroom-gummies-8pcs-5376",
       "source_id": "5376",
-      "name": "EUPHORIA LIVE ROSIN THC MUSHROOM GUMMIES 8PCS",
+      "name": "Cutleaf EUPHORIA LIVE ROSIN THC MUSHROOM GUMMIES 8PCS",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -249,7 +249,7 @@
     {
       "id": "cutleaf-euphoria-live-rosin-mushroom-gummies-1000mg-10ct-5377",
       "source_id": "5377",
-      "name": "EUPHORIA LIVE ROSIN MUSHROOM GUMMIES 1000MG 10CT",
+      "name": "Cutleaf EUPHORIA LIVE ROSIN MUSHROOM GUMMIES 1000MG 10CT",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -270,7 +270,7 @@
     {
       "id": "cutleaf-zero-thc-mushroom-gummies-8pcs-10997",
       "source_id": "10997",
-      "name": "ZERO THC MUSHROOM GUMMIES 8PCS",
+      "name": "Cutleaf ZERO THC MUSHROOM GUMMIES 8PCS",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -291,7 +291,7 @@
     {
       "id": "cutleaf-euphoria-live-rosin-thc-mushroom-gummies-8pcs-10998",
       "source_id": "10998",
-      "name": "EUPHORIA LIVE ROSIN THC MUSHROOM GUMMIES 8PCS",
+      "name": "Cutleaf EUPHORIA LIVE ROSIN THC MUSHROOM GUMMIES 8PCS",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -312,7 +312,7 @@
     {
       "id": "cutleaf-euphoria-live-rosin-mushroom-gummies-1000mg-10ct-10999",
       "source_id": "10999",
-      "name": "Euphoria Live Rosin Mushroom Gummies 1000mg 10ct",
+      "name": "Cutleaf Euphoria Live Rosin Mushroom Gummies 1000mg 10ct",
       "price_aud": 39.99,
       "currency": "AUD",
       "specs": {
@@ -333,7 +333,7 @@
     {
       "id": "galaxy-treats-strawberry-amanita-mushroom-gummies-5784",
       "source_id": "5784",
-      "name": "STRAWBERRY AMANITA MUSHROOM GUMMIES",
+      "name": "Galaxy Treats STRAWBERRY AMANITA MUSHROOM GUMMIES",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {
@@ -353,7 +353,7 @@
     {
       "id": "galaxy-treats-amanita-mushroom-gummies-cherry-berry-10ct-pack-5785",
       "source_id": "5785",
-      "name": "Amanita Mushroom Gummies Cherry Berry 10CT Pack",
+      "name": "Galaxy Treats Amanita Mushroom Gummies Cherry Berry 10CT Pack",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {
@@ -373,7 +373,7 @@
     {
       "id": "galaxy-treats-blueberry-amanita-mushroom-gummies-5786",
       "source_id": "5786",
-      "name": "BLUEBERRY AMANITA MUSHROOM GUMMIES",
+      "name": "Galaxy Treats BLUEBERRY AMANITA MUSHROOM GUMMIES",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {
@@ -393,7 +393,7 @@
     {
       "id": "galaxy-treats-strawberry-amanita-mushroom-gummies-11140",
       "source_id": "11140",
-      "name": "STRAWBERRY AMANITA MUSHROOM GUMMIES",
+      "name": "Galaxy Treats STRAWBERRY AMANITA MUSHROOM GUMMIES",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {
@@ -413,7 +413,7 @@
     {
       "id": "galaxy-treats-amanita-mushroom-gummies-cherry-berry-10-count-11141",
       "source_id": "11141",
-      "name": "Amanita Mushroom Gummies Cherry Berry 10 Count",
+      "name": "Galaxy Treats Amanita Mushroom Gummies Cherry Berry 10 Count",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {
@@ -433,7 +433,7 @@
     {
       "id": "galaxy-treats-blueberry-amanita-mushroom-gummies-11142",
       "source_id": "11142",
-      "name": "BLUEBERRY AMANITA MUSHROOM GUMMIES",
+      "name": "Galaxy Treats BLUEBERRY AMANITA MUSHROOM GUMMIES",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {
@@ -453,7 +453,7 @@
     {
       "id": "road-trip-co-amanita-muscaria-mushroom-gummies-watermelon-5787",
       "source_id": "5787",
-      "name": "AMANITA MUSCARIA MUSHROOM GUMMIES - WATERMELON",
+      "name": "Road Trip AMANITA MUSCARIA MUSHROOM GUMMIES - WATERMELON",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -478,7 +478,7 @@
     {
       "id": "road-trip-desert-stardust-mushroom-gummies-blue-raspberry-5788",
       "source_id": "5788",
-      "name": "DESERT STARDUST MUSHROOM GUMMIES – BLUE RASPBERRY",
+      "name": "Road Trip DESERT STARDUST MUSHROOM GUMMIES – BLUE RASPBERRY",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -503,7 +503,7 @@
     {
       "id": "road-trip-co-amanita-muscaria-mushroom-gummies-raspberry-flavor-5790",
       "source_id": "5790",
-      "name": "AMANITA MUSCARIA MUSHROOM GUMMIES - Raspberry Flavor",
+      "name": "Road Trip AMANITA MUSCARIA MUSHROOM GUMMIES - Raspberry Flavor",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -528,7 +528,7 @@
     {
       "id": "road-trip-desert-stardust-mushroom-gummies-pineapple-5791",
       "source_id": "5791",
-      "name": "DESERT STARDUST MUSHROOM GUMMIES – PINEAPPLE",
+      "name": "Road Trip DESERT STARDUST MUSHROOM GUMMIES – PINEAPPLE",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -553,7 +553,7 @@
     {
       "id": "road-trip-microdosed-gummies-functional-mushrooms-pink-lemonade-5793",
       "source_id": "5793",
-      "name": "MICRODOSED GUMMIES + FUNCTIONAL MUSHROOMS – PINK LEMONADE",
+      "name": "Road Trip MICRODOSED GUMMIES + FUNCTIONAL MUSHROOMS – PINK LEMONADE",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -578,7 +578,7 @@
     {
       "id": "road-trip-microdosed-gummies-functional-mushrooms-orange-5794",
       "source_id": "5794",
-      "name": "MICRODOSED GUMMIES + FUNCTIONAL MUSHROOMS – ORANGE",
+      "name": "Road Trip MICRODOSED GUMMIES + FUNCTIONAL MUSHROOMS – ORANGE",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -603,7 +603,7 @@
     {
       "id": "road-trip-desert-stardust-mushroom-gummies-blue-raspberry-11144",
       "source_id": "11144",
-      "name": "DESERT STARDUST MUSHROOM GUMMIES – BLUE RASPBERRY",
+      "name": "Road Trip DESERT STARDUST MUSHROOM GUMMIES – BLUE RASPBERRY",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -628,7 +628,7 @@
     {
       "id": "road-trip-co-amanita-muscaria-mushroom-gummies-raspberry-11146",
       "source_id": "11146",
-      "name": "AMANITA MUSCARIA MUSHROOM GUMMIES - RASPBERRY",
+      "name": "Road Trip AMANITA MUSCARIA MUSHROOM GUMMIES - RASPBERRY",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -653,7 +653,7 @@
     {
       "id": "road-trip-desert-stardust-mushroom-gummies-pineapple-11147",
       "source_id": "11147",
-      "name": "DESERT STARDUST MUSHROOM GUMMIES – PINEAPPLE",
+      "name": "Road Trip DESERT STARDUST MUSHROOM GUMMIES – PINEAPPLE",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -678,7 +678,7 @@
     {
       "id": "road-trip-microdosed-gummies-functional-mushrooms-orange-11150",
       "source_id": "11150",
-      "name": "MICRODOSED GUMMIES + FUNCTIONAL MUSHROOMS – ORANGE",
+      "name": "Road Trip MICRODOSED GUMMIES + FUNCTIONAL MUSHROOMS – ORANGE",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -703,7 +703,7 @@
     {
       "id": "road-trip-amanita-muscaria-mushroom-gummies-peach-11151",
       "source_id": "11151",
-      "name": "AMANITA MUSCARIA MUSHROOM GUMMIES - PEACH",
+      "name": "Road Trip AMANITA MUSCARIA MUSHROOM GUMMIES - PEACH",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -728,7 +728,7 @@
     {
       "id": "icarus-zoomies-gummies-11539",
       "source_id": "11539",
-      "name": "Zoomies Gummies",
+      "name": "Icarus Zoomies Gummies",
       "price_aud": 49.99,
       "currency": "AUD",
       "specs": {
@@ -745,7 +745,7 @@
     {
       "id": "mungus-psilocybin-grape-gummies-bears-11572",
       "source_id": "11572",
-      "name": "Psilocybin Grape Gummies Bears",
+      "name": "Mungus Psilocybin Grape Gummies Bears",
       "price_aud": 49.99,
       "currency": "AUD",
       "specs": {
@@ -782,7 +782,7 @@
     {
       "id": "alice-green-apple-mushroom-gummies-100mg-11575",
       "source_id": "11575",
-      "name": "Green Apple Mushroom Gummies 100mg",
+      "name": "Alice Green Apple Mushroom Gummies 100mg",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -801,7 +801,7 @@
     {
       "id": "shruumz-premium-microdose-gummies-blue-raz-watermelon-11577",
       "source_id": "11577",
-      "name": "Premium Microdose Gummies – Blue Raz Watermelon",
+      "name": "Shruumz Premium Microdose Gummies – Blue Raz Watermelon",
       "price_aud": 29.99,
       "currency": "AUD",
       "specs": {

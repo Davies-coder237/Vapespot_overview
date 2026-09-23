@@ -74,11 +74,7 @@ export function MyList() {
                     params={{ id: product.id }}
                     className="flex flex-col gap-1"
                   >
-                    {product.brand && (
-                      <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#7C3AED]">
-                        {product.brand}
-                      </span>
-                    )}
+                    {/* marque portée par product.name → badge retiré, on garde la série */}
                     {product.series && (
                       <span className="text-[11px] font-bold uppercase tracking-[0.14em] text-[#7C3AED]">
                         {product.series}

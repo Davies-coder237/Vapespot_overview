@@ -225,7 +225,7 @@
     {
       "id": "yocan-uni-pro-plus-battery-mod-3136",
       "source_id": "3136",
-      "name": "Uni Pro Plus Battery Mod",
+      "name": "Yocan Uni Pro Plus Battery Mod",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -253,7 +253,7 @@
     {
       "id": "yocan-uni-s-portable-box-mod-vape-3142",
       "source_id": "3142",
-      "name": "UNI S Portable Box Mod Vape",
+      "name": "Yocan UNI S Portable Box Mod Vape",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -279,7 +279,7 @@
     {
       "id": "yocan-uni-twist-universal-portable-mod-3209",
       "source_id": "3209",
-      "name": "UNI Twist Universal Portable Mod",
+      "name": "Yocan UNI Twist Universal Portable Mod",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -306,7 +306,7 @@
     {
       "id": "yocan-uni-plus-battery-mod-w-usb-c-charger-900mah-3305",
       "source_id": "3305",
-      "name": "Uni Plus Battery Mod w/ USB-C Charger | 900mAh",
+      "name": "Yocan Uni Plus Battery Mod w/ USB-C Charger | 900mAh",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -332,7 +332,7 @@
     {
       "id": "yocan-uni-portable-box-mod-3310",
       "source_id": "3310",
-      "name": "UNI Portable Box Mod",
+      "name": "Yocan UNI Portable Box Mod",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -358,7 +358,7 @@
     {
       "id": "yocan-uni-box-mod-11532",
       "source_id": "11532",
-      "name": "UNI Box Mod",
+      "name": "Yocan UNI Box Mod",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -385,7 +385,7 @@
     {
       "id": "eleaf-istick-mini-10w-digital-mod-battery-3308",
       "source_id": "3308",
-      "name": "iStick Mini 10W Digital Mod Battery",
+      "name": "Eleaf iStick Mini 10W Digital Mod Battery",
       "price_aud": 104.99,
       "currency": "AUD",
       "specs": {
@@ -416,7 +416,7 @@
     {
       "id": "eleaf-istick-i40-mod-6086",
       "source_id": "6086",
-      "name": "iStick i40 Mod",
+      "name": "Eleaf iStick i40 Mod",
       "price_aud": 104.99,
       "currency": "AUD",
       "specs": {
@@ -446,7 +446,7 @@
     {
       "id": "eleaf-istick-rim-kit-with-melo-5-tank-7782",
       "source_id": "7782",
-      "name": "iStick Rim Kit With MELO 5 Tank",
+      "name": "Eleaf iStick Rim Kit With MELO 5 Tank",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -479,7 +479,7 @@
     {
       "id": "eleaf-istick-pico-s-100w-tc-kit-with-ello-vate-atomizer-2ml65ml-7821",
       "source_id": "7821",
-      "name": "iStick Pico S 100W TC kit with ELLO Vate Atomizer (2ml/6.5ml)",
+      "name": "Eleaf iStick Pico S 100W TC kit with ELLO Vate Atomizer (2ml/6.5ml)",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -509,7 +509,7 @@
     {
       "id": "eleaf-istick-p100-kit-100w-3400mah-7823",
       "source_id": "7823",
-      "name": "iStick P100 Kit 100W 3400mAh",
+      "name": "Eleaf iStick P100 Kit 100W 3400mAh",
       "price_aud": 104.99,
       "currency": "AUD",
       "specs": {
@@ -536,7 +536,7 @@
     {
       "id": "eleaf-istick-rim-c-kit-with-melo-5-tank-80w-7825",
       "source_id": "7825",
-      "name": "iStick Rim C Kit With MELO 5 Tank 80W",
+      "name": "Eleaf iStick Rim C Kit With MELO 5 Tank 80W",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -564,7 +564,7 @@
     {
       "id": "eleaf-istick-basic-kit-with-gs-air-2-tank-2300mah-7826",
       "source_id": "7826",
-      "name": "iStick Basic Kit with GS Air 2 Tank 2300mAh",
+      "name": "Eleaf iStick Basic Kit with GS Air 2 Tank 2300mAh",
       "price_aud": 104.99,
       "currency": "AUD",
       "specs": {
@@ -593,7 +593,7 @@
     {
       "id": "eleaf-istick-i40-mod-8748",
       "source_id": "8748",
-      "name": "iStick i40 Mod",
+      "name": "Eleaf iStick i40 Mod",
       "price_aud": 104.99,
       "currency": "AUD",
       "specs": {
@@ -623,7 +623,7 @@
     {
       "id": "eleaf-istick-i40-kit-8749",
       "source_id": "8749",
-      "name": "iStick i40 Kit",
+      "name": "Eleaf iStick i40 Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -652,7 +652,7 @@
     {
       "id": "eleaf-istick-t80-gtl-kit-8750",
       "source_id": "8750",
-      "name": "iStick T80 GTL Kit",
+      "name": "Eleaf iStick T80 GTL Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -682,7 +682,7 @@
     {
       "id": "eleaf-istick-t80-mod-8751",
       "source_id": "8751",
-      "name": "iStick T80 Mod",
+      "name": "Eleaf iStick T80 Mod",
       "price_aud": 104.99,
       "currency": "AUD",
       "specs": {
@@ -709,7 +709,7 @@
     {
       "id": "eleaf-istick-i80-kit-8752",
       "source_id": "8752",
-      "name": "iStick i80 Kit",
+      "name": "Eleaf iStick i80 Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -737,7 +737,7 @@
     {
       "id": "eleaf-istick-power-2-80w-5000mah-box-mod-9084",
       "source_id": "9084",
-      "name": "iStick Power 2 80W 5000mAh Box Mod",
+      "name": "Eleaf iStick Power 2 80W 5000mAh Box Mod",
       "price_aud": 104.99,
       "currency": "AUD",
       "specs": {
@@ -763,7 +763,7 @@
     {
       "id": "eleaf-istick-tc40w-2600mah-battery-9085",
       "source_id": "9085",
-      "name": "Istick TC40W 2600mAh Battery",
+      "name": "Eleaf Istick TC40W 2600mAh Battery",
       "price_aud": 104.99,
       "currency": "AUD",
       "specs": {
@@ -789,7 +789,7 @@
     {
       "id": "eleaf-basal-with-gs-basal-starter-kit-1500mah-7822",
       "source_id": "7822",
-      "name": "BASAL with GS BASAL Starter Kit 1500mAh",
+      "name": "Eleaf BASAL with GS BASAL Starter Kit 1500mAh",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -816,7 +816,7 @@
     {
       "id": "g-pen-roam-battery-3324",
       "source_id": "3324",
-      "name": "Roam Battery",
+      "name": "G Pen Roam Battery",
       "price_aud": 199.99,
       "currency": "AUD",
       "specs": {
@@ -842,7 +842,7 @@
     {
       "id": "vaporesso-gtx-one-kit-4145",
       "source_id": "4145",
-      "name": "GTX One Kit",
+      "name": "Vaporesso GTX One Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -868,7 +868,7 @@
     {
       "id": "vaporesso-gen-s-220w-box-mod-4775",
       "source_id": "4775",
-      "name": "GEN S 220W Box Mod",
+      "name": "Vaporesso GEN S 220W Box Mod",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -891,7 +891,7 @@
     {
       "id": "vaporesso-gen-220w-mod-4776",
       "source_id": "4776",
-      "name": "GEN 220W – MOD",
+      "name": "Vaporesso GEN 220W – MOD",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -914,7 +914,7 @@
     {
       "id": "vaporesso-gen-s-220w-starter-kit-4777",
       "source_id": "4777",
-      "name": "GEN S 220W starter kit",
+      "name": "Vaporesso GEN S 220W starter kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -944,7 +944,7 @@
     {
       "id": "vaporesso-gen-se-mod-5830",
       "source_id": "5830",
-      "name": "GEN SE MOD",
+      "name": "Vaporesso GEN SE MOD",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -970,7 +970,7 @@
     {
       "id": "vaporesso-gen-se-kit-5831",
       "source_id": "5831",
-      "name": "GEN SE KIT",
+      "name": "Vaporesso GEN SE KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -999,7 +999,7 @@
     {
       "id": "vaporesso-gen-max-mod-5832",
       "source_id": "5832",
-      "name": "GEN MAX MOD",
+      "name": "Vaporesso GEN MAX MOD",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1025,7 +1025,7 @@
     {
       "id": "vaporesso-gen-max-vape-kit-5836",
       "source_id": "5836",
-      "name": "GEN MAX Vape Kit",
+      "name": "Vaporesso GEN MAX Vape Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1054,7 +1054,7 @@
     {
       "id": "vaporesso-gen-200-kit-6049",
       "source_id": "6049",
-      "name": "Gen 200 Kit",
+      "name": "Vaporesso Gen 200 Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1081,7 +1081,7 @@
     {
       "id": "vaporesso-gen-80-s-vape-kit-itank-2-version-7028",
       "source_id": "7028",
-      "name": "Gen 80 S Vape Kit iTank 2 Version",
+      "name": "Vaporesso Gen 80 S Vape Kit iTank 2 Version",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1107,7 +1107,7 @@
     {
       "id": "vaporesso-gen-se-itank-t-kit-7411",
       "source_id": "7411",
-      "name": "Gen SE (iTank T) Kit",
+      "name": "Vaporesso Gen SE (iTank T) Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1134,7 +1134,7 @@
     {
       "id": "vaporesso-gen-max-itank-t-kit-7412",
       "source_id": "7412",
-      "name": "Gen Max (iTank T) Kit",
+      "name": "Vaporesso Gen Max (iTank T) Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1164,7 +1164,7 @@
     {
       "id": "vaporesso-gen-se-itank-t-kit-11580",
       "source_id": "11580",
-      "name": "Gen SE (iTank T) Kit",
+      "name": "Vaporesso Gen SE (iTank T) Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1191,7 +1191,7 @@
     {
       "id": "vaporesso-gen-max-itank-t-kit-11581",
       "source_id": "11581",
-      "name": "Gen Max (iTank T) Kit",
+      "name": "Vaporesso Gen Max (iTank T) Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1221,7 +1221,7 @@
     {
       "id": "vaporesso-luxe-ii-mod-220w-8ml-4807",
       "source_id": "4807",
-      "name": "Luxe II Mod | 220W | 8ml",
+      "name": "Vaporesso Luxe II Mod | 220W | 8ml",
       "price_aud": 134.99,
       "currency": "AUD",
       "specs": {
@@ -1247,7 +1247,7 @@
     {
       "id": "vaporesso-luxe-ii-vape-kit-4808",
       "source_id": "4808",
-      "name": "LUXE II Vape Kit",
+      "name": "Vaporesso LUXE II Vape Kit",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -1276,7 +1276,7 @@
     {
       "id": "vaporesso-luxe-2-kit-with-nrg-s-tank-5323",
       "source_id": "5323",
-      "name": "LUXE 2 Kit with NRG-S Tank",
+      "name": "Vaporesso LUXE 2 Kit with NRG-S Tank",
       "price_aud": 134.99,
       "currency": "AUD",
       "specs": {
@@ -1305,7 +1305,7 @@
     {
       "id": "vaporesso-luxe-s-220w-with-skrr-tank-starter-kit-12029",
       "source_id": "12029",
-      "name": "Luxe S 220W with SKRR Tank starter kit",
+      "name": "Vaporesso Luxe S 220W with SKRR Tank starter kit",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -1334,7 +1334,7 @@
     {
       "id": "vaporesso-luxe-ii-mod-12030",
       "source_id": "12030",
-      "name": "Luxe II Mod",
+      "name": "Vaporesso Luxe II Mod",
       "price_aud": 134.99,
       "currency": "AUD",
       "specs": {
@@ -1360,7 +1360,7 @@
     {
       "id": "vaporesso-armour-s-kit-5839",
       "source_id": "5839",
-      "name": "Armour S Kit",
+      "name": "Vaporesso Armour S Kit",
       "price_aud": 134.99,
       "currency": "AUD",
       "specs": {
@@ -1385,7 +1385,7 @@
     {
       "id": "vaporesso-armour-max-kit-itank-t-5840",
       "source_id": "5840",
-      "name": "Armour Max Kit (iTank T)",
+      "name": "Vaporesso Armour Max Kit (iTank T)",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -1415,7 +1415,7 @@
     {
       "id": "innokin-coolfire-z60-zlide-kit-4148",
       "source_id": "4148",
-      "name": "COOLFIRE Z60 ZLIDE KIT",
+      "name": "Innokin COOLFIRE Z60 ZLIDE KIT",
       "price_aud": 124.99,
       "currency": "AUD",
       "specs": {
@@ -1445,7 +1445,7 @@
     {
       "id": "innokin-coolfire-z80-zenith-ii-kit-4149",
       "source_id": "4149",
-      "name": "COOLFIRE Z80 ZENITH II KIT",
+      "name": "Innokin COOLFIRE Z80 ZENITH II KIT",
       "price_aud": 124.99,
       "currency": "AUD",
       "specs": {
@@ -1476,7 +1476,7 @@
     {
       "id": "innokin-coolfire-pzppulse-pod-vape-kit-6047",
       "source_id": "6047",
-      "name": "Coolfire PZPPulse Pod Vape Kit",
+      "name": "Innokin Coolfire PZPPulse Pod Vape Kit",
       "price_aud": 124.99,
       "currency": "AUD",
       "specs": {
@@ -1503,7 +1503,7 @@
     {
       "id": "innokin-gozee-kit-4183",
       "source_id": "4183",
-      "name": "GOZEE KIT",
+      "name": "Innokin GOZEE KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1529,7 +1529,7 @@
     {
       "id": "innokin-kroma-217-z-with-7030-shortfill-e-liquid-vape-pack-4516",
       "source_id": "4516",
-      "name": "Kroma 217 Z with 70/30 Shortfill E-Liquid Vape Pack",
+      "name": "Innokin Kroma 217 Z with 70/30 Shortfill E-Liquid Vape Pack",
       "price_aud": 144.99,
       "currency": "AUD",
       "specs": {
@@ -1558,7 +1558,7 @@
     {
       "id": "innokin-kroma-217-z-force-kit-6823",
       "source_id": "6823",
-      "name": "KROMA 217 Z FORCE KIT",
+      "name": "Innokin KROMA 217 Z FORCE KIT",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -1585,7 +1585,7 @@
     {
       "id": "innokin-adept-zlide-4737",
       "source_id": "4737",
-      "name": "Adept Zlide",
+      "name": "Innokin Adept Zlide",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1618,7 +1618,7 @@
     {
       "id": "innokin-adept-zlide-vape-kit-bundle-5330",
       "source_id": "5330",
-      "name": "Adept Zlide Vape Kit Bundle",
+      "name": "Innokin Adept Zlide Vape Kit Bundle",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1648,7 +1648,7 @@
     {
       "id": "innokin-sensis-kit-6790",
       "source_id": "6790",
-      "name": "SENSIS KIT",
+      "name": "Innokin SENSIS KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1679,7 +1679,7 @@
     {
       "id": "innokin-mvp5-ajax-kit-6791",
       "source_id": "6791",
-      "name": "MVP5 AJAX KIT",
+      "name": "Innokin MVP5 AJAX KIT",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -1708,7 +1708,7 @@
     {
       "id": "innokin-proton-mini-kit-6792",
       "source_id": "6792",
-      "name": "Proton Mini Kit",
+      "name": "Innokin Proton Mini Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1736,7 +1736,7 @@
     {
       "id": "innokin-proton-kit-6856",
       "source_id": "6856",
-      "name": "PROTON KIT",
+      "name": "Innokin PROTON KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1764,7 +1764,7 @@
     {
       "id": "innokin-ez-watt-kit-6859",
       "source_id": "6859",
-      "name": "EZ WATT KIT",
+      "name": "Innokin EZ WATT KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1797,7 +1797,7 @@
     {
       "id": "innokin-endura-t22-pro-kit-6889",
       "source_id": "6889",
-      "name": "ENDURA T22 PRO KIT",
+      "name": "Innokin ENDURA T22 PRO KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1823,7 +1823,7 @@
     {
       "id": "snowwolf-zephyr-kit-200w-4348",
       "source_id": "4348",
-      "name": "Zephyr Kit 200w",
+      "name": "SnowWolf Zephyr Kit 200w",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -1851,7 +1851,7 @@
     {
       "id": "voopoo-drag-e60-pod-vape-kit-4382",
       "source_id": "4382",
-      "name": "Drag E60 Pod Vape Kit",
+      "name": "VooPoo Drag E60 Pod Vape Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1877,7 +1877,7 @@
     {
       "id": "voopoo-drag-x2-with-7030-shortfill-e-liquid-vape-pack-4515",
       "source_id": "4515",
-      "name": "Drag X2 with 70/30 Shortfill E-Liquid Vape Pack",
+      "name": "VooPoo Drag X2 with 70/30 Shortfill E-Liquid Vape Pack",
       "price_aud": 139.99,
       "currency": "AUD",
       "specs": {
@@ -1908,7 +1908,7 @@
     {
       "id": "voopoo-drag-2-177w-tc-box-mod-4582",
       "source_id": "4582",
-      "name": "DRAG 2 177W TC Box Mod",
+      "name": "VooPoo DRAG 2 177W TC Box Mod",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1934,7 +1934,7 @@
     {
       "id": "voopoo-drag-2-refresh-edition-kit-177w-with-pnp-pod-tank-4583",
       "source_id": "4583",
-      "name": "Drag 2 Refresh Edition Kit 177W with PNP Pod Tank",
+      "name": "VooPoo Drag 2 Refresh Edition Kit 177W with PNP Pod Tank",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1964,7 +1964,7 @@
     {
       "id": "voopoo-drag-mini-117w-tc-box-mod-4584",
       "source_id": "4584",
-      "name": "DRAG Mini 117W TC Box Mod",
+      "name": "VooPoo DRAG Mini 117W TC Box Mod",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -1990,7 +1990,7 @@
     {
       "id": "voopoo-drag-mini-117w-tc-starter-kit-4585",
       "source_id": "4585",
-      "name": "DRAG Mini 117W TC Starter Kit",
+      "name": "VooPoo DRAG Mini 117W TC Starter Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2020,7 +2020,7 @@
     {
       "id": "voopoo-drag-5-vape-kit-bundle-5331",
       "source_id": "5331",
-      "name": "Drag 5 Vape Kit Bundle",
+      "name": "VooPoo Drag 5 Vape Kit Bundle",
       "price_aud": 139.99,
       "currency": "AUD",
       "specs": {
@@ -2051,7 +2051,7 @@
     {
       "id": "voopoo-drag-4-kit-5496",
       "source_id": "5496",
-      "name": "DRAG 4 KIT",
+      "name": "VooPoo DRAG 4 KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2081,7 +2081,7 @@
     {
       "id": "voopoo-drag-4-mod-6691",
       "source_id": "6691",
-      "name": "DRAG 4 MOD",
+      "name": "VooPoo DRAG 4 MOD",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2107,7 +2107,7 @@
     {
       "id": "voopoo-drag-4-kit-6692",
       "source_id": "6692",
-      "name": "DRAG 4 KIT",
+      "name": "VooPoo DRAG 4 KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2137,7 +2137,7 @@
     {
       "id": "voopoo-drag-5-mod-6693",
       "source_id": "6693",
-      "name": "DRAG 5 MOD",
+      "name": "VooPoo DRAG 5 MOD",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2163,7 +2163,7 @@
     {
       "id": "voopoo-drag-5-kit-6694",
       "source_id": "6694",
-      "name": "DRAG 5 KIT",
+      "name": "VooPoo DRAG 5 KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2189,7 +2189,7 @@
     {
       "id": "voopoo-drag-m100s-mod-6695",
       "source_id": "6695",
-      "name": "DRAG M100S MOD",
+      "name": "VooPoo DRAG M100S MOD",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2215,7 +2215,7 @@
     {
       "id": "voopoo-drag-m100s-kit-6696",
       "source_id": "6696",
-      "name": "DRAG M100S KIT",
+      "name": "VooPoo DRAG M100S KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2242,7 +2242,7 @@
     {
       "id": "voopoo-drag-5-uforce-x-tank-kit-7414",
       "source_id": "7414",
-      "name": "Drag 5 (Uforce-X Tank) Kit",
+      "name": "VooPoo Drag 5 (Uforce-X Tank) Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2267,7 +2267,7 @@
     {
       "id": "voopoo-drag-5-uforce-x-tank-kit-11583",
       "source_id": "11583",
-      "name": "Drag 5 (Uforce-X Tank) Kit",
+      "name": "VooPoo Drag 5 (Uforce-X Tank) Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2292,7 +2292,7 @@
     {
       "id": "voopoo-drag-4-vape-kit-2-batteries-included-11742",
       "source_id": "11742",
-      "name": "DRAG 4 Vape Kit (2 Batteries Included)",
+      "name": "VooPoo DRAG 4 Vape Kit (2 Batteries Included)",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2321,7 +2321,7 @@
     {
       "id": "voopoo-drag-4-mod-12577",
       "source_id": "12577",
-      "name": "DRAG 4 MOD",
+      "name": "VooPoo DRAG 4 MOD",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2345,7 +2345,7 @@
     {
       "id": "voopoo-drag-5-mod-12578",
       "source_id": "12578",
-      "name": "DRAG 5 MOD",
+      "name": "VooPoo DRAG 5 MOD",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2371,7 +2371,7 @@
     {
       "id": "voopoo-drag-m100s-mod-12579",
       "source_id": "12579",
-      "name": "DRAG M100S MOD",
+      "name": "VooPoo DRAG M100S MOD",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2399,7 +2399,7 @@
     {
       "id": "voopoo-vinci-spark-100-vape-kit-5876",
       "source_id": "5876",
-      "name": "Vinci Spark 100 Vape Kit",
+      "name": "VooPoo Vinci Spark 100 Vape Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2431,7 +2431,7 @@
     {
       "id": "voopoo-argus-mt-mod-6697",
       "source_id": "6697",
-      "name": "ARGUS MT MOD",
+      "name": "VooPoo ARGUS MT MOD",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -2457,7 +2457,7 @@
     {
       "id": "voopoo-argus-mt-kit-6698",
       "source_id": "6698",
-      "name": "ARGUS MT KIT",
+      "name": "VooPoo ARGUS MT KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2484,7 +2484,7 @@
     {
       "id": "voopoo-argus-mt-uforce-l-kit-6723",
       "source_id": "6723",
-      "name": "ARGUS MT UFORCE-L KIT",
+      "name": "VooPoo ARGUS MT UFORCE-L KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2511,7 +2511,7 @@
     {
       "id": "voopoo-argus-gt2-box-mod-6724",
       "source_id": "6724",
-      "name": "ARGUS GT2 BOX MOD",
+      "name": "VooPoo ARGUS GT2 BOX MOD",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -2538,7 +2538,7 @@
     {
       "id": "voopoo-argus-gt2-uforce-l-kit-6725",
       "source_id": "6725",
-      "name": "ARGUS GT2 UFORCE L KIT",
+      "name": "VooPoo ARGUS GT2 UFORCE L KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2572,7 +2572,7 @@
     {
       "id": "voopoo-argus-xt-kit-6785",
       "source_id": "6785",
-      "name": "ARGUS XT KIT",
+      "name": "VooPoo ARGUS XT KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2600,7 +2600,7 @@
     {
       "id": "voopoo-argus-mt-mod-12580",
       "source_id": "12580",
-      "name": "ARGUS MT MOD",
+      "name": "VooPoo ARGUS MT MOD",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -2626,7 +2626,7 @@
     {
       "id": "voopoo-argus-gt2-box-mod-12609",
       "source_id": "12609",
-      "name": "ARGUS GT2 BOX MOD",
+      "name": "VooPoo ARGUS GT2 BOX MOD",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -2653,7 +2653,7 @@
     {
       "id": "uwell-valyrian-iii-3-kit-w-valyrian-iii-tank-4550",
       "source_id": "4550",
-      "name": "Valyrian III (3) Kit w/ Valyrian III Tank",
+      "name": "Uwell Valyrian III (3) Kit w/ Valyrian III Tank",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2679,7 +2679,7 @@
     {
       "id": "uwell-valyrian-3-kit-5534",
       "source_id": "5534",
-      "name": "VALYRIAN 3 KIT",
+      "name": "Uwell VALYRIAN 3 KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2705,7 +2705,7 @@
     {
       "id": "uwell-crown-4-200w-tc-starter-kit-5877",
       "source_id": "5877",
-      "name": "CROWN 4 200W TC STARTER KIT",
+      "name": "Uwell CROWN 4 200W TC STARTER KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2732,7 +2732,7 @@
     {
       "id": "uwell-nunchaku-2-100w-kit-6048",
       "source_id": "6048",
-      "name": "Nunchaku 2 100W Kit",
+      "name": "Uwell Nunchaku 2 100W Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2759,7 +2759,7 @@
     {
       "id": "smok-g-priv-3-mod-230w-4551",
       "source_id": "4551",
-      "name": "G-PRIV 3 MOD 230W",
+      "name": "SMOK G-PRIV 3 MOD 230W",
       "price_aud": 129.99,
       "currency": "AUD",
       "specs": {
@@ -2785,7 +2785,7 @@
     {
       "id": "smok-g-priv-3-230w-starter-kit-4580",
       "source_id": "4580",
-      "name": "G-PRIV 3 230W Starter Kit",
+      "name": "SMOK G-PRIV 3 230W Starter Kit",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -2815,7 +2815,7 @@
     {
       "id": "smok-g-priv-4-230w-kit-7572",
       "source_id": "7572",
-      "name": "G-PRIV 4 230W Kit",
+      "name": "SMOK G-PRIV 4 230W Kit",
       "price_aud": 129.99,
       "currency": "AUD",
       "specs": {
@@ -2840,7 +2840,7 @@
     {
       "id": "smok-scar-18-mod-230w-4809",
       "source_id": "4809",
-      "name": "Scar 18 Mod 230w",
+      "name": "SMOK Scar 18 Mod 230w",
       "price_aud": 124.99,
       "currency": "AUD",
       "specs": {
@@ -2868,7 +2868,7 @@
     {
       "id": "smok-scar-18-kit-230w-tfv9-tank-edition-4810",
       "source_id": "4810",
-      "name": "Scar 18 Kit 230w (TFV9 Tank Edition)",
+      "name": "SMOK Scar 18 Kit 230w (TFV9 Tank Edition)",
       "price_aud": 139.99,
       "currency": "AUD",
       "specs": {
@@ -2898,7 +2898,7 @@
     {
       "id": "smok-mag-18-230w-vape-kit-5495",
       "source_id": "5495",
-      "name": "MAG 18 230W VAPE KIT",
+      "name": "SMOK MAG 18 230W VAPE KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2925,7 +2925,7 @@
     {
       "id": "smok-mag-p3-230w-tfv16-starter-kit-5903",
       "source_id": "5903",
-      "name": "MAG P3 230W & TFV16 STARTER KIT",
+      "name": "SMOK MAG P3 230W & TFV16 STARTER KIT",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -2962,7 +2962,7 @@
     {
       "id": "smok-mag-18-230w-kit-7571",
       "source_id": "7571",
-      "name": "MAG-18 230W Kit",
+      "name": "SMOK MAG-18 230W Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -2988,7 +2988,7 @@
     {
       "id": "smok-mag-solo-kit-7607",
       "source_id": "7607",
-      "name": "Mag Solo Kit",
+      "name": "SMOK Mag Solo Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3019,7 +3019,7 @@
     {
       "id": "smok-s-priv-225w-tc-starter-kit-5878",
       "source_id": "5878",
-      "name": "S-PRIV 225W TC STARTER KIT",
+      "name": "SMOK S-PRIV 225W TC STARTER KIT",
       "price_aud": 139.99,
       "currency": "AUD",
       "specs": {
@@ -3048,7 +3048,7 @@
     {
       "id": "smok-marshal-g320-tc-starter-kit-5879",
       "source_id": "5879",
-      "name": "MARSHAL G320 TC STARTER KIT",
+      "name": "SMOK MARSHAL G320 TC STARTER KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3078,7 +3078,7 @@
     {
       "id": "smok-arcfox-kit-6087",
       "source_id": "6087",
-      "name": "Arcfox Kit",
+      "name": "SMOK Arcfox Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3112,7 +3112,7 @@
     {
       "id": "smok-morph-3-kit-6159",
       "source_id": "6159",
-      "name": "Morph 3 Kit",
+      "name": "SMOK Morph 3 Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3142,7 +3142,7 @@
     {
       "id": "smok-rigel-mini-vape-kit-7089",
       "source_id": "7089",
-      "name": "Rigel Mini Vape Kit",
+      "name": "SMOK Rigel Mini Vape Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3176,7 +3176,7 @@
     {
       "id": "smok-x-priv-plus-vape-kit-7165",
       "source_id": "7165",
-      "name": "X-Priv Plus Vape Kit",
+      "name": "SMOK X-Priv Plus Vape Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3204,7 +3204,7 @@
     {
       "id": "smok-x-priv-plus-225w-starter-kit-7166",
       "source_id": "7166",
-      "name": "X-PRIV PLUS 225W STARTER KIT",
+      "name": "SMOK X-PRIV PLUS 225W STARTER KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3231,7 +3231,7 @@
     {
       "id": "smok-r-kiss-2-200w-kit-7537",
       "source_id": "7537",
-      "name": "R-KISS 2 200W Kit",
+      "name": "SMOK R-KISS 2 200W Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3255,7 +3255,7 @@
     {
       "id": "smok-rpm-85-pod-mod-kit-7573",
       "source_id": "7573",
-      "name": "RPM 85 Pod Mod Kit",
+      "name": "SMOK RPM 85 Pod Mod Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3290,7 +3290,7 @@
     {
       "id": "aspire-puxos-mod-4671",
       "source_id": "4671",
-      "name": "PUXOS MOD",
+      "name": "Aspire PUXOS MOD",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -3317,7 +3317,7 @@
     {
       "id": "aspire-puxos-mod-10662",
       "source_id": "10662",
-      "name": "PUXOS MOD",
+      "name": "Aspire PUXOS MOD",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -3344,7 +3344,7 @@
     {
       "id": "aspire-puxos-80100w-tc-kit-with-cleito-pro-10663",
       "source_id": "10663",
-      "name": "Puxos 80/100W TC Kit with Cleito Pro",
+      "name": "Aspire Puxos 80/100W TC Kit with Cleito Pro",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3375,7 +3375,7 @@
     {
       "id": "aspire-feedlink-mod-4672",
       "source_id": "4672",
-      "name": "Feedlink Mod",
+      "name": "Aspire Feedlink Mod",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -3400,7 +3400,7 @@
     {
       "id": "aspire-feedlink-mod-10664",
       "source_id": "10664",
-      "name": "FEEDLINK MOD",
+      "name": "Aspire FEEDLINK MOD",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -3426,7 +3426,7 @@
     {
       "id": "aspire-feedlink-revvo-squonk-kit-10665",
       "source_id": "10665",
-      "name": "Feedlink Revvo Squonk Kit",
+      "name": "Aspire Feedlink Revvo Squonk Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3451,7 +3451,7 @@
     {
       "id": "aspire-feedlink-mod-12021",
       "source_id": "12021",
-      "name": "Feedlink Mod",
+      "name": "Aspire Feedlink Mod",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -3476,7 +3476,7 @@
     {
       "id": "aspire-rover-plus-mod-6573",
       "source_id": "6573",
-      "name": "ROVER PLUS MOD",
+      "name": "Aspire ROVER PLUS MOD",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -3509,7 +3509,7 @@
     {
       "id": "aspire-rover-plus-mod-11196",
       "source_id": "11196",
-      "name": "ROVER PLUS MOD",
+      "name": "Aspire ROVER PLUS MOD",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -3535,7 +3535,7 @@
     {
       "id": "aspire-rover-plus-kit-11197",
       "source_id": "11197",
-      "name": "ROVER PLUS KIT",
+      "name": "Aspire ROVER PLUS KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3566,7 +3566,7 @@
     {
       "id": "aspire-rover-plus-mod-12558",
       "source_id": "12558",
-      "name": "ROVER PLUS MOD",
+      "name": "Aspire ROVER PLUS MOD",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -3592,7 +3592,7 @@
     {
       "id": "aspire-dynamo-mod-10660",
       "source_id": "10660",
-      "name": "DYNAMO MOD",
+      "name": "Aspire DYNAMO MOD",
       "price_aud": 163.99,
       "currency": "AUD",
       "specs": {
@@ -3617,7 +3617,7 @@
     {
       "id": "aspire-dynamo-220w-starter-kit-10661",
       "source_id": "10661",
-      "name": "Dynamo 220W Starter Kit",
+      "name": "Aspire Dynamo 220W Starter Kit",
       "price_aud": 129.99,
       "currency": "AUD",
       "specs": {
@@ -3644,7 +3644,7 @@
     {
       "id": "aspire-zelos-3-vape-kit-bundle-10956",
       "source_id": "10956",
-      "name": "Zelos 3 Vape Kit Bundle",
+      "name": "Aspire Zelos 3 Vape Kit Bundle",
       "price_aud": 154.99,
       "currency": "AUD",
       "specs": {
@@ -3674,7 +3674,7 @@
     {
       "id": "aspire-huracan-ex-kit-11009",
       "source_id": "11009",
-      "name": "HURACAN EX KIT",
+      "name": "Aspire HURACAN EX KIT",
       "price_aud": 154.99,
       "currency": "AUD",
       "specs": {
@@ -3702,7 +3702,7 @@
     {
       "id": "aspire-huracan-lx-kit-11010",
       "source_id": "11010",
-      "name": "HURACAN LX KIT",
+      "name": "Aspire HURACAN LX KIT",
       "price_aud": 154.99,
       "currency": "AUD",
       "specs": {
@@ -3729,7 +3729,7 @@
     {
       "id": "aspire-nautilus-gt-kit-11158",
       "source_id": "11158",
-      "name": "Nautilus GT Kit",
+      "name": "Aspire Nautilus GT Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3764,7 +3764,7 @@
     {
       "id": "aspire-revolto-kit-11159",
       "source_id": "11159",
-      "name": "Revolto Kit",
+      "name": "Aspire Revolto Kit",
       "price_aud": 170.99,
       "currency": "AUD",
       "specs": {
@@ -3786,7 +3786,7 @@
     {
       "id": "tecc-arc-slim-e-cig-kit-4767",
       "source_id": "4767",
-      "name": "arc Slim E-cig Kit",
+      "name": "TECC arc Slim E-cig Kit",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -3821,7 +3821,7 @@
     {
       "id": "tecc-arc-5-e-cig-kit-4768",
       "source_id": "4768",
-      "name": "arc 5 E-cig Kit",
+      "name": "TECC arc 5 E-cig Kit",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -3853,7 +3853,7 @@
     {
       "id": "tecc-arc-gti-e-cig-kit-4769",
       "source_id": "4769",
-      "name": "arc GTi E-cig Kit",
+      "name": "TECC arc GTi E-cig Kit",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -3891,7 +3891,7 @@
     {
       "id": "ijoy-shogun-univ-180w-kit-5326",
       "source_id": "5326",
-      "name": "Shogun Univ 180W Kit",
+      "name": "iJoy Shogun Univ 180W Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3920,7 +3920,7 @@
     {
       "id": "ijoy-shogun-jr-126w-vape-kit-5493",
       "source_id": "5493",
-      "name": "SHOGUN JR 126W VAPE KIT",
+      "name": "iJoy SHOGUN JR 126W VAPE KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3943,7 +3943,7 @@
     {
       "id": "ijoy-capo-100-starter-kit-5453",
       "source_id": "5453",
-      "name": "CAPO 100 STARTER KIT",
+      "name": "iJoy CAPO 100 STARTER KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3969,7 +3969,7 @@
     {
       "id": "ijoy-capo-squonk-vape-kit-5454",
       "source_id": "5454",
-      "name": "CAPO SQUONK VAPE KIT",
+      "name": "iJoy CAPO SQUONK VAPE KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3997,7 +3997,7 @@
     {
       "id": "provape-plato-aio-kit-5367",
       "source_id": "5367",
-      "name": "PLATO AIO KIT",
+      "name": "ProVape PLATO AIO KIT",
       "price_aud": 169.99,
       "currency": "AUD",
       "specs": {
@@ -4027,7 +4027,7 @@
     {
       "id": "provape-k4-kit-5368",
       "source_id": "5368",
-      "name": "K4 Kit",
+      "name": "ProVape K4 Kit",
       "price_aud": 169.99,
       "currency": "AUD",
       "specs": {
@@ -4057,7 +4057,7 @@
     {
       "id": "provape-k3-quick-start-kit-5369",
       "source_id": "5369",
-      "name": "K3 Quick Start Kit",
+      "name": "ProVape K3 Quick Start Kit",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -4086,7 +4086,7 @@
     {
       "id": "provape-k2-quick-start-kit-5370",
       "source_id": "5370",
-      "name": "K2 Quick Start Kit",
+      "name": "ProVape K2 Quick Start Kit",
       "price_aud": 189.99,
       "currency": "AUD",
       "specs": {
@@ -4115,7 +4115,7 @@
     {
       "id": "geekvape-aegis-solo-3-s100-box-mod-5906",
       "source_id": "5906",
-      "name": "Aegis Solo 3 (S100) Box Mod",
+      "name": "GeekVape Aegis Solo 3 (S100) Box Mod",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -4141,7 +4141,7 @@
     {
       "id": "geekvape-aegis-solo-3-box-mod-external-battery-6606",
       "source_id": "6606",
-      "name": "Aegis Solo 3 Box Mod (External Battery)",
+      "name": "GeekVape Aegis Solo 3 Box Mod (External Battery)",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -4171,7 +4171,7 @@
     {
       "id": "geekvape-aegis-solo-3-box-mod-built-in-battery-6607",
       "source_id": "6607",
-      "name": "Aegis Solo 3 Box Mod (Built In Battery)",
+      "name": "GeekVape Aegis Solo 3 Box Mod (Built In Battery)",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -4198,7 +4198,7 @@
     {
       "id": "geekvape-aegis-solo-3-discovery-pack-7784",
       "source_id": "7784",
-      "name": "Aegis Solo 3 Discovery Pack",
+      "name": "GeekVape Aegis Solo 3 Discovery Pack",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -4233,7 +4233,7 @@
     {
       "id": "geekvape-aegis-solo-3-s100-box-mod-8591",
       "source_id": "8591",
-      "name": "Aegis Solo 3 (S100) Box Mod",
+      "name": "GeekVape Aegis Solo 3 (S100) Box Mod",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -4267,7 +4267,7 @@
     {
       "id": "geekvape-aegis-solo-3-s100-vape-kit-8592",
       "source_id": "8592",
-      "name": "Aegis Solo 3 (S100) Vape Kit",
+      "name": "GeekVape Aegis Solo 3 (S100) Vape Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -4295,7 +4295,7 @@
     {
       "id": "geekvape-aegis-solo-3-vape-kit-external-battery-9174",
       "source_id": "9174",
-      "name": "Aegis Solo 3 Vape Kit (External Battery)",
+      "name": "GeekVape Aegis Solo 3 Vape Kit (External Battery)",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -4322,7 +4322,7 @@
     {
       "id": "geekvape-aegis-solo-3-box-mod-9175",
       "source_id": "9175",
-      "name": "Aegis Solo 3 Box Mod",
+      "name": "GeekVape Aegis Solo 3 Box Mod",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -4350,7 +4350,7 @@
     {
       "id": "geekvape-aegis-solo-3-box-mod-built-in-battery-9176",
       "source_id": "9176",
-      "name": "Aegis Solo 3 Box Mod (Built In Battery)",
+      "name": "GeekVape Aegis Solo 3 Box Mod (Built In Battery)",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -4377,7 +4377,7 @@
     {
       "id": "geekvape-aegis-solo-3-box-mod-external-battery-12565",
       "source_id": "12565",
-      "name": "Aegis Solo 3 Box Mod (External Battery)",
+      "name": "GeekVape Aegis Solo 3 Box Mod (External Battery)",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -4404,7 +4404,7 @@
     {
       "id": "geekvape-aegis-solo-3-box-mod-12566",
       "source_id": "12566",
-      "name": "Aegis Solo 3 Box Mod",
+      "name": "GeekVape Aegis Solo 3 Box Mod",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -4431,7 +4431,7 @@
     {
       "id": "geekvape-z200-zeus-200-mod-7027",
       "source_id": "7027",
-      "name": "Z200 (Zeus 200) MOD",
+      "name": "GeekVape Z200 (Zeus 200) MOD",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -4456,7 +4456,7 @@
     {
       "id": "geekvape-z200-zeus-200-kit-9614",
       "source_id": "9614",
-      "name": "Z200 (Zeus 200) Kit",
+      "name": "GeekVape Z200 (Zeus 200) Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -4486,7 +4486,7 @@
     {
       "id": "geekvape-z200-zeus-200-mod-9615",
       "source_id": "9615",
-      "name": "Z200 (ZEUS 200) MOD",
+      "name": "GeekVape Z200 (ZEUS 200) MOD",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -4510,7 +4510,7 @@
     {
       "id": "geekvape-digiflavor-z1-sbs-kit-8320",
       "source_id": "8320",
-      "name": "DIGIFLAVOR Z1 SBS KIT",
+      "name": "GeekVape DIGIFLAVOR Z1 SBS KIT",
       "price_aud": 139.99,
       "currency": "AUD",
       "specs": {
@@ -4538,7 +4538,7 @@
     {
       "id": "geekvape-z100c-dna-100w-pod-mod-kit-8553",
       "source_id": "8553",
-      "name": "Z100C DNA 100W POD MOD KIT",
+      "name": "GeekVape Z100C DNA 100W POD MOD KIT",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -4564,7 +4564,7 @@
     {
       "id": "geekvape-l200-aegis-legend-2-classic-200w-mod-8558",
       "source_id": "8558",
-      "name": "L200 (Aegis Legend 2) Classic 200W Mod",
+      "name": "GeekVape L200 (Aegis Legend 2) Classic 200W Mod",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -4590,7 +4590,7 @@
     {
       "id": "geekvape-l200-aegis-legend-2-200w-starter-kit-8559",
       "source_id": "8559",
-      "name": "L200 (Aegis Legend 2) 200W Starter Kit",
+      "name": "GeekVape L200 (Aegis Legend 2) 200W Starter Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -4619,7 +4619,7 @@
     {
       "id": "geekvape-aegis-legend-3-carrera-edition-8639",
       "source_id": "8639",
-      "name": "Aegis Legend 3 Carrera Edition",
+      "name": "GeekVape Aegis Legend 3 Carrera Edition",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -4650,7 +4650,7 @@
     {
       "id": "geekvape-aegis-l200-vape-kit-bundle-8674",
       "source_id": "8674",
-      "name": "Aegis L200 Vape Kit Bundle",
+      "name": "GeekVape Aegis L200 Vape Kit Bundle",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -4678,7 +4678,7 @@
     {
       "id": "geekvape-aegis-legend-2-kit-e-liquid-bundle-8675",
       "source_id": "8675",
-      "name": "Aegis Legend 2 Kit & E-Liquid Bundle",
+      "name": "GeekVape Aegis Legend 2 Kit & E-Liquid Bundle",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -4711,7 +4711,7 @@
     {
       "id": "geekvape-l200-aegis-legend-2-kit-10465",
       "source_id": "10465",
-      "name": "L200 Aegis Legend 2 Kit",
+      "name": "GeekVape L200 Aegis Legend 2 Kit",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -4741,7 +4741,7 @@
     {
       "id": "geekvape-max100-aegis-max-2-kit-8753",
       "source_id": "8753",
-      "name": "Max100 (Aegis Max 2 Kit)",
+      "name": "GeekVape Max100 (Aegis Max 2 Kit)",
       "price_aud": 124.99,
       "currency": "AUD",
       "specs": {
@@ -4771,7 +4771,7 @@
     {
       "id": "geekvape-max100-aegis-max-2-100w-kit-10435",
       "source_id": "10435",
-      "name": "MAX100 (Aegis Max 2) 100W Kit",
+      "name": "GeekVape MAX100 (Aegis Max 2) 100W Kit",
       "price_aud": 124.99,
       "currency": "AUD",
       "specs": {
@@ -4802,7 +4802,7 @@
     {
       "id": "geekvape-m100-aegis-mini-2-kit-8754",
       "source_id": "8754",
-      "name": "M100 (Aegis Mini 2 Kit)",
+      "name": "GeekVape M100 (Aegis Mini 2 Kit)",
       "price_aud": 114.99,
       "currency": "AUD",
       "specs": {
@@ -4832,7 +4832,7 @@
     {
       "id": "geekvape-m100-aegis-mini-2-kit-10427",
       "source_id": "10427",
-      "name": "M100 Aegis Mini 2 Kit",
+      "name": "GeekVape M100 Aegis Mini 2 Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -4863,7 +4863,7 @@
     {
       "id": "geekvape-l200-classic-mod-9172",
       "source_id": "9172",
-      "name": "L200 Classic Mod",
+      "name": "GeekVape L200 Classic Mod",
       "price_aud": 139.99,
       "currency": "AUD",
       "specs": {
@@ -4889,7 +4889,7 @@
     {
       "id": "geekvape-l200-classic-vape-kit-9177",
       "source_id": "9177",
-      "name": "L200 Classic Vape Kit",
+      "name": "GeekVape L200 Classic Vape Kit",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -4916,7 +4916,7 @@
     {
       "id": "geekvape-l200-classic-new-legend-2-kit-9656",
       "source_id": "9656",
-      "name": "L200 Classic (New Legend 2) Kit",
+      "name": "GeekVape L200 Classic (New Legend 2) Kit",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -4955,7 +4955,7 @@
     {
       "id": "geekvape-l200-classic-mod-9684",
       "source_id": "9684",
-      "name": "L200 CLASSIC MOD",
+      "name": "GeekVape L200 CLASSIC MOD",
       "price_aud": 139.99,
       "currency": "AUD",
       "specs": {
@@ -4978,7 +4978,7 @@
     {
       "id": "geekvape-l200-classic-200w-kit-10424",
       "source_id": "10424",
-      "name": "L200 Classic 200W Kit",
+      "name": "GeekVape L200 Classic 200W Kit",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -5007,7 +5007,7 @@
     {
       "id": "geekvape-l200-classic-mod-12561",
       "source_id": "12561",
-      "name": "L200 Classic Mod",
+      "name": "GeekVape L200 Classic Mod",
       "price_aud": 139.99,
       "currency": "AUD",
       "specs": {
@@ -5033,7 +5033,7 @@
     {
       "id": "geekvape-aegis-t200-mod-9618",
       "source_id": "9618",
-      "name": "AEGIS T200 MOD",
+      "name": "GeekVape AEGIS T200 MOD",
       "price_aud": 129.99,
       "currency": "AUD",
       "specs": {
@@ -5058,7 +5058,7 @@
     {
       "id": "geekvape-aegis-t200-kit-9685",
       "source_id": "9685",
-      "name": "AEGIS T200 KIT",
+      "name": "GeekVape AEGIS T200 KIT",
       "price_aud": 139.99,
       "currency": "AUD",
       "specs": {
@@ -5088,7 +5088,7 @@
     {
       "id": "geekvape-obelisk-120-fc-z-120w-kit-10425",
       "source_id": "10425",
-      "name": "Obelisk 120 FC Z 120W Kit",
+      "name": "GeekVape Obelisk 120 FC Z 120W Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -5119,7 +5119,7 @@
     {
       "id": "geekvape-obelisk-200-200w-kit-10426",
       "source_id": "10426",
-      "name": "Obelisk 200 200W Kit",
+      "name": "GeekVape Obelisk 200 200W Kit",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -5152,7 +5152,7 @@
     {
       "id": "steam-crave-meson-aio-v2-boro-box-mod-kit-5936",
       "source_id": "5936",
-      "name": "Meson AIO V2 Boro Box Mod Kit",
+      "name": "Steam Crave Meson AIO V2 Boro Box Mod Kit",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -5186,7 +5186,7 @@
     {
       "id": "steam-crave-hadron-220-box-mod-5977",
       "source_id": "5977",
-      "name": "Hadron 220 Box Mod",
+      "name": "Steam Crave Hadron 220 Box Mod",
       "price_aud": 169.99,
       "currency": "AUD",
       "specs": {
@@ -5213,7 +5213,7 @@
     {
       "id": "steam-crave-hadron-mini-dna100c-combo-kit-5980",
       "source_id": "5980",
-      "name": "Hadron Mini DNA100C Combo Kit",
+      "name": "Steam Crave Hadron Mini DNA100C Combo Kit",
       "price_aud": 269.99,
       "currency": "AUD",
       "specs": {
@@ -5244,7 +5244,7 @@
     {
       "id": "steam-crave-titan-v2-box-mod-5978",
       "source_id": "5978",
-      "name": "Titan V2 Box Mod",
+      "name": "Steam Crave Titan V2 Box Mod",
       "price_aud": 169.99,
       "currency": "AUD",
       "specs": {
@@ -5273,7 +5273,7 @@
     {
       "id": "steam-crave-titan-v2-combo-vape-kit-5979",
       "source_id": "5979",
-      "name": "Titan V2 Combo Vape Kit",
+      "name": "Steam Crave Titan V2 Combo Vape Kit",
       "price_aud": 199.99,
       "currency": "AUD",
       "specs": {
@@ -5306,7 +5306,7 @@
     {
       "id": "dotmod-x-sturdy-dotaio-v2-kit-nero-edition-6008",
       "source_id": "6008",
-      "name": "X Sturdy DotAIO V2 Kit Nero Edition",
+      "name": "DotMod X Sturdy DotAIO V2 Kit Nero Edition",
       "price_aud": 269.99,
       "currency": "AUD",
       "specs": {
@@ -5334,7 +5334,7 @@
     {
       "id": "cthulhu-dna80c-v2-aio-6009",
       "source_id": "6009",
-      "name": "DNA80c V2 AIO",
+      "name": "Cthulhu DNA80c V2 AIO",
       "price_aud": 268.99,
       "currency": "AUD",
       "specs": {
@@ -5362,7 +5362,7 @@
     {
       "id": "vaperz-cloud-x-gerobak-san-aio-dna80c-boro-kit-6011",
       "source_id": "6011",
-      "name": "X Gerobak SAN AIO DNA80C BORO Kit",
+      "name": "Vaperz Cloud X Gerobak SAN AIO DNA80C BORO Kit",
       "price_aud": 300.99,
       "currency": "AUD",
       "specs": {
@@ -5388,7 +5388,7 @@
     {
       "id": "suicide-mods-stubby-aio-x-ray-se-kit-6012",
       "source_id": "6012",
-      "name": "Stubby AIO X-Ray SE Kit",
+      "name": "Suicide Mods Stubby AIO X-Ray SE Kit",
       "price_aud": 249.99,
       "currency": "AUD",
       "specs": {
@@ -5417,7 +5417,7 @@
     {
       "id": "lve-boson-dna80c-boro-aio-6045",
       "source_id": "6045",
-      "name": "Boson DNA80C Boro AIO",
+      "name": "LVE Boson DNA80C Boro AIO",
       "price_aud": 368.99,
       "currency": "AUD",
       "specs": {
@@ -5444,7 +5444,7 @@
     {
       "id": "lost-vape-centaurus-n200-box-mod-6451",
       "source_id": "6451",
-      "name": "Centaurus N200 Box Mod",
+      "name": "Lost Vape Centaurus N200 Box Mod",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -5471,7 +5471,7 @@
     {
       "id": "lost-vape-centaurus-n200-vape-kit-6452",
       "source_id": "6452",
-      "name": "Centaurus N200 Vape Kit",
+      "name": "Lost Vape Centaurus N200 Vape Kit",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -5497,7 +5497,7 @@
     {
       "id": "lost-vape-centaurus-n100-box-mod-6453",
       "source_id": "6453",
-      "name": "Centaurus N100 Box Mod",
+      "name": "Lost Vape Centaurus N100 Box Mod",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -5524,7 +5524,7 @@
     {
       "id": "lost-vape-centaurus-n100-vape-kit-6454",
       "source_id": "6454",
-      "name": "Centaurus N100 Vape Kit",
+      "name": "Lost Vape Centaurus N100 Vape Kit",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -5553,7 +5553,7 @@
     {
       "id": "freemax-maxus-3-200w-kit-8319",
       "source_id": "8319",
-      "name": "MAXUS 3 200W KIT",
+      "name": "FreeMax MAXUS 3 200W KIT",
       "price_aud": 139.99,
       "currency": "AUD",
       "specs": {

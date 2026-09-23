@@ -213,7 +213,7 @@
     {
       "id": "aspire-pixo-neo-pod-compact-1300mah-avec-airflow-réglable-2026",
       "source_id": "2026",
-      "name": "Pixo Neo – Pod Compact 1300mAh avec Airflow Réglable",
+      "name": "Aspire Pixo Neo – Pod Compact 1300mAh avec Airflow Réglable",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -241,7 +241,7 @@
     {
       "id": "aspire-favostix-pod-kit-10505",
       "source_id": "10505",
-      "name": "Favostix Pod Kit",
+      "name": "Aspire Favostix Pod Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -269,7 +269,7 @@
     {
       "id": "aspire-favostix-2-kit-10668",
       "source_id": "10668",
-      "name": "Favostix 2 Kit",
+      "name": "Aspire Favostix 2 Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -296,7 +296,7 @@
     {
       "id": "aspire-veynom-air-pod-vape-kit-10657",
       "source_id": "10657",
-      "name": "Veynom Air Pod Vape Kit",
+      "name": "Aspire Veynom Air Pod Vape Kit",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -324,7 +324,7 @@
     {
       "id": "aspire-flexus-aio-kit-10667",
       "source_id": "10667",
-      "name": "FLEXUS AIO KIT",
+      "name": "Aspire FLEXUS AIO KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -353,7 +353,7 @@
     {
       "id": "aspire-flexus-blok-11292",
       "source_id": "11292",
-      "name": "FLEXUS BLOK",
+      "name": "Aspire FLEXUS BLOK",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -381,7 +381,7 @@
     {
       "id": "aspire-flexus-pro-kit-11293",
       "source_id": "11293",
-      "name": "FLEXUS PRO KIT",
+      "name": "Aspire FLEXUS PRO KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -415,7 +415,7 @@
     {
       "id": "aspire-mulus-kit-10670",
       "source_id": "10670",
-      "name": "Mulus Kit",
+      "name": "Aspire Mulus Kit",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -447,7 +447,7 @@
     {
       "id": "aspire-gotek-nano-kit-10671",
       "source_id": "10671",
-      "name": "GOTEK NANO KIT",
+      "name": "Aspire GOTEK NANO KIT",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -473,7 +473,7 @@
     {
       "id": "aspire-gotek-pro-pod-vape-kit-10811",
       "source_id": "10811",
-      "name": "Gotek Pro Pod Vape Kit",
+      "name": "Aspire Gotek Pro Pod Vape Kit",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {
@@ -501,7 +501,7 @@
     {
       "id": "aspire-gotek-x-bundle-11195",
       "source_id": "11195",
-      "name": "Gotek X Bundle",
+      "name": "Aspire Gotek X Bundle",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {
@@ -529,7 +529,7 @@
     {
       "id": "aspire-cyber-x-kit-10672",
       "source_id": "10672",
-      "name": "CYBER X KIT",
+      "name": "Aspire CYBER X KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -561,7 +561,7 @@
     {
       "id": "aspire-minican-3-pro-pod-kit-3ml-10887",
       "source_id": "10887",
-      "name": "Minican 3 Pro Pod Kit 3ml",
+      "name": "Aspire Minican 3 Pro Pod Kit 3ml",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -594,7 +594,7 @@
     {
       "id": "aspire-vilter-pro-kit-11329",
       "source_id": "11329",
-      "name": "VILTER PRO KIT",
+      "name": "Aspire VILTER PRO KIT",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -624,7 +624,7 @@
     {
       "id": "aspire-vilter-kit-11330",
       "source_id": "11330",
-      "name": "VILTER KIT",
+      "name": "Aspire VILTER KIT",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -656,7 +656,7 @@
     {
       "id": "aspire-vilter-kit-12615",
       "source_id": "12615",
-      "name": "Vilter Kit",
+      "name": "Aspire Vilter Kit",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -682,7 +682,7 @@
     {
       "id": "aspire-pockex-kit-11334",
       "source_id": "11334",
-      "name": "Pockex Kit",
+      "name": "Aspire Pockex Kit",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -713,7 +713,7 @@
     {
       "id": "queens-vapor-blackberry-dragon-fruit-elite-pod-2428",
       "source_id": "2428",
-      "name": "Blackberry Dragon Fruit - Elite - POD",
+      "name": "Vigor Storm Blackberry Dragon Fruit - Elite - POD",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -734,7 +734,7 @@
     {
       "id": "queens-vapor-chupa-chups-strawberry-elite-pod-2429",
       "source_id": "2429",
-      "name": "Chupa Chups Strawberry – Elite – POD",
+      "name": "Vigor Storm Chupa Chups Strawberry – Elite – POD",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -755,7 +755,7 @@
     {
       "id": "queens-vapor-classic-tobacco-elite-pod-2430",
       "source_id": "2430",
-      "name": "Classic Tobacco - Elite - POD",
+      "name": "Vigor Storm Classic Tobacco - Elite - POD",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -776,7 +776,7 @@
     {
       "id": "queens-vapor-cool-mint-elite-pod-2431",
       "source_id": "2431",
-      "name": "Cool Mint - Elite - POD",
+      "name": "Vigor Storm Cool Mint - Elite - POD",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -797,7 +797,7 @@
     {
       "id": "queens-vapor-skittles-elite-pod-2432",
       "source_id": "2432",
-      "name": "Skittles - Elite - POD",
+      "name": "Vigor Storm Skittles - Elite - POD",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -818,7 +818,7 @@
     {
       "id": "vigor-storm-blackberry-pomegranate-cherry-elite-pod-13799",
       "source_id": "13799",
-      "name": "Blackberry Pomegranate Cherry – Elite – POD",
+      "name": "Vigor Storm Blackberry Pomegranate Cherry – Elite – POD",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -839,7 +839,7 @@
     {
       "id": "vigor-storm-mango-banana-elite-pod-13833",
       "source_id": "13833",
-      "name": "Mango Banana – Elite – POD",
+      "name": "Vigor Storm Mango Banana – Elite – POD",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -860,7 +860,7 @@
     {
       "id": "vigor-storm-strawberry-kiwi-elite-pod-13837",
       "source_id": "13837",
-      "name": "Strawberry Kiwi - Elite - POD",
+      "name": "Vigor Storm Strawberry Kiwi - Elite - POD",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -881,7 +881,7 @@
     {
       "id": "vigor-storm-strawberry-raspberry-elite-pod-13838",
       "source_id": "13838",
-      "name": "Strawberry Raspberry – Elite – POD",
+      "name": "Vigor Storm Strawberry Raspberry – Elite – POD",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -902,7 +902,7 @@
     {
       "id": "voopoo-vinci-e120-pod-vape-kit-4146",
       "source_id": "4146",
-      "name": "Vinci E120 Pod Vape Kit",
+      "name": "VooPoo Vinci E120 Pod Vape Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -929,7 +929,7 @@
     {
       "id": "voopoo-vinci-3-pod-kit-6655",
       "source_id": "6655",
-      "name": "VINCI 3 POD KIT",
+      "name": "VooPoo VINCI 3 POD KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -956,7 +956,7 @@
     {
       "id": "voopoo-argus-p2-open-pod-kit-4188",
       "source_id": "4188",
-      "name": "Argus P2 Open Pod Kit",
+      "name": "VooPoo Argus P2 Open Pod Kit",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -985,7 +985,7 @@
     {
       "id": "voopoo-argus-e40-pod-vape-kit-4773",
       "source_id": "4773",
-      "name": "Argus E40 Pod Vape Kit",
+      "name": "VooPoo Argus E40 Pod Vape Kit",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -1014,7 +1014,7 @@
     {
       "id": "voopoo-argus-pro-2-pod-kit-5334",
       "source_id": "5334",
-      "name": "Argus Pro 2 Pod Kit",
+      "name": "VooPoo Argus Pro 2 Pod Kit",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -1044,7 +1044,7 @@
     {
       "id": "voopoo-argus-e40-kit-6726",
       "source_id": "6726",
-      "name": "ARGUS E40 KIT",
+      "name": "VooPoo ARGUS E40 KIT",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -1075,7 +1075,7 @@
     {
       "id": "voopoo-argus-a-kit-6751",
       "source_id": "6751",
-      "name": "ARGUS A KIT",
+      "name": "VooPoo ARGUS A KIT",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -1111,7 +1111,7 @@
     {
       "id": "voopoo-argus-pro-kit-6784",
       "source_id": "6784",
-      "name": "ARGUS PRO KIT",
+      "name": "VooPoo ARGUS PRO KIT",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -1143,7 +1143,7 @@
     {
       "id": "voopoo-doric-galaxy-vape-kit-4770",
       "source_id": "4770",
-      "name": "Doric Galaxy Vape Kit",
+      "name": "VooPoo Doric Galaxy Vape Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1173,7 +1173,7 @@
     {
       "id": "voopoo-doric-q-kit-6656",
       "source_id": "6656",
-      "name": "DORIC Q KIT",
+      "name": "VooPoo DORIC Q KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1200,7 +1200,7 @@
     {
       "id": "voopoo-doric-e-kit-6657",
       "source_id": "6657",
-      "name": "DORIC E KIT",
+      "name": "VooPoo DORIC E KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1227,7 +1227,7 @@
     {
       "id": "voopoo-doric-60-kit-6658",
       "source_id": "6658",
-      "name": "DORIC 60 KIT",
+      "name": "VooPoo DORIC 60 KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1255,7 +1255,7 @@
     {
       "id": "voopoo-doric-galaxy-pen-kit-6689",
       "source_id": "6689",
-      "name": "DORIC GALAXY PEN KIT",
+      "name": "VooPoo DORIC GALAXY PEN KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1283,7 +1283,7 @@
     {
       "id": "voopoo-doric-galaxy-kit-6690",
       "source_id": "6690",
-      "name": "DORIC GALAXY KIT",
+      "name": "VooPoo DORIC GALAXY KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1317,7 +1317,7 @@
     {
       "id": "voopoo-doric-galaxy-pen-kit-12576",
       "source_id": "12576",
-      "name": "DORIC GALAXY PEN KIT",
+      "name": "VooPoo DORIC GALAXY PEN KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1345,7 +1345,7 @@
     {
       "id": "lost-vape-centaurus-b80-aio-kit-4295",
       "source_id": "4295",
-      "name": "Centaurus B80 AIO Kit",
+      "name": "Lost Vape Centaurus B80 AIO Kit",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -1373,7 +1373,7 @@
     {
       "id": "lost-vape-centaurus-e40-max-pod-vape-kit-6450",
       "source_id": "6450",
-      "name": "Centaurus E40 Max Pod Vape Kit",
+      "name": "Lost Vape Centaurus E40 Max Pod Vape Kit",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {
@@ -1403,7 +1403,7 @@
     {
       "id": "lost-vape-thelema-elite-40-pod-4296",
       "source_id": "4296",
-      "name": "Thelema Elite 40 Pod",
+      "name": "Lost Vape Thelema Elite 40 Pod",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1431,7 +1431,7 @@
     {
       "id": "lost-vape-thelema-nexus-pod-kit-twill-black-4301",
       "source_id": "4301",
-      "name": "THELEMA NEXUS POD KIT TWILL BLACK",
+      "name": "Lost Vape THELEMA NEXUS POD KIT TWILL BLACK",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1459,7 +1459,7 @@
     {
       "id": "lost-vape-ursa-mini-30w-pod-kit-phantom-purple-4298",
       "source_id": "4298",
-      "name": "URSA MINI 30W POD KIT PHANTOM PURPLE",
+      "name": "Lost Vape URSA MINI 30W POD KIT PHANTOM PURPLE",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1491,7 +1491,7 @@
     {
       "id": "lost-vape-ursa-nano-pro-2-pod-gold-mecha-4299",
       "source_id": "4299",
-      "name": "URSA NANO PRO 2 POD GOLD MECHA",
+      "name": "Lost Vape URSA NANO PRO 2 POD GOLD MECHA",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1520,7 +1520,7 @@
     {
       "id": "lost-vape-ursa-cap-pod-4300",
       "source_id": "4300",
-      "name": "URSA CAP POD",
+      "name": "Lost Vape URSA CAP POD",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -1549,7 +1549,7 @@
     {
       "id": "lost-vape-ursa-mini-30w-pod-kit-crystal-cream-4302",
       "source_id": "4302",
-      "name": "Ursa Mini 30W Pod Kit Crystal Cream",
+      "name": "Lost Vape Ursa Mini 30W Pod Kit Crystal Cream",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1577,7 +1577,7 @@
     {
       "id": "lost-vape-ursa-nano-3-pod-vape-kit-4771",
       "source_id": "4771",
-      "name": "Ursa Nano 3 Pod Vape Kit",
+      "name": "Lost Vape Ursa Nano 3 Pod Vape Kit",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -1604,7 +1604,7 @@
     {
       "id": "uwell-caliburn-g3-pro-pod-vape-kit-bundle-4349",
       "source_id": "4349",
-      "name": "Caliburn G3 Pro Pod Vape Kit Bundle",
+      "name": "Uwell Caliburn G3 Pro Pod Vape Kit Bundle",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1633,7 +1633,7 @@
     {
       "id": "uwell-caliburn-tenet-4383",
       "source_id": "4383",
-      "name": "Caliburn Tenet",
+      "name": "Uwell Caliburn Tenet",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1660,7 +1660,7 @@
     {
       "id": "uwell-caliburn-koko-prime-15w-pod-kit-4581",
       "source_id": "4581",
-      "name": "Caliburn Koko Prime 15W Pod Kit",
+      "name": "Uwell Caliburn Koko Prime 15W Pod Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1686,7 +1686,7 @@
     {
       "id": "uwell-caliburn-gz2-kit-4704",
       "source_id": "4704",
-      "name": "CALIBURN GZ2 KIT",
+      "name": "Uwell CALIBURN GZ2 KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1713,7 +1713,7 @@
     {
       "id": "uwell-caliburn-g3-lite-kit-4705",
       "source_id": "4705",
-      "name": "CALIBURN G3 LITE KIT",
+      "name": "Uwell CALIBURN G3 LITE KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1738,7 +1738,7 @@
     {
       "id": "uwell-caliburn-g3-pro-pod-vape-kit-7120",
       "source_id": "7120",
-      "name": "Caliburn G3 Pro Pod Vape Kit",
+      "name": "Uwell Caliburn G3 Pro Pod Vape Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1765,7 +1765,7 @@
     {
       "id": "uwell-caliburn-g3-pro-koko-pod-vape-kit-7125",
       "source_id": "7125",
-      "name": "Caliburn G3 Pro KoKo Pod Vape Kit",
+      "name": "Uwell Caliburn G3 Pro KoKo Pod Vape Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1792,7 +1792,7 @@
     {
       "id": "uwell-caliburn-g3-kit-12023",
       "source_id": "12023",
-      "name": "CALIBURN G3 KIT",
+      "name": "Uwell CALIBURN G3 KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1819,7 +1819,7 @@
     {
       "id": "uwell-sculptor-pod-vape-kit-7090",
       "source_id": "7090",
-      "name": "Sculptor Pod Vape Kit",
+      "name": "Uwell Sculptor Pod Vape Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -1845,7 +1845,7 @@
     {
       "id": "oxva-xlim-pro-2-pod-vape-kit-bundle-4377",
       "source_id": "4377",
-      "name": "Xlim Pro 2 Pod Vape Kit Bundle",
+      "name": "OXVA Xlim Pro 2 Pod Vape Kit Bundle",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {
@@ -1874,7 +1874,7 @@
     {
       "id": "oxva-xlim-pro-4514",
       "source_id": "4514",
-      "name": "Xlim Pro",
+      "name": "OXVA Xlim Pro",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1902,7 +1902,7 @@
     {
       "id": "oxva-xlim-pro-vape-kit-4945",
       "source_id": "4945",
-      "name": "Xlim Pro Vape Kit",
+      "name": "OXVA Xlim Pro Vape Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1927,7 +1927,7 @@
     {
       "id": "oxva-xlim-pro-vape-kit-bundle-5328",
       "source_id": "5328",
-      "name": "Xlim Pro Vape Kit Bundle",
+      "name": "OXVA Xlim Pro Vape Kit Bundle",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -1955,7 +1955,7 @@
     {
       "id": "oxva-xlim-c-pod-kit-5373",
       "source_id": "5373",
-      "name": "XLIM C POD KIT",
+      "name": "OXVA XLIM C POD KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -1983,7 +1983,7 @@
     {
       "id": "oxva-xlim-sq-vape-kit-6402",
       "source_id": "6402",
-      "name": "Xlim SQ Vape Kit",
+      "name": "OXVA Xlim SQ Vape Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -2009,7 +2009,7 @@
     {
       "id": "oxva-xlim-classic-edition-kit-6608",
       "source_id": "6608",
-      "name": "XLIM CLASSIC EDITION KIT",
+      "name": "OXVA XLIM CLASSIC EDITION KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -2034,7 +2034,7 @@
     {
       "id": "oxva-xlim-pro-2-kit-6609",
       "source_id": "6609",
-      "name": "XLIM PRO 2 KIT",
+      "name": "OXVA XLIM PRO 2 KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -2059,7 +2059,7 @@
     {
       "id": "oxva-xlim-go-kit-6612",
       "source_id": "6612",
-      "name": "XLIM GO KIT",
+      "name": "OXVA XLIM GO KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -2086,7 +2086,7 @@
     {
       "id": "oxva-xlim-pro-kit-6613",
       "source_id": "6613",
-      "name": "XLIM PRO KIT",
+      "name": "OXVA XLIM PRO KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -2112,7 +2112,7 @@
     {
       "id": "oxva-xlim-sq-pro-kit-12570",
       "source_id": "12570",
-      "name": "XLIM SQ PRO KIT",
+      "name": "OXVA XLIM SQ PRO KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -2139,7 +2139,7 @@
     {
       "id": "oxva-nexlim-pod-kit-5365",
       "source_id": "5365",
-      "name": "NeXLIM Pod Kit",
+      "name": "OXVA NeXLIM Pod Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -2166,7 +2166,7 @@
     {
       "id": "oxva-nexlim-kit-12569",
       "source_id": "12569",
-      "name": "NEXLIM KIT",
+      "name": "OXVA NEXLIM KIT",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -2194,7 +2194,7 @@
     {
       "id": "oxva-vprime-kit-6610",
       "source_id": "6610",
-      "name": "VPRIME KIT",
+      "name": "OXVA VPRIME KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -2220,7 +2220,7 @@
     {
       "id": "oxva-oneo-kit-12571",
       "source_id": "12571",
-      "name": "ONEO KIT",
+      "name": "OXVA ONEO KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -2246,7 +2246,7 @@
     {
       "id": "vaporesso-luxe-xr-max-kit-4586",
       "source_id": "4586",
-      "name": "LUXE XR MAX KIT",
+      "name": "Vaporesso LUXE XR MAX KIT",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -2276,7 +2276,7 @@
     {
       "id": "vaporesso-luxe-x-pro-kit-4588",
       "source_id": "4588",
-      "name": "LUXE X PRO KIT",
+      "name": "Vaporesso LUXE X PRO KIT",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {
@@ -2304,7 +2304,7 @@
     {
       "id": "vaporesso-luxe-xr-max-vape-kit-bundle-5329",
       "source_id": "5329",
-      "name": "Luxe XR Max Vape Kit Bundle",
+      "name": "Vaporesso Luxe XR Max Vape Kit Bundle",
       "price_aud": 109.99,
       "currency": "AUD",
       "specs": {
@@ -2333,7 +2333,7 @@
     {
       "id": "vaporesso-luxe-q2-se-pod-vape-kit-7059",
       "source_id": "7059",
-      "name": "Luxe Q2 SE Pod Vape Kit",
+      "name": "Vaporesso Luxe Q2 SE Pod Vape Kit",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {
@@ -2359,7 +2359,7 @@
     {
       "id": "vaporesso-armour-g-vape-kit-5871",
       "source_id": "5871",
-      "name": "Armour G Vape Kit",
+      "name": "Vaporesso Armour G Vape Kit",
       "price_aud": 134.99,
       "currency": "AUD",
       "specs": {
@@ -2384,7 +2384,7 @@
     {
       "id": "vaporesso-armour-gs-pod-vape-kit-7091",
       "source_id": "7091",
-      "name": "Armour GS Pod Vape Kit",
+      "name": "Vaporesso Armour GS Pod Vape Kit",
       "price_aud": 134.99,
       "currency": "AUD",
       "specs": {
@@ -2409,7 +2409,7 @@
     {
       "id": "vaporesso-armour-g-pod-vape-kit-7092",
       "source_id": "7092",
-      "name": "Armour G Pod Vape Kit",
+      "name": "Vaporesso Armour G Pod Vape Kit",
       "price_aud": 134.99,
       "currency": "AUD",
       "specs": {
@@ -2434,7 +2434,7 @@
     {
       "id": "vaporesso-eco-nano-pod-kit-7057",
       "source_id": "7057",
-      "name": "ECO Nano Pod Kit",
+      "name": "Vaporesso ECO Nano Pod Kit",
       "price_aud": 64.99,
       "currency": "AUD",
       "specs": {
@@ -2460,7 +2460,7 @@
     {
       "id": "vaporesso-xros-cube-pod-vape-kit-7058",
       "source_id": "7058",
-      "name": "Xros Cube Pod Vape Kit",
+      "name": "Vaporesso Xros Cube Pod Vape Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -2489,7 +2489,7 @@
     {
       "id": "vaporesso-xros-3-r-kit-7413",
       "source_id": "7413",
-      "name": "Xros 3 R Kit",
+      "name": "Vaporesso Xros 3 R Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -2514,7 +2514,7 @@
     {
       "id": "vaporesso-xros-3-r-kit-11582",
       "source_id": "11582",
-      "name": "Xros 3 R Kit",
+      "name": "Vaporesso Xros 3 R Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -2539,7 +2539,7 @@
     {
       "id": "smok-tech247-pod-vape-kit-4774",
       "source_id": "4774",
-      "name": "Tech247 Pod Vape Kit",
+      "name": "SMOK Tech247 Pod Vape Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -2566,7 +2566,7 @@
     {
       "id": "smok-thallo-80w-pod-mod-kit-5322",
       "source_id": "5322",
-      "name": "THALLO 80W POD MOD KIT",
+      "name": "SMOK THALLO 80W POD MOD KIT",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {
@@ -2592,7 +2592,7 @@
     {
       "id": "smok-novo-eco-pod-kit-5324",
       "source_id": "5324",
-      "name": "Novo ECO Pod Kit",
+      "name": "SMOK Novo ECO Pod Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -2621,7 +2621,7 @@
     {
       "id": "smok-novo-x-20w-pod-kit-7503",
       "source_id": "7503",
-      "name": "Novo X 20W Pod Kit",
+      "name": "SMOK Novo X 20W Pod Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -2653,7 +2653,7 @@
     {
       "id": "smok-novo-5-pod-kit-7574",
       "source_id": "7574",
-      "name": "Novo 5 Pod Kit",
+      "name": "SMOK Novo 5 Pod Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -2687,7 +2687,7 @@
     {
       "id": "smok-novo-master-pod-kit-7610",
       "source_id": "7610",
-      "name": "Novo Master Pod Kit",
+      "name": "SMOK Novo Master Pod Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -2716,7 +2716,7 @@
     {
       "id": "smok-novo-master-box-pod-kit-7611",
       "source_id": "7611",
-      "name": "Novo Master Box Pod Kit",
+      "name": "SMOK Novo Master Box Pod Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -2746,7 +2746,7 @@
     {
       "id": "smok-novo-pro-pod-kit-7635",
       "source_id": "7635",
-      "name": "Novo Pro Pod Kit",
+      "name": "SMOK Novo Pro Pod Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -2778,7 +2778,7 @@
     {
       "id": "smok-nord-5-vape-kit-bundle-5327",
       "source_id": "5327",
-      "name": "Nord 5 Vape Kit Bundle",
+      "name": "SMOK Nord 5 Vape Kit Bundle",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -2814,7 +2814,7 @@
     {
       "id": "smok-nord-5-kit-6194",
       "source_id": "6194",
-      "name": "Nord 5 Kit",
+      "name": "SMOK Nord 5 Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -2850,7 +2850,7 @@
     {
       "id": "smok-nord-4-kit-6219",
       "source_id": "6219",
-      "name": "Nord 4 Kit",
+      "name": "SMOK Nord 4 Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -2882,7 +2882,7 @@
     {
       "id": "smok-nord-2-40w-pod-kit-7533",
       "source_id": "7533",
-      "name": "Nord 2 40W Pod Kit",
+      "name": "SMOK Nord 2 40W Pod Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -2914,7 +2914,7 @@
     {
       "id": "smok-nord-x-60w-pod-kit-7534",
       "source_id": "7534",
-      "name": "Nord X 60W Pod Kit",
+      "name": "SMOK Nord X 60W Pod Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -2949,7 +2949,7 @@
     {
       "id": "smok-nord-4-80w-pod-kit-7535",
       "source_id": "7535",
-      "name": "Nord 4 80W Pod Kit",
+      "name": "SMOK Nord 4 80W Pod Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -2982,7 +2982,7 @@
     {
       "id": "smok-nord-5-80w-pod-kit-7570",
       "source_id": "7570",
-      "name": "NORD 5 80W Pod Kit",
+      "name": "SMOK NORD 5 80W Pod Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -3012,7 +3012,7 @@
     {
       "id": "smok-nord-c-pod-kit-7608",
       "source_id": "7608",
-      "name": "Nord C Pod Kit",
+      "name": "SMOK Nord C Pod Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -3040,7 +3040,7 @@
     {
       "id": "smok-nord-gt-pod-kit-7633",
       "source_id": "7633",
-      "name": "Nord GT Pod Kit",
+      "name": "SMOK Nord GT Pod Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -3070,7 +3070,7 @@
     {
       "id": "smok-rpm-5-kit-6129",
       "source_id": "6129",
-      "name": "RPM 5 Kit",
+      "name": "SMOK RPM 5 Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -3103,7 +3103,7 @@
     {
       "id": "smok-rpm-4-pod-vape-kit-7060",
       "source_id": "7060",
-      "name": "RPM 4 Pod Vape Kit",
+      "name": "SMOK RPM 4 Pod Vape Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -3139,7 +3139,7 @@
     {
       "id": "smok-rpm-c-50w-pod-mod-kit-7606",
       "source_id": "7606",
-      "name": "RPM C 50W Pod Mod Kit",
+      "name": "SMOK RPM C 50W Pod Mod Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -3169,7 +3169,7 @@
     {
       "id": "smok-rpm-5-pro-80w-pod-kit-7636",
       "source_id": "7636",
-      "name": "RPM 5 Pro 80W Pod Kit",
+      "name": "SMOK RPM 5 Pro 80W Pod Kit",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -3200,7 +3200,7 @@
     {
       "id": "smok-propod-gt-pod-vape-kit-7056",
       "source_id": "7056",
-      "name": "Propod GT Pod Vape Kit",
+      "name": "SMOK Propod GT Pod Vape Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -3230,7 +3230,7 @@
     {
       "id": "smok-propod-pod-kit-7605",
       "source_id": "7605",
-      "name": "PROPOD Pod Kit",
+      "name": "SMOK PROPOD Pod Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -3258,7 +3258,7 @@
     {
       "id": "smok-propod-gt-pod-kit-7609",
       "source_id": "7609",
-      "name": "Propod GT Pod Kit",
+      "name": "SMOK Propod GT Pod Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -3291,7 +3291,7 @@
     {
       "id": "smok-ipx80-pod-kit-7536",
       "source_id": "7536",
-      "name": "IPX80 Pod Kit",
+      "name": "SMOK IPX80 Pod Kit",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {
@@ -3323,7 +3323,7 @@
     {
       "id": "smok-nfix-pro-25w-pod-kit-7538",
       "source_id": "7538",
-      "name": "Nfix Pro 25W Pod Kit",
+      "name": "SMOK Nfix Pro 25W Pod Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -3360,7 +3360,7 @@
     {
       "id": "smok-tech247-pod-kit-7634",
       "source_id": "7634",
-      "name": "Tech247 Pod Kit",
+      "name": "SMOK Tech247 Pod Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -3388,7 +3388,7 @@
     {
       "id": "innokin-endura-t18-e-vape-kit-4944",
       "source_id": "4944",
-      "name": "Endura T18-E Vape Kit",
+      "name": "Innokin Endura T18-E Vape Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -3415,7 +3415,7 @@
     {
       "id": "innokin-endura-m18-kit-6857",
       "source_id": "6857",
-      "name": "ENDURA M18 KIT",
+      "name": "Innokin ENDURA M18 KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -3442,7 +3442,7 @@
     {
       "id": "innokin-endura-t20s-kit-6890",
       "source_id": "6890",
-      "name": "ENDURA T20S KIT",
+      "name": "Innokin ENDURA T20S KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -3476,7 +3476,7 @@
     {
       "id": "innokin-endura-t18-ii-kit-6891",
       "source_id": "6891",
-      "name": "ENDURA T18 II KIT",
+      "name": "Innokin ENDURA T18 II KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -3507,7 +3507,7 @@
     {
       "id": "innokin-endura-t18x-kit-6892",
       "source_id": "6892",
-      "name": "ENDURA T18X KIT",
+      "name": "Innokin ENDURA T18X KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -3540,7 +3540,7 @@
     {
       "id": "innokin-eq-fltr-kit-6793",
       "source_id": "6793",
-      "name": "EQ FLTR KIT",
+      "name": "Innokin EQ FLTR KIT",
       "price_aud": 49.99,
       "currency": "AUD",
       "specs": {
@@ -3572,7 +3572,7 @@
     {
       "id": "innokin-podin-kit-6821",
       "source_id": "6821",
-      "name": "PODIN KIT",
+      "name": "Innokin PODIN KIT",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -3602,7 +3602,7 @@
     {
       "id": "innokin-klypse-pod-kit-6822",
       "source_id": "6822",
-      "name": "KLYPSE POD KIT",
+      "name": "Innokin KLYPSE POD KIT",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -3629,7 +3629,7 @@
     {
       "id": "innokin-eq-kit-6824",
       "source_id": "6824",
-      "name": "EQ KIT",
+      "name": "Innokin EQ KIT",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -3659,7 +3659,7 @@
     {
       "id": "innokin-dv-kit-6825",
       "source_id": "6825",
-      "name": "DV KIT",
+      "name": "Innokin DV KIT",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -3690,7 +3690,7 @@
     {
       "id": "innokin-gala-kit-6826",
       "source_id": "6826",
-      "name": "GALA KIT",
+      "name": "Innokin GALA KIT",
       "price_aud": 49.99,
       "currency": "AUD",
       "specs": {
@@ -3720,7 +3720,7 @@
     {
       "id": "horizontech-talons-3-5333",
       "source_id": "5333",
-      "name": "Talons 3",
+      "name": "HorizonTech Talons 3",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -3746,7 +3746,7 @@
     {
       "id": "vandy-vape-pulse-aio5-kit-5417",
       "source_id": "5417",
-      "name": "PULSE AIO.5 KIT",
+      "name": "Vandy Vape PULSE AIO.5 KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3778,7 +3778,7 @@
     {
       "id": "vandy-vape-pulse-aio-80w-kit-5418",
       "source_id": "5418",
-      "name": "PULSE AIO 80W KIT",
+      "name": "Vandy Vape PULSE AIO 80W KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3810,7 +3810,7 @@
     {
       "id": "vandy-vape-pulse-aio-mini-kit-5448",
       "source_id": "5448",
-      "name": "PULSE AIO MINI KIT",
+      "name": "Vandy Vape PULSE AIO MINI KIT",
       "price_aud": 119.99,
       "currency": "AUD",
       "specs": {
@@ -3842,7 +3842,7 @@
     {
       "id": "ijoy-mipo-pod-system-kit-5455",
       "source_id": "5455",
-      "name": "MIPO POD SYSTEM KIT",
+      "name": "iJoy MIPO POD SYSTEM KIT",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -3871,7 +3871,7 @@
     {
       "id": "dotmod-dotaio-v2-kit-g10-monarchy-edition-6010",
       "source_id": "6010",
-      "name": "DotAIO V2 Kit G10 Monarchy Edition",
+      "name": "DotMod DotAIO V2 Kit G10 Monarchy Edition",
       "price_aud": 199.99,
       "currency": "AUD",
       "specs": {
@@ -3901,7 +3901,7 @@
     {
       "id": "vaperempire-viggo-series-deluxe-vape-pod-starter-kit-in-black-7333",
       "source_id": "7333",
-      "name": "VIGGO Series Deluxe Vape Pod Starter Kit in Black",
+      "name": "Vaper Empire VIGGO Series Deluxe Vape Pod Starter Kit in Black",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -3929,7 +3929,7 @@
     {
       "id": "vaper-empire-v-pack-ii-series-deluxe-starter-kit-black-7365",
       "source_id": "7365",
-      "name": "V-Pack II Series Deluxe Starter Kit (Black)",
+      "name": "Vaper Empire V-Pack II Series Deluxe Starter Kit (Black)",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -3959,7 +3959,7 @@
     {
       "id": "vaper-empire-v-pack-ii-series-stater-kitblack-7409",
       "source_id": "7409",
-      "name": "V-Pack II Series Stater Kit(Black)",
+      "name": "Vaper Empire V-Pack II Series Stater Kit(Black)",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -3988,7 +3988,7 @@
     {
       "id": "vaper-empire-v-pack-ii-series-battery-stem-replacements-7499",
       "source_id": "7499",
-      "name": "V-Pack II Series Battery Stem Replacements",
+      "name": "Vaper Empire V-Pack II Series Battery Stem Replacements",
       "price_aud": 49.99,
       "currency": "AUD",
       "specs": {
@@ -4012,7 +4012,7 @@
     {
       "id": "vaper-empire-v-pack-ii-series-deluxe-starter-kit-in-black-7500",
       "source_id": "7500",
-      "name": "V-Pack II Series Deluxe Starter Kit in Black",
+      "name": "Vaper Empire V-Pack II Series Deluxe Starter Kit in Black",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -4039,7 +4039,7 @@
     {
       "id": "vaper-empire-vibe-series-deluxe-starter-kit-black-7368",
       "source_id": "7368",
-      "name": "Vibe Series Deluxe Starter Kit (Black)",
+      "name": "Vaper Empire Vibe Series Deluxe Starter Kit (Black)",
       "price_aud": 199.99,
       "currency": "AUD",
       "specs": {
@@ -4070,7 +4070,7 @@
     {
       "id": "vaper-empire-vibe-series-starter-kit-black-7369",
       "source_id": "7369",
-      "name": "Vibe Series Starter Kit (Black)",
+      "name": "Vaper Empire Vibe Series Starter Kit (Black)",
       "price_aud": 99.99,
       "currency": "AUD",
       "specs": {
@@ -4103,7 +4103,7 @@
     {
       "id": "vaper-empire-v-nix-series-deluxe-vape-pen-starter-kitblack-7407",
       "source_id": "7407",
-      "name": "V-NIX Series Deluxe Vape Pen Starter Kit(Black)",
+      "name": "Vaper Empire V-NIX Series Deluxe Vape Pen Starter Kit(Black)",
       "price_aud": 149.99,
       "currency": "AUD",
       "specs": {
@@ -4138,7 +4138,7 @@
     {
       "id": "vaper-empire-v-nix-series-vape-pen-stater-kitblack-7408",
       "source_id": "7408",
-      "name": "V-NIX Series Vape Pen Stater Kit(Black)",
+      "name": "Vaper Empire V-NIX Series Vape Pen Stater Kit(Black)",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -4164,7 +4164,7 @@
     {
       "id": "eleaf-icita-pod-kit-1600mah-7820",
       "source_id": "7820",
-      "name": "iCita Pod Kit 1600mAh",
+      "name": "Eleaf iCita Pod Kit 1600mAh",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -4192,7 +4192,7 @@
     {
       "id": "eleaf-iore-prime-kit-15w-900mah-7824",
       "source_id": "7824",
-      "name": "IORE PRIME Kit 15W 900mAh",
+      "name": "Eleaf IORE PRIME Kit 15W 900mAh",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -4218,7 +4218,7 @@
     {
       "id": "geekvape-an2-aegis-nano-2-kit-7858",
       "source_id": "7858",
-      "name": "AN2 (AEGIS NANO 2) KIT",
+      "name": "GeekVape AN2 (AEGIS NANO 2) KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -4245,7 +4245,7 @@
     {
       "id": "geekvape-b100-aegis-boost-pro-2-kit-7859",
       "source_id": "7859",
-      "name": "B100 (AEGIS BOOST PRO 2) KIT",
+      "name": "GeekVape B100 (AEGIS BOOST PRO 2) KIT",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -4277,7 +4277,7 @@
     {
       "id": "geekvape-au-aegis-u-kit-9616",
       "source_id": "9616",
-      "name": "AU (Aegis U) KIT",
+      "name": "GeekVape AU (Aegis U) KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -4303,7 +4303,7 @@
     {
       "id": "geekvape-aq-aegis-q-kit-9617",
       "source_id": "9617",
-      "name": "AQ (AEGIS Q) KIT",
+      "name": "GeekVape AQ (AEGIS Q) KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -4330,7 +4330,7 @@
     {
       "id": "geekvape-b60-aegis-boost-2-kit-9619",
       "source_id": "9619",
-      "name": "B60 (AEGIS BOOST 2) KIT",
+      "name": "GeekVape B60 (AEGIS BOOST 2) KIT",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -4363,7 +4363,7 @@
     {
       "id": "geekvape-h45-aegis-hero-2-45w-pod-kit-9654",
       "source_id": "9654",
-      "name": "H45 (AEGIS HERO 2) 45W POD KIT",
+      "name": "GeekVape H45 (AEGIS HERO 2) 45W POD KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -4389,7 +4389,7 @@
     {
       "id": "geekvape-b100-boost-pro-2-pod-kit-9757",
       "source_id": "9757",
-      "name": "B100 BOOST PRO 2 POD KIT",
+      "name": "GeekVape B100 BOOST PRO 2 POD KIT",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -4420,7 +4420,7 @@
     {
       "id": "geekvape-hero-q-pod-vape-kit-9937",
       "source_id": "9937",
-      "name": "Hero Q Pod Vape Kit",
+      "name": "GeekVape Hero Q Pod Vape Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -4447,7 +4447,7 @@
     {
       "id": "geekvape-aegis-boost-3-pod-vape-kit-9938",
       "source_id": "9938",
-      "name": "Aegis Boost 3 Pod Vape Kit",
+      "name": "GeekVape Aegis Boost 3 Pod Vape Kit",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -4479,7 +4479,7 @@
     {
       "id": "geekvape-b60-aegis-boost-2-60w-pod-kit-10432",
       "source_id": "10432",
-      "name": "B60 (Aegis Boost 2) 60W Pod Kit",
+      "name": "GeekVape B60 (Aegis Boost 2) 60W Pod Kit",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -4510,7 +4510,7 @@
     {
       "id": "geekvape-h45-aegis-hero-2-45w-pod-kit-10434",
       "source_id": "10434",
-      "name": "H45 (Aegis Hero 2) 45W Pod Kit",
+      "name": "GeekVape H45 (Aegis Hero 2) 45W Pod Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -4538,7 +4538,7 @@
     {
       "id": "geekvape-aegis-nano-2-an-2-pod-kit-10464",
       "source_id": "10464",
-      "name": "Aegis Nano 2 (AN 2) Pod Kit",
+      "name": "GeekVape Aegis Nano 2 (AN 2) Pod Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -4565,7 +4565,7 @@
     {
       "id": "geekvape-aegis-hero-45w-pod-kit-10466",
       "source_id": "10466",
-      "name": "Aegis Hero 45W Pod Kit",
+      "name": "GeekVape Aegis Hero 45W Pod Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -4594,7 +4594,7 @@
     {
       "id": "geekvape-aegis-q-aq-pod-kit-10468",
       "source_id": "10468",
-      "name": "Aegis Q (AQ) Pod Kit",
+      "name": "GeekVape Aegis Q (AQ) Pod Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -4622,7 +4622,7 @@
     {
       "id": "geekvape-aegis-boost-40w-pod-kit-10469",
       "source_id": "10469",
-      "name": "Aegis Boost 40W Pod Kit",
+      "name": "GeekVape Aegis Boost 40W Pod Kit",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -4654,7 +4654,7 @@
     {
       "id": "geekvape-wenax-q-cbd-terpenes-vape-pack-7945",
       "source_id": "7945",
-      "name": "Wenax Q + CBD Terpenes Vape Pack",
+      "name": "GeekVape Wenax Q + CBD Terpenes Vape Pack",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -4682,7 +4682,7 @@
     {
       "id": "geekvape-wenax-s3-kit-8070",
       "source_id": "8070",
-      "name": "WENAX S3 KIT",
+      "name": "GeekVape WENAX S3 KIT",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -4709,7 +4709,7 @@
     {
       "id": "geekvape-wenax-q-ultra-pod-vape-kit-8073",
       "source_id": "8073",
-      "name": "Wenax Q Ultra Pod Vape Kit",
+      "name": "GeekVape Wenax Q Ultra Pod Vape Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -4737,7 +4737,7 @@
     {
       "id": "geekvape-wenax-h1-pod-system-kit-1000mah-25ml-10266",
       "source_id": "10266",
-      "name": "WENAX H1 POD SYSTEM KIT 1000MAH 2.5ML",
+      "name": "GeekVape WENAX H1 POD SYSTEM KIT 1000MAH 2.5ML",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -4764,7 +4764,7 @@
     {
       "id": "geekvape-wenax-m-2500mah-starter-kit-10267",
       "source_id": "10267",
-      "name": "Wenax M 2500mAh Starter Kit",
+      "name": "GeekVape Wenax M 2500mAh Starter Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -4793,7 +4793,7 @@
     {
       "id": "geekvape-wenax-h1-19w-pod-kit-10433",
       "source_id": "10433",
-      "name": "Wenax H1 19W Pod Kit",
+      "name": "GeekVape Wenax H1 19W Pod Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -4826,7 +4826,7 @@
     {
       "id": "geekvape-wenax-q-pod-kit-10462",
       "source_id": "10462",
-      "name": "Wenax Q Pod Kit",
+      "name": "GeekVape Wenax Q Pod Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -4853,7 +4853,7 @@
     {
       "id": "geekvape-wenax-k2-pod-kit-10467",
       "source_id": "10467",
-      "name": "Wenax K2 Pod Kit",
+      "name": "GeekVape Wenax K2 Pod Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -4878,7 +4878,7 @@
     {
       "id": "geekvape-sonder-u-kit-8068",
       "source_id": "8068",
-      "name": "SONDER U KIT",
+      "name": "GeekVape SONDER U KIT",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -4903,7 +4903,7 @@
     {
       "id": "geekvape-sonder-u-kit-8637",
       "source_id": "8637",
-      "name": "Sonder U Kit",
+      "name": "GeekVape Sonder U Kit",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -4931,7 +4931,7 @@
     {
       "id": "geekvape-soul-kit-8069",
       "source_id": "8069",
-      "name": "SOUL KIT",
+      "name": "GeekVape SOUL KIT",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -4957,7 +4957,7 @@
     {
       "id": "geekvape-digi-max-kit-9137",
       "source_id": "9137",
-      "name": "DIGI MAX KIT",
+      "name": "GeekVape DIGI MAX KIT",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -4983,7 +4983,7 @@
     {
       "id": "geekvape-obelisk-65-fc-vape-kit-9179",
       "source_id": "9179",
-      "name": "Obelisk 65 FC Vape Kit",
+      "name": "GeekVape Obelisk 65 FC Vape Kit",
       "price_aud": 89.99,
       "currency": "AUD",
       "specs": {
@@ -5012,7 +5012,7 @@
     {
       "id": "elf-bar-elfx-pod-vape-kit-8074",
       "source_id": "8074",
-      "name": "ElfX Pod Vape Kit",
+      "name": "Elf Bar ElfX Pod Vape Kit",
       "price_aud": 54.99,
       "currency": "AUD",
       "specs": {
@@ -5038,7 +5038,7 @@
     {
       "id": "digiflavor-digi-q-kit-9620",
       "source_id": "9620",
-      "name": "Digi Q Kit",
+      "name": "DigiFlavor Digi Q Kit",
       "price_aud": 59.99,
       "currency": "AUD",
       "specs": {
@@ -5065,7 +5065,7 @@
     {
       "id": "allo-sync-prefilled-pod-device-11211",
       "source_id": "11211",
-      "name": "Sync Prefilled Pod Device",
+      "name": "ALLO Sync Prefilled Pod Device",
       "price_aud": 34.99,
       "currency": "AUD",
       "specs": {
@@ -5085,7 +5085,7 @@
     {
       "id": "gunnpod-moss-kit-cherry-pomegranate-13471",
       "source_id": "13471",
-      "name": "MOSS - KIT Cherry Pomegranate",
+      "name": "Gunnpod MOSS - KIT Cherry Pomegranate",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5112,7 +5112,7 @@
     {
       "id": "gunnpod-moss-kit-13472",
       "source_id": "13472",
-      "name": "MOSS - KIT",
+      "name": "Gunnpod MOSS - KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5139,7 +5139,7 @@
     {
       "id": "gunnpod-moss-kit-13473",
       "source_id": "13473",
-      "name": "MOSS - KIT",
+      "name": "Gunnpod MOSS - KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5166,7 +5166,7 @@
     {
       "id": "gunnpod-moss-kit-13474",
       "source_id": "13474",
-      "name": "MOSS - KIT",
+      "name": "Gunnpod MOSS - KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5193,7 +5193,7 @@
     {
       "id": "gunnpod-moss-kit-13503",
       "source_id": "13503",
-      "name": "MOSS KIT",
+      "name": "Gunnpod MOSS KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5220,7 +5220,7 @@
     {
       "id": "gunnpod-moss-kit-13504",
       "source_id": "13504",
-      "name": "MOSS KIT",
+      "name": "Gunnpod MOSS KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5247,7 +5247,7 @@
     {
       "id": "gunnpod-moss-kit-13505",
       "source_id": "13505",
-      "name": "MOSS - KIT",
+      "name": "Gunnpod MOSS - KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5274,7 +5274,7 @@
     {
       "id": "gunnpod-moss-kit-13506",
       "source_id": "13506",
-      "name": "MOSS KIT",
+      "name": "Gunnpod MOSS KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5301,7 +5301,7 @@
     {
       "id": "gunnpod-moss-kit-13507",
       "source_id": "13507",
-      "name": "MOSS - KIT",
+      "name": "Gunnpod MOSS - KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5328,7 +5328,7 @@
     {
       "id": "gunnpod-moss-kit-13508",
       "source_id": "13508",
-      "name": "MOSS KIT",
+      "name": "Gunnpod MOSS KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5355,7 +5355,7 @@
     {
       "id": "gunnpod-moss-kit-13509",
       "source_id": "13509",
-      "name": "MOSS - KIT",
+      "name": "Gunnpod MOSS - KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5382,7 +5382,7 @@
     {
       "id": "gunnpod-moss-kit-13510",
       "source_id": "13510",
-      "name": "MOSS - KIT",
+      "name": "Gunnpod MOSS - KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5409,7 +5409,7 @@
     {
       "id": "gunnpod-moss-kit-13511",
       "source_id": "13511",
-      "name": "MOSS - KIT",
+      "name": "Gunnpod MOSS - KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5436,7 +5436,7 @@
     {
       "id": "gunnpod-moss-strawberry-kiwi-ice-13512",
       "source_id": "13512",
-      "name": "MOSS Strawberry Kiwi Ice",
+      "name": "Gunnpod MOSS Strawberry Kiwi Ice",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5463,7 +5463,7 @@
     {
       "id": "gunnpod-moss-kit-13513",
       "source_id": "13513",
-      "name": "MOSS KIT",
+      "name": "Gunnpod MOSS KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5490,7 +5490,7 @@
     {
       "id": "gunnpod-moss-banana-ice-13580",
       "source_id": "13580",
-      "name": "MOSS Banana Ice",
+      "name": "Gunnpod MOSS Banana Ice",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5517,7 +5517,7 @@
     {
       "id": "gunnpod-moss-kit-13656",
       "source_id": "13656",
-      "name": "MOSS KIT",
+      "name": "Gunnpod MOSS KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5544,7 +5544,7 @@
     {
       "id": "gunnpod-moss-kit-13657",
       "source_id": "13657",
-      "name": "MOSS - KIT",
+      "name": "Gunnpod MOSS - KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5571,7 +5571,7 @@
     {
       "id": "gunnpod-moss-kit-13658",
       "source_id": "13658",
-      "name": "MOSS - KIT",
+      "name": "Gunnpod MOSS - KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5598,7 +5598,7 @@
     {
       "id": "gunnpod-moss-kit-13701",
       "source_id": "13701",
-      "name": "MOSS KIT",
+      "name": "Gunnpod MOSS KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5625,7 +5625,7 @@
     {
       "id": "gunnpod-moss-kit-14008",
       "source_id": "14008",
-      "name": "MOSS - KIT",
+      "name": "Gunnpod MOSS - KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5652,7 +5652,7 @@
     {
       "id": "gunnpod-moss-kit-14009",
       "source_id": "14009",
-      "name": "MOSS KIT",
+      "name": "Gunnpod MOSS KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5679,7 +5679,7 @@
     {
       "id": "gunnpod-moss-kit-14010",
       "source_id": "14010",
-      "name": "MOSS KIT",
+      "name": "Gunnpod MOSS KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {
@@ -5706,7 +5706,7 @@
     {
       "id": "gunnpod-moss-kit-14014",
       "source_id": "14014",
-      "name": "MOSS - KIT",
+      "name": "Gunnpod MOSS - KIT",
       "price_aud": 74.99,
       "currency": "AUD",
       "specs": {

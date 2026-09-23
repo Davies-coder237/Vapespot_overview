@@ -32,7 +32,7 @@
     {
       "id": "zenco-uno-vaporizer-2435",
       "source_id": "2435",
-      "name": "Uno Vaporizer",
+      "name": "Zenco Uno Vaporizer",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -58,7 +58,7 @@
     {
       "id": "zenco-flow-vaporizer-2485",
       "source_id": "2485",
-      "name": "Flow Vaporizer",
+      "name": "Zenco Flow Vaporizer",
       "price_aud": 368.99,
       "currency": "AUD",
       "specs": {
@@ -83,7 +83,7 @@
     {
       "id": "hitoki-trident-laser-combustion-water-pipe-v20-2471",
       "source_id": "2471",
-      "name": "Trident Laser Combustion Water Pipe v2.0",
+      "name": "Hitoki Trident Laser Combustion Water Pipe v2.0",
       "price_aud": 1239.99,
       "currency": "AUD",
       "specs": {
@@ -107,7 +107,7 @@
     {
       "id": "hitoki-saber-laser-vaporizer-and-bubbler-4028",
       "source_id": "4028",
-      "name": "Saber – Laser Vaporizer and Bubbler",
+      "name": "Hitoki Saber – Laser Vaporizer and Bubbler",
       "price_aud": 1239.99,
       "currency": "AUD",
       "specs": {
@@ -135,7 +135,7 @@
     {
       "id": "pulsar-sipper-wax-510-cartridge-vaporizer-bubbler-2479",
       "source_id": "2479",
-      "name": "Sipper Wax & 510 Cartridge Vaporizer Bubbler",
+      "name": "Pulsar Sipper Wax & 510 Cartridge Vaporizer Bubbler",
       "price_aud": 319.99,
       "currency": "AUD",
       "specs": {
@@ -158,7 +158,7 @@
     {
       "id": "pulsar-grateful-dead-x-sipper-dual-use-vaporizer-w-dry-cup-2515",
       "source_id": "2515",
-      "name": "Grateful Dead x Sipper Dual Use Vaporizer w/ Dry Cup",
+      "name": "Pulsar Grateful Dead x Sipper Dual Use Vaporizer w/ Dry Cup",
       "price_aud": 369.99,
       "currency": "AUD",
       "specs": {
@@ -187,7 +187,7 @@
     {
       "id": "dr-dabber-switch-2-8429",
       "source_id": "8429",
-      "name": "Switch 2",
+      "name": "Dr. Dabber Switch 2",
       "price_aud": 639.99,
       "currency": "AUD",
       "specs": {

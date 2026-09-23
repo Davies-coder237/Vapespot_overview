@@ -117,10 +117,9 @@ export function ProductDetails({ product }: { product: Product }) {
           </nav>
 
           <header className="space-y-2">
-            {product.brand && (
+            {product.series && (
               <p className="text-[13px] font-bold uppercase tracking-[0.05em] text-[#7C3AED]">
-                {product.brand}
-                {product.series ? ` · ${product.series}` : ""}
+                {product.series}
               </p>
             )}
             <h1 className="text-3xl md:text-4xl font-bold text-black leading-tight">

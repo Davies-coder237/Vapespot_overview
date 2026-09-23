@@ -37,7 +37,7 @@
     {
       "id": "arizer-xq2-desktop-vaporizer-2434",
       "source_id": "2434",
-      "name": "XQ2 Desktop Vaporizer",
+      "name": "Arizer XQ2 Desktop Vaporizer",
       "price_aud": 418.99,
       "currency": "AUD",
       "specs": {
@@ -70,7 +70,7 @@
     {
       "id": "arizer-xq2-dry-herb-vaporizer-2477",
       "source_id": "2477",
-      "name": "XQ2 Dry Herb Vaporizer",
+      "name": "Arizer XQ2 Dry Herb Vaporizer",
       "price_aud": 399.99,
       "currency": "AUD",
       "specs": {
@@ -101,7 +101,7 @@
     {
       "id": "arizer-extreme-q-2473",
       "source_id": "2473",
-      "name": "Extreme Q",
+      "name": "Arizer Extreme Q",
       "price_aud": 389.99,
       "currency": "AUD",
       "specs": {
@@ -128,7 +128,7 @@
     {
       "id": "arizer-extreme-q-dry-herb-desktop-vaporizer-2480",
       "source_id": "2480",
-      "name": "Extreme Q Dry Herb Desktop Vaporizer",
+      "name": "Arizer Extreme Q Dry Herb Desktop Vaporizer",
       "price_aud": 389.99,
       "currency": "AUD",
       "specs": {
@@ -155,7 +155,7 @@
     {
       "id": "arizer-v-tower-dry-herb-desktop-vaporizer-2475",
       "source_id": "2475",
-      "name": "V-Tower Dry Herb Desktop Vaporizer",
+      "name": "Arizer V-Tower Dry Herb Desktop Vaporizer",
       "price_aud": 299.99,
       "currency": "AUD",
       "specs": {
@@ -183,7 +183,7 @@
     {
       "id": "arizer-v-tower-2478",
       "source_id": "2478",
-      "name": "V-Tower",
+      "name": "Arizer V-Tower",
       "price_aud": 299.99,
       "currency": "AUD",
       "specs": {
@@ -210,7 +210,7 @@
     {
       "id": "storz-bickel-volcano-hybrid-vaporizer-2470",
       "source_id": "2470",
-      "name": "Volcano Hybrid Vaporizer",
+      "name": "Storz & Bickel Volcano Hybrid Vaporizer",
       "price_aud": 989.99,
       "currency": "AUD",
       "specs": {
@@ -235,7 +235,7 @@
     {
       "id": "storz-bickel-volcano-hybrid-vaporizer-onyx-limited-edition-2476",
       "source_id": "2476",
-      "name": "Volcano Hybrid Vaporizer | Onyx Limited Edition",
+      "name": "Storz & Bickel Volcano Hybrid Vaporizer | Onyx Limited Edition",
       "price_aud": 989.99,
       "currency": "AUD",
       "specs": {
@@ -260,7 +260,7 @@
     {
       "id": "storz-bickel-volcano-classic-vaporizer-2472",
       "source_id": "2472",
-      "name": "Volcano Classic Vaporizer",
+      "name": "Storz & Bickel Volcano Classic Vaporizer",
       "price_aud": 839.99,
       "currency": "AUD",
       "specs": {
@@ -287,7 +287,7 @@
     {
       "id": "storz-bickel-volcano-classic-vaporizer-onyx-limited-edition-2474",
       "source_id": "2474",
-      "name": "Volcano Classic Vaporizer | Onyx Limited Edition",
+      "name": "Storz & Bickel Volcano Classic Vaporizer | Onyx Limited Edition",
       "price_aud": 839.99,
       "currency": "AUD",
       "specs": {
@@ -314,7 +314,7 @@
     {
       "id": "retro-vapes-tabletop-vaporizer-the-bel-air-2516",
       "source_id": "2516",
-      "name": "Tabletop Vaporizer | The Bel Air",
+      "name": "Retro Vapes Tabletop Vaporizer | The Bel Air",
       "price_aud": 289.99,
       "currency": "AUD",
       "specs": {

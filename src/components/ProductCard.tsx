@@ -49,12 +49,7 @@ export function ProductCard({
             onClick={onClick}
             className="flex flex-col gap-1 lg:w-full"
           >
-            {product.brand && (
-              <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#7C3AED]">
-                {product.brand}
-              </span>
-            )}
-
+            {/* NB: la marque vit désormais dans product.name (rewrite-product-names) → badge marque retiré, on garde la série qui apporte une info en plus */}
             {product.series && (
               <span className="text-[11px] font-bold uppercase tracking-[0.14em] text-[#7C3AED]">
                 {product.series}

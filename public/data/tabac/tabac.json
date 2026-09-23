@@ -20,7 +20,7 @@
     {
       "id": "iqos-terea-heated-tobacco-sticks-4379",
       "source_id": "4379",
-      "name": "TEREA Heated Tobacco Sticks",
+      "name": "IQOS TEREA Heated Tobacco Sticks",
       "price_aud": 19.99,
       "currency": "AUD",
       "specs": {
@@ -38,7 +38,7 @@
     {
       "id": "iqos-iluma-one-starter-bundle-kit-4380",
       "source_id": "4380",
-      "name": "ILUMA ONE Starter Bundle Kit",
+      "name": "IQOS ILUMA ONE Starter Bundle Kit",
       "price_aud": 133.99,
       "currency": "AUD",
       "specs": {
@@ -60,7 +60,7 @@
     {
       "id": "iqos-iluma-starter-bundle-kit-4381",
       "source_id": "4381",
-      "name": "ILUMA Starter Bundle Kit",
+      "name": "IQOS ILUMA Starter Bundle Kit",
       "price_aud": 154.99,
       "currency": "AUD",
       "specs": {
@@ -84,7 +84,7 @@
     {
       "id": "iqos-3-duo-kit-7415",
       "source_id": "7415",
-      "name": "3 Duo Kit",
+      "name": "IQOS 3 Duo Kit",
       "price_aud": 157.99,
       "currency": "AUD",
       "specs": {
@@ -106,7 +106,7 @@
     {
       "id": "iqos-3-duo-kit-11613",
       "source_id": "11613",
-      "name": "3 Duo Kit",
+      "name": "IQOS 3 Duo Kit",
       "price_aud": 153.99,
       "currency": "AUD",
       "specs": {
@@ -131,7 +131,7 @@
     {
       "id": "neafs-teo-heating-device-4184",
       "source_id": "4184",
-      "name": "TEO HEATING DEVICE",
+      "name": "NEAFS TEO HEATING DEVICE",
       "price_aud": 79.99,
       "currency": "AUD",
       "specs": {},
