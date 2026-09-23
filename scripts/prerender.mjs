@@ -715,10 +715,18 @@ const SHOW_MODELS = 8;   // lignes du tableau comparatif
 const SHOW_CARDS = 12;   // cartes produit de la grille (liens internes)
 const esc = escapeHtml;
 
-// Nombre de produits d'une marque dans le catalogue réel (search index).
+// Nombre d'APPAREILS d'une marque dans le catalogue réel (search index).
+// Uniquement les produits sous e-cigarettes/ : les consommables (coils,
+// pods de remplacement, drip tips, adaptateurs, pouches, e-liquids…) ne
+// doivent jamais apparaître sur une page marque.
+function isDevice(e) {
+  return (e.path && e.path[0]) === "e-cigarettes";
+}
 function productsCountFor(name) {
   const n = String(name || "").trim().toLowerCase();
-  return searchIndex.filter((e) => String(e.brand || "").trim().toLowerCase() === n).length;
+  return searchIndex.filter(
+    (e) => String(e.brand || "").trim().toLowerCase() === n && isDevice(e)
+  ).length;
 }
 
 /**
@@ -727,6 +735,15 @@ function productsCountFor(name) {
  * 25 variantes de goût. Specs (puffs / rechargeable) lues dans le fichier
  * leaf du produit (le search index ne contient pas specs).
  */
+// Listings « bulk » / « pod only » : ne doivent pas représenter un appareil
+// au tableau ni polluer la grille (« Ingot 9000 10 Pack », « Pandora 7K 10
+// Pcs », « 25k WTF Pod Only », « one chupa 10 pack »…). On préfère l'unité
+// simple ; repli sur le bulk seulement s'il n'y a rien d'autre.
+const BULKY = /(\b(10|3|5|2)\b\s*(pcs|pack)s?\b|pack of|multi.?pack|bulk|pod only|replacement|refill|carton)/i;
+const isBulkyName = (n) => BULKY.test(n || "");
+// tri : unité simple d'abord, puis prix croissant
+const rankModel = (a, b) => (Number(isBulkyName(a.name)) - Number(isBulkyName(b.name))) || (a.price_aud - b.price_aud) || (a.id < b.id ? -1 : 1);
+
 function brandModels(products) {
   const bySeries = new Map();
   for (const e of products) {
@@ -745,7 +762,7 @@ function brandModels(products) {
       img: full?.image?.card || e.thumb || "",
     };
     const key = String(row.series).toLowerCase().trim();
-    if (!bySeries.has(key) || row.price_aud < bySeries.get(key).price_aud) bySeries.set(key, row);
+    if (!bySeries.has(key) || rankModel(row, bySeries.get(key)) < 0) bySeries.set(key, row);
   }
   return [...bySeries.values()].sort((a, b) => a.price_aud - b.price_aud);
 }
@@ -773,7 +790,10 @@ function brandTableHTML(models) {
 // garder un vrai maillage interne). Retourne les objets bruts : le HTML
 // statique et le JSON de parité SPA sont construits depuis la même liste.
 function brandGridCards(products) {
-  const sorted = products.slice().sort((a, b) => a.price_aud - b.price_aud);
+  // unités simples en tête (les listings multi-pack ne sont pris qu'en repli)
+  const single = products.filter((e) => !isBulkyName(e.name));
+  const bulk = products.filter((e) => isBulkyName(e.name));
+  const sorted = [...(single.length ? single : bulk)].slice().sort((a, b) => a.price_aud - b.price_aud);
   const picked = [];
   const seriesCount = new Map();
   const seenId = new Set();
@@ -790,8 +810,9 @@ function brandGridCards(products) {
     const key = String(e.series || e.name).toLowerCase().trim();
     seriesCount.set(key, (seriesCount.get(key) || 0) + 1);
   }
-  // passe 2 : variantes de goût (max 2 par série)
-  for (const e of sorted) {
+  // passe 2 : variantes de goût (max 2 par série) — unités simples d'abord
+  const rest = [...sorted.filter((e) => !seenId.has(e.id)), ...bulk.filter((e) => !seenId.has(e.id))];
+  for (const e of rest) {
     if (picked.length >= SHOW_CARDS) break;
     if (seenId.has(e.id)) continue;
     const key = String(e.series || e.name).toLowerCase().trim();
@@ -817,9 +838,13 @@ function brandGridCards(products) {
 const brandProductsJson = {};
 let brandCount = 0;
 for (const b of (brandsData.brands || [])) {
-  const products = searchIndex.filter(
+  const allProducts = searchIndex.filter(
     (e) => String(e.brand || "").trim().toLowerCase() === String(b.name).trim().toLowerCase()
   );
+  // Uniquement les APPAREILS (sous e-cigarettes/) : les pouches Alibarbar,
+  // coils/drip-tips GeekVape, e-liquids Vaporesso etc. n'ont rien à faire
+  // sur une page marque (remontés car moins chers que les devices).
+  const products = allProducts.filter(isDevice);
   if (!products.length) continue;
   const models = brandModels(products);
   const canonical = `${BRAND_BASE}${b.slug}/`;
@@ -894,7 +919,7 @@ for (const b of (brandsData.brands || [])) {
   writeFileSync(join(outDir, "index.html"), html, "utf-8");
   brandProductsJson[b.slug] = { name: b.name, models, grid: gridObjs };
   brandCount++;
-  console.log(`  ✓ page marque ${b.name} (${products.length} produits, ${models.length} modèles)`);
+  console.log(`  ✓ page marque ${b.name} (${allProducts.length} produits, dont ${products.length} appareils → ${models.length} modèles)`);
 }
 
 // ── index /brands/ : hub + tableau comparatif transversal ──
