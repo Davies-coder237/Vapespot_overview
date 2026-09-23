@@ -106,10 +106,16 @@ export function ListingPage({ listing }: ListingPageProps) {
         </section>
 
         <div className="border-t border-[#F0F0F0]" />
+      </div>
 
-        {/* Produits populaires de la ville — vraies cartes + scroll horizontal */}
+      {/* Produits populaires de la ville — HORS du conteneur paddé : les cartes
+          w-screen touchent les bords de l'écran, comme sur la home
+          (TrendingProducts est dans un max-w-7xl sans px). */}
+      <div className="max-w-7xl mx-auto w-full">
         <CityProducts slug={listing.slug} title={`Popular vape products in ${cn}`} />
+      </div>
 
+      <div className="max-w-7xl mx-auto w-full px-4 md:px-6">
         <div className="border-t border-[#F0F0F0] mt-8" />
 
         {/* Marques populaires de la ville → pages /brands/ (Tâche 3) */}

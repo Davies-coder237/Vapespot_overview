@@ -40393,7 +40393,7 @@
       "disposables"
     ],
     "file": "e-cigarettes/disposables.json",
-    "thumb": "/images/products/alibarbar-ingot-30000.png"
+    "thumb": "/images/products/alibarbar-ingot-30000-grape-fruit-guava-lemon.jpg"
   },
   {
     "id": "alibarbar-ingot-30000-california-sunset-92002",
@@ -40406,11 +40406,11 @@
       "disposables"
     ],
     "file": "e-cigarettes/disposables.json",
-    "thumb": "/images/products/alibarbar-ingot-30000.png"
+    "thumb": "/images/products/alibarbar-ingot-30000-california-sunset.jpg"
   },
   {
-    "id": "alibarbar-ingot-30000-grapefruit-92003",
-    "name": "Alibarbar Ingot 30000 Grapefruit",
+    "id": "alibarbar-ingot-30000-ftp-92003",
+    "name": "Alibarbar Ingot 30000 FTP",
     "brand": "Alibarbar",
     "series": "Ingot 30000",
     "price_aud": 69.99,
@@ -40419,7 +40419,7 @@
       "disposables"
     ],
     "file": "e-cigarettes/disposables.json",
-    "thumb": "/images/products/alibarbar-ingot-30000.png"
+    "thumb": "/images/products/alibarbar-ingot-30000-ftp.jpg"
   },
   {
     "id": "alibarbar-ingot-30000-banana-ice-92004",
@@ -40432,7 +40432,7 @@
       "disposables"
     ],
     "file": "e-cigarettes/disposables.json",
-    "thumb": "/images/products/alibarbar-ingot-30000.png"
+    "thumb": "/images/products/alibarbar-ingot-30000-banana-ice.jpg"
   },
   {
     "id": "alibarbar-ingot-30000-strawberry-kiwi-92005",
@@ -40445,7 +40445,7 @@
       "disposables"
     ],
     "file": "e-cigarettes/disposables.json",
-    "thumb": "/images/products/alibarbar-ingot-30000.png"
+    "thumb": "/images/products/alibarbar-ingot-30000-strawberry-kiwi.jpg"
   },
   {
     "id": "alibarbar-ingot-30000-cool-mint-92006",
@@ -40458,7 +40458,7 @@
       "disposables"
     ],
     "file": "e-cigarettes/disposables.json",
-    "thumb": "/images/products/alibarbar-ingot-30000.png"
+    "thumb": "/images/products/alibarbar-ingot-30000-cool-mint.jpg"
   },
   {
     "id": "alibarbar-ingot-30000-blueberry-blast-92007",
@@ -40471,7 +40471,7 @@
       "disposables"
     ],
     "file": "e-cigarettes/disposables.json",
-    "thumb": "/images/products/alibarbar-ingot-30000.png"
+    "thumb": "/images/products/alibarbar-ingot-30000-blueberry-blast.jpg"
   },
   {
     "id": "alibarbar-ingot-30000-hubba-grape-92008",
@@ -40484,6 +40484,6 @@
       "disposables"
     ],
     "file": "e-cigarettes/disposables.json",
-    "thumb": "/images/products/alibarbar-ingot-30000.png"
+    "thumb": "/images/products/alibarbar-ingot-30000-hubba-grape.jpg"
   }
 ]

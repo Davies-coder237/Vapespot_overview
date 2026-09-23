@@ -16792,8 +16792,8 @@
         "battery_indicator": "Yes"
       },
       "image": {
-        "thumb": "/images/products/alibarbar-ingot-30000.png",
-        "card": "/images/products/alibarbar-ingot-30000.png"
+        "thumb": "/images/products/alibarbar-ingot-30000-grape-fruit-guava-lemon.jpg",
+        "card": "/images/products/alibarbar-ingot-30000-grape-fruit-guava-lemon.jpg"
       },
       "brand": "Alibarbar",
       "series": "Ingot 30000"
@@ -16813,16 +16813,16 @@
         "battery_indicator": "Yes"
       },
       "image": {
-        "thumb": "/images/products/alibarbar-ingot-30000.png",
-        "card": "/images/products/alibarbar-ingot-30000.png"
+        "thumb": "/images/products/alibarbar-ingot-30000-california-sunset.jpg",
+        "card": "/images/products/alibarbar-ingot-30000-california-sunset.jpg"
       },
       "brand": "Alibarbar",
       "series": "Ingot 30000"
     },
     {
-      "id": "alibarbar-ingot-30000-grapefruit-92003",
+      "id": "alibarbar-ingot-30000-ftp-92003",
       "source_id": "92003",
-      "name": "Alibarbar Ingot 30000 Grapefruit",
+      "name": "Alibarbar Ingot 30000 FTP",
       "price_aud": 69.99,
       "currency": "AUD",
       "specs": {
@@ -16834,8 +16834,8 @@
         "battery_indicator": "Yes"
       },
       "image": {
-        "thumb": "/images/products/alibarbar-ingot-30000.png",
-        "card": "/images/products/alibarbar-ingot-30000.png"
+        "thumb": "/images/products/alibarbar-ingot-30000-ftp.jpg",
+        "card": "/images/products/alibarbar-ingot-30000-ftp.jpg"
       },
       "brand": "Alibarbar",
       "series": "Ingot 30000"
@@ -16855,8 +16855,8 @@
         "battery_indicator": "Yes"
       },
       "image": {
-        "thumb": "/images/products/alibarbar-ingot-30000.png",
-        "card": "/images/products/alibarbar-ingot-30000.png"
+        "thumb": "/images/products/alibarbar-ingot-30000-banana-ice.jpg",
+        "card": "/images/products/alibarbar-ingot-30000-banana-ice.jpg"
       },
       "brand": "Alibarbar",
       "series": "Ingot 30000"
@@ -16876,8 +16876,8 @@
         "battery_indicator": "Yes"
       },
       "image": {
-        "thumb": "/images/products/alibarbar-ingot-30000.png",
-        "card": "/images/products/alibarbar-ingot-30000.png"
+        "thumb": "/images/products/alibarbar-ingot-30000-strawberry-kiwi.jpg",
+        "card": "/images/products/alibarbar-ingot-30000-strawberry-kiwi.jpg"
       },
       "brand": "Alibarbar",
       "series": "Ingot 30000"
@@ -16897,8 +16897,8 @@
         "battery_indicator": "Yes"
       },
       "image": {
-        "thumb": "/images/products/alibarbar-ingot-30000.png",
-        "card": "/images/products/alibarbar-ingot-30000.png"
+        "thumb": "/images/products/alibarbar-ingot-30000-cool-mint.jpg",
+        "card": "/images/products/alibarbar-ingot-30000-cool-mint.jpg"
       },
       "brand": "Alibarbar",
       "series": "Ingot 30000"
@@ -16918,8 +16918,8 @@
         "battery_indicator": "Yes"
       },
       "image": {
-        "thumb": "/images/products/alibarbar-ingot-30000.png",
-        "card": "/images/products/alibarbar-ingot-30000.png"
+        "thumb": "/images/products/alibarbar-ingot-30000-blueberry-blast.jpg",
+        "card": "/images/products/alibarbar-ingot-30000-blueberry-blast.jpg"
       },
       "brand": "Alibarbar",
       "series": "Ingot 30000"
@@ -16939,8 +16939,8 @@
         "battery_indicator": "Yes"
       },
       "image": {
-        "thumb": "/images/products/alibarbar-ingot-30000.png",
-        "card": "/images/products/alibarbar-ingot-30000.png"
+        "thumb": "/images/products/alibarbar-ingot-30000-hubba-grape.jpg",
+        "card": "/images/products/alibarbar-ingot-30000-hubba-grape.jpg"
       },
       "brand": "Alibarbar",
       "series": "Ingot 30000"

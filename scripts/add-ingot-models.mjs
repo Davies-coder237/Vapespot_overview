@@ -69,12 +69,14 @@ const MODELS = [
     coil: "Mesh Coil",
     price: 69.99,
     idOffset: 92000,
-    thumb: "/images/products/alibarbar-ingot-30000.png",
-    card: "/images/products/alibarbar-ingot-30000.png",
+    // Imagées par saveur (JPG 510×510, sources AU) — la « Grapefruit » n'existant pas
+    // dans la gamme 30000 (FTP la remplace), chaque saveur a sa propre photo.
+    thumb: (flavor) => `/images/products/alibarbar-ingot-30000-${slug(flavor)}.jpg`,
+    card: (flavor) => `/images/products/alibarbar-ingot-30000-${slug(flavor)}.jpg`,
     flavors: [
       "Grape Fruit Guava Lemon",
       "California Sunset",
-      "Grapefruit",
+      "FTP",
       "Banana Ice",
       "Strawberry Kiwi",
       "Cool Mint",
@@ -139,7 +141,11 @@ for (const m of MODELS) {
       price_aud: m.price,
       currency: "AUD",
       specs,
-      image: { thumb: m.thumb, card: m.card },
+      // thumb/card : fonction par saveur (30000) sinon string partagée (15000)
+      image: {
+        thumb: typeof m.thumb === "function" ? m.thumb(flavor) : m.thumb,
+        card: typeof m.card === "function" ? m.card(flavor) : m.card,
+      },
       brand: "Alibarbar",
       series: m.series,
     };
