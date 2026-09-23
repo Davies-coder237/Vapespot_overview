@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-06-04T00:58:48.268Z",
-  "count": 70,
+  "count": 127,
   "products": [
     {
       "rank": 1,
@@ -1631,6 +1631,1443 @@
       },
       "brand": "Alibarbar",
       "series": "Ingot 30000"
+    },
+    {
+      "rank": 71,
+      "id": "kuz-9000-american-tobacco-70001",
+      "source_id": "70001",
+      "name": "Kuz KUZ 9000 American Tobacco",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-american-tobacco.png",
+        "card": "/images/products/kuz-9000-american-tobacco.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 72,
+      "id": "kuz-9000-blue-dream-70002",
+      "source_id": "70002",
+      "name": "Kuz KUZ 9000 Blue Dream",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-blue-dream.png",
+        "card": "/images/products/kuz-9000-blue-dream.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 73,
+      "id": "kuz-9000-blue-razz-lemonade-70003",
+      "source_id": "70003",
+      "name": "Kuz KUZ 9000 Blue Razz Lemonade",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-blue-razz-lemonade.png",
+        "card": "/images/products/kuz-9000-blue-razz-lemonade.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 74,
+      "id": "kuz-9000-cali-clear-70004",
+      "source_id": "70004",
+      "name": "Kuz KUZ 9000 Cali Clear",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-cali-clear.png",
+        "card": "/images/products/kuz-9000-cali-clear.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 75,
+      "id": "kuz-9000-cali-mint-70005",
+      "source_id": "70005",
+      "name": "Kuz KUZ 9000 Cali Mint",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-cali-mint.png",
+        "card": "/images/products/kuz-9000-cali-mint.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 76,
+      "id": "kuz-9000-cola-ice-70006",
+      "source_id": "70006",
+      "name": "Kuz KUZ 9000 Cola Ice",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-cola-ice.png",
+        "card": "/images/products/kuz-9000-cola-ice.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 77,
+      "id": "kuz-9000-crystal-clear-70007",
+      "source_id": "70007",
+      "name": "Kuz KUZ 9000 Crystal Clear",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-crystal-clear.png",
+        "card": "/images/products/kuz-9000-crystal-clear.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 78,
+      "id": "kuz-9000-double-apple-70008",
+      "source_id": "70008",
+      "name": "Kuz KUZ 9000 Double Apple",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-double-apple.png",
+        "card": "/images/products/kuz-9000-double-apple.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 79,
+      "id": "kuz-9000-lemon-mint-70009",
+      "source_id": "70009",
+      "name": "Kuz KUZ 9000 Lemon Mint",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-lemon-mint.png",
+        "card": "/images/products/kuz-9000-lemon-mint.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 80,
+      "id": "kuz-9000-mango-peach-70010",
+      "source_id": "70010",
+      "name": "Kuz KUZ 9000 Mango Peach",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-mango-peach.png",
+        "card": "/images/products/kuz-9000-mango-peach.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 81,
+      "id": "kuz-9000-miami-mint-70011",
+      "source_id": "70011",
+      "name": "Kuz KUZ 9000 Miami Mint",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-miami-mint.png",
+        "card": "/images/products/kuz-9000-miami-mint.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 82,
+      "id": "kuz-9000-mighty-mint-70012",
+      "source_id": "70012",
+      "name": "Kuz KUZ 9000 Mighty Mint",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-mighty-mint.png",
+        "card": "/images/products/kuz-9000-mighty-mint.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 83,
+      "id": "kuz-9000-mimosa-70013",
+      "source_id": "70013",
+      "name": "Kuz KUZ 9000 Mimosa",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-mimosa.png",
+        "card": "/images/products/kuz-9000-mimosa.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 84,
+      "id": "kuz-9000-my-oh-my-70014",
+      "source_id": "70014",
+      "name": "Kuz KUZ 9000 My Oh My",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-my-oh-my.png",
+        "card": "/images/products/kuz-9000-my-oh-my.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 85,
+      "id": "kuz-9000-naked-70015",
+      "source_id": "70015",
+      "name": "Kuz KUZ 9000 Naked",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-naked.png",
+        "card": "/images/products/kuz-9000-naked.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 86,
+      "id": "kuz-9000-passion-grapefruit-70016",
+      "source_id": "70016",
+      "name": "Kuz KUZ 9000 Passion Grapefruit",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-passion-grapefruit.png",
+        "card": "/images/products/kuz-9000-passion-grapefruit.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 87,
+      "id": "kuz-9000-pineapple-coco-70017",
+      "source_id": "70017",
+      "name": "Kuz KUZ 9000 Pineapple Coco",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-pineapple-coco.png",
+        "card": "/images/products/kuz-9000-pineapple-coco.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 88,
+      "id": "kuz-9000-rainbow-drop-70018",
+      "source_id": "70018",
+      "name": "Kuz KUZ 9000 Rainbow Drop",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-rainbow-drop.png",
+        "card": "/images/products/kuz-9000-rainbow-drop.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 89,
+      "id": "kuz-9000-strawberry-banana-70019",
+      "source_id": "70019",
+      "name": "Kuz KUZ 9000 Strawberry Banana",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-strawberry-banana.png",
+        "card": "/images/products/kuz-9000-strawberry-banana.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 90,
+      "id": "kuz-9000-strawberry-mango-70020",
+      "source_id": "70020",
+      "name": "Kuz KUZ 9000 Strawberry Mango",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-strawberry-mango.png",
+        "card": "/images/products/kuz-9000-strawberry-mango.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 91,
+      "id": "kuz-9000-strawberry-watermelon-70021",
+      "source_id": "70021",
+      "name": "Kuz KUZ 9000 Strawberry Watermelon",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-strawberry-watermelon.png",
+        "card": "/images/products/kuz-9000-strawberry-watermelon.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 92,
+      "id": "kuz-9000-super-berry-70022",
+      "source_id": "70022",
+      "name": "Kuz KUZ 9000 Super Berry",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-super-berry.png",
+        "card": "/images/products/kuz-9000-super-berry.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 93,
+      "id": "kuz-9000-tobacco-70023",
+      "source_id": "70023",
+      "name": "Kuz KUZ 9000 Tobacco",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-tobacco.png",
+        "card": "/images/products/kuz-9000-tobacco.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 94,
+      "id": "kuz-9000-watermelon-ice-70024",
+      "source_id": "70024",
+      "name": "Kuz KUZ 9000 Watermelon Ice",
+      "price_aud": 54.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "650mAh",
+        "puff_count": "9000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "19mL",
+        "charging_port": "USB-C",
+        "coil_type": "Mesh Coil 1.0Ω",
+        "display": "Battery & E-liquid",
+        "battery_indicator": "Yes",
+        "adjust_airflow": "No"
+      },
+      "image": {
+        "thumb": "/images/products/kuz-9000-watermelon-ice.png",
+        "card": "/images/products/kuz-9000-watermelon-ice.png"
+      },
+      "brand": "Kuz",
+      "series": "KUZ 9000"
+    },
+    {
+      "rank": 95,
+      "id": "umin-10000-banna-buzz-72001",
+      "source_id": "72001",
+      "name": "UMIN UMIN 10000 Banna Buzz",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-banna-buzz.jpg",
+        "card": "/images/products/umin-10000-banna-buzz.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 96,
+      "id": "umin-10000-black-ice-72002",
+      "source_id": "72002",
+      "name": "UMIN UMIN 10000 Black Ice",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-black-ice.jpg",
+        "card": "/images/products/umin-10000-black-ice.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 97,
+      "id": "umin-10000-blueberry-blast-72003",
+      "source_id": "72003",
+      "name": "UMIN UMIN 10000 Blueberry Blast",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-blueberry-blast.jpg",
+        "card": "/images/products/umin-10000-blueberry-blast.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 98,
+      "id": "umin-10000-cherry-cola-72004",
+      "source_id": "72004",
+      "name": "UMIN UMIN 10000 Cherry Cola",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-cherry-cola.jpg",
+        "card": "/images/products/umin-10000-cherry-cola.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 99,
+      "id": "umin-10000-cherry-pomegranate-72005",
+      "source_id": "72005",
+      "name": "UMIN UMIN 10000 Cherry Pomegranate",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-cherry-pomegranate.jpg",
+        "card": "/images/products/umin-10000-cherry-pomegranate.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 100,
+      "id": "umin-10000-coffee-tobacco-72006",
+      "source_id": "72006",
+      "name": "UMIN UMIN 10000 Coffee Tobacco",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-coffee-tobacco.jpg",
+        "card": "/images/products/umin-10000-coffee-tobacco.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 101,
+      "id": "umin-10000-cola-72007",
+      "source_id": "72007",
+      "name": "UMIN UMIN 10000 Cola",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-cola.jpg",
+        "card": "/images/products/umin-10000-cola.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 102,
+      "id": "umin-10000-grape-ice-72008",
+      "source_id": "72008",
+      "name": "UMIN UMIN 10000 Grape Ice",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-grape-ice.jpg",
+        "card": "/images/products/umin-10000-grape-ice.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 103,
+      "id": "umin-10000-grapefruit-soda-72009",
+      "source_id": "72009",
+      "name": "UMIN UMIN 10000 Grapefruit Soda",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-grapefruit-soda.jpg",
+        "card": "/images/products/umin-10000-grapefruit-soda.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 104,
+      "id": "umin-10000-ice-mint-72010",
+      "source_id": "72010",
+      "name": "UMIN UMIN 10000 Ice Mint",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-ice-mint.jpg",
+        "card": "/images/products/umin-10000-ice-mint.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 105,
+      "id": "umin-10000-mango-magic-72011",
+      "source_id": "72011",
+      "name": "UMIN UMIN 10000 Mango Magic",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-mango-magic.jpg",
+        "card": "/images/products/umin-10000-mango-magic.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 106,
+      "id": "umin-10000-mixed-berries-72012",
+      "source_id": "72012",
+      "name": "UMIN UMIN 10000 Mixed Berries",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-mixed-berries.jpg",
+        "card": "/images/products/umin-10000-mixed-berries.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 107,
+      "id": "umin-10000-passionfruit-mango-lime-72013",
+      "source_id": "72013",
+      "name": "UMIN UMIN 10000 Passionfruit Mango Lime",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-passionfruit-mango-lime.jpg",
+        "card": "/images/products/umin-10000-passionfruit-mango-lime.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 108,
+      "id": "umin-10000-pink-lemon-72014",
+      "source_id": "72014",
+      "name": "UMIN UMIN 10000 Pink Lemon",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-pink-lemon.jpg",
+        "card": "/images/products/umin-10000-pink-lemon.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 109,
+      "id": "umin-10000-root-beer-72015",
+      "source_id": "72015",
+      "name": "UMIN UMIN 10000 Root Beer",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-root-beer.jpg",
+        "card": "/images/products/umin-10000-root-beer.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 110,
+      "id": "umin-10000-strawberry-72016",
+      "source_id": "72016",
+      "name": "UMIN UMIN 10000 Strawberry",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-strawberry.jpg",
+        "card": "/images/products/umin-10000-strawberry.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 111,
+      "id": "umin-10000-strawberry-coconut-72017",
+      "source_id": "72017",
+      "name": "UMIN UMIN 10000 Strawberry Coconut",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-strawberry-coconut.jpg",
+        "card": "/images/products/umin-10000-strawberry-coconut.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 112,
+      "id": "umin-10000-strawberry-lychee-72018",
+      "source_id": "72018",
+      "name": "UMIN UMIN 10000 Strawberry Lychee",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-strawberry-lychee.jpg",
+        "card": "/images/products/umin-10000-strawberry-lychee.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 113,
+      "id": "umin-10000-tobacco-72019",
+      "source_id": "72019",
+      "name": "UMIN UMIN 10000 Tobacco",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-tobacco.jpg",
+        "card": "/images/products/umin-10000-tobacco.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 114,
+      "id": "umin-10000-watermelon-bubblegum-72020",
+      "source_id": "72020",
+      "name": "UMIN UMIN 10000 Watermelon Bubblegum",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-watermelon-bubblegum.jpg",
+        "card": "/images/products/umin-10000-watermelon-bubblegum.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 115,
+      "id": "umin-10000-watermelon-ice-72021",
+      "source_id": "72021",
+      "name": "UMIN UMIN 10000 Watermelon Ice",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2700mAh",
+        "puff_count": "10000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "charging_port": null,
+        "coil_type": "Mesh Coil 1.3Ω",
+        "display": "Battery Level",
+        "battery_indicator": "Yes",
+        "mtl": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/umin-10000-watermelon-ice.jpg",
+        "card": "/images/products/umin-10000-watermelon-ice.jpg"
+      },
+      "brand": "UMIN",
+      "series": "UMIN 10000"
+    },
+    {
+      "rank": 116,
+      "id": "geek-bar-meloso-mini-blueberry-ice-74001",
+      "source_id": "74001",
+      "name": "Geek Bar Meloso Mini Blueberry Ice",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "550mAh",
+        "puff_count": "1500",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "5mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "display": "No",
+        "battery_indicator": "No"
+      },
+      "image": {
+        "thumb": "/images/products/geek-bar-meloso-mini.webp",
+        "card": "/images/products/geek-bar-meloso-mini.webp"
+      },
+      "brand": "Geek Bar",
+      "series": "Meloso Mini"
+    },
+    {
+      "rank": 117,
+      "id": "geek-bar-meloso-mini-grape-jelly-74002",
+      "source_id": "74002",
+      "name": "Geek Bar Meloso Mini Grape Jelly",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "550mAh",
+        "puff_count": "1500",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "5mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "display": "No",
+        "battery_indicator": "No"
+      },
+      "image": {
+        "thumb": "/images/products/geek-bar-meloso-mini.webp",
+        "card": "/images/products/geek-bar-meloso-mini.webp"
+      },
+      "brand": "Geek Bar",
+      "series": "Meloso Mini"
+    },
+    {
+      "rank": 118,
+      "id": "geek-bar-meloso-mini-sour-apple-ice-74003",
+      "source_id": "74003",
+      "name": "Geek Bar Meloso Mini Sour Apple Ice",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "550mAh",
+        "puff_count": "1500",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "5mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "display": "No",
+        "battery_indicator": "No"
+      },
+      "image": {
+        "thumb": "/images/products/geek-bar-meloso-mini.webp",
+        "card": "/images/products/geek-bar-meloso-mini.webp"
+      },
+      "brand": "Geek Bar",
+      "series": "Meloso Mini"
+    },
+    {
+      "rank": 119,
+      "id": "geek-bar-meloso-mini-white-gummy-ice-74004",
+      "source_id": "74004",
+      "name": "Geek Bar Meloso Mini White Gummy Ice",
+      "price_aud": 49.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "550mAh",
+        "puff_count": "1500",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "5mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "display": "No",
+        "battery_indicator": "No"
+      },
+      "image": {
+        "thumb": "/images/products/geek-bar-meloso-mini.webp",
+        "card": "/images/products/geek-bar-meloso-mini.webp"
+      },
+      "brand": "Geek Bar",
+      "series": "Meloso Mini"
+    },
+    {
+      "rank": 120,
+      "id": "geek-bar-pulse-x-25000-blue-razz-ice-76001",
+      "source_id": "76001",
+      "name": "Geek Bar Pulse X 25000 Blue Razz Ice",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "puff_count": "25000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "battery_capacity": "820mAh",
+        "charging_port": "USB-C",
+        "display_screen": "Yes",
+        "adjustable_airflow": "Yes",
+        "coil_type": "Dual Mesh",
+        "vaping_mode": "Pulse/Regular",
+        "battery_indicator": "Yes",
+        "e-liquid_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/geek-bar-pulse-x-25000-blue-razz-ice.webp",
+        "card": "/images/products/geek-bar-pulse-x-25000-blue-razz-ice.webp"
+      },
+      "brand": "Geek Bar",
+      "series": "Pulse X 25000"
+    },
+    {
+      "rank": 121,
+      "id": "geek-bar-pulse-x-25000-watermelon-ice-76002",
+      "source_id": "76002",
+      "name": "Geek Bar Pulse X 25000 Watermelon Ice",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "puff_count": "25000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "battery_capacity": "820mAh",
+        "charging_port": "USB-C",
+        "display_screen": "Yes",
+        "adjustable_airflow": "Yes",
+        "coil_type": "Dual Mesh",
+        "vaping_mode": "Pulse/Regular",
+        "battery_indicator": "Yes",
+        "e-liquid_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/geek-bar-pulse-x-25000-watermelon-ice.webp",
+        "card": "/images/products/geek-bar-pulse-x-25000-watermelon-ice.webp"
+      },
+      "brand": "Geek Bar",
+      "series": "Pulse X 25000"
+    },
+    {
+      "rank": 122,
+      "id": "geek-bar-pulse-x-25000-miami-mint-76003",
+      "source_id": "76003",
+      "name": "Geek Bar Pulse X 25000 Miami Mint",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "puff_count": "25000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "battery_capacity": "820mAh",
+        "charging_port": "USB-C",
+        "display_screen": "Yes",
+        "adjustable_airflow": "Yes",
+        "coil_type": "Dual Mesh",
+        "vaping_mode": "Pulse/Regular",
+        "battery_indicator": "Yes",
+        "e-liquid_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/geek-bar-pulse-x-25000-miami-mint.webp",
+        "card": "/images/products/geek-bar-pulse-x-25000-miami-mint.webp"
+      },
+      "brand": "Geek Bar",
+      "series": "Pulse X 25000"
+    },
+    {
+      "rank": 123,
+      "id": "geek-bar-pulse-x-25000-sour-apple-ice-76004",
+      "source_id": "76004",
+      "name": "Geek Bar Pulse X 25000 Sour Apple Ice",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "puff_count": "25000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "battery_capacity": "820mAh",
+        "charging_port": "USB-C",
+        "display_screen": "Yes",
+        "adjustable_airflow": "Yes",
+        "coil_type": "Dual Mesh",
+        "vaping_mode": "Pulse/Regular",
+        "battery_indicator": "Yes",
+        "e-liquid_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/geek-bar-pulse-x-25000-sour-apple-ice.webp",
+        "card": "/images/products/geek-bar-pulse-x-25000-sour-apple-ice.webp"
+      },
+      "brand": "Geek Bar",
+      "series": "Pulse X 25000"
+    },
+    {
+      "rank": 124,
+      "id": "geek-bar-pulse-x-25000-banana-taffy-freeze-76005",
+      "source_id": "76005",
+      "name": "Geek Bar Pulse X 25000 Banana Taffy Freeze",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "puff_count": "25000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "battery_capacity": "820mAh",
+        "charging_port": "USB-C",
+        "display_screen": "Yes",
+        "adjustable_airflow": "Yes",
+        "coil_type": "Dual Mesh",
+        "vaping_mode": "Pulse/Regular",
+        "battery_indicator": "Yes",
+        "e-liquid_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/geek-bar-pulse-x-25000-banana-taffy-freeze.webp",
+        "card": "/images/products/geek-bar-pulse-x-25000-banana-taffy-freeze.webp"
+      },
+      "brand": "Geek Bar",
+      "series": "Pulse X 25000"
+    },
+    {
+      "rank": 125,
+      "id": "geek-bar-pulse-x-25000-cool-mint-76006",
+      "source_id": "76006",
+      "name": "Geek Bar Pulse X 25000 Cool Mint",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "puff_count": "25000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "battery_capacity": "820mAh",
+        "charging_port": "USB-C",
+        "display_screen": "Yes",
+        "adjustable_airflow": "Yes",
+        "coil_type": "Dual Mesh",
+        "vaping_mode": "Pulse/Regular",
+        "battery_indicator": "Yes",
+        "e-liquid_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/geek-bar-pulse-x-25000-cool-mint.webp",
+        "card": "/images/products/geek-bar-pulse-x-25000-cool-mint.webp"
+      },
+      "brand": "Geek Bar",
+      "series": "Pulse X 25000"
+    },
+    {
+      "rank": 126,
+      "id": "geek-bar-pulse-x-25000-blue-rancher-76007",
+      "source_id": "76007",
+      "name": "Geek Bar Pulse X 25000 Blue Rancher",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "puff_count": "25000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "battery_capacity": "820mAh",
+        "charging_port": "USB-C",
+        "display_screen": "Yes",
+        "adjustable_airflow": "Yes",
+        "coil_type": "Dual Mesh",
+        "vaping_mode": "Pulse/Regular",
+        "battery_indicator": "Yes",
+        "e-liquid_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/geek-bar-pulse-x-25000-blue-rancher.webp",
+        "card": "/images/products/geek-bar-pulse-x-25000-blue-rancher.webp"
+      },
+      "brand": "Geek Bar",
+      "series": "Pulse X 25000"
+    },
+    {
+      "rank": 127,
+      "id": "geek-bar-pulse-x-25000-orange-fcuking-fab-76008",
+      "source_id": "76008",
+      "name": "Geek Bar Pulse X 25000 Orange Fcuking Fab",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "puff_count": "25000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "battery_capacity": "820mAh",
+        "charging_port": "USB-C",
+        "display_screen": "Yes",
+        "adjustable_airflow": "Yes",
+        "coil_type": "Dual Mesh",
+        "vaping_mode": "Pulse/Regular",
+        "battery_indicator": "Yes",
+        "e-liquid_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/geek-bar-pulse-x-25000-orange-fcuking-fab.webp",
+        "card": "/images/products/geek-bar-pulse-x-25000-orange-fcuking-fab.webp"
+      },
+      "brand": "Geek Bar",
+      "series": "Pulse X 25000"
     }
   ]
 }

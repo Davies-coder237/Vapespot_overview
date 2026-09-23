@@ -40485,5 +40485,746 @@
     ],
     "file": "e-cigarettes/disposables.json",
     "thumb": "/images/products/alibarbar-ingot-30000-hubba-grape.jpg"
+  },
+  {
+    "id": "kuz-9000-american-tobacco-70001",
+    "name": "Kuz KUZ 9000 American Tobacco",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-american-tobacco.png"
+  },
+  {
+    "id": "kuz-9000-blue-dream-70002",
+    "name": "Kuz KUZ 9000 Blue Dream",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-blue-dream.png"
+  },
+  {
+    "id": "kuz-9000-blue-razz-lemonade-70003",
+    "name": "Kuz KUZ 9000 Blue Razz Lemonade",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-blue-razz-lemonade.png"
+  },
+  {
+    "id": "kuz-9000-cali-clear-70004",
+    "name": "Kuz KUZ 9000 Cali Clear",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-cali-clear.png"
+  },
+  {
+    "id": "kuz-9000-cali-mint-70005",
+    "name": "Kuz KUZ 9000 Cali Mint",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-cali-mint.png"
+  },
+  {
+    "id": "kuz-9000-cola-ice-70006",
+    "name": "Kuz KUZ 9000 Cola Ice",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-cola-ice.png"
+  },
+  {
+    "id": "kuz-9000-crystal-clear-70007",
+    "name": "Kuz KUZ 9000 Crystal Clear",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-crystal-clear.png"
+  },
+  {
+    "id": "kuz-9000-double-apple-70008",
+    "name": "Kuz KUZ 9000 Double Apple",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-double-apple.png"
+  },
+  {
+    "id": "kuz-9000-lemon-mint-70009",
+    "name": "Kuz KUZ 9000 Lemon Mint",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-lemon-mint.png"
+  },
+  {
+    "id": "kuz-9000-mango-peach-70010",
+    "name": "Kuz KUZ 9000 Mango Peach",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-mango-peach.png"
+  },
+  {
+    "id": "kuz-9000-miami-mint-70011",
+    "name": "Kuz KUZ 9000 Miami Mint",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-miami-mint.png"
+  },
+  {
+    "id": "kuz-9000-mighty-mint-70012",
+    "name": "Kuz KUZ 9000 Mighty Mint",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-mighty-mint.png"
+  },
+  {
+    "id": "kuz-9000-mimosa-70013",
+    "name": "Kuz KUZ 9000 Mimosa",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-mimosa.png"
+  },
+  {
+    "id": "kuz-9000-my-oh-my-70014",
+    "name": "Kuz KUZ 9000 My Oh My",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-my-oh-my.png"
+  },
+  {
+    "id": "kuz-9000-naked-70015",
+    "name": "Kuz KUZ 9000 Naked",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-naked.png"
+  },
+  {
+    "id": "kuz-9000-passion-grapefruit-70016",
+    "name": "Kuz KUZ 9000 Passion Grapefruit",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-passion-grapefruit.png"
+  },
+  {
+    "id": "kuz-9000-pineapple-coco-70017",
+    "name": "Kuz KUZ 9000 Pineapple Coco",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-pineapple-coco.png"
+  },
+  {
+    "id": "kuz-9000-rainbow-drop-70018",
+    "name": "Kuz KUZ 9000 Rainbow Drop",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-rainbow-drop.png"
+  },
+  {
+    "id": "kuz-9000-strawberry-banana-70019",
+    "name": "Kuz KUZ 9000 Strawberry Banana",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-strawberry-banana.png"
+  },
+  {
+    "id": "kuz-9000-strawberry-mango-70020",
+    "name": "Kuz KUZ 9000 Strawberry Mango",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-strawberry-mango.png"
+  },
+  {
+    "id": "kuz-9000-strawberry-watermelon-70021",
+    "name": "Kuz KUZ 9000 Strawberry Watermelon",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-strawberry-watermelon.png"
+  },
+  {
+    "id": "kuz-9000-super-berry-70022",
+    "name": "Kuz KUZ 9000 Super Berry",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-super-berry.png"
+  },
+  {
+    "id": "kuz-9000-tobacco-70023",
+    "name": "Kuz KUZ 9000 Tobacco",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-tobacco.png"
+  },
+  {
+    "id": "kuz-9000-watermelon-ice-70024",
+    "name": "Kuz KUZ 9000 Watermelon Ice",
+    "brand": "Kuz",
+    "series": "KUZ 9000",
+    "price_aud": 54.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/kuz-9000-watermelon-ice.png"
+  },
+  {
+    "id": "umin-10000-banna-buzz-72001",
+    "name": "UMIN UMIN 10000 Banna Buzz",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-banna-buzz.jpg"
+  },
+  {
+    "id": "umin-10000-black-ice-72002",
+    "name": "UMIN UMIN 10000 Black Ice",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-black-ice.jpg"
+  },
+  {
+    "id": "umin-10000-blueberry-blast-72003",
+    "name": "UMIN UMIN 10000 Blueberry Blast",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-blueberry-blast.jpg"
+  },
+  {
+    "id": "umin-10000-cherry-cola-72004",
+    "name": "UMIN UMIN 10000 Cherry Cola",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-cherry-cola.jpg"
+  },
+  {
+    "id": "umin-10000-cherry-pomegranate-72005",
+    "name": "UMIN UMIN 10000 Cherry Pomegranate",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-cherry-pomegranate.jpg"
+  },
+  {
+    "id": "umin-10000-coffee-tobacco-72006",
+    "name": "UMIN UMIN 10000 Coffee Tobacco",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-coffee-tobacco.jpg"
+  },
+  {
+    "id": "umin-10000-cola-72007",
+    "name": "UMIN UMIN 10000 Cola",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-cola.jpg"
+  },
+  {
+    "id": "umin-10000-grape-ice-72008",
+    "name": "UMIN UMIN 10000 Grape Ice",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-grape-ice.jpg"
+  },
+  {
+    "id": "umin-10000-grapefruit-soda-72009",
+    "name": "UMIN UMIN 10000 Grapefruit Soda",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-grapefruit-soda.jpg"
+  },
+  {
+    "id": "umin-10000-ice-mint-72010",
+    "name": "UMIN UMIN 10000 Ice Mint",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-ice-mint.jpg"
+  },
+  {
+    "id": "umin-10000-mango-magic-72011",
+    "name": "UMIN UMIN 10000 Mango Magic",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-mango-magic.jpg"
+  },
+  {
+    "id": "umin-10000-mixed-berries-72012",
+    "name": "UMIN UMIN 10000 Mixed Berries",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-mixed-berries.jpg"
+  },
+  {
+    "id": "umin-10000-passionfruit-mango-lime-72013",
+    "name": "UMIN UMIN 10000 Passionfruit Mango Lime",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-passionfruit-mango-lime.jpg"
+  },
+  {
+    "id": "umin-10000-pink-lemon-72014",
+    "name": "UMIN UMIN 10000 Pink Lemon",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-pink-lemon.jpg"
+  },
+  {
+    "id": "umin-10000-root-beer-72015",
+    "name": "UMIN UMIN 10000 Root Beer",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-root-beer.jpg"
+  },
+  {
+    "id": "umin-10000-strawberry-72016",
+    "name": "UMIN UMIN 10000 Strawberry",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-strawberry.jpg"
+  },
+  {
+    "id": "umin-10000-strawberry-coconut-72017",
+    "name": "UMIN UMIN 10000 Strawberry Coconut",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-strawberry-coconut.jpg"
+  },
+  {
+    "id": "umin-10000-strawberry-lychee-72018",
+    "name": "UMIN UMIN 10000 Strawberry Lychee",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-strawberry-lychee.jpg"
+  },
+  {
+    "id": "umin-10000-tobacco-72019",
+    "name": "UMIN UMIN 10000 Tobacco",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-tobacco.jpg"
+  },
+  {
+    "id": "umin-10000-watermelon-bubblegum-72020",
+    "name": "UMIN UMIN 10000 Watermelon Bubblegum",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-watermelon-bubblegum.jpg"
+  },
+  {
+    "id": "umin-10000-watermelon-ice-72021",
+    "name": "UMIN UMIN 10000 Watermelon Ice",
+    "brand": "UMIN",
+    "series": "UMIN 10000",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/umin-10000-watermelon-ice.jpg"
+  },
+  {
+    "id": "geek-bar-meloso-mini-blueberry-ice-74001",
+    "name": "Geek Bar Meloso Mini Blueberry Ice",
+    "brand": "Geek Bar",
+    "series": "Meloso Mini",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/geek-bar-meloso-mini.webp"
+  },
+  {
+    "id": "geek-bar-meloso-mini-grape-jelly-74002",
+    "name": "Geek Bar Meloso Mini Grape Jelly",
+    "brand": "Geek Bar",
+    "series": "Meloso Mini",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/geek-bar-meloso-mini.webp"
+  },
+  {
+    "id": "geek-bar-meloso-mini-sour-apple-ice-74003",
+    "name": "Geek Bar Meloso Mini Sour Apple Ice",
+    "brand": "Geek Bar",
+    "series": "Meloso Mini",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/geek-bar-meloso-mini.webp"
+  },
+  {
+    "id": "geek-bar-meloso-mini-white-gummy-ice-74004",
+    "name": "Geek Bar Meloso Mini White Gummy Ice",
+    "brand": "Geek Bar",
+    "series": "Meloso Mini",
+    "price_aud": 49.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/geek-bar-meloso-mini.webp"
+  },
+  {
+    "id": "geek-bar-pulse-x-25000-blue-razz-ice-76001",
+    "name": "Geek Bar Pulse X 25000 Blue Razz Ice",
+    "brand": "Geek Bar",
+    "series": "Pulse X 25000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/geek-bar-pulse-x-25000-blue-razz-ice.webp"
+  },
+  {
+    "id": "geek-bar-pulse-x-25000-watermelon-ice-76002",
+    "name": "Geek Bar Pulse X 25000 Watermelon Ice",
+    "brand": "Geek Bar",
+    "series": "Pulse X 25000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/geek-bar-pulse-x-25000-watermelon-ice.webp"
+  },
+  {
+    "id": "geek-bar-pulse-x-25000-miami-mint-76003",
+    "name": "Geek Bar Pulse X 25000 Miami Mint",
+    "brand": "Geek Bar",
+    "series": "Pulse X 25000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/geek-bar-pulse-x-25000-miami-mint.webp"
+  },
+  {
+    "id": "geek-bar-pulse-x-25000-sour-apple-ice-76004",
+    "name": "Geek Bar Pulse X 25000 Sour Apple Ice",
+    "brand": "Geek Bar",
+    "series": "Pulse X 25000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/geek-bar-pulse-x-25000-sour-apple-ice.webp"
+  },
+  {
+    "id": "geek-bar-pulse-x-25000-banana-taffy-freeze-76005",
+    "name": "Geek Bar Pulse X 25000 Banana Taffy Freeze",
+    "brand": "Geek Bar",
+    "series": "Pulse X 25000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/geek-bar-pulse-x-25000-banana-taffy-freeze.webp"
+  },
+  {
+    "id": "geek-bar-pulse-x-25000-cool-mint-76006",
+    "name": "Geek Bar Pulse X 25000 Cool Mint",
+    "brand": "Geek Bar",
+    "series": "Pulse X 25000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/geek-bar-pulse-x-25000-cool-mint.webp"
+  },
+  {
+    "id": "geek-bar-pulse-x-25000-blue-rancher-76007",
+    "name": "Geek Bar Pulse X 25000 Blue Rancher",
+    "brand": "Geek Bar",
+    "series": "Pulse X 25000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/geek-bar-pulse-x-25000-blue-rancher.webp"
+  },
+  {
+    "id": "geek-bar-pulse-x-25000-orange-fcuking-fab-76008",
+    "name": "Geek Bar Pulse X 25000 Orange Fcuking Fab",
+    "brand": "Geek Bar",
+    "series": "Pulse X 25000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/geek-bar-pulse-x-25000-orange-fcuking-fab.webp"
   }
 ]

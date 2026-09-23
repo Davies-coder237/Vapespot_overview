@@ -1102,9 +1102,9 @@ if (brandsData.brands && brandsData.brands.length) {
     `<span class="seo-price">${productsCountFor(b.name)} products</span></a></article>`
   ).join("");
   const bIdxHead = [
-    `<title>Vape Brands Australia — IGET, Alibarbar, GeekVape & More | Vape Spot Australia</title>`,
+    `<title>Vape Brands Australia — IGET, Kuz, UMIN, Alibarbar, Geek Bar & More | Vape Spot Australia</title>`,
     `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`,
-    `<meta name="description" content="All the vape brands Vape Spot stocks in Australia: IGET, Alibarbar, GeekVape, Gunnpod, VooPoo, Vaporesso, HQD and RELX — with model comparisons, prices and fast courier delivery." />`,
+    `<meta name="description" content="All the vape brands Vape Spot stocks in Australia: IGET, Alibarbar, Kuz, UMIN, Geek Bar, GeekVape, Gunnpod, VooPoo, Vaporesso, HQD and RELX — with model comparisons, prices and fast courier delivery." />`,
     `<meta property="og:title" content="Vape Brands Australia — Vape Spot" />`,
     `<meta property="og:url" content="${B_BASE}" />`,
     `<meta property="og:type" content="website" />`,
