@@ -48,7 +48,7 @@
     {
       "name": "Alibarbar",
       "slug": "alibarbar",
-      "product_count": 82
+      "product_count": 104
     },
     {
       "name": "Waka",
@@ -16468,6 +16468,482 @@
       },
       "brand": "JNR",
       "series": ""
+    },
+    {
+      "id": "alibarbar-ingot-15000-pineapple-kiwifruit-91001",
+      "source_id": "91001",
+      "name": "Alibarbar Ingot 15000 Pineapple Kiwifruit",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "850mAh",
+        "puff_count": "15000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-15000.webp",
+        "card": "/images/products/alibarbar-ingot-15000.webp"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 15000"
+    },
+    {
+      "id": "alibarbar-ingot-15000-grape-peach-91002",
+      "source_id": "91002",
+      "name": "Alibarbar Ingot 15000 Grape Peach",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "850mAh",
+        "puff_count": "15000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-15000.webp",
+        "card": "/images/products/alibarbar-ingot-15000.webp"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 15000"
+    },
+    {
+      "id": "alibarbar-ingot-15000-mango-91003",
+      "source_id": "91003",
+      "name": "Alibarbar Ingot 15000 Mango",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "850mAh",
+        "puff_count": "15000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-15000.webp",
+        "card": "/images/products/alibarbar-ingot-15000.webp"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 15000"
+    },
+    {
+      "id": "alibarbar-ingot-15000-cherry-pomegranate-91004",
+      "source_id": "91004",
+      "name": "Alibarbar Ingot 15000 Cherry Pomegranate",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "850mAh",
+        "puff_count": "15000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-15000.webp",
+        "card": "/images/products/alibarbar-ingot-15000.webp"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 15000"
+    },
+    {
+      "id": "alibarbar-ingot-15000-pineapple-banana-91005",
+      "source_id": "91005",
+      "name": "Alibarbar Ingot 15000 Pineapple Banana",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "850mAh",
+        "puff_count": "15000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-15000.webp",
+        "card": "/images/products/alibarbar-ingot-15000.webp"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 15000"
+    },
+    {
+      "id": "alibarbar-ingot-15000-tropical-91006",
+      "source_id": "91006",
+      "name": "Alibarbar Ingot 15000 Tropical",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "850mAh",
+        "puff_count": "15000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-15000.webp",
+        "card": "/images/products/alibarbar-ingot-15000.webp"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 15000"
+    },
+    {
+      "id": "alibarbar-ingot-15000-blueberry-raspberry-91007",
+      "source_id": "91007",
+      "name": "Alibarbar Ingot 15000 Blueberry Raspberry",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "850mAh",
+        "puff_count": "15000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-15000.webp",
+        "card": "/images/products/alibarbar-ingot-15000.webp"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 15000"
+    },
+    {
+      "id": "alibarbar-ingot-15000-strawberry-watermelon-91008",
+      "source_id": "91008",
+      "name": "Alibarbar Ingot 15000 Strawberry Watermelon",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "850mAh",
+        "puff_count": "15000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-15000.webp",
+        "card": "/images/products/alibarbar-ingot-15000.webp"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 15000"
+    },
+    {
+      "id": "alibarbar-ingot-15000-passionfruit-mango-91009",
+      "source_id": "91009",
+      "name": "Alibarbar Ingot 15000 Passionfruit Mango",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "850mAh",
+        "puff_count": "15000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-15000.webp",
+        "card": "/images/products/alibarbar-ingot-15000.webp"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 15000"
+    },
+    {
+      "id": "alibarbar-ingot-15000-blackberry-91010",
+      "source_id": "91010",
+      "name": "Alibarbar Ingot 15000 Blackberry",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "850mAh",
+        "puff_count": "15000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-15000.webp",
+        "card": "/images/products/alibarbar-ingot-15000.webp"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 15000"
+    },
+    {
+      "id": "alibarbar-ingot-15000-banana-91011",
+      "source_id": "91011",
+      "name": "Alibarbar Ingot 15000 Banana",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "850mAh",
+        "puff_count": "15000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-15000.webp",
+        "card": "/images/products/alibarbar-ingot-15000.webp"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 15000"
+    },
+    {
+      "id": "alibarbar-ingot-15000-grape-91012",
+      "source_id": "91012",
+      "name": "Alibarbar Ingot 15000 Grape",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "850mAh",
+        "puff_count": "15000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-15000.webp",
+        "card": "/images/products/alibarbar-ingot-15000.webp"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 15000"
+    },
+    {
+      "id": "alibarbar-ingot-15000-strawberry-kiwifruit-91013",
+      "source_id": "91013",
+      "name": "Alibarbar Ingot 15000 Strawberry Kiwifruit",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "850mAh",
+        "puff_count": "15000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-15000.webp",
+        "card": "/images/products/alibarbar-ingot-15000.webp"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 15000"
+    },
+    {
+      "id": "alibarbar-ingot-15000-lychee-watermelon-91014",
+      "source_id": "91014",
+      "name": "Alibarbar Ingot 15000 Lychee Watermelon",
+      "price_aud": 59.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "850mAh",
+        "puff_count": "15000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "18mL",
+        "charging_port": "USB-C",
+        "coil_type": "Dual Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-15000.webp",
+        "card": "/images/products/alibarbar-ingot-15000.webp"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 15000"
+    },
+    {
+      "id": "alibarbar-ingot-30000-grape-fruit-guava-lemon-92001",
+      "source_id": "92001",
+      "name": "Alibarbar Ingot 30000 Grape Fruit Guava Lemon",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2350mAh",
+        "puff_count": "30000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "coil_type": "Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-30000.png",
+        "card": "/images/products/alibarbar-ingot-30000.png"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 30000"
+    },
+    {
+      "id": "alibarbar-ingot-30000-california-sunset-92002",
+      "source_id": "92002",
+      "name": "Alibarbar Ingot 30000 California Sunset",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2350mAh",
+        "puff_count": "30000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "coil_type": "Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-30000.png",
+        "card": "/images/products/alibarbar-ingot-30000.png"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 30000"
+    },
+    {
+      "id": "alibarbar-ingot-30000-grapefruit-92003",
+      "source_id": "92003",
+      "name": "Alibarbar Ingot 30000 Grapefruit",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2350mAh",
+        "puff_count": "30000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "coil_type": "Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-30000.png",
+        "card": "/images/products/alibarbar-ingot-30000.png"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 30000"
+    },
+    {
+      "id": "alibarbar-ingot-30000-banana-ice-92004",
+      "source_id": "92004",
+      "name": "Alibarbar Ingot 30000 Banana Ice",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2350mAh",
+        "puff_count": "30000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "coil_type": "Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-30000.png",
+        "card": "/images/products/alibarbar-ingot-30000.png"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 30000"
+    },
+    {
+      "id": "alibarbar-ingot-30000-strawberry-kiwi-92005",
+      "source_id": "92005",
+      "name": "Alibarbar Ingot 30000 Strawberry Kiwi",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2350mAh",
+        "puff_count": "30000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "coil_type": "Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-30000.png",
+        "card": "/images/products/alibarbar-ingot-30000.png"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 30000"
+    },
+    {
+      "id": "alibarbar-ingot-30000-cool-mint-92006",
+      "source_id": "92006",
+      "name": "Alibarbar Ingot 30000 Cool Mint",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2350mAh",
+        "puff_count": "30000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "coil_type": "Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-30000.png",
+        "card": "/images/products/alibarbar-ingot-30000.png"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 30000"
+    },
+    {
+      "id": "alibarbar-ingot-30000-blueberry-blast-92007",
+      "source_id": "92007",
+      "name": "Alibarbar Ingot 30000 Blueberry Blast",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2350mAh",
+        "puff_count": "30000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "coil_type": "Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-30000.png",
+        "card": "/images/products/alibarbar-ingot-30000.png"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 30000"
+    },
+    {
+      "id": "alibarbar-ingot-30000-hubba-grape-92008",
+      "source_id": "92008",
+      "name": "Alibarbar Ingot 30000 Hubba Grape",
+      "price_aud": 69.99,
+      "currency": "AUD",
+      "specs": {
+        "battery_capacity": "2350mAh",
+        "puff_count": "30000",
+        "nicotine_strength": "5% (50mg/mL)",
+        "e-liquid_capacity": "22mL",
+        "coil_type": "Mesh Coil",
+        "battery_indicator": "Yes"
+      },
+      "image": {
+        "thumb": "/images/products/alibarbar-ingot-30000.png",
+        "card": "/images/products/alibarbar-ingot-30000.png"
+      },
+      "brand": "Alibarbar",
+      "series": "Ingot 30000"
     }
   ]
 }

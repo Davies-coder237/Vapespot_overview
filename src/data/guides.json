@@ -2,8 +2,8 @@
   "guides": [
     {
       "slug": "what-happens-if-you-vape-without-juice-dry-hit",
-      "title": "What Happens If You Vape Without Juice? (And How to Fix a Dry Hit)",
-      "metaDescription": "Hitting a vape with no juice causes a dry hit — burnt coil, harsh throat hit and a bad taste. Here's what actually happens and how to fix or avoid it.",
+      "title": "Vaping With No Juice = Dry Hit — Fix It Fast",
+      "metaDescription": "Vaping with no juice causes a dry hit: burnt coil, harsh throat hit and a bad taste that lingers. Fix it in 30 seconds or avoid it for good — with real prices at Vape Spot.",
       "category": "Troubleshooting",
       "date": "2026-08-07",
       "readTime": "4 min read",
@@ -12,6 +12,15 @@
         "alt": "Vaporesso XROS 3 pod kit — checking for dry hits when your pod runs out of juice"
       },
       "intro": "If you've ever taken a hit from a vape with an empty tank or dry coil, you know it immediately: a harsh, burnt taste that stings your throat and lingers for minutes. That's a dry hit. Here's what actually happens in the coil, why it tastes so awful, and — most importantly — how to avoid it and fix it when you can.",
+      "priceTable": {
+        "title": "Fix a dry hit: refillable kits & e-liquids at Vape Spot",
+        "header": ["Product", "Price", "Type"],
+        "rows": [
+          { "to": "/product/vaporesso-xros-3-r-kit-7413/", "label": "Vaporesso XROS 3 R Kit", "cells": ["A$59.99", "Pod kit — replaceable coils"] },
+          { "to": "/product/nasty-juice-salt-strawberry-e-liquid-10219/", "label": "Nasty Juice salt e-liquid", "cells": ["A$19.99", "Salt nic e-liquid (replaceable-pod tanks)"] }
+        ],
+        "note": "Prices per device / bottle, incl. GST, courier delivery across Australia."
+      },
       "sections": [
         {
           "heading": "The short answer",
@@ -44,7 +53,7 @@
             "Stop and let the device rest for 5–10 minutes so the wick can absorb available liquid again.",
             "Refill your tank or pod with fresh juice (see our salt nicotine e-liquids).",
             "Tilt the device so the juice directions into the wick ports (the two tiny holes on the side of the coil).",
-            "If the burnt taste remains after refilling, the coil is damaged — replace it .",
+            "If the burnt taste remains after refilling, the coil is damaged — replace it.",
             "Prime a new coil first: drip a few drops of juice inside the wick, wait 5 minutes, take a few slow dry puffs you don't actually hit, then start vaping."
           ]
         },
@@ -86,8 +95,10 @@
         }
       ],
       "links": [
+        { "to": "/brands/vaporesso/", "label": "Vaporesso — pod kits with replaceable coils" },
         { "to": "/product/vaporesso-xros-3-r-kit-7413/", "label": "Vaporesso XROS 3 kit" },
-        { "to": "/product/nasty-juice-salt-strawberry-e-liquid-10219/", "label": "Nasty Juice salt e-liquid (strawberry)" }
+        { "to": "/product/nasty-juice-salt-strawberry-e-liquid-10219/", "label": "Nasty Juice salt e-liquid (strawberry)" },
+        { "to": "/products/e-cigarettes", "label": "Browse all kits & disposables" }
       ],
       "cta": {
         "title": "The right gear makes dry hits a non-issue",
@@ -97,8 +108,8 @@
     },
     {
       "slug": "does-a-vape-smell-like-cigarettes",
-      "title": "Does a Vape Smell Like Cigarettes? (The Honest Answer)",
-      "metaDescription": "Vapes don't smell like cigarettes: the vapour smells like fruit or mint and fades in minutes, instead of clinging to clothes for hours. Here's the honest difference.",
+      "title": "Does a Vape Smell Like Cigarettes? No — 7 Differences",
+      "metaDescription": "Vapes don't smell like cigarettes: vapour smells like the flavour, fades in minutes and clings to almost nothing. Here are the 7 real differences, plus the vapes that leave the least scent.",
       "category": "General",
       "date": "2026-08-07",
       "readTime": "4 min read",
@@ -107,12 +118,34 @@
         "alt": "Vaporesso XROS 3 pod vape — vape vapour smells sweet and fades fast, unlike cigarette smoke"
       },
       "intro": "No — a vape doesn't smell like a cigarette at all. Cigarette smoke leaves a dense, stale smell that clings to clothes, hair and rooms for hours. Vape vapour smells like the flavour inside the pod or tank — fruit, mint, dessert — and it usually dissipates within minutes. Here's the honest breakdown of the difference, including the few cases where a vape can smell a little closer to tobacco.",
+      "priceTable": {
+        "title": "Low-scent options at Vape Spot (AUD)",
+        "header": ["Product", "Price", "Scent profile"],
+        "rows": [
+          { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500", "cells": ["A$44.99", "Fruity ice — very light"] },
+          { "to": "/product/vaporesso-xros-3-r-kit-7413/", "label": "Vaporesso XROS 3 R Kit", "cells": ["A$59.99", "Your choice of flavour, low power"] }
+        ],
+        "note": "Mint/ice flavours smell the least to other people. Prices incl. GST."
+      },
       "sections": [
         {
           "heading": "The short answer",
           "body": [
             "Vape vapour smells like the e-liquid flavour, not like smoke. Because there's no combustion — nothing is actually burning — there's no tar or ash smell and no lingering stale smoke odour. A disposable or pod filled with watermelon ice leaves a light, sweet scent for a minute or two, then it's gone.",
             "Cigarette smoke is different chemistry: burning tobacco releases particles that land on surfaces and stick. That's why a smoker's car and jacket still smell long after the cigarette is finished. Vapour is mostly water, vegetable glycerin and flavouring, so it behaves more like scented breath than smoke."
+          ]
+        },
+        {
+          "heading": "7 differences between vape smell and cigarette smoke",
+          "body": [],
+          "list": [
+            "Vapour smells like the flavour — fruit, mint, dessert. Smoke smells like burning tobacco.",
+            "Vapour fades in minutes; smoke lingers for hours.",
+            "Vapour doesn't stick to fabric the way smoke does — a normal pod leaves almost nothing.",
+            "Vapour is mostly water and glycerin; smoke is tar, ash and combustion particles.",
+            "Vapour has no 'smoker's breath' effect — the breath smell is the flavour, not smoke.",
+            "Vapour doesn't yellow walls or ceilings like cigarette tar buildup.",
+            "Vapour in a closed room is a faint sweet note; smoke is dense and instantly noticeable."
           ]
         },
         {
@@ -176,6 +209,8 @@
         }
       ],
       "links": [
+        { "to": "/brands/vaporesso/", "label": "Vaporesso — low-power pod kits" },
+        { "to": "/brands/iget/", "label": "IGET — fruity & mint disposables" },
         { "to": "/product/vaporesso-xros-3-r-kit-7413/", "label": "Vaporesso XROS 3 pod kit" },
         { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500 (fruity disposable)" }
       ],
@@ -187,8 +222,8 @@
     },
     {
       "slug": "why-does-my-vape-blink-when-i-hit-it",
-      "title": "Why Does My Vape Blink When I Hit It? (Causes & Quick Fixes)",
-      "metaDescription": "A vape blinks for a reason: low battery, a loose connection, blocked airflow or an overheating coil. Here's what each blink pattern means and how to fix it fast.",
+      "title": "Why Is My Vape Blinking? 5 Causes + 30-Second Fix",
+      "metaDescription": "A vape blinks for a reason: low battery, a loose connection, blocked airflow or an overheating coil. Here are the 5 causes, what each blink pattern means, and the 30-second fix.",
       "category": "Troubleshooting",
       "date": "2026-08-07",
       "readTime": "4 min read",
@@ -197,6 +232,16 @@
         "alt": "IGET Bar disposable vape — a blinking light is the device signalling low battery or a connection issue"
       },
       "intro": "A blinking light on your vape is its way of talking — it's telling you something needs attention. The most common causes are a low battery, a poor connection between the battery and the coil or pod, or the device protecting itself from heat. Different devices blink different patterns, but the fix is almost always one of the steps below.",
+      "priceTable": {
+        "title": "Devices with reliable batteries & USB-C at Vape Spot",
+        "header": ["Product", "Price", "Battery"],
+        "rows": [
+          { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500", "cells": ["A$44.99", "1,500mAh — single-use"] },
+          { "to": "/product/iget-moon-k5000-banana-ice-13077/", "label": "IGET Moon K5000", "cells": ["A$49.99", "1,750mAh — USB-C rechargeable"] },
+          { "to": "/product/vaporesso-xros-3-r-kit-7413/", "label": "Vaporesso XROS 3 R Kit", "cells": ["A$59.99", "Refillable — replaceable battery pod"] }
+        ],
+        "note": "Prices incl. GST. When a sealed battery blinks on every hit after a full charge, the device is spent."
+      },
       "sections": [
         {
           "heading": "The short answer",
@@ -205,7 +250,7 @@
           ]
         },
         {
-          "heading": "The most common causes",
+          "heading": "The 5 most common causes",
           "body": [],
           "list": [
             "Low battery — most devices blink when the battery is nearly empty: plug it in and the light usually goes solid or changes colour while charging.",
@@ -273,8 +318,10 @@
         }
       ],
       "links": [
-        { "to": "/product/vaporesso-xros-3-r-kit-7413/", "label": "Vaporesso XROS 3 (refillable kit)" },
-        { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500 disposable" }
+        { "to": "/brands/iget/", "label": "IGET — USB-C rechargeable disposables" },
+        { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500 disposable" },
+        { "to": "/product/iget-moon-k5000-banana-ice-13077/", "label": "IGET Moon K5000 (rechargeable)" },
+        { "to": "/product/vaporesso-xros-3-r-kit-7413/", "label": "Vaporesso XROS 3 (refillable kit)" }
       ],
       "cta": {
         "title": "Replace the device, not the frustration",
@@ -284,8 +331,8 @@
     },
     {
       "slug": "how-many-puffs-is-an-alibarbar-ingot-30000",
-      "title": "How Many Puffs Is an Alibarbar Ingot 30000? (9000 vs 15000 vs 30000)",
-      "metaDescription": "Alibarbar Ingot models advertise 9000, 15000 or 30000 puffs — but the real-world count is lower. Here's what the numbers mean and how many puffs you actually get.",
+      "title": "Alibarbar Ingot: Real Puff Count — 9000 vs 15000 vs 30000",
+      "metaDescription": "Alibarbar Ingot advertises 9000, 15000 or 30000 puffs — real-world is closer to half. Compare capacity, prices and which size fits your habit, with the honest numbers.",
       "category": "Buying Guide",
       "date": "2026-08-07",
       "readTime": "5 min read",
@@ -294,6 +341,16 @@
         "alt": "Alibarbar Ingot disposable vape — advertised puff counts are measured under test conditions, real use varies"
       },
       "intro": "The advertised count on an Alibarbar Ingot refers to the device's battery-and-liquid capacity: the Ingot 9000 is sized for roughly 9,000 puffs, the Ingot 15000 for around 15,000, and the Ingot 30000 for about 30,000. But those numbers are measured under test conditions — in real use you can expect less, and here's exactly what that means in practice.",
+      "priceTable": {
+        "title": "Alibarbar Ingot range at Vape Spot (AUD)",
+        "header": ["Device", "Advertised", "Real-world", "Price", "Charging"],
+        "rows": [
+          { "to": "/product/alibarbar-ingot-pineapple-coconut-2136/", "label": "Ingot 9000", "cells": ["9,000", "4,000–6,000", "A$54.99", "USB-C"] },
+          { "to": "/product/alibarbar-ingot-15000-pineapple-kiwifruit-91001/", "label": "Ingot 15000", "cells": ["15,000", "7,000–10,000", "A$59.99", "USB-C"] },
+          { "to": "/product/alibarbar-ingot-30000-grape-fruit-guava-lemon-92001/", "label": "Ingot 30000", "cells": ["30,000", "15,000–20,000", "A$69.99", "Single-use"] }
+        ],
+        "note": "Prices per single device, incl. GST. Real-world counts assume a typical 1–2 second draw."
+      },
       "sections": [
         {
           "heading": "The short answer",
@@ -324,7 +381,7 @@
             "Take short, steady draws instead of long, deep hits.",
             "Don't chain-vape for hours — give the coil a moment to re-saturate between hits.",
             "Keep it upright and at room temperature; heat and leaks waste liquid.",
-            "Store it our of direct sun and extreme heat."
+            "Store it out of direct sun and extreme heat."
           ]
         },
         {
@@ -349,7 +406,7 @@
         },
         {
           "q": "Are Alibarbar Ingot vapes rechargeable?",
-          "a": "The larger Ingot models include USB-C charging so you can use every last drop of liquid. Charge when the light blinks and you'll get closer to the full stated capacity."
+          "a": "The Ingot 9000 and 15000 include USB-C charging so you can use every last drop of liquid. The Ingot 30000 is a single-use device with no charging port. Charge when the light blinks and you'll get closer to the full stated capacity."
         },
         {
           "q": "What do the 9000, 15000, 30000 numbers mean?",
@@ -357,12 +414,14 @@
         }
       ],
       "links": [
+        { "to": "/brands/alibarbar/", "label": "Alibarbar — the full Ingot range" },
         { "to": "/product/alibarbar-ingot-pineapple-coconut-2136/", "label": "Alibarbar Ingot 9000 (Pineapple Coconut)" },
-        { "to": "/product/airmez-matrix-pro-30000-puffs-blueberry-raspberry-1982/", "label": "Airmez Matrix Pro 30000" }
+        { "to": "/product/alibarbar-ingot-15000-pineapple-kiwifruit-91001/", "label": "Alibarbar Ingot 15000" },
+        { "to": "/product/alibarbar-ingot-30000-grape-fruit-guava-lemon-92001/", "label": "Alibarbar Ingot 30000" }
       ],
       "cta": {
         "title": "Pick the size that matches your habit",
-        "text": "Shop Ingot and high-capacity disposables from A$43.99 — fast courier delivery across Australia.",
+        "text": "Shop Ingot and high-capacity disposables — fast courier delivery across Australia.",
         "to": "/products/e-cigarettes"
       }
     },
@@ -378,6 +437,17 @@
         "alt": "Rechargeable disposable vape with a USB-C port — charge from a laptop, power bank or phone adaptor"
       },
       "intro": "Almost every modern disposable vape recharges from a standard USB-C port — the same one your phone uses. If you've lost a 'charger', you don't need one: any USB-C cable plugged into a laptop, power bank, car USB port or a phone wall adaptor will do. Here's how to charge safely, how long it takes, and the common mistakes that are dangerous.",
+      "priceTable": {
+        "title": "USB-C rechargeable disposables at Vape Spot (AUD)",
+        "header": ["Product", "Price", "Puffs", "Charging"],
+        "rows": [
+          { "to": "/product/iget-moon-k5000-banana-ice-13077/", "label": "IGET Moon K5000", "cells": ["A$49.99", "5,000", "USB-C"] },
+          { "to": "/product/alibarbar-ingot-15000-pineapple-kiwifruit-91001/", "label": "Alibarbar Ingot 15000", "cells": ["A$59.99", "15,000", "USB-C"] },
+          { "to": "/product/alibarbar-ingot-30000-grape-fruit-guava-lemon-92001/", "label": "Alibarbar Ingot 30000", "cells": ["A$69.99", "30,000", "Single-use (no port)"] },
+          { "to": "/product/geek-bar-pulse-x-25k-2041/", "label": "Geek Bar Pulse X 25K", "cells": ["A$69.99", "25,000", "USB-C"] }
+        ],
+        "note": "For a rechargeable model, charge 30–60 min for a useful boost, 1–2 h to full. Prices incl. GST."
+      },
       "sections": [
         {
           "heading": "The short answer",
@@ -449,8 +519,10 @@
         }
       ],
       "links": [
-        { "to": "/product/airmez-matrix-pro-30000-puffs-blueberry-raspberry-1982/", "label": "Airmez Matrix Pro 30000 (rechargeable)" },
-        { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500 (USB-C)" }
+        { "to": "/brands/iget/", "label": "IGET — rechargeable & single-use ranges" },
+        { "to": "/brands/alibarbar/", "label": "Alibarbar — USB-C Ingot models" },
+        { "to": "/product/iget-moon-k5000-banana-ice-13077/", "label": "IGET Moon K5000 (USB-C)" },
+        { "to": "/product/geek-bar-pulse-x-25k-2041/", "label": "Geek Bar Pulse X 25K (USB-C)" }
       ],
       "cta": {
         "title": "A vape you can trust to keep charging",
@@ -460,16 +532,26 @@
     },
     {
       "slug": "how-to-spot-a-fake-disposable-vape-in-australia",
-      "title": "How to Spot a Fake Disposable Vape in Australia (9 Checks)",
-      "metaDescription": "Fake vapes flood the market and many have never been safety tested. Here's how to spot a counterfeit disposable in Australia: packaging, batch codes, taste, price and where you buy it.",
+      "title": "How to Spot a Fake Vape in Australia: 9 Checks (2026)",
+      "metaDescription": "Fake vapes flood the Australian market and many are never safety-tested. Spot a counterfeit disposable in 9 checks: packaging, batch codes, verification, taste, price and seller.",
       "category": "Buying Guide",
       "date": "2026-08-07",
       "readTime": "5 min read",
       "hero": {
         "image": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_1200,h_630,f_webp,q_auto:good/vapespot-v9/digiflavor-x-geek-bar-lush-20k-disposable-10177.webp",
-        "alt": "Geek Bar Lush 20K — a authentic disposable carries a verification code, clean packaging and a trusted price"
+        "alt": "Geek Bar Lush 20K — an authentic disposable carries a verification code, clean packaging and a trusted price"
       },
       "intro": "A fake disposable vape is a counterfeit copy of a known brand, usually sold cheap online, at markets or in places that don't check ID. The fast checks: the price is too good, the packaging is flimsy, the batch or verification code is missing or won't scan, the taste is burnt or chemical, and the place you bought it wasn't a real vape retailer. Buy from a store you can verify and you cut out almost all of the risk.",
+      "priceTable": {
+        "title": "Authentic prices to compare against (Vape Spot, AUD)",
+        "header": ["Device", "Authentic price", "Suspicious if"],
+        "rows": [
+          { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500", "cells": ["A$44.99", "Under ~A$30"] },
+          { "to": "/product/digiflavor-x-geek-bar-lush-20k-disposable-10177/", "label": "Geek Bar Lush 20K", "cells": ["A$39.99", "Under ~A$25"] },
+          { "to": "/product/alibarbar-ingot-pineapple-coconut-2136/", "label": "Alibarbar Ingot 9000", "cells": ["A$54.99", "Under ~A$35"] }
+        ],
+        "note": "A genuine high-capacity disposable costs what it costs. Below-retail deals on known brands are the classic fake signal."
+      },
       "sections": [
         {
           "heading": "The short answer",
@@ -520,7 +602,7 @@
         },
         {
           "q": "Why is my disposable vape so cheap?",
-          "a": "Because it's probably a counterfeit. Real high-capacity disposals cost what they cost because of the liquid, the battery and the compliance. A big discount on a known brand is a classic fake signal."
+          "a": "Because it's probably a counterfeit. Real high-capacity disposables cost what they cost because of the liquid, the battery and the compliance. A big discount on a known brand is a classic fake signal."
         },
         {
           "q": "Is it illegal to sell fake vapes in Australia?",
@@ -528,12 +610,514 @@
         }
       ],
       "links": [
+        { "to": "/guides/how-to-tell-if-a-vape-is-counterfeit-in-australia/", "label": "Counterfeit vapes: batch codes & QR deep-dive" },
+        { "to": "/brands/iget/", "label": "IGET — buy authentic" },
         { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500 (authentic)" },
         { "to": "/product/digiflavor-x-geek-bar-lush-20k-disposable-10177/", "label": "Geek Bar Lush 20K" }
       ],
       "cta": {
         "title": "Know what's in your vape",
         "text": "Buy authentic, age-verified disposables — fast courier delivery across Australia.",
+        "to": "/products/e-cigarettes"
+      }
+    },
+    {
+      "slug": "how-many-puffs-is-a-geek-bar-pulse-x-25000",
+      "title": "Geek Bar Pulse X 25K: Real Puff Count + Price (2026)",
+      "metaDescription": "The Geek Bar Pulse X 25K ($69.99 at Vape Spot) advertises 25,000 puffs — real use is closer to 12,000–18,000. Full specs, how it lasts, and how it compares to the Pulse 9000 and Meloso 30K.",
+      "category": "Buying Guide",
+      "date": "2026-09-23",
+      "readTime": "5 min read",
+      "hero": {
+        "image": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_1200,h_630,f_webp,q_auto:good/vapespot-v9/geek-bar-pulse-x-25k-2041.webp",
+        "alt": "Geek Bar Pulse X 25K — a 25,000-puff rechargeable disposable with display screen and pulse mode"
+      },
+      "intro": "The Geek Bar Pulse X 25K is the biggest bar in the Pulse family: a rechargeable 25,000-puff disposable with a digital display, adjustable airflow and a dual-mesh coil. We sell it at A$69.99. Here's the honest breakdown of what 25K really means, how long it lasts in a typical week, and how it sits against the Pulse 9000 and the Meloso 30K.",
+      "priceTable": {
+        "title": "Geek Bar range at Vape Spot (AUD)",
+        "header": ["Device", "Advertised", "Price", "Charging"],
+        "rows": [
+          { "to": "/product/geek-bar-pulse-9000-cherry-blast-ice-8124/", "label": "Geek Bar Pulse 9000", "cells": ["9,000", "A$54.99", "USB-C"] },
+          { "to": "/product/geek-bar-meloso-max-9000-disposable-10137/", "label": "Geek Bar Meloso MAX 9000", "cells": ["9,000", "A$54.99", "USB-C"] },
+          { "to": "/product/geek-bar-pulse-x-25k-2041/", "label": "Geek Bar Pulse X 25K", "cells": ["25,000", "A$69.99", "USB-C"] },
+          { "to": "/product/meloso-30k-10138/", "label": "Geek Bar Meloso 30K", "cells": ["30,000", "A$74.99", "USB-C"] }
+        ],
+        "note": "Prices per single device, incl. GST. The Pulse X is the middle of the family on price per puff."
+      },
+      "sections": [
+        {
+          "heading": "The short answer",
+          "body": [
+            "Geek Bar rates the Pulse X at 25,000 puffs on a lab-style 1-second draw. In real use — longer draws, colder weather, a draining battery — most vapers get an honest 12,000–18,000 puffs. That's roughly two to three weeks of heavy all-day use, or four to six weeks for a moderate vaper."
+          ]
+        },
+        {
+          "heading": "Full specs of the Pulse X 25K",
+          "body": [],
+          "list": [
+            "Advertised: 25,000 puffs; e-liquid 18mL; nicotine 5% (50mg/mL) salt nic.",
+            "Battery: 820mAh, USB-C rechargeable with pass-through charging.",
+            "Display screen showing battery level and e-liquid level.",
+            "Adjustable airflow + dual mesh coil for flavour.",
+            "Pulse/Regular dual vaping modes — Pulse mode is the stronger, longer-hit setting.",
+            "Price at Vape Spot: A$69.99, incl. GST."
+          ]
+        },
+        {
+          "heading": "How long does it actually last?",
+          "body": [],
+          "list": [
+            "Heavy vaper (400+ puffs/day): roughly 2–3 weeks.",
+            "Average vaper (200–300 puffs/day): about 3–5 weeks.",
+            "Light vaper (<150 puffs/day): 6+ weeks — often near the full advertised run.",
+            "Because it's USB-C rechargeable, the battery rarely dies before the liquid — charge when the display blinks."
+          ]
+        },
+        {
+          "heading": "Pulse X 25K vs Pulse 9000 vs Meloso 30K",
+          "body": [
+            "The Pulse 9000 is the entry point of the family at A$54.99 and is 9,000 puffs advertised. The Pulse X 25K at A$69.99 nearly triples the capacity for A$15 more — the best value in the Geek Bar lineup. If you want absolute maximum, the Meloso 30K at A$74.99 is the biggest bar we carry, but it's only A$5 more than the Pulse X for mostly the same real-world mileage.",
+            "Our honest take: the Pulse X 25K is the sweet spot — 18mL of liquid, a display, dual mesh coils and a rechargeable battery, at a price that beats most 15K–20K bars on a per-puff basis."
+          ]
+        },
+        {
+          "heading": "Is the Pulse X 25K worth it in Australia?",
+          "body": [
+            "At A$69.99, the Pulse X 25K costs less per 1,000 puffs than almost any smaller disposable. Against a pack of cigarettes or a 9,000-puff bar you'd buy twice, it wins comfortably on both wallet and convenience — as long as 25K is a size you'll actually finish. If you vape lightly, a 9,000-puff Pulse 9000 is enough and costs A$15 less."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How many puffs does a Geek Bar Pulse X 25K really have?",
+          "a": "Advertised at 25,000 puffs, real-world is closer to 12,000–18,000 for a typical 1–2 second draw. Heavy users get about 2–3 weeks from one; light users can stretch it past a month."
+        },
+        {
+          "q": "Is the Geek Bar Pulse X rechargeable?",
+          "a": "Yes. It charges over USB-C and shows battery level on its display screen. Charge when the battery lights flash — you can keep vaping it until the 18mL e-liquid runs dry."
+        },
+        {
+          "q": "How much is a Geek Bar Pulse X 25K in Australia?",
+          "a": "A$69.99 at Vape Spot, incl. GST, with courier delivery across Australia. That's a lower cost per puff than most 9,000–15,000 puff disposables."
+        },
+        {
+          "q": "What flavours does the Pulse X 25K come in?",
+          "a": "The Pulse X range covers fruit, mint and ice blends. Each product page on Vape Spot lists the flavour line and live stock so you can grab the one you want."
+        },
+        {
+          "q": "Is the Pulse X 25K stronger than the Pulse 9000?",
+          "a": "Yes, in capacity and power. The 25K holds 18mL of liquid (vs 14mL on the 9000), a bigger 820mAh battery, and has a pulse mode for a stronger hit. The 9000 is the cheaper, lighter daily option."
+        }
+      ],
+      "links": [
+        { "to": "/products/e-cigarettes", "label": "Browse all high-capacity disposables" },
+        { "to": "/product/geek-bar-pulse-x-25k-2041/", "label": "Geek Bar Pulse X 25K" },
+        { "to": "/product/geek-bar-pulse-9000-cherry-blast-ice-8124/", "label": "Geek Bar Pulse 9000" },
+        { "to": "/product/meloso-30k-10138/", "label": "Geek Bar Meloso 30K" }
+      ],
+      "cta": {
+        "title": "Get the biggest bar that fits your habit",
+        "text": "Shop Geek Bar and other high-capacity disposables — fast courier delivery across Australia.",
+        "to": "/products/e-cigarettes"
+      }
+    },
+    {
+      "slug": "iget-bar-vs-alibarbar-ingot-which-is-better-value-in-australia",
+      "title": "IGET Bar vs Alibarbar Ingot: Which Is Better Value in Australia?",
+      "metaDescription": "IGET Bar 3500 (A$44.99) vs Alibarbar Ingot 9000 (A$54.99), 15000 (A$59.99) and 30000 (A$69.99) — honest cost-per-puff, battery, availability and which to pick for your habit.",
+      "category": "Buying Guide",
+      "date": "2026-09-23",
+      "readTime": "6 min read",
+      "hero": {
+        "image": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_1200,h_630,f_webp,q_auto:good/vapespot-v9/alibarbar-ingot-pineapple-coconut-2136.webp",
+        "alt": "Alibarbar Ingot and IGET Bar disposable vapes — comparing cost per puff in Australia"
+      },
+      "intro": "IGET and Alibarbar are the two brands Australians ask for by name. The short version: IGET wins on variety and brand recognition, Alibarbar wins on value — the Ingot 15000 gives you nearly four times the puffs of an IGET Bar 3500 for A$15 more. Here's the full cost-per-puff breakdown so you can decide with real numbers.",
+      "priceTable": {
+        "title": "IGET vs Alibarbar — real prices & puffs at Vape Spot (AUD)",
+        "header": ["Device", "Advertised puffs", "Price", "A$ per 1,000 puffs"],
+        "rows": [
+          { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500", "cells": ["3,500", "A$44.99", "A$12.85"] },
+          { "to": "/product/iget-moon-k5000-banana-ice-13077/", "label": "IGET Moon K5000", "cells": ["5,000", "A$49.99", "A$10.00"] },
+          { "to": "/product/alibarbar-ingot-pineapple-coconut-2136/", "label": "Alibarbar Ingot 9000", "cells": ["9,000", "A$54.99", "A$6.11"] },
+          { "to": "/product/alibarbar-ingot-15000-pineapple-kiwifruit-91001/", "label": "Alibarbar Ingot 15000", "cells": ["15,000", "A$59.99", "A$4.00"] },
+          { "to": "/product/alibarbar-ingot-30000-grape-fruit-guava-lemon-92001/", "label": "Alibarbar Ingot 30000", "cells": ["30,000", "A$69.99", "A$2.33"] }
+        ],
+        "note": "Cost per 1,000 puffs uses advertised counts — the ranking is identical on real-world counts. Prices incl. GST."
+      },
+      "sections": [
+        {
+          "heading": "The short answer",
+          "body": [
+            "If you just want a reliable, familiar vape, the IGET Bar 3500 is a proven choice at A$44.99. If you want the best money-for-puffs in the store, Alibarbar wins: the Ingot 15000 costs A$59.99 (A$15 more) but is advertised at 15,000 puffs — over four times the puffs of the Bar 3500. On real-world draws, the gap is the same story."
+          ]
+        },
+        {
+          "heading": "Cost per 1,000 puffs, honestly",
+          "body": [
+            "Using advertised counts, the IGET Bar 3500 comes to about A$12.85 per 1,000 puffs. The IGET Moon K5000 improves that to about A$10.00. The Alibarbar Ingot 9000 drops it to around A$6.11, the Ingot 15000 to A$4.00, and the Ingot 30000 is the cheapest in the shop at roughly A$2.33 per 1,000 puffs.",
+            "Because every brand overstates puffs, the ranking stays the same on real-world numbers — Alibarbar simply puts more liquid and battery into every dollar."
+          ]
+        },
+        {
+          "heading": "Where IGET is still the better pick",
+          "body": [],
+          "list": [
+            "Brand recognition — if you know exactly what you liked, IGET is easier to rebuy (200+ devices in our catalogue).",
+            "More compact formats — the Bar 3500 is small and fits a pocket; the Ingots are bigger bars.",
+            "Flavour breadth — IGET carries a wider range of series, including rechargeable BAR Plus 6000 and the IGET Moon line.",
+            "Lower upfront cost — a Bar 3500 at A$44.99 is the cheapest real IGET you can buy."
+          ]
+        },
+        {
+          "heading": "Where Alibarbar is the better pick",
+          "body": [],
+          "list": [
+            "Value — Ingot 9000/15000/30000 are the best cost-per-puff disposables we stock.",
+            "Capacity — 30,000 advertised puffs from the Ingot 30000 is the biggest single device in our range.",
+            "USB-C on the 9000 and 15000 — rechargeable, so the vape lasts as long as the liquid.",
+            "Battery life — 850–2350mAh batteries last days between charges on the larger Ingots."
+          ]
+        },
+        {
+          "heading": "Which one should you buy?",
+          "body": [
+            "New to disposables and want a small familiar unit → IGET Bar 3500 (A$44.99). Light-to-moderate vaper who wants the best value → Alibarbar Ingot 9000 (A$54.99). Heavy vaper who wants to buy once and not think about it → Ingot 15000 (A$59.99) or Ingot 30000 (A$69.99). If IGET is your brand but you want more puffs, the IGET Moon K5000 at A$49.99 is the middle ground."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is Alibarbar better than IGET?",
+          "a": "On value, yes: Alibarbar Ingot models cost A$2.33–6.11 per 1,000 advertised puffs versus A$10–12.85 for IGET bars. On variety and brand recognition, IGET leads. Both are authentic, stocked brands — it depends on whether you optimise for wallet or for habit."
+        },
+        {
+          "q": "How many puffs does an IGET Bar 3500 have?",
+          "a": "Advertised at 3,500 puffs; real-world around 1,800–2,500 for a typical draw. It's the smallest IGET we sell and the cheapest entry at A$44.99."
+        },
+        {
+          "q": "How many puffs does an Alibarbar Ingot 15000 have?",
+          "a": "Advertised at 15,000 puffs; real-world around 7,000–10,000. At A$59.99 it's the value pick of the Ingot range — roughly four times the puffs of an IGET Bar for A$15 more."
+        },
+        {
+          "q": "Which brand lasts longer, IGET or Alibarbar?",
+          "a": "On any single device, Alibarbar lasts longer because the Ingot models carry 2–4x the e-liquid (18–22mL vs 12mL on IGET bars). On battery, the Ingot 9000's 2350mAh and the rechargeable Ingot 15000 outlast every IGET bar except the Moon's 1750mAh."
+        },
+        {
+          "q": "Do you sell both IGET and Alibarbar?",
+          "a": "Yes — both are in our catalogue with all main series and flavours in stock, plus fast courier delivery across Australia."
+        }
+      ],
+      "links": [
+        { "to": "/brands/iget/", "label": "IGET Australia — full range" },
+        { "to": "/brands/alibarbar/", "label": "Alibarbar Australia — Ingot lineup" },
+        { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500" },
+        { "to": "/product/alibarbar-ingot-15000-pineapple-kiwifruit-91001/", "label": "Alibarbar Ingot 15000" }
+      ],
+      "cta": {
+        "title": "Compare them side by side, live",
+        "text": "Browse IGET and Alibarbar ranges with real stock — fast courier delivery across Australia.",
+        "to": "/products/e-cigarettes"
+      }
+    },
+    {
+      "slug": "best-vape-shop-in-sydney",
+      "title": "Best Vape Shop in Sydney: Vape Spot Sydney CBD + Delivery",
+      "metaDescription": "Looking for a vape shop in Sydney? Vape Spot Sydney CBD stocks IGET, Alibarbar, Geek Bar and more — order online for courier delivery across Sydney in 30 minutes to 2 hours.",
+      "category": "Buying Guide",
+      "date": "2026-09-23",
+      "readTime": "4 min read",
+      "hero": {
+        "image": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_1200,h_630,f_webp,q_auto:good/vapespot-v9/waka-berry-lemonade-sopro-10000-2147.webp",
+        "alt": "Waka disposable vape — Vape Spot stocks the brands Sydney vapers ask for, with courier delivery across the city"
+      },
+      "intro": "If you're in Sydney and searching for a vape shop, here's what to look for: real stock of the brands Australians actually vape (IGET, Alibarbar, Geek Bar, Waka), genuine devices, honest prices and fast delivery. Vape Spot's Sydney store covers exactly that — here's what we stock, what things cost, and how fast you can get an order.",
+      "priceTable": {
+        "title": "Popular picks at Vape Spot Sydney (AUD)",
+        "header": ["Device", "Price", "Puffs"],
+        "rows": [
+          { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500", "cells": ["A$44.99", "3,500"] },
+          { "to": "/product/waka-berry-lemonade-sopro-10000-2147/", "label": "Waka Sopro PA10000", "cells": ["A$44.99", "10,000"] },
+          { "to": "/product/alibarbar-ingot-15000-pineapple-kiwifruit-91001/", "label": "Alibarbar Ingot 15000", "cells": ["A$59.99", "15,000"] },
+          { "to": "/product/geek-bar-pulse-x-25k-2041/", "label": "Geek Bar Pulse X 25K", "cells": ["A$69.99", "25,000"] }
+        ],
+        "note": "Prices incl. GST. Order before the local cut-off for same-day courier across Sydney."
+      },
+      "sections": [
+        {
+          "heading": "The short answer",
+          "body": [
+            "Vape Spot Sydney CBD is a genuine, age-verified vape retailer with a physical store and online ordering. We keep the full catalogue in stock — IGET, Alibarbar, Geek Bar, Waka, Gunnpod and more — and deliver across Sydney by courier, usually within 30 minutes to 2 hours in metro areas."
+          ]
+        },
+        {
+          "heading": "What we stock in Sydney",
+          "body": [],
+          "list": [
+            "IGET — Bar 3500, BAR Plus 6000, Moon K5000 and the Legend series.",
+            "Alibarbar — the Ingot 9000, 15000 and 30000 capacity bars.",
+            "Geek Bar — Pulse 9000, Pulse X 25K and Meloso 30K.",
+            "Waka — the Sopro PA10000 range and other high-capacity disposables.",
+            "Pods, refillable kits and e-liquids — Vaporesso, GeekVape, VooPoo and our Vape Spot salt range."
+          ]
+        },
+        {
+          "heading": "Prices that match the market",
+          "body": [
+            "You'll pay the same honest price in-store or online, and everything includes GST. High-capacity disposables start at A$44.99 (IGET Bar, Waka Sopro), the Alibarbar Ingot range runs A$54.99–69.99, and the biggest bars top out around A$74.99. No 'market' pricing and no fake discounts on known brands."
+          ]
+        },
+        {
+          "heading": "How fast can you get it in Sydney?",
+          "body": [
+            "Order through the site and we'll courier it — usually within 30 minutes to 2 hours across Sydney metro. Australia Post covers anywhere else in the country. All orders are 18+ verified, and our team checks ID for every delivery, the same as in-store."
+          ]
+        },
+        {
+          "heading": "The honest 'best vape shop near me' checklist",
+          "body": [],
+          "list": [
+            "They verify ID — no ID check means no legitimate retailer.",
+            "They stock the brands you've heard of — IGET, Alibarbar, Geek Bar, Waka.",
+            "Prices are market-normal — hugely cheap known brands are fakes.",
+            "Real contact details and a real address.",
+            "Delivery to your postcode — not just click-and-collect."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Where is the best vape shop in Sydney?",
+          "a": "Vape Spot Sydney CBD is a genuine retailer with a physical store and fast courier delivery across the city. We stock the full brands Australians vape — IGET, Alibarbar, Geek Bar, Waka — with honest, GST-inclusive pricing."
+        },
+        {
+          "q": "Does Vape Spot deliver vapes in Sydney?",
+          "a": "Yes — courier delivery across Sydney metro, usually within 30 minutes to 2 hours. Order before the local cut-off and Australia Post covers anywhere else in the country."
+        },
+        {
+          "q": "Do you sell IGET in Sydney?",
+          "a": "Yes. The full IGET line is in stock — Bar 3500, BAR Plus 6000, Moon K5000 and the Legend series — in our Sydney CBD store and online."
+        },
+        {
+          "q": "What's the price of a disposable vape in Sydney?",
+          "a": "At Vape Spot, disposables start at A$44.99 (IGET Bar 3500, Waka Sopro), with the Alibarbar Ingot 9000–30000 running A$54.99–69.99 and the biggest Geek Bar and Meloso models up to A$74.99. All prices incl. GST."
+        },
+        {
+          "q": "Is vaping legal to buy in Sydney?",
+          "a": "Yes — adults 18+ can legally buy nicotine vaping products in Australia under the personal-importation rules, from a compliant retailer that verifies ID. Vape Spot verifies age on every order, in-store and online."
+        }
+      ],
+      "links": [
+        { "to": "/vapespot-sydney-cbd/", "label": "Vape Spot Sydney CBD" },
+        { "to": "/brands/iget/", "label": "IGET Australia" },
+        { "to": "/brands/alibarbar/", "label": "Alibarbar Australia" },
+        { "to": "/product/geek-bar-pulse-x-25k-2041/", "label": "Geek Bar Pulse X 25K" }
+      ],
+      "cta": {
+        "title": "Order in Sydney, delivered fast",
+        "text": "Shop the full catalogue and get courier delivery in 30 minutes to 2 hours across Sydney metro.",
+        "to": "/vapespot-sydney-cbd/"
+      }
+    },
+    {
+      "slug": "how-to-tell-if-a-vape-is-counterfeit-in-australia",
+      "title": "How to Tell If a Vape Is Counterfeit: Batch Codes, QR & Real Risks",
+      "metaDescription": "Counterfeit vapes in Australia: how batch codes, QR verification codes and serial numbers work, why fakes fail them, and the 2026 rules that make genuine devices identifiable.",
+      "category": "Buying Guide",
+      "date": "2026-09-23",
+      "readTime": "6 min read",
+      "hero": {
+        "image": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_1200,h_630,f_webp,q_auto:good/vapespot-v9/digiflavor-x-geek-bar-lush-20k-disposable-10177.webp",
+        "alt": "Authentic disposable vape with a verification QR code and batch marking — how to check a device is genuine"
+      },
+      "intro": "This is the deep-dive behind our 9-point fake-vape guide: how batch codes, QR verification and serial numbers actually work, why counterfeiters almost never get them right, and what the 2026 Australian rules mean for what a genuine device must carry. If you're buying a disposable vape in Australia, these checks take two minutes and settle the question for good.",
+      "priceTable": {
+        "title": "What genuine devices cost at Vape Spot (AUD)",
+        "header": ["Device", "Genuine price"],
+        "rows": [
+          { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500", "cells": ["A$44.99"] },
+          { "to": "/product/alibarbar-ingot-pineapple-coconut-2136/", "label": "Alibarbar Ingot 9000", "cells": ["A$54.99"] },
+          { "to": "/product/digiflavor-x-geek-bar-lush-20k-disposable-10177/", "label": "Geek Bar Lush 20K", "cells": ["A$39.99"] }
+        ],
+        "note": "A real 5% device costs what it costs. Heavy discounts on known brands are the #1 counterfeit signal."
+      },
+      "sections": [
+        {
+          "heading": "The short answer",
+          "body": [
+            "A counterfeit vape is an unofficial copy of a known brand, usually filled with cheaper liquid and fitted with untested cells. The fastest test is the verification system: every major brand prints a QR or scratch-off code that you check on the brand's own website or app. Fakes either skip the code or print one that fails. Combined with a normal price, clean packaging and batch marks, a passing verification code is close to proof of authenticity."
+          ]
+        },
+        {
+          "heading": "How batch codes work (and why fakes fail them)",
+          "body": [
+            "Batch/lot numbers identify which production run a device came from. Genuine products print a code like a letter + digits (e.g. B2025 07 14 XX) that matches the brand's format. Counterfeiters print something that looks similar but the format is wrong, the letters don't match any real line, or the code is repeated across boxes — one serial reused 100 times is a dead giveaway. Where a brand offers batch lookup online, a genuine code resolves to a real production date and country.",
+            "The rule of thumb: the code should be legible, laser- or pad-printed (not smudged), consistent in format with other boxes of the same product, and unique. Anything that breaks that is suspect."
+          ]
+        },
+        {
+          "heading": "QR and scratch-off verification, step by step",
+          "body": [],
+          "list": [
+            "Find the verification QR or code — usually on the side or rear of the pack, sometimes under a scratch panel.",
+            "Scan it with your phone camera and land on the BRAND'S official site/app — not a generic 'verify vape' page.",
+            "Enter the code (once, for one use) — a genuine pass screen reads something like 'Authentic product'.",
+            "Watch for red flags: the QR spikes a random domain, the code is already used, or there's no lookup at all.",
+            "If the code fails, you have your answer — a genuine device never fails its own check."
+          ]
+        },
+        {
+          "heading": "Serial numbers and multi-pack tell-tales",
+          "body": [
+            "Beyond the verification code, genuine devices carry a serial on the device itself or the cell. Fakes often omit it, print an identical serial on every unit, or use a code that doesn't match the box. Check two boxes of the same product side by side: genuine serials differ; counterfeit runs frequently share one.",
+            "Nicotine-labelling compliance is the other hard signal. In Australia, a compliant device clearly states nicotine content and warnings. A counterfeit's 'compliance' print is usually blurry, misspelt or missing entirely."
+          ]
+        },
+        {
+          "heading": "The 2026 compliance picture in Australia",
+          "body": [
+            "Australian rules keep tightening around nicotine vaping product labelling, nicotine concentration claims and who may sell. The practical result for buyers: legitimate retailers stock devices with full warnings, batch marks and verifiable codes, and they verify age on every order. Products skipping those layers — sold at markets, on socials, or from sellers who 'don't need ID' — are the ones doing the skipping because they're not genuine."
+          ]
+        },
+        {
+          "heading": "What to do if you suspect a fake",
+          "body": [],
+          "list": [
+            "Stop using it — the liquid and battery are the unknown, and that's the part that matters.",
+            "Save the packaging and your receipt, and photograph the codes.",
+            "Run the brand's verification check with the codes before discarding anything.",
+            "Report the seller where you bought it if the code fails.",
+            "Buy your next device from a retailer you can verify — a couple of dollars more is the cost of knowing what's inside."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do you check if a vape is genuine?",
+          "a": "Run the brand's QR or scratch-off verification code on the official site or app. Combine that with a normal market price, clean packaging, legible batch marks and a unique serial — if all of that holds, the device is almost certainly genuine."
+        },
+        {
+          "q": "Do real vapes have batch numbers?",
+          "a": "Yes. Real devices from major brands carry batch/lot codes and serials in a consistent format. A missing, smudged or repeated code — or a format that differs from box to box of the same product — points to a fake."
+        },
+        {
+          "q": "Can you look up a vape serial number?",
+          "a": "Many brands offer batch or serial lookup on their official site. A genuine entry resolves to a production date and market. If the lookup fails or the brand offers none and the seller is unverifiable, treat it as suspect."
+        },
+        {
+          "q": "Is it illegal to sell fake vapes in Australia?",
+          "a": "Yes. Counterfeit goods violate trademark law, and any nicotine vape must comply with Australian labelling rules and be sold by a compliant retailer. If you suspect a seller, don't buy and report them."
+        },
+        {
+          "q": "What happens if you vape a fake?",
+          "a": "You're inhaling unregulated liquid and drawing on an untested battery. Fakes have tested with incorrect nicotine levels and questionable substances. The safest move is to stop using it and replace it with a genuine device."
+        }
+      ],
+      "links": [
+        { "to": "/guides/how-to-spot-a-fake-disposable-vape-in-australia/", "label": "The 9-point fake vape checklist" },
+        { "to": "/brands/iget/", "label": "IGET — buy authentic in Australia" },
+        { "to": "/brands/alibarbar/", "label": "Alibarbar — the Ingot range" },
+        { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500 (authentic)" }
+      ],
+      "cta": {
+        "title": "Buy a vape you can verify",
+        "text": "Shop authentic, age-verified devices with batch-marked packaging — fast courier delivery across Australia.",
+        "to": "/products/e-cigarettes"
+      }
+    },
+    {
+      "slug": "how-many-puffs-is-an-iget-moon",
+      "title": "IGET Moon K5000: Real Puff Count, Specs & Flavours",
+      "metaDescription": "The IGET Moon K5000 (A$49.99 at Vape Spot) advertises 5,000 puffs — real use is closer to 2,500–3,500. Full specs, USB-C charging, battery life and flavour range.",
+      "category": "Buying Guide",
+      "date": "2026-09-23",
+      "readTime": "5 min read",
+      "hero": {
+        "image": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_1200,h_630,f_webp,q_auto:good/vapespot-v9/iget-moon-k5000-banana-ice-13077.webp",
+        "alt": "IGET Moon K5000 — a 5,000-puff USB-C rechargeable disposable from IGET"
+      },
+      "intro": "The IGET Moon K5000 is IGET's rechargeable 5,000-puff bar — the middle ground between the single-use Bar 3500 and the giant BAR Plus 6000. We sell it at A$49.99. Here's how many puffs it really gives, its battery and charging behaviour, and the flavour range you can actually order in Australia.",
+      "priceTable": {
+        "title": "IGET Moon K5000 vs the rest of IGET (AUD)",
+        "header": ["Device", "Advertised", "Price", "Charging"],
+        "rows": [
+          { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500", "cells": ["3,500", "A$44.99", "Single-use"] },
+          { "to": "/product/iget-moon-k5000-banana-ice-13077/", "label": "IGET Moon K5000", "cells": ["5,000", "A$49.99", "USB-C (rechargeable)"] }
+        ],
+        "note": "Prices incl. GST. The Moon adds ~1,500 advertised puffs and USB-C recharging for just A$5 more than the Bar 3500."
+      },
+      "sections": [
+        {
+          "heading": "The short answer",
+          "body": [
+            "IGET rates the Moon K5000 at 5,000 puffs on a 1-second test draw. With real, longer draws you'll get an honest 2,500–3,500 puffs. The good news: it's USB-C rechargeable, and with a 1,750mAh battery the cell holds out for most of the 12mL of liquid, so the vape finishes its liquid rather than dying on an empty battery."
+          ]
+        },
+        {
+          "heading": "Full specs of the IGET Moon K5000",
+          "body": [],
+          "list": [
+            "Advertised: 5,000 puffs; e-liquid 12mL; nicotine 5% salt nic.",
+            "Battery: 1,750mAh with USB-C charging — the biggest battery in a small IGET bar.",
+            "Shape: slim pen-format bar, similar footprint to a Bar 3500.",
+            "Mesh coil for consistent flavour until the liquid runs dry.",
+            "Price at Vape Spot: A$49.99, incl. GST."
+          ]
+        },
+        {
+          "heading": "How long does the Moon last in real use?",
+          "body": [],
+          "list": [
+            "Heavy vaper: about 5–8 days.",
+            "Average vaper: 1.5–2 weeks.",
+            "Light vaper: 3+ weeks.",
+            "Because it's rechargeable, it's the 'lasts as long as the liquid' experience — charge overnight, keep vaping."
+          ]
+        },
+        {
+          "heading": "Moon K5000 vs Bar 3500 vs BAR Plus 6000",
+          "body": [
+            "The Bar 3500 is IGET's classic single-use bar at A$44.99 (3,500 advertised puffs). The Moon K5000 costs A$5 more, adds USB-C recharging and a bigger battery for roughly 1,500 more advertised puffs — the smart upgrade if you vape daily. Above it, the BAR Plus 6000 gives 6,000 advertised puffs and a rechargeable battery for roughly A$45–49, but it's a wider device. For most vapers the Moon is the best blend of size and capacity."
+          ]
+        },
+        {
+          "heading": "Which flavours can you get?",
+          "body": [
+            "We stock the Moon K5000 across the full flavour wall: Banana Ice, Blueberry Raspberry Ice, Grape Ice, Pineapple Kiwi Ice, Strawberry Kiwi Ice, Strawberry Watermelon Ice, Watermelon Apple, Watermelon Ice, Peach Apple Ice, Pomegranate Kiwi Ice and more. Whether you want a cold ice blend or a straight fruit flavour, the current range is listed on each product page with live stock."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How many puffs does an IGET Moon K5000 have?",
+          "a": "Advertised at 5,000 puffs; real-world around 2,500–3,500 for a typical draw. For most vapers that's 5 days to 2 weeks depending on use."
+        },
+        {
+          "q": "Is the IGET Moon rechargeable?",
+          "a": "Yes. The Moon K5000 charges over USB-C with a 1,750mAh battery. Charge when the light blinks and you can keep vaping until the 12mL of liquid is done."
+        },
+        {
+          "q": "How much is an IGET Moon K5000 in Australia?",
+          "a": "A$49.99 at Vape Spot, incl. GST. That's A$5 more than the single-use Bar 3500 and buys USB-C recharging plus a bigger battery."
+        },
+        {
+          "q": "What's the difference between IGET Moon and IGET Bar?",
+          "a": "The Moon K5000 is rechargeable (USB-C, 1,750mAh) and rated higher (5,000 vs 3,500 puffs) than the classic Bar 3500 single-use. Same IGET reliability, more liquid and a battery that lasts."
+        },
+        {
+          "q": "Is the IGET Moon K5000 worth it?",
+          "a": "Yes, if you vape daily: the A$5 jump from a Bar 3500 buys recharging, a bigger battery and roughly 1,500 more advertised puffs — better value on a cost-per-puff basis."
+        }
+      ],
+      "links": [
+        { "to": "/brands/iget/", "label": "IGET Australia — the full range" },
+        { "to": "/product/iget-moon-k5000-banana-ice-13077/", "label": "IGET Moon K5000 (Banana Ice)" },
+        { "to": "/product/iget-bar-3500-banana-ice-2047/", "label": "IGET Bar 3500 (classic)" },
+        { "to": "/products/e-cigarettes", "label": "Browse all IGET series" }
+      ],
+      "cta": {
+        "title": "Get the IGET that fits your week",
+        "text": "Shop IGET Moon, Bar and BAR Plus ranges — fast courier delivery across Australia.",
         "to": "/products/e-cigarettes"
       }
     }

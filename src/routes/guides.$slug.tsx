@@ -62,6 +62,51 @@ function GuidePage() {
         {/* Intro */}
         <p className="text-[17px] leading-relaxed text-[#1F1F1F]">{g.intro}</p>
 
+        {/* Table de prix (Tâche 4 — injection prix) : même affichage que le
+            seo-block statique prérendu. Première colonne = lien vers le produit. */}
+        {g.priceTable && g.priceTable.rows.length > 0 && (
+          <section className="space-y-3">
+            <h2 className="text-[20px] md:text-[24px] font-bold text-[#0A0A0A] pt-2">
+              {g.priceTable.title}
+            </h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-[13px] md:text-sm">
+                <thead>
+                  <tr className="border-b border-gray-200 text-[#6E6E73] text-[12px] uppercase tracking-wide">
+                    {g.priceTable.header.map((h) => (
+                      <th key={h} className="py-2 pr-3 font-semibold">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {g.priceTable.rows.map((r) => (
+                    <tr key={r.label} className="border-b border-gray-100">
+                      {r.to ? (
+                        <td className="py-2 pr-3">
+                          <a
+                            href={r.to}
+                            className="font-semibold text-[#0A0A0A] hover:text-[#7C3AED]"
+                          >
+                            {r.label}
+                          </a>
+                        </td>
+                      ) : (
+                        <td className="py-2 pr-3 font-semibold text-[#0A0A0A]">{r.label}</td>
+                      )}
+                      {r.cells.map((c) => (
+                        <td key={c} className="py-2 pr-3 text-[#3F3F46]">{c}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            {g.priceTable.note && (
+              <p className="text-[12px] text-[#9E9E9E]">{g.priceTable.note}</p>
+            )}
+          </section>
+        )}
+
         {/* Sections */}
         {g.sections.map((s, i) => (
           <section key={i} className="space-y-3">

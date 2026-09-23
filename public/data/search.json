@@ -40199,5 +40199,291 @@
     ],
     "file": "tabac/tabac.json",
     "thumb": "https://res.cloudinary.com/dn3ulhnfe/image/upload/c_fill,w_100,h_100,f_webp,q_auto:good/vapespot-v9/neafs-teo-heating-device-4184.webp"
+  },
+  {
+    "id": "alibarbar-ingot-15000-pineapple-kiwifruit-91001",
+    "name": "Alibarbar Ingot 15000 Pineapple Kiwifruit",
+    "brand": "Alibarbar",
+    "series": "Ingot 15000",
+    "price_aud": 59.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-15000.webp"
+  },
+  {
+    "id": "alibarbar-ingot-15000-grape-peach-91002",
+    "name": "Alibarbar Ingot 15000 Grape Peach",
+    "brand": "Alibarbar",
+    "series": "Ingot 15000",
+    "price_aud": 59.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-15000.webp"
+  },
+  {
+    "id": "alibarbar-ingot-15000-mango-91003",
+    "name": "Alibarbar Ingot 15000 Mango",
+    "brand": "Alibarbar",
+    "series": "Ingot 15000",
+    "price_aud": 59.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-15000.webp"
+  },
+  {
+    "id": "alibarbar-ingot-15000-cherry-pomegranate-91004",
+    "name": "Alibarbar Ingot 15000 Cherry Pomegranate",
+    "brand": "Alibarbar",
+    "series": "Ingot 15000",
+    "price_aud": 59.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-15000.webp"
+  },
+  {
+    "id": "alibarbar-ingot-15000-pineapple-banana-91005",
+    "name": "Alibarbar Ingot 15000 Pineapple Banana",
+    "brand": "Alibarbar",
+    "series": "Ingot 15000",
+    "price_aud": 59.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-15000.webp"
+  },
+  {
+    "id": "alibarbar-ingot-15000-tropical-91006",
+    "name": "Alibarbar Ingot 15000 Tropical",
+    "brand": "Alibarbar",
+    "series": "Ingot 15000",
+    "price_aud": 59.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-15000.webp"
+  },
+  {
+    "id": "alibarbar-ingot-15000-blueberry-raspberry-91007",
+    "name": "Alibarbar Ingot 15000 Blueberry Raspberry",
+    "brand": "Alibarbar",
+    "series": "Ingot 15000",
+    "price_aud": 59.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-15000.webp"
+  },
+  {
+    "id": "alibarbar-ingot-15000-strawberry-watermelon-91008",
+    "name": "Alibarbar Ingot 15000 Strawberry Watermelon",
+    "brand": "Alibarbar",
+    "series": "Ingot 15000",
+    "price_aud": 59.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-15000.webp"
+  },
+  {
+    "id": "alibarbar-ingot-15000-passionfruit-mango-91009",
+    "name": "Alibarbar Ingot 15000 Passionfruit Mango",
+    "brand": "Alibarbar",
+    "series": "Ingot 15000",
+    "price_aud": 59.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-15000.webp"
+  },
+  {
+    "id": "alibarbar-ingot-15000-blackberry-91010",
+    "name": "Alibarbar Ingot 15000 Blackberry",
+    "brand": "Alibarbar",
+    "series": "Ingot 15000",
+    "price_aud": 59.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-15000.webp"
+  },
+  {
+    "id": "alibarbar-ingot-15000-banana-91011",
+    "name": "Alibarbar Ingot 15000 Banana",
+    "brand": "Alibarbar",
+    "series": "Ingot 15000",
+    "price_aud": 59.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-15000.webp"
+  },
+  {
+    "id": "alibarbar-ingot-15000-grape-91012",
+    "name": "Alibarbar Ingot 15000 Grape",
+    "brand": "Alibarbar",
+    "series": "Ingot 15000",
+    "price_aud": 59.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-15000.webp"
+  },
+  {
+    "id": "alibarbar-ingot-15000-strawberry-kiwifruit-91013",
+    "name": "Alibarbar Ingot 15000 Strawberry Kiwifruit",
+    "brand": "Alibarbar",
+    "series": "Ingot 15000",
+    "price_aud": 59.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-15000.webp"
+  },
+  {
+    "id": "alibarbar-ingot-15000-lychee-watermelon-91014",
+    "name": "Alibarbar Ingot 15000 Lychee Watermelon",
+    "brand": "Alibarbar",
+    "series": "Ingot 15000",
+    "price_aud": 59.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-15000.webp"
+  },
+  {
+    "id": "alibarbar-ingot-30000-grape-fruit-guava-lemon-92001",
+    "name": "Alibarbar Ingot 30000 Grape Fruit Guava Lemon",
+    "brand": "Alibarbar",
+    "series": "Ingot 30000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-30000.png"
+  },
+  {
+    "id": "alibarbar-ingot-30000-california-sunset-92002",
+    "name": "Alibarbar Ingot 30000 California Sunset",
+    "brand": "Alibarbar",
+    "series": "Ingot 30000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-30000.png"
+  },
+  {
+    "id": "alibarbar-ingot-30000-grapefruit-92003",
+    "name": "Alibarbar Ingot 30000 Grapefruit",
+    "brand": "Alibarbar",
+    "series": "Ingot 30000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-30000.png"
+  },
+  {
+    "id": "alibarbar-ingot-30000-banana-ice-92004",
+    "name": "Alibarbar Ingot 30000 Banana Ice",
+    "brand": "Alibarbar",
+    "series": "Ingot 30000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-30000.png"
+  },
+  {
+    "id": "alibarbar-ingot-30000-strawberry-kiwi-92005",
+    "name": "Alibarbar Ingot 30000 Strawberry Kiwi",
+    "brand": "Alibarbar",
+    "series": "Ingot 30000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-30000.png"
+  },
+  {
+    "id": "alibarbar-ingot-30000-cool-mint-92006",
+    "name": "Alibarbar Ingot 30000 Cool Mint",
+    "brand": "Alibarbar",
+    "series": "Ingot 30000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-30000.png"
+  },
+  {
+    "id": "alibarbar-ingot-30000-blueberry-blast-92007",
+    "name": "Alibarbar Ingot 30000 Blueberry Blast",
+    "brand": "Alibarbar",
+    "series": "Ingot 30000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-30000.png"
+  },
+  {
+    "id": "alibarbar-ingot-30000-hubba-grape-92008",
+    "name": "Alibarbar Ingot 30000 Hubba Grape",
+    "brand": "Alibarbar",
+    "series": "Ingot 30000",
+    "price_aud": 69.99,
+    "path": [
+      "e-cigarettes",
+      "disposables"
+    ],
+    "file": "e-cigarettes/disposables.json",
+    "thumb": "/images/products/alibarbar-ingot-30000.png"
   }
 ]

@@ -705,9 +705,27 @@ function guideContentHTML(g) {
       g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join("") : "";
   const related = (g.links || []).map((l) =>
     `<p><a href="${esc(`https://vapespot.store${l.to}`)}">${esc(l.label)}</a></p>`).join("");
+
+  // Table de prix (Tâche 4, injection prix) — affichée juste après l'intro,
+  // exactement comme dans le composant SPA guides.$slug (parité). La 1ère
+  // colonne porte le lien produit absolu (maillage interne vers /product/).
+  const pt = g.priceTable;
+  const headEsc = (h) => `<th>${esc(h)}</th>`;
+  const priceTable = pt && pt.rows && pt.rows.length
+    ? `<h2>${esc(pt.title || "Prices at Vape Spot")}</h2>` +
+      `<table class="seo-table"><thead><tr>${pt.header.map(headEsc).join("")}</tr></thead><tbody>` +
+      pt.rows.map((r) => {
+        const first = r.to
+          ? `<td><a href="${esc(`https://vapespot.store${r.to}`)}">${esc(r.label)}</a></td>`
+          : `<td>${esc(r.label)}</td>`;
+        return `<tr>${first}${r.cells.map((c) => `<td>${esc(c)}</td>`).join("")}</tr>`;
+      }).join("") + `</tbody></table>` +
+      (pt.note ? `<p>${esc(pt.note)}</p>` : "")
+    : "";
+
   return `<p>${esc(g.date)} · ${esc(g.readTime)}</p>` +
     `<p><img src="${esc(g.hero.image)}" alt="${esc(g.hero.alt)}"></p>` +
-    `<p>${esc(g.intro)}</p>${sections}` +
+    `<p>${esc(g.intro)}</p>${priceTable}${sections}` +
     (related ? `<p><strong>Related products:</strong></p>${related}` : "") +
     faq +
     `<p><a href="${esc(`https://vapespot.store${g.cta.to}`)}">${esc(g.cta.title)}</a></p>`;
