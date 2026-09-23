@@ -4,7 +4,7 @@ const BLOCKS = [
   {
     icon: Truck,
     title: "Courier Delivery",
-    subtitle: "Usually 30 min–2hrs, or via Australia Post.",
+    subtitle: "Usually 30 min–2hrs in metro areas.",
   },
   {
     icon: ShieldCheck,

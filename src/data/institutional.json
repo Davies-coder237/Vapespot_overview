@@ -11,13 +11,13 @@
       "slug": "about",
       "eyebrow": "About us",
       "title": "About Vape Spot Australia",
-      "metaDescription": "Vape Spot Australia is a Sydney-based adult-only retailer of genuine disposable vapes and vape gear. Authentic stock, 18+ ID checks, fast Sydney courier delivery and Australia-wide shipping.",
-      "intro": "Vape Spot Australia is a small Sydney team selling genuine disposable vapes, pods and accessories to adult Australians. We keep it simple: authentic stock, fair prices, fast delivery and a real human on Telegram when you have a question.",
+      "metaDescription": "Vape Spot Australia is an adult-only Australian retailer of genuine disposable vapes and vape gear. Authentic stock, 18+ ID checks, fast courier delivery to every city on the site.",
+      "intro": "Vape Spot Australia is a small Australian team selling genuine disposable vapes, pods and accessories to adult customers. We keep it simple: authentic stock, fair prices, fast courier delivery and a real human on Telegram when you have a question.",
       "sections": [
         {
           "heading": "Who we are",
           "body": [
-            "Vape Spot started as a local delivery run around Sydney — an adult customer ordered a vape, we dropped it off the same afternoon. Word spread, and today we ship across Australia while still offering 30-minute to 2-hour courier delivery across Sydney.",
+            "Vape Spot started as a local delivery run — an adult customer ordered a vape, we dropped it off the same afternoon. Word spread, and today we courier to every city listed on the site, across Australia, usually within 30 minutes to 2 hours in metro areas.",
             "We are a vape retailer first: every device in our catalogue is picked by hand, checked for authenticity and stored properly. We do not sell synthetic-replica or grey-market stock, and we remove any product the moment we can no longer verify its supply chain."
           ],
           "list": []
@@ -25,7 +25,7 @@
         {
           "heading": "Adults only",
           "body": [
-            "Vape Spot is strictly 18+. You must be an adult to browse, order or receive a delivery. We verify age before large orders ship and our couriers, along with Australia Post, require the recipient to be available and adult.",
+            "Vape Spot is strictly 18+. You must be an adult to browse, order or receive a delivery. We verify age before large orders ship and our couriers require the recipient to be available and adult, with ID checked as needed.",
             "We support sensible vaping rules in Australia. We never market to minors, and our guides page explains puff counts, nicotine strengths and how to vape responsibly."
           ],
           "list": []
@@ -36,13 +36,13 @@
             "Every device we sell is authentic. Most brands include a scratch-to-verify authenticity sticker — we show you how to check it in our guides, and if the code does not verify we replace the unit.",
             "Because we test-stock small batches first, the catalogue you see online is real stock on hand, not drop-shipped inventory."
           ],
-          "list": ["Genuine stock with verified authentication codes", "Fast Sydney courier + Australia Post AU-wide", "18+ with ID checks — no exceptions", "A real human on Telegram: @vapespot_store"]
+          "list": ["Genuine stock with verified authentication codes", "Fast courier delivery to every city we list", "18+ with ID checks — no exceptions", "A real human on Telegram: @vapespot_store"]
         },
         {
           "heading": "Why buy from Vape Spot",
           "body": [
             "There are a few things we hear from customers all the time: the delivery is fast, the vapes are genuine, and when something is wrong — a dead unit, a wrong flavour — we fix it without argument.",
-            "Read our delivery policy for Sydney courier times and shipping options, our returns policy for defective units, or just message us on Telegram and ask. We answer within minutes during business hours."
+            "Read our delivery policy for courier times and options, our returns policy for defective units, or just message us on Telegram and ask. We answer within minutes during business hours."
           ],
           "list": []
         }
@@ -63,21 +63,21 @@
       "slug": "delivery",
       "eyebrow": "Delivery & shipping",
       "title": "Delivery & Shipping Australia",
-      "metaDescription": "Vape Spot delivers across Australia. Sydney orders: local courier in 30 min–2 hrs. Elsewhere: Australia Post with tracking. Minimum order A$100. Adults 18+ only.",
-      "intro": "We get your vape to you two ways — fast local courier across Sydney, or Australia Post for everywhere else. Orders are dispatched quickly, tracked, and always require an adult to receive them.",
+      "metaDescription": "Vape Spot delivers by courier to every city listed on the site, across Australia — usually 30 min to 2 hrs in metro areas. Minimum order A$150. Adults 18+ only.",
+      "intro": "We courier to every city listed on the site, across Australia. Most metro orders arrive in 30 minutes to 2 hours; less busy areas take a little longer. Every order requires an adult to receive it.",
       "sections": [
         {
-          "heading": "Sydney — local courier, 30 min to 2 hrs",
+          "heading": "Courier to every city we list",
           "body": [
-            "If you're in the Sydney delivery zone, your order is usually with a courier within the hour and delivered in 30 minutes to 2 hours depending on traffic and your exact area. You don't need to be home — just to have ID ready and an adult to receive it.",
-            "Check the discover page to see if your suburb is covered. We extend the zone regularly based on demand."
+            "We deliver by courier to every city listed on the site — Sydney, Melbourne, Brisbane, Perth, Adelaide, the Gold Coast and all the other areas we cover. In metro areas, orders usually arrive within 30 minutes to 2 hours; sparsely populated areas can take a bit longer.",
+            "Check the discover page to see every city we cover, or message us on Telegram with your postcode and we'll confirm delivery to your exact area."
           ],
           "list": []
         },
         {
-          "heading": "Australia-wide — Australia Post",
+          "heading": "Australia Post for long distances",
           "body": [
-            "For the rest of Australia we ship via Australia Post with tracking on every order. Most metro orders arrive in 1–3 business days; regional and remote areas may take a little longer.",
+            "For very long distances beyond the cities we courier to, we ship via Australia Post with tracking on every order. Most metro orders arrive in 1–3 business days; regional and remote areas may take a little longer.",
             "Once dispatched you'll receive your tracking number by email and on Telegram if you order with your handle."
           ],
           "list": ["Tracking on every Australia Post order", "1–3 business days metro, more for remote areas", "Signature not required, but an adult must receive it"]
@@ -85,7 +85,7 @@
         {
           "heading": "Minimum order & payment",
           "body": [
-            "The minimum order value is A$100. You can pay by crypto or gift card and save 15% — see the payment options at checkout.",
+            "The minimum order value is A$150. You can pay by crypto or gift card and save 15% — see the payment options at checkout.",
             "We hold stock of every product listed, so delivery dates are accurate — not estimates from a warehouse we don't control."
           ],
           "list": []
@@ -100,9 +100,9 @@
         }
       ],
       "faq": [
-        { "q": "Do you deliver to my state?", "a": "We ship Australia-wide via Australia Post, and offer same-hour courier delivery across Sydney. Message us on Telegram with your postcode and we'll confirm your suburb and delivery time." },
-        { "q": "What is the minimum order?", "a": "A$100. Ordering in packs is usually the easiest way to reach it — pack pricing makes it worth it too." },
-        { "q": "How long does Sydney courier delivery take?", "a": "Usually 30 minutes to 2 hours from order confirmation. Traffic and your exact location can push it slightly outside that window." },
+        { "q": "Do you deliver to my city?", "a": "We courier to every city listed on the site, across Australia. Message us on Telegram with your postcode and we'll confirm delivery to your exact area and time window." },
+        { "q": "What is the minimum order?", "a": "A$150. Ordering in packs is usually the easiest way to reach it — pack pricing makes it worth it too." },
+        { "q": "How long does courier delivery take?", "a": "Usually 30 minutes to 2 hours in metro areas. Traffic and your exact location can push it slightly outside that window." },
         { "q": "Can someone else receive my order?", "a": "Yes, as long as they are an adult (18+) and can show ID if asked." }
       ],
       "crossLinks": [
@@ -112,7 +112,7 @@
       ],
       "cta": {
         "title": "Start your order",
-        "text": "Browse the catalogue — every price includes delivery within the Sydney zone.",
+        "text": "Browse the catalogue — every price includes courier delivery to the city we list.",
         "to": "/products"
       }
     },
@@ -142,7 +142,7 @@
         {
           "heading": "Refunds",
           "body": [
-            "Approved refunds are returned to your original payment method — card, crypto or gift card — usually within a few business days. Tracked Australia Post returns for remote areas are covered by us if the unit is found defective.",
+            "Approved refunds are returned to your original payment method — card, crypto or gift card — usually within a few business days. Tracked Australia Post returns for very remote areas are covered by us if the unit is found defective.",
             "For crypto and gift card purchases, we can refund in the same form or exchange the value for store credit — your choice."
           ],
           "list": []
@@ -150,7 +150,7 @@
       ],
       "faq": [
         { "q": "Can I return a vape I've already used?", "a": "No — nicotine and vape products are regulated, so we can't accept used or e-liquid-contaminated devices. But if a device is defective on arrival or within a reasonable period, we replace or refund it." },
-        { "q": "What if I received the wrong flavour?", "a": "Message us on Telegram with your order number and we'll send the correct one — usually same-day in Sydney." },
+        { "q": "What if I received the wrong flavour?", "a": "Message us on Telegram with your order number and we'll send the correct one — usually same-day across metro areas." },
         { "q": "How long do refunds take?", "a": "Approved refunds return to your original payment method within a few business days." }
       ],
       "crossLinks": [

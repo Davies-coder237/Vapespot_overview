@@ -79,7 +79,7 @@ export function AgeGate({ children }: { children: React.ReactNode }) {
               lineHeight: 1.4,
             }}
           >
-            🛵 Local courier delivery, usually 30 min–2hrs — or via Australia Post.
+            🛵 Courier delivery to every city we list — usually 30 min–2hrs in metro areas.
           </p>
 
           {/* Buttons */}

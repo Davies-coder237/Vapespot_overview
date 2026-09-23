@@ -130,7 +130,7 @@ export function ProductDetails({ product }: { product: Product }) {
               {formatPrice(safePrice)}
             </p>
             <p className="text-[13px] md:text-[14px] text-[#7C3AED] font-semibold">
-              🛵 Local courier delivery — usually 30 min to 2 hrs, or via Australia Post.
+              🛵 Courier delivery to every city we list — usually 30 min to 2 hrs in metro areas.
             </p>
             <p className="text-[12px] md:text-[13px] font-semibold text-[#5B3DF5]">
               💳 Pay with Crypto or Gift Card → save {CRYPTO_DISCOUNT_PERCENT}% on your order
