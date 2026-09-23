@@ -189,25 +189,3 @@ html.js .seo-block { display: none; }
    visuel au refresh ET le feeling « mode ordi sur téléphone ». */
 .scrollbar-none { scrollbar-width: none; -ms-overflow-style: none; }
 .scrollbar-none::-webkit-scrollbar { display: none; }
-
-/* ════ Carrousel avis infini (homepage — ReviewsCarousel.tsx) ════
-   Le track transporte 2 groupes identiques ; translateX(-50%) = largeur
-   exacte d'UN groupe (gaps inclus via padding-right) → la boucle se recolle
-   sans à-coup. Pause au survol pour lire un avis ; prefers-reduced-motion →
-   l'animation s'arrête et la bande redevient un scroll manuel. */
-.reviews-marquee { overflow: hidden; }
-.reviews-marquee-track {
-  display: flex;
-  will-change: transform;
-  animation: reviews-marquee-scroll 384s linear infinite;
-}
-.reviews-marquee-track:hover { animation-play-state: paused; }
-.reviews-marquee-group { display: flex; gap: 20px; padding-right: 20px; }
-@keyframes reviews-marquee-scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .reviews-marquee { overflow-x: auto; }
-  .reviews-marquee-track { animation: none; }
-}
