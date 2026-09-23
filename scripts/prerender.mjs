@@ -468,7 +468,7 @@ function reviewsBlockHTML(productId) {
   const cards = mine.map((r) => {
     const full = String(r.rating || 0) + "/5";
     return `<blockquote class="seo-review"><p>“${escapeHtml(r.text)}”</p>` +
-      `<footer>— ${escapeHtml(r.author)}, ${escapeHtml(r.city)} · ${escapeHtml(r.date)} · ${full}` +
+      `<footer>${escapeHtml(r.author)}, ${escapeHtml(r.city)} · ${escapeHtml(r.date)} · ${full}` +
       (r.verified ? ` · <span class="seo-review-badge">Verified order</span>` : "") +
       `</footer></blockquote>`;
   }).join("");
