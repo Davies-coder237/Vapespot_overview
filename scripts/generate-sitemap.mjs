@@ -54,6 +54,15 @@ try {
   );
 } catch {}
 
+// Pages institutionnelles (Tâche 6 — E-E-A-T) : /about/ /delivery/ /returns/
+// /contact/, prérendues dans dist/<slug>/index.html avec leur propre URL slash.
+let institutionalData = { pages: [] };
+try {
+  institutionalData = JSON.parse(
+    readFileSync(join(ROOT, "src", "data", "institutional.json"), "utf-8")
+  );
+} catch {}
+
 // Date ISO du jour : lastmod frais, signal de re-crawl.
 const today = new Date().toISOString().slice(0, 10);
 
@@ -91,6 +100,11 @@ const urls = [
   url(`${DOMAIN}/brands/`, today, "weekly", "0.8"),
   ...brandsData.brands.map((b) =>
     url(`${DOMAIN}/brands/${b.slug}/`, today, "weekly", "0.7")
+  ),
+  // Pages institutionnelles (Tâche 6 — E-E-A-T) : prioritaires en crawl
+  // (petit nombre de pages, contenu de confiance / confiance < indexables).
+  ...institutionalData.pages.map((p) =>
+    url(`${DOMAIN}/${p.slug}/`, today, "monthly", "0.5")
   ),
 ];
 
@@ -136,6 +150,10 @@ const redirects = [
   "/discover  /discover/  200",
   "/my-list  /my-list/  200",
   "/order-summary  /order-summary/  200",
+  // Pages institutionnelles (Tâche 6 — E-E-A-T) : Google crawle "/about" sans
+  // slash → force le rewrite 200 (sinon Cloudflare renvoie un 308 "Redirect
+  // error" et GSC les logue). Même protection que villes/guides/marques.
+  ...institutionalData.pages.map((p) => `/${p.slug}  /${p.slug}/  200`),
 ];
 writeFileSync(REDIRECTS, redirects.join("\n") + "\n", "utf-8");
-console.log(`✅ _redirects régénéré : ${redirects.length} rewrites (101 villes + ${metaData.categories.filter((c) => c && c.slug).length} catégories + ${guidesData.guides.length} guides + ${brandsData.brands.length} marques, code 200), sous la limite Cloudflare (~2000). Produits : URL slash direct (pas de rewrite).`);
+console.log(`✅ _redirects régénéré : ${redirects.length} rewrites (101 villes + ${metaData.categories.filter((c) => c && c.slug).length} catégories + ${guidesData.guides.length} guides + ${brandsData.brands.length} marques + ${institutionalData.pages.length} institutionnelles, code 200), sous la limite Cloudflare (~2000). Produits : URL slash direct (pas de rewrite).`);

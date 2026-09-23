@@ -1,0 +1,212 @@
+{
+  "contact": {
+    "email": "info@vapespot.store",
+    "telegram": "vapespot_store",
+    "telegramUrl": "https://t.me/vapespot_store",
+    "name": "Vape Spot Australia",
+    "ageNote": "All orders require an adult recipient 18+. We may ask for ID on delivery. Vape Spot does not sell to minors, does not ship to schools, and reserves the right to refuse any order."
+  },
+  "pages": [
+    {
+      "slug": "about",
+      "eyebrow": "About us",
+      "title": "About Vape Spot Australia",
+      "metaDescription": "Vape Spot Australia is a Sydney-based adult-only retailer of genuine disposable vapes and vape gear. Authentic stock, 18+ ID checks, fast Sydney courier delivery and Australia-wide shipping.",
+      "intro": "Vape Spot Australia is a small Sydney team selling genuine disposable vapes, pods and accessories to adult Australians. We keep it simple: authentic stock, fair prices, fast delivery and a real human on Telegram when you have a question.",
+      "sections": [
+        {
+          "heading": "Who we are",
+          "body": [
+            "Vape Spot started as a local delivery run around Sydney — an adult customer ordered a vape, we dropped it off the same afternoon. Word spread, and today we ship across Australia while still offering 30-minute to 2-hour courier delivery across Sydney.",
+            "We are a vape retailer first: every device in our catalogue is picked by hand, checked for authenticity and stored properly. We do not sell synthetic-replica or grey-market stock, and we remove any product the moment we can no longer verify its supply chain."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Adults only",
+          "body": [
+            "Vape Spot is strictly 18+. You must be an adult to browse, order or receive a delivery. We verify age before large orders ship and our couriers, along with Australia Post, require the recipient to be available and adult.",
+            "We support sensible vaping rules in Australia. We never market to minors, and our guides page explains puff counts, nicotine strengths and how to vape responsibly."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Genuine products, guaranteed",
+          "body": [
+            "Every device we sell is authentic. Most brands include a scratch-to-verify authenticity sticker — we show you how to check it in our guides, and if the code does not verify we replace the unit.",
+            "Because we test-stock small batches first, the catalogue you see online is real stock on hand, not drop-shipped inventory."
+          ],
+          "list": ["Genuine stock with verified authentication codes", "Fast Sydney courier + Australia Post AU-wide", "18+ with ID checks — no exceptions", "A real human on Telegram: @vapespot_store"]
+        },
+        {
+          "heading": "Why buy from Vape Spot",
+          "body": [
+            "There are a few things we hear from customers all the time: the delivery is fast, the vapes are genuine, and when something is wrong — a dead unit, a wrong flavour — we fix it without argument.",
+            "Read our delivery policy for Sydney courier times and shipping options, our returns policy for defective units, or just message us on Telegram and ask. We answer within minutes during business hours."
+          ],
+          "list": []
+        }
+      ],
+      "faq": [],
+      "crossLinks": [
+        { "to": "/delivery", "label": "Delivery & Shipping" },
+        { "to": "/returns", "label": "Returns & Refunds" },
+        { "to": "/contact", "label": "Contact us on Telegram" }
+      ],
+      "cta": {
+        "title": "Browse the catalogue",
+        "text": "Looking for a specific brand or a trusted delivery date? Start with the full catalogue.",
+        "to": "/products"
+      }
+    },
+    {
+      "slug": "delivery",
+      "eyebrow": "Delivery & shipping",
+      "title": "Delivery & Shipping Australia",
+      "metaDescription": "Vape Spot delivers across Australia. Sydney orders: local courier in 30 min–2 hrs. Elsewhere: Australia Post with tracking. Minimum order A$100. Adults 18+ only.",
+      "intro": "We get your vape to you two ways — fast local courier across Sydney, or Australia Post for everywhere else. Orders are dispatched quickly, tracked, and always require an adult to receive them.",
+      "sections": [
+        {
+          "heading": "Sydney — local courier, 30 min to 2 hrs",
+          "body": [
+            "If you're in the Sydney delivery zone, your order is usually with a courier within the hour and delivered in 30 minutes to 2 hours depending on traffic and your exact area. You don't need to be home — just to have ID ready and an adult to receive it.",
+            "Check the discover page to see if your suburb is covered. We extend the zone regularly based on demand."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Australia-wide — Australia Post",
+          "body": [
+            "For the rest of Australia we ship via Australia Post with tracking on every order. Most metro orders arrive in 1–3 business days; regional and remote areas may take a little longer.",
+            "Once dispatched you'll receive your tracking number by email and on Telegram if you order with your handle."
+          ],
+          "list": ["Tracking on every Australia Post order", "1–3 business days metro, more for remote areas", "Signature not required, but an adult must receive it"]
+        },
+        {
+          "heading": "Minimum order & payment",
+          "body": [
+            "The minimum order value is A$100. You can pay by crypto or gift card and save 15% — see the payment options at checkout.",
+            "We hold stock of every product listed, so delivery dates are accurate — not estimates from a warehouse we don't control."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Adult delivery & ID",
+          "body": [
+            "You must be 18+ to receive a delivery. Couriers and Australia Post staff may ask for ID, and we may contact you on Telegram to confirm your age for larger orders or repeated deliveries. No exceptions.",
+            "If an order is refused at the door or undeliverable, our returns and redirection policy applies — message us on Telegram and we'll sort it out."
+          ],
+          "list": []
+        }
+      ],
+      "faq": [
+        { "q": "Do you deliver to my state?", "a": "We ship Australia-wide via Australia Post, and offer same-hour courier delivery across Sydney. Message us on Telegram with your postcode and we'll confirm your suburb and delivery time." },
+        { "q": "What is the minimum order?", "a": "A$100. Ordering in packs is usually the easiest way to reach it — pack pricing makes it worth it too." },
+        { "q": "How long does Sydney courier delivery take?", "a": "Usually 30 minutes to 2 hours from order confirmation. Traffic and your exact location can push it slightly outside that window." },
+        { "q": "Can someone else receive my order?", "a": "Yes, as long as they are an adult (18+) and can show ID if asked." }
+      ],
+      "crossLinks": [
+        { "to": "/returns", "label": "Returns & refunds" },
+        { "to": "/contact", "label": "Ask about your address on Telegram" },
+        { "to": "/discover", "label": "Check our delivery areas" }
+      ],
+      "cta": {
+        "title": "Start your order",
+        "text": "Browse the catalogue — every price includes delivery within the Sydney zone.",
+        "to": "/products"
+      }
+    },
+    {
+      "slug": "returns",
+      "eyebrow": "Returns & refunds",
+      "title": "Returns & Refunds Policy",
+      "metaDescription": "Vape Spot's returns policy: defective devices replaced or refunded, wrong orders fixed fast. Vape and nicotine products are regulated — see how returns work.",
+      "intro": "We want every order to arrive working. If something is defective, wrong or damaged, message us on Telegram and we'll fix it quickly — replacement or refund.",
+      "sections": [
+        {
+          "heading": "What we cover",
+          "body": [
+            "If your device is defective on arrival (doesn't fire, broken seal, empty battery that won't charge, or fails within a reasonable period), we replace it or refund it — your choice. Wrong flavour or wrong model sent? Same deal: we make it right.",
+            "Because nicotine products are regulated, we can't accept returns of opened, used or e-liquid-contaminated devices for change of mind. That keeps every unit we send out genuine and safe."
+          ],
+          "list": ["Defective on arrival → replacement or refund", "Wrong item or flavour → corrected, no hassle", "Change of mind / used products → not accepted (regulated nicotine products)"]
+        },
+        {
+          "heading": "How to start a return",
+          "body": [
+            "Message us on Telegram (@vapespot_store) or email info@vapespot.store with your order number and a short description (a photo of the device helps). We reply fast and tell you exactly what to do next.",
+            "We don't make you jump through forms or wait weeks. If it's our fault, we fix it. Simple as that."
+          ],
+          "list": ["Your order number", "A short description of the issue", "A photo if possible — speeds everything up"]
+        },
+        {
+          "heading": "Refunds",
+          "body": [
+            "Approved refunds are returned to your original payment method — card, crypto or gift card — usually within a few business days. Tracked Australia Post returns for remote areas are covered by us if the unit is found defective.",
+            "For crypto and gift card purchases, we can refund in the same form or exchange the value for store credit — your choice."
+          ],
+          "list": []
+        }
+      ],
+      "faq": [
+        { "q": "Can I return a vape I've already used?", "a": "No — nicotine and vape products are regulated, so we can't accept used or e-liquid-contaminated devices. But if a device is defective on arrival or within a reasonable period, we replace or refund it." },
+        { "q": "What if I received the wrong flavour?", "a": "Message us on Telegram with your order number and we'll send the correct one — usually same-day in Sydney." },
+        { "q": "How long do refunds take?", "a": "Approved refunds return to your original payment method within a few business days." }
+      ],
+      "crossLinks": [
+        { "to": "/delivery", "label": "Delivery policy" },
+        { "to": "/contact", "label": "Start a return on Telegram" },
+        { "to": "/about", "label": "About Vape Spot Australia" }
+      ],
+      "cta": {
+        "title": "Need help with an order?",
+        "text": "Message us and include your order number — we answer fast during business hours.",
+        "to": "/contact"
+      }
+    },
+    {
+      "slug": "contact",
+      "eyebrow": "Contact",
+      "title": "Contact Vape Spot Australia",
+      "metaDescription": "Contact Vape Spot Australia: Telegram @vapespot_store or email info@vapespot.store. Fast replies, order support, delivery questions. Adults 18+ only.",
+      "intro": "The fastest way to reach us is Telegram. A real person answers — usually within minutes during business hours. Prefer email? We read info@vapespot.store daily.",
+      "sections": [
+        {
+          "heading": "Talk to us on Telegram",
+          "body": [
+            "Message @vapespot_store on Telegram for order help, delivery questions, ID checks or anything else. Include your order number when you can and we'll pull it up instantly.",
+            "Tap the button below to open a pre-filled chat."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Email",
+          "body": [
+            "For longer conversations or formal requests, email info@vapespot.store. We reply within one business day, usually faster.",
+            "Include your order number and a short description of your question so we can help on the first reply."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Age verification",
+          "body": [
+            "We are an adult-only retailer. To comply with Australian vaping regulations we may ask for proof of age — a photo of ID or a quick video call on Telegram — before shipping larger orders or on repeated deliveries to the same address.",
+            "We never store your ID. Once a check is done, the file is deleted."
+          ],
+          "list": ["Adult (18+) recipients only", "ID may be requested before dispatch", "Your ID is never stored"]
+        }
+      ],
+      "faq": [],
+      "crossLinks": [
+        { "to": "/about", "label": "About us" },
+        { "to": "/delivery", "label": "Delivery & shipping" },
+        { "to": "/returns", "label": "Returns & refunds" }
+      ],
+      "cta": {
+        "title": "Start the conversation",
+        "text": "Telegram is fastest — tap below to open a chat with @vapespot_store.",
+        "to": "/contact"
+      }
+    }
+  ]
+}

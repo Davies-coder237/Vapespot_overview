@@ -448,6 +448,34 @@ writeFileSync(join(cityDataDir, "city-brands.json"), JSON.stringify(cityBrandsMa
 // fusionne avec trending.json pour résoudre les ids du bloc ville (parité).
 writeFileSync(join(cityDataDir, "city-star-products.json"), JSON.stringify(gscStarProducts), "utf-8");
 
+// ── Avis clients (Tâche 6) : mini-base locale, TEXTE uniquement (jamais de
+// schema étoiles pour le vape). Injectée dans le seo-block du produit si ce
+// produit a des avis → Google voit du contenu « social proof » statique.
+let reviewsData = [];
+try {
+  reviewsData = JSON.parse(
+    readFileSync(join(ROOT, "src", "data", "reviews.json"), "utf-8")
+  );
+} catch {}
+const reviewsByProduct = new Map();
+for (const r of reviewsData) {
+  if (!reviewsByProduct.has(r.productId)) reviewsByProduct.set(r.productId, []);
+  reviewsByProduct.get(r.productId).push(r);
+}
+function reviewsBlockHTML(productId) {
+  const mine = reviewsByProduct.get(productId) || [];
+  if (!mine.length) return "";
+  const cards = mine.map((r) => {
+    const full = String(r.rating || 0) + "/5";
+    return `<blockquote class="seo-review"><p>“${escapeHtml(r.text)}”</p>` +
+      `<footer>— ${escapeHtml(r.author)}, ${escapeHtml(r.city)} · ${escapeHtml(r.date)} · ${full}` +
+      (r.verified ? ` · <span class="seo-review-badge">Verified order</span>` : "") +
+      `</footer></blockquote>`;
+  }).join("");
+  return `\n<section class="seo-block seo-reviews"><h2>What our customers say</h2>` +
+    `<div class="seo-grid">${cards}</div></section>`;
+}
+
 // ════ 4. Pages produit statiques (une par produit de search.json) ════
 // Même logique que les villes : un index.html unique par produit, avec
 // title/description/JSON-LD Product → Google voit du contenu direct.
@@ -562,6 +590,8 @@ for (const entry of searchIndex) {
     bodySeo += `\n<section class="seo-block seo-stores"><h2>Available in our stores</h2>` +
       `<div class="seo-grid">${storeAnchors}</div></section>`;
   }
+  // Avis clients (Tâche 6) — texte seul, même rendu que le bloc SPA
+  bodySeo += reviewsBlockHTML(String(entry.id));
   if (bodySeo) html = html.replace("</body>", bodySeo + "\n  </body>");
 
   const outDir = join(DIST, "product", idSafe);
@@ -723,11 +753,21 @@ function guideContentHTML(g) {
       (pt.note ? `<p>${esc(pt.note)}</p>` : "")
     : "";
 
+  // Co-signaux E-E-A-T (Tâche 6) : chaque article pointe vers les pages
+  // institutionnelles (About/Delivery/Returns/Contact) → Google voit que
+  // l'entreprise est « réelle » (À propos + politique livraison/retours).
+  const instNav =
+    `<p><strong>Vape Spot policies:</strong> <a href="https://vapespot.store/about/">About Vape Spot</a> · ` +
+    `<a href="https://vapespot.store/delivery/">Delivery &amp; Shipping</a> · ` +
+    `<a href="https://vapespot.store/returns/">Returns &amp; Refunds</a> · ` +
+    `<a href="https://vapespot.store/contact/">Contact us</a></p>`;
+
   return `<p>${esc(g.date)} · ${esc(g.readTime)}</p>` +
     `<p><img src="${esc(g.hero.image)}" alt="${esc(g.hero.alt)}"></p>` +
     `<p>${esc(g.intro)}</p>${priceTable}${sections}` +
     (related ? `<p><strong>Related products:</strong></p>${related}` : "") +
     faq +
+    instNav +
     `<p><a href="${esc(`https://vapespot.store${g.cta.to}`)}">${esc(g.cta.title)}</a></p>`;
 }
 
@@ -1155,6 +1195,131 @@ if (Object.keys(brandProductsJson).length) {
   writeFileSync(join(outDir, "brand-products.json"), JSON.stringify(brandProductsJson, null, 2), "utf-8");
   console.log(`  ✓ ${Object.keys(brandProductsJson).length} marques → dist/data/brand-products.json (parité SPA)`);
 }
+
+// ════ 4e. Pages institutionnelles — Tâche 6 (E-E-A-T) ══════════════
+// /about/ /delivery/ /returns/ /contact/ : prérendues pour Google avec head
+// SEO complet (title/description/canonical/geo AU/hreflang en-AU/JSON-LD) ET
+// un seo-block de contenu (masqué quand JS actif → l'humain voit le composant
+// SPA InstitutionalPage qui rend la même chose : parité). Liées entre elles
+// (crossLinks) + à la home (breadcrumb) = maillage institutionnel.
+let institutionalData = { contact: {}, pages: [] };
+try {
+  institutionalData = JSON.parse(
+    readFileSync(join(ROOT, "src", "data", "institutional.json"), "utf-8")
+  );
+} catch {}
+
+const INST_BASE = "https://vapespot.store/";
+
+function institutionalContentHTML(pg) {
+  const esc = escapeHtml;
+  const isContact = pg.slug === "contact";
+  let out = `<p>${esc(pg.intro)}</p>`;
+
+  // Bloc contact (page /contact uniquement — miroir du composant SPA)
+  if (isContact) {
+    out += `<h2>Contact details</h2><p>Telegram: <strong>@${esc(institutionalData.contact.telegram)}</strong></p>` +
+      `<p>Email: <strong>${esc(institutionalData.contact.email)}</strong></p>` +
+      `<p><a href="${esc(institutionalData.contact.telegramUrl)}">Open a chat on Telegram →</a></p>`;
+  }
+
+  for (const s of pg.sections) {
+    out += `<h2>${esc(s.heading)}</h2>` +
+      (s.body || []).map((p) => `<p>${esc(p)}</p>`).join("") +
+      (s.list && s.list.length
+        ? `<ul>${s.list.map((li) => `<li>${esc(li)}</li>`).join("")}</ul>`
+        : "");
+  }
+
+  if (pg.faq.length) {
+    out += `<h2>Frequently asked questions</h2>` + pg.faq.map((f) =>
+      `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join("");
+  }
+
+  if (pg.crossLinks.length) {
+    out += `<h2>Useful information</h2>` + pg.crossLinks.map((l) =>
+      `<p><a href="${esc(`https://vapespot.store${l.to}`)}">${esc(l.label)}</a></p>`).join("");
+  }
+
+  out += `<p><a href="${isContact ? esc(institutionalData.contact.telegramUrl) : esc(`https://vapespot.store${pg.cta.to}`)}">${isContact ? "Open a chat on Telegram →" : esc(pg.cta.title)}</a></p>`;
+  out += `<p>${esc(institutionalData.contact.ageNote)}</p>`;
+  return out;
+}
+
+for (const pg of institutionalData.pages) {
+  const canonical = `${INST_BASE}${pg.slug}/`;
+  const isContact = pg.slug === "contact";
+  const isDelivery = pg.slug === "delivery";
+  const isReturns = pg.slug === "returns";
+
+  const head = [
+    `<title>${escapeHtml(pg.title)} — Vape Spot</title>`,
+    `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`,
+    `<meta name="description" content="${escapeHtml(pg.metaDescription)}" />`,
+    `<meta property="og:title" content="${escapeHtml(pg.title)}" />`,
+    `<meta property="og:description" content="${escapeHtml(pg.metaDescription)}" />`,
+    `<meta property="og:url" content="${canonical}" />`,
+    `<meta property="og:type" content="website" />`,
+    `<link rel="canonical" href="${canonical}" />`,
+    `<link rel="alternate" hreflang="en-AU" href="${canonical}" />`,
+    `<meta name="geo.country" content="AU" />`,
+    `<meta name="geo.placename" content="Australia" />`,
+    `<link rel="icon" href="/favicon.ico" sizes="48x48" />`,
+    `<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />`,
+    `<link rel="apple-touch-icon" href="/apple-touch-icon.png" />`,
+    `<script>document.documentElement.classList.add("js")</script>`,
+    `<script type="application/ld+json">${JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": isContact ? "ContactPage" : "AboutPage",
+      name: pg.title,
+      description: pg.metaDescription,
+      url: canonical,
+      mainEntity: isContact ? {
+        "@type": "Organization",
+        name: institutionalData.contact.name,
+        url: "https://vapespot.store/",
+        email: `mailto:${institutionalData.contact.email}`,
+        contactPoint: {
+          "@type": "ContactPoint",
+          contactType: "customer support",
+          email: `mailto:${institutionalData.contact.email}`,
+          url: institutionalData.contact.telegramUrl,
+          availableLanguage: "en-AU",
+        },
+      } : undefined,
+    })}</script>`,
+    `<script type="application/ld+json">${JSON.stringify(
+      buildBreadcrumbLd([
+        { name: "Home", url: "https://vapespot.store/" },
+        { name: pg.title, url: canonical },
+      ])
+    )}</script>`,
+  ];
+
+  // FAQPage JSON-LD pour Delivery & Returns (questions People Also Ask)
+  if ((isDelivery || isReturns) && pg.faq.length) {
+    head.push(`<script type="application/ld+json">${JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: pg.faq.map((f) => ({
+        "@type": "Question", name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    })}</script>`);
+  }
+
+  let html = template.replace(
+    /<head>[\s\S]*?<\/head>/,
+    `<head>\n    ${head.filter(Boolean).join("\n    ")}\n    ${guideScriptTag}\n    ${guideCssTag}\n  </head>`
+  ).replace("</body>",
+    `\n<section class="seo-block seo-institutional">${institutionalContentHTML(pg)}</section>\n  </body>`);
+
+  const outDir = join(DIST, pg.slug);
+  mkdirSync(outDir, { recursive: true });
+  writeFileSync(join(outDir, "index.html"), html, "utf-8");
+  console.log(`  ✓ /${pg.slug}/ prérendu (contenu institutionnel + JSON-LD)`);
+}
+console.log(`  ✓ ${institutionalData.pages.length} pages institutionnelles (E-E-A-T)`);
 
 // ════ 4d. Pages utilitaires client-only (shell SPA) ─────────────────
 // Routes sans contenu SEO statique (discover / my-list / order-summary)

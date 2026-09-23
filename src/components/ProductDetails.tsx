@@ -6,6 +6,7 @@ import { QuantitySelector } from "./QuantitySelector";
 import { SpecificationsTable } from "./SpecificationsTable";
 import { ProductCard } from "./ProductCard";
 import { StoreLocations } from "./StoreLocations";
+import { CustomerReviews } from "./CustomerReviews";
 import { useMyList } from "@/lib/storage";
 import { toast } from "sonner";
 import {
@@ -219,6 +220,9 @@ export function ProductDetails({ product }: { product: Product }) {
           </section>
         </div>
       </div>
+
+      {/* Customer reviews — full width, text only (no star schema for vape) */}
+      <CustomerReviews productId={product.id} />
 
       {/* You May Also Like — full width below the 2-col grid */}
       {(related.length > 0 || !relatedLoaded) && (

@@ -137,3 +137,7 @@
 /discover  /discover/  200
 /my-list  /my-list/  200
 /order-summary  /order-summary/  200
+/about  /about/  200
+/delivery  /delivery/  200
+/returns  /returns/  200
+/contact  /contact/  200

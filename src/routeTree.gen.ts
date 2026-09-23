@@ -9,10 +9,14 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ReturnsRouteImport } from './routes/returns'
 import { Route as OrderSummaryRouteImport } from './routes/order-summary'
 import { Route as MyListRouteImport } from './routes/my-list'
 import { Route as GuidesRouteImport } from './routes/guides'
 import { Route as DiscoverRouteImport } from './routes/discover'
+import { Route as DeliveryRouteImport } from './routes/delivery'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as SlugRouteImport } from './routes/$slug'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductsIndexRouteImport } from './routes/products.index'
@@ -23,6 +27,11 @@ import { Route as ProductIdRouteImport } from './routes/product.$id'
 import { Route as GuidesSlugRouteImport } from './routes/guides.$slug'
 import { Route as BrandsSlugRouteImport } from './routes/brands.$slug'
 
+const ReturnsRoute = ReturnsRouteImport.update({
+  id: '/returns',
+  path: '/returns',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const OrderSummaryRoute = OrderSummaryRouteImport.update({
   id: '/order-summary',
   path: '/order-summary',
@@ -41,6 +50,21 @@ const GuidesRoute = GuidesRouteImport.update({
 const DiscoverRoute = DiscoverRouteImport.update({
   id: '/discover',
   path: '/discover',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DeliveryRoute = DeliveryRouteImport.update({
+  id: '/delivery',
+  path: '/delivery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SlugRoute = SlugRouteImport.update({
@@ -92,10 +116,14 @@ const BrandsSlugRoute = BrandsSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/$slug': typeof SlugRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/delivery': typeof DeliveryRoute
   '/discover': typeof DiscoverRoute
   '/guides': typeof GuidesRouteWithChildren
   '/my-list': typeof MyListRoute
   '/order-summary': typeof OrderSummaryRoute
+  '/returns': typeof ReturnsRoute
   '/brands/$slug': typeof BrandsSlugRoute
   '/guides/$slug': typeof GuidesSlugRoute
   '/product/$id': typeof ProductIdRoute
@@ -107,9 +135,13 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/$slug': typeof SlugRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/delivery': typeof DeliveryRoute
   '/discover': typeof DiscoverRoute
   '/my-list': typeof MyListRoute
   '/order-summary': typeof OrderSummaryRoute
+  '/returns': typeof ReturnsRoute
   '/brands/$slug': typeof BrandsSlugRoute
   '/guides/$slug': typeof GuidesSlugRoute
   '/product/$id': typeof ProductIdRoute
@@ -122,10 +154,14 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/$slug': typeof SlugRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/delivery': typeof DeliveryRoute
   '/discover': typeof DiscoverRoute
   '/guides': typeof GuidesRouteWithChildren
   '/my-list': typeof MyListRoute
   '/order-summary': typeof OrderSummaryRoute
+  '/returns': typeof ReturnsRoute
   '/brands/$slug': typeof BrandsSlugRoute
   '/guides/$slug': typeof GuidesSlugRoute
   '/product/$id': typeof ProductIdRoute
@@ -139,10 +175,14 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/$slug'
+    | '/about'
+    | '/contact'
+    | '/delivery'
     | '/discover'
     | '/guides'
     | '/my-list'
     | '/order-summary'
+    | '/returns'
     | '/brands/$slug'
     | '/guides/$slug'
     | '/product/$id'
@@ -154,9 +194,13 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/$slug'
+    | '/about'
+    | '/contact'
+    | '/delivery'
     | '/discover'
     | '/my-list'
     | '/order-summary'
+    | '/returns'
     | '/brands/$slug'
     | '/guides/$slug'
     | '/product/$id'
@@ -168,10 +212,14 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/$slug'
+    | '/about'
+    | '/contact'
+    | '/delivery'
     | '/discover'
     | '/guides'
     | '/my-list'
     | '/order-summary'
+    | '/returns'
     | '/brands/$slug'
     | '/guides/$slug'
     | '/product/$id'
@@ -184,10 +232,14 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   SlugRoute: typeof SlugRoute
+  AboutRoute: typeof AboutRoute
+  ContactRoute: typeof ContactRoute
+  DeliveryRoute: typeof DeliveryRoute
   DiscoverRoute: typeof DiscoverRoute
   GuidesRoute: typeof GuidesRouteWithChildren
   MyListRoute: typeof MyListRoute
   OrderSummaryRoute: typeof OrderSummaryRoute
+  ReturnsRoute: typeof ReturnsRoute
   BrandsSlugRoute: typeof BrandsSlugRoute
   ProductIdRoute: typeof ProductIdRoute
   ProductsCategoryRoute: typeof ProductsCategoryRoute
@@ -197,6 +249,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/returns': {
+      id: '/returns'
+      path: '/returns'
+      fullPath: '/returns'
+      preLoaderRoute: typeof ReturnsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/order-summary': {
       id: '/order-summary'
       path: '/order-summary'
@@ -223,6 +282,27 @@ declare module '@tanstack/react-router' {
       path: '/discover'
       fullPath: '/discover'
       preLoaderRoute: typeof DiscoverRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/delivery': {
+      id: '/delivery'
+      path: '/delivery'
+      fullPath: '/delivery'
+      preLoaderRoute: typeof DeliveryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/$slug': {
@@ -307,10 +387,14 @@ const GuidesRouteWithChildren =
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   SlugRoute: SlugRoute,
+  AboutRoute: AboutRoute,
+  ContactRoute: ContactRoute,
+  DeliveryRoute: DeliveryRoute,
   DiscoverRoute: DiscoverRoute,
   GuidesRoute: GuidesRouteWithChildren,
   MyListRoute: MyListRoute,
   OrderSummaryRoute: OrderSummaryRoute,
+  ReturnsRoute: ReturnsRoute,
   BrandsSlugRoute: BrandsSlugRoute,
   ProductIdRoute: ProductIdRoute,
   ProductsCategoryRoute: ProductsCategoryRoute,

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "r-1",
+    "author": "Sarah M.",
+    "city": "Sydney NSW",
+    "date": "Sep 2026",
+    "productId": "kuz-9000-miami-mint-70011",
+    "productName": "Kuz 9000 Miami Mint",
+    "rating": 5,
+    "text": "Ordered at lunch, it arrived in under an hour. The Miami Mint is sweet but not heavy — lasted me the full week. Packaging was sealed and authentic.",
+    "verified": true
+  },
+  {
+    "id": "r-2",
+    "author": "Jake T.",
+    "city": "Melbourne VIC",
+    "date": "Sep 2026",
+    "productId": "umin-10000-watermelon-ice-72021",
+    "productName": "UMIN 10000 Watermelon Ice",
+    "rating": 5,
+    "text": "Great value for 10,000 puffs. Watermelon Ice is my go-to now — smooth throat hit and the battery level display is actually accurate. Shipped the same day via Australia Post.",
+    "verified": true
+  },
+  {
+    "id": "r-3",
+    "author": "Emma L.",
+    "city": "Brisbane QLD",
+    "date": "Sep 2026",
+    "productId": "geek-bar-pulse-x-25000-blue-razz-ice-76001",
+    "productName": "Geek Bar Pulse X 25000 Blue Razz Ice",
+    "rating": 5,
+    "text": "25,000 puffs feels like it lasts forever. Blue Razz Ice tastes exactly like the packet says. I checked the scratch code against Geek Bar's site and it's genuine.",
+    "verified": true
+  },
+  {
+    "id": "r-4",
+    "author": "Liam W.",
+    "city": "Perth WA",
+    "date": "Sep 2026",
+    "productId": "iget-bar-12750",
+    "productName": "IGET Bar",
+    "rating": 4,
+    "text": "Reliable every time — I've ordered the IGET Bar four times now and it's always consistent. Delivery to Perth took three days with tracking the whole way.",
+    "verified": true
+  },
+  {
+    "id": "r-5",
+    "author": "Mia R.",
+    "city": "Gold Coast QLD",
+    "date": "Aug 2026",
+    "productId": "alibarbar-ingot-15000-mango-91003",
+    "productName": "Alibarbar Ingot 15000 Mango",
+    "rating": 5,
+    "text": "The Ingot 15000 Mango is my favourite — flavour doesn't fade even towards the end of the device. Quick chat on Telegram confirmed my order before it shipped.",
+    "verified": true
+  },
+  {
+    "id": "r-6",
+    "author": "Oliver B.",
+    "city": "Adelaide SA",
+    "date": "Sep 2026",
+    "productId": "geek-bar-meloso-mini-blueberry-ice-74001",
+    "productName": "Geek Bar Meloso Mini Blueberry Ice",
+    "rating": 5,
+    "text": "Perfect compact size for carrying in the car. Blueberry Ice is clean and refreshing. Charged it with my USB-C once and it topped right up.",
+    "verified": true
+  },
+  {
+    "id": "r-7",
+    "author": "Chloe H.",
+    "city": "Sydney NSW",
+    "date": "Sep 2026",
+    "productId": "umin-10000-mango-magic-72011",
+    "productName": "UMIN 10000 Mango Magic",
+    "rating": 5,
+    "text": "The courier brought it to my apartment in Parramatta within the two-hour window. Mango Magic is super smooth, and the 22mL tank genuinely lasted the full 10k puffs.",
+    "verified": true
+  },
+  {
+    "id": "r-8",
+    "author": "Ethan K.",
+    "city": "Melbourne VIC",
+    "date": "Aug 2026",
+    "productId": "iget-bar-mango-ice-12758",
+    "productName": "IGET Bar Mango Ice",
+    "rating": 4,
+    "text": "Great flavour and price. The USB-C charging is handy. Only note — a few flavours sell out quickly, but they restocked within the week.",
+    "verified": true
+  },
+  {
+    "id": "r-9",
+    "author": "Isla F.",
+    "city": "Canberra ACT",
+    "date": "Sep 2026",
+    "productId": "kuz-9000-blue-razz-lemonade-70003",
+    "productName": "Kuz 9000 Blue Razz Lemonade",
+    "rating": 5,
+    "text": "First order with Vape Spot and I'm impressed. Bit of a sour kick on the lemonade that keeps it interesting. Genuine stock with the authenticity sticker intact.",
+    "verified": true
+  },
+  {
+    "id": "r-10",
+    "author": "Noah D.",
+    "city": "Sydney NSW",
+    "date": "Sep 2026",
+    "productId": "geek-bar-pulse-x-25000-cool-mint-76006",
+    "productName": "Geek Bar Pulse X 25000 Cool Mint",
+    "rating": 5,
+    "text": "Bought two Pulse X 25k in Cool Mint for the month and saved on shipping. Support answered my ID question on Telegram in minutes. Solid, trustworthy store.",
+    "verified": true
+  }
+]
