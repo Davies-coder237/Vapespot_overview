@@ -7,6 +7,9 @@ import { ProductCard } from "./ProductCard";
 // IDs produits choisis par ville (écrits par scripts/prerender.mjs dans
 // dist/data/city-products.json). La liste live = EXACTEMENT les liens
 // statiques que Google lit (parité). À défaut de fichier, aucune section.
+// Depuis la Tâche 3, certains ids du bloc ville sont des « stars GSC » présents
+// uniquement dans dist/data/city-star-products.json : on fusionne les deux pools
+// pour résoudre TOUS les ids (les stars ne sont pas dans trending.json).
 let cityMapPromise: Promise<Record<string, string[]>> | null = null;
 function loadCityMap(): Promise<Record<string, string[]>> {
   if (!cityMapPromise) {
@@ -15,6 +18,15 @@ function loadCityMap(): Promise<Record<string, string[]>> {
       .catch(() => ({}));
   }
   return cityMapPromise;
+}
+let starPoolPromise: Promise<Product[]> | null = null;
+function loadStarProducts(): Promise<Product[]> {
+  if (!starPoolPromise) {
+    starPoolPromise = fetch("/data/city-star-products.json")
+      .then((r) => (r.ok ? r.json() : []))
+      .catch(() => []);
+  }
+  return starPoolPromise;
 }
 
 export function CityProducts({ slug, title }: { slug: string; title: string }) {
@@ -27,10 +39,17 @@ export function CityProducts({ slug, title }: { slug: string; title: string }) {
     let cancelled = false;
     let run = true;
     (async () => {
-      const [map, pool] = await Promise.all([loadCityMap(), loadTrendingProducts()]);
+      const [map, pool, starPool] = await Promise.all([
+        loadCityMap(),
+        loadTrendingProducts(),
+        loadStarProducts(),
+      ]);
       if (cancelled) return;
       const ids = (map && map[slug]) || [];
-      const byId = new Map(pool.map((p) => [p.id, p]));
+      // trending d'abord, stars ensuite (same id → les stars écrasent)
+      const byId = new Map(
+        [...pool, ...starPool].map((p) => [p.id, p])
+      );
       // Garder l'ordre déterministe du prerender
       const list = ids
         .map((id) => byId.get(id))

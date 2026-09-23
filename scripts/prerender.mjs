@@ -61,6 +61,14 @@ function stateYears(cityTag) {
   return m ? m[1] : null;
 }
 
+// ── Marques du site (src/data/brands.json) — chargées AVANT la boucle villes
+// pour le bloc « Popular brands in <ville> » (Tâche 3). La section 4c réutilise
+// ce même objet pour générer les pages /brands/ statiques.
+let brandsData = { brands: [] };
+try {
+  brandsData = JSON.parse(readFileSync(join(ROOT, "src", "data", "brands.json"), "utf-8"));
+} catch {}
+
 // ── Pool « best sellers » (public/data/trending.json, 48 produits) ──
 let trendPool = [];
 try {
@@ -89,6 +97,48 @@ function brandStateScore(brand, abbr) {
   }
   return Math.round(s * 100);
 }
+// ── Pool GSC 90 jours (gsc-audit-90j.json, export Search Console) ──
+// Tâche 3 : la sélection produits des pages ville doit être pilotée par la
+// demande RÉELLE (produits déjà vus/cliqués par Google), pas seulement par la
+// rotation déterministe. On charge l'audit s'il existe ; sinon on retombe sur
+// l'ancien comportement (gscAvailable = false → aucun changement).
+const GSC_CLICK_W = 25, GSC_IMP_W = 0.5;   // échelle ~ brandStateScore (0-100)
+const GSC_STAR_MIN = 6;                    // seuil d'entrée du « top GSC »
+const STAR_HEAD_N = 8;                     // stars GSC figées en tête (toutes villes)
+const gscProduct = new Map();              // id produit -> score
+const gscBrand = new Map();                // slug marque -> score (requêtes GSC)
+let gscAvailable = false;
+try {
+  const GSC_AUDIT = JSON.parse(readFileSync(join(ROOT, "gsc-audit-90j.json"), "utf-8"));
+  // Pages produit : le produit exact qui a reçu des impressions/clics.
+  for (const p of (GSC_AUDIT.pages || [])) {
+    const m = String(p.keys[0] || "").match(/\/product\/([^/]+?)\/?$/);
+    if (!m) continue;
+    gscProduct.set(m[1], (p.clicks || 0) * GSC_CLICK_W + Math.min(60, p.impressions || 0) * GSC_IMP_W);
+  }
+  // Requêtes : la marque elle-même cherchée/affichée (maillage villes→marques).
+  const Q2BRAND_SLUG = [
+    [/iget/i, "iget"], [/geek ?vape|geekvape/i, "geekvape"], [/alibarbar/i, "alibarbar"],
+    [/gunnpod/i, "gunnpod"], [/voopoo|voo ?poo/i, "voopoo"], [/vaporesso/i, "vaporesso"],
+    [/\bhqd\b/i, "hqd"], [/\brelx\b/i, "relx"],
+  ];
+  for (const r of (GSC_AUDIT.queries || [])) {
+    const q = String(r.keys[0] || "");
+    for (const [re, slug] of Q2BRAND_SLUG) {
+      if (re.test(q)) {
+        gscBrand.set(slug, (gscBrand.get(slug) || 0) + (r.clicks || 0) * 10 + (r.impressions || 0) * 0.3);
+      }
+    }
+  }
+  gscAvailable = true;
+} catch {
+  gscAvailable = false;
+}
+function gscProductScore(id) {
+  const g = gscProduct.get(id);
+  return g ? Math.min(80, g) : 0;
+}
+
 // Petit stable hash (slug -> index) pour la rotation déterministe quand un
 // état n'est pas identifiable (aucune donnée Trends).
 function stableIdx(s) {
@@ -97,17 +147,30 @@ function stableIdx(s) {
   return h;
 }
 
-// Sélection de produits pour une page : re-scorée par marque/état, puis
-// rotation déterministe PAR VILLE (rotationKey = slug) pour que Sydney,
-// Parramatta, Blacktown… affichent des sous-ensembles différents, même au
-// sein d'un même état. La variété de marques est garantie (1 par marque
-// d'abord, max 2 ensuite). Sans état (ou sans Trends) : rotation pure.
+// Sélection de produits pour une page : re-scorée par marque/état + demande
+// GSC réelle (produits déjà vus/cliqués par Google), puis rotation
+// déterministe PAR VILLE (rotationKey = slug) pour que Sydney, Parramatta,
+// Blacktown… affichent des sous-ensembles différents, même au sein d'un même
+// état. La variété de marques est garantie (1 par marque d'abord, max 2
+// ensuite). Sans état (ou sans Trends) : rotation pure.
 function pickProducts(abbr, pool, count, rotationKey) {
-  const list = pool.map((x, i) => ({ x, i, s: abbr ? brandStateScore(x.brand, abbr) : 0 }));
+  const list = pool.map((x, i) => ({ x, i, s: (abbr ? brandStateScore(x.brand, abbr) : 0) + gscProductScore(x.id) }));
+
   let ordered = list.slice().sort((a, b) => (b.s - a.s) || (a.i - b.i));
-  // rotation par ville (même état => villes différentes)
-  const off = stableIdx(rotationKey || "") % Math.max(1, ordered.length);
-  ordered = ordered.slice(off).concat(ordered.slice(0, off));
+  // Tâche 3 : les produits qui ont déjà des impressions/clics sur Google
+  // restent EN TÊTE — la rotation par ville ne porte que sur les autres, donc
+  // chaque ville garde ses produits stars tout en variant le reste. Le head est
+  // PLAFONNÉ (STAR_HEAD_N) : les ~8 stars les plus fortes sont figées partout,
+  // les suivantes reculent dans la rotation (elles restent favorisées par leur
+  // score à l'intérieur du pool restant). Sans données GSC, `head` est vide →
+  // comportement exactement identique à avant.
+  if (gscAvailable) {
+    const head = ordered.filter((it) => gscProductScore(it.x.id) >= GSC_STAR_MIN).slice(0, STAR_HEAD_N);
+    const headIds = new Set(head.map((it) => it.x.id));
+    const rest = ordered.filter((it) => !headIds.has(it.x.id));
+    const off = stableIdx(rotationKey || "") % Math.max(1, rest.length);
+    ordered = head.concat(rest.slice(off), rest.slice(0, off));
+  }
 
   const out = [], used = new Set();
   // phase 1 : un produit par marque (ordre de `ordered` = état pondéré + rotation)
@@ -170,12 +233,95 @@ function humanSlug(slug) {
   return slug.replace(/^vapespot-/, "").replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
+// ── Bloc « Popular brands in <ville> » (Tâche 3) ───────────────────
+// Les 8 marques ayant une page /brands/ statique sont candidates. Le choix est
+// piloté par (1) la demande GSC réelle (requêtes marque + impressions produit
+// 90 jours), (2) l'intérêt Google Trends de l'État quand l'équivalence marque↔
+// requête est EXACTE (GeekVape ≠ Geek Bar — pas de faux mapping), (3) un petit
+// bruit déterministe par ville pour varier le bloc entre villes d'un même État.
+const BRAND_STORE_N = 6;
+const BRAND_TREND_KEY = { iget: "iget vape", voopoo: "voopoo", vaporesso: "vaporesso" };
+
+function cityBrandsFor(slug, cityTag) {
+  const abbr = stateYears(cityTag);
+  const all = (brandsData.brands || []).map((b) => {
+    let s = gscBrand.get(b.slug) || 0;
+    const tk = BRAND_TREND_KEY[b.slug];
+    if (abbr && tk && stateIndex) {
+      s += Number(stateIndex[tk]?.[STATE_ABBR[abbr]] || 0) * 2;
+    }
+    s += stableIdx(slug + ":" + b.slug) % 24;
+    return { brand: b, s };
+  });
+  return all.sort((a, c) => c.s - a.s).slice(0, BRAND_STORE_N).map((x) => x.brand);
+}
+
+/** Même titre que le composant live CityBrands (parité) + liens /brands/. */
+function cityBrandLinks(brands, cn) {
+  const anchors = brands
+    .map((b) => `<a class="seo-store" href="/brands/${b.slug}/">${escapeHtml(b.name)}</a>`)
+    .join(" ");
+  return seoBlock(`Popular brands ${cn ? "in " + cn : "near you"}`, "seo-brand", anchors);
+}
+
+// ── Index de recherche + résolution leaf — remontés AVANT la boucle villes
+// pour la sélection produits pilotée GSC (Tâche 3) : les « stars » (produits
+// déjà vus/cliqués par Google) rejoignent le feed des pages ville.
+const searchIndex = JSON.parse(
+  readFileSync(join(ROOT, "public", "data", "search.json"), "utf-8")
+);
+
+const leafCache = new Map();
+function loadLeaf(file) {
+  if (!leafCache.has(file)) {
+    leafCache.set(
+      file,
+      JSON.parse(readFileSync(join(ROOT, "public", "data", file), "utf-8"))
+    );
+  }
+  return leafCache.get(file);
+}
+
+// Produits « stars » GSC (score ≥ GSC_STAR_MIN) résolus en objets produit
+// COMPLETS (feuille leaf → image.card dispo pour les cartes live). Ceux qui
+// ne sont plus au catalogue (supprimés) sont écartés.
+function buildGscStars() {
+  if (!gscAvailable) return [];
+  const out = [];
+  for (const e of searchIndex) {
+    if (gscProductScore(e.id) < GSC_STAR_MIN) continue;
+    let p = null;
+    try {
+      const leaf = loadLeaf(e.file);
+      p = (leaf.products || []).find((x) => x.id === e.id) || null;
+    } catch {}
+    if (p) out.push(p);
+  }
+  return out;
+}
+const gscStarProducts = buildGscStars();
+if (gscAvailable) {
+  console.log(`  ✓ ${gscStarProducts.length} produits stars GSC ajoutés au feed des pages ville`);
+} else {
+  console.log("  - pas de données GSC (gsc-audit-90j.json) : feed des pages ville inchangé");
+}
+
+// Feed des pages ville = best-sellers (trending.json) + stars GSC du
+// catalogue (dédoublonnés). Les stars sont poussées en tête par pickProducts
+// (seuil GSC_STAR_MIN) → les produits déjà plaçés par Google passent devant.
+const feedTrendHas = new Set(trendPool.map((p) => p.id));
+const gscStarFeed = gscStarProducts.filter((p) => !feedTrendHas.has(p.id));
+const cityFeed = trendPool.concat(gscStarFeed);
+
 // ── 3. Générer une page par slug ───────────────────────────────────
 let count = 0;
 // Map slug -> [ids produits] : écrite dans dist/data/city-products.json pour
 // que le composant live CityProducts affiche EXACTEMENT la même liste que
 // les liens statiques vus par Google (parité humain/crawler).
 const cityProductsMap = {};
+// Map slug -> [slugs marques] : écrite dans dist/data/city-brands.json pour
+// le composant live CityBrands (même parité, bloc « Popular brands in <ville> »).
+const cityBrandsMap = {};
 
 for (const listing of listings) {
   const { slug, businessName, description, address, cityTag } = listing;
@@ -261,13 +407,24 @@ for (const listing of listings) {
 
   // ── Maillage interne : blocs de produits locaux (HTML statique) ──
   const st = stateYears(cityTag);
-  const cityPool = st ? pickProducts(st, trendPool, CITY_N, slug)
-                      : pickProducts(null, trendPool, CITY_N, slug);
+  const cityPool = st ? pickProducts(st, cityFeed, CITY_N, slug)
+                      : pickProducts(null, cityFeed, CITY_N, slug);
   const cityCards = cityPool.map(cardHTML).join("\n        ");
   cityProductsMap[slug] = cityPool.map((p) => p.id);
   const cityTitle = `Popular vape products ${cityName(listing) ? "in " + cityName(listing) : "near you"}`;
   if (cityCards) {
     html = html.replace("</body>", seoBlock(cityTitle, "seo-city", cityCards) + "\n  </body>");
+  }
+
+  // ── Tâche 3 : bloc « Popular brands in <ville> » → pages /brands/ ──
+  // L'autorité des villes (pos 1-8 mobile) descend vers les 8 pages marques.
+  // Même choix réécrit dans dist/data/city-brands.json pour la parité live.
+  const cnBrand = cityName(listing);
+  const cityBrands = cityBrandsFor(slug, cityTag);
+  cityBrandsMap[slug] = cityBrands.map((b) => b.slug);
+  const brandLinks = cityBrandLinks(cityBrands, cnBrand);
+  if (brandLinks) {
+    html = html.replace("</body>", brandLinks + "\n  </body>");
   }
 
   // ── Écrire le fichier ─────────────────────────────────────────
@@ -285,24 +442,16 @@ for (const listing of listings) {
 const cityDataDir = join(DIST, "data");
 mkdirSync(cityDataDir, { recursive: true });
 writeFileSync(join(cityDataDir, "city-products.json"), JSON.stringify(cityProductsMap), "utf-8");
+// Map ville -> [slugs marques] pour le composant live CityBrands (Tâche 3)
+writeFileSync(join(cityDataDir, "city-brands.json"), JSON.stringify(cityBrandsMap), "utf-8");
+// Stars GSC en objets produit COMPLETS : le composant live CityProducts les
+// fusionne avec trending.json pour résoudre les ids du bloc ville (parité).
+writeFileSync(join(cityDataDir, "city-star-products.json"), JSON.stringify(gscStarProducts), "utf-8");
 
 // ════ 4. Pages produit statiques (une par produit de search.json) ════
 // Même logique que les villes : un index.html unique par produit, avec
 // title/description/JSON-LD Product → Google voit du contenu direct.
-const searchIndex = JSON.parse(
-  readFileSync(join(ROOT, "public", "data", "search.json"), "utf-8")
-);
-
-const leafCache = new Map();
-function loadLeaf(file) {
-  if (!leafCache.has(file)) {
-    leafCache.set(
-      file,
-      JSON.parse(readFileSync(join(ROOT, "public", "data", file), "utf-8"))
-    );
-  }
-  return leafCache.get(file);
-}
+// (searchIndex + loadLeaf sont définis avant la boucle villes — Tâche 3.)
 
 // Assets du build réutilisés (une seule fois, produits partagent le template)
 const prodScriptM = template.match(
@@ -705,11 +854,8 @@ for (const g of guides.guides) {
 // /product/) et liens vers les villes. Même pattern que villes/guides.
 // Le même contenu est écrit dans dist/data/brand-products.json → le
 // composant SPA brands.$slug fait exactement le même rendu (parité).
-let brandsData = { brands: [] };
-try {
-  brandsData = JSON.parse(readFileSync(join(ROOT, "src", "data", "brands.json"), "utf-8"));
-} catch {}
-
+// (brandsData est chargé en tête de fichier, avant la boucle villes — utilisé
+// aussi par le bloc « Popular brands in <ville> » de la Tâche 3.)
 const BRAND_BASE = "https://vapespot.store/brands/";
 const SHOW_MODELS = 8;   // lignes du tableau comparatif
 const SHOW_CARDS = 12;   // cartes produit de la grille (liens internes)

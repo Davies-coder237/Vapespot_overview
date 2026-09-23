@@ -4,6 +4,7 @@ import schemas from "@/data/schema-data.json";
 import listings from "@/data/listings.json";
 import { cityFaq, cityName, localBlurb, type Listing } from "@/lib/city-content";
 import { CityProducts } from "./CityProducts";
+import { CityBrands } from "./CityBrands";
 import { STATE_NAMES, STATE_ORDER, cityState } from "./CityCard";
 
 interface ListingPageProps {
@@ -108,6 +109,11 @@ export function ListingPage({ listing }: ListingPageProps) {
 
         {/* Produits populaires de la ville — vraies cartes + scroll horizontal */}
         <CityProducts slug={listing.slug} title={`Popular vape products in ${cn}`} />
+
+        <div className="border-t border-[#F0F0F0] mt-8" />
+
+        {/* Marques populaires de la ville → pages /brands/ (Tâche 3) */}
+        <CityBrands slug={listing.slug} city={cn} />
 
         <div className="border-t border-[#F0F0F0] mt-8" />
 
