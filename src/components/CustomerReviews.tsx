@@ -1,15 +1,16 @@
+import { useState } from "react";
 import reviews from "@/data/reviews.json";
 
 /**
- * Bloc « What our customers say » — rendu visuel inspiré du widget avis de
- * worbimed.com (Trustindex) : cartes à fond gris clair radius 12px, avatar
- * ROND AVEC PHOTO (ou initiales en repli), nom en semi-bold, rangée d'étoiles
- * dorées + badge « Verified order », puis le texte de l'avis.
+ * Bloc « What our customers say » — widget avis des fiches produit, inspiré du
+ * panneau « Reviews tab » de worbimed/steroidskaufen (Judge.me) : UN BANDEAU
+ * RÉSUMÉ cliquable (note moyenne + étoiles + nb d'avis) et, AU CLIC, les avis
+ * se DÉROULENT en dessous (accordéon). Fini le défilement permanent des cartes.
  *
- * ⚠️ RÈGLE STRICTE : les étoiles sont du VISUEL (SVG), JAMAIS du balisage
+ * ⚠️ RÈGLE STRICTE : les étoiles sont du VISUEL (SVG), JAMAIS de balisage
  * schema.org Review / aggregateRating (Google interdit les rich snippets
  * d'avis pour les produits de vapotage). Pour Google, le seo-block du
- * prerender reste en texte seul.
+ * prerender reste en texte seul (inchangé).
  */
 function initials(name: string) {
   const parts = name.replace(".", "").trim().split(/\s+/);
@@ -31,14 +32,11 @@ export function CustomerReviews({ productId }: { productId: string }) {
   const mine = reviews.filter((r) => r.productId === productId);
   if (mine.length === 0) return null;
 
-  // 1 avis → carte d'une largeur de colonne, alignée À GAUCHE (pas de carte
-  // orpheline centrée) ; 2 → deux colonnes ; 3+ → grille 3 colonnes
-  const wrap =
-    mine.length === 1
-      ? "md:grid-cols-2 lg:grid-cols-3"
-      : mine.length === 2
-        ? "md:grid-cols-2"
-        : "md:grid-cols-2 lg:grid-cols-3";
+  const [open, setOpen] = useState(false);
+  const avg =
+    Math.round((mine.reduce((s, r) => s + r.rating, 0) / mine.length) * 10) /
+    10;
+  const verifiedCount = mine.filter((r) => r.verified).length;
 
   return (
     <section
@@ -50,12 +48,61 @@ export function CustomerReviews({ productId }: { productId: string }) {
           <h2 className="text-3xl font-bold text-black tracking-tight">
             What our customers say
           </h2>
-          <p className="text-[15px] text-[#9E9E9E]">
-            Real feedback from verified orders across Australia.
-          </p>
         </header>
 
-        <div className={`grid gap-5 ${wrap}`}>
+        {/*
+         * Bandeau résumé cliquable (miroir du panneau Judge.me) : note
+         * moyenne + étoiles + compteur à gauche, chevron à droite.
+         * `aria-expanded`/`aria-controls` pour l'accessibilité, puis le
+         * panneau se déroule ou se referme au clic.
+         */}
+        <button
+          type="button"
+          onClick={() => setOpen(!open)}
+          aria-expanded={open}
+          aria-controls="product-reviews-panel"
+          className="w-full flex items-center justify-between gap-3 border border-[#E5E7EB] bg-white rounded-[12px] px-4 py-3.5 text-left hover:bg-[#F5F5F7] transition-colors"
+        >
+          <span className="flex items-center gap-3">
+            <span className="flex items-center gap-0.5" aria-hidden="true">
+              {[1, 2, 3, 4, 5].map((i) => (
+                <Star key={i} filled={i <= Math.round(avg)} />
+              ))}
+            </span>
+            <span className="text-[15px] font-semibold text-black">
+              {avg}/5 — {mine.length}{" "}
+              {mine.length === 1 ? "review" : "reviews"}
+              <span className="text-[#9E9E9E]">
+                {" "}
+                · {verifiedCount} verified
+              </span>
+            </span>
+          </span>
+          <span
+            aria-hidden="true"
+            className={`text-[13px] font-semibold text-[#6B7280] transition-transform duration-200 ${
+              open ? "rotate-180" : ""
+            }`}
+          >
+            {open ? "Hide " : "Show all"} ▾
+          </span>
+        </button>
+
+        {/*
+         * Panneau d'avis : masqué quand replié, apparaît (glisse vers le
+         * haut + fondu) quand ouvert. Le contenu reste identique aux cartes
+         * existantes ; seul le comportement « au clic » change.
+         */}
+        <div
+          id="product-reviews-panel"
+          role="region"
+          aria-label="Customer reviews"
+          className={
+            open
+              ? "grid gap-5 md:grid-cols-2 lg:grid-cols-3 reviews-panel-in"
+              : "hidden"
+          }
+        >
           {mine.map((r) => (
             <article
               key={r.id}
