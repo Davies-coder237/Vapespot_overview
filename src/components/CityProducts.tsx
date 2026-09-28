@@ -88,7 +88,11 @@ export function CityProducts({ slug, title }: { slug: string; title: string }) {
   const doubled = [...items, ...items];
 
   return (
-    <section className="w-full space-y-4">
+    // -mx-4 md:-mx-6 : annule le padding du conteneur de la page ville
+    // (ListingPage : px-4 md:px-6) pour que le carrousel soit full-bleed comme
+    // celui de la home (TrendingProducts vit dans un conteneur sans padding).
+    // Sur lg le scroller garde son lg:px-6 → cartes alignées à 24px partout.
+    <section className="w-full -mx-4 md:-mx-6 space-y-4">
       <h2 className="lg:hidden text-xl md:text-2xl font-bold text-black px-4 md:px-6">{title}</h2>
 
       <div className="hidden lg:flex items-center justify-between px-4 md:px-6">
@@ -148,7 +152,7 @@ export function CityProducts({ slug, title }: { slug: string; title: string }) {
 /** Squelette : même hauteur que le carrousel chargé (anti-saut au refresh). */
 function CityProductsSkeleton({ title }: { title: string }) {
   return (
-    <section className="w-full space-y-4">
+    <section className="w-full -mx-4 md:-mx-6 space-y-4">
       <h2 className="lg:hidden text-xl md:text-2xl font-bold text-black px-4 md:px-6">
         {title}
       </h2>
@@ -161,7 +165,7 @@ function CityProductsSkeleton({ title }: { title: string }) {
         </div>
       </div>
 
-      <div className="flex gap-4 overflow-hidden px-4 md:px-6 lg:px-6 pb-2">
+      <div className="flex gap-4 overflow-hidden px-4 md:px-6 pb-2">
         {[0, 1, 2].map((i) => (
           <div key={i} className="shrink-0 w-[85vw] md:max-w-[420px] h-[280px]">
             <div className="w-full h-full bg-[#F0F0F0] animate-pulse" />
