@@ -330,7 +330,7 @@ export async function onRequestPost(context: any): Promise<Response> {
   }
 
   if (action === "send-payment") {
-    const sent = await sendEmail(env, { to: order.email, subject: mail.subject, html: mail.html, tag: "payment-instructions" });
+    const sent = await sendEmail(env, { to: order.email, subject: mail.subject, html: mail.html, text: mail.text, tag: "payment-instructions" });
     if (!sent.ok) {
       return json({ ok: false, error: `Email failed (${sent.status}) — check Brevo`, ...(sent.error ? { detail: sent.error } : {}) }, 502);
     }

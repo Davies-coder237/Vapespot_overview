@@ -5,6 +5,8 @@ export interface SendMailInput {
   to: string;               // adresse du client
   subject: string;
   html: string;             // corps HTML complet (template inline)
+  text?: string;            // version TEXTE BRUT (certains clients n'affichent
+                            // que ça, ou Brevo génère un texte vide depuis le HTML)
   tag?: string;             // ex. "vapespot-order-confirmed"
 }
 
@@ -21,6 +23,7 @@ export async function sendEmail(env: any, input: SendMailInput): Promise<{ ok: b
       to: [{ email: input.to }],
       subject: input.subject,
       htmlContent: input.html,
+      ...(input.text ? { textContent: input.text } : {}),
       tags: input.tag ? [input.tag] : undefined,
     }),
   });

@@ -165,10 +165,73 @@ function cryptoBlock(o: Order, btc?: CryptoOptions, usdt?: CryptoOptions): strin
   );
 }
 
+/**
+ * Version TEXTE BRUT de l'email ② — certains clients mail n'affichent que le
+ * texte (Brevo génère parfois une partie texte vide depuis le HTML table).
+ * Lignes identiques au HTML : ordre, ⏰ 30 min, ✅ capture, méthodes, note Osko.
+ */
+function plainPayment(o: Order, pay: PaymentOptions): string {
+  const L: string[] = [];
+  L.push(`Pay for your order ${o.id}`);
+  L.push("");
+  L.push(`Hi${o.customerName ? " " + o.customerName.split(" ")[0] : ""} — your order is reserved. Send A$${o.totalAud.toFixed(2)} with any of the options below — whichever suits you best.`);
+  L.push("Status: payment pending");
+  L.push("");
+  o.items.forEach((it) => L.push(`${it.name} ×${it.quantity} — A$${(it.priceAud * it.quantity).toFixed(2)}`));
+  L.push(`TOTAL: A$${o.totalAud.toFixed(2)}`);
+  L.push("");
+  L.push("⏰ YOUR ITEMS ARE RESERVED FOR 30 MINUTES");
+  L.push("Stock is limited and these products are held for you for 30 minutes.");
+  L.push("If payment doesn't arrive in this window, the items go back to stock and another customer who pays first can take them.");
+  L.push("Need more time? Just reply to this email and we'll hold your order.");
+  L.push("");
+  L.push("✅ AFTER YOU PAY");
+  L.push("Reply to this email (or message @vapespot_store on Telegram: https://t.me/vapespot_store) with a screenshot of the payment and the name of the account it came from. We match it to your order and dispatch immediately.");
+  L.push("");
+  if (pay.payid && (pay.payid.name || pay.payid.payid)) {
+    L.push("① PayID");
+    if (pay.payid.name) L.push(`Name: ${pay.payid.name}`);
+    if (pay.payid.payid) L.push(`PayID: ${pay.payid.payid}`);
+    L.push("Osko payments");
+    L.push("Description: Osko");
+    L.push("Reference: OSKO");
+    L.push("");
+  }
+  if (pay.bank && (pay.bank.bsb || pay.bank.account || pay.bank.name)) {
+    L.push("② Bank Transfer");
+    if (pay.bank.bsb) L.push(`BSB: ${pay.bank.bsb}`);
+    if (pay.bank.account) L.push(`Account: ${pay.bank.account}`);
+    if (pay.bank.name) L.push(`Account name: ${pay.bank.name}`);
+    L.push("Osko payments");
+    L.push("Description: Osko");
+    L.push("Reference: OSKO");
+    L.push("");
+  }
+  if (pay.btc || pay.usdt) {
+    L.push("③ Crypto — save 15%");
+    L.push(`Pay A$${(o.totalAud * 0.85).toFixed(2)} instead of A$${o.totalAud.toFixed(2)} — you save A$${(o.totalAud * 0.15).toFixed(2)}.`);
+    if (pay.btc) {
+      L.push("Bitcoin (BTC)");
+      if (pay.btc.address) L.push(`Address: ${pay.btc.address}`);
+      if (pay.btc.network) L.push(`Network: ${pay.btc.network}`);
+    }
+    if (pay.usdt) {
+      L.push("USDT (TRC-20)");
+      if (pay.usdt.address) L.push(`Address: ${pay.usdt.address}`);
+      if (pay.usdt.network) L.push(`Network: ${pay.usdt.network}`);
+    }
+    L.push("");
+    L.push("⚠️ Crypto payments are handled in two separate networks. Send on the correct network only — funds sent on the wrong network can be lost.");
+    L.push("");
+  }
+  L.push("Questions? Reply to this email — a real person at VapeSpot will get back to you, or message @vapespot_store: https://t.me/vapespot_store");
+  return L.join("\n");
+}
+
 export function emailPaymentInstructions(
   o: Order,
   pay: PaymentOptions
-): { subject: string; html: string } {
+): { subject: string; html: string; text: string } {
   const sections: string[] = [];
   if (pay.payid) {
     const lines: string[] = [];
@@ -206,6 +269,7 @@ export function emailPaymentInstructions(
   return {
     subject: PAY_PENDING_SUBJECT,
     html: shell(o, body),
+    text: plainPayment(o, pay),
   };
 }
 
