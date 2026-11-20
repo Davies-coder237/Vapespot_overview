@@ -2,6 +2,8 @@
 // Seul accès à l'URL+password ; cookie HMAC signé (COOKIE_SECRET).
 // L'admin voit les commandes, saisit les comptes de paiement ROTATIFS
 // (PayID / Bank / Crypto) et déclenche MANUELLEMENT l'email ② d'instructions.
+// Règle validée (20/11) : TOUS les moyens remplis partent ENSEMBLE dans un
+// seul email, le client choisit. Champ vide = moyen sauté.
 // ⚠️ Jamais de $300 ici : l'email ② n'en parle pas (règle validée, seul ④).
 import { escapeHtml } from "./_lib/html";
 import {
@@ -11,19 +13,12 @@ import {
   csrfToken, csrfValid, adminError,
 } from "./_lib/auth";
 import { getOrder, listOrders, putOrder, isExpiredOrder } from "./_lib/orders";
-import { emailPaymentInstructions } from "./_lib/emails";
+import { emailPaymentInstructions, type PaymentOptions } from "./_lib/emails";
 import { sendEmail } from "./_lib/brevo";
 import type { Order } from "./_lib/types";
 
 /** Slug admin (8 chars) — partie de l'URL secrète. */
 const ADMIN_SLUG = "kx9vq7wd";
-
-const PAYMENT_METHODS = [
-  { id: "payid", label: "PayID", hint: "scanned code / 12 digits" },
-  { id: "bank", label: "Bank Transfer", hint: "BSB + account number + holder name" },
-  { id: "crypto", label: "Crypto (15% off)", hint: "wallet address + network + 15% discount applied" },
-  { id: "gift_card", label: "Gift Card", hint: "card number + PIN" },
-] as const;
 
 function ctEq(a: string, b: string): boolean {
   if (a.length !== b.length) return false;
@@ -112,9 +107,6 @@ function orderCard(o: Order, csrf: string): string {
     o.status === "pending_payment" ? `<span class="pill pending">${expired ? "EXPIRED" : "PENDING PAYMENT"}</span>`
     : o.status === "paid" ? `<span class="pill paid">PAID</span>`
     : `<span class="pill other">${escapeHtml(o.status.replace(/_/g, " ").toUpperCase())}</span>`;
-  const methodOptions = PAYMENT_METHODS.map(
-    (m, i) => `<option value="${m.id}"${i === 0 ? " selected" : ""}>${m.label} — ${m.hint}</option>`
-  ).join("");
   const itemsTbl =
     `<table class="mini"><tr><th>Product</th><th style="text-align:right">Qty</th><th style="text-align:right">Total</th></tr>` +
     o.items
@@ -142,9 +134,11 @@ function orderCard(o: Order, csrf: string): string {
     (canSend
       ? `<div class="pay-form">` +
         `<input type="hidden" name="_csrf" value="${escapeHtml(csrf)}">` +
-        `<label>Payment method</label><select name="method" onchange="payMethod(this)">${methodOptions}</select>` +
-        `<label>Account details (paste here)</label><textarea name="details" placeholder="Paste the PayID / bank / crypto details …"></textarea>` +
-        `<label>Label shown to customer (optional)</label><input name="label" placeholder="e.g. PayID — John Smith">` +
+        `<p class="mut" style="margin:12px 0 0"><b>Fill every method you offer — all filled ones go together</b> in one email, the customer picks. Leave an empty field to skip that method.</p>` +
+        `<label>① PayID</label><input name="payid" placeholder="Pay to John Smith — 04xx xxx xxx" autocomplete="off">` +
+        `<label>② Bank Transfer</label><input name="bank" placeholder="BSB 000-000 · Acc 1234 5678 · Name John Smith" autocomplete="off">` +
+        `<label>③ Crypto — Bitcoin (BTC)</label><input name="btc" placeholder="btc address · network (e.g. SegWit)" autocomplete="off">` +
+        `<label>③ Crypto — USDT (TRC-20)</label><input name="usdt" placeholder="USDT address on the TRC-20 network" autocomplete="off">` +
         `<div class="row" style="margin-top:12px">` +
         `<button class="btn ghost" type="button" onclick="previewPay(this)">Preview</button>` +
         `<button class="btn green" type="button" onclick="sendPay(this)">Send email ②</button>` +
@@ -172,14 +166,13 @@ function adminPage(orders: Order[], csrf: string): string {
         `const orderId=el=>{for(let n=el;n;n=n.parentElement)if(n.dataset&&n.dataset.id)return n.dataset.id};` +
         `const readCsrf=el=>{const h=el.closest('.pay-form')&&el.closest('.pay-form').querySelector('input[name=_csrf]');return h?h.value:window.__csrf};` +
         `async function logout(){await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'logout'})});location.reload()}` +
-        `function payMethod(sel){const opts=${JSON.stringify(PAYMENT_METHODS.map((m) => ({ id: m.id, label: m.label + " — " + m.hint, short: m.label })))};` +
-        `const lab=sel.closest('.pay-form').querySelector('input[name=label]');const f=opts.find(o=>o.id===sel.value);` +
-        `if(lab.value===''||lab.dataset.auto!=='off'){lab.value=f?f.short:'';lab.dataset.auto='on'}}` +
+        `const payFields=f=>['payid','bank','btc','usdt'].reduce((o,k)=>{const el=f.querySelector('input[name='+k+']');const v=(el?el.value:'').trim();if(v)o[k]=v;return o},{});` +
         `async function serve(btn,preview){` +
         `if(!preview&&!confirm('Send the payment instructions by email to this customer now?'))return;` +
         `const f=btn.closest('.pay-form');const det=btn.closest('details.pre');` +
-        `const body={action:preview?'preview':'send-payment',orderId:orderId(btn),_csrf:readCsrf(btn),` +
-        `method:f.querySelector('select[name=method]').value,details:f.querySelector('textarea[name=details]').value,label:f.querySelector('input[name=label]').value};` +
+        `const pf=payFields(f);` +
+        `if(!pf.payid&&!pf.bank&&!pf.btc&&!pf.usdt){alert('Fill at least one payment method before sending.');return}` +
+        `const body={action:preview?'preview':'send-payment',orderId:orderId(btn),_csrf:readCsrf(btn),...pf};` +
         `const old=btn.textContent;btn.textContent=preview?'Loading…':'Sending…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
         `if(preview){let ifr=f.querySelector('iframe.mail');if(!ifr){ifr=document.createElement('iframe');ifr.className='mail';det.appendChild(ifr)}ifr.srcdoc=j.html;` +
@@ -258,16 +251,20 @@ export async function onRequestPost(context: any): Promise<Response> {
   if (order.status !== "pending_payment" || isExpiredOrder(order)) {
     return json({ ok: false, error: "Order is not awaiting payment anymore." }, 400);
   }
-  const method = String(body.method ?? "").trim();
-  const label = String(body.label ?? "").trim();
-  const details = String(body.details ?? "").trim();
+  const payid = String(body.payid ?? "").trim();
+  const bank = String(body.bank ?? "").trim();
+  const btc = String(body.btc ?? "").trim();
+  const usdt = String(body.usdt ?? "").trim();
+  if (!payid && !bank && !btc && !usdt) {
+    return json({ ok: false, error: "Fill at least one payment method (PayID, bank, BTC or USDT)." }, 400);
+  }
+  const payOptions: PaymentOptions = {};
+  if (payid) payOptions.payid = payid;
+  if (bank) payOptions.bankLabel = bank;
+  if (btc) payOptions.btc = btc;
+  if (usdt) payOptions.usdt = usdt;
 
-  const m = PAYMENT_METHODS.find((x) => x.id === method);
-  if (!m) return json({ ok: false, error: "bad_method" }, 400);
-  if (details.length < 4) return json({ ok: false, error: "Payment details are too short — paste the account info." }, 400);
-
-  const accountLabel = label || m.label;
-  const mail = emailPaymentInstructions(order, { label: accountLabel, details });
+  const mail = emailPaymentInstructions(order, payOptions);
 
   if (action === "preview") {
     return json({ ok: true, html: mail.html });
@@ -279,11 +276,12 @@ export async function onRequestPost(context: any): Promise<Response> {
       return json({ ok: false, error: `Email failed (${sent.status}) — check Brevo`, ...(sent.error ? { detail: sent.error } : {}) }, 502);
     }
     const now = new Date().toISOString();
-    order.paymentMethod = method;
-    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(now)}] payment instructions (②) sent via ${m.label}`;
+    const given = [payid && "PayID", bank && "Bank", btc && "BTC", usdt && "USDT"].filter(Boolean).join(" + ");
+    order.paymentMethod = given.toLowerCase();
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(now)}] payment instructions (②) sent — ${given}`;
     order.updatedAt = now;
     await putOrder(env, order);
-    return json({ ok: true, msg: `Email ② sent to ${order.email} (${order.id})` });
+    return json({ ok: true, msg: `Email ② sent to ${order.email} (${order.id}) — ${given}` });
   }
 
   return json({ ok: false, error: "unknown_action" }, 400);

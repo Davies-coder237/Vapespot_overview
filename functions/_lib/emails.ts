@@ -77,19 +77,70 @@ export function emailConfirmed(o: Order): { subject: string; html: string } {
   };
 }
 
-/** ② Instructions de paiement — envoyée MANUELLEMENT par l'admin (comptes rotatifs). */
+/**
+ * ② Instructions de paiement — envoyée MANUELLEMENT par l'admin (comptes rotatifs).
+ * Libellé VALIDÉ (20/11) : sections SÉPARÉES ① PayID · ② Bank Transfer ·
+ * ③ Crypto (bloc à part "save 15%", ⚠️ réseaux BTC/USDT), ⏰ délai 30 min
+ * justifié par la disponibilité du stock, ✅ capture d'écran + nom du compte
+ * émetteur, contact t.me/vapespot_store, "paiement confirmé = dispatch immédiat".
+ * JAMAIS de $300. Base PAY_PENDING_SUBJECT utilisée aussi par l'email auto ①.
+ */
+export interface PaymentOptions {
+  payid?: string;                 // coordonnées PayID ("Pay to X — 04xx …")
+  bankLabel?: string;             // "BSB 000-000 · Acc 1234… · Name …"
+  btc?: string;                   // adresse Bitcoin + réseau
+  usdt?: string;                  // adresse USDT + réseau
+}
+
+export const PAY_PENDING_SUBJECT = "Payment instructions for your order — VapeSpot";
+
+function cryptoBlock(o: Order, lines: string[]): string {
+  const discounted = (o.totalAud * 0.85).toFixed(2);
+  const saved = (o.totalAud * 0.15).toFixed(2);
+  return (
+    `<div style="background:#1a2b1a;border:2px solid #3a7d44;padding:16px 18px;margin:14px 0">` +
+    `<p style="color:#7ddc8f;font-weight:800;font-size:15px;margin:0 0 4px">③ Crypto — save 15% 🪙</p>` +
+    `<p style="color:#cde9d2;font-size:13px;margin:0 0 8px">Pay <b>A$${discounted}</b> instead of A$${o.totalAud.toFixed(2)} — you save A$${saved}.</p>` +
+    lines.map((l) => `<p style="color:#e2f3e5;font-size:13px;margin:2px 0">${l}</p>`).join("") +
+    `<p style="color:#f2c94c;font-size:12px;margin:8px 0 0">⚠️ Crypto payments are handled in two separate networks. Send on the <b>correct network only</b> — funds sent on the wrong network can be lost.</p>` +
+    `</div>`
+  );
+}
+
 export function emailPaymentInstructions(
   o: Order,
-  account: { label: string; details: string }
+  pay: PaymentOptions
 ): { subject: string; html: string } {
+  const sections: string[] = [];
+  if (pay.payid) {
+    sections.push(card("① PayID", [escapeHtml(pay.payid)]));
+  }
+  if (pay.bankLabel) {
+    sections.push(card("② Bank Transfer", [escapeHtml(pay.bankLabel)]));
+  }
+  const cryptoLines: string[] = [];
+  if (pay.btc) cryptoLines.push(`Bitcoin (BTC): <b>${escapeHtml(pay.btc)}</b>`);
+  if (pay.usdt) cryptoLines.push(`USDT (TRC-20): <b>${escapeHtml(pay.usdt)}</b>`);
+  if (cryptoLines.length) sections.push(cryptoBlock(o, cryptoLines));
+
   const body =
     `<p style="color:#222;font-size:16px;font-weight:700;margin:0 0 4px">Pay for your order ${o.id}</p>` +
-    `<p style="color:#666;font-size:14px;margin:0 0 8px">Please transfer <b>A$${o.totalAud.toFixed(2)}</b> to the details below, then reply to this email with your payment screenshot.</p>` +
-    card(escapeHtml(account.label), [escapeHtml(account.details)]) +
-    `<p style="color:#666;font-size:14px;margin:0">We also need the <b>account name</b> your payment comes from — so we can match it to your order.</p>` +
-    `<p style="color:#999;font-size:12px;margin:8px 0 0">Your order is reserved for a limited time. If a payment doesn't arrive shortly, we may release the items.</p>`;
+    `<p style="color:#666;font-size:14px;margin:0 0 6px">Hi${o.customerName ? " " + escapeHtml(o.customerName.split(" ")[0]) : ""} — your order is reserved. Send <b>A$${o.totalAud.toFixed(2)}</b> with any of the options below — whichever suits you best.</p>` +
+    `<p style="color:#666;font-size:13px;margin:0 0 10px">Status: <b>payment pending</b></p>` +
+    orderRecapTable(o) +
+    sections.join("") +
+    card("⏰ Your items are reserved for 30 minutes", [
+      "Stock is limited and these products are held for you for 30 minutes.",
+      "If payment doesn't arrive in this window, the items go back to stock and another customer who pays first can take them.",
+      "Need more time? Just reply to this email and we'll hold your order.",
+    ]) +
+    card("✅ After you pay", [
+      'Reply to this email (or message <b>t.me/vapespot_store</b>) with a <b>screenshot of the payment</b> and the <b>name of the account it came from</b>.',
+      "We match it to your order and dispatch immediately.",
+    ]) +
+    `<p style="color:#666;font-size:14px;margin:10px 0 0">Questions? Reply to this email — a real person at VapeSpot will get back to you, or message <b>t.me/vapespot_store</b>.</p>`;
   return {
-    subject: `Payment instructions for ${o.id} — VapeSpot`,
+    subject: PAY_PENDING_SUBJECT,
     html: shell(o, body),
   };
 }
