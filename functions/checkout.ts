@@ -4,14 +4,14 @@
 //   2. Géocodage adresse (Nominatim, cache KV) → entrepôt actif le plus proche.
 //   3. Numéro VS-XXXX via Durable Object (atomique).
 //   4. Stockage KV (TTL 30 min tant que pending_payment).
-//   5. Email ① de confirmation auto (Brevo) + notification Telegram shop.
+//   5. AUCUN email au client au checkout — il ne reçoit RIEN tant que
+//      l'admin n'a pas saisi les moyens de paiement et validé l'email ②
+//      depuis la page admin. Seul le bot Telegram PRIVÉ du shop est notifié.
 //   6. Réponse : { orderNumber } → la page affiche la confirmation.
 // Anti-spam minimal : limite par IP (KV), sans casser l'usage normal.
 import { geocodeAddress, nearestActiveWarehouse } from "./_lib/geo";
 import { orderNumber } from "./_lib/counter";
 import { newPendingOrder, putOrder } from "./_lib/orders";
-import { emailConfirmed } from "./_lib/emails";
-import { sendEmail } from "./_lib/brevo";
 import { sendTelegram } from "./_lib/telegram";
 import type { Order } from "./_lib/types";
 import { MIN_ORDER_AUD } from "./_lib/types";
@@ -112,9 +112,10 @@ export async function onRequestPost({ request, env }: any): Promise<Response> {
   });
   await putOrder(env, order);
 
-  // ── 6. Email ① de confirmation (auto, sans $300) + bot shop ─────
-  const mail = emailConfirmed(order);
-  await sendEmail(env, { to: order.email, subject: mail.subject, html: mail.html, tag: "order-confirmed" });
+  // ── 6. AUCUN email client ici (supprimé 20/11) ────────────────────
+  // Le client ne reçoit RIEN tant que l'admin n'a pas saisi les moyens
+  // de paiement et validé l'email ② depuis la page admin. Seule la
+  // notification Telegram s'envoie (bot PRIVÉ du shop, jamais le client) :
   await sendTelegram(
     env,
     `🛒 Nouvelle commande ${order.id}\n💰 A$${order.totalAud.toFixed(2)}\n📍 ${order.warehouseCity} → ${order.deliveryAddress}\n📧 ${order.email}`

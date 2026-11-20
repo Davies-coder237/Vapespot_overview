@@ -1,7 +1,12 @@
 // Générateurs de templates email (HTML table-based, compatible clients mail).
 // Séquences validées 20/11 :
-//   ① confirmation auto (checkout)           — jamais de $300
-//   ② instructions de paiement (manuelle)    — jamais de $300
+//   ① confirmation auto (checkout)           — SUPPRIMÉE le 20/11 : le client
+//      ne reçoit RIEN au checkout. Son premier message = l'email ②, envoyé
+//      UNIQUEMENT par l'admin depuis la page admin (moyens de paiement saisis).
+//   ② instructions de paiement (manuelle)    — jamais de $300 · note "Osko
+//      payments" (Description: Osko / Reference: OSKO) sous les blocs PayID et
+//      Bank · bloc crypto structuré : adresse et réseau sur lignes séparées,
+//      BTC et USDT chacun de son côté dans le même bloc.
 //   ③ félicitations + lien de suivi (payée)  — jamais de $300
 //   ④ départ entrepôt + caution $300 (en route) — LE SEUL email avec le $300
 //   ⑤ livré
@@ -63,35 +68,29 @@ function shell(o: Order, body: string): string {
  * Carte récap — `tone` ambre/vert pour les notes que le client ne doit PAS rater
  * (⏰ 30 min · ✅ après-paiement) : bordure d'accent épaisse + fond teinté.
  */
-const card = (title: string, lines: string[], tone?: "warn" | "ok") =>
+const card = (title: string, lines: string[], tone?: "warn" | "ok", foot?: string) =>
   `<div style="background:${tone === "warn" ? "#fff7e6" : tone === "ok" ? "#f0faf2" : "#f8f9fc"};` +
   `border:1px solid ${tone === "warn" ? "#f0c14b" : tone === "ok" ? "#7fc98d" : "#e2e6ee"};` +
   `border-left:4px solid ${tone === "warn" ? "#e8a13c" : tone === "ok" ? "#3a7d44" : "transparent"};padding:16px 18px;margin:14px 0">` +
   `<p style="color:#333;font-weight:700;font-size:14px;margin:0 0 6px">${title}</p>` +
   lines.map((l) => `<p style="color:#555;font-size:13px;margin:2px 0">${l}</p>`).join("") +
+  (foot ?? "") +
   `</div>`;
+
+/**
+ * Note "Osko payments" affichée en bas des blocs ① PayID et ② Bank Transfer —
+ * lignes fixes validées (Description: Osko · Reference: OSKO) : le client doit
+ * indiquer cette référence pour que l'administration puisse rattacher son virement.
+ */
+const oskoNote = () =>
+  `<p style="color:#8893a8;font-size:12px;margin:10px 0 0;padding-top:8px;border-top:1px dashed #d5dae5">` +
+  `<b style="color:#5f6a80">Osko payments</b><br>` +
+  `Description: Osko<br>` +
+  `Reference: OSKO</p>`;
 
 /** Lien cliquable vers le chat Telegram du shop — utilisé dans TOUS les emails. */
 const tg = (label: string) =>
   `<a href="https://t.me/vapespot_store" target="_blank" rel="noopener" style="color:#2d1f8f;text-decoration:underline">${label}</a>`;
-
-/** ① Confirmation automatique. */
-export function emailConfirmed(o: Order): { subject: string; html: string } {
-  const body =
-    `<p style="color:#222;font-size:16px;font-weight:700;margin:0 0 4px">Thanks for your order — ${o.id} ✅</p>` +
-    `<p style="color:#666;font-size:14px;margin:0 0 18px">Your order has been received and is now being prepared. Below is a summary:</p>` +
-    orderRecapTable(o) +
-    card("Delivery address", [escapeHtml(o.deliveryAddress)]) +
-    card("What happens next?", [
-      "1. You will receive a second email with payment instructions (PayID, bank transfer, crypto or gift card).",
-      `2. Once payment is confirmed, we ship from our ${escapeHtml(o.warehouseCity || "nearest")} hub.`,
-    ]) +
-    `<p style="color:#999;font-size:12px;margin:0">If you didn't place this order, just reply to this email and we'll cancel it right away.</p>`;
-  return {
-    subject: `Order confirmed ${o.id} — VapeSpot`,
-    html: shell(o, body),
-  };
-}
 
 /**
  * ② Instructions de paiement — envoyée MANUELLEMENT par l'admin (comptes rotatifs).
@@ -99,7 +98,8 @@ export function emailConfirmed(o: Order): { subject: string; html: string } {
  * ③ Crypto (bloc à part "save 15%", ⚠️ réseaux BTC/USDT), ⏰ délai 30 min
  * justifié par la disponibilité du stock, ✅ capture d'écran + nom du compte
  * émetteur, contact t.me/vapespot_store, "paiement confirmé = dispatch immédiat".
- * JAMAIS de $300. Base PAY_PENDING_SUBJECT utilisée aussi par l'email auto ①.
+ * JAMAIS de $300. C'est LE PREMIER message reçu par le client (l'email auto ①
+ * a été supprimé) : seule l'admin peut déclencher cet envoi depuis sa page.
  */
 /** Champs STRUCTURÉS par moyen de paiement — l'email rend chaque `label: valeur`. */
 export interface PayIdOptions {
@@ -124,15 +124,48 @@ export interface PaymentOptions {
 
 export const PAY_PENDING_SUBJECT = "Payment instructions for your order — VapeSpot";
 
-function cryptoBlock(o: Order, lines: string[]): string {
+/**
+ * ③ Crypto — bloc sombre unique, mais BTC et USDT chacun dans sa propre
+ * boîte (côte à côte quand les deux sont remplis) : Address et Network sur
+ * des LIGNES SÉPARÉES (l'adresse peut se couper proprement, jamais collée
+ * au réseau). Rendu table 2 cellules pour compatibilité clients mail.
+ */
+function cryptoBlock(o: Order, btc?: CryptoOptions, usdt?: CryptoOptions): string {
+  const coin = (label: string, c: CryptoOptions | undefined): string => {
+    if (!c) return "";
+    const addr = c.address
+      ? `<p style="color:#e2f3e5;font-size:13px;margin:5px 0 0"><b style="color:#9be3ab">Address:</b><br><span style="word-break:break-all">${escapeHtml(c.address)}</span></p>`
+      : "";
+    const net = c.network
+      ? `<p style="color:#e2f3e5;font-size:13px;margin:5px 0 0"><b style="color:#9be3ab">Network:</b> ${escapeHtml(c.network)}</p>`
+      : "";
+    if (!addr && !net) return "";
+    return (
+      `<div style="background:#12291a;border:1px solid #2d5c39;border-radius:8px;padding:12px 14px">` +
+      `<p style="color:#7ddc8f;font-weight:800;font-size:13px;margin:0">${label}</p>` +
+      addr + net +
+      `</div>`
+    );
+  };
+  const b = coin("Bitcoin (BTC)", btc);
+  const u = coin("USDT (TRC-20)", usdt);
+  if (!b && !u) return "";
+  // Deux boîtes côte à côte (chacune de son côté) ; une seule coin → pleine largeur.
+  const boxes =
+    b && u
+      ? `<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:separate;border-spacing:8px 0"><tr>` +
+        `<td width="50%" style="vertical-align:top">${b}</td>` +
+        `<td width="50%" style="vertical-align:top">${u}</td>` +
+        `</tr></table>`
+      : b || u;
   const discounted = (o.totalAud * 0.85).toFixed(2);
   const saved = (o.totalAud * 0.15).toFixed(2);
   return (
-    `<div style="background:#1a2b1a;border:2px solid #3a7d44;padding:16px 18px;margin:14px 0">` +
+    `<div style="background:#1a2b1a;border:2px solid #3a7d44;padding:14px 16px;margin:14px 0">` +
     `<p style="color:#7ddc8f;font-weight:800;font-size:15px;margin:0 0 4px">③ Crypto — save 15% 🪙</p>` +
-    `<p style="color:#cde9d2;font-size:13px;margin:0 0 8px">Pay <b>A$${discounted}</b> instead of A$${o.totalAud.toFixed(2)} — you save A$${saved}.</p>` +
-    lines.map((l) => `<p style="color:#e2f3e5;font-size:13px;margin:2px 0">${l}</p>`).join("") +
-    `<p style="color:#f2c94c;font-size:12px;margin:8px 0 0">⚠️ Crypto payments are handled in two separate networks. Send on the <b>correct network only</b> — funds sent on the wrong network can be lost.</p>` +
+    `<p style="color:#cde9d2;font-size:13px;margin:0 0 10px">Pay <b>A$${discounted}</b> instead of A$${o.totalAud.toFixed(2)} — you save A$${saved}.</p>` +
+    boxes +
+    `<p style="color:#f2c94c;font-size:12px;margin:12px 0 0">⚠️ Crypto payments are handled in two separate networks. Send on the <b>correct network only</b> — funds sent on the wrong network can be lost.</p>` +
     `</div>`
   );
 }
@@ -146,26 +179,17 @@ export function emailPaymentInstructions(
     const lines: string[] = [];
     if (pay.payid.name) lines.push(`<b>Name:</b> ${escapeHtml(pay.payid.name)}`);
     if (pay.payid.payid) lines.push(`<b>PayID:</b> ${escapeHtml(pay.payid.payid)}`);
-    if (lines.length) sections.push(card("① PayID", lines));
+    if (lines.length) sections.push(card("① PayID", lines, undefined, oskoNote()));
   }
   if (pay.bank) {
     const lines: string[] = [];
     if (pay.bank.bsb) lines.push(`<b>BSB:</b> ${escapeHtml(pay.bank.bsb)}`);
     if (pay.bank.account) lines.push(`<b>Account:</b> ${escapeHtml(pay.bank.account)}`);
     if (pay.bank.name) lines.push(`<b>Account name:</b> ${escapeHtml(pay.bank.name)}`);
-    if (lines.length) sections.push(card("② Bank Transfer", lines));
+    if (lines.length) sections.push(card("② Bank Transfer", lines, undefined, oskoNote()));
   }
-  const cryptoLines: string[] = [];
-  const coin = (label: string, c: CryptoOptions | undefined) => {
-    if (!c) return;
-    const parts: string[] = [];
-    if (c.address) parts.push(`Address: <b>${escapeHtml(c.address)}</b>`);
-    if (c.network) parts.push(`Network: <b>${escapeHtml(c.network)}</b>`);
-    if (parts.length) cryptoLines.push(`${label}: ${parts.join(" · ")}`);
-  };
-  coin("Bitcoin (BTC)", pay.btc);
-  coin("USDT (TRC-20)", pay.usdt);
-  if (cryptoLines.length) sections.push(cryptoBlock(o, cryptoLines));
+  const cryptoHtml = cryptoBlock(o, pay.btc, pay.usdt);
+  if (cryptoHtml) sections.push(cryptoHtml);
 
   const body =
     `<p style="color:#222;font-size:16px;font-weight:700;margin:0 0 4px">Pay for your order ${o.id}</p>` +
