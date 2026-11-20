@@ -125,10 +125,10 @@ export interface PaymentOptions {
 export const PAY_PENDING_SUBJECT = "Payment instructions for your order — VapeSpot";
 
 /**
- * ③ Crypto — bloc sombre unique, mais BTC et USDT chacun dans sa propre
- * boîte (côte à côte quand les deux sont remplis) : Address et Network sur
- * des LIGNES SÉPARÉES (l'adresse peut se couper proprement, jamais collée
- * au réseau). Rendu table 2 cellules pour compatibilité clients mail.
+ * ③ Crypto — bloc sombre unique, BTC et USDT EMPILÉS l'un sous l'autre
+ * (Bitcoin en HAUT, USDT en dessous) : Address et Network sur des LIGNES
+ * SÉPARÉES (l'adresse peut se couper proprement, jamais collée au réseau).
+ * Un seul coin rempli → pleine largeur.
  */
 function cryptoBlock(o: Order, btc?: CryptoOptions, usdt?: CryptoOptions): string {
   const coin = (label: string, c: CryptoOptions | undefined): string => {
@@ -150,14 +150,9 @@ function cryptoBlock(o: Order, btc?: CryptoOptions, usdt?: CryptoOptions): strin
   const b = coin("Bitcoin (BTC)", btc);
   const u = coin("USDT (TRC-20)", usdt);
   if (!b && !u) return "";
-  // Deux boîtes côte à côte (chacune de son côté) ; une seule coin → pleine largeur.
+  // Empilés de haut en bas + espacement de 10px : BTC puis USDT, chacun pleine largeur.
   const boxes =
-    b && u
-      ? `<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-collapse:separate;border-spacing:8px 0"><tr>` +
-        `<td width="50%" style="vertical-align:top">${b}</td>` +
-        `<td width="50%" style="vertical-align:top">${u}</td>` +
-        `</tr></table>`
-      : b || u;
+    (b && u ? b + `<div style="height:10px"></div>` + u : b || u);
   const discounted = (o.totalAud * 0.85).toFixed(2);
   const saved = (o.totalAud * 0.15).toFixed(2);
   return (
