@@ -48,16 +48,26 @@ function shell(o: Order, body: string): string {
     `</div>` +
     `<div style="padding:26px 30px">${body}</div>` +
     `<div style="padding:20px 30px;background:#f6f7f9;border-top:1px solid #e5e7eb">` +
-    `<p style="color:#555;font-size:13px;margin:0">Questions? Reply to this email — a real person at VapeSpot will get back to you, or message <b>${SHOP_TG}</b>.</p>` +
+    `<p style="color:#555;font-size:13px;margin:0">Questions? Reply to this email — a real person at VapeSpot will get back to you, or message ${tg(SHOP_TG)}.</p>` +
     `</div></div>`
   );
 }
 
-const card = (title: string, lines: string[]) =>
-  `<div style="background:#f8f9fc;border:1px solid #e2e6ee;padding:16px 18px;margin:14px 0">` +
+/**
+ * Carte récap — `tone` ambre/vert pour les notes que le client ne doit PAS rater
+ * (⏰ 30 min · ✅ après-paiement) : bordure d'accent épaisse + fond teinté.
+ */
+const card = (title: string, lines: string[], tone?: "warn" | "ok") =>
+  `<div style="background:${tone === "warn" ? "#fff7e6" : tone === "ok" ? "#f0faf2" : "#f8f9fc"};` +
+  `border:1px solid ${tone === "warn" ? "#f0c14b" : tone === "ok" ? "#7fc98d" : "#e2e6ee"};` +
+  `border-left:4px solid ${tone === "warn" ? "#e8a13c" : tone === "ok" ? "#3a7d44" : "transparent"};padding:16px 18px;margin:14px 0">` +
   `<p style="color:#333;font-weight:700;font-size:14px;margin:0 0 6px">${title}</p>` +
   lines.map((l) => `<p style="color:#555;font-size:13px;margin:2px 0">${l}</p>`).join("") +
   `</div>`;
+
+/** Lien cliquable vers le chat Telegram du shop — utilisé dans TOUS les emails. */
+const tg = (label: string) =>
+  `<a href="https://t.me/vapespot_store" target="_blank" rel="noopener" style="color:#2d1f8f;text-decoration:underline">${label}</a>`;
 
 /** ① Confirmation automatique. */
 export function emailConfirmed(o: Order): { subject: string; html: string } {
@@ -128,17 +138,18 @@ export function emailPaymentInstructions(
     `<p style="color:#666;font-size:14px;margin:0 0 6px">Hi${o.customerName ? " " + escapeHtml(o.customerName.split(" ")[0]) : ""} — your order is reserved. Send <b>A$${o.totalAud.toFixed(2)}</b> with any of the options below — whichever suits you best.</p>` +
     `<p style="color:#666;font-size:13px;margin:0 0 10px">Status: <b>payment pending</b></p>` +
     orderRecapTable(o) +
-    sections.join("") +
+    // ⚠️ Notes CRITIQUES placées JUSTE AVANT les méthodes : le client doit les voir.
     card("⏰ Your items are reserved for 30 minutes", [
       "Stock is limited and these products are held for you for 30 minutes.",
       "If payment doesn't arrive in this window, the items go back to stock and another customer who pays first can take them.",
       "Need more time? Just reply to this email and we'll hold your order.",
-    ]) +
+    ], "warn") +
     card("✅ After you pay", [
-      'Reply to this email (or message <b>t.me/vapespot_store</b>) with a <b>screenshot of the payment</b> and the <b>name of the account it came from</b>.',
+      `Reply to this email (or message ${tg("t.me/vapespot_store")}) with a <b>screenshot of the payment</b> and the <b>name of the account it came from</b>.`,
       "We match it to your order and dispatch immediately.",
-    ]) +
-    `<p style="color:#666;font-size:14px;margin:10px 0 0">Questions? Reply to this email — a real person at VapeSpot will get back to you, or message <b>t.me/vapespot_store</b>.</p>`;
+    ], "ok") +
+    sections.join("") +
+    `<p style="color:#666;font-size:14px;margin:10px 0 0">Questions? Reply to this email — a real person at VapeSpot will get back to you, or message ${tg("t.me/vapespot_store")}.</p>`;
   return {
     subject: PAY_PENDING_SUBJECT,
     html: shell(o, body),
