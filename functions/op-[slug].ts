@@ -13,7 +13,7 @@ import {
   csrfToken, csrfValid, adminError,
 } from "./_lib/auth";
 import { getOrder, listOrders, putOrder, isExpiredOrder } from "./_lib/orders";
-import { emailPaymentInstructions, type PaymentOptions } from "./_lib/emails";
+import { emailPaymentInstructions, type PaymentOptions, type PayIdOptions, type BankOptions, type CryptoOptions } from "./_lib/emails";
 import { sendEmail } from "./_lib/brevo";
 import type { Order } from "./_lib/types";
 
@@ -66,6 +66,11 @@ function pageShell(title: string, body: string, csrf: string): string {
     `table.mini{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}` +
     `table.mini th{text-align:left;color:var(--mut);font-size:11px;text-transform:uppercase;padding:4px 6px}` +
     `table.mini td{padding:5px 6px;border-top:1px solid #1f2940}` +
+    `.mgroup{background:#111a2e;border:1px solid var(--edge);border-radius:8px;padding:12px 14px}` +
+    `.mgroup+.mgroup{margin-top:10px}` +
+    `.mhead{font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--acc);margin-bottom:2px}` +
+    `.f2{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}` +
+    `@media(max-width:480px){.f2{grid-template-columns:1fr}}` +
     `@media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}` +
     `</style></head><body><div class="wrap">${body}</div>` +
     `<script>window.__csrf=${JSON.stringify(csrf)};</script></body></html>`
@@ -134,11 +139,28 @@ function orderCard(o: Order, csrf: string): string {
     (canSend
       ? `<div class="pay-form">` +
         `<input type="hidden" name="_csrf" value="${escapeHtml(csrf)}">` +
-        `<p class="mut" style="margin:12px 0 0"><b>Fill every method you offer — all filled ones go together</b> in one email, the customer picks. Leave an empty field to skip that method.</p>` +
-        `<label>① PayID</label><input name="payid" placeholder="Pay to John Smith — 04xx xxx xxx" autocomplete="off">` +
-        `<label>② Bank Transfer</label><input name="bank" placeholder="BSB 000-000 · Acc 1234 5678 · Name John Smith" autocomplete="off">` +
-        `<label>③ Crypto — Bitcoin (BTC)</label><input name="btc" placeholder="btc address · network (e.g. SegWit)" autocomplete="off">` +
-        `<label>③ Crypto — USDT (TRC-20)</label><input name="usdt" placeholder="USDT address on the TRC-20 network" autocomplete="off">` +
+        `<p class="mut" style="margin:12px 0 0"><b>Fill every method you offer — all filled ones go together</b> in one email, the customer picks. Leave a method empty to skip it.</p>` +
+        `<div class="mgroup"><div class="mhead">① PayID</div>` +
+        `<label>Account name</label><input name="payid_name" placeholder="e.g. EMILY" autocomplete="off">` +
+        `<label>PayID</label><input name="payid" placeholder="e.g. emily@gmail.com / 04xx xxx xxx" autocomplete="off">` +
+        `</div>` +
+        `<div class="mgroup"><div class="mhead">② Bank Transfer</div>` +
+        `<div class="f2">` +
+        `<div><label>BSB</label><input name="bank_bsb" placeholder="000-000" autocomplete="off"></div>` +
+        `<div><label>Account</label><input name="bank_account" placeholder="1234 5678" autocomplete="off"></div>` +
+        `</div>` +
+        `<label>Account name</label><input name="bank_name" placeholder="e.g. EMILY SMITH" autocomplete="off">` +
+        `</div>` +
+        `<div class="mgroup"><div class="mhead">③ Crypto — Bitcoin (BTC)</div>` +
+        `<div class="f2">` +
+        `<div><label>Address</label><input name="btc_address" placeholder="bc1q…" autocomplete="off"></div>` +
+        `<div><label>Network</label><input name="btc_network" placeholder="SegWit / BTC" autocomplete="off"></div>` +
+        `</div></div>` +
+        `<div class="mgroup"><div class="mhead">③ Crypto — USDT</div>` +
+        `<div class="f2">` +
+        `<div><label>Address</label><input name="usdt_address" placeholder="TX…" autocomplete="off"></div>` +
+        `<div><label>Network</label><input name="usdt_network" placeholder="TRC-20" autocomplete="off"></div>` +
+        `</div></div>` +
         `<div class="row" style="margin-top:12px">` +
         `<button class="btn ghost" type="button" onclick="previewPay(this)">Preview</button>` +
         `<button class="btn green" type="button" onclick="sendPay(this)">Send email ②</button>` +
@@ -166,12 +188,18 @@ function adminPage(orders: Order[], csrf: string): string {
         `const orderId=el=>{for(let n=el;n;n=n.parentElement)if(n.dataset&&n.dataset.id)return n.dataset.id};` +
         `const readCsrf=el=>{const h=el.closest('.pay-form')&&el.closest('.pay-form').querySelector('input[name=_csrf]');return h?h.value:window.__csrf};` +
         `async function logout(){await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'logout'})});location.reload()}` +
-        `const payFields=f=>['payid','bank','btc','usdt'].reduce((o,k)=>{const el=f.querySelector('input[name='+k+']');const v=(el?el.value:'').trim();if(v)o[k]=v;return o},{});` +
+        `const gv=(f,n)=>{const el=f.querySelector('input[name="'+n+'"]');return el?(el.value||'').trim():''};` +
+        `const payFields=f=>{const o={};` +
+        `const pn=gv(f,'payid_name'),pid=gv(f,'payid');if(pn||pid){const p={};if(pn)p.name=pn;if(pid)p.payid=pid;o.payid=p}` +
+        `const bb=gv(f,'bank_bsb'),ba=gv(f,'bank_account'),bn=gv(f,'bank_name');if(bb||ba||bn){const b={};if(bb)b.bsb=bb;if(ba)b.account=ba;if(bn)b.name=bn;o.bank=b}` +
+        `const btca=gv(f,'btc_address'),btcn=gv(f,'btc_network');if(btca||btcn){const c={};if(btca)c.address=btca;if(btcn)c.network=btcn;o.btc=c}` +
+        `const udta=gv(f,'usdt_address'),udtn=gv(f,'usdt_network');if(udta||udtn){const c={};if(udta)c.address=udta;if(udtn)c.network=udtn;o.usdt=c}` +
+        `return o};` +
         `async function serve(btn,preview){` +
         `if(!preview&&!confirm('Send the payment instructions by email to this customer now?'))return;` +
         `const f=btn.closest('.pay-form');const det=btn.closest('details.pre');` +
         `const pf=payFields(f);` +
-        `if(!pf.payid&&!pf.bank&&!pf.btc&&!pf.usdt){alert('Fill at least one payment method before sending.');return}` +
+        `if(!Object.keys(pf).length){alert('Fill at least one payment method before sending.');return}` +
         `const body={action:preview?'preview':'send-payment',orderId:orderId(btn),_csrf:readCsrf(btn),...pf};` +
         `const old=btn.textContent;btn.textContent=preview?'Loading…':'Sending…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
@@ -251,18 +279,40 @@ export async function onRequestPost(context: any): Promise<Response> {
   if (order.status !== "pending_payment" || isExpiredOrder(order)) {
     return json({ ok: false, error: "Order is not awaiting payment anymore." }, 400);
   }
-  const payid = String(body.payid ?? "").trim();
-  const bank = String(body.bank ?? "").trim();
-  const btc = String(body.btc ?? "").trim();
-  const usdt = String(body.usdt ?? "").trim();
-  if (!payid && !bank && !btc && !usdt) {
+  const s = (v: unknown) => String(v ?? "").trim();
+  const payOptions: PaymentOptions = {};
+  const payidName = s(body.payid_name), payid = s(body.payid);
+  if (payidName || payid) {
+    const p: PayIdOptions = {};
+    if (payidName) p.name = payidName;
+    if (payid) p.payid = payid;
+    payOptions.payid = p;
+  }
+  const bsb = s(body.bank_bsb), account = s(body.bank_account), bankName = s(body.bank_name);
+  if (bsb || account || bankName) {
+    const b: BankOptions = {};
+    if (bsb) b.bsb = bsb;
+    if (account) b.account = account;
+    if (bankName) b.name = bankName;
+    payOptions.bank = b;
+  }
+  const btcAddr = s(body.btc_address), btcNet = s(body.btc_network);
+  if (btcAddr || btcNet) {
+    const c: CryptoOptions = {};
+    if (btcAddr) c.address = btcAddr;
+    if (btcNet) c.network = btcNet;
+    payOptions.btc = c;
+  }
+  const usdtAddr = s(body.usdt_address), usdtNet = s(body.usdt_network);
+  if (usdtAddr || usdtNet) {
+    const c: CryptoOptions = {};
+    if (usdtAddr) c.address = usdtAddr;
+    if (usdtNet) c.network = usdtNet;
+    payOptions.usdt = c;
+  }
+  if (!payOptions.payid && !payOptions.bank && !payOptions.btc && !payOptions.usdt) {
     return json({ ok: false, error: "Fill at least one payment method (PayID, bank, BTC or USDT)." }, 400);
   }
-  const payOptions: PaymentOptions = {};
-  if (payid) payOptions.payid = payid;
-  if (bank) payOptions.bankLabel = bank;
-  if (btc) payOptions.btc = btc;
-  if (usdt) payOptions.usdt = usdt;
 
   const mail = emailPaymentInstructions(order, payOptions);
 
@@ -276,7 +326,7 @@ export async function onRequestPost(context: any): Promise<Response> {
       return json({ ok: false, error: `Email failed (${sent.status}) — check Brevo`, ...(sent.error ? { detail: sent.error } : {}) }, 502);
     }
     const now = new Date().toISOString();
-    const given = [payid && "PayID", bank && "Bank", btc && "BTC", usdt && "USDT"].filter(Boolean).join(" + ");
+    const given = [payOptions.payid && "PayID", payOptions.bank && "Bank", payOptions.btc && "BTC", payOptions.usdt && "USDT"].filter(Boolean).join(" + ");
     order.paymentMethod = given.toLowerCase();
     order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(now)}] payment instructions (②) sent — ${given}`;
     order.updatedAt = now;

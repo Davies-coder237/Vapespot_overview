@@ -95,11 +95,25 @@ export function emailConfirmed(o: Order): { subject: string; html: string } {
  * émetteur, contact t.me/vapespot_store, "paiement confirmé = dispatch immédiat".
  * JAMAIS de $300. Base PAY_PENDING_SUBJECT utilisée aussi par l'email auto ①.
  */
+/** Champs STRUCTURÉS par moyen de paiement — l'email rend chaque `label: valeur`. */
+export interface PayIdOptions {
+  name?: string;      // nom du compte PayID (ex. "EMILY")
+  payid?: string;     // la PayID elle-même (ex. "emily@gmail.com" / "04xx xxx xxx")
+}
+export interface BankOptions {
+  bsb?: string;       // BSB 000-000
+  account?: string;   // n° de compte
+  name?: string;      // nom du titulaire du compte
+}
+export interface CryptoOptions {
+  address?: string;   // adresse sur le réseau
+  network?: string;   // réseau (ex. SegWit, BTC, TRC-20)
+}
 export interface PaymentOptions {
-  payid?: string;                 // coordonnées PayID ("Pay to X — 04xx …")
-  bankLabel?: string;             // "BSB 000-000 · Acc 1234… · Name …"
-  btc?: string;                   // adresse Bitcoin + réseau
-  usdt?: string;                  // adresse USDT + réseau
+  payid?: Partial<PayIdOptions>;
+  bank?: Partial<BankOptions>;
+  btc?: Partial<CryptoOptions>;
+  usdt?: Partial<CryptoOptions>;
 }
 
 export const PAY_PENDING_SUBJECT = "Payment instructions for your order — VapeSpot";
@@ -123,14 +137,28 @@ export function emailPaymentInstructions(
 ): { subject: string; html: string } {
   const sections: string[] = [];
   if (pay.payid) {
-    sections.push(card("① PayID", [escapeHtml(pay.payid)]));
+    const lines: string[] = [];
+    if (pay.payid.name) lines.push(`<b>Name:</b> ${escapeHtml(pay.payid.name)}`);
+    if (pay.payid.payid) lines.push(`<b>PayID:</b> ${escapeHtml(pay.payid.payid)}`);
+    if (lines.length) sections.push(card("① PayID", lines));
   }
-  if (pay.bankLabel) {
-    sections.push(card("② Bank Transfer", [escapeHtml(pay.bankLabel)]));
+  if (pay.bank) {
+    const lines: string[] = [];
+    if (pay.bank.bsb) lines.push(`<b>BSB:</b> ${escapeHtml(pay.bank.bsb)}`);
+    if (pay.bank.account) lines.push(`<b>Account:</b> ${escapeHtml(pay.bank.account)}`);
+    if (pay.bank.name) lines.push(`<b>Account name:</b> ${escapeHtml(pay.bank.name)}`);
+    if (lines.length) sections.push(card("② Bank Transfer", lines));
   }
   const cryptoLines: string[] = [];
-  if (pay.btc) cryptoLines.push(`Bitcoin (BTC): <b>${escapeHtml(pay.btc)}</b>`);
-  if (pay.usdt) cryptoLines.push(`USDT (TRC-20): <b>${escapeHtml(pay.usdt)}</b>`);
+  const coin = (label: string, c: CryptoOptions | undefined) => {
+    if (!c) return;
+    const parts: string[] = [];
+    if (c.address) parts.push(`Address: <b>${escapeHtml(c.address)}</b>`);
+    if (c.network) parts.push(`Network: <b>${escapeHtml(c.network)}</b>`);
+    if (parts.length) cryptoLines.push(`${label}: ${parts.join(" · ")}`);
+  };
+  coin("Bitcoin (BTC)", pay.btc);
+  coin("USDT (TRC-20)", pay.usdt);
   if (cryptoLines.length) sections.push(cryptoBlock(o, cryptoLines));
 
   const body =
