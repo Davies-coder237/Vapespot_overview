@@ -8,7 +8,7 @@
 //   6. Réponse : { orderNumber } → la page affiche la confirmation.
 // Anti-spam minimal : limite par IP (KV), sans casser l'usage normal.
 import { geocodeAddress, nearestActiveWarehouse } from "./_lib/geo";
-import { OrderCounter, orderNumber } from "./_lib/counter";
+import { orderNumber } from "./_lib/counter";
 import { newPendingOrder, putOrder } from "./_lib/orders";
 import { emailConfirmed } from "./_lib/emails";
 import { sendEmail } from "./_lib/brevo";
@@ -89,8 +89,10 @@ export async function onRequestPost({ request, env }: any): Promise<Response> {
   if (!warehouse) return fail("no_warehouse_available", 503);
 
   // ── 4. Numéro atomique VS-XXXX ───────────────────────────────────
+  // La classe OrderCounter vit dans le Worker dédié vapespot-orders-do
+  // (do-worker/) ; ici on appelle simplement son `next()` via le binding.
   const counterId = env.ORDER_COUNTER.idFromName("orders");
-  const counter = env.ORDER_COUNTER.get(counterId) as OrderCounter;
+  const counter: { next(): Promise<number> } = env.ORDER_COUNTER.get(counterId) as any;
   const n = await counter.next();
   const id = orderNumber(n);
 

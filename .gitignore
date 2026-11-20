@@ -43,3 +43,6 @@ gsc-token.json
 cities-no-slash-scan.json
 indexed-products.json
 progress-products.json
+# Dossier d'infra local (pas committé) : wrangler.toml + Worker du compteur DO
+wrangler.toml
+do-worker/
