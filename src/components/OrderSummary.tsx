@@ -8,8 +8,6 @@ import { trackPopcashConversion } from "@/lib/conversion";
 import type { Product } from "@/lib/types";
 import {
   buildOrderLines,
-  buildTelegramMessage,
-  buildTelegramUrl,
   lineTotal,
   ordersTotal,
 } from "@/lib/telegram";
@@ -17,10 +15,14 @@ import { CRYPTO_DISCOUNT_PERCENT } from "@/lib/packs";
 import { MIN_ORDER_AUD, cryptoDiscounted } from "@/lib/checkout";
 
 export function OrderSummary() {
-  const { items } = useMyList();
+  const { items, clear } = useMyList();
   const [products, setProducts] = useState<Product[]>([]);
   const [deliveryAddress, setDeliveryAddress] = useState("");
+  const [customerName, setCustomerName] = useState("");
+  const [email, setEmail] = useState("");
   const [deliveryMethod, setDeliveryMethod] = useState<"courier" | "australia_post">("courier");
+  // Numéro VS-XXXX renvoyé par le serveur après création (Étape 1)
+  const [placedOrder, setPlacedOrder] = useState<null | string>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -39,18 +41,63 @@ export function OrderSummary() {
   const lines = buildOrderLines(items, products);
   const total = ordersTotal(lines);
   const cryptoTotal = cryptoDiscounted(total);
-  const message = buildTelegramMessage(lines, deliveryAddress, deliveryMethod);
-  const url = buildTelegramUrl(message);
-  const handleTelegramClick = async () => {
-    // Clic "Contact us on Telegram" = tentative de commande (Conv. 2 PopCash)
+  const handlePlaceOrder = async () => {
+    // Clic "Proceed to Checkout" = tentative de commande (Conv. 2 PopCash)
     trackPopcashConversion(2);
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+      toast.error("Please enter your email address — we'll send your confirmation there.");
+      return;
+    }
+    if (deliveryAddress.trim().length < 10) {
+      toast.error("Please enter your full delivery address (street, city, state, postcode).");
+      return;
+    }
     try {
-      await navigator.clipboard.writeText(message);
-      toast.success("Order copied — paste it if it doesn't appear automatically.");
+      const res = await fetch("/checkout", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          email,
+          customerName,
+          deliveryAddress,
+          deliveryMethod,
+          items: lines.map((l) => ({
+            productId: String(l.product.id),
+            name: l.product.name,
+            quantity: l.quantity,
+            // Prix unitaire EFFECTIF : le pack (packPrice) peut changer le prix
+            // → on transmet le total de la ligne divisé par la quantité, pour que
+            // le serveur recouvre exactement le même montant que le panier.
+            priceAud: Math.round((lineTotal(l) / l.quantity) * 100) / 100,
+          })),
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data?.error || "order_failed");
+      setPlacedOrder(data.orderNumber);
+      clear();
+      toast.success(`Order ${data.orderNumber} placed — check your email.`);
     } catch {
-      // Clipboard may be unavailable; Telegram link still opens normally.
+      toast.error("We couldn't place your order right now. Please try again.");
     }
   };
+
+  if (placedOrder) {
+    return (
+      <div className="px-4 py-16 text-center space-y-4">
+        <p className="text-[15px] font-bold text-black">Order {placedOrder} placed 🎉</p>
+        <p className="text-[13px] text-[#6E6E73]">
+          Check your email — your confirmation and payment instructions are on their way.
+        </p>
+        <Link
+          to="/"
+          className="inline-flex items-center justify-center bg-black text-white rounded-none px-5 py-3 font-semibold"
+        >
+          Back to shop
+        </Link>
+      </div>
+    );
+  }
 
   if (lines.length === 0) {
     return (
@@ -233,20 +280,27 @@ export function OrderSummary() {
           </button>
         </div>
 
-        {/* ── Delivery address ── */}
-        <div className="bg-[#F9F7FF] border border-[#E4DEFF] rounded-xl px-4 py-3.5 md:px-6 md:py-5 space-y-2">
+        {/* ── Delivery address + email (obligatoires — Étape 1) ── */}
+        <div className="bg-[#F9F7FF] border border-[#E4DEFF] rounded-xl px-4 py-3.5 md:px-6 md:py-5 space-y-3">
           <div className="flex items-center gap-3">
             <div className="shrink-0 h-10 w-10 rounded-full bg-[#EDE9FF] flex items-center justify-center">
               <MapPin className="h-5 w-5 text-[#5B3DF5]" strokeWidth={1.75} />
             </div>
             <p className="text-[14px] md:text-[16px] font-extrabold text-[#0A0A0A]">
-              Enter your delivery address
+              Delivery details
             </p>
           </div>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Your email (required)"
+            className="w-full text-[13px] md:text-[14px] border border-[#E4DEFF] bg-white rounded-lg px-3 py-2 text-black placeholder:text-[#C4B8F0] focus:outline-none focus:border-[#7C3AED]"
+          />
           <textarea
             value={deliveryAddress}
             onChange={(e) => setDeliveryAddress(e.target.value)}
-            placeholder="Street, City, State, Postcode"
+            placeholder="Street, City, State, Postcode (required)"
             rows={2}
             className="w-full text-[13px] md:text-[14px] border border-[#E4DEFF] bg-white rounded-lg px-3 py-2 text-black placeholder:text-[#C4B8F0] focus:outline-none focus:border-[#7C3AED] resize-none"
           />
@@ -307,18 +361,16 @@ export function OrderSummary() {
         </div>
       </div>
 
-      {/* ── Telegram CTA ── */}
+      {/* ── Checkout CTA (Étape 1 : POST serveur → email + bot) ── */}
       {total >= MIN_ORDER_AUD ? (
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={handleTelegramClick}
+        <button
+          type="button"
+          onClick={handlePlaceOrder}
           className="flex items-center justify-center gap-2 w-full bg-black text-white py-4 text-[15px] font-semibold hover:bg-[#1a1a1a] transition-colors"
         >
           <Send className="h-4 w-4" />
           Proceed to Checkout
-        </a>
+        </button>
       ) : (
         <div className="w-full">
           <button
@@ -336,7 +388,7 @@ export function OrderSummary() {
 
       <div className="flex items-center justify-center gap-1.5 text-xs text-[#9E9E9E]">
         <Lock className="h-3 w-3" />
-        We'll receive your list on Telegram and confirm your order.
+        Your order is confirmed by email. Reply to it any time — a real person reads every reply.
       </div>
     </div>
   );

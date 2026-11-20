@@ -1,0 +1,19 @@
+# Configuration Cloudflare Pages — vapespot-overview
+# Base récupérée via `wrangler pages download config vapespot-overview` (20/11),
+# complétée avec les bindings KV (namespaces déjà créés) + le Durable Object
+# compteur (numéros de commande VS-XXXX atomiques).
+name = "vapespot-overview"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-06-10"
+
+[env.production]
+kv_namespaces = [
+  { binding = "VAPESPOT_ORDERS", id = "8edce7ccaa8f40a496c7e0f49a17c061" },
+  { binding = "VAPESPOT_GEO_CACHE", id = "2e35d8c101b743c8b300041e9a0b103d" },
+]
+durable_objects = [
+  { name = "ORDER_COUNTER", class_name = "OrderCounter" },
+]
+migrations = [
+  { tag = "v1", new_classes = ["OrderCounter"] },
+]

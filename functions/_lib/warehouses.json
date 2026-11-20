@@ -1,0 +1,977 @@
+{
+  "version": "2026-11-20",
+  "warehouses": [
+    {
+      "id": "vapespot-sydney-cbd",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "117 Clarence St, Sydney NSW 2000, Australia",
+      "lat": -33.8670946,
+      "lng": 151.2048423,
+      "active": true
+    },
+    {
+      "id": "vapespot-parramatta",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "159 Church St, Parramatta NSW 2150, Australia",
+      "lat": -33.8171096,
+      "lng": 151.0033417,
+      "active": true
+    },
+    {
+      "id": "vapespot-blacktown",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "6 Alpha St, Blacktown NSW 2148, Australia",
+      "lat": -33.7716693,
+      "lng": 150.9071262,
+      "active": true
+    },
+    {
+      "id": "vapespot-liverpool",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "146 Macquarie St, Liverpool NSW 2170",
+      "lat": -33.9251007,
+      "lng": 150.9227703,
+      "active": true
+    },
+    {
+      "id": "vapespot-chatswood",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "Freechoice Shop 33 Chatswood Interchange, 436 Victoria Ave, Chatswood NSW 2067, Australia",
+      "lat": -33.7974806,
+      "lng": 151.180939,
+      "active": true
+    },
+    {
+      "id": "vapespot-bondi-junction",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "9/157 Oxford St, Bondi Junction NSW 2022, Australia",
+      "lat": -33.8899132,
+      "lng": 151.2418228,
+      "active": true
+    },
+    {
+      "id": "vapespot-surry-hills",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "74 Devonshire St, Surry Hills NSW 2010, Australia",
+      "lat": -33.8890919,
+      "lng": 151.2139562,
+      "active": true
+    },
+    {
+      "id": "vapespot-newtown",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "215 King St, Newtown NSW 2042, Australia",
+      "lat": -33.8936915,
+      "lng": 151.1832714,
+      "active": true
+    },
+    {
+      "id": "vapespot-penrith",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "133 Henry St, Penrith NSW 2750, Australia",
+      "lat": -33.7545919,
+      "lng": 150.7074934,
+      "active": true
+    },
+    {
+      "id": "vapespot-campbelltown",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "42 Queen St, Campbelltown NSW 2560, Australia",
+      "lat": -34.0685005,
+      "lng": 150.8126534,
+      "active": true
+    },
+    {
+      "id": "vapespot-hornsby",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "1/16 Hunter St, Hornsby NSW 2077, Australia",
+      "lat": -33.7013388,
+      "lng": 151.1011064,
+      "active": true
+    },
+    {
+      "id": "vapespot-miranda",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "Westfield Miranda, Level 4/600 Kingsway, Miranda NSW 2228",
+      "lat": -34.035037,
+      "lng": 151.1000606,
+      "active": true
+    },
+    {
+      "id": "vapespot-bondi-beach",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "49 Francis St, Bondi Beach NSW 2026, Australia",
+      "lat": -33.8885841,
+      "lng": 151.2637361,
+      "active": true
+    },
+    {
+      "id": "vapespot-manly",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "N Steyne, Manly NSW 2095, Australia",
+      "lat": -33.7868304,
+      "lng": 151.2878447,
+      "active": true
+    },
+    {
+      "id": "vapespot-cronulla",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "1/57 Cronulla St, Cronulla NSW 2230, Australia",
+      "lat": -34.0545158,
+      "lng": 151.1520432,
+      "active": true
+    },
+    {
+      "id": "vapespot-neutral-bay",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "116 Military Rd, Neutral Bay NSW 2089",
+      "lat": -33.8294534,
+      "lng": 151.2181418,
+      "active": true
+    },
+    {
+      "id": "vapespot-beverly-hills",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "56 Kingsway, Beverly Hills NSW 2209, Australia",
+      "lat": -33.9506351,
+      "lng": 151.0895647,
+      "active": true
+    },
+    {
+      "id": "vapespot-cabramatta",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "8 Dutton Ln, Cabramatta NSW 2166",
+      "lat": -33.894179,
+      "lng": 150.9356977,
+      "active": true
+    },
+    {
+      "id": "vapespot-burwood",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "234 Burwood Rd, Burwood NSW 2134, Australia",
+      "lat": -33.8780752,
+      "lng": 151.1035513,
+      "active": true
+    },
+    {
+      "id": "vapespot-hurstville",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "Australia St, Hurstville NSW 2220, Australia",
+      "lat": -33.9732747,
+      "lng": 151.1026779,
+      "active": true
+    },
+    {
+      "id": "vapespot-strathfield",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "Suite1/26A The Boulevarde, Strathfield NSW 2135, Australia",
+      "lat": -33.8727382,
+      "lng": 151.0945073,
+      "active": true
+    },
+    {
+      "id": "vapespot-epping",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "28 Langston Pl, Epping NSW 2121",
+      "lat": -33.7730949,
+      "lng": 151.082913,
+      "active": true
+    },
+    {
+      "id": "vapespot-castle-hill",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "26B Old Northern Rd, Baulkham Hills NSW 2153, Australia",
+      "lat": -33.7616522,
+      "lng": 150.9930262,
+      "active": true
+    },
+    {
+      "id": "vapespot-mosman",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "T9/3 Brady St, Mosman NSW 2088",
+      "lat": -33.8238542,
+      "lng": 151.2401547,
+      "active": true
+    },
+    {
+      "id": "vapespot-redfern",
+      "city": "Sydney",
+      "state": "NSW",
+      "address": "158 Redfern St, Redfern NSW 2016, Australia",
+      "lat": -33.8925002,
+      "lng": 151.2019051,
+      "active": true
+    },
+    {
+      "id": "vapespot-melbourne-cbd",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "1 Bank St, South Melbourne VIC 3205, Australia",
+      "lat": -37.8318754,
+      "lng": 144.9695071,
+      "active": true
+    },
+    {
+      "id": "vapespot-st-kilda",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "117 Acland St, St Kilda VIC 3182",
+      "lat": -37.8685209,
+      "lng": 144.978811,
+      "active": true
+    },
+    {
+      "id": "vapespot-richmond",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "620 Victoria St, Richmond VIC 3121",
+      "lat": -37.813344,
+      "lng": 145.0107759,
+      "active": true
+    },
+    {
+      "id": "vapespot-brunswick",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "Sparta Pl, Brunswick VIC 3056",
+      "lat": -37.7664491,
+      "lng": 144.9618312,
+      "active": true
+    },
+    {
+      "id": "vapespot-fitzroy",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "75 Rose St, Fitzroy VIC 3065",
+      "lat": -37.7955649,
+      "lng": 144.9781322,
+      "active": true
+    },
+    {
+      "id": "vapespot-south-yarra",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "Toorak Rd, South Yarra VIC 3141",
+      "lat": -37.8374719,
+      "lng": 144.9796789,
+      "active": true
+    },
+    {
+      "id": "vapespot-carlton",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "194 Elgin St, Carlton VIC 3053",
+      "lat": -37.7970109,
+      "lng": 144.9680975,
+      "active": true
+    },
+    {
+      "id": "vapespot-collingwood",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "428 Smith St, Collingwood VIC 3066",
+      "lat": -37.7957676,
+      "lng": 144.9851189,
+      "active": true
+    },
+    {
+      "id": "vapespot-footscray",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "18 Albert St, Footscray VIC 3011",
+      "lat": -37.8014139,
+      "lng": 144.8975738,
+      "active": true
+    },
+    {
+      "id": "vapespot-prahran",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "28 Regent St, Prahran VIC 3181",
+      "lat": -37.8510333,
+      "lng": 144.9965192,
+      "active": true
+    },
+    {
+      "id": "vapespot-dandenong",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "McCrae St, Dandenong VIC 3175",
+      "lat": -37.9894619,
+      "lng": 145.2187446,
+      "active": true
+    },
+    {
+      "id": "vapespot-frankston",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "330 Cranbourne Rd, Frankston VIC 3199",
+      "lat": -38.1543879,
+      "lng": 145.1641659,
+      "active": true
+    },
+    {
+      "id": "vapespot-box-hill",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "1 Main St, Box Hill VIC 3128",
+      "lat": -37.8192635,
+      "lng": 145.1229242,
+      "active": true
+    },
+    {
+      "id": "vapespot-glen-waverley",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "Ground Floor of Novotel, 285 Springvale Rd, Glen Waverley VIC 3150",
+      "lat": -37.8814388,
+      "lng": 145.1646148,
+      "active": true
+    },
+    {
+      "id": "vapespot-werribee",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "143/145 Watton St, Werribee VIC 3030",
+      "lat": -37.902746,
+      "lng": 144.6587711,
+      "active": true
+    },
+    {
+      "id": "vapespot-doncaster",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "690 Doncaster Rd, Doncaster VIC 3108",
+      "lat": -37.7877122,
+      "lng": 145.1313597,
+      "active": true
+    },
+    {
+      "id": "vapespot-preston",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "High St, Preston VIC 3072",
+      "lat": -37.751501,
+      "lng": 145.0017836,
+      "active": true
+    },
+    {
+      "id": "vapespot-bundoora",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "Bundoora Square, Bundoora VIC 3083",
+      "lat": -37.6958024,
+      "lng": 145.0585452,
+      "active": true
+    },
+    {
+      "id": "vapespot-cheltenham",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "1239 Nepean Hwy, Cheltenham VIC 3192",
+      "lat": -37.9582148,
+      "lng": 145.0525066,
+      "active": true
+    },
+    {
+      "id": "vapespot-fountain-gate",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "Shop 2107/352 Princes Hwy, Narre Warren VIC 3805",
+      "lat": -38.0183287,
+      "lng": 145.3020951,
+      "active": true
+    },
+    {
+      "id": "vapespot-moonee-ponds",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "Central, Homer St &, Eddy St, Moonee Ponds VIC 3039",
+      "lat": -37.7643548,
+      "lng": 144.9205775,
+      "active": true
+    },
+    {
+      "id": "vapespot-hawthorn",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "742 Toorak Rd, Hawthorn East VIC 3123",
+      "lat": -37.8459671,
+      "lng": 145.0421841,
+      "active": true
+    },
+    {
+      "id": "vapespot-kew",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "Cotham Rd &, High St, Kew VIC 3101",
+      "lat": -37.806615,
+      "lng": 145.0313152,
+      "active": true
+    },
+    {
+      "id": "vapespot-balaclava",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "208-218 Carlisle St, Balaclava VIC 3183",
+      "lat": -37.8692466,
+      "lng": 144.9973483,
+      "active": true
+    },
+    {
+      "id": "vapespot-port-melbourne",
+      "city": "Melbourne",
+      "state": "VIC",
+      "address": "Melbourne Pl, Port Melbourne VIC 3004, Australia",
+      "lat": -37.8334,
+      "lng": 144.9219,
+      "active": true
+    },
+    {
+      "id": "vapespot-brisbane-cbd",
+      "city": "Brisbane",
+      "state": "QLD",
+      "address": "102 Adelaide St, Brisbane City QLD 4000, Australia",
+      "lat": -27.4682203,
+      "lng": 153.0247892,
+      "active": true
+    },
+    {
+      "id": "vapespot-fortitude-valley",
+      "city": "Brisbane",
+      "state": "QLD",
+      "address": "159 Wickham St, Fortitude Valley QLD 4006, Australia",
+      "lat": -27.4503342,
+      "lng": 153.0411119,
+      "active": true
+    },
+    {
+      "id": "vapespot-south-brisbane",
+      "city": "Brisbane",
+      "state": "QLD",
+      "address": "Melbourne St, South Brisbane QLD 4101, Australia",
+      "lat": -27.4753596,
+      "lng": 153.0159196,
+      "active": true
+    },
+    {
+      "id": "vapespot-chermside",
+      "city": "Brisbane",
+      "state": "QLD",
+      "address": "Gympie Rd, Chermside QLD 4032",
+      "lat": -27.3852133,
+      "lng": 153.0305881,
+      "active": true
+    },
+    {
+      "id": "vapespot-indooroopilly",
+      "city": "Brisbane",
+      "state": "QLD",
+      "address": "322 Moggill Rd, Indooroopilly QLD 4068",
+      "lat": -27.4995967,
+      "lng": 152.972799,
+      "active": true
+    },
+    {
+      "id": "vapespot-carindale",
+      "city": "Brisbane",
+      "state": "QLD",
+      "address": "Unit 2/61 Scrub Rd, Carindale QLD 4152",
+      "lat": -27.5018473,
+      "lng": 153.1154143,
+      "active": true
+    },
+    {
+      "id": "vapespot-mount-gravatt",
+      "city": "Brisbane",
+      "state": "QLD",
+      "address": "55 Creek Rd, Mount Gravatt QLD 4122",
+      "lat": -27.5390889,
+      "lng": 153.0828354,
+      "active": true
+    },
+    {
+      "id": "vapespot-toowong",
+      "city": "Brisbane",
+      "state": "QLD",
+      "address": "9 Sherwood Road GA39 TOOWONG VILLAGE, Toowong QLD 4066",
+      "lat": -27.479,
+      "lng": 152.9853,
+      "active": true
+    },
+    {
+      "id": "vapespot-newstead",
+      "city": "Brisbane",
+      "state": "QLD",
+      "address": "1/142 Breakfast Creek Rd, Newstead QLD 4006",
+      "lat": -27.4426413,
+      "lng": 153.0443099,
+      "active": true
+    },
+    {
+      "id": "vapespot-kangaroo-point",
+      "city": "Brisbane",
+      "state": "QLD",
+      "address": "411 Main St, Kangaroo Point QLD 4169",
+      "lat": -27.4733283,
+      "lng": 153.0348472,
+      "active": true
+    },
+    {
+      "id": "vapespot-woolloongabba",
+      "city": "Brisbane",
+      "state": "QLD",
+      "address": "264 Ipswich Rd, Woolloongabba QLD 4102",
+      "lat": -27.5006974,
+      "lng": 153.0364422,
+      "active": true
+    },
+    {
+      "id": "vapespot-hamilton",
+      "city": "Brisbane",
+      "state": "QLD",
+      "address": "39 Hercules St, Hamilton QLD 4007",
+      "lat": -27.4404723,
+      "lng": 153.0699529,
+      "active": true
+    },
+    {
+      "id": "vapespot-west-end",
+      "city": "Brisbane",
+      "state": "QLD",
+      "address": "8 Vulture St, West End QLD 4101, Australia",
+      "lat": -27.4801,
+      "lng": 153.0061318,
+      "active": true
+    },
+    {
+      "id": "vapespot-coorparoo",
+      "city": "Brisbane",
+      "state": "QLD",
+      "address": "300 Old Cleveland Rd, Coorparoo QLD 4151",
+      "lat": -27.4944341,
+      "lng": 153.0584453,
+      "active": true
+    },
+    {
+      "id": "vapespot-upper-mount-gravatt",
+      "city": "Brisbane",
+      "state": "QLD",
+      "address": "Logan Rd, Upper Mount Gravatt QLD 4122",
+      "lat": -27.5628422,
+      "lng": 153.0854471,
+      "active": true
+    },
+    {
+      "id": "vapespot-perth-cbd",
+      "city": "Perth",
+      "state": "WA",
+      "address": "111 St Georges Terrace, Perth WA 6000, Australia",
+      "lat": -31.9548083,
+      "lng": 115.8559284,
+      "active": true
+    },
+    {
+      "id": "vapespot-fremantle",
+      "city": "Perth",
+      "state": "WA",
+      "address": "7/195 Hampton Rd, South Fremantle WA 6162",
+      "lat": -32.0747491,
+      "lng": 115.7604982,
+      "active": true
+    },
+    {
+      "id": "vapespot-scarborough",
+      "city": "Perth",
+      "state": "WA",
+      "address": "Luna Maxi Mart Shopping Centre, 6 Scarborough Beach Rd, Scarborough WA 6019",
+      "lat": -31.8939471,
+      "lng": 115.7677413,
+      "active": true
+    },
+    {
+      "id": "vapespot-northbridge",
+      "city": "Perth",
+      "state": "WA",
+      "address": "163 James St, Northbridge WA 6003",
+      "lat": -31.9483932,
+      "lng": 115.8578858,
+      "active": true
+    },
+    {
+      "id": "vapespot-joondalup",
+      "city": "Perth",
+      "state": "WA",
+      "address": "3 Sundew Rise, Joondalup WA 6027",
+      "lat": -31.7577531,
+      "lng": 115.7722903,
+      "active": true
+    },
+    {
+      "id": "vapespot-midland",
+      "city": "Perth",
+      "state": "WA",
+      "address": "307 Great Eastern Hwy, Midland WA 6056",
+      "lat": -31.8904226,
+      "lng": 116.0014821,
+      "active": true
+    },
+    {
+      "id": "vapespot-rockingham",
+      "city": "Perth",
+      "state": "WA",
+      "address": "1 Council Ave, Rockingham WA 6168",
+      "lat": -32.2896502,
+      "lng": 115.7460719,
+      "active": true
+    },
+    {
+      "id": "vapespot-subiaco",
+      "city": "Perth",
+      "state": "WA",
+      "address": "531 Hay St, Subiaco WA 6008",
+      "lat": -31.9475934,
+      "lng": 115.8221205,
+      "active": true
+    },
+    {
+      "id": "vapespot-cannington",
+      "city": "Perth",
+      "state": "WA",
+      "address": "100 George Way, Cannington WA 6107, Australia",
+      "lat": -32.0155741,
+      "lng": 115.9301688,
+      "active": true
+    },
+    {
+      "id": "vapespot-mirrabooka",
+      "city": "Perth",
+      "state": "WA",
+      "address": "43 Yirrigan Dr, Mirrabooka WA 6061",
+      "lat": -31.8717591,
+      "lng": 115.8624193,
+      "active": true
+    },
+    {
+      "id": "vapespot-morley",
+      "city": "Perth",
+      "state": "WA",
+      "address": "243-253 Walter Rd W, Morley WA 6062",
+      "lat": -31.8949138,
+      "lng": 115.8951029,
+      "active": true
+    },
+    {
+      "id": "vapespot-mandurah",
+      "city": "Perth",
+      "state": "WA",
+      "address": "4 Zephyr Mews, Mandurah WA 6210",
+      "lat": -32.5238638,
+      "lng": 115.7179053,
+      "active": true
+    },
+    {
+      "id": "vapespot-adelaide-cbd",
+      "city": "Adelaide",
+      "state": "SA",
+      "address": "122 Gouger St, Adelaide SA 5000, Australia",
+      "lat": -34.9305671,
+      "lng": 138.5912769,
+      "active": true
+    },
+    {
+      "id": "vapespot-glenelg",
+      "city": "Adelaide",
+      "state": "SA",
+      "address": "Partridge Street &, Bath St, Glenelg South SA 5045",
+      "lat": -34.9903909,
+      "lng": 138.5173853,
+      "active": true
+    },
+    {
+      "id": "vapespot-norwood",
+      "city": "Adelaide",
+      "state": "SA",
+      "address": "177-197 The Parade, Norwood SA 5067",
+      "lat": -34.921057,
+      "lng": 138.6386112,
+      "active": true
+    },
+    {
+      "id": "vapespot-port-adelaide",
+      "city": "Adelaide",
+      "state": "SA",
+      "address": "178 St Vincent St, Port Adelaide SA 5015",
+      "lat": -34.8455376,
+      "lng": 138.5049549,
+      "active": true
+    },
+    {
+      "id": "vapespot-marion",
+      "city": "Adelaide",
+      "state": "SA",
+      "address": "750 Marion Rd, Marion SA 5043",
+      "lat": -35.0009028,
+      "lng": 138.5574903,
+      "active": true
+    },
+    {
+      "id": "vapespot-tea-tree-gully",
+      "city": "Adelaide",
+      "state": "SA",
+      "address": "1362 North East Road, Tea Tree Gully SA 5091",
+      "lat": -34.8206797,
+      "lng": 138.7245711,
+      "active": true
+    },
+    {
+      "id": "vapespot-elizabeth",
+      "city": "Adelaide",
+      "state": "SA",
+      "address": "1 Philip Hwy, Elizabeth SA 5112",
+      "lat": -34.7203029,
+      "lng": 138.6715984,
+      "active": true
+    },
+    {
+      "id": "vapespot-morphett-vale",
+      "city": "Adelaide",
+      "state": "SA",
+      "address": "Cnr Bains & Panalatinga Rds, Morphett Vale SA 5162",
+      "lat": -35.1208,
+      "lng": 138.524,
+      "active": true
+    },
+    {
+      "id": "vapespot-salisbury",
+      "city": "Adelaide",
+      "state": "SA",
+      "address": "Corner Saints Road &, Main N Rd, Salisbury Plain SA 5109",
+      "lat": -34.7641,
+      "lng": 138.6419,
+      "active": true
+    },
+    {
+      "id": "vapespot-unley",
+      "city": "Adelaide",
+      "state": "SA",
+      "address": "204 Unley Rd, Unley SA 5061",
+      "lat": -34.9512718,
+      "lng": 138.6067901,
+      "active": true
+    },
+    {
+      "id": "vapespot-canberra-cbd",
+      "city": "Canberra",
+      "state": "ACT",
+      "address": "148 Bunda St, Canberra ACT 2601, Australia",
+      "lat": -35.2796477,
+      "lng": 149.1355312,
+      "active": true
+    },
+    {
+      "id": "vapespot-belconnen",
+      "city": "Canberra",
+      "state": "ACT",
+      "address": "Abode Belconnen, 3 Grazier La, Belconnen ACT 2617",
+      "lat": -35.2406251,
+      "lng": 149.0717635,
+      "active": true
+    },
+    {
+      "id": "vapespot-woden",
+      "city": "Canberra",
+      "state": "ACT",
+      "address": "98 Corinna St, Phillip ACT 2606",
+      "lat": -35.3459117,
+      "lng": 149.0841973,
+      "active": true
+    },
+    {
+      "id": "vapespot-tuggeranong",
+      "city": "Canberra",
+      "state": "ACT",
+      "address": "5 Kingscote Cres, Bonython ACT 2905",
+      "lat": -35.4275499,
+      "lng": 149.0792677,
+      "active": true
+    },
+    {
+      "id": "vapespot-gungahlin",
+      "city": "Canberra",
+      "state": "ACT",
+      "address": "Gungahlin Pl, Gungahlin ACT 2912",
+      "lat": -35.1856325,
+      "lng": 149.1354427,
+      "active": true
+    },
+    {
+      "id": "vapespot-surfers-paradise",
+      "city": "Gold Coast",
+      "state": "QLD",
+      "address": "3/3290 Surfers Paradise Blvd, Surfers Paradise QLD 4217, Australia",
+      "lat": -28.0084524,
+      "lng": 153.4294084,
+      "active": true
+    },
+    {
+      "id": "vapespot-southport",
+      "city": "Gold Coast",
+      "state": "QLD",
+      "address": "515 Olsen Ave, Southport QLD 4215, Australia",
+      "lat": -27.9587381,
+      "lng": 153.3795139,
+      "active": true
+    },
+    {
+      "id": "vapespot-broadbeach",
+      "city": "Gold Coast",
+      "state": "QLD",
+      "address": "Broadbeach Blvd, Broadbeach QLD 4218, Australia",
+      "lat": -28.0220676,
+      "lng": 153.4338017,
+      "active": true
+    },
+    {
+      "id": "vapespot-burleigh-heads",
+      "city": "Gold Coast",
+      "state": "QLD",
+      "address": "25 The Esplanade, Burleigh Heads QLD 4218, Australia",
+      "lat": -28.0802481,
+      "lng": 153.4482701,
+      "active": true
+    },
+    {
+      "id": "vapespot-coolangatta",
+      "city": "Gold Coast",
+      "state": "QLD",
+      "address": "Shop 14/52/58 Marine Parade, Coolangatta QLD 4225",
+      "lat": -28.1650024,
+      "lng": 153.5469487,
+      "active": true
+    },
+    {
+      "id": "vapespot-hobart-cbd",
+      "city": "Hobart",
+      "state": "TAS",
+      "address": "111 Macquarie St, Hobart TAS 7000, Australia",
+      "lat": -42.8830657,
+      "lng": 147.3290297,
+      "active": true
+    },
+    {
+      "id": "vapespot-sandy-bay",
+      "city": "Hobart",
+      "state": "TAS",
+      "address": "Corner of TT Flynn Street and, 2 Churchill Ave, Sandy Bay TAS 7005",
+      "lat": -42.904144,
+      "lng": 147.3260403,
+      "active": true
+    },
+    {
+      "id": "vapespot-darwin-city",
+      "city": "Darwin",
+      "state": "NT",
+      "address": "Westlane Arcade, 3/27 The Mall, Darwin City NT 0800, Australia",
+      "lat": -12.4643224,
+      "lng": 130.8427836,
+      "active": true
+    },
+    {
+      "id": "vapespot-cairns-north",
+      "city": "Cairns",
+      "state": "QLD",
+      "address": "411 Sheridan St, Cairns North QLD 4870, Australia",
+      "lat": -16.911088,
+      "lng": 145.762888,
+      "active": true
+    },
+    {
+      "id": "vapespot-townsville-strand",
+      "city": "Townsville",
+      "state": "QLD",
+      "address": "58 The Strand, North Ward QLD 4810, Australia",
+      "lat": -19.252159,
+      "lng": 146.817511,
+      "active": true
+    },
+    {
+      "id": "vapespot-rockhampton-bolsover",
+      "city": "Rockhampton",
+      "state": "QLD",
+      "address": "5/160 Bolsover St, Rockhampton City QLD 4700, Australia",
+      "lat": -23.381803,
+      "lng": 150.514432,
+      "active": true
+    },
+    {
+      "id": "vapespot-mount-isa-simpson",
+      "city": "Mount Isa",
+      "state": "QLD",
+      "address": "23 Simpson St, Mount Isa City QLD 4825, Australia",
+      "lat": -20.72767,
+      "lng": 139.49423,
+      "active": true
+    },
+    {
+      "id": "vapespot-alice-springs-todd",
+      "city": "Alice Springs",
+      "state": "NT",
+      "address": "11 Todd Mall, Alice Springs NT 0870, Australia",
+      "lat": -23.697979,
+      "lng": 133.884041,
+      "active": true
+    },
+    {
+      "id": "vapespot-south-hedland-throssell",
+      "city": "Port Hedland",
+      "state": "WA",
+      "address": "Shop 4/9-31 Throssell Rd, South Hedland WA 6722, Australia",
+      "lat": -20.409326,
+      "lng": 118.599259,
+      "active": true
+    },
+    {
+      "id": "vapespot-broome-djugun",
+      "city": "Broome",
+      "state": "WA",
+      "address": "106 Frederick St, Djugun WA 6725, Australia",
+      "lat": -17.952603,
+      "lng": 122.228412,
+      "active": false
+    },
+    {
+      "id": "vapespot-kalgoorlie-hannan",
+      "city": "Kalgoorlie",
+      "state": "WA",
+      "address": "246 Hannan St, Kalgoorlie WA 6430, Australia",
+      "lat": -30.760595,
+      "lng": 121.458041,
+      "active": false
+    }
+  ]
+}
