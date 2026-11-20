@@ -203,7 +203,7 @@ function adminPage(orders: Order[], csrf: string): string {
         `const body={action:preview?'preview':'send-payment',orderId:orderId(btn),_csrf:readCsrf(btn),...pf};` +
         `const old=btn.textContent;btn.textContent=preview?'Loading…':'Sending…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
-        `if(preview){let ifr=f.querySelector('iframe.mail');if(!ifr){ifr=document.createElement('iframe');ifr.className='mail';det.appendChild(ifr)}ifr.srcdoc=j.html;` +
+        `if(preview){let ifr=f.querySelector('iframe.mail');if(!ifr){ifr=document.createElement('iframe');ifr.className='mail';det.appendChild(ifr)}ifr.srcdoc=typeof j.html==='string'?j.html:'⚠️ Preview error: '+(j.error||'no HTML returned');` +
         `const sum=det.querySelector('summary');sum.textContent='✉️ Preview — '+body.orderId;bell(true)}` +
         `else if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
         `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
@@ -281,14 +281,21 @@ export async function onRequestPost(context: any): Promise<Response> {
   }
   const s = (v: unknown) => String(v ?? "").trim();
   const payOptions: PaymentOptions = {};
-  const payidName = s(body.payid_name), payid = s(body.payid);
+  // ⚠️ Le JS admin envoie des OBJETS STRUCTURÉS via `...payFields(f)` :
+  //   payid: {name, payid} · bank: {bsb, account, name} · btc/usdt: {address, network}
+  // Le parse lit CE format exact — sinon String(Objet) = "[object Object]" brouillé.
+  const o = (v: unknown): Record<string, unknown> =>
+    v && typeof v === "object" ? (v as Record<string, unknown>) : {};
+  const payidObj = o(body.payid);
+  const payidName = s(payidObj.name), payid = s(payidObj.payid);
   if (payidName || payid) {
     const p: PayIdOptions = {};
     if (payidName) p.name = payidName;
     if (payid) p.payid = payid;
     payOptions.payid = p;
   }
-  const bsb = s(body.bank_bsb), account = s(body.bank_account), bankName = s(body.bank_name);
+  const bankObj = o(body.bank);
+  const bsb = s(bankObj.bsb), account = s(bankObj.account), bankName = s(bankObj.name);
   if (bsb || account || bankName) {
     const b: BankOptions = {};
     if (bsb) b.bsb = bsb;
@@ -296,14 +303,16 @@ export async function onRequestPost(context: any): Promise<Response> {
     if (bankName) b.name = bankName;
     payOptions.bank = b;
   }
-  const btcAddr = s(body.btc_address), btcNet = s(body.btc_network);
+  const btcObj = o(body.btc);
+  const btcAddr = s(btcObj.address), btcNet = s(btcObj.network);
   if (btcAddr || btcNet) {
     const c: CryptoOptions = {};
     if (btcAddr) c.address = btcAddr;
     if (btcNet) c.network = btcNet;
     payOptions.btc = c;
   }
-  const usdtAddr = s(body.usdt_address), usdtNet = s(body.usdt_network);
+  const usdtObj = o(body.usdt);
+  const usdtAddr = s(usdtObj.address), usdtNet = s(usdtObj.network);
   if (usdtAddr || usdtNet) {
     const c: CryptoOptions = {};
     if (usdtAddr) c.address = usdtAddr;
