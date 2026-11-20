@@ -30,7 +30,7 @@ function ctEq(a: string, b: string): boolean {
 const json = (o: unknown, status = 200, extraHeaders: Record<string, string> = {}) =>
   new Response(JSON.stringify(o), {
     status,
-    headers: { "content-type": "application/json", ...extraHeaders },
+    headers: { "content-type": "application/json; charset=utf-8", ...extraHeaders },
   });
 
 // ─────────────────────────── HTML ───────────────────────────

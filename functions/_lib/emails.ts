@@ -38,9 +38,14 @@ function orderRecapTable(o: Order): string {
   );
 }
 
-/** Coiffe commune : header sombre + footer contact humain. */
+/** Coiffe commune : full HTML document (doctype + charset=utf-8 explicite) + footer contact humain. */
 function shell(o: Order, body: string): string {
   return (
+    `<!doctype html><html lang="en"><head><meta charset="utf-8">` +
+    `<meta name="viewport" content="width=device-width,initial-scale=1">` +
+    `<meta name="x-apple-disable-message-reformatting">` +
+    `<style>body{margin:0;padding:0;background:#eef1f5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}a{color:#2d1f8f}</style></head>` +
+    `<body style="margin:0;padding:0">` +
     `<div style="max-width:620px;margin:0 auto;background:#ffffff;border:1px solid #e5e7eb">` +
     `<div style="background:#141a2e;padding:26px 30px;text-align:center">` +
     `<span style="color:#ffffff;font-size:20px;font-weight:800">VapeSpot</span>` +
@@ -49,7 +54,8 @@ function shell(o: Order, body: string): string {
     `<div style="padding:26px 30px">${body}</div>` +
     `<div style="padding:20px 30px;background:#f6f7f9;border-top:1px solid #e5e7eb">` +
     `<p style="color:#555;font-size:13px;margin:0">Questions? Reply to this email — a real person at VapeSpot will get back to you, or message ${tg(SHOP_TG)}.</p>` +
-    `</div></div>`
+    `</div></div>` +
+    `</body></html>`
   );
 }
 

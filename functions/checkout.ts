@@ -29,7 +29,7 @@ interface CheckoutBody {
 function fail(msg: string, status = 400) {
   return new Response(JSON.stringify({ error: msg }), {
     status,
-    headers: { "content-type": "application/json" },
+    headers: { "content-type": "application/json; charset=utf-8" },
   });
 }
 
@@ -130,7 +130,7 @@ export async function onRequestPost({ request, env }: any): Promise<Response> {
     }),
     {
       status: 200,
-      headers: { "content-type": "application/json" },
+      headers: { "content-type": "application/json; charset=utf-8" },
     }
   );
 }
