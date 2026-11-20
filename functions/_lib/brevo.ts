@@ -8,7 +8,7 @@ export interface SendMailInput {
   tag?: string;             // ex. "vapespot-order-confirmed"
 }
 
-export async function sendEmail(env: any, input: SendMailInput): Promise<{ ok: boolean; status: number; messageId?: string }> {
+export async function sendEmail(env: any, input: SendMailInput): Promise<{ ok: boolean; status: number; messageId?: string; error?: string }> {
   const res = await fetch("https://api.brevo.com/v3/smtp/email", {
     method: "POST",
     headers: {
