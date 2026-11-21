@@ -5,7 +5,7 @@
 // Règle validée (20/11) : TOUS les moyens remplis partent ENSEMBLE dans un
 // seul email, le client choisit. Champ vide = moyen sauté.
 // ⚠️ Jamais de $300 ici : l'email ② n'en parle pas (règle validée, seul ④).
-import { escapeHtml } from "./_lib/html";
+import { escapeHtml, fmtAud } from "./_lib/html";
 import {
   loginAllowed, loginBump, loginReset,
   signCookie, verifyCookie, readCookie,
@@ -129,7 +129,7 @@ function orderCard(o: Order, csrf: string): string {
   return (
     `<div class="card" data-id="${escapeHtml(o.id)}">` +
     `<div class="row" style="justify-content:space-between">` +
-    `<div><b style="font-size:16px">${escapeHtml(o.id)}</b> · A$${o.totalAud.toFixed(2)} ${statusPill}</div>` +
+    `<div><b style="font-size:16px">${escapeHtml(o.id)}</b> · ${fmtAud(o.totalAud)} ${statusPill}</div>` +
     `<div class="mut">${escapeHtml(o.email)}<br>${escapeHtml(o.warehouseCity || "")} hub · ${timeAgo(o.createdAt)}</div>` +
     `</div>` +
     `<div class="mut" style="margin-top:6px">${escapeHtml(o.customerName)} — ${escapeHtml(o.deliveryAddress)}` +

@@ -15,6 +15,7 @@ import { geocodeAddress, nearestActiveWarehouse } from "./_lib/geo";
 import { orderNumber } from "./_lib/counter";
 import { newPendingOrder, putOrder } from "./_lib/orders";
 import { sendTelegram } from "./_lib/telegram";
+import { fmtAud } from "./_lib/html";
 import type { Order } from "./_lib/types";
 import { MIN_ORDER_AUD } from "./_lib/types";
 
@@ -71,6 +72,12 @@ export async function onRequestPost({ request, env }: any): Promise<Response> {
   if (cleanItems.length === 0) return fail("cart_empty");
   totalAud = Math.round(totalAud * 100) / 100;
   if (totalAud < MIN_ORDER_AUD) return fail(`min_order_${MIN_ORDER_AUD}`);
+  // Le client paie TOUJOURS un total SANS centimes : arrondi en excès (décision
+  // utilisatrice 21/11). Les prix du catalogue restent inchangés (A$49.99…), seul
+  // le MONTANT DEMANDÉ devient un entier (A$195 au lieu de A$194.96). Le MIN
+  // reste vérifié sur le montant exact AVANT l'arrondi (une commande à 149.60 n'a
+  // pas droit à l'arrondi 150 même si ceil la ferait passer à 150).
+  totalAud = Math.ceil(totalAud);
 
   // ── 2. Anti-spam : 10 commandes / 15 min / IP ────────────────────
   const ip = request.headers.get("CF-Connecting-IP") ?? "unknown";
@@ -120,7 +127,7 @@ export async function onRequestPost({ request, env }: any): Promise<Response> {
   // notification Telegram s'envoie (bot PRIVÉ du shop, jamais le client) :
   await sendTelegram(
     env,
-    `🛒 Nouvelle commande ${order.id}\n💰 A$${order.totalAud.toFixed(2)}\n📍 ${order.warehouseCity} → ${order.deliveryAddress}\n📧 ${order.email}`
+    `🛒 Nouvelle commande ${order.id}\n💰 ${fmtAud(order.totalAud)}\n📍 ${order.warehouseCity} → ${order.deliveryAddress}\n📧 ${order.email}`
   );
 
   // ── Réponse : numéro + infos pour la confirmation client ─────────

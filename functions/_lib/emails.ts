@@ -11,7 +11,7 @@
 //   ④ départ entrepôt + caution $300 (en route) — LE SEUL email avec le $300
 //   ⑤ livré
 // Règles strictes : le $300 n'apparaît dans AUCUN autre email/page/chat.
-import { escapeHtml } from "./html";
+import { escapeHtml, fmtAud } from "./html";
 import type { Order } from "./types";
 import { INSURANCE_AUD } from "./types";
 
@@ -38,7 +38,7 @@ function orderRecapTable(o: Order): string {
     `<tbody>${rows}` +
     `<tr><td style="padding:10px;color:#222;font-weight:700">Total</td>` +
     `<td></td>` +
-    `<td style="padding:10px;text-align:right;color:#2d1f8f;font-weight:700">A$${o.totalAud.toFixed(2)}</td></tr>` +
+    `<td style="padding:10px;text-align:right;color:#2d1f8f;font-weight:700">${fmtAud(o.totalAud)}</td></tr>` +
     `</tbody></table>`
   );
 }
@@ -153,12 +153,12 @@ function cryptoBlock(o: Order, btc?: CryptoOptions, usdt?: CryptoOptions): strin
   // Empilés de haut en bas + espacement de 10px : BTC puis USDT, chacun pleine largeur.
   const boxes =
     (b && u ? b + `<div style="height:10px"></div>` + u : b || u);
-  const discounted = (o.totalAud * 0.85).toFixed(2);
-  const saved = (o.totalAud * 0.15).toFixed(2);
+  const discounted = fmtAud(Math.ceil(o.totalAud * 0.85));
+  const saved = fmtAud(o.totalAud - Math.ceil(o.totalAud * 0.85));
   return (
     `<div style="background:#1a2b1a;border:2px solid #3a7d44;padding:14px 16px;margin:14px 0">` +
     `<p style="color:#7ddc8f;font-weight:800;font-size:15px;margin:0 0 4px">③ Crypto — save 15% 🪙</p>` +
-    `<p style="color:#cde9d2;font-size:13px;margin:0 0 10px">Pay <b>A$${discounted}</b> instead of A$${o.totalAud.toFixed(2)} — you save A$${saved}.</p>` +
+    `<p style="color:#cde9d2;font-size:13px;margin:0 0 10px">Pay <b>${discounted}</b> instead of ${fmtAud(o.totalAud)} — you save ${saved}.</p>` +
     boxes +
     `<p style="color:#f2c94c;font-size:12px;margin:12px 0 0">⚠️ Crypto payments are handled in two separate networks. Send on the <b>correct network only</b> — funds sent on the wrong network can be lost.</p>` +
     `</div>`
@@ -174,11 +174,11 @@ function plainPayment(o: Order, pay: PaymentOptions): string {
   const L: string[] = [];
   L.push(`Pay for your order ${o.id}`);
   L.push("");
-  L.push(`Hi${o.customerName ? " " + o.customerName.split(" ")[0] : ""} — your order is reserved. Send A$${o.totalAud.toFixed(2)} with any of the options below — whichever suits you best.`);
+  L.push(`Hi${o.customerName ? " " + o.customerName.split(" ")[0] : ""} — your order is reserved. Send ${fmtAud(o.totalAud)} with any of the options below — whichever suits you best.`);
   L.push("Status: payment pending");
   L.push("");
   o.items.forEach((it) => L.push(`${it.name} ×${it.quantity} — A$${(it.priceAud * it.quantity).toFixed(2)}`));
-  L.push(`TOTAL: A$${o.totalAud.toFixed(2)}`);
+  L.push(`TOTAL: ${fmtAud(o.totalAud)}`);
   L.push("");
   L.push("⏰ YOUR ITEMS ARE RESERVED FOR 30 MINUTES");
   L.push("Stock is limited and these products are held for you for 30 minutes.");
@@ -209,7 +209,7 @@ function plainPayment(o: Order, pay: PaymentOptions): string {
   }
   if (pay.btc || pay.usdt) {
     L.push("③ Crypto — save 15%");
-    L.push(`Pay A$${(o.totalAud * 0.85).toFixed(2)} instead of A$${o.totalAud.toFixed(2)} — you save A$${(o.totalAud * 0.15).toFixed(2)}.`);
+    L.push(`Pay ${fmtAud(Math.ceil(o.totalAud * 0.85))} instead of ${fmtAud(o.totalAud)} — you save ${fmtAud(o.totalAud - Math.ceil(o.totalAud * 0.85))}.`);
     if (pay.btc) {
       L.push("Bitcoin (BTC)");
       if (pay.btc.address) L.push(`Address: ${pay.btc.address}`);
@@ -251,7 +251,7 @@ export function emailPaymentInstructions(
 
   const body =
     `<p style="color:#222;font-size:16px;font-weight:700;margin:0 0 4px">Pay for your order ${o.id}</p>` +
-    `<p style="color:#666;font-size:14px;margin:0 0 6px">Hi${o.customerName ? " " + escapeHtml(o.customerName.split(" ")[0]) : ""} — your order is reserved. Send <b>A$${o.totalAud.toFixed(2)}</b> with any of the options below — whichever suits you best.</p>` +
+    `<p style="color:#666;font-size:14px;margin:0 0 6px">Hi${o.customerName ? " " + escapeHtml(o.customerName.split(" ")[0]) : ""} — your order is reserved. Send <b>${fmtAud(o.totalAud)}</b> with any of the options below — whichever suits you best.</p>` +
     `<p style="color:#666;font-size:13px;margin:0 0 10px">Status: <b>payment pending</b></p>` +
     orderRecapTable(o) +
     // ⚠️ Notes CRITIQUES placées JUSTE AVANT les méthodes : le client doit les voir.
