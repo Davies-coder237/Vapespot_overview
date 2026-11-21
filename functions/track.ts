@@ -73,6 +73,7 @@ function statusTimeline(o: Order): string {
   if (idx === 0) note = `<p class="tl-note">Payment pending — your items are reserved for you.</p>`;
   if (o.status === "delivery_failed") note = `<p class="tl-note err">We couldn't deliver — a courier will retry shortly, or we'll be in touch.</p>`;
   if (o.status === "expired") note = `<p class="tl-note err">This order expired before payment. Contact us to re-open it.</p>`;
+  if (o.status === "cancelled") note = `<p class="tl-note err">This order was cancelled. If you already paid, we're refunding you — contact us if you have any question.</p>`;
   return `<div class="timeline">${cells}</div>${note}`;
 }
 

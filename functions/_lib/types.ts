@@ -13,6 +13,7 @@ export const STATUS = {
   delivered: "delivered",
   deliveryFailed: "delivery_failed",
   expired: "expired",
+  cancelled: "cancelled",
 } as const;
 
 export type DeliveryMethod = "courier" | "australia_post";

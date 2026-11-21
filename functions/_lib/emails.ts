@@ -389,3 +389,37 @@ export function emailDelivered(o: Order): { subject: string; html: string; text:
     text,
   };
 }
+
+/** ⑥ Annulation — le client n'était PAS partie en livraison. Filtrée par
+ *  l'admin (bouton Cancel). Si la commande avait été PAYÉE (statut ≥ paid), on
+ *  le rappelle dans le corps (remboursement à organiser — l'admin décide du
+ *  canal). Jamais de $300 ici non plus : la caution se gère sur le terrain. */
+export function emailCancelled(o: Order): { subject: string; html: string; text: string } {
+  const paid = o.status === "paid" || o.status === "at_warehouse" || o.status === "in_transit" || o.status === "delivery_failed";
+  const refundLine = paid
+    ? card("💳 Your payment", [
+        `We'll arrange a <b>refund of ${fmtAud(o.totalAud)}</b> back to the account you paid from. If anything is unclear, just reply to this email and we'll confirm it's on its way.`,
+      ])
+    : "";
+  const body =
+    `<p style="color:#8a2be2;font-size:16px;font-weight:800;margin:0 0 4px">Your order ${o.id} was cancelled</p>` +
+    `<p style="color:#666;font-size:14px;margin:0 0 8px">Hi${o.customerName ? " " + escapeHtml(o.customerName.split(" ")[0]) : ""}, your order <b>${o.id}</b> has been cancelled.</p>` +
+    (o.paymentInstructionsSentAt
+      ? `<p style="color:#666;font-size:14px;margin:0 0 8px">No payment is needed — if you already sent one, it will be returned.</p>`
+      : `<p style="color:#666;font-size:14px;margin:0 0 8px">No payment was made, so there's nothing to refund.</p>`) +
+    refundLine +
+    `<p style="color:#666;font-size:14px;margin:0">If anything looks wrong, reply to this email or message ${tg("t.me/vapespot_store")} — a real person will sort it out.</p>`;
+  const text =
+    `Your order ${o.id} was cancelled\n\n` +
+    `Hi${o.customerName ? " " + o.customerName.split(" ")[0] : ""}, your order ${o.id} has been cancelled.\n` +
+    (o.paymentInstructionsSentAt
+      ? `No payment is needed — if you already sent one, it will be returned.\n`
+      : `No payment was made, so there's nothing to refund.\n`) +
+    (paid ? `We'll arrange a refund of ${fmtAud(o.totalAud)} back to the account you paid from.\n\n` : `\n`) +
+    `If anything looks wrong, reply to this email or message ${SHOP_TG} at https://t.me/vapespot_store — a real person will sort it out.`;
+  return {
+    subject: `Your order ${o.id} was cancelled — VapeSpot`,
+    html: shell(o, body),
+    text,
+  };
+}

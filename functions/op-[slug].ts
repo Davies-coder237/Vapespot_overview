@@ -13,7 +13,7 @@ import {
   csrfToken, csrfValid, adminError,
 } from "./_lib/auth";
 import { getOrder, listOrders, putOrder, isExpiredOrder } from "./_lib/orders";
-import { emailPaymentInstructions, emailCongrats, emailDeparture, emailDelivered, type PaymentOptions, type PayIdOptions, type BankOptions, type CryptoOptions } from "./_lib/emails";
+import { emailPaymentInstructions, emailCongrats, emailDeparture, emailDelivered, emailCancelled, type PaymentOptions, type PayIdOptions, type BankOptions, type CryptoOptions } from "./_lib/emails";
 import { sendEmail } from "./_lib/brevo";
 import { sendTelegram } from "./_lib/telegram";
 import type { Order } from "./_lib/types";
@@ -49,11 +49,12 @@ function pageShell(title: string, body: string, csrf: string): string {
     `header .sub{color:var(--mut);font-size:12px;margin-top:3px}` +
     `.btn{background:var(--acc);color:#0b1020;border:0;border-radius:8px;padding:9px 15px;font-size:13px;font-weight:700;cursor:pointer}` +
     `.btn.ghost{background:transparent;color:var(--mut);border:1px solid var(--edge)}` +
-    `.btn.green{background:var(--ok);color:#06230f}.btn:disabled{opacity:.45;cursor:not-allowed}` +
+    `.btn.green{background:var(--ok);color:#06230f}.btn.danger{background:#3b1414;color:#ffb3b3;border:1px solid #6e2a2a}.btn:disabled{opacity:.45;cursor:not-allowed}` +
     `.card{background:var(--card);border:1px solid var(--edge);border-radius:12px;padding:16px 18px;margin-bottom:14px}` +
     `.row{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}` +
     `.mut{color:var(--mut);font-size:13px}.pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:11px;font-weight:700}` +
     `.pill.pending{background:#3a2f14;color:var(--warn)}.pill.paid{background:#12301c;color:var(--ok)}` +
+    `.pill.cancelled{background:#3b1414;color:#ffb3b3}` +
     `.pill.other{background:#232c3f;color:var(--mut)}` +
     `label{display:block;font-size:12px;font-weight:700;color:var(--mut);margin:12px 0 5px;text-transform:uppercase;letter-spacing:.4px}` +
     `input,select,textarea{width:100%;background:#0e1424;border:1px solid var(--edge);border-radius:8px;color:var(--txt);padding:10px 12px;font-size:14px}` +
@@ -72,6 +73,10 @@ function pageShell(title: string, body: string, csrf: string): string {
     `.mgroup+.mgroup{margin-top:10px}` +
     `.mhead{font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--acc);margin-bottom:2px}` +
     `.f2{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}` +
+    `.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;align-items:center}` +
+    `.filters .fbtn{background:#171e30;border:1px solid var(--edge);color:var(--mut);border-radius:99px;padding:6px 14px;font-size:12px;font-weight:700;cursor:pointer}` +
+    `.filters .fbtn.on{background:var(--acc);color:#0b1020;border-color:var(--acc)}` +
+    `.pager{display:flex;gap:10px;align-items:center;justify-content:center;margin-top:18px;color:var(--mut);font-size:13px}` +
     `@media(max-width:480px){.f2{grid-template-columns:1fr}}` +
     `@media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}` +
     `</style></head><body><div class="wrap">${body}</div>` +
@@ -113,6 +118,7 @@ function orderCard(o: Order, csrf: string): string {
   const statusPill =
     o.status === "pending_payment" ? `<span class="pill pending">${expired ? "EXPIRED" : "PENDING PAYMENT"}</span>`
     : o.status === "paid" ? `<span class="pill paid">PAID</span>`
+    : o.status === "cancelled" ? `<span class="pill cancelled">CANCELLED</span>`
     : `<span class="pill other">${escapeHtml(o.status.replace(/_/g, " ").toUpperCase())}</span>`;
   const itemsTbl =
     `<table class="mini"><tr><th>Product</th><th style="text-align:right">Qty</th><th style="text-align:right">Total</th></tr>` +
@@ -191,14 +197,22 @@ function orderCard(o: Order, csrf: string): string {
  *   in_transit     → "Delivered" (⑤) · "Delivery failed"
  *   delivery_failed→ "Retry (back in transit)"
  *   expired        → rien (bloqué)
+ * Tous les statuts actifs (sauf delivered/expired/cancelled) proposent un
+ * bouton discret "✕ Cancel order" (email ⑥) — dernière ligne de secours si la
+ * commande ne doit plus partir. cancelled = bouton de réouverture (retour au
+ * statut pending_payment, sans email — anti-fausse-manipulation).
  */
 function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
+  const cancelRow =
+    `<div class="row" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--edge)"><button class="btn danger" type="button" onclick="cancelOrder(this)">✕ Cancel order</button>` +
+    `<span class="mut">Stops the order and emails the customer (⑥).</span></div>`;
+
   if (o.status === "pending_payment") {
     return (
       `<div class="row" style="margin-top:12px">` +
       `<button class="btn green" type="button" onclick="confirmPay(this)">✓ Payment confirmed — send email ③</button>` +
       `<span class="mut">Set order to PAID and send the tracking link (email ③).</span>` +
-      `</div>`
+      `</div>` + cancelRow
     );
   }
   if (o.status === "paid") {
@@ -206,7 +220,7 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
       `<div class="row" style="margin-top:12px">` +
       `<button class="btn" type="button" onclick="markInWarehouse(this)">📦 In our warehouse</button>` +
       `<span class="mut">Move the order to "In our warehouse" — no email goes out (client sees the timeline move).</span>` +
-      `</div>`
+      `</div>` + cancelRow
     );
   }
   if (o.status === "at_warehouse") {
@@ -243,7 +257,7 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
       `<button class="btn ghost" type="button" onclick="previewDeparture(this)">Preview</button>` +
       `<button class="btn green" type="button" onclick="sendDeparture(this)">Send email ④ + mark "On the way"</button>` +
       `</div>` +
-      `</div></details>`
+      `</div></details>` + cancelRow
     );
   }
   if (o.status === "in_transit") {
@@ -251,7 +265,7 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
       `<div class="row" style="margin-top:12px">` +
       `<button class="btn green" type="button" onclick="markDelivered(this)">✅ Delivered — send email ⑤</button>` +
       `<button class="btn ghost" type="button" onclick="markFailed(this)">⚠️ Delivery failed</button>` +
-      `</div>`
+      `</div>` + cancelRow
     );
   }
   if (o.status === "delivery_failed") {
@@ -259,6 +273,14 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
       `<div class="row" style="margin-top:12px">` +
       `<button class="btn" type="button" onclick="retryDelivery(this)">↩️ Retry — back in transit</button>` +
       `<span class="mut">The customer keeps their timeline; a retry sends them back to "On the way".</span>` +
+      `</div>` + cancelRow
+    );
+  }
+  if (o.status === "cancelled") {
+    return (
+      `<div class="row" style="margin-top:12px">` +
+      `<button class="btn ghost" type="button" onclick="reopenOrder(this)">↩️ Re-open (back to pending)</button>` +
+      `<span class="mut">Restore the order to "Payment pending" — no email goes out (in case of a mistaken cancel).</span>` +
       `</div>`
     );
   }
@@ -272,17 +294,61 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
   return ``; // expired / autres
 }
 
-function adminPage(orders: Order[], csrf: string): string {
-  const cards = orders.length
-    ? orders.map((o) => orderCard(o, csrf)).join("")
-    : `<div class="empty">No orders yet — they appear here as customers place them.</div>`;
+/** Filtres de statut (barre en haut de l'admin) — labels lisibles pour l'admin. */
+const STATUS_FILTERS: Array<{ value: string; label: string }> = [
+  { value: "", label: "All" },
+  { value: "pending_payment", label: "Pending payment" },
+  { value: "paid", label: "Paid" },
+  { value: "at_warehouse", label: "In warehouse" },
+  { value: "in_transit", label: "On the way" },
+  { value: "delivery_failed", label: "Delivery failed" },
+  { value: "delivered", label: "Delivered" },
+  { value: "cancelled", label: "Cancelled" },
+];
+
+const PAGE_SIZE = 20;
+
+function filterBar(active: string): string {
+  const chip = (f: { value: string; label: string }) =>
+    `<a class="fbtn${f.value === active ? " on" : ""}" href="?status=${encodeURIComponent(f.value)}">${escapeHtml(f.label)}</a>`;
+  return `<div class="filters">${STATUS_FILTERS.map(chip).join("")}</div>`;
+}
+
+function pager(page: number, pages: number, status: string): string {
+  if (pages <= 1) return "";
+  const link = (n: number, label: string, disabled: boolean) =>
+    disabled
+      ? `<span style="opacity:.4">${label}</span>`
+      : `<a class="fbtn" href="?status=${encodeURIComponent(status)}&page=${n}" style="text-decoration:none">${label}</a>`;
+  return (
+    `<div class="pager">` +
+    link(page - 1, "‹ Prev", page <= 1) +
+    `<span>Page ${page} / ${pages}</span>` +
+    link(page + 1, "Next ›", page >= pages) +
+    `</div>`
+  );
+}
+
+function adminPage(orders: Order[], csrf: string, status: string, page: number): string {
+  const filtered =
+    status === "" ? orders : orders.filter((o) => o.status === status);
+  const total = filtered.length;
+  const pages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  const cur = Math.min(Math.max(1, page), pages);
+  const slice = filtered.slice((cur - 1) * PAGE_SIZE, cur * PAGE_SIZE);
+  const cards = slice.length
+    ? slice.map((o) => orderCard(o, csrf)).join("")
+    : `<div class="empty">No orders in this view yet.</div>`;
+  const sub = status ? `${total} × ${status.replace(/_/g, " ")}` : `${orders.length} orders`;
   return (
     pageShell(
       "VapeSpot Admin",
-      `<header><div><h1>VapeSpot Admin</h1><div class="sub">${orders.length} order${orders.length === 1 ? "" : "s"} · secret URL · noindex</div></div>` +
+      `<header><div><h1>VapeSpot Admin</h1><div class="sub">${sub} · secret URL · noindex · ${PAGE_SIZE} per page</div></div>` +
         `<button class="btn ghost" onclick="logout()">Log out</button></header>` +
         `<div class="banner" id="banner"></div>` +
+        filterBar(status) +
         `<div id="cards">${cards}</div>` +
+        pager(cur, pages, status) +
         `<script>` +
         `const bell=ok=>{const n=document.getElementById('banner');n.className='banner '+(ok?'ok':'err');setTimeout(()=>n.className='banner',6000)};` +
         `const orderId=el=>{for(let n=el;n;n=n.parentElement)if(n.dataset&&n.dataset.id)return n.dataset.id};` +
@@ -372,6 +438,22 @@ function adminPage(orders: Order[], csrf: string): string {
         `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
         `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
         `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `async function cancelOrder(btn){` +
+        `if(!confirm('Cancel this order and email the customer (⑥)? This cannot be undone from the client side.'))return;` +
+        `const body={action:'cancel-order',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
+        `const old=btn.textContent;btn.textContent='Cancelling…';btn.disabled=true;` +
+        `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
+        `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `async function reopenOrder(btn){` +
+        `if(!confirm('Re-open this cancelled order (back to "Payment pending")? No email goes out.'))return;` +
+        `const body={action:'reopen-order',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
+        `const old=btn.textContent;btn.textContent='Re-opening…';btn.disabled=true;` +
+        `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
+        `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
         `</script>`,
       csrf
     ) + ``
@@ -390,7 +472,11 @@ export async function onRequestGet(context: any): Promise<Response> {
 
   const csrf = cookie ? await csrfToken(env.COOKIE_SECRET, cookie) : "";
   const orders = (await listOrders(env)).filter((o) => o.status !== "expired");
-  return new Response(adminPage(orders, csrf), {
+  const url = new URL(context.request.url);
+  const status = String(url.searchParams.get("status") ?? "");
+  const statusOk = STATUS_FILTERS.some((f) => f.value === status);
+  const page = Math.max(1, parseInt(String(url.searchParams.get("page") ?? "1"), 10) || 1);
+  return new Response(adminPage(orders, csrf, statusOk ? status : "", page), {
     headers: { "content-type": "text/html; charset=utf-8", "x-robots-tag": "noindex" },
   });
 }
@@ -588,6 +674,39 @@ export async function onRequestPost(context: any): Promise<Response> {
     await putOrder(env, order);
     await sendTelegram(env, `↩️ ${order.id} RETRY — de nouveau EN ROUTE (${fmtAud(order.totalAud)})`);
     return json({ ok: true, msg: `${order.id} sent back to "On the way" for a courier retry.` });
+  }
+
+  // ── Étape 4f : ANNULATION (email ⑥) — tous les statuts actifs sauf delivered/expired ──
+  if (action === "cancel-order") {
+    if (order.status === "delivered" || order.status === "expired" || order.status === "cancelled") {
+      return json({ ok: false, error: "This order cannot be cancelled (already delivered, expired or cancelled)." }, 400);
+    }
+    const mail = emailCancelled(order);
+    const sent = await sendEmail(env, { to: order.email, subject: mail.subject, html: mail.html, text: mail.text, tag: "cancelled" });
+    if (!sent.ok) {
+      return json({ ok: false, error: `Email ⑥ failed (${sent.status}) — check Brevo`, ...(sent.error ? { detail: sent.error } : {}) }, 502);
+    }
+    const nowIso = new Date().toISOString();
+    order.status = "cancelled";
+    order.updatedAt = nowIso;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] CANCELLED by admin — email ⑥ sent`;
+    await putOrder(env, order);
+    await sendTelegram(env, `✕ ${order.id} ANNULÉE (${fmtAud(order.totalAud)})\n📧 ${order.email}\n📨 Email ⑥ (annulation) envoyé`);
+    return json({ ok: true, msg: `Email ⑥ sent to ${order.email} (${order.id}) — order CANCELLED.` });
+  }
+
+  // ── Étape 4g : réouverture (cancelled → pending_payment) — anti-fausse-manipulation, sans email ──
+  if (action === "reopen-order") {
+    if (order.status !== "cancelled") {
+      return json({ ok: false, error: "Only a cancelled order can be re-opened." }, 400);
+    }
+    const nowIso = new Date().toISOString();
+    order.status = "pending_payment";
+    order.updatedAt = nowIso;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] re-opened by admin — back to payment pending (no email sent)`;
+    await putOrder(env, order);
+    await sendTelegram(env, `↩️ ${order.id} RÉOUVERTE (retour paiement en attente)`);
+    return json({ ok: true, msg: `${order.id} re-opened — back to "Payment pending".` });
   }
 
   // ── Étape 2 : instructions de paiement (email ②) — uniquement pending_payment ──
