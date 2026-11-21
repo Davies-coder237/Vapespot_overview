@@ -1,32 +1,24 @@
 // Étape 3 — page publique /track : suivi de commande (noindex).
-// Flux validé 20/11 :
-//   1. Le client arrive soit depuis le LIEN PRÉ-REMPLI de l'email ③
-//      (`/track?n=VS-XXXX&e=...`) → résultat affiché DIRECTEMENT, soit via le
-//      formulaire n° + email → lookup POST.
-//   2. Anti-enumération STRICTE : le couple (n°, email) doit correspondre à la
+// Flux validé 20/11, CLARIFIÉ 21/11 (retour utilisatrice) :
+//   1. L'email ③ félicitations envoie un lien de suivi GÉNÉRIQUE : `/track`,
+//      identique pour tous les clients. Aucun pré-remplissage n°/email dans
+//      l'URL (pas de ?n=…&e=…).
+//   2. Sur /track, le client SAISIT son n° de commande + son email → lookup POST.
+//   3. Anti-enumération STRICTE : le couple (n°, email) doit correspondre à la
 //      MÊME commande, sinon message GÉNÉRIQUE « No order matches this order
 //      number and email address. » (jamais de distinction n° invalide / email
 //      invalide). RATE LIMIT : 5 lookups ratés / 15 min / IP (KV).
-//   3. En cas de correspondance : n° · date · produits · quantités · total ·
+//   4. En cas de correspondance : n° · date · produits · quantités · total ·
 //      mode de paiement · adresse · frise de statut (Order received → Payment
-//      confirmed → In our warehouse → On the way → Delivered) · carte Leaflet
-//      (entrepôt choisi + adresse + ligne de trajet + libellé distance/temps).
-//      ⚠️ Zones très éloignées (≈ > 5 h de coursier) → label « Standard delivery:
-//      1–3 business days via Australia Post » SANS ligne/temps de trajet.
-//   4. AUCUNE donnée sensible exposée : pas d'email, pas de notes, pas de $300.
-//      Le $300 n'apparaît JAMAIS ici (règle absolue — seul l'email ④ le montre).
+//      confirmed → In our warehouse → On the way → Delivered).
+//      ⚠️ PAS de carte Leaflet dans la page de suivi (retirée 21/11).
+//   5. AUCUNE donnée sensible exposée : pas d'email, pas de notes, pas de $300.
 import { getOrder } from "./_lib/orders";
-import { warehouseById, haversineKm, ALL_WAREHOUSES, hubLabel } from "./_lib/geo";
 import { escapeHtml, fmtAud } from "./_lib/html";
 import { orderStatusIndex } from "./_lib/trackStatus";
 import type { Order } from "./_lib/types";
 
 const PAGE_TITLE = "Track your order — VapeSpot";
-
-// Une ligne de trajet n'a de sens que si le coursier est raisonnable :
-// au-delà de ~5 h (≈ 400 km), on promet Australia Post 1–3 j sans route/temps.
-const COURIER_MAX_KM = 400;
-const EST_KMH = 60; // vitesse estimée coursier pour le libellé approximatif
 
 const TRACK_RATE_LIMIT = 5;        // lookups ratés autorisés
 const TRACK_RATE_WINDOW = 15 * 60; // avant blocage temporaire (s)
@@ -64,63 +56,6 @@ function statusTimeline(o: Order): string {
   return `<div class="timeline">${cells}</div>${note}`;
 }
 
-/** Estimation du trajet (km + durée) ou null si hors zone coursier. */
-function routeInfo(o: Order): { km: number; duration: string } | null {
-  if (!o.lat || !o.lng) return null;
-  const w = warehouseById(o.warehouseId);
-  if (!w) return null;
-  const km = haversineKm(o.lat, o.lng, w.lat, w.lng);
-  if (km > COURIER_MAX_KM) return null;
-  const mins = Math.round((km / EST_KMH) * 60);
-  const h = Math.floor(mins / 60);
-  const m = mins % 60;
-  const dur = h > 0 ? `${h} h ${m ? m + " min" : ""}` : `${m || 1} min`;
-  return { km: Math.round(km), duration: dur };
-}
-
-/** HTML de la carte — Leaflet 1.9.4 (cdnjs) + tuiles OSM gratuites, sans clé API. */
-function mapHTML(o: Order): string {
-  const w = warehouseById(o.warehouseId);
-  const route = routeInfo(o);
-  const okCoords = o.lat && o.lng && w;
-  // Entrepôts actifs → petits points de contexte sur toute l'Australie.
-  const points = ALL_WAREHOUSES.filter((x) => x.active).map((x) => ({
-    lat: x.lat,
-    lng: x.lng,
-    label: hubLabel(x),
-  }));
-  const deliveryLabel = "Your delivery address";
-  const hub = w ? hubLabel(w) : "VapeSpot Hub";
-  const data = {
-    delivery: okCoords ? { lat: o.lat, lng: o.lng, label: deliveryLabel } : null,
-    hub: okCoords ? { lat: w!.lat, lng: w!.lng, label: hub } : null,
-    points,
-    hasRoute: !!route,
-    routeKm: route ? route.km : null,
-  };
-
-  let banner;
-  if (route) {
-    banner =
-      `<div class="route-info"><b>${hub}</b> → your address</div>` +
-      `<div class="route-info mut">≈ ${route.km} km · ~${route.duration} by courier</div>`;
-  } else {
-    banner =
-      w
-        ? `<div class="route-info">Closest hub: ${escapeHtml(hub)}</div>` +
-          `<div class="route-info mut">Standard delivery: 1–3 business days via Australia Post</div>`
-        : `<div class="route-info mut">Standard delivery: 1–3 business days via Australia Post</div>`;
-  }
-
-  return (
-    `<div class="map-wrap">${banner}` +
-    `<div id="map"></div>` +
-    `<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>` +
-    `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">` +
-    `<script>window.__mapData=${JSON.stringify(data)};</script></div>`
-  );
-}
-
 /** Rendu complet de la page de suivi (formulaire vide / message générique / résultat). */
 function trackPage(
   body: string,
@@ -151,8 +86,6 @@ function trackPage(
     `.dot{width:12px;height:12px;border-radius:50%;background:#cfd6e4}` +
     `.step.done .dot{background:#2e7d32}.step.current .dot{background:#5b3df5;box-shadow:0 0 0 4px #e4e0fb}` +
     `.step.current{color:#2d1f8f;font-weight:700}` +
-    `.map-wrap{margin-top:16px}.route-info{font-size:14px;margin:6px 0}` +
-    `#map{height:340px;border-radius:10px;border:1px solid #e5e7eb}` +
     `a{color:#5b3df5;text-decoration:underline}` +
     `</style></head><body><div class="wrap">` +
     `<div class="card"><h1>Track your order</h1><p class="sub">VapeSpot — live delivery status</p></div>` +
@@ -177,7 +110,7 @@ function formHTML(prefill: { n?: string; e?: string }, genericError: boolean): s
   );
 }
 
-/** Page de résultat — commande complète + frise + carte. */
+/** Page de résultat — commande complète + frise (sans carte). */
 function resultHTML(o: Order): string {
   const date = new Date(o.createdAt).toLocaleString("en-AU", {
     day: "2-digit",
@@ -194,7 +127,6 @@ function resultHTML(o: Order): string {
         `<td>${fmtAud(it.priceAud * it.quantity)}</td></tr>`
     )
     .join("");
-  const mapHtml = mapHTML(o);
   return (
     `<div class="card">` +
     `<div style="display:flex;justify-content:space-between;align-items:center">` +
@@ -205,42 +137,15 @@ function resultHTML(o: Order): string {
     `<tbody>${rows}</tbody></table>` +
     `<p class="mut" style="margin:10px 0 0">Payment method: <b>${method}</b></p>` +
     statusTimeline(o) +
-    `<hr style="border:none;border-top:1px solid #eee;margin:16px 0">` +
-    mapHtml +
     `</div>` +
-    `<script>` +
-    `try{if(window.__mapData){` +
-    `const D=window.__mapData;` +
-    `if(D.delivery&&D.hub){` +
-    `const map=L.map('map').setView([(D.delivery.lat+D.hub.lat)/2,(D.delivery.lng+D.hub.lng)/2],9);` +
-    `L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);` +
-    `for(const p of D.points){L.circleMarker([p.lat,p.lng],{radius:3,color:'#a7b0c7',fillOpacity:0.5}).addTo(map)}` +
-    `const hubM=L.marker([D.hub.lat,D.hub.lng]).addTo(map).bindPopup(D.hub.label);` +
-    `const delM=L.marker([D.delivery.lat,D.delivery.lng]).addTo(map).bindPopup(D.delivery.label);` +
-    `if(D.hasRoute){L.polyline([[D.hub.lat,D.hub.lng],[D.delivery.lat,D.delivery.lng]],{color:'#5b3df5',weight:3,dashArray:'6 6'}).addTo(map);` +
-    `map.fitBounds([[D.hub.lat,D.hub.lng],[D.delivery.lat,D.delivery.lng]],{padding:[30,30]})}` +
-    `}}}` +
-    `catch(e){document.getElementById('map').innerHTML='<p class=mut>Map unavailable — try again later.</p>'}` +
-    `</script>`
+    `<p class="mut">Track another order — <a href="/track">back to the tracking form</a>.</p>`
   );
 }
 
 // ─────────────────────────── GET ───────────────────────────
-// GET /track : formulaire. Si le client vient du lien pré-rempli de l'email ③
-// (`?n=…&e=…`), on tente le lookup DIRECT et on affiche le résultat immédiatement.
+// GET /track : TOUJOURS le formulaire. Le lien de l'email ③ est générique
+// (https://vapespot.store/track) — le client saisit n° + email lui-même.
 export async function onRequestGet(context: any): Promise<Response> {
-  const { request, env } = context;
-  const url = new URL(request.url);
-  const n = url.searchParams.get("n") ?? "";
-  const e = url.searchParams.get("e") ?? "";
-
-  if (n && e) {
-    // Lookup direct depuis le lien de l'email ③ (respecte le même rate limit).
-    const [ok, order, blocked] = await lookupOrder(env, request, n, e);
-    if (blocked) return htmlResponse(formHTML({ n, e }, true));
-    if (ok && order) return htmlResponse(resultHTML(order));
-    return htmlResponse(formHTML({ n, e }, true));
-  }
   return htmlResponse(formHTML({}, false));
 }
 
