@@ -53,6 +53,13 @@ export async function getOrder(env: any, id: string): Promise<Order | null> {
   return (await env.VAPESPOT_ORDERS.get(orderKey(id), "json")) as Order | null;
 }
 
+/** Supprime définitivement une commande — action MANUELLE de l'admin uniquement
+ *  (bouton "Delete" dans la page admin). Aucun TTL, aucun compte à rebours :
+ *  l'admin décide quand une commande ne sert plus à rien. */
+export async function deleteOrder(env: any, id: string): Promise<void> {
+  await env.VAPESPOT_ORDERS.delete(orderKey(id));
+}
+
 /** Liste toutes les commandes (récentes d'abord). */
 export async function listOrders(env: any): Promise<Order[]> {
   const out: Order[] = [];

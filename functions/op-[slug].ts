@@ -12,7 +12,7 @@ import {
   adminCookieHeader, adminCookieSet,
   csrfToken, csrfValid, adminError,
 } from "./_lib/auth";
-import { getOrder, listOrders, putOrder, isExpiredOrder } from "./_lib/orders";
+import { getOrder, listOrders, putOrder, isExpiredOrder, deleteOrder } from "./_lib/orders";
 import { emailPaymentInstructions, emailCongrats, emailDeparture, emailDelivered, emailCancelled, type PaymentOptions, type PayIdOptions, type BankOptions, type CryptoOptions } from "./_lib/emails";
 import { sendEmail } from "./_lib/brevo";
 import { sendTelegram } from "./_lib/telegram";
@@ -49,7 +49,8 @@ function pageShell(title: string, body: string, csrf: string): string {
     `header .sub{color:var(--mut);font-size:12px;margin-top:3px}` +
     `.btn{background:var(--acc);color:#0b1020;border:0;border-radius:8px;padding:9px 15px;font-size:13px;font-weight:700;cursor:pointer}` +
     `.btn.ghost{background:transparent;color:var(--mut);border:1px solid var(--edge)}` +
-    `.btn.green{background:var(--ok);color:#06230f}.btn.danger{background:#3b1414;color:#ffb3b3;border:1px solid #6e2a2a}.btn:disabled{opacity:.45;cursor:not-allowed}` +
+    `.btn.green{background:var(--ok);color:#06230f}.btn.danger{background:#3b1414;color:#ffb3b3;border:1px solid #6e2a2a}` +
+    `.btn.kill{background:#2a0a0a;color:#ff6b6b;border:1px solid #8a2f2f}.btn.kill:hover{background:#4a1010}.btn:disabled{opacity:.45;cursor:not-allowed}` +
     `.card{background:var(--card);border:1px solid var(--edge);border-radius:12px;padding:16px 18px;margin-bottom:14px}` +
     `.row{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}` +
     `.mut{color:var(--mut);font-size:13px}.pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:11px;font-weight:700}` +
@@ -206,13 +207,28 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
   const cancelRow =
     `<div class="row" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--edge)"><button class="btn danger" type="button" onclick="cancelOrder(this)">✕ Cancel order</button>` +
     `<span class="mut">Stops the order and emails the customer (⑥).</span></div>`;
+  // Suppression DÉFINITIVE et manuelle — l'admin décide seule quand une commande
+  // ne sert plus (tests, junk). Aucun compte à rebours, aucun TTL : que son clic.
+  const deleteRow =
+    `<div class="row" style="margin-top:10px;padding-top:10px;border-top:1px dashed var(--edge)"><button class="btn kill" type="button" onclick="deleteOrder(this)">🗑 Delete permanently</button>` +
+    `<span class="mut">Removes the order from the store NOW — no email sent, cannot be undone. For test/junk orders only.</span></div>`;
 
   if (o.status === "pending_payment") {
+    if (!o.paymentInstructionsSentAt) {
+      // ② pas encore envoyé → le bouton ③ ne doit PAS exister : l'admin doit
+      // d'abord envoyer les instructions de paiement (sinon le clic avorte en 400).
+      return (
+        `<div class="row" style="margin-top:12px;background:#FEF0E4;border:1px solid #F5D9A8;border-radius:10px;padding:10px 12px">` +
+        `<b style="color:var(--err)">⛔ Not payable yet — send email ② first.</b>` +
+        `<div class="mut">Fill the form above and click <b>Send payment instructions</b>. The "Payment confirmed" button only appears once the customer has a payment window.</div>` +
+        `</div>` + cancelRow + deleteRow
+      );
+    }
     return (
       `<div class="row" style="margin-top:12px">` +
       `<button class="btn green" type="button" onclick="confirmPay(this)">✓ Payment confirmed — send email ③</button>` +
       `<span class="mut">Set order to PAID and send the tracking link (email ③).</span>` +
-      `</div>` + cancelRow
+      `</div>` + cancelRow + deleteRow
     );
   }
   if (o.status === "paid") {
@@ -220,7 +236,7 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
       `<div class="row" style="margin-top:12px">` +
       `<button class="btn" type="button" onclick="markInWarehouse(this)">📦 In our warehouse</button>` +
       `<span class="mut">Move the order to "In our warehouse" — no email goes out (client sees the timeline move).</span>` +
-      `</div>` + cancelRow
+      `</div>` + cancelRow + deleteRow
     );
   }
   if (o.status === "at_warehouse") {
@@ -257,7 +273,7 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
       `<button class="btn ghost" type="button" onclick="previewDeparture(this)">Preview</button>` +
       `<button class="btn green" type="button" onclick="sendDeparture(this)">Send email ④ + mark "On the way"</button>` +
       `</div>` +
-      `</div></details>` + cancelRow
+      `</div></details>` + cancelRow + deleteRow
     );
   }
   if (o.status === "in_transit") {
@@ -265,7 +281,7 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
       `<div class="row" style="margin-top:12px">` +
       `<button class="btn green" type="button" onclick="markDelivered(this)">✅ Delivered — send email ⑤</button>` +
       `<button class="btn ghost" type="button" onclick="markFailed(this)">⚠️ Delivery failed</button>` +
-      `</div>` + cancelRow
+      `</div>` + cancelRow + deleteRow
     );
   }
   if (o.status === "delivery_failed") {
@@ -273,7 +289,7 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
       `<div class="row" style="margin-top:12px">` +
       `<button class="btn" type="button" onclick="retryDelivery(this)">↩️ Retry — back in transit</button>` +
       `<span class="mut">The customer keeps their timeline; a retry sends them back to "On the way".</span>` +
-      `</div>` + cancelRow
+      `</div>` + cancelRow + deleteRow
     );
   }
   if (o.status === "cancelled") {
@@ -281,14 +297,14 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
       `<div class="row" style="margin-top:12px">` +
       `<button class="btn ghost" type="button" onclick="reopenOrder(this)">↩️ Re-open (back to pending)</button>` +
       `<span class="mut">Restore the order to "Payment pending" — no email goes out (in case of a mistaken cancel).</span>` +
-      `</div>`
+      `</div>` + deleteRow
     );
   }
   if (o.status === "delivered") {
     return (
       `<div class="row" style="margin-top:12px">` +
       `<span class="mut">🎉 Delivered — email ⑤ sent. Nothing to do.</span>` +
-      `</div>`
+      `</div>` + deleteRow
     );
   }
   return ``; // expired / autres
@@ -350,7 +366,7 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `<div id="cards">${cards}</div>` +
         pager(cur, pages, status) +
         `<script>` +
-        `const bell=ok=>{const n=document.getElementById('banner');n.className='banner '+(ok?'ok':'err');setTimeout(()=>n.className='banner',6000)};` +
+        `const bell=(ok,txt)=>{const n=document.getElementById('banner');n.className='banner '+(ok?'ok':'err');n.textContent=(txt!==undefined)?txt:''};` +
         `const orderId=el=>{for(let n=el;n;n=n.parentElement)if(n.dataset&&n.dataset.id)return n.dataset.id};` +
         `const readCsrf=el=>{const h=el.closest('.pay-form')&&el.closest('.pay-form').querySelector('input[name=_csrf]');return h?h.value:window.__csrf};` +
         `async function logout(){await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'logout'})});location.reload()}` +
@@ -370,10 +386,10 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `const old=btn.textContent;btn.textContent=preview?'Loading…':'Sending…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
         `if(preview){let ifr=f.querySelector('iframe.mail');if(!ifr){ifr=document.createElement('iframe');ifr.className='mail';det.appendChild(ifr)}ifr.srcdoc=typeof j.html==='string'?j.html:'⚠️ Preview error: '+(j.error||'no HTML returned');` +
-        `const sum=det.querySelector('summary');sum.textContent='✉️ Preview — '+body.orderId;bell(true)}` +
-        `else if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
-        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
-        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `const sum=det.querySelector('summary');sum.textContent='✉️ Preview — '+body.orderId;bell(true,'Preview ready — check the message below');btn.textContent=old;btn.disabled=false}` +
+        `else if(j.ok){bell(true,'✓ Done');setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
         `function previewPay(btn){serve(btn,true)}` +
         `function sendPay(btn){serve(btn,false)}` +
         `async function confirmPay(btn){` +
@@ -381,17 +397,17 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `const body={action:'mark-paid',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
         `const old=btn.textContent;btn.textContent='Sending…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
-        `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
-        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
-        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `if(j.ok){bell(true,'✓ Done');setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
         `async function markInWarehouse(btn){` +
         `if(!confirm('Move this order to "In our warehouse"? No email goes out.'))return;` +
         `const body={action:'mark-in-warehouse',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
         `const old=btn.textContent;btn.textContent='Updating…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
-        `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
-        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
-        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `if(j.ok){bell(true,'✓ Done');setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
         `const depFields=f=>{const o={};` +
         `const pn=gv(f,'dep_payid_name'),pid=gv(f,'dep_payid');if(pn||pid){const p={};if(pn)p.name=pn;if(pid)p.payid=pid;o.payid=p}` +
         `const bb=gv(f,'dep_bank_bsb'),ba=gv(f,'dep_bank_account'),bn=gv(f,'dep_bank_name');if(bb||ba||bn){const b={};if(bb)b.bsb=bb;if(ba)b.account=ba;if(bn)b.name=bn;o.bank=b}` +
@@ -408,10 +424,10 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `const old=btn.textContent;btn.textContent=preview?'Loading…':'Sending…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
         `if(preview){let ifr=f.querySelector('iframe.mail');if(!ifr){ifr=document.createElement('iframe');ifr.className='mail';det.appendChild(ifr)}ifr.srcdoc=typeof j.html==='string'?j.html:'⚠️ Preview error: '+(j.error||'no HTML returned');` +
-        `const sum=det.querySelector('summary');sum.textContent='✉️ Preview — '+body.orderId;bell(true);btn.textContent=old;btn.disabled=false}` +
-        `else if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
-        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
-        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `const sum=det.querySelector('summary');sum.textContent='✉️ Preview — '+body.orderId;bell(true,'Preview ready — check the message below');btn.textContent=old;btn.disabled=false}` +
+        `else if(j.ok){bell(true,'✓ Done');setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
         `function previewDeparture(btn){serveDeparture(btn,true)}` +
         `function sendDeparture(btn){serveDeparture(btn,false)}` +
         `async function markDelivered(btn){` +
@@ -419,41 +435,49 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `const body={action:'mark-delivered',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
         `const old=btn.textContent;btn.textContent='Sending…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
-        `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
-        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
-        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `if(j.ok){bell(true,'✓ Done');setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
         `async function markFailed(btn){` +
         `if(!confirm('Mark this delivery as FAILED? The courier will retry shortly (no email to client).'))return;` +
         `const body={action:'mark-failed',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
         `const old=btn.textContent;btn.textContent='Updating…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
-        `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
-        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
-        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `if(j.ok){bell(true,'✓ Done');setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
         `async function retryDelivery(btn){` +
         `if(!confirm('Send this failed delivery back to "On the way" for a courier retry?'))return;` +
         `const body={action:'retry-delivery',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
         `const old=btn.textContent;btn.textContent='Updating…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
-        `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
-        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
-        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `if(j.ok){bell(true,'✓ Done');setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
         `async function cancelOrder(btn){` +
         `if(!confirm('Cancel this order and email the customer (⑥)? This cannot be undone from the client side.'))return;` +
         `const body={action:'cancel-order',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
         `const old=btn.textContent;btn.textContent='Cancelling…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
-        `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
-        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
-        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `if(j.ok){bell(true,'✓ Done');setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
         `async function reopenOrder(btn){` +
         `if(!confirm('Re-open this cancelled order (back to "Payment pending")? No email goes out.'))return;` +
         `const body={action:'reopen-order',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
         `const old=btn.textContent;btn.textContent='Re-opening…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
-        `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
-        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
-        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `if(j.ok){bell(true,'✓ Done');setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
+        `async function deleteOrder(btn){` +
+        `if(!confirm('Permanently DELETE this order from the store? There is NO undo and NO email is sent to the customer. Only for test/junk orders that must disappear. Continue?'))return;` +
+        `const body={action:'delete-order',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
+        `const old=btn.textContent;btn.textContent='Deleting…';btn.disabled=true;` +
+        `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
+        `if(j.ok){bell(true,'✓ '+body.orderId+' permanently deleted');setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
         `</script>`,
       csrf
     ) + ``
@@ -707,6 +731,17 @@ export async function onRequestPost(context: any): Promise<Response> {
     await putOrder(env, order);
     await sendTelegram(env, `↩️ ${order.id} RÉOUVERTE (retour paiement en attente)`);
     return json({ ok: true, msg: `${order.id} re-opened — back to "Payment pending".` });
+  }
+
+  // ── Suppression DÉFINITIVE (bouton "Delete permanently" de l'admin) ──
+  // Irréversible, AUCUN email : l'admin supprime MANUELLEMENT quand une commande
+  // ne sert plus (test, junk). Pas de TTL, pas de compte à rebours — que son clic.
+  // Aucune restriction de statut : l'admin peut nettoyer n'importe quelle commande.
+  if (action === "delete-order") {
+    const id = order.id;
+    await deleteOrder(env, id);
+    await sendTelegram(env, `🗑️ ${id} SUPPRIMÉE DÉFINITIVEMENT (action manuelle admin)`);
+    return json({ ok: true, msg: `${id} permanently deleted from the store.` });
   }
 
   // ── Étape 2 : instructions de paiement (email ②) — uniquement pending_payment ──

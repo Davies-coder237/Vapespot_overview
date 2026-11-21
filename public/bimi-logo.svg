@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- VapeSpot V-mark — couleur de marque violette #7C3AED, fond transparent
+       (exigence BIMI : SVG Tiny PS, aucune image raster, aucun filtre). -->
+  <path d="M44 44 L100 150 L156 44"
+        fill="none" stroke="#7C3AED" stroke-width="36"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

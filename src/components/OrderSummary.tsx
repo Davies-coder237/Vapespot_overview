@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { toast } from "sonner";
-import { Send, ShieldAlert, Wallet, Landmark, Lock, Timer, Zap, Truck, MapPin, Bitcoin, Gift } from "lucide-react";
+import { Send, ShieldAlert, Wallet, Landmark, Lock, Timer, Zap, Truck, MapPin, Bitcoin, Gift, Mail } from "lucide-react";
 import { findProduct, formatPrice, onImageError, productCard } from "@/lib/data";
 import { captureClickId, getRecentOrder, saveLastOrder, useMyList } from "@/lib/storage";
 import { trackPopcashConversion } from "@/lib/conversion";
@@ -92,20 +92,41 @@ export function OrderSummary() {
 
   if (placedOrder) {
     return (
-      <div className="px-4 py-16 text-center space-y-4">
-        <p className="text-[15px] font-bold text-black">Order {placedOrder} placed 🎉</p>
-        <p className="text-[13px] text-[#6E6E73]">
-          Check your email — your confirmation and payment instructions are on their way.
-        </p>
-        <p className="text-[12px] text-[#6E6E73]">
-          Your cart is still kept — you can adjust it, but make sure not to place a double order.
-        </p>
-        <Link
-          to="/"
-          className="inline-flex items-center justify-center bg-black text-white rounded-none px-5 py-3 font-semibold"
+      <div className="px-4 py-12 md:py-16 text-center">
+        <div
+          className="max-w-[560px] mx-auto bg-[#F0EEFF] border-[3px] border-[#7C3AED] rounded-2xl px-5 py-8 md:px-8 md:py-10 space-y-5"
         >
-          Back to shop
-        </Link>
+          <p className="text-2xl md:text-3xl font-extrabold text-[#7C3AED]">
+            Order {placedOrder} placed 🎉
+          </p>
+          <div className="inline-flex items-center gap-2 text-white bg-[#7C3AED] rounded-xl px-4 py-2.5 text-sm md:text-base font-bold">
+            <Mail className="h-5 w-5" />
+            CHECK YOUR EMAIL NOW
+          </div>
+          <p className="text-lg md:text-xl font-bold text-[#0A0A0A] leading-snug">
+            Your confirmation and <span className="text-[#7C3AED]">payment instructions</span> are on
+            their way to <span className="font-extrabold underline decoration-[#7C3AED]">{email}</span>.
+          </p>
+          <p className="text-[15px] md:text-[16px] text-[#4A4458] leading-snug">
+            Your order is reserved but not paid yet. Open our email and follow the
+            payment steps — your order is only processed once payment is confirmed.
+          </p>
+          <div className="border-t-2 border-[#DDD6FF] pt-4 text-[14px] md:text-[15px] text-[#6E6E73] leading-snug">
+            <span className="font-bold text-[#0A0A0A]">Your cart is still kept</span> — you can adjust
+            it, but make sure not to place a double order.
+          </div>
+        </div>
+        <div className="mt-6">
+          <Link
+            to="/"
+            className="inline-flex items-center justify-center bg-black text-white rounded-xl px-6 py-4 text-[17px] font-bold hover:bg-[#1a1a1a] transition-colors"
+          >
+            Back to shop
+          </Link>
+          <p className="text-sm text-[#6E6E73] mt-3">
+            Did the email take more than a couple of minutes? Check your spam folder.
+          </p>
+        </div>
       </div>
     );
   }
