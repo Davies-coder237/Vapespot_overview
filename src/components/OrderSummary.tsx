@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { toast } from "sonner";
 import { Send, ShieldAlert, Wallet, Landmark, Lock, Timer, Zap, Truck, MapPin, Bitcoin, Gift } from "lucide-react";
 import { findProduct, formatPrice, onImageError, productCard } from "@/lib/data";
-import { captureClickId, useMyList } from "@/lib/storage";
+import { captureClickId, getRecentOrder, saveLastOrder, useMyList } from "@/lib/storage";
 import { trackPopcashConversion } from "@/lib/conversion";
 import type { Product } from "@/lib/types";
 import {
@@ -15,7 +15,7 @@ import { CRYPTO_DISCOUNT_PERCENT } from "@/lib/packs";
 import { MIN_ORDER_AUD, cryptoDiscounted } from "@/lib/checkout";
 
 export function OrderSummary() {
-  const { items, clear } = useMyList();
+  const { items } = useMyList();
   const [products, setProducts] = useState<Product[]>([]);
   const [deliveryAddress, setDeliveryAddress] = useState("");
   const [customerName, setCustomerName] = useState("");
@@ -41,6 +41,9 @@ export function OrderSummary() {
   const lines = buildOrderLines(items, products);
   const total = ordersTotal(lines);
   const cryptoTotal = cryptoDiscounted(total);
+  // Anti-doublon : si une commande a été passée il y a < 15 min (panier conservé),
+  // on prévient le client avant qu'il ne valide une DEUXIÈME commande.
+  const recentOrder = placedOrder ? null : getRecentOrder();
   const handlePlaceOrder = async () => {
     // Clic "Proceed to Checkout" = tentative de commande (Conv. 2 PopCash)
     trackPopcashConversion(2);
@@ -75,7 +78,12 @@ export function OrderSummary() {
       const data = await res.json();
       if (!res.ok) throw new Error(data?.error || "order_failed");
       setPlacedOrder(data.orderNumber);
-      clear();
+      // Le panier n'est PAS vidé (décision 21/11) : le client vient de créer une
+      // commande PENDING (paiement manuel en attente) et garde sa sélection pour
+      // la modifier. Le champ recentOrder ci-dessous protège contre la commande
+      // en double : tant qu'une commande de < 15 min existe, on avertit avant
+      // tout nouveau "Proceed to Checkout".
+      saveLastOrder(data.orderNumber);
       toast.success(`Order ${data.orderNumber} placed — check your email.`);
     } catch {
       toast.error("We couldn't place your order right now. Please try again.");
@@ -88,6 +96,9 @@ export function OrderSummary() {
         <p className="text-[15px] font-bold text-black">Order {placedOrder} placed 🎉</p>
         <p className="text-[13px] text-[#6E6E73]">
           Check your email — your confirmation and payment instructions are on their way.
+        </p>
+        <p className="text-[12px] text-[#6E6E73]">
+          Your cart is still kept — you can adjust it, but make sure not to place a double order.
         </p>
         <Link
           to="/"
@@ -115,6 +126,23 @@ export function OrderSummary() {
 
   return (
     <div className="space-y-3 px-4 pb-6">
+
+      {/* ── Alerte anti-doublon (dernière commande < 15 min) ── */}
+      {recentOrder && (
+        <div className="bg-[#FEF6E7] border border-[#F5D9A8] p-4 flex items-start gap-3">
+          <ShieldAlert className="h-5 w-5 text-[#B2680A] shrink-0 mt-0.5" />
+          <div className="text-[13px] text-[#7A4A06] leading-snug">
+            <p className="font-bold text-[#7A4A06]">
+              You already placed order {recentOrder.id} a few minutes ago.
+            </p>
+            <p>
+              This cart is still being kept for you. Please check your email
+              for the payment instructions before placing a new order — a
+              second order here would be a separate one.
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* ── Your Products ── */}
       <div className="bg-white border border-[#E8E8E8] p-4">

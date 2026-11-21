@@ -5,7 +5,27 @@ const KEYS = {
   age: "ageVerified",
   list: "vape:my-list",
   clickId: "vape:click-id",
+  lastOrder: "vape:last-order",
 } as const;
+
+// Dernière commande passée (panier conservé volontairement — décision 21/11).
+// Servi à prévenir une commande EN DOUBLE si le client re-valide son panier.
+export interface LastOrder {
+  id: string;
+  at: number; // epoch ms
+}
+
+export function saveLastOrder(id: string) {
+  write<LastOrder>(KEYS.lastOrder, { id, at: Date.now() });
+}
+
+/** Commande passée récemment (≤ 15 min) ? null sinon. */
+export function getRecentOrder(): LastOrder | null {
+  const o = read<LastOrder | null>(KEYS.lastOrder, null);
+  if (!o) return null;
+  if (Date.now() - o.at > 15 * 60 * 1000) return null;
+  return o;
+}
 
 function read<T>(key: string, fallback: T): T {
   if (typeof window === "undefined") return fallback;
