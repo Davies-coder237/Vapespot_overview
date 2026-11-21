@@ -17,6 +17,13 @@ export const STATUS = {
 
 export type DeliveryMethod = "courier" | "australia_post";
 
+/** Route RÉELLE (calculée côté serveur via OSRM, jamais à la volée sur /track). */
+export interface RouteInfo {
+  geometry: Array<[number, number]>; // [[lng, lat], …] — tracé sur les vraies routes
+  km: number;                        // distance routière réelle
+  durationSec: number;               // durée de conduite réaliste (OSRM)
+}
+
 export interface OrderItem {
   productId: string;
   quantity: number;
@@ -37,6 +44,7 @@ export interface Order {
   warehouseCity: string | null;
   lat: number | null;                  // géocodé côté serveur (jamais re-géocodé côté client)
   lng: number | null;
+  route: RouteInfo | null;             // tracé routier réel (calculé au checkout, jamais sur /track)
   paymentMethod: string | null;        // payid | bank | crypto | gift_card
   driverLink: string | null;
   insuranceAmount: number;             // éditable en admin ; ne sort QUE dans l'email ④

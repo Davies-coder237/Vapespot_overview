@@ -76,12 +76,24 @@ function statusTimeline(o: Order): string {
   return `<div class="timeline">${cells}</div>${note}`;
 }
 
-/** Estimation du trajet (km + durée) ou null si hors zone coursier. */
+/** Estimation du trajet (km + durée) ou null si hors zone coursier.
+ *  Utilise la ROUTE RÉELLE calculée au checkout (OSRM) : vrais km + durée de
+ *  conduite réaliste. Repli acceptable sur haversine seulement si pas de route. */
 function routeInfo(o: Order): { km: number; duration: string } | null {
   if (!o.lat || !o.lng) return null;
   const w = warehouseById(o.warehouseId);
   if (!w) return null;
-  const km = haversineKm(o.lat, o.lng, w.lat, w.lng);
+  if (o.route && o.route.km > 0) {
+    const km = o.route.km;
+    if (km > COURIER_MAX_KM) return null;
+    const mins = Math.round(o.route.durationSec / 60);
+    const h = Math.floor(mins / 60);
+    const m = mins % 60;
+    const dur = h > 0 ? `${h} h${m ? " " + m + " min" : ""}` : `${m || 1} min`;
+    return { km: Math.round(km), duration: dur };
+  }
+  // Repli (anciens ordres sans route) : à vol d'oiseau × 1.3 ≈ distance route
+  const km = haversineKm(o.lat, o.lng, w.lat, w.lng) * 1.3;
   if (km > COURIER_MAX_KM) return null;
   const mins = Math.round((km / EST_KMH) * 60);
   const h = Math.floor(mins / 60);
@@ -102,6 +114,7 @@ function mapHTML(o: Order): string {
     hub: okCoords ? { lat: w!.lat, lng: w!.lng, label: hub } : null,
     points,
     hasRoute: !!route,
+    routeLine: o.route && okCoords ? o.route.geometry : null, // [[lng,lat],…] vraies routes
   };
 
   let banner: string;
@@ -339,7 +352,8 @@ function resultHTML(o: Order): string {
     `const hub=L.marker([D.hub.lat,D.hub.lng]).addTo(map).bindPopup(D.hub.label);` +
     `const del=L.marker([D.delivery.lat,D.delivery.lng]).addTo(map).bindPopup(D.delivery.label);` +
     `if(D.hasRoute){` +
-    `L.polyline([[D.hub.lat,D.hub.lng],[D.delivery.lat,D.delivery.lng]],{color:'#5b3df5',weight:3,dashArray:'6 6'}).addTo(map);` +
+    `const line=D.routeLine&&D.routeLine.length>1?D.routeLine.map(c=>[c[1],c[0]]):[[D.hub.lat,D.hub.lng],[D.delivery.lat,D.delivery.lng]];` +
+    `L.polyline(line,{color:'#5b3df5',weight:3,dashArray:'6 6'}).addTo(map);` +
     `}` +
     `map.fitBounds([[D.hub.lat,D.hub.lng],[D.delivery.lat,D.delivery.lng]],{padding:[30,30]});` +
     `}}}` +

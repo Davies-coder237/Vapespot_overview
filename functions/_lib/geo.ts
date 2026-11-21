@@ -101,3 +101,79 @@ export function warehouseById(id: string | null | undefined): Warehouse | null {
 export function hubLabel(w: Warehouse | null): string {
   return w ? `VapeSpot Hub – ${w.city}` : "VapeSpot Hub";
 }
+
+// ─────────────────── Routage routier réel (OSRM/OpenStreetMap) ───────────────────
+// OSRM (router.project-osrm.org) : moteur de routage libre — renvoie la géométrie
+// de la route sur les VRAIES routes/rueways + durée réaliste sur route.
+// - Gratuit, sans clé API, couverture mondiale (données OSM).
+// - PAS de limite stricte publique mais usage raisonnable → cache KV (30 j).
+// - Ne JAMAIS appeler depuis /track : on stocke la route sur la commande au
+//   checkout ; /track affiche seulement `order.route`.
+
+export interface RouteResult {
+  geometry: Array<[number, number]>; // [[lng, lat], …] — ordre OSRM
+  km: number;
+  durationSec: number;
+}
+
+const ROUTE_TTL = 60 * 60 * 24 * 30; // 30 jours
+const ROUTE_UA = "VapeSpotAnalytics/1.0 (info@vapespot.store)";
+
+/** Clé de cache KV stable pour une paire (entrepôt → adresse). */
+function hashRoute(aLat: number, aLng: number, bLat: number, bLng: number): string {
+  let h = 0x811c9dc5;
+  const s = `${aLat},${aLng}|${bLat},${bLng}`;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 0x01000193);
+  }
+  return "r:" + (h & 0x7fffffff).toString(16).padStart(8, "0");
+}
+
+/**
+ * Calcule la route routière réelle entre deux points (OSRM) avec cache KV.
+ * → retourne null si hors couverture / panne OSRM (l'appelant garde la ligne droite).
+ * Signal d'annulation (ex. timeout CF) pris en compte proprement.
+ */
+export async function fetchRoute(
+  env: any,
+  aLat: number,
+  aLng: number,
+  bLat: number,
+  bLng: number,
+  signal?: AbortSignal | null
+): Promise<RouteResult | null> {
+  const key = hashRoute(aLat, aLng, bLat, bLng);
+  const cached = await env.VAPESPOT_GEO_CACHE.get(key, "json");
+  if (cached) return cached as RouteResult;
+
+  // API OSRM : /route/v1/driving/{lon1},{lat1};{lon2},{lat2}?overview=full&geometries=geojson
+  const url =
+    "https://router.project-osrm.org/route/v1/driving/" +
+    `${aLng},${aLat};${bLng},${bLat}?overview=full&geometries=geojson&steps=false`;
+  const res = await fetch(url, {
+    headers: { "User-Agent": ROUTE_UA, Accept: "application/json" },
+    signal,
+  });
+  if (res.status !== 200) return null;
+  const data = (await res.json()) as {
+    code?: string;
+    routes?: Array<{
+      distance?: number;   // mètres
+      duration?: number;   // secondes
+      geometry?: { coordinates?: Array<[number, number]> };
+    }>;
+  };
+  if (data.code !== "Ok" || !data.routes || data.routes.length === 0) return null;
+  const r = data.routes[0];
+  const coords = r.geometry?.coordinates ?? [];
+  if (r.distance === undefined || r.duration === undefined || coords.length === 0) return null;
+
+  const out: RouteResult = {
+    geometry: coords,
+    km: Math.round((r.distance / 1000) * 10) / 10,     // arrondi 1 décimale
+    durationSec: Math.round(r.duration),
+  };
+  await env.VAPESPOT_GEO_CACHE.put(key, JSON.stringify(out), { expirationTtl: ROUTE_TTL });
+  return out;
+}

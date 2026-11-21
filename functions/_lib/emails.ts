@@ -52,9 +52,10 @@ function shell(o: Order, body: string): string {
     `<style>body{margin:0;padding:0;background:#eef1f5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}a{color:#2d1f8f}</style></head>` +
     `<body style="margin:0;padding:0">` +
     `<div style="max-width:620px;margin:0 auto;background:#ffffff;border:1px solid #e5e7eb">` +
-    `<div style="background:#141a2e;padding:26px 30px;text-align:center">` +
-    `<span style="color:#ffffff;font-size:20px;font-weight:800">VapeSpot</span>` +
-    `<span style="color:#7d8db1;font-size:13px;display:block;margin-top:4px">Vape Spot Australia</span>` +
+    `<div style="background:#141a2e;padding:24px 30px;text-align:center">` +
+    `<img src="https://vapespot.store/favicon-192.png" alt="VapeSpot" width="64" height="64" style="display:inline-block;width:64px;height:64px;border:0;border-radius:14px">` +
+    `<div style="color:#ffffff;font-size:20px;font-weight:800;margin-top:10px">VapeSpot</div>` +
+    `<div style="color:#7d8db1;font-size:13px;display:block;margin-top:4px">Vape Spot Australia</div>` +
     `</div>` +
     `<div style="padding:26px 30px">${body}</div>` +
     `<div style="padding:20px 30px;background:#f6f7f9;border-top:1px solid #e5e7eb">` +

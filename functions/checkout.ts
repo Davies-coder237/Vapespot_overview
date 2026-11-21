@@ -11,7 +11,7 @@
 //      depuis la page admin. Seul le bot Telegram PRIVÉ du shop est notifié.
 //   6. Réponse : { orderNumber } → la page affiche la confirmation.
 // Anti-spam minimal : limite par IP (KV), sans casser l'usage normal.
-import { geocodeAddress, nearestActiveWarehouse } from "./_lib/geo";
+import { geocodeAddress, nearestActiveWarehouse, fetchRoute } from "./_lib/geo";
 import { orderNumber } from "./_lib/counter";
 import { newPendingOrder, putOrder } from "./_lib/orders";
 import { sendTelegram } from "./_lib/telegram";
@@ -97,6 +97,18 @@ export async function onRequestPost({ request, env }: any): Promise<Response> {
   const { warehouse } = nearestActiveWarehouse(geo.lat, geo.lng);
   if (!warehouse) return fail("no_warehouse_available", 503);
 
+  // ── 3b. Route routière RÉELLE entrepôt → adresse (OSRM, cache KV) ──
+  // Stockée sur la commande → /track affiche le VRAI tracé (rues) + temps de
+  // conduite réaliste. Jamais de calcul sur /track (anti-enum + latence).
+  // Si OSRM est indisponible → route null, /track affiche la ligne droite.
+  let route = null;
+  try {
+    route = await fetchRoute(env, warehouse.lat, warehouse.lng, geo.lat, geo.lng);
+  } catch {
+    route = null; // OSRM down/timeout : on n'empêche JAMAIS la commande
+  }
+  if (route && route.km > 400) route = null; // hors zone coursier → Australia Post
+
   // ── 4. Numéro atomique VS-XXXX ───────────────────────────────────
   // La classe OrderCounter vit dans le Worker dédié vapespot-orders-do
   // (do-worker/) ; ici on appelle simplement son `next()` via le binding.
@@ -118,6 +130,7 @@ export async function onRequestPost({ request, env }: any): Promise<Response> {
     warehouseCity: warehouse.city,
     lat: geo.lat,
     lng: geo.lng,
+    route,
   });
   await putOrder(env, order);
 
