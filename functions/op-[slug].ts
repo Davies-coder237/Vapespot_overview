@@ -13,7 +13,7 @@ import {
   csrfToken, csrfValid, adminError,
 } from "./_lib/auth";
 import { getOrder, listOrders, putOrder, isExpiredOrder } from "./_lib/orders";
-import { emailPaymentInstructions, emailCongrats, type PaymentOptions, type PayIdOptions, type BankOptions, type CryptoOptions } from "./_lib/emails";
+import { emailPaymentInstructions, emailCongrats, emailDeparture, emailDelivered, type PaymentOptions, type PayIdOptions, type BankOptions, type CryptoOptions } from "./_lib/emails";
 import { sendEmail } from "./_lib/brevo";
 import { sendTelegram } from "./_lib/telegram";
 import type { Order } from "./_lib/types";
@@ -140,6 +140,7 @@ function orderCard(o: Order, csrf: string): string {
                   : ` · client window until ${o.expireAt ? fmtDate(o.expireAt) : ""}`)
               : ` · no window yet — email ② not sent`}</div>` +
     itemsTbl +
+    (o.driverLink ? `<div class="mut" style="margin-top:8px">🚚 Driver link: <a href="${escapeHtml(o.driverLink)}" target="_blank" rel="noopener" style="color:var(--acc)">${escapeHtml(o.driverLink)}</a></div>` : "") +
     (o.notes ? `<div class="mut" style="margin-top:8px;font-size:12px;white-space:pre-wrap">📝 ${escapeHtml(o.notes)}</div>` : "") +
     `<details class="pre"><summary>${canSend ? "Send payment instructions (email ②)" : "Payment instructions unavailable"}</summary>` +
     (canSend
@@ -174,14 +175,101 @@ function orderCard(o: Order, csrf: string): string {
         `</div>`
       : ``) +
     `</details>` +
-    (canSend
-      ? `<div class="row" style="margin-top:12px">` +
-        `<button class="btn green" type="button" onclick="confirmPay(this)">✓ Payment confirmed — send email ③</button>` +
-        `<span class="mut">Set order to PAID and send the tracking link (email ③).</span>` +
-        `</div>`
-      : ``) +
+    statusActionsHTML(o, csrf, canSend) +
     `</div>`
   );
+}
+
+/**
+ * Chaîne de boutons Étape 4 (validée 20/11) : chaque changement de statut
+ * déclenche l'email correspondant. La barre d'actions suit le statut courant :
+ *   pending_payment → "Payment confirmed" (③) [canSend]
+ *   paid           → "In our warehouse" (aucun email : le statut passe à
+ *                    at_warehouse, la frise cliente avance)
+ *   at_warehouse   → formulaire email ④ (départ + caution A$300, MÊMES comptes
+ *                    rotatifs que ② + lien coursier optionnel) → in_transit
+ *   in_transit     → "Delivered" (⑤) · "Delivery failed"
+ *   delivery_failed→ "Retry (back in transit)"
+ *   expired        → rien (bloqué)
+ */
+function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
+  if (o.status === "pending_payment") {
+    return (
+      `<div class="row" style="margin-top:12px">` +
+      `<button class="btn green" type="button" onclick="confirmPay(this)">✓ Payment confirmed — send email ③</button>` +
+      `<span class="mut">Set order to PAID and send the tracking link (email ③).</span>` +
+      `</div>`
+    );
+  }
+  if (o.status === "paid") {
+    return (
+      `<div class="row" style="margin-top:12px">` +
+      `<button class="btn" type="button" onclick="markInWarehouse(this)">📦 In our warehouse</button>` +
+      `<span class="mut">Move the order to "In our warehouse" — no email goes out (client sees the timeline move).</span>` +
+      `</div>`
+    );
+  }
+  if (o.status === "at_warehouse") {
+    return (
+      `<details class="pre"><summary>🚚 Send departure email (④) + move to "On the way"</summary>` +
+      `<div class="pay-form">` +
+      `<input type="hidden" name="_csrf" value="${escapeHtml(csrf)}">` +
+      `<p class="mut" style="margin:12px 0 0"><b>Email ④ = departure + A$300 courier deposit.</b>` +
+      ` Fill the <b>same rotating accounts as email ②</b> (this is generated manually each time) and an optional courier tracking link.</p>` +
+      `<label>Courier tracking link (optional)</label>` +
+      `<input name="driver_link" placeholder="https://…" autocomplete="off">` +
+      `<div class="mgroup"><div class="mhead">① PayID</div>` +
+      `<label>Account name</label><input name="dep_payid_name" placeholder="e.g. EMILY" autocomplete="off">` +
+      `<label>PayID</label><input name="dep_payid" placeholder="e.g. emily@gmail.com / 04xx xxx xxx" autocomplete="off">` +
+      `</div>` +
+      `<div class="mgroup"><div class="mhead">② Bank Transfer</div>` +
+      `<div class="f2">` +
+      `<div><label>BSB</label><input name="dep_bank_bsb" placeholder="000-000" autocomplete="off"></div>` +
+      `<div><label>Account</label><input name="dep_bank_account" placeholder="1234 5678" autocomplete="off"></div>` +
+      `</div>` +
+      `<label>Account name</label><input name="dep_bank_name" placeholder="e.g. EMILY SMITH" autocomplete="off">` +
+      `</div>` +
+      `<div class="mgroup"><div class="mhead">③ Crypto — Bitcoin (BTC)</div>` +
+      `<div class="f2">` +
+      `<div><label>Address</label><input name="dep_btc_address" placeholder="bc1q…" autocomplete="off"></div>` +
+      `<div><label>Network</label><input name="dep_btc_network" placeholder="SegWit / BTC" autocomplete="off"></div>` +
+      `</div></div>` +
+      `<div class="mgroup"><div class="mhead">③ Crypto — USDT</div>` +
+      `<div class="f2">` +
+      `<div><label>Address</label><input name="dep_usdt_address" placeholder="TX…" autocomplete="off"></div>` +
+      `<div><label>Network</label><input name="dep_usdt_network" placeholder="TRC-20" autocomplete="off"></div>` +
+      `</div></div>` +
+      `<div class="row" style="margin-top:12px">` +
+      `<button class="btn ghost" type="button" onclick="previewDeparture(this)">Preview</button>` +
+      `<button class="btn green" type="button" onclick="sendDeparture(this)">Send email ④ + mark "On the way"</button>` +
+      `</div>` +
+      `</div></details>`
+    );
+  }
+  if (o.status === "in_transit") {
+    return (
+      `<div class="row" style="margin-top:12px">` +
+      `<button class="btn green" type="button" onclick="markDelivered(this)">✅ Delivered — send email ⑤</button>` +
+      `<button class="btn ghost" type="button" onclick="markFailed(this)">⚠️ Delivery failed</button>` +
+      `</div>`
+    );
+  }
+  if (o.status === "delivery_failed") {
+    return (
+      `<div class="row" style="margin-top:12px">` +
+      `<button class="btn" type="button" onclick="retryDelivery(this)">↩️ Retry — back in transit</button>` +
+      `<span class="mut">The customer keeps their timeline; a retry sends them back to "On the way".</span>` +
+      `</div>`
+    );
+  }
+  if (o.status === "delivered") {
+    return (
+      `<div class="row" style="margin-top:12px">` +
+      `<span class="mut">🎉 Delivered — email ⑤ sent. Nothing to do.</span>` +
+      `</div>`
+    );
+  }
+  return ``; // expired / autres
 }
 
 function adminPage(orders: Order[], csrf: string): string {
@@ -226,6 +314,60 @@ function adminPage(orders: Order[], csrf: string): string {
         `if(!confirm('Confirm the payment for this order and send the tracking email (③) now?'))return;` +
         `const body={action:'mark-paid',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
         `const old=btn.textContent;btn.textContent='Sending…';btn.disabled=true;` +
+        `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
+        `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `async function markInWarehouse(btn){` +
+        `if(!confirm('Move this order to "In our warehouse"? No email goes out.'))return;` +
+        `const body={action:'mark-in-warehouse',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
+        `const old=btn.textContent;btn.textContent='Updating…';btn.disabled=true;` +
+        `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
+        `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `const depFields=f=>{const o={};` +
+        `const pn=gv(f,'dep_payid_name'),pid=gv(f,'dep_payid');if(pn||pid){const p={};if(pn)p.name=pn;if(pid)p.payid=pid;o.payid=p}` +
+        `const bb=gv(f,'dep_bank_bsb'),ba=gv(f,'dep_bank_account'),bn=gv(f,'dep_bank_name');if(bb||ba||bn){const b={};if(bb)b.bsb=bb;if(ba)b.account=ba;if(bn)b.name=bn;o.bank=b}` +
+        `const btca=gv(f,'dep_btc_address'),btcn=gv(f,'dep_btc_network');if(btca||btcn){const c={};if(btca)c.address=btca;if(btcn)c.network=btcn;o.btc=c}` +
+        `const udta=gv(f,'dep_usdt_address'),udtn=gv(f,'dep_usdt_network');if(udta||udtn){const c={};if(udta)c.address=udta;if(udtn)c.network=udtn;o.usdt=c}` +
+        `return o};` +
+        `async function serveDeparture(btn,preview){` +
+        `if(!preview&&!confirm('Send the departure email (④) with the A$300 deposit details and move this order to "On the way"?'))return;` +
+        `const f=btn.closest('.pay-form');const det=btn.closest('details.pre');` +
+        `const pf=depFields(f);` +
+        `if(!Object.keys(pf).length){alert('Fill at least one payment account for the deposit before sending.');return}` +
+        `const driverLink=(gv(f,'driver_link')||'').trim();` +
+        `const body={action:preview?'preview-departure':'send-departure',orderId:orderId(btn),_csrf:readCsrf(btn),driverLink,...pf};` +
+        `const old=btn.textContent;btn.textContent=preview?'Loading…':'Sending…';btn.disabled=true;` +
+        `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
+        `if(preview){let ifr=f.querySelector('iframe.mail');if(!ifr){ifr=document.createElement('iframe');ifr.className='mail';det.appendChild(ifr)}ifr.srcdoc=typeof j.html==='string'?j.html:'⚠️ Preview error: '+(j.error||'no HTML returned');` +
+        `const sum=det.querySelector('summary');sum.textContent='✉️ Preview — '+body.orderId;bell(true);btn.textContent=old;btn.disabled=false}` +
+        `else if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `function previewDeparture(btn){serveDeparture(btn,true)}` +
+        `function sendDeparture(btn){serveDeparture(btn,false)}` +
+        `async function markDelivered(btn){` +
+        `if(!confirm('Mark this order as DELIVERED and send the delivery email (⑤) now?'))return;` +
+        `const body={action:'mark-delivered',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
+        `const old=btn.textContent;btn.textContent='Sending…';btn.disabled=true;` +
+        `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
+        `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `async function markFailed(btn){` +
+        `if(!confirm('Mark this delivery as FAILED? The courier will retry shortly (no email to client).'))return;` +
+        `const body={action:'mark-failed',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
+        `const old=btn.textContent;btn.textContent='Updating…';btn.disabled=true;` +
+        `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
+        `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `async function retryDelivery(btn){` +
+        `if(!confirm('Send this failed delivery back to "On the way" for a courier retry?'))return;` +
+        `const body={action:'retry-delivery',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
+        `const old=btn.textContent;btn.textContent='Updating…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
         `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
         `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
@@ -296,15 +438,26 @@ export async function onRequestPost(context: any): Promise<Response> {
   const orderId = String(body.orderId ?? "");
   const order = orderId ? await getOrder(env, orderId) : null;
   if (!order) return json({ ok: false, error: "order_not_found" }, 404);
-  // Une fenêtre de paiement dépassée n'empêche PAS l'admin d'envoyer/renvoyer :
-  // le statut doit être pending_payment (le client peut toujours payer).
-  if (order.status !== "pending_payment") {
-    return json({ ok: false, error: "Order is not awaiting payment anymore." }, 400);
-  }
+
+  const s = (v: unknown) => String(v ?? "").trim();
+
+  // ── Convertisseur de champs admin → PaymentOptions (structure {payid:{…}, bank:{…}, btc:{…}, usdt:{…}}) ──
+  const toCrypto = (v: unknown): CryptoOptions | undefined => {
+    const obj = v && typeof v === "object" ? (v as Record<string, unknown>) : {};
+    const address = s(obj.address), network = s(obj.network);
+    if (!address && !network) return undefined;
+    const c: CryptoOptions = {};
+    if (address) c.address = address;
+    if (network) c.network = network;
+    return c;
+  };
 
   // ── Étape 3 : confirmation de paiement par l'admin → email ③ + statut PAID ──
   // Envoyé AVANT le parse des moyens de paiement : cette action n'en a pas besoin.
   if (action === "mark-paid") {
+    if (order.status !== "pending_payment") {
+      return json({ ok: false, error: "Order is not awaiting payment anymore." }, 400);
+    }
     // Garde logique : on ne confirme un paiement que si le client a reçu les
     // instructions (②). Une commande fraîche ne peut pas avoir été payée.
     if (!order.paymentInstructionsSentAt) {
@@ -327,72 +480,174 @@ export async function onRequestPost(context: any): Promise<Response> {
     return json({ ok: true, msg: `Email ③ sent to ${order.email} (${order.id}) — order marked as PAID.` });
   }
 
-  const s = (v: unknown) => String(v ?? "").trim();
-  const payOptions: PaymentOptions = {};
-  // ⚠️ Le JS admin envoie des OBJETS STRUCTURÉS via `...payFields(f)` :
-  //   payid: {name, payid} · bank: {bsb, account, name} · btc/usdt: {address, network}
-  // Le parse lit CE format exact — sinon String(Objet) = "[object Object]" brouillé.
-  const o = (v: unknown): Record<string, unknown> =>
-    v && typeof v === "object" ? (v as Record<string, unknown>) : {};
-  const payidObj = o(body.payid);
-  const payidName = s(payidObj.name), payid = s(payidObj.payid);
-  if (payidName || payid) {
-    const p: PayIdOptions = {};
-    if (payidName) p.name = payidName;
-    if (payid) p.payid = payid;
-    payOptions.payid = p;
-  }
-  const bankObj = o(body.bank);
-  const bsb = s(bankObj.bsb), account = s(bankObj.account), bankName = s(bankObj.name);
-  if (bsb || account || bankName) {
-    const b: BankOptions = {};
-    if (bsb) b.bsb = bsb;
-    if (account) b.account = account;
-    if (bankName) b.name = bankName;
-    payOptions.bank = b;
-  }
-  const btcObj = o(body.btc);
-  const btcAddr = s(btcObj.address), btcNet = s(btcObj.network);
-  if (btcAddr || btcNet) {
-    const c: CryptoOptions = {};
-    if (btcAddr) c.address = btcAddr;
-    if (btcNet) c.network = btcNet;
-    payOptions.btc = c;
-  }
-  const usdtObj = o(body.usdt);
-  const usdtAddr = s(usdtObj.address), usdtNet = s(usdtObj.network);
-  if (usdtAddr || usdtNet) {
-    const c: CryptoOptions = {};
-    if (usdtAddr) c.address = usdtAddr;
-    if (usdtNet) c.network = usdtNet;
-    payOptions.usdt = c;
-  }
-  if (!payOptions.payid && !payOptions.bank && !payOptions.btc && !payOptions.usdt) {
-    return json({ ok: false, error: "Fill at least one payment method (PayID, bank, BTC or USDT)." }, 400);
-  }
-
-  const mail = emailPaymentInstructions(order, payOptions);
-
-  if (action === "preview") {
-    return json({ ok: true, html: mail.html });
-  }
-
-  if (action === "send-payment") {
-    const sent = await sendEmail(env, { to: order.email, subject: mail.subject, html: mail.html, text: mail.text, tag: "payment-instructions" });
-    if (!sent.ok) {
-      return json({ ok: false, error: `Email failed (${sent.status}) — check Brevo`, ...(sent.error ? { detail: sent.error } : {}) }, 502);
+  // ── Étape 4a : paid → at_warehouse (aucun email : la frise cliente avance) ──
+  if (action === "mark-in-warehouse") {
+    if (order.status !== "paid") {
+      return json({ ok: false, error: "Order must be PAID (email ③ sent) before moving to the warehouse." }, 400);
     }
     const nowIso = new Date().toISOString();
-    const given = [payOptions.payid && "PayID", payOptions.bank && "Bank", payOptions.btc && "BTC", payOptions.usdt && "USDT"].filter(Boolean).join(" + ");
-    order.paymentMethod = given.toLowerCase();
-    // ⚠️ La fenêtre de paiement 30 min ne démarre QUE maintenant : le client a
-    // reçu ses instructions, la réservation court pendant 30 min à partir de là.
-    order.paymentInstructionsSentAt = nowIso;
-    order.expireAt = new Date(new Date(nowIso).getTime() + PAYMENT_WINDOW_MIN * 60_000).toISOString();
-    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] payment instructions (②) sent — ${given} (client window 30 min starts now)`;
+    order.status = "at_warehouse";
     order.updatedAt = nowIso;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] moved to "In our warehouse" (no email — client sees the timeline move)`;
     await putOrder(env, order);
-    return json({ ok: true, msg: `Email ② sent to ${order.email} (${order.id}) — ${given}` });
+    await sendTelegram(env, `📦 ${order.id} À L'ENTREPÔT (${fmtAud(order.totalAud)})`);
+    return json({ ok: true, msg: `${order.id} moved to "In our warehouse".` });
+  }
+
+  // ── Étape 4b : at_warehouse → in_transit (email ④ départ + caution A$300) ──
+  if (action === "preview-departure" || action === "send-departure") {
+    if (order.status !== "at_warehouse") {
+      return json({ ok: false, error: 'Order must be "In our warehouse" before the departure email (④).' }, 400);
+    }
+    const payidObj = body.payid && typeof body.payid === "object" ? (body.payid as Record<string, unknown>) : {};
+    const bankObj = body.bank && typeof body.bank === "object" ? (body.bank as Record<string, unknown>) : {};
+    const payOptions: PaymentOptions = {};
+    const payidName = s(payidObj.name), payid = s(payidObj.payid);
+    if (payidName || payid) {
+      const p: PayIdOptions = {};
+      if (payidName) p.name = payidName;
+      if (payid) p.payid = payid;
+      payOptions.payid = p;
+    }
+    const bsb = s(bankObj.bsb), account = s(bankObj.account), bankName = s(bankObj.name);
+    if (bsb || account || bankName) {
+      const b: BankOptions = {};
+      if (bsb) b.bsb = bsb;
+      if (account) b.account = account;
+      if (bankName) b.name = bankName;
+      payOptions.bank = b;
+    }
+    const btc = toCrypto(body.btc), usdt = toCrypto(body.usdt);
+    if (btc) payOptions.btc = btc;
+    if (usdt) payOptions.usdt = usdt;
+    if (!payOptions.payid && !payOptions.bank && !payOptions.btc && !payOptions.usdt) {
+      return json({ ok: false, error: "Fill at least one payment account for the A$300 deposit (PayID, bank, BTC or USDT)." }, 400);
+    }
+    const driverLink = s(body.driverLink) || null;
+    const mail = emailDeparture(order, payOptions, driverLink);
+
+    if (action === "preview-departure") {
+      return json({ ok: true, html: mail.html });
+    }
+    const sent = await sendEmail(env, { to: order.email, subject: mail.subject, html: mail.html, text: mail.text, tag: "in-transit" });
+    if (!sent.ok) {
+      return json({ ok: false, error: `Email ④ failed (${sent.status}) — check Brevo`, ...(sent.error ? { detail: sent.error } : {}) }, 502);
+    }
+    const nowIso = new Date().toISOString();
+    order.status = "in_transit";
+    order.driverLink = driverLink;
+    order.updatedAt = nowIso;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] departure email (④) sent — order ON ITS WAY${driverLink ? ` — driver link ${driverLink}` : ""}`;
+    await putOrder(env, order);
+    await sendTelegram(env, `🚚 ${order.id} EN ROUTE — ${fmtAud(order.totalAud)}\n📧 ${order.email}\n💵 Email ④ envoyé (caution A$300)`);
+    return json({ ok: true, msg: `Email ④ sent to ${order.email} (${order.id}) — order marked as "On the way".` });
+  }
+
+  // ── Étape 4c : in_transit → delivered (email ⑤) ──
+  if (action === "mark-delivered") {
+    if (order.status !== "in_transit") {
+      return json({ ok: false, error: 'Order must be "On the way" before marking it delivered.' }, 400);
+    }
+    const mail = emailDelivered(order);
+    const sent = await sendEmail(env, { to: order.email, subject: mail.subject, html: mail.html, text: mail.text, tag: "delivered" });
+    if (!sent.ok) {
+      return json({ ok: false, error: `Email ⑤ failed (${sent.status}) — check Brevo`, ...(sent.error ? { detail: sent.error } : {}) }, 502);
+    }
+    const nowIso = new Date().toISOString();
+    order.status = "delivered";
+    order.updatedAt = nowIso;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] delivered — email ⑤ sent (courier refunded A$300 cash at the door)`;
+    await putOrder(env, order);
+    await sendTelegram(env, `🎉 ${order.id} LIVRÉE (${fmtAud(order.totalAud)})\n📧 ${order.email}\n📨 Email ⑤ envoyé`);
+    return json({ ok: true, msg: `Email ⑤ sent to ${order.email} (${order.id}) — order marked as DELIVERED.` });
+  }
+
+  // ── Étape 4d : in_transit → delivery_failed (aucun email : le coursier re-essaye) ──
+  if (action === "mark-failed") {
+    if (order.status !== "in_transit") {
+      return json({ ok: false, error: 'Only an order "On the way" can be marked as delivery failed.' }, 400);
+    }
+    const nowIso = new Date().toISOString();
+    order.status = "delivery_failed";
+    order.updatedAt = nowIso;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] delivery failed — courier will retry shortly (no email sent)`;
+    await putOrder(env, order);
+    await sendTelegram(env, `⚠️ ${order.id} ÉCHEC LIVRAISON — nouveau passage prévu\n${order.id} → ${fmtAud(order.totalAud)}`);
+    return json({ ok: true, msg: `${order.id} marked as delivery failed — a courier will retry shortly.` });
+  }
+
+  // ── Étape 4e : delivery_failed → in_transit (retry, aucun email) ──
+  if (action === "retry-delivery") {
+    if (order.status !== "delivery_failed") {
+      return json({ ok: false, error: "Only a failed delivery can be sent back in transit." }, 400);
+    }
+    const nowIso = new Date().toISOString();
+    order.status = "in_transit";
+    order.updatedAt = nowIso;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] retry — back in transit (no email sent)`;
+    await putOrder(env, order);
+    await sendTelegram(env, `↩️ ${order.id} RETRY — de nouveau EN ROUTE (${fmtAud(order.totalAud)})`);
+    return json({ ok: true, msg: `${order.id} sent back to "On the way" for a courier retry.` });
+  }
+
+  // ── Étape 2 : instructions de paiement (email ②) — uniquement pending_payment ──
+  {
+    if (order.status !== "pending_payment") {
+      return json({ ok: false, error: "Order is not awaiting payment anymore." }, 400);
+    }
+    const payOptions: PaymentOptions = {};
+    // ⚠️ Le JS admin envoie des OBJETS STRUCTURÉS via `...payFields(f)` :
+    //   payid: {name, payid} · bank: {bsb, account, name} · btc/usdt: {address, network}
+    // Le parse lit CE format exact — sinon String(Objet) = "[object Object]" brouillé.
+    const o = (v: unknown): Record<string, unknown> =>
+      v && typeof v === "object" ? (v as Record<string, unknown>) : {};
+    const payidObj = o(body.payid);
+    const payidName = s(payidObj.name), payid = s(payidObj.payid);
+    if (payidName || payid) {
+      const p: PayIdOptions = {};
+      if (payidName) p.name = payidName;
+      if (payid) p.payid = payid;
+      payOptions.payid = p;
+    }
+    const bankObj = o(body.bank);
+    const bsb = s(bankObj.bsb), account = s(bankObj.account), bankName = s(bankObj.name);
+    if (bsb || account || bankName) {
+      const b: BankOptions = {};
+      if (bsb) b.bsb = bsb;
+      if (account) b.account = account;
+      if (bankName) b.name = bankName;
+      payOptions.bank = b;
+    }
+    const btc = toCrypto(body.btc), usdt = toCrypto(body.usdt);
+    if (btc) payOptions.btc = btc;
+    if (usdt) payOptions.usdt = usdt;
+    if (!payOptions.payid && !payOptions.bank && !payOptions.btc && !payOptions.usdt) {
+      return json({ ok: false, error: "Fill at least one payment method (PayID, bank, BTC or USDT)." }, 400);
+    }
+
+    const mail = emailPaymentInstructions(order, payOptions);
+
+    if (action === "preview") {
+      return json({ ok: true, html: mail.html });
+    }
+
+    if (action === "send-payment") {
+      const sent = await sendEmail(env, { to: order.email, subject: mail.subject, html: mail.html, text: mail.text, tag: "payment-instructions" });
+      if (!sent.ok) {
+        return json({ ok: false, error: `Email failed (${sent.status}) — check Brevo`, ...(sent.error ? { detail: sent.error } : {}) }, 502);
+      }
+      const nowIso = new Date().toISOString();
+      const given = [payOptions.payid && "PayID", payOptions.bank && "Bank", payOptions.btc && "BTC", payOptions.usdt && "USDT"].filter(Boolean).join(" + ");
+      order.paymentMethod = given.toLowerCase();
+      // ⚠️ La fenêtre de paiement 30 min ne démarre QUE maintenant : le client a
+      // reçu ses instructions, la réservation court pendant 30 min à partir de là.
+      order.paymentInstructionsSentAt = nowIso;
+      order.expireAt = new Date(new Date(nowIso).getTime() + PAYMENT_WINDOW_MIN * 60_000).toISOString();
+      order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] payment instructions (②) sent — ${given} (client window 30 min starts now)`;
+      order.updatedAt = nowIso;
+      await putOrder(env, order);
+      return json({ ok: true, msg: `Email ② sent to ${order.email} (${order.id}) — ${given}` });
+    }
   }
 
   return json({ ok: false, error: "unknown_action" }, 400);

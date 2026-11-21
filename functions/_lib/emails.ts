@@ -130,7 +130,7 @@ export const PAY_PENDING_SUBJECT = "Payment instructions for your order — Vape
  * SÉPARÉES (l'adresse peut se couper proprement, jamais collée au réseau).
  * Un seul coin rempli → pleine largeur.
  */
-function cryptoBlock(o: Order, btc?: CryptoOptions, usdt?: CryptoOptions): string {
+function cryptoBlock(amountAud: number, btc?: CryptoOptions, usdt?: CryptoOptions): string {
   const coin = (label: string, c: CryptoOptions | undefined): string => {
     if (!c) return "";
     const addr = c.address
@@ -153,16 +153,41 @@ function cryptoBlock(o: Order, btc?: CryptoOptions, usdt?: CryptoOptions): strin
   // Empilés de haut en bas + espacement de 10px : BTC puis USDT, chacun pleine largeur.
   const boxes =
     (b && u ? b + `<div style="height:10px"></div>` + u : b || u);
-  const discounted = fmtAud(Math.ceil(o.totalAud * 0.85));
-  const saved = fmtAud(o.totalAud - Math.ceil(o.totalAud * 0.85));
+  const discounted = fmtAud(Math.ceil(amountAud * 0.85));
+  const saved = fmtAud(amountAud - Math.ceil(amountAud * 0.85));
   return (
     `<div style="background:#1a2b1a;border:2px solid #3a7d44;padding:14px 16px;margin:14px 0">` +
     `<p style="color:#7ddc8f;font-weight:800;font-size:15px;margin:0 0 4px">③ Crypto — save 15% 🪙</p>` +
-    `<p style="color:#cde9d2;font-size:13px;margin:0 0 10px">Pay <b>${discounted}</b> instead of ${fmtAud(o.totalAud)} — you save ${saved}.</p>` +
+    `<p style="color:#cde9d2;font-size:13px;margin:0 0 10px">Pay <b>${discounted}</b> instead of ${fmtAud(amountAud)} — you save ${saved}.</p>` +
     boxes +
     `<p style="color:#f2c94c;font-size:12px;margin:12px 0 0">⚠️ Crypto payments are handled in two separate networks. Send on the <b>correct network only</b> — funds sent on the wrong network can be lost.</p>` +
     `</div>`
   );
+}
+
+/**
+ * Sections de paiement communes ② (commande) et ④ (dépôt $300) : les DEUX
+ * utilisent les mêmes comptes rotatifs saisis par l'admin. PayID + Bank en
+ * cartes ①/②, Crypto en bloc ③ "save 15%" calculé sur le montant passé.
+ */
+function paymentSections(o: Order, pay: PaymentOptions, amountAud: number): string[] {
+  const sections: string[] = [];
+  if (pay.payid) {
+    const lines: string[] = [];
+    if (pay.payid.name) lines.push(`<b>Name:</b> ${escapeHtml(pay.payid.name)}`);
+    if (pay.payid.payid) lines.push(`<b>PayID:</b> ${escapeHtml(pay.payid.payid)}`);
+    if (lines.length) sections.push(card("① PayID", lines, undefined, oskoNote()));
+  }
+  if (pay.bank) {
+    const lines: string[] = [];
+    if (pay.bank.bsb) lines.push(`<b>BSB:</b> ${escapeHtml(pay.bank.bsb)}`);
+    if (pay.bank.account) lines.push(`<b>Account:</b> ${escapeHtml(pay.bank.account)}`);
+    if (pay.bank.name) lines.push(`<b>Account name:</b> ${escapeHtml(pay.bank.name)}`);
+    if (lines.length) sections.push(card("② Bank Transfer", lines, undefined, oskoNote()));
+  }
+  const cryptoHtml = cryptoBlock(amountAud, pay.btc, pay.usdt);
+  if (cryptoHtml) sections.push(cryptoHtml);
+  return sections;
 }
 
 /**
@@ -232,22 +257,7 @@ export function emailPaymentInstructions(
   o: Order,
   pay: PaymentOptions
 ): { subject: string; html: string; text: string } {
-  const sections: string[] = [];
-  if (pay.payid) {
-    const lines: string[] = [];
-    if (pay.payid.name) lines.push(`<b>Name:</b> ${escapeHtml(pay.payid.name)}`);
-    if (pay.payid.payid) lines.push(`<b>PayID:</b> ${escapeHtml(pay.payid.payid)}`);
-    if (lines.length) sections.push(card("① PayID", lines, undefined, oskoNote()));
-  }
-  if (pay.bank) {
-    const lines: string[] = [];
-    if (pay.bank.bsb) lines.push(`<b>BSB:</b> ${escapeHtml(pay.bank.bsb)}`);
-    if (pay.bank.account) lines.push(`<b>Account:</b> ${escapeHtml(pay.bank.account)}`);
-    if (pay.bank.name) lines.push(`<b>Account name:</b> ${escapeHtml(pay.bank.name)}`);
-    if (lines.length) sections.push(card("② Bank Transfer", lines, undefined, oskoNote()));
-  }
-  const cryptoHtml = cryptoBlock(o, pay.btc, pay.usdt);
-  if (cryptoHtml) sections.push(cryptoHtml);
+  const sections = paymentSections(o, pay, o.totalAud);
 
   const body =
     `<p style="color:#222;font-size:16px;font-weight:700;margin:0 0 4px">Pay for your order ${o.id}</p>` +
@@ -306,14 +316,18 @@ export function emailCongrats(o: Order): { subject: string; html: string; text: 
 
 /**
  * ④ Départ entrepôt + caution coursier — LE SEUL message qui mentionne le $300.
- * Envoyé au passage at_warehouse → in_transit. La somme est remboursée en
- * main propre par le coursier à l'arrivée (optionnel : lien suivi du coursier).
+ * Envoyé au passage at_warehouse → in_transit. Les comptes de paiement sont les
+ * MÊMES comptes ROTATIFS que l'email ② (l'admin les re-saisit : PayID · Bank ·
+ * Crypto save 15%, séparés) — le client règle la caution vers l'un d'eux.
+ * La somme est remboursée EN CASH par le coursier à l'arrivée (monnaie en
+ * caisse, procédure validée). Optionnel : lien de suivi du coursier.
  */
 export function emailDeparture(
   o: Order,
-  insuranceAccount: { label: string; details: string },
+  pay: PaymentOptions,
   driverLink?: string | null
-): { subject: string; html: string } {
+): { subject: string; html: string; text: string } {
+  const sections = paymentSections(o, pay, INSURANCE_AUD);
   const body =
     `<p style="color:#222;font-size:16px;font-weight:700;margin:0 0 4px">Your order has left our warehouse 🚚</p>` +
     `<p style="color:#666;font-size:14px;margin:0 0 8px">Order <b>${o.id}</b> is on its way to ${escapeHtml(o.deliveryAddress)}.</p>` +
@@ -322,26 +336,55 @@ export function emailDeparture(
           `<a href="${escapeHtml(driverLink)}" style="color:#2d1f8f">Open the courier tracking link</a>`,
         ])
       : "") +
-    card(`Courier deposit — A$${INSURANCE_AUD} (refundable)`, [
+    card(`Courier deposit — A$${INSURANCE_AUD.toFixed(2)} (refundable)`, [
       `To cover the value of the parcel during delivery, we ask for a refundable deposit of <b>A$${INSURANCE_AUD.toFixed(2)}</b>.`,
       "This amount will be refunded to you in cash by the courier when your order arrives.",
-      `Transfer to: <b>${escapeHtml(insuranceAccount.label)}</b> — ${escapeHtml(insuranceAccount.details)}`,
-      "Then reply to this email with your payment screenshot so we can track it.",
-    ]) +
+      "We carry compact devices of high value and lithium batteries, which Australian couriers classify as dangerous goods — this covers those costs and guarantees your protection.",
+      `Transfer the deposit to any account below, then reply to this email with your payment screenshot.`,
+    ], "warn") +
+    sections.join("") +
     `<p style="color:#666;font-size:14px;margin:0">The courier carries the A$${INSURANCE_AUD.toFixed(2)} refund with them at delivery.</p>`;
+  const text =
+    `Your order has left our warehouse 🚚\n\n` +
+    `Order ${o.id} is on its way to ${o.deliveryAddress}.\n` +
+    (driverLink ? `Track the courier live: ${driverLink}\n\n` : `\n`) +
+    `Courier deposit — A$${INSURANCE_AUD.toFixed(2)} (refundable)\n` +
+    `To cover the value of the parcel during delivery, we ask for a refundable deposit of A$${INSURANCE_AUD.toFixed(2)}. ` +
+    `This amount will be refunded to you in cash by the courier when your order arrives.\n` +
+    `We carry compact devices of high value and lithium batteries, which Australian couriers classify as dangerous goods — this covers those costs and guarantees your protection.\n\n` +
+    `Transfer the deposit to any account below, then reply to this email with your payment screenshot.\n\n` +
+    (pay.payid && (pay.payid.name || pay.payid.payid)
+      ? `① PayID\n${pay.payid.name ? `Name: ${pay.payid.name}\n` : ""}${pay.payid.payid ? `PayID: ${pay.payid.payid}\n` : ""}Osko payments\nDescription: Osko\nReference: OSKO\n\n`
+      : "") +
+    (pay.bank && (pay.bank.bsb || pay.bank.account || pay.bank.name)
+      ? `② Bank Transfer\n${pay.bank.bsb ? `BSB: ${pay.bank.bsb}\n` : ""}${pay.bank.account ? `Account: ${pay.bank.account}\n` : ""}${pay.bank.name ? `Account name: ${pay.bank.name}\n` : ""}Osko payments\nDescription: Osko\nReference: OSKO\n\n`
+      : "") +
+    (pay.btc || pay.usdt
+      ? `③ Crypto — save 15%\nPay ${fmtAud(Math.ceil(INSURANCE_AUD * 0.85))} instead of ${fmtAud(INSURANCE_AUD)} — you save ${fmtAud(INSURANCE_AUD - Math.ceil(INSURANCE_AUD * 0.85))}.\n` +
+        (pay.btc ? `Bitcoin (BTC)\n${pay.btc.address ? `Address: ${pay.btc.address}\n` : ""}${pay.btc.network ? `Network: ${pay.btc.network}\n` : ""}` : "") +
+        (pay.usdt ? `USDT (TRC-20)\n${pay.usdt.address ? `Address: ${pay.usdt.address}\n` : ""}${pay.usdt.network ? `Network: ${pay.usdt.network}\n` : ""}` : "") +
+        `Crypto payments are handled in two separate networks. Send on the correct network only — funds sent on the wrong network can be lost.\n\n`
+      : "") +
+    `The courier carries the A$${INSURANCE_AUD.toFixed(2)} refund with them at delivery.\n\n` +
+    `Questions? Reply to this email — a real person at VapeSpot will get back to you, or message ${SHOP_TG}: https://t.me/vapespot_store`;
   return {
     subject: `${o.id} is out for delivery — courier deposit A$${INSURANCE_AUD}`,
     html: shell(o, body),
+    text,
   };
 }
 
 /** ⑤ Livré. */
-export function emailDelivered(o: Order): { subject: string; html: string } {
+export function emailDelivered(o: Order): { subject: string; html: string; text: string } {
   const body =
     `<p style="color:#2d1f8f;font-size:16px;font-weight:800;margin:0 0 4px">Delivered — enjoy! 🛍️</p>` +
     `<p style="color:#666;font-size:14px;margin:0">Order <b>${o.id}</b> has been delivered to ${escapeHtml(o.deliveryAddress)}. If anything is missing or damaged, reply to this email and we'll sort it out.</p>`;
+  const text =
+    `Delivered — enjoy! 🛍️\n\n` +
+    `Order ${o.id} has been delivered to ${o.deliveryAddress}. If anything is missing or damaged, reply to this email and we'll sort it out.`;
   return {
     subject: `Your order ${o.id} has been delivered — VapeSpot`,
     html: shell(o, body),
+    text,
   };
 }
