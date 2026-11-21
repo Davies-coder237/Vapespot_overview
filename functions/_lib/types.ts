@@ -43,5 +43,7 @@ export interface Order {
   notes: string;
   createdAt: string;                   // ISO
   updatedAt: string;
-  expireAt: string;                    // createdAt + 30 min
+  paymentInstructionsSentAt: string | null; // quand l'email ② a été envoyé = DÉPART de la fenêtre
+  expireAt: string | null;             // null tant que ② NON envoyé (aucune limite avant l'email) ;
+                                       // défini = paymentInstructionsSentAt + 30 min
 }

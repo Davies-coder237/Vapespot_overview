@@ -1,8 +1,9 @@
 // Stockage des commandes dans KV VAPESPOT_ORDERS.
-// Clé : order:<id> (VS-XXXX). Une commande en attente de paiement expire après
-// 30 min : on pose un expirationTtl au put (nettoyage physique) + le statut
-// expire_at pour le check-on-read (il ne faut jamais servir une commande
-// expirée comme valide, et on déclenche l'email + bot de « commande expirée »).
+// Clé : order:<id> (VS-XXXX). ⚠️ Plus AUCUN TTL physique : une commande n'est
+// JAMAIS supprimée automatiquement — sinon l'admin perd des commandes arrivées
+// pendant son sommeil. La fenêtre de paiement de 30 min (expireAt) n'existe que
+// APRÈS l'envoi de l'email ② (reservation client) et reste un état SOFT (badge),
+// jamais une suppression. Les entrées restent manipulables par l'admin.
 import type { Order } from "./types";
 import { PAYMENT_WINDOW_MIN } from "./types";
 
@@ -12,7 +13,7 @@ export function orderKey(id: string): string {
   return ORDER_PREFIX + id;
 }
 
-/** Crée une commande pending_payment avec fenêtre de paiement 30 min. */
+/** Crée une commande pending_payment — AUCUNE fenêtre tant que ② n'est pas envoyé. */
 export function newPendingOrder(input: {
   id: string;
   email: string;
@@ -26,7 +27,7 @@ export function newPendingOrder(input: {
   lat: number;
   lng: number;
 }): Order {
-  const now = Date.now();
+  const now = new Date().toISOString();
   return {
     ...input,
     status: "pending_payment",
@@ -34,18 +35,16 @@ export function newPendingOrder(input: {
     driverLink: null,
     insuranceAmount: 300, // caution coursier — visible UNIQUEMENT dans l'email ④
     notes: "",
-    createdAt: new Date(now).toISOString(),
-    updatedAt: new Date(now).toISOString(),
-    expireAt: new Date(now + PAYMENT_WINDOW_MIN * 60_000).toISOString(),
+    createdAt: now,
+    updatedAt: now,
+    paymentInstructionsSentAt: null, // fenêtre 30 min NON démarrée
+    expireAt: null,
   };
 }
 
-/** Écrit une commande (TTL 30 min tant qu'en pending_payment, sinon permanent). */
+/** Écrit une commande — PERMANENTE (aucun TTL, plus jamais de perte). */
 export async function putOrder(env: any, order: Order): Promise<void> {
-  const ttlSec = order.status === "pending_payment" ? PAYMENT_WINDOW_MIN * 60 : undefined;
-  await env.VAPESPOT_ORDERS.put(orderKey(order.id), JSON.stringify(order), {
-    expirationTtl: ttlSec,
-  });
+  await env.VAPESPOT_ORDERS.put(orderKey(order.id), JSON.stringify(order));
 }
 
 export async function getOrder(env: any, id: string): Promise<Order | null> {
@@ -68,9 +67,12 @@ export async function listOrders(env: any): Promise<Order[]> {
   return out.sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1));
 }
 
-/** Commande expirée ? (pending_payment + heure passée) — check-on-read. */
+/** Fenêtre de paiement EXPIRÉE ? Seulement si ② a été envoyé ET l'heure passée.
+ *  Tant que l'email de paiement n'a pas été envoyé : JAMAIS expirée. */
 export function isExpiredOrder(order: Order): boolean {
-  return order.status === "pending_payment" && Date.now() > new Date(order.expireAt).getTime();
+  if (order.status !== "pending_payment") return false;
+  if (!order.paymentInstructionsSentAt || !order.expireAt) return false;
+  return Date.now() > new Date(order.expireAt).getTime();
 }
 
 /** Met à jour updatedAt + statut et réécrit. */

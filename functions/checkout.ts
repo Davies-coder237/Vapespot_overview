@@ -3,7 +3,9 @@
 //   1. Email + adresse de livraison OBLIGATOIRES (validés côté serveur).
 //   2. Géocodage adresse (Nominatim, cache KV) → entrepôt actif le plus proche.
 //   3. Numéro VS-XXXX via Durable Object (atomique).
-//   4. Stockage KV (TTL 30 min tant que pending_payment).
+//   4. Stockage KV PERMANENT (aucun TTL : une commande ne disparaît JAMAIS,
+//      l'admin doit pouvoir agir même le lendemain). La fenêtre de paiement
+//      30 min est posée seulement par l'admin à l'envoi de l'email ②.
 //   5. AUCUN email au client au checkout — il ne reçoit RIEN tant que
 //      l'admin n'a pas saisi les moyens de paiement et validé l'email ②
 //      depuis la page admin. Seul le bot Telegram PRIVÉ du shop est notifié.

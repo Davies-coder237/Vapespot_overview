@@ -16,6 +16,7 @@ import { getOrder, listOrders, putOrder, isExpiredOrder } from "./_lib/orders";
 import { emailPaymentInstructions, type PaymentOptions, type PayIdOptions, type BankOptions, type CryptoOptions } from "./_lib/emails";
 import { sendEmail } from "./_lib/brevo";
 import type { Order } from "./_lib/types";
+import { PAYMENT_WINDOW_MIN } from "./_lib/types";
 
 /** Slug admin (8 chars) — partie de l'URL secrète. */
 const ADMIN_SLUG = "kx9vq7wd";
@@ -123,7 +124,7 @@ function orderCard(o: Order, csrf: string): string {
       .join("") +
     `</table>`;
 
-  const canSend = o.status === "pending_payment" && !expired;
+  const canSend = o.status === "pending_payment"; // fenêtre client dépassée ≠ bloquant : on peut renvoyer
 
   return (
     `<div class="card" data-id="${escapeHtml(o.id)}">` +
@@ -132,7 +133,11 @@ function orderCard(o: Order, csrf: string): string {
     `<div class="mut">${escapeHtml(o.email)}<br>${escapeHtml(o.warehouseCity || "")} hub · ${timeAgo(o.createdAt)}</div>` +
     `</div>` +
     `<div class="mut" style="margin-top:6px">${escapeHtml(o.customerName)} — ${escapeHtml(o.deliveryAddress)}` +
-    `${expired ? ` <b style="color:var(--err)">· window closed (${fmtDate(o.expireAt)})</b>` : ` · window until ${fmtDate(o.expireAt)}`}</div>` +
+    `${o.paymentInstructionsSentAt
+              ? (expired
+                  ? ` <b style="color:var(--err)">· client window CLOSED (${o.expireAt ? fmtDate(o.expireAt) : ""})</b>`
+                  : ` · client window until ${o.expireAt ? fmtDate(o.expireAt) : ""}`)
+              : ` · no window yet — email ② not sent`}</div>` +
     itemsTbl +
     (o.notes ? `<div class="mut" style="margin-top:8px;font-size:12px;white-space:pre-wrap">📝 ${escapeHtml(o.notes)}</div>` : "") +
     `<details class="pre"><summary>${canSend ? "Send payment instructions (email ②)" : "Payment instructions unavailable"}</summary>` +
@@ -276,7 +281,9 @@ export async function onRequestPost(context: any): Promise<Response> {
   const orderId = String(body.orderId ?? "");
   const order = orderId ? await getOrder(env, orderId) : null;
   if (!order) return json({ ok: false, error: "order_not_found" }, 404);
-  if (order.status !== "pending_payment" || isExpiredOrder(order)) {
+  // Une fenêtre de paiement dépassée n'empêche PAS l'admin d'envoyer/renvoyer :
+  // le statut doit être pending_payment (le client peut toujours payer).
+  if (order.status !== "pending_payment") {
     return json({ ok: false, error: "Order is not awaiting payment anymore." }, 400);
   }
   const s = (v: unknown) => String(v ?? "").trim();
@@ -334,11 +341,15 @@ export async function onRequestPost(context: any): Promise<Response> {
     if (!sent.ok) {
       return json({ ok: false, error: `Email failed (${sent.status}) — check Brevo`, ...(sent.error ? { detail: sent.error } : {}) }, 502);
     }
-    const now = new Date().toISOString();
+    const nowIso = new Date().toISOString();
     const given = [payOptions.payid && "PayID", payOptions.bank && "Bank", payOptions.btc && "BTC", payOptions.usdt && "USDT"].filter(Boolean).join(" + ");
     order.paymentMethod = given.toLowerCase();
-    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(now)}] payment instructions (②) sent — ${given}`;
-    order.updatedAt = now;
+    // ⚠️ La fenêtre de paiement 30 min ne démarre QUE maintenant : le client a
+    // reçu ses instructions, la réservation court pendant 30 min à partir de là.
+    order.paymentInstructionsSentAt = nowIso;
+    order.expireAt = new Date(new Date(nowIso).getTime() + PAYMENT_WINDOW_MIN * 60_000).toISOString();
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] payment instructions (②) sent — ${given} (client window 30 min starts now)`;
+    order.updatedAt = nowIso;
     await putOrder(env, order);
     return json({ ok: true, msg: `Email ② sent to ${order.email} (${order.id}) — ${given}` });
   }
