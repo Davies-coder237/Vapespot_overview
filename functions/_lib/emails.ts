@@ -273,19 +273,31 @@ export function emailPaymentInstructions(
   };
 }
 
-/** ③ Félicitations + lien de suivi (statut → paid). JAMAIS de $300. */
-export function emailCongrats(o: Order): { subject: string; html: string } {
+/** ③ Félicitations + lien de suivi (statut → paid). JAMAIS de $300.
+ *  Le lien est PRÉ-REMPLI avec le n° de commande ET l'email (le client n'a rien
+ *  à taper) — anti-enumération conservée côté page /track (le couple doit
+ *  correspondre, sinon message générique). Version TEXTE BRUT incluse (leçon
+ *  du fix 20/11 : certains clients n'affichent que le texte). */
+export function emailCongrats(o: Order): { subject: string; html: string; text: string } {
+  const trackLink = `${TRACK_URL}?n=${encodeURIComponent(o.id)}&e=${encodeURIComponent(o.email)}`;
   const body =
     `<p style="color:#2d1f8f;font-size:16px;font-weight:800;margin:0 0 4px">Payment received — thank you! 🎉</p>` +
     `<p style="color:#666;font-size:14px;margin:0 0 18px">Your payment for <b>${o.id}</b> is confirmed. Your order is being packed at our ${escapeHtml(o.warehouseCity || "nearest")} hub.</p>` +
     card("Track your delivery", [
-      `Open: <a href="${TRACK_URL}" style="color:#2d1f8f">${TRACK_URL}</a>`,
-      `Enter your order number (${o.id}) and the email you used to order.`,
+      `Open: <a href="${escapeHtml(trackLink)}" style="color:#2d1f8f">${escapeHtml(trackLink)}</a>`,
+      `Your order number and email are already filled in — just open the link to see live status and the delivery map.`,
     ]) +
     `<p style="color:#666;font-size:14px;margin:0">We'll email you as soon as your order leaves the warehouse.</p>`;
+  const text =
+    `Payment received — thank you!\n\n` +
+    `Your payment for ${o.id} is confirmed. Your order is being packed at our ${o.warehouseCity || "nearest"} hub.\n\n` +
+    `Track your delivery: ${trackLink}\n` +
+    `Your order number and email are already filled in — just open the link.\n\n` +
+    `We'll email you as soon as your order leaves the warehouse.`;
   return {
     subject: `Your order ${o.id} is on its way to you — VapeSpot`,
     html: shell(o, body),
+    text,
   };
 }
 

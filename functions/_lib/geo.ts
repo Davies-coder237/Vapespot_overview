@@ -90,3 +90,14 @@ export function nearestActiveWarehouse(lat: number, lng: number) {
   }
   return { warehouse: best, distanceKm: bestKm };
 }
+
+/** Retrouve un entrepôt par son id (tous, actifs ou non) — pour la carte de suivi. */
+export function warehouseById(id: string | null | undefined): Warehouse | null {
+  if (!id) return null;
+  return ALL_WAREHOUSES.find((w) => w.id === id) ?? null;
+}
+
+/** Libellé de la carte → "VapeSpot Hub – <ville>" (jamais le nom d'une boutique). */
+export function hubLabel(w: Warehouse | null): string {
+  return w ? `VapeSpot Hub – ${w.city}` : "VapeSpot Hub";
+}

@@ -13,8 +13,9 @@ import {
   csrfToken, csrfValid, adminError,
 } from "./_lib/auth";
 import { getOrder, listOrders, putOrder, isExpiredOrder } from "./_lib/orders";
-import { emailPaymentInstructions, type PaymentOptions, type PayIdOptions, type BankOptions, type CryptoOptions } from "./_lib/emails";
+import { emailPaymentInstructions, emailCongrats, type PaymentOptions, type PayIdOptions, type BankOptions, type CryptoOptions } from "./_lib/emails";
 import { sendEmail } from "./_lib/brevo";
+import { sendTelegram } from "./_lib/telegram";
 import type { Order } from "./_lib/types";
 import { PAYMENT_WINDOW_MIN } from "./_lib/types";
 
@@ -173,6 +174,12 @@ function orderCard(o: Order, csrf: string): string {
         `</div>`
       : ``) +
     `</details>` +
+    (canSend
+      ? `<div class="row" style="margin-top:12px">` +
+        `<button class="btn green" type="button" onclick="confirmPay(this)">✓ Payment confirmed — send email ③</button>` +
+        `<span class="mut">Set order to PAID and send the tracking link (email ③).</span>` +
+        `</div>`
+      : ``) +
     `</div>`
   );
 }
@@ -215,6 +222,14 @@ function adminPage(orders: Order[], csrf: string): string {
         `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
         `function previewPay(btn){serve(btn,true)}` +
         `function sendPay(btn){serve(btn,false)}` +
+        `async function confirmPay(btn){` +
+        `if(!confirm('Confirm the payment for this order and send the tracking email (③) now?'))return;` +
+        `const body={action:'mark-paid',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
+        `const old=btn.textContent;btn.textContent='Sending…';btn.disabled=true;` +
+        `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
+        `if(j.ok){bell(true);setTimeout(()=>location.reload(),1400)}` +
+        `else{bell(false);btn.textContent=old;btn.disabled=false}}` +
+        `catch(e){bell(false);btn.textContent=old;btn.disabled=false}}` +
         `</script>`,
       csrf
     ) + ``
@@ -286,6 +301,32 @@ export async function onRequestPost(context: any): Promise<Response> {
   if (order.status !== "pending_payment") {
     return json({ ok: false, error: "Order is not awaiting payment anymore." }, 400);
   }
+
+  // ── Étape 3 : confirmation de paiement par l'admin → email ③ + statut PAID ──
+  // Envoyé AVANT le parse des moyens de paiement : cette action n'en a pas besoin.
+  if (action === "mark-paid") {
+    // Garde logique : on ne confirme un paiement que si le client a reçu les
+    // instructions (②). Une commande fraîche ne peut pas avoir été payée.
+    if (!order.paymentInstructionsSentAt) {
+      return json({ ok: false, error: "Send payment instructions (②) first — this order has no payment window yet." }, 400);
+    }
+    const mail = emailCongrats(order);
+    const sent = await sendEmail(env, { to: order.email, subject: mail.subject, html: mail.html, text: mail.text, tag: "payment-confirmed" });
+    if (!sent.ok) {
+      return json({ ok: false, error: `Email ③ failed (${sent.status}) — check Brevo`, ...(sent.error ? { detail: sent.error } : {}) }, 502);
+    }
+    const nowIso = new Date().toISOString();
+    order.status = "paid";
+    order.updatedAt = nowIso;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] payment confirmed by admin — email ③ (tracking link) sent`;
+    await putOrder(env, order);
+    await sendTelegram(
+      env,
+      `✅ ${order.id} PAYÉE (${fmtAud(order.totalAud)})\n📧 ${order.email}\n🎉 Email ③ envoyé — lien de suivi`
+    );
+    return json({ ok: true, msg: `Email ③ sent to ${order.email} (${order.id}) — order marked as PAID.` });
+  }
+
   const s = (v: unknown) => String(v ?? "").trim();
   const payOptions: PaymentOptions = {};
   // ⚠️ Le JS admin envoie des OBJETS STRUCTURÉS via `...payFields(f)` :
