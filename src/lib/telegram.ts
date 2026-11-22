@@ -107,3 +107,29 @@ export function buildTelegramMessage(lines: OrderLine[], deliveryAddress = "", d
 export function buildTelegramUrl(message: string, handle = TELEGRAM_HANDLE): string {
   return `https://t.me/${handle}?text=${encodeURIComponent(message)}`;
 }
+
+/**
+ * Message au STYLE ACTUEL du bot (celui reçu côté shop à chaque commande) :
+ *   🛒 Nouvelle commande VS-XXXX
+ *   💰 A$180
+ *   📍 Perth → adresse
+ *   📧 email
+ * Utilisé pour le branchement Telegram du checkout (contact @vapespot_store) —
+ * PAS le vieux message long (buildTelegramMessage), abandonné par décision de
+ * l'utilisatrice lors de la remise en place du canal Telegram (Brevo suspendu).
+ */
+export function buildOrderMessage(input: {
+  orderId: string;
+  totalAud: number;
+  warehouseCity: string;
+  address: string;
+  email: string;
+}): string {
+  const lines = [
+    `🛒 Nouvelle commande ${input.orderId}`,
+    `💰 ${fmt(input.totalAud)}`,
+    `📍 ${input.warehouseCity} → ${input.address.trim()}`,
+    `📧 ${input.email}`,
+  ];
+  return lines.join("\n");
+}

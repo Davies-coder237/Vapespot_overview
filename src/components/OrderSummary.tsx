@@ -8,6 +8,8 @@ import { trackPopcashConversion } from "@/lib/conversion";
 import type { Product } from "@/lib/types";
 import {
   buildOrderLines,
+  buildOrderMessage,
+  buildTelegramUrl,
   lineTotal,
   ordersTotal,
 } from "@/lib/telegram";
@@ -23,6 +25,8 @@ export function OrderSummary() {
   const [deliveryMethod, setDeliveryMethod] = useState<"courier" | "australia_post">("courier");
   // Numéro VS-XXXX renvoyé par le serveur après création (Étape 1)
   const [placedOrder, setPlacedOrder] = useState<null | string>(null);
+  // Infos serveur pour construire le lien Telegram (ouvert au clic, style actuel)
+  const [telegramUrl, setTelegramUrl] = useState<string>("");
 
   useEffect(() => {
     let cancelled = false;
@@ -78,13 +82,32 @@ export function OrderSummary() {
       const data = await res.json();
       if (!res.ok) throw new Error(data?.error || "order_failed");
       setPlacedOrder(data.orderNumber);
+      // Branchement Telegram (décision utilisatrice 22/11 — Brevo suspendu) :
+      // le POST serveur (VS + KV + admin + tracking) reste, ET le client obtient
+      // un contact direct. Message au STYLE ACTUEL du bot (🛒 💰 📍 📧), pas le
+      // vieux message long. S'ouvre automatiquement après la création serveur.
+      const tgMsg = buildOrderMessage({
+        orderId: data.orderNumber,
+        totalAud: data.totalAud,
+        warehouseCity: data.warehouseCity,
+        address: deliveryAddress,
+        email,
+      });
+      const tgUrl = buildTelegramUrl(tgMsg); // t.me/vapespot_store (contact client)
+      setTelegramUrl(tgUrl);
       // Le panier n'est PAS vidé (décision 21/11) : le client vient de créer une
       // commande PENDING (paiement manuel en attente) et garde sa sélection pour
       // la modifier. Le champ recentOrder ci-dessous protège contre la commande
       // en double : tant qu'une commande de < 15 min existe, on avertit avant
       // tout nouveau "Proceed to Checkout".
       saveLastOrder(data.orderNumber);
-      toast.success(`Order ${data.orderNumber} placed — check your email.`);
+      toast.success(`Order ${data.orderNumber} placed — open Telegram to confirm.`);
+      // Ouverture automatique du canal Telegram (nouveau tab — aucun blocage
+      // navigateur car c'est un clic direct sur "Proceed to Checkout").
+      setTimeout(() => {
+        const w = window.open(tgUrl, "_blank");
+        if (w) w.opener = null; // le nouveau tab ne peut pas réécrire notre page
+      }, 400);
     } catch {
       toast.error("We couldn't place your order right now. Please try again.");
     }
@@ -99,17 +122,31 @@ export function OrderSummary() {
           <p className="text-2xl md:text-3xl font-extrabold text-[#7C3AED]">
             Order {placedOrder} placed 🎉
           </p>
-          <div className="inline-flex items-center gap-2 text-white bg-[#7C3AED] rounded-xl px-4 py-2.5 text-sm md:text-base font-bold">
-            <Mail className="h-5 w-5" />
-            CHECK YOUR EMAIL NOW
-          </div>
+          {telegramUrl ? (
+            <a
+              href={telegramUrl}
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-2 text-white bg-[#7C3AED] rounded-xl px-5 py-3 text-base md:text-lg font-bold hover:bg-[#6d28d9] transition-colors"
+            >
+              <Send className="h-5 w-5" />
+              SEND IT ON TELEGRAM
+            </a>
+          ) : (
+            <div className="inline-flex items-center gap-2 text-white bg-[#7C3AED] rounded-xl px-4 py-2.5 text-sm md:text-base font-bold">
+              <Mail className="h-5 w-5" />
+              CHECK YOUR EMAIL NOW
+            </div>
+          )}
           <p className="text-lg md:text-xl font-bold text-[#0A0A0A] leading-snug">
-            Your confirmation and <span className="text-[#7C3AED]">payment instructions</span> are on
-            their way to <span className="font-extrabold underline decoration-[#7C3AED]">{email}</span>.
+            Tap the button above (it just opened in a new tab) — then press{" "}
+            <span className="text-[#7C3AED]">Send</span> in Telegram to confirm your order
+            <span className="font-extrabold underline decoration-[#7C3AED]">{placedOrder}</span>.
           </p>
           <p className="text-[15px] md:text-[16px] text-[#4A4458] leading-snug">
-            Your order is reserved but not paid yet. Open our email and follow the
-            payment steps — your order is only processed once payment is confirmed.
+            Your order is created and reserved. Sending it on Telegram is the fast way — our team
+            replies there with the payment instructions. Your email{" "}
+            <span className="font-bold">{email}</span> was registered with the order.
           </p>
           <div className="border-t-2 border-[#DDD6FF] pt-4 text-[14px] md:text-[15px] text-[#6E6E73] leading-snug">
             <span className="font-bold text-[#0A0A0A]">Your cart is still kept</span> — you can adjust
@@ -124,7 +161,8 @@ export function OrderSummary() {
             Back to shop
           </Link>
           <p className="text-sm text-[#6E6E73] mt-3">
-            Did the email take more than a couple of minutes? Check your spam folder.
+            Telegram didn't open? You can also find us at{" "}
+            <span className="font-semibold">@vapespot_store</span> — or check your spam folder.
           </p>
         </div>
       </div>
