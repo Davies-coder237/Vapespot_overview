@@ -1,10 +1,14 @@
 // Étape 2 — Route admin secrète /op-<8chars> (noindex).
 // Seul accès à l'URL+password ; cookie HMAC signé (COOKIE_SECRET).
 // L'admin voit les commandes, saisit les comptes de paiement ROTATIFS
-// (PayID / Bank / Crypto) et déclenche MANUELLEMENT l'email ② d'instructions.
+// (PayID / Bank / Crypto) et déclenche MANUELLEMENT le message ② d'instructions.
+// Brevo suspendu depuis le 21/11 : AUCUN email client ne part plus — chaque
+// action (②③④⑤⑥) envoie la version TEXTE BRUT complète du message au bot
+// Telegram INTERNE du shop (@vapespot_orders_bot) ; l'admin la transmet à son
+// client à la main. sendEmail reste codé dans _lib/brevo.ts (rien supprimé).
 // Règle validée (20/11) : TOUS les moyens remplis partent ENSEMBLE dans un
-// seul email, le client choisit. Champ vide = moyen sauté.
-// ⚠️ Jamais de $300 ici : l'email ② n'en parle pas (règle validée, seul ④).
+// seul message, le client choisit. Champ vide = moyen sauté.
+// ⚠️ Jamais de $300 ici : le message ② n'en parle pas (règle validée, seul ④).
 import { escapeHtml, fmtAud } from "./_lib/html";
 import {
   loginAllowed, loginBump, loginReset,
@@ -14,7 +18,6 @@ import {
 } from "./_lib/auth";
 import { getOrder, listOrders, putOrder, isExpiredOrder, deleteOrder } from "./_lib/orders";
 import { emailPaymentInstructions, emailCongrats, emailDeparture, emailDelivered, emailCancelled, type PaymentOptions, type PayIdOptions, type BankOptions, type CryptoOptions } from "./_lib/emails";
-import { sendEmail } from "./_lib/brevo";
 import { sendTelegram } from "./_lib/telegram";
 import type { Order } from "./_lib/types";
 import { PAYMENT_WINDOW_MIN } from "./_lib/types";
@@ -145,15 +148,15 @@ function orderCard(o: Order, csrf: string): string {
               ? (expired
                   ? ` <b style="color:var(--err)">· client window CLOSED (${o.expireAt ? fmtDate(o.expireAt) : ""})</b>`
                   : ` · client window until ${o.expireAt ? fmtDate(o.expireAt) : ""}`)
-              : ` · no window yet — email ② not sent`}</div>` +
+              : ` · no window yet — payment instructions (②) not sent`}</div>` +
     itemsTbl +
     (o.driverLink ? `<div class="mut" style="margin-top:8px">🚚 Driver link: <a href="${escapeHtml(o.driverLink)}" target="_blank" rel="noopener" style="color:var(--acc)">${escapeHtml(o.driverLink)}</a></div>` : "") +
     (o.notes ? `<div class="mut" style="margin-top:8px;font-size:12px;white-space:pre-wrap">📝 ${escapeHtml(o.notes)}</div>` : "") +
-    `<details class="pre"><summary>${canSend ? "Send payment instructions (email ②)" : "Payment instructions unavailable"}</summary>` +
+    `<details class="pre"><summary>${canSend ? "Send payment instructions (Telegram ②)" : "Payment instructions unavailable"}</summary>` +
     (canSend
       ? `<div class="pay-form">` +
         `<input type="hidden" name="_csrf" value="${escapeHtml(csrf)}">` +
-        `<p class="mut" style="margin:12px 0 0"><b>Fill every method you offer — all filled ones go together</b> in one email, the customer picks. Leave a method empty to skip it.</p>` +
+        `<p class="mut" style="margin:12px 0 0"><b>Fill every method you offer — all filled ones go together</b> in one message, the customer picks. Leave a method empty to skip it. Since Brevo is suspended, the message is sent to the <b>shop Telegram bot</b> — forward it to the customer.</p>` +
         `<div class="mgroup"><div class="mhead">① PayID</div>` +
         `<label>Account name</label><input name="payid_name" placeholder="e.g. EMILY" autocomplete="off">` +
         `<label>PayID</label><input name="payid" placeholder="e.g. emily@gmail.com / 04xx xxx xxx" autocomplete="off">` +
@@ -177,7 +180,7 @@ function orderCard(o: Order, csrf: string): string {
         `</div></div>` +
         `<div class="row" style="margin-top:12px">` +
         `<button class="btn ghost" type="button" onclick="previewPay(this)">Preview</button>` +
-        `<button class="btn green" type="button" onclick="sendPay(this)">Send email ②</button>` +
+        `<button class="btn green" type="button" onclick="sendPay(this)">Send payment instructions (Telegram)</button>` +
         `</div>` +
         `</div>`
       : ``) +
@@ -206,12 +209,12 @@ function orderCard(o: Order, csrf: string): string {
 function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
   const cancelRow =
     `<div class="row" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--edge)"><button class="btn danger" type="button" onclick="cancelOrder(this)">✕ Cancel order</button>` +
-    `<span class="mut">Stops the order and emails the customer (⑥).</span></div>`;
+    `<span class="mut">Stops the order and notifies the customer (⑥).</span></div>`;
   // Suppression DÉFINITIVE et manuelle — l'admin décide seule quand une commande
   // ne sert plus (tests, junk). Aucun compte à rebours, aucun TTL : que son clic.
   const deleteRow =
     `<div class="row" style="margin-top:10px;padding-top:10px;border-top:1px dashed var(--edge)"><button class="btn kill" type="button" onclick="deleteOrder(this)">🗑 Delete permanently</button>` +
-    `<span class="mut">Removes the order from the store NOW — no email sent, cannot be undone. For test/junk orders only.</span></div>`;
+    `<span class="mut">Removes the order from the store NOW — no message sent, cannot be undone. For test/junk orders only.</span></div>`;
 
   if (o.status === "pending_payment") {
     if (!o.paymentInstructionsSentAt) {
@@ -219,15 +222,15 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
       // d'abord envoyer les instructions de paiement (sinon le clic avorte en 400).
       return (
         `<div class="row" style="margin-top:12px;background:#FEF0E4;border:1px solid #F5D9A8;border-radius:10px;padding:10px 12px">` +
-        `<b style="color:var(--err)">⛔ Not payable yet — send email ② first.</b>` +
+        `<b style="color:var(--err)">⛔ Not payable yet — send payment instructions (②) first.</b>` +
         `<div class="mut">Fill the form above and click <b>Send payment instructions</b>. The "Payment confirmed" button only appears once the customer has a payment window.</div>` +
         `</div>` + cancelRow + deleteRow
       );
     }
     return (
       `<div class="row" style="margin-top:12px">` +
-      `<button class="btn green" type="button" onclick="confirmPay(this)">✓ Payment confirmed — send email ③</button>` +
-      `<span class="mut">Set order to PAID and send the tracking link (email ③).</span>` +
+      `<button class="btn green" type="button" onclick="confirmPay(this)">✓ Payment confirmed — send message ③</button>` +
+      `<span class="mut">Set order to PAID and send the tracking link (message ③).</span>` +
       `</div>` + cancelRow + deleteRow
     );
   }
@@ -235,17 +238,17 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
     return (
       `<div class="row" style="margin-top:12px">` +
       `<button class="btn" type="button" onclick="markInWarehouse(this)">📦 In our warehouse</button>` +
-      `<span class="mut">Move the order to "In our warehouse" — no email goes out (client sees the timeline move).</span>` +
+      `<span class="mut">Move the order to "In our warehouse" — no message goes out (client sees the timeline move).</span>` +
       `</div>` + cancelRow + deleteRow
     );
   }
   if (o.status === "at_warehouse") {
     return (
-      `<details class="pre"><summary>🚚 Send departure email (④) + move to "On the way"</summary>` +
+      `<details class="pre"><summary>🚚 Send departure message (④) + move to "On the way"</summary>` +
       `<div class="pay-form">` +
       `<input type="hidden" name="_csrf" value="${escapeHtml(csrf)}">` +
-      `<p class="mut" style="margin:12px 0 0"><b>Email ④ = departure + A$300 courier deposit.</b>` +
-      ` Fill the <b>same rotating accounts as email ②</b> (this is generated manually each time) and an optional courier tracking link.</p>` +
+      `<p class="mut" style="margin:12px 0 0"><b>Message ④ = departure + A$300 courier deposit.</b>` +
+      ` Fill the <b>same rotating accounts as ②</b> (this is generated manually each time) and an optional courier tracking link.</p>` +
       `<label>Courier tracking link (optional)</label>` +
       `<input name="driver_link" placeholder="https://…" autocomplete="off">` +
       `<div class="mgroup"><div class="mhead">① PayID</div>` +
@@ -271,7 +274,7 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
       `</div></div>` +
       `<div class="row" style="margin-top:12px">` +
       `<button class="btn ghost" type="button" onclick="previewDeparture(this)">Preview</button>` +
-      `<button class="btn green" type="button" onclick="sendDeparture(this)">Send email ④ + mark "On the way"</button>` +
+      `<button class="btn green" type="button" onclick="sendDeparture(this)">Send departure message (④) + mark "On the way"</button>` +
       `</div>` +
       `</div></details>` + cancelRow + deleteRow
     );
@@ -279,7 +282,7 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
   if (o.status === "in_transit") {
     return (
       `<div class="row" style="margin-top:12px">` +
-      `<button class="btn green" type="button" onclick="markDelivered(this)">✅ Delivered — send email ⑤</button>` +
+      `<button class="btn green" type="button" onclick="markDelivered(this)">✅ Delivered — send message ⑤</button>` +
       `<button class="btn ghost" type="button" onclick="markFailed(this)">⚠️ Delivery failed</button>` +
       `</div>` + cancelRow + deleteRow
     );
@@ -296,14 +299,14 @@ function statusActionsHTML(o: Order, csrf: string, canSend: boolean): string {
     return (
       `<div class="row" style="margin-top:12px">` +
       `<button class="btn ghost" type="button" onclick="reopenOrder(this)">↩️ Re-open (back to pending)</button>` +
-      `<span class="mut">Restore the order to "Payment pending" — no email goes out (in case of a mistaken cancel).</span>` +
+      `<span class="mut">Restore the order to "Payment pending" — no message goes out (in case of a mistaken cancel).</span>` +
       `</div>` + deleteRow
     );
   }
   if (o.status === "delivered") {
     return (
       `<div class="row" style="margin-top:12px">` +
-      `<span class="mut">🎉 Delivered — email ⑤ sent. Nothing to do.</span>` +
+      `<span class="mut">🎉 Delivered — message ⑤ sent. Nothing to do.</span>` +
       `</div>` + deleteRow
     );
   }
@@ -378,7 +381,7 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `const udta=gv(f,'usdt_address'),udtn=gv(f,'usdt_network');if(udta||udtn){const c={};if(udta)c.address=udta;if(udtn)c.network=udtn;o.usdt=c}` +
         `return o};` +
         `async function serve(btn,preview){` +
-        `if(!preview&&!confirm('Send the payment instructions by email to this customer now?'))return;` +
+        `if(!preview&&!confirm('Send the payment instructions to your shop Telegram now (to forward to the customer)?'))return;` +
         `const f=btn.closest('.pay-form');const det=btn.closest('details.pre');` +
         `const pf=payFields(f);` +
         `if(!Object.keys(pf).length){alert('Fill at least one payment method before sending.');return}` +
@@ -393,7 +396,7 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `function previewPay(btn){serve(btn,true)}` +
         `function sendPay(btn){serve(btn,false)}` +
         `async function confirmPay(btn){` +
-        `if(!confirm('Confirm the payment for this order and send the tracking email (③) now?'))return;` +
+        `if(!confirm('Confirm the payment for this order and send the tracking message (③) to your shop Telegram now?'))return;` +
         `const body={action:'mark-paid',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
         `const old=btn.textContent;btn.textContent='Sending…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
@@ -401,7 +404,7 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
         `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
         `async function markInWarehouse(btn){` +
-        `if(!confirm('Move this order to "In our warehouse"? No email goes out.'))return;` +
+        `if(!confirm('Move this order to "In our warehouse"? No message goes out.'))return;` +
         `const body={action:'mark-in-warehouse',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
         `const old=btn.textContent;btn.textContent='Updating…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
@@ -415,7 +418,7 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `const udta=gv(f,'dep_usdt_address'),udtn=gv(f,'dep_usdt_network');if(udta||udtn){const c={};if(udta)c.address=udta;if(udtn)c.network=udtn;o.usdt=c}` +
         `return o};` +
         `async function serveDeparture(btn,preview){` +
-        `if(!preview&&!confirm('Send the departure email (④) with the A$300 deposit details and move this order to "On the way"?'))return;` +
+        `if(!preview&&!confirm('Send the departure message (④) with the A$300 deposit details to your shop Telegram and move this order to "On the way"?'))return;` +
         `const f=btn.closest('.pay-form');const det=btn.closest('details.pre');` +
         `const pf=depFields(f);` +
         `if(!Object.keys(pf).length){alert('Fill at least one payment account for the deposit before sending.');return}` +
@@ -431,7 +434,7 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `function previewDeparture(btn){serveDeparture(btn,true)}` +
         `function sendDeparture(btn){serveDeparture(btn,false)}` +
         `async function markDelivered(btn){` +
-        `if(!confirm('Mark this order as DELIVERED and send the delivery email (⑤) now?'))return;` +
+        `if(!confirm('Mark this order as DELIVERED and send the delivery message (⑤) to your shop Telegram now?'))return;` +
         `const body={action:'mark-delivered',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
         `const old=btn.textContent;btn.textContent='Sending…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
@@ -439,7 +442,7 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
         `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
         `async function markFailed(btn){` +
-        `if(!confirm('Mark this delivery as FAILED? The courier will retry shortly (no email to client).'))return;` +
+        `if(!confirm('Mark this delivery as FAILED? The courier will retry shortly (no message to client).'))return;` +
         `const body={action:'mark-failed',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
         `const old=btn.textContent;btn.textContent='Updating…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
@@ -455,7 +458,7 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
         `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
         `async function cancelOrder(btn){` +
-        `if(!confirm('Cancel this order and email the customer (⑥)? This cannot be undone from the client side.'))return;` +
+        `if(!confirm('Cancel this order and send the cancellation message (⑥) to your shop Telegram (to forward to the customer)? This cannot be undone from the client side.'))return;` +
         `const body={action:'cancel-order',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
         `const old=btn.textContent;btn.textContent='Cancelling…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
@@ -463,7 +466,7 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
         `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
         `async function reopenOrder(btn){` +
-        `if(!confirm('Re-open this cancelled order (back to "Payment pending")? No email goes out.'))return;` +
+        `if(!confirm('Re-open this cancelled order (back to "Payment pending")? No message goes out.'))return;` +
         `const body={action:'reopen-order',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
         `const old=btn.textContent;btn.textContent='Re-opening…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
@@ -471,7 +474,7 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
         `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
         `async function deleteOrder(btn){` +
-        `if(!confirm('Permanently DELETE this order from the store? There is NO undo and NO email is sent to the customer. Only for test/junk orders that must disappear. Continue?'))return;` +
+        `if(!confirm('Permanently DELETE this order from the store? There is NO undo and NO message is sent to the customer. Only for test/junk orders that must disappear. Continue?'))return;` +
         `const body={action:'delete-order',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
         `const old=btn.textContent;btn.textContent='Deleting…';btn.disabled=true;` +
         `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
@@ -574,40 +577,38 @@ export async function onRequestPost(context: any): Promise<Response> {
       return json({ ok: false, error: "Send payment instructions (②) first — this order has no payment window yet." }, 400);
     }
     const mail = emailCongrats(order);
-    const sent = await sendEmail(env, { to: order.email, subject: mail.subject, html: mail.html, text: mail.text, tag: "payment-confirmed" });
+    // Brevo suspendu (22/11) : le message-client COMPLET (mail.text) part sur le
+    // bot Telegram INTERNE du shop → l'admin le transmet à son client à la main.
+    const sent = await sendTelegram(env, mail.text);
     if (!sent.ok) {
-      return json({ ok: false, error: `Email ③ failed (${sent.status}) — check Brevo`, ...(sent.error ? { detail: sent.error } : {}) }, 502);
+      return json({ ok: false, error: `Message ③ failed (${sent.status}) — check the shop Telegram bot` }, 502);
     }
     const nowIso = new Date().toISOString();
     order.status = "paid";
     order.updatedAt = nowIso;
-    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] payment confirmed by admin — email ③ (tracking link) sent`;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] payment confirmed by admin — message ③ (tracking link) sent to shop Telegram`;
     await putOrder(env, order);
-    await sendTelegram(
-      env,
-      `✅ ${order.id} PAYÉE (${fmtAud(order.totalAud)})\n📧 ${order.email}\n🎉 Email ③ envoyé — lien de suivi`
-    );
-    return json({ ok: true, msg: `Email ③ sent to ${order.email} (${order.id}) — order marked as PAID.` });
+    return json({ ok: true, msg: `Message ③ (tracking link) sent to the shop Telegram (${order.id}) — order marked as PAID. Forward it to the customer.` });
   }
 
-  // ── Étape 4a : paid → at_warehouse (aucun email : la frise cliente avance) ──
+  // ── Étape 4a : paid → at_warehouse (aucun message : la frise cliente avance) ──
   if (action === "mark-in-warehouse") {
     if (order.status !== "paid") {
-      return json({ ok: false, error: "Order must be PAID (email ③ sent) before moving to the warehouse." }, 400);
+      return json({ ok: false, error: "Order must be PAID (message ③ sent) before moving to the warehouse." }, 400);
     }
     const nowIso = new Date().toISOString();
     order.status = "at_warehouse";
     order.updatedAt = nowIso;
-    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] moved to "In our warehouse" (no email — client sees the timeline move)`;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] moved to "In our warehouse" (no message — client sees the timeline move)`;
     await putOrder(env, order);
-    await sendTelegram(env, `📦 ${order.id} À L'ENTREPÔT (${fmtAud(order.totalAud)})`);
+    await sendTelegram(env, `📦 ${order.id} AT THE WAREHOUSE (${fmtAud(order.totalAud)})`);
     return json({ ok: true, msg: `${order.id} moved to "In our warehouse".` });
   }
 
-  // ── Étape 4b : at_warehouse → in_transit (email ④ départ + caution A$300) ──
+  // ── Étape 4b : at_warehouse → in_transit (message ④ départ + caution A$300) ──
   if (action === "preview-departure" || action === "send-departure") {
     if (order.status !== "at_warehouse") {
-      return json({ ok: false, error: 'Order must be "In our warehouse" before the departure email (④).' }, 400);
+      return json({ ok: false, error: 'Order must be "In our warehouse" before the departure message (④).' }, 400);
     }
     const payidObj = body.payid && typeof body.payid === "object" ? (body.payid as Record<string, unknown>) : {};
     const bankObj = body.bank && typeof body.bank === "object" ? (body.bank as Record<string, unknown>) : {};
@@ -639,40 +640,38 @@ export async function onRequestPost(context: any): Promise<Response> {
     if (action === "preview-departure") {
       return json({ ok: true, html: mail.html });
     }
-    const sent = await sendEmail(env, { to: order.email, subject: mail.subject, html: mail.html, text: mail.text, tag: "in-transit" });
+    const sent = await sendTelegram(env, mail.text);
     if (!sent.ok) {
-      return json({ ok: false, error: `Email ④ failed (${sent.status}) — check Brevo`, ...(sent.error ? { detail: sent.error } : {}) }, 502);
+      return json({ ok: false, error: `Message ④ failed (${sent.status}) — check the shop Telegram bot` }, 502);
     }
     const nowIso = new Date().toISOString();
     order.status = "in_transit";
     order.driverLink = driverLink;
     order.updatedAt = nowIso;
-    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] departure email (④) sent — order ON ITS WAY${driverLink ? ` — driver link ${driverLink}` : ""}`;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] departure message (④) sent to shop Telegram — order ON ITS WAY${driverLink ? ` — driver link ${driverLink}` : ""}`;
     await putOrder(env, order);
-    await sendTelegram(env, `🚚 ${order.id} EN ROUTE — ${fmtAud(order.totalAud)}\n📧 ${order.email}\n💵 Email ④ envoyé (caution A$300)`);
-    return json({ ok: true, msg: `Email ④ sent to ${order.email} (${order.id}) — order marked as "On the way".` });
+    return json({ ok: true, msg: `Message ④ (departure + A$300 deposit) sent to the shop Telegram (${order.id}) — order marked as "On the way". Forward it to the customer.` });
   }
 
-  // ── Étape 4c : in_transit → delivered (email ⑤) ──
+  // ── Étape 4c : in_transit → delivered (message ⑤) ──
   if (action === "mark-delivered") {
     if (order.status !== "in_transit") {
       return json({ ok: false, error: 'Order must be "On the way" before marking it delivered.' }, 400);
     }
     const mail = emailDelivered(order);
-    const sent = await sendEmail(env, { to: order.email, subject: mail.subject, html: mail.html, text: mail.text, tag: "delivered" });
+    const sent = await sendTelegram(env, mail.text);
     if (!sent.ok) {
-      return json({ ok: false, error: `Email ⑤ failed (${sent.status}) — check Brevo`, ...(sent.error ? { detail: sent.error } : {}) }, 502);
+      return json({ ok: false, error: `Message ⑤ failed (${sent.status}) — check the shop Telegram bot` }, 502);
     }
     const nowIso = new Date().toISOString();
     order.status = "delivered";
     order.updatedAt = nowIso;
-    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] delivered — email ⑤ sent (courier refunded A$300 cash at the door)`;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] delivered — message ⑤ sent to shop Telegram (courier refunded A$300 cash at the door)`;
     await putOrder(env, order);
-    await sendTelegram(env, `🎉 ${order.id} LIVRÉE (${fmtAud(order.totalAud)})\n📧 ${order.email}\n📨 Email ⑤ envoyé`);
-    return json({ ok: true, msg: `Email ⑤ sent to ${order.email} (${order.id}) — order marked as DELIVERED.` });
+    return json({ ok: true, msg: `Message ⑤ (delivered) sent to the shop Telegram (${order.id}) — order marked as DELIVERED. Forward it to the customer.` });
   }
 
-  // ── Étape 4d : in_transit → delivery_failed (aucun email : le coursier re-essaye) ──
+  // ── Étape 4d : in_transit → delivery_failed (aucun message : le coursier re-essaye) ──
   if (action === "mark-failed") {
     if (order.status !== "in_transit") {
       return json({ ok: false, error: 'Only an order "On the way" can be marked as delivery failed.' }, 400);
@@ -680,13 +679,13 @@ export async function onRequestPost(context: any): Promise<Response> {
     const nowIso = new Date().toISOString();
     order.status = "delivery_failed";
     order.updatedAt = nowIso;
-    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] delivery failed — courier will retry shortly (no email sent)`;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] delivery failed — courier will retry shortly (no message sent)`;
     await putOrder(env, order);
-    await sendTelegram(env, `⚠️ ${order.id} ÉCHEC LIVRAISON — nouveau passage prévu\n${order.id} → ${fmtAud(order.totalAud)}`);
+    await sendTelegram(env, `⚠️ ${order.id} DELIVERY FAILED — another attempt is planned\n${order.id} → ${fmtAud(order.totalAud)}`);
     return json({ ok: true, msg: `${order.id} marked as delivery failed — a courier will retry shortly.` });
   }
 
-  // ── Étape 4e : delivery_failed → in_transit (retry, aucun email) ──
+  // ── Étape 4e : delivery_failed → in_transit (retry, aucun message) ──
   if (action === "retry-delivery") {
     if (order.status !== "delivery_failed") {
       return json({ ok: false, error: "Only a failed delivery can be sent back in transit." }, 400);
@@ -694,32 +693,31 @@ export async function onRequestPost(context: any): Promise<Response> {
     const nowIso = new Date().toISOString();
     order.status = "in_transit";
     order.updatedAt = nowIso;
-    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] retry — back in transit (no email sent)`;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] retry — back in transit (no message sent)`;
     await putOrder(env, order);
-    await sendTelegram(env, `↩️ ${order.id} RETRY — de nouveau EN ROUTE (${fmtAud(order.totalAud)})`);
+    await sendTelegram(env, `↩️ ${order.id} RETRY — back ON THE WAY (${fmtAud(order.totalAud)})`);
     return json({ ok: true, msg: `${order.id} sent back to "On the way" for a courier retry.` });
   }
 
-  // ── Étape 4f : ANNULATION (email ⑥) — tous les statuts actifs sauf delivered/expired ──
+  // ── Étape 4f : ANNULATION (message ⑥) — tous les statuts actifs sauf delivered/expired ──
   if (action === "cancel-order") {
     if (order.status === "delivered" || order.status === "expired" || order.status === "cancelled") {
       return json({ ok: false, error: "This order cannot be cancelled (already delivered, expired or cancelled)." }, 400);
     }
     const mail = emailCancelled(order);
-    const sent = await sendEmail(env, { to: order.email, subject: mail.subject, html: mail.html, text: mail.text, tag: "cancelled" });
+    const sent = await sendTelegram(env, mail.text);
     if (!sent.ok) {
-      return json({ ok: false, error: `Email ⑥ failed (${sent.status}) — check Brevo`, ...(sent.error ? { detail: sent.error } : {}) }, 502);
+      return json({ ok: false, error: `Message ⑥ failed (${sent.status}) — check the shop Telegram bot` }, 502);
     }
     const nowIso = new Date().toISOString();
     order.status = "cancelled";
     order.updatedAt = nowIso;
-    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] CANCELLED by admin — email ⑥ sent`;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] CANCELLED by admin — message ⑥ sent to shop Telegram`;
     await putOrder(env, order);
-    await sendTelegram(env, `✕ ${order.id} ANNULÉE (${fmtAud(order.totalAud)})\n📧 ${order.email}\n📨 Email ⑥ (annulation) envoyé`);
-    return json({ ok: true, msg: `Email ⑥ sent to ${order.email} (${order.id}) — order CANCELLED.` });
+    return json({ ok: true, msg: `Message ⑥ (cancellation) sent to the shop Telegram (${order.id}) — order CANCELLED. Forward it to the customer.` });
   }
 
-  // ── Étape 4g : réouverture (cancelled → pending_payment) — anti-fausse-manipulation, sans email ──
+  // ── Étape 4g : réouverture (cancelled → pending_payment) — anti-fausse-manipulation, sans message ──
   if (action === "reopen-order") {
     if (order.status !== "cancelled") {
       return json({ ok: false, error: "Only a cancelled order can be re-opened." }, 400);
@@ -727,9 +725,9 @@ export async function onRequestPost(context: any): Promise<Response> {
     const nowIso = new Date().toISOString();
     order.status = "pending_payment";
     order.updatedAt = nowIso;
-    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] re-opened by admin — back to payment pending (no email sent)`;
+    order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] re-opened by admin — back to payment pending (no message sent)`;
     await putOrder(env, order);
-    await sendTelegram(env, `↩️ ${order.id} RÉOUVERTE (retour paiement en attente)`);
+    await sendTelegram(env, `↩️ ${order.id} RE-OPENED (back to payment pending)`);
     return json({ ok: true, msg: `${order.id} re-opened — back to "Payment pending".` });
   }
 
@@ -740,7 +738,7 @@ export async function onRequestPost(context: any): Promise<Response> {
   if (action === "delete-order") {
     const id = order.id;
     await deleteOrder(env, id);
-    await sendTelegram(env, `🗑️ ${id} SUPPRIMÉE DÉFINITIVEMENT (action manuelle admin)`);
+    await sendTelegram(env, `🗑️ ${id} DELETED PERMANENTLY (manual admin action)`);
     return json({ ok: true, msg: `${id} permanently deleted from the store.` });
   }
 
@@ -786,9 +784,11 @@ export async function onRequestPost(context: any): Promise<Response> {
     }
 
     if (action === "send-payment") {
-      const sent = await sendEmail(env, { to: order.email, subject: mail.subject, html: mail.html, text: mail.text, tag: "payment-instructions" });
+      // Brevo suspendu (22/11) : la version TEXTE BRUT complète du message ②
+      // part sur le bot Telegram INTERNE du shop → l'admin la transmet au client.
+      const sent = await sendTelegram(env, mail.text);
       if (!sent.ok) {
-        return json({ ok: false, error: `Email failed (${sent.status}) — check Brevo`, ...(sent.error ? { detail: sent.error } : {}) }, 502);
+        return json({ ok: false, error: `Message ② failed (${sent.status}) — check the shop Telegram bot` }, 502);
       }
       const nowIso = new Date().toISOString();
       const given = [payOptions.payid && "PayID", payOptions.bank && "Bank", payOptions.btc && "BTC", payOptions.usdt && "USDT"].filter(Boolean).join(" + ");
@@ -797,10 +797,10 @@ export async function onRequestPost(context: any): Promise<Response> {
       // reçu ses instructions, la réservation court pendant 30 min à partir de là.
       order.paymentInstructionsSentAt = nowIso;
       order.expireAt = new Date(new Date(nowIso).getTime() + PAYMENT_WINDOW_MIN * 60_000).toISOString();
-      order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] payment instructions (②) sent — ${given} (client window 30 min starts now)`;
+      order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] payment instructions (②) sent to shop Telegram — ${given} (client window 30 min starts now)`;
       order.updatedAt = nowIso;
       await putOrder(env, order);
-      return json({ ok: true, msg: `Email ② sent to ${order.email} (${order.id}) — ${given}` });
+      return json({ ok: true, msg: `Message ② (payment instructions) sent to the shop Telegram (${order.id}) — ${given}. Forward it to the customer.` });
     }
   }
 

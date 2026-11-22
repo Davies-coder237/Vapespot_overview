@@ -136,11 +136,12 @@ export async function onRequestPost({ request, env }: any): Promise<Response> {
 
   // ── 6. AUCUN email client ici (supprimé 20/11) ────────────────────
   // Le client ne reçoit RIEN tant que l'admin n'a pas saisi les moyens
-  // de paiement et validé l'email ② depuis la page admin. Seule la
-  // notification Telegram s'envoie (bot PRIVÉ du shop, jamais le client) :
+  // de paiement et validé les instructions (②) depuis la page admin.
+  // Seule la notification Telegram s'envoie (bot PRIVÉ du shop, jamais le
+  // client) — toujours en ANGLAIS : marché australien (règle 22/11).
   await sendTelegram(
     env,
-    `🛒 Nouvelle commande ${order.id}\n💰 ${fmtAud(order.totalAud)}\n📍 ${order.warehouseCity} → ${order.deliveryAddress}\n📧 ${order.email}`
+    `🛒 New order ${order.id}\n💰 ${fmtAud(order.totalAud)}\n📍 ${order.warehouseCity} → ${order.deliveryAddress}\n📧 ${order.email}`
   );
 
   // ── Réponse : numéro + infos pour la confirmation client ─────────

@@ -209,10 +209,10 @@ function plainPayment(o: Order, pay: PaymentOptions): string {
   L.push("⏰ YOUR ITEMS ARE RESERVED FOR 30 MINUTES");
   L.push("Stock is limited and these products are held for you for 30 minutes.");
   L.push("If payment doesn't arrive in this window, the items go back to stock and another customer who pays first can take them.");
-  L.push("Need more time? Just reply to this email and we'll hold your order.");
+  L.push("Need more time? Just reply to this message and we'll hold your order.");
   L.push("");
   L.push("✅ AFTER YOU PAY");
-  L.push("Reply to this email (or message @vapespot_store on Telegram: https://t.me/vapespot_store) with a screenshot of the payment and the name of the account it came from. We match it to your order and dispatch immediately.");
+  L.push("Reply to this message (or message @vapespot_store on Telegram: https://t.me/vapespot_store) with a screenshot of the payment and the name of the account it came from. We match it to your order and dispatch immediately.");
   L.push("");
   if (pay.payid && (pay.payid.name || pay.payid.payid)) {
     L.push("① PayID");
@@ -250,7 +250,7 @@ function plainPayment(o: Order, pay: PaymentOptions): string {
     L.push("⚠️ Crypto payments are handled in two separate networks. Send on the correct network only — funds sent on the wrong network can be lost.");
     L.push("");
   }
-  L.push("Questions? Reply to this email — a real person at VapeSpot will get back to you, or message @vapespot_store: https://t.me/vapespot_store");
+  L.push("Questions? Reply to this message — a real person at VapeSpot will get back to you, or message @vapespot_store: https://t.me/vapespot_store");
   return L.join("\n");
 }
 
@@ -367,7 +367,7 @@ export function emailDeparture(
         `Crypto payments are handled in two separate networks. Send on the correct network only — funds sent on the wrong network can be lost.\n\n`
       : "") +
     `The courier carries the A$${INSURANCE_AUD.toFixed(2)} refund with them at delivery.\n\n` +
-    `Questions? Reply to this email — a real person at VapeSpot will get back to you, or message ${SHOP_TG}: https://t.me/vapespot_store`;
+    `Questions? Reply to this message — a real person at VapeSpot will get back to you, or message ${SHOP_TG}: https://t.me/vapespot_store`;
   return {
     subject: `${o.id} is out for delivery — courier deposit A$${INSURANCE_AUD}`,
     html: shell(o, body),
@@ -382,7 +382,7 @@ export function emailDelivered(o: Order): { subject: string; html: string; text:
     `<p style="color:#666;font-size:14px;margin:0">Order <b>${o.id}</b> has been delivered to ${escapeHtml(o.deliveryAddress)}. If anything is missing or damaged, reply to this email and we'll sort it out.</p>`;
   const text =
     `Delivered — enjoy! 🛍️\n\n` +
-    `Order ${o.id} has been delivered to ${o.deliveryAddress}. If anything is missing or damaged, reply to this email and we'll sort it out.`;
+    `Order ${o.id} has been delivered to ${o.deliveryAddress}. If anything is missing or damaged, reply to this message and we'll sort it out.`;
   return {
     subject: `Your order ${o.id} has been delivered — VapeSpot`,
     html: shell(o, body),
@@ -416,7 +416,7 @@ export function emailCancelled(o: Order): { subject: string; html: string; text:
       ? `No payment is needed — if you already sent one, it will be returned.\n`
       : `No payment was made, so there's nothing to refund.\n`) +
     (paid ? `We'll arrange a refund of ${fmtAud(o.totalAud)} back to the account you paid from.\n\n` : `\n`) +
-    `If anything looks wrong, reply to this email or message ${SHOP_TG} at https://t.me/vapespot_store — a real person will sort it out.`;
+    `If anything looks wrong, reply to this message or message ${SHOP_TG} at https://t.me/vapespot_store — a real person will sort it out.`;
   return {
     subject: `Your order ${o.id} was cancelled — VapeSpot`,
     html: shell(o, body),
