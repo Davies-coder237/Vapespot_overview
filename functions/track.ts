@@ -10,10 +10,16 @@
 //      invalide). RATE LIMIT : 5 lookups ratés / 15 min / IP (KV).
 //   4. En cas de correspondance : n° · date · produits · quantités · total ·
 //      mode de paiement · adresse · frise de statut (Order received → Payment
-//      confirmed → In our warehouse → On the way → Delivered) · CARTE LEALET
-//      (entrepôt VapeSpot Hub + adresse de livraison + trajet + km/temps ; hors
-//      zone coursier → libellé Australia Post 1-3 j, DÉCLENCHÉ 21/11 utilisatrice).
-//   5. AUCUNE donnée sensible exposée : pas d'email, pas de notes, pas de $300.
+//      confirmed → In our warehouse → On the way → Delivered) · CARTE LEAFLET
+//      (entrepôt VapeSpot Hub + adresse de livraison + trajet réel + TEMPS
+//      ESTIMÉ SEUL — jamais de km affiché, règle 22/11).
+// ❗ RÈGLES 22/11 (retours utilisatrice) :
+//   · La carte est VISIBLE DÈS L'ARRIVÉE (avant saisie) : Leaflet + tous les
+//     hubs actifs ; l'itinéraire de la commande s'ajuste après le lookup.
+//   · AUCUN kilomètre affiché : estimation de TEMPS seule, minimum 30 min, qui
+//     croît progressivement avec les km réel (route OSRM) ou estimés (haversine).
+//   · JAMAIS de ligne droite de repli : la polyline n'existe QUE si la vraie
+//     route OSRM est disponible, sinon deux marqueurs seulement.
 // ❗ FIX 21/11 SOIR : les handlers renvoyaient le fragment sans le wrapper
 // `trackPage` (CSS + <title> + header perdus → page blanche). Refonte design
 // aux couleurs de la marque (violet #7C3AED / fond lavande / header VapeSpot).
@@ -27,7 +33,6 @@ const PAGE_TITLE = "Track your order — VapeSpot";
 
 // Au-delà de ~5 h (≈ 380-400 km) pas de coursier : libellé Australia Post.
 const COURIER_MAX_KM = 400;
-const EST_KMH = 60; // vitesse estimée coursier pour le libellé trajet
 
 const TRACK_RATE_LIMIT = 5;        // lookups ratés autorisés
 const TRACK_RATE_WINDOW = 15 * 60; // avant blocage temporaire (s)
@@ -77,71 +82,101 @@ function statusTimeline(o: Order): string {
   return `<div class="timeline">${cells}</div>${note}`;
 }
 
-/** Estimation du trajet (km + durée) ou null si hors zone coursier.
- *  Utilise la ROUTE RÉELLE calculée au checkout (OSRM) : vrais km + durée de
- *  conduite réaliste. Repli acceptable sur haversine seulement si pas de route. */
-function routeInfo(o: Order): { km: number; duration: string } | null {
+/** Estimation du TEMPS de livraison — le km reste INTERNE, JAMAIS affiché
+ *  (règle utilisatrice 22/11). Quelle que soit la distance réelle, le minimum
+ *  affiché est 30 min ; le temps croît ensuite progressivement avec les km
+ *  calculés en arrière-plan (route OSRM si dispo, repli acceptable haversine).
+ *  Retourne null hors zone coursier (> 400 km) → libellé Australia Post. */
+function routeEta(o: Order): number | null {
   if (!o.lat || !o.lng) return null;
   const w = warehouseById(o.warehouseId);
   if (!w) return null;
   if (o.route && o.route.km > 0) {
-    const km = o.route.km;
-    if (km > COURIER_MAX_KM) return null;
-    const mins = Math.round(o.route.durationSec / 60);
-    const h = Math.floor(mins / 60);
-    const m = mins % 60;
-    const dur = h > 0 ? `${h} h${m ? " " + m + " min" : ""}` : `${m || 1} min`;
-    return { km: Math.round(km), duration: dur };
+    if (o.route.km > COURIER_MAX_KM) return null;
+    // Base 30 min pour la plus petite distance, +1 min par km au-delà de 5 km.
+    const minutes = 30 + Math.max(0, Math.round(o.route.km - 5));
+    return Math.round(minutes / 5) * 5; // arrondi aux 5 min pour un libellé propre
   }
-  // Repli (anciens ordres sans route) : à vol d'oiseau × 1.3 ≈ distance route
+  // Repli (anciens ordres sans route) : à vol d'oiseau × 1.3 ≈ distance route.
   const km = haversineKm(o.lat, o.lng, w.lat, w.lng) * 1.3;
   if (km > COURIER_MAX_KM) return null;
-  const mins = Math.round((km / EST_KMH) * 60);
-  const h = Math.floor(mins / 60);
-  const m = mins % 60;
-  const dur = h > 0 ? `${h} h${m ? " " + m + " min" : ""}` : `${m || 1} min`;
-  return { km: Math.round(km), duration: dur };
+  const minutes = 30 + Math.max(0, Math.round(km - 5));
+  return Math.round(minutes / 5) * 5;
 }
 
-/** HTML de la carte — Leaflet 1.9.4 (cdnjs) + tuiles OSM gratuites, sans clé API. */
-function mapHTML(o: Order): string {
-  const w = warehouseById(o.warehouseId);
-  const route = routeInfo(o);
-  const okCoords = !!(o.lat && o.lng && w);
+/** Libellé humain du temps estimé : "30 min", "1 h 20", "3 h". */
+function fmtEta(min: number): string {
+  const h = Math.floor(min / 60);
+  const m = min % 60;
+  if (h === 0) return `${m} min`;
+  return m === 0 ? `${h} h` : `${h} h ${m} min`;
+}
+
+/** HTML de la carte — Leaflet 1.9.4 (cdnjs) + tuiles OSM gratuites, sans clé API.
+ *  `o` peut être null (page d'arrivée) : on affiche la carte + tous les hubs
+ *  ACTIFS dès le départ — le client voit la vraie carte avant de saisir quoi que
+ *  ce soit ; l'itinéraire de sa commande s'ajuste après le lookup (règle 22/11).
+ *  Jamais de km affichés (règle 22/11) : uniquement le temps estimé, min 30 min.
+ *  Jamais de ligne droite de repli : la polyline n'existe QUE si la vraie route
+ *  OSRM est disponible, sinon on affiche simplement les deux marqueurs. */
+function mapHTML(o: Order | null): string {
+  const w = o ? warehouseById(o.warehouseId) : null;
+  const eta = o ? routeEta(o) : null;
+  const hasOrder = !!o;
+  const okCoords = hasOrder && !!o!.lat && !!o!.lng && !!w;
   const points = ALL_WAREHOUSES.filter((x) => x.active).map((x) => ({ lat: x.lat, lng: x.lng, label: hubLabel(x) }));
   const hub = w ? hubLabel(w) : "VapeSpot Hub";
   const data = {
-    delivery: okCoords ? { lat: o.lat, lng: o.lng, label: "Your delivery address" } : null,
+    delivery: okCoords ? { lat: o!.lat, lng: o!.lng, label: "Your delivery address" } : null,
     hub: okCoords ? { lat: w!.lat, lng: w!.lng, label: hub } : null,
     points,
-    hasRoute: !!route,
-    routeLine: o.route && okCoords ? o.route.geometry : null, // [[lng,lat],…] vraies routes
+    routeLine: okCoords && o!.route && o!.route.geometry && o!.route.geometry.length > 1
+      ? o!.route.geometry
+      : null, // [[lng,lat],…] vraies routes — sinon null = AUCUNE ligne
   };
 
   let banner: string;
-  if (route) {
+  if (!hasOrder || !okCoords) {
+    banner =
+      `<div class="route-banner"><span class="route-line">Live delivery map</span>` +
+      `<span class="route-meta">Enter your order number and email to see your route and estimated delivery time.</span></div>`;
+  } else if (eta !== null) {
     banner =
       `<div class="route-banner"><span class="route-line">${escapeHtml(hub)}</span>` +
       `<span class="route-arrow">→</span><span class="route-line">Your address</span>` +
-      `<span class="route-meta">≈ ${route.km} km · ~${route.duration}</span></div>`;
-  } else if (w) {
+      `<span class="route-meta">Est. delivery ~${fmtEta(eta)} by courier</span></div>`;
+  } else {
     banner =
       `<div class="route-banner"><span class="route-line">Closest hub: ${escapeHtml(hub)}</span>` +
       `<span class="route-meta">Standard delivery · 1–3 business days via Australia Post</span></div>`;
-  } else {
-    banner =
-      `<div class="route-banner"><span class="route-meta">Standard delivery · 1–3 business days via Australia Post</span></div>`;
   }
 
   return (
     `<div class="map-card">${banner}` +
     `<div id="map"></div>` +
-    `<div class="map-legend"><span class="lg"><span class="lg-dot"></span>VapeSpot Hub</span>` +
+    `<div class="map-legend">` +
+    `<span class="lg"><span class="lg-dot"></span>VapeSpot Hub</span>` +
     `<span class="lg"><span class="lg-pin"></span>Your address</span>` +
     `<span class="lg"><span class="lg-hub"></span>All hubs</span></div>` +
     `<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>` +
     `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">` +
-    `<script>window.__mapData=${JSON.stringify(data)};</script></div>`
+    `<script>window.__mapData=${JSON.stringify(data)};</script>` +
+    `<script>` +
+    `try{if(window.__mapData){` +
+    `const D=window.__mapData;` +
+    `const map=L.map('map').setView([-26.5,134.5],4);` +
+    `L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);` +
+    `for(const p of D.points){L.circleMarker([p.lat,p.lng],{radius:3,color:'#a7b0c7',fillOpacity:0.5}).addTo(map);}` +
+    `if(D.delivery&&D.hub){` +
+    `const hub=L.marker([D.hub.lat,D.hub.lng]).addTo(map).bindPopup(D.hub.label);` +
+    `const del=L.marker([D.delivery.lat,D.delivery.lng]).addTo(map).bindPopup(D.delivery.label);` +
+    `if(D.routeLine&&D.routeLine.length>1){` +
+    `L.polyline(D.routeLine.map(c=>[c[1],c[0]]),{color:'#5b3df5',weight:3,dashArray:'6 6'}).addTo(map);` +
+    `}` +
+    `map.fitBounds([[D.hub.lat,D.hub.lng],[D.delivery.lat,D.delivery.lng]],{padding:[30,30]});` +
+    `}}}` +
+    `catch(e){document.getElementById('map').innerHTML='<p class="mut" style="padding:16px;text-align:center">Map unavailable — try again later.</p>';}` +
+    `</script></div>`
   );
 }
 
@@ -270,25 +305,17 @@ function trackPage(body: string): string {
   );
 }
 
-/** Bloc formulaire (avec message générique si échec). */
+/** Bloc formulaire (avec message générique si échec). La carte RÉELLE est
+ *  visible dès l'arrivée (sans n°/email) : tous les hubs actifs, aucun tracé —
+ *  l'itinéraire s'ajuste après le lookup. (Règle utilisatrice 22/11.) */
 function formHTML(prefill: { n?: string; e?: string }, genericError: boolean): string {
   const n = escapeHtml(prefill.n || "");
   const e = escapeHtml(prefill.e || "");
-  const preview =
-    `<div class="map-preview"><div class="mp-title">Live delivery map</div>` +
-    `<svg class="mp-svg" viewBox="0 0 300 150" role="img" aria-label="Route preview"><rect width="300" height="150" fill="#fff"/>` +
-    `<g stroke="#EDE7FF" stroke-width="1.5"><path d="M0 30H300M0 70H300M0 110H300M0 150H300"/>` +
-    `<path d="M60 0V150M140 0V150M220 0V150M300 0V150M0 0H300"/></g>` +
-    `<path d="M66 105 C90 95 120 60 150 45 S210 25 236 32" fill="none" stroke="#7C3AED" stroke-width="3" stroke-dasharray="7 6" stroke-linecap="round"/>` +
-    `<g transform="translate(52,105)"><path d="M14 0 C5 9 0 16 0 21a14 14 0 0 0 28 0C28 16 23 9 14 0z" fill="#7C3AED"/><circle cx="14" cy="21" r="5" fill="#fff"/></g>` +
-    `<g transform="translate(230,28)"><path d="M12 0 C4 7 0 13 0 17a12 12 0 0 0 24 0C24 13 20 7 12 0z" fill="#1F7A3D"/><circle cx="12" cy="17" r="4" fill="#fff"/></g>` +
-    `<text x="300" y="146" text-anchor="end" font-family="inherit" font-size="9" fill="#A0A8B8">vapespot.store</text></svg>` +
-    `<div class="mp-note">Track your parcel in real time — from our closest hub to your door, with live route and estimated time.</div></div>`;
 
   return (
     `<div class="card">` +
     `<h1 class="page-title">Track your order</h1>` +
-    `<p class="page-sub">Enter your order number and the email you used at checkout to see live status.</p>` +
+    `<p class="page-sub">Enter your order number and the email you used at checkout to see live status, route and estimated delivery time.</p>` +
     `<div class="track-grid">` +
     `<form method="post" action="/track">` +
     `<label for="tf-n">Order number</label>` +
@@ -298,7 +325,11 @@ function formHTML(prefill: { n?: string; e?: string }, genericError: boolean): s
     (genericError ? `<p class="err">No order matches this order number and email address.</p>` : "") +
     `<button class="btn" type="submit">Track my order →</button>` +
     `</form>` +
-    preview +
+    `<div class="map-preview">` +
+    `<div class="mp-title">Live delivery map</div>` +
+    mapHTML(null) +
+    `<div class="mp-note">Your order number and email draw your hub-to-door route with an estimated delivery time (minimum 30 min).</div>` +
+    `</div>` +
     `</div>` +
     `<div class="trust">` +
     `<div class="trust-row"><span class="trust-ic">🚚</span>Fast courier delivery to your address</div>` +
@@ -342,24 +373,7 @@ function resultHTML(o: Order): string {
     `<hr style="border:none;border-top:1px solid #F1F2F6;margin:16px 0">` +
     `<div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--mut)">Delivery</div>` +
     mapHtml +
-    `</div>` +
-    `<script>` +
-    `try{if(window.__mapData){` +
-    `const D=window.__mapData;` +
-    `const map=L.map('map').setView([-26.5,134.5],4);` +
-    `L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);` +
-    `for(const p of D.points){L.circleMarker([p.lat,p.lng],{radius:3,color:'#a7b0c7',fillOpacity:0.5}).addTo(map);}` +
-    `if(D.delivery&&D.hub){` +
-    `const hub=L.marker([D.hub.lat,D.hub.lng]).addTo(map).bindPopup(D.hub.label);` +
-    `const del=L.marker([D.delivery.lat,D.delivery.lng]).addTo(map).bindPopup(D.delivery.label);` +
-    `if(D.hasRoute){` +
-    `const line=D.routeLine&&D.routeLine.length>1?D.routeLine.map(c=>[c[1],c[0]]):[[D.hub.lat,D.hub.lng],[D.delivery.lat,D.delivery.lng]];` +
-    `L.polyline(line,{color:'#5b3df5',weight:3,dashArray:'6 6'}).addTo(map);` +
-    `}` +
-    `map.fitBounds([[D.hub.lat,D.hub.lng],[D.delivery.lat,D.delivery.lng]],{padding:[30,30]});` +
-    `}}}` +
-    `catch(e){document.getElementById('map').innerHTML='<p class="mut" style="padding:16px;text-align:center">Map unavailable — try again later.</p>';}` +
-    `</script>`
+    `</div>`
   );
 }
 

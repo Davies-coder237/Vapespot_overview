@@ -3,9 +3,13 @@
 // L'admin voit les commandes, saisit les comptes de paiement ROTATIFS
 // (PayID / Bank / Crypto) et déclenche MANUELLEMENT le message ② d'instructions.
 // Brevo suspendu depuis le 21/11 : AUCUN email client ne part plus — chaque
-// action (②③④⑤⑥) envoie la version TEXTE BRUT complète du message au bot
-// Telegram INTERNE du shop (@vapespot_orders_bot) ; l'admin la transmet à son
-// client à la main. sendEmail reste codé dans _lib/brevo.ts (rien supprimé).
+// action (②③④⑤⑥) envoie au bot Telegram INTERNE du shop (@vapespot_orders_bot)
+// une version RICHE au DESIGN du preview (parse_mode=HTML Telegram : gras, code
+// monospace, émoticônes — construite par _lib/tgMessages) ; l'admin la transmet
+// à son client dans la conversation @vapespot_store. Pas de mention « message
+// @vapespot_store » dans ces messages : le client est DÉJÀ dans cette
+// conversation (règle utilisatrice 22/11). sendEmail reste codé dans brevo.ts
+// (rien supprimé) et mail.html sert encore aux previews de l'admin.
 // Règle validée (20/11) : TOUS les moyens remplis partent ENSEMBLE dans un
 // seul message, le client choisit. Champ vide = moyen sauté.
 // ⚠️ Jamais de $300 ici : le message ② n'en parle pas (règle validée, seul ④).
@@ -18,6 +22,7 @@ import {
 } from "./_lib/auth";
 import { getOrder, listOrders, putOrder, isExpiredOrder, deleteOrder } from "./_lib/orders";
 import { emailPaymentInstructions, emailCongrats, emailDeparture, emailDelivered, emailCancelled, type PaymentOptions, type PayIdOptions, type BankOptions, type CryptoOptions } from "./_lib/emails";
+import { tgPaymentInstructions, tgCongrats, tgDeparture, tgDelivered, tgCancelled } from "./_lib/tgMessages";
 import { sendTelegram } from "./_lib/telegram";
 import type { Order } from "./_lib/types";
 import { PAYMENT_WINDOW_MIN } from "./_lib/types";
@@ -576,10 +581,9 @@ export async function onRequestPost(context: any): Promise<Response> {
     if (!order.paymentInstructionsSentAt) {
       return json({ ok: false, error: "Send payment instructions (②) first — this order has no payment window yet." }, 400);
     }
-    const mail = emailCongrats(order);
-    // Brevo suspendu (22/11) : le message-client COMPLET (mail.text) part sur le
-    // bot Telegram INTERNE du shop → l'admin le transmet à son client à la main.
-    const sent = await sendTelegram(env, mail.text);
+    // Brevo suspendu (22/11) : message ③ au DESIGN du preview (version RICHE
+    // HTML Telegram) part sur le bot INTERNE du shop → l'admin le transmet.
+    const sent = await sendTelegram(env, tgCongrats(order), "HTML");
     if (!sent.ok) {
       return json({ ok: false, error: `Message ③ failed (${sent.status}) — check the shop Telegram bot` }, 502);
     }
@@ -640,7 +644,9 @@ export async function onRequestPost(context: any): Promise<Response> {
     if (action === "preview-departure") {
       return json({ ok: true, html: mail.html });
     }
-    const sent = await sendTelegram(env, mail.text);
+    // Brevo suspendu (22/11) : message ④ au DESIGN du preview (version RICHE
+    // HTML Telegram) part sur le bot INTERNE du shop → l'admin le transmet.
+    const sent = await sendTelegram(env, tgDeparture(order, payOptions, driverLink), "HTML");
     if (!sent.ok) {
       return json({ ok: false, error: `Message ④ failed (${sent.status}) — check the shop Telegram bot` }, 502);
     }
@@ -658,8 +664,9 @@ export async function onRequestPost(context: any): Promise<Response> {
     if (order.status !== "in_transit") {
       return json({ ok: false, error: 'Order must be "On the way" before marking it delivered.' }, 400);
     }
-    const mail = emailDelivered(order);
-    const sent = await sendTelegram(env, mail.text);
+    // Brevo suspendu (22/11) : message ⑤ au DESIGN du preview (version RICHE
+    // HTML Telegram) part sur le bot INTERNE du shop → l'admin le transmet.
+    const sent = await sendTelegram(env, tgDelivered(order), "HTML");
     if (!sent.ok) {
       return json({ ok: false, error: `Message ⑤ failed (${sent.status}) — check the shop Telegram bot` }, 502);
     }
@@ -704,8 +711,9 @@ export async function onRequestPost(context: any): Promise<Response> {
     if (order.status === "delivered" || order.status === "expired" || order.status === "cancelled") {
       return json({ ok: false, error: "This order cannot be cancelled (already delivered, expired or cancelled)." }, 400);
     }
-    const mail = emailCancelled(order);
-    const sent = await sendTelegram(env, mail.text);
+    // Brevo suspendu (22/11) : message ⑥ au DESIGN du preview (version RICHE
+    // HTML Telegram) part sur le bot INTERNE du shop → l'admin le transmet.
+    const sent = await sendTelegram(env, tgCancelled(order), "HTML");
     if (!sent.ok) {
       return json({ ok: false, error: `Message ⑥ failed (${sent.status}) — check the shop Telegram bot` }, 502);
     }
@@ -784,9 +792,9 @@ export async function onRequestPost(context: any): Promise<Response> {
     }
 
     if (action === "send-payment") {
-      // Brevo suspendu (22/11) : la version TEXTE BRUT complète du message ②
-      // part sur le bot Telegram INTERNE du shop → l'admin la transmet au client.
-      const sent = await sendTelegram(env, mail.text);
+      // Brevo suspendu (22/11) : message ② au DESIGN du preview (version RICHE
+      // HTML Telegram) part sur le bot INTERNE du shop → l'admin le transmet.
+      const sent = await sendTelegram(env, tgPaymentInstructions(order, payOptions), "HTML");
       if (!sent.ok) {
         return json({ ok: false, error: `Message ② failed (${sent.status}) — check the shop Telegram bot` }, 502);
       }
