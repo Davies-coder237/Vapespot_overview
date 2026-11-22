@@ -55,10 +55,9 @@ export function OrderSummary() {
       toast.error("Please enter your email address — we'll send your confirmation there.");
       return;
     }
-    if (deliveryAddress.trim().length < 10) {
-      toast.error("Please enter your full delivery address (street, city, state, postcode).");
-      return;
-    }
+    // L'adresse de livraison ne bloque JAMAIS (règle 22/11) : peu importe ce
+    // que le client tape — ou laisse vide — le clic avance. L'admin clarifie
+    // par Telegram si besoin. On la transmet telle quelle au serveur.
     try {
       const res = await fetch("/checkout", {
         method: "POST",
@@ -367,7 +366,8 @@ export function OrderSummary() {
           </button>
         </div>
 
-        {/* ── Delivery address + email (obligatoires — Étape 1) ── */}
+        {/* ── Delivery address + email (email obligatoire — Étape 1 ; l'adresse
+              ne bloque jamais, règle 22/11) ── */}
         <div className="bg-[#F9F7FF] border border-[#E4DEFF] rounded-xl px-4 py-3.5 md:px-6 md:py-5 space-y-3">
           <div className="flex items-center gap-3">
             <div className="shrink-0 h-10 w-10 rounded-full bg-[#EDE9FF] flex items-center justify-center">
@@ -387,7 +387,7 @@ export function OrderSummary() {
           <textarea
             value={deliveryAddress}
             onChange={(e) => setDeliveryAddress(e.target.value)}
-            placeholder="Street, City, State, Postcode (required)"
+            placeholder="Street, City, State, Postcode (recommended)"
             rows={2}
             className="w-full text-[13px] md:text-[14px] border border-[#E4DEFF] bg-white rounded-lg px-3 py-2 text-black placeholder:text-[#C4B8F0] focus:outline-none focus:border-[#7C3AED] resize-none"
           />

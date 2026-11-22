@@ -1,17 +1,23 @@
 // Étape 1 — POST /checkout : création de commande côté serveur.
-// Flux validé 20/11 :
-//   1. Email + adresse de livraison OBLIGATOIRES (validés côté serveur).
-//   2. Géocodage adresse (Nominatim, cache KV) → entrepôt actif le plus proche.
-//   3. Numéro VS-XXXX via Durable Object (atomique).
-//   4. Stockage KV PERMANENT (aucun TTL : une commande ne disparaît JAMAIS,
+// Flux validé 20/11, AMÉLIORÉ 22/11 :
+//   1. Email OBLIGATOIRE (nécessaire au suivi + à l'admin). L'ADRESSE de
+//      livraison n'est PLUS jamais un blocage : peu importe ce que le client
+//      tape (ou laisse vide), la commande AVANCE (règle utilisatrice 22/11).
+//      Sans adresse exploitable → entrepôt de repli + pas de géolocalisation
+//      (l'admin clarifie par Telegram, le suivi montre les hubs sans tracé).
+//   2. Géocodage BEST-EFFORT (Nominatim, cache KV) : si l'adresse n'est pas
+//      trouvée ou le service KO → repli, JAMAIS un rejet de commande.
+//   3. Entrepôt actif le plus proche (ou repli si pas de géocodage).
+//   4. Numéro VS-XXXX via Durable Object (atomique).
+//   5. Stockage KV PERMANENT (aucun TTL : une commande ne disparaît JAMAIS,
 //      l'admin doit pouvoir agir même le lendemain). La fenêtre de paiement
 //      30 min est posée seulement par l'admin à l'envoi de l'email ②.
-//   5. AUCUN email au client au checkout — il ne reçoit RIEN tant que
+//   6. AUCUN email au client au checkout — il ne reçoit RIEN tant que
 //      l'admin n'a pas saisi les moyens de paiement et validé l'email ②
 //      depuis la page admin. Seul le bot Telegram PRIVÉ du shop est notifié.
-//   6. Réponse : { orderNumber } → la page affiche la confirmation.
+//   7. Réponse : { orderNumber } → la page affiche la confirmation.
 // Anti-spam minimal : limite par IP (KV), sans casser l'usage normal.
-import { geocodeAddress, nearestActiveWarehouse, fetchRoute } from "./_lib/geo";
+import { geocodeAddress, nearestActiveWarehouse, fetchRoute, ACTIVE_WAREHOUSES } from "./_lib/geo";
 import { orderNumber } from "./_lib/counter";
 import { newPendingOrder, putOrder } from "./_lib/orders";
 import { sendTelegram } from "./_lib/telegram";
@@ -52,7 +58,10 @@ export async function onRequestPost({ request, env }: any): Promise<Response> {
   const items = Array.isArray(body.items) ? body.items : [];
 
   if (!EMAIL_RE.test(email)) return fail("email_required");
-  if (deliveryAddress.length < 10) return fail("delivery_address_required");
+
+  // L'adresse n'est JAMAIS un blocage (règle 22/11) : on la prend telle quelle,
+  // même courte ou vide. Le géocodage ci-dessous est best-effort : si elle ne
+  // résout pas, la commande avance avec un entrepôt de repli.
 
   // Items : structure minimale (productId, quantity) — les infos catalogue
   // restent côté client ; le montant est recalculé serveur depuis les items.
@@ -87,27 +96,37 @@ export async function onRequestPost({ request, env }: any): Promise<Response> {
   if (hit > 10) return fail("too_many_orders", 429);
   await env.VAPESPOT_ORDERS.put(rateKey, String(hit), { expirationTtl: 15 * 60 });
 
-  // ── 3. Géocodage + entrepôt actif le plus proche ─────────────────
-  let geo;
+  // ── 3. Géocodage BEST-EFFORT + entrepôt actif le plus proche ──────────
+  // Règle 22/11 : l'adresse ne bloque JAMAIS. Si le géocodage échoue (adresse
+  // introuvable, Nominatim KO, ou champ vide) → entrepôt de repli (1er actif),
+  // lat/lng null, route null : la commande AVANCE, l'admin clarifie via
+  // Telegram et /track montre les hubs sans tracé ni adresse.
+  let geo: { lat: number; lng: number } | null = null;
   try {
-    geo = await geocodeAddress(env, deliveryAddress);
+    geo = deliveryAddress.trim().length > 2
+      ? await geocodeAddress(env, deliveryAddress)
+      : null;
   } catch {
-    return fail("delivery_address_not_found");
+    geo = null; // jamais un rejet de commande pour une adresse
   }
-  const { warehouse } = nearestActiveWarehouse(geo.lat, geo.lng);
+  const nearest = geo ? nearestActiveWarehouse(geo.lat, geo.lng).warehouse : null;
+  const warehouse = nearest ?? ACTIVE_WAREHOUSES[0];
   if (!warehouse) return fail("no_warehouse_available", 503);
 
   // ── 3b. Route routière RÉELLE entrepôt → adresse (OSRM, cache KV) ──
   // Stockée sur la commande → /track affiche le VRAI tracé (rues) + temps de
   // conduite réaliste. Jamais de calcul sur /track (anti-enum + latence).
-  // Si OSRM est indisponible → route null, /track affiche la ligne droite.
+  // Si OSRM est indisponible OU PAS d'adresse géocodée → route null : /track
+  // affiche les marqueurs sans ligne (règle 22/11 : jamais de ligne droite).
   let route = null;
-  try {
-    route = await fetchRoute(env, warehouse.lat, warehouse.lng, geo.lat, geo.lng);
-  } catch {
-    route = null; // OSRM down/timeout : on n'empêche JAMAIS la commande
+  if (geo) {
+    try {
+      route = await fetchRoute(env, warehouse.lat, warehouse.lng, geo.lat, geo.lng);
+    } catch {
+      route = null; // OSRM down/timeout : on n'empêche JAMAIS la commande
+    }
+    if (route && route.km > 400) route = null; // hors zone coursier → Australia Post
   }
-  if (route && route.km > 400) route = null; // hors zone coursier → Australia Post
 
   // ── 4. Numéro atomique VS-XXXX ───────────────────────────────────
   // La classe OrderCounter vit dans le Worker dédié vapespot-orders-do
@@ -128,8 +147,8 @@ export async function onRequestPost({ request, env }: any): Promise<Response> {
     totalAud,
     warehouseId: warehouse.id,
     warehouseCity: warehouse.city,
-    lat: geo.lat,
-    lng: geo.lng,
+    lat: geo ? geo.lat : null,
+    lng: geo ? geo.lng : null,
     route,
   });
   await putOrder(env, order);

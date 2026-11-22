@@ -24,8 +24,8 @@ export function newPendingOrder(input: {
   totalAud: number;
   warehouseId: string;
   warehouseCity: string;
-  lat: number;
-  lng: number;
+  lat: number | null;
+  lng: number | null;
   route?: Order["route"] | null;   // tracé routier réel (OSRM) calculé au checkout
 }): Order {
   const now = new Date().toISOString();
@@ -34,7 +34,10 @@ export function newPendingOrder(input: {
     status: "pending_payment",
     paymentMethod: null,
     driverLink: null,
-    route: null,                        // rempli après géocodage (OSRM) — jamais sur /track
+    // ⚠️ `...input` FOURNIT route quand le checkout en calcule une (OSRM) :
+    // on la REPREND ici (input.route ?? null), ne jamais la nuller — sinon la
+    // vraie route calculée au checkout était écrasée (bug 6c1f17b, corrigé 22/11).
+    route: input.route ?? null,         // jamais sur /track — stockée à la création
     insuranceAmount: 300, // caution coursier — visible UNIQUEMENT dans l'email ④
     notes: "",
     createdAt: now,
