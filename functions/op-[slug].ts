@@ -88,6 +88,20 @@ function pageShell(title: string, body: string, csrf: string): string {
     `.pager{display:flex;gap:10px;align-items:center;justify-content:center;margin-top:18px;color:var(--mut);font-size:13px}` +
     `@media(max-width:480px){.f2{grid-template-columns:1fr}}` +
     `@media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}` +
+    `.chat-ovl{position:fixed;inset:0;background:rgba(8,12,22,.72);display:flex;align-items:center;justify-content:center;z-index:50;padding:16px}` +
+    `.chat-box{background:var(--card);border:1px solid var(--edge);border-radius:14px;width:100%;max-width:520px;max-height:86vh;display:flex;flex-direction:column;overflow:hidden}` +
+    `.chat-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;border-bottom:1px solid var(--edge);font-size:13px;color:var(--mut);font-weight:700}` +
+    `.chat-head .who{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}` +
+    `.chat-head b{color:var(--txt)}` +
+    `.chat-x{background:transparent;border:0;color:var(--mut);font-size:22px;cursor:pointer;line-height:1}` +
+    `.chat-body{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:9px;background:#0a0f1c}` +
+    `.chatrow{max-width:80%;padding:8px 11px;border-radius:12px;font-size:13px;line-height:1.45;white-space:pre-wrap;word-break:break-word;position:relative}` +
+    `.chatrow.me{align-self:flex-end;background:var(--acc);color:#0b1020}` +
+    `.chatrow.them{align-self:flex-start;background:#232c3f;color:var(--txt)}` +
+    `.chatrow.sys{align-self:center;background:transparent;border:1px solid var(--edge);color:var(--mut);font-style:italic;text-align:center;max-width:92%}` +
+    `.chatrow .ctime{display:block;font-size:10px;opacity:.72;margin-top:3px;text-align:right}` +
+    `.chatrow .ci{max-width:210px;border-radius:8px;display:block}` +
+    `.chat-empty{color:var(--mut);text-align:center;padding:28px 0;font-size:13px}` +
     `</style></head><body><div class="wrap">${body}</div>` +
     `<script>window.__csrf=${JSON.stringify(csrf)};</script></body></html>`
   );
@@ -148,6 +162,10 @@ function orderCard(o: Order, csrf: string): string {
     `<div><b style="font-size:16px">${escapeHtml(o.id)}</b> · ${fmtAud(o.totalAud)} ${statusPill}</div>` +
     `<div class="mut">${escapeHtml(o.email)}<br>${escapeHtml(o.warehouseCity || "")} hub · ${timeAgo(o.createdAt)}</div>` +
     `</div>` +
+    (o.clientId
+      ? `<div class="row" style="margin-top:10px"><button class="btn ghost" type="button" onclick="viewChat(this)">💬 View chat</button>` +
+        `<span class="mut">${escapeHtml(o.visitorLabel ? "Visitor " + o.visitorLabel : "Chat")} · conversation history</span></div>`
+      : "") +
     `<div class="mut" style="margin-top:6px">${escapeHtml(o.customerName)} — ${escapeHtml(o.deliveryAddress)}` +
     `${o.paymentInstructionsSentAt
               ? (expired
@@ -486,6 +504,32 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `if(j.ok){bell(true,'✓ '+body.orderId+' permanently deleted');setTimeout(()=>location.reload(),1400)}` +
         `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
         `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
+        `function escChat(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}` +
+        `function closeChatModal(){var o=document.getElementById('chat-ovl');if(o)o.remove()}` +
+        `async function viewChat(btn){` +
+        `const body={action:'view-chat',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
+        `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
+        `if(!j.ok){bell(false,(j&&j.error)||'Request failed');return}` +
+        `if(!j.messages||!j.messages.length){bell(true,'No messages in this chat yet — the client has not written here.');return}` +
+        `openChatModal(j);` +
+        `}catch(e){bell(false,'Network error — request failed')}}` +
+        `function openChatModal(j){` +
+        `closeChatModal();` +
+        `const who=(j.visitor?('Visitor '+j.visitor+' · '):'')+(j.orderNumber?(''+j.orderNumber):'');` +
+        `let rows='';` +
+        `for(let i=0;i<j.messages.length;i++){` +
+        `const m=j.messages[i];` +
+        `const when=m.at?new Date(m.at).toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'}):'';` +
+        `const cls=m.from==='client'?'me':(m.from==='admin'?'them':'sys');` +
+        `let box;` +
+        `if(m.kind==='image'){let src=String(m.image||'');if(src&&src.charAt(0)!=='/')src='/chatimg/'+src;box='<img class="ci" src="'+escChat(src)+'" alt="photo">'}else{box='<div class="ctext">'+escChat(m.text||'')+'</div>'}` +
+        `rows+='<div class="chatrow '+cls+'">'+box+'<span class="ctime">'+escChat(when)+'</span></div>';` +
+        `}` +
+        `const ovl=document.createElement('div');ovl.id='chat-ovl';ovl.className='chat-ovl';` +
+        `ovl.innerHTML='<div class="chat-box"><div class="chat-head"><div class="who">💬 <b>'+escChat(who)+'</b></div><button class="chat-x" onclick="closeChatModal()">×</button></div><div class="chat-body">'+rows+'</div></div>';` +
+        `ovl.addEventListener('click',function(e){if(e.target===ovl)closeChatModal()});` +
+        `document.body.appendChild(ovl);` +
+        `}` +
         `</script>`,
       csrf
     ) + ``
@@ -556,6 +600,35 @@ export async function onRequestPost(context: any): Promise<Response> {
   const orderId = String(body.orderId ?? "");
   const order = orderId ? await getOrder(env, orderId) : null;
   if (!order) return json({ ok: false, error: "order_not_found" }, 404);
+
+  // ── Vue historique du chat (choix utilisatrice 27/11) ──────────────
+  // Lit le ChatRoom du client (via son clientId, posé au checkout) → tous
+  // les messages échangés (client/admin/système, textes + images) + identité.
+  // Aucune écriture ; la conversation vit dans le DO, pas dans la commande.
+  if (action === "view-chat") {
+    const cid = order.clientId;
+    if (!cid) return json({ ok: true, messages: [], meta: null, clientId: null });
+    let messages: unknown[] = [];
+    let meta: unknown = null;
+    try {
+      const chatId = env.CHAT_ROOM.idFromName("chat:" + cid);
+      const stub = env.CHAT_ROOM.get(chatId);
+      const res = await stub.fetch(new Request("https://x/history"));
+      const data = await res.json().catch(() => null);
+      messages = data && Array.isArray((data as any).messages) ? (data as any).messages : [];
+      meta = data ? (data as any).meta ?? null : null;
+    } catch {
+      return json({ ok: false, error: "chat_unreachable" }, 200);
+    }
+    return json({
+      ok: true,
+      messages,
+      meta,
+      clientId: cid,
+      visitor: order.visitorLabel || null,
+      orderNumber: order.id,
+    });
+  }
 
   const s = (v: unknown) => String(v ?? "").trim();
 
