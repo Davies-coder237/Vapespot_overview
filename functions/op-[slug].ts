@@ -371,6 +371,115 @@ function pager(page: number, pages: number, status: string): string {
   );
 }
 
+// JS client du modal de chat, PARTAGÉ entre la vue commandes et la vue
+// conversations (les deux pages peuvent ouvrir un fil). `readCsrf`/`orderId` ne
+// sont référencés qu'au moment d'appeler viewChat (défini seulement côté
+// commandes) → inoffensif ici. `bell` est défini dans le script de chaque page.
+function chatClientJs(): string {
+  return (
+    `function escChat(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}` +
+    `function closeChatModal(){var o=document.getElementById('chat-ovl');if(o)o.remove()}` +
+    `async function viewChat(btn){` +
+    `const body={action:'view-chat',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
+    `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
+    `if(!j.ok){bell(false,(j&&j.error)||'Request failed');return}` +
+    `if(!j.messages||!j.messages.length){bell(true,'No messages in this chat yet — the client has not written here.');return}` +
+    `openChatModal(j);` +
+    `}catch(e){bell(false,'Network error — request failed')}}` +
+    `async function openChatById(cid){` +
+    `const body={action:'view-chat',clientId:cid,_csrf:window.__csrf};` +
+    `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
+    `if(!j.ok){bell(false,(j&&j.error)||'Request failed');return}` +
+    `openChatModal(j);` +
+    `}catch(e){bell(false,'Network error — request failed')}}` +
+    `function openChatModal(j){` +
+    `closeChatModal();` +
+    `const who=(j.visitor?('Visitor '+j.visitor+' · '):'')+(j.orderNumber?(''+j.orderNumber):'');` +
+    `let rows='';` +
+    `for(let i=0;i<j.messages.length;i++){` +
+    `const m=j.messages[i];` +
+    `const when=m.at?new Date(m.at).toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'}):'';` +
+    `const cls=m.from==='client'?'me':(m.from==='admin'?'them':'sys');` +
+    `let box;` +
+    `if(m.kind==='image'){let src=String(m.image||'');if(src&&src.charAt(0)!=='/')src='/chatimg/'+src;box='<img class="ci" src="'+escChat(src)+'" alt="photo">'}else{box='<div class="ctext">'+escChat(m.text||'')+'</div>'}` +
+    `rows+='<div class="chatrow '+cls+'">'+box+'<span class="ctime">'+escChat(when)+'</span></div>';` +
+    `}` +
+    `const ovl=document.createElement('div');ovl.id='chat-ovl';ovl.className='chat-ovl';` +
+    `ovl.innerHTML='<div class="chat-box"><div class="chat-head"><div class="who">💬 <b>'+escChat(who)+'</b></div><button class="chat-x" onclick="closeChatModal()">×</button></div><div class="chat-body">'+rows+'</div></div>';` +
+    `ovl.addEventListener('click',function(e){if(e.target===ovl)closeChatModal()});` +
+    `document.body.appendChild(ovl);` +
+    `}` +
+    `` // sentinel: maintenir la chaîne bien fermée
+  );
+}
+
+// Liste TOUTES les conversations (page admin « 💬 Conversations »), y compris les
+// visiteurs qui écrivent SANS avoir passé commande. On lit l'index `chat-index:`
+// que le ChatRoom DO écrit au fil de l'eau (voir do-worker/src/index.ts),
+// trié de la plus récente à la plus ancienne. Durable Objects ne s'énumèrent
+// pas globalement → c'est ce KV qui fait office de registre.
+async function listConversations(env: any): Promise<any[]> {
+  const out: any[] = [];
+  let cursor: string | undefined;
+  for (;;) {
+    const page = await env.VAPESPOT_ORDERS.list({ prefix: "chat-index:", cursor, limit: 1000 });
+    for (const k of page.keys) {
+      const raw = await env.VAPESPOT_ORDERS.get(k.name, "json");
+      if (raw) out.push(raw);
+    }
+    if (page.list_complete) break;
+    cursor = page.cursor;
+    if (!cursor) break;
+  }
+  out.sort((a: any, b: any) =>
+    String(b.updatedAt ?? "").localeCompare(String(a.updatedAt ?? ""))
+  );
+  return out;
+}
+
+// Lien de bascule commandes ↔ conversations (présent dans les deux headers).
+function conversationsToggle(): string {
+  return `<a class="fbtn" href="?view=conversations" style="text-decoration:none">💬 Conversations</a>`;
+}
+
+// Vue « all conversations » : un thread par ligne (identité + dernière activité),
+// bouton Open ouvrant le même modal que côté commandes, via openChatById.
+function conversationsPage(convs: any[], csrf: string): string {
+  const rows = convs.length
+    ? convs
+        .map((c: any) => {
+          const when = c.updatedAt ? new Date(c.updatedAt).toLocaleString() : "";
+          const label = c.label ? `Visitor ${String(c.label)}` : "Visitor";
+          const idLine =
+            (c.orderNumber ? ` · ${c.orderNumber}` : "") +
+            (c.email ? ` · ${c.email}` : "");
+          return (
+            `<div class="conv-card">` +
+            `<div class="cwho">💬 <b>${escapeHtml(label + idLine)}</b></div>` +
+            `<div class="mut">${escapeHtml(when || "just now")}</div>` +
+            `<button class="btn ghost" type="button" onclick="openChatById('${escapeHtml(String(c.clientId ?? ""))}')">Open</button>` +
+            `</div>`
+          );
+        })
+        .join("")
+    : `<div class="empty">No conversations yet — when a visitor opens the chat or sends a message, it appears here (even without an order).</div>`;
+  return (
+    pageShell(
+      "VapeSpot Admin",
+      `<header><div><h1>VapeSpot Admin</h1><div class="sub">All conversations · ${convs.length} thread(s) · newest first</div></div>` +
+        `<a class="btn ghost" href="?">← Orders</a></header>` +
+        `<div class="banner" id="banner"></div>` +
+        `<div style="margin:8px 0"><a class="fbtn" href="?">Orders</a> ${conversationsToggle()}<span class="mut"> — every chat thread, incl. visitors who haven't ordered</span></div>` +
+        `<div id="cards">${rows}</div>` +
+        `<script>` +
+        `const bell=(ok,txt)=>{const n=document.getElementById('banner');n.className='banner '+(ok?'ok':'err');n.textContent=(txt!==undefined)?txt:''};` +
+        chatClientJs() +
+        `</script>`,
+      csrf
+    ) + ``
+  );
+}
+
 function adminPage(orders: Order[], csrf: string, status: string, page: number): string {
   const filtered =
     status === "" ? orders : orders.filter((o) => o.status === status);
@@ -389,6 +498,7 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `<button class="btn ghost" onclick="logout()">Log out</button></header>` +
         `<div class="banner" id="banner"></div>` +
         filterBar(status) +
+        `<div style="margin:6px 0">${conversationsToggle()}<span class="mut"> — open a chat thread to see the conversation with a customer or a visitor</span></div>` +
         `<div id="cards">${cards}</div>` +
         pager(cur, pages, status) +
         `<script>` +
@@ -504,32 +614,7 @@ function adminPage(orders: Order[], csrf: string, status: string, page: number):
         `if(j.ok){bell(true,'✓ '+body.orderId+' permanently deleted');setTimeout(()=>location.reload(),1400)}` +
         `else{bell(false,(j&&j.error)||'Request failed');btn.textContent=old;btn.disabled=false}}` +
         `catch(e){bell(false,'Network error — request failed');btn.textContent=old;btn.disabled=false}}` +
-        `function escChat(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}` +
-        `function closeChatModal(){var o=document.getElementById('chat-ovl');if(o)o.remove()}` +
-        `async function viewChat(btn){` +
-        `const body={action:'view-chat',orderId:orderId(btn),_csrf:readCsrf(btn)};` +
-        `try{const r=await fetch(location.pathname,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const j=await r.json();` +
-        `if(!j.ok){bell(false,(j&&j.error)||'Request failed');return}` +
-        `if(!j.messages||!j.messages.length){bell(true,'No messages in this chat yet — the client has not written here.');return}` +
-        `openChatModal(j);` +
-        `}catch(e){bell(false,'Network error — request failed')}}` +
-        `function openChatModal(j){` +
-        `closeChatModal();` +
-        `const who=(j.visitor?('Visitor '+j.visitor+' · '):'')+(j.orderNumber?(''+j.orderNumber):'');` +
-        `let rows='';` +
-        `for(let i=0;i<j.messages.length;i++){` +
-        `const m=j.messages[i];` +
-        `const when=m.at?new Date(m.at).toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'}):'';` +
-        `const cls=m.from==='client'?'me':(m.from==='admin'?'them':'sys');` +
-        `let box;` +
-        `if(m.kind==='image'){let src=String(m.image||'');if(src&&src.charAt(0)!=='/')src='/chatimg/'+src;box='<img class="ci" src="'+escChat(src)+'" alt="photo">'}else{box='<div class="ctext">'+escChat(m.text||'')+'</div>'}` +
-        `rows+='<div class="chatrow '+cls+'">'+box+'<span class="ctime">'+escChat(when)+'</span></div>';` +
-        `}` +
-        `const ovl=document.createElement('div');ovl.id='chat-ovl';ovl.className='chat-ovl';` +
-        `ovl.innerHTML='<div class="chat-box"><div class="chat-head"><div class="who">💬 <b>'+escChat(who)+'</b></div><button class="chat-x" onclick="closeChatModal()">×</button></div><div class="chat-body">'+rows+'</div></div>';` +
-        `ovl.addEventListener('click',function(e){if(e.target===ovl)closeChatModal()});` +
-        `document.body.appendChild(ovl);` +
-        `}` +
+        chatClientJs() +
         `</script>`,
       csrf
     ) + ``
@@ -547,6 +632,14 @@ export async function onRequestGet(context: any): Promise<Response> {
   if (!authed) return new Response(loginPage(), { headers: { "content-type": "text/html; charset=utf-8" } });
 
   const csrf = cookie ? await csrfToken(env.COOKIE_SECRET, cookie) : "";
+  const url0 = new URL(context.request.url);
+  if (String(url0.searchParams.get("view") ?? "") === "conversations") {
+    // Vue « all conversations » : TOUS les fils, y compris visiteurs sans commande.
+    const convs = await listConversations(env);
+    return new Response(conversationsPage(convs, csrf), {
+      headers: { "content-type": "text/html; charset=utf-8", "x-robots-tag": "noindex" },
+    });
+  }
   const orders = (await listOrders(env)).filter((o) => o.status !== "expired");
   const url = new URL(context.request.url);
   const status = String(url.searchParams.get("status") ?? "");
@@ -597,16 +690,19 @@ export async function onRequestPost(context: any): Promise<Response> {
   if (!(await csrfValid(env.COOKIE_SECRET, cookie, String(body._csrf ?? "")))) {
     return json({ ok: false, error: "bad_csrf" }, 403);
   }
-  const orderId = String(body.orderId ?? "");
-  const order = orderId ? await getOrder(env, orderId) : null;
-  if (!order) return json({ ok: false, error: "order_not_found" }, 404);
-
-  // ── Vue historique du chat (choix utilisatrice 27/11) ──────────────
-  // Lit le ChatRoom du client (via son clientId, posé au checkout) → tous
-  // les messages échangés (client/admin/système, textes + images) + identité.
-  // Aucune écriture ; la conversation vit dans le DO, pas dans la commande.
+  // ── Vue historique du chat — par orderId (commande attachée) OU par clientId
+  // direct (visiteur qui écrit SANS avoir commandé). Toujours admin + CSRF. ──
   if (action === "view-chat") {
-    const cid = order.clientId;
+    let cid = String(body.clientId ?? "").trim().slice(0, 64);
+    let visitor: string | null = null;
+    let orderNumber: string | null = null;
+    if (!cid && body.orderId) {
+      const o = await getOrder(env, String(body.orderId));
+      if (!o) return json({ ok: false, error: "order_not_found" }, 404);
+      cid = o.clientId || "";
+      visitor = o.visitorLabel || null;
+      orderNumber = o.id;
+    }
     if (!cid) return json({ ok: true, messages: [], meta: null, clientId: null });
     let messages: unknown[] = [];
     let meta: unknown = null;
@@ -620,15 +716,12 @@ export async function onRequestPost(context: any): Promise<Response> {
     } catch {
       return json({ ok: false, error: "chat_unreachable" }, 200);
     }
-    return json({
-      ok: true,
-      messages,
-      meta,
-      clientId: cid,
-      visitor: order.visitorLabel || null,
-      orderNumber: order.id,
-    });
+    return json({ ok: true, messages, meta, clientId: cid, visitor, orderNumber });
   }
+
+  const orderId = String(body.orderId ?? "");
+  const order = orderId ? await getOrder(env, orderId) : null;
+  if (!order) return json({ ok: false, error: "order_not_found" }, 404);
 
   const s = (v: unknown) => String(v ?? "").trim();
 
