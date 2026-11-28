@@ -8,8 +8,6 @@ import { trackPopcashConversion } from "@/lib/conversion";
 import type { Product } from "@/lib/types";
 import {
   buildOrderLines,
-  buildOrderMessage,
-  buildTelegramUrl,
   lineTotal,
   ordersTotal,
 } from "@/lib/telegram";
@@ -26,8 +24,6 @@ export function OrderSummary() {
   const [deliveryMethod, setDeliveryMethod] = useState<"courier" | "australia_post">("courier");
   // Numéro VS-XXXX renvoyé par le serveur après création (Étape 1)
   const [placedOrder, setPlacedOrder] = useState<null | string>(null);
-  // Infos serveur pour construire le lien Telegram (ouvert au clic, style actuel)
-  const [telegramUrl, setTelegramUrl] = useState<string>("");
 
   useEffect(() => {
     let cancelled = false;
@@ -86,27 +82,16 @@ export function OrderSummary() {
       const data = await res.json();
       if (!res.ok) throw new Error(data?.error || "order_failed");
       setPlacedOrder(data.orderNumber);
-      // Branchement Telegram (décision utilisatrice 22/11 — Brevo suspendu) :
-      // le POST serveur (VS + KV + admin + tracking) reste, ET le client obtient
-      // un contact direct. Message au STYLE ACTUEL du bot (🛒 💰 📍 📧), pas le
-      // vieux message long. S'ouvre automatiquement après la création serveur.
-      const tgMsg = buildOrderMessage({
-        orderId: data.orderNumber,
-        totalAud: data.totalAud,
-        warehouseCity: data.warehouseCity,
-        address: deliveryAddress,
-        email,
-      });
-      const tgUrl = buildTelegramUrl(tgMsg); // t.me/vapespot_store (contact client)
-      setTelegramUrl(tgUrl);
       // Le panier n'est PAS vidé (décision 21/11) : le client vient de créer une
       // commande PENDING (paiement manuel en attente) et garde sa sélection pour
       // la modifier. Le champ recentOrder ci-dessous protège contre la commande
       // en double : tant qu'une commande de < 15 min existe, on avertit avant
       // tout nouveau "Proceed to Checkout".
       saveLastOrder(data.orderNumber);
-      // ÉTAPE 4 du chat maison : prévient le widget → ouverture auto + la commande
-      // est injectée (o/e/amount) + salutation préenregistrée servées par le DO.
+      // Le chat s'ouvre et la commande y est injectée (o/e/amount) + salutation
+      // préenregistrée servies par le DO. Le client reste SUR LE SITE : quand il
+      // quitte le chat, le ChatWidget le renvoie vers la boutique (règle 28/11,
+      // limiter Telegram au maximum — plus aucune porte Telegram après commande).
       dispatchOrderPlaced({
         order: data.orderNumber,
         email,
@@ -139,16 +124,6 @@ export function OrderSummary() {
             <span className="font-bold text-[#0A0A0A]">Your cart is still kept</span> — you can adjust
             it, but make sure not to place a double order.
           </div>
-          {telegramUrl ? (
-            <a
-              href={telegramUrl}
-              target="_blank"
-              rel="noopener"
-              className="inline-block text-[13px] text-[#7C3AED] font-semibold hover:underline mt-1"
-            >
-              Prefer Telegram? Continue on @vapespot_store →
-            </a>
-          ) : null}
         </div>
         <div className="mt-6">
           <Link

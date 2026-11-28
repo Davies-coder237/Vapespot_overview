@@ -7,7 +7,6 @@ import {
   getVisitorLabel,
   saveOrderStamp,
 } from "@/lib/chat";
-import { TELEGRAM_HANDLE } from "@/lib/telegram";
 
 // ── types du protocole (miroir du DO) ──
 type ChatMsg = {
@@ -57,6 +56,10 @@ export function ChatWidget() {
   const amountRef = useRef("");
   const listRef = useRef<HTMLDivElement | null>(null);
   const fileRef = useRef<HTMLInputElement | null>(null);
+  // Règle 28/11 : le chat s'est ouvert parce que le client vient de passer une
+  // commande → en le quittant, il est renvoyé vers la boutique (plus de popup
+  // Telegram qui survit, Telegram minimisé au maximum).
+  const justPlacedRef = useRef(false);
 
   // ── ouverture de la WebSocket (stable : lit les refs, jamais de closure périmée) ──
   const openWs = useCallback(() => {
@@ -130,6 +133,11 @@ export function ChatWidget() {
       /* ignoré */
     }
     wsRef.current = null;
+    // Après une commande : fermeture du chat → retour à la boutique (règle 28/11).
+    if (justPlacedRef.current) {
+      justPlacedRef.current = false;
+      window.location.href = "/";
+    }
   }, []);
 
   // Moment (b) : commande passée → ouvre + réépingle (o/e) + salutation serveur.
@@ -149,6 +157,7 @@ export function ChatWidget() {
       saveOrderStamp({ order: d.order, email: d.email, amount: d.amount || "" });
       reconnectAttemptRef.current = 0;
       setOpen(true);
+      justPlacedRef.current = true; // le chat s'ouvre après une commande
       shouldConnectRef.current = true;
       if (wsRef.current) {
         try {
@@ -212,8 +221,6 @@ export function ChatWidget() {
       /* lecture fichier impossible — ignoré */
     }
   };
-
-  const tgUrl = `https://t.me/${TELEGRAM_HANDLE}`;
 
   return (
     <>
@@ -351,17 +358,6 @@ export function ChatWidget() {
                 <Send className="h-5 w-5" />
               </button>
             </div>
-            <p className="mt-2 text-center text-[11.5px] text-[#9E9E9E]">
-              Prefer Telegram?{" "}
-              <a
-                href={tgUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#7C3AED] font-semibold hover:underline"
-              >
-                continue on Telegram →
-              </a>
-            </p>
           </div>
         </div>
       )}
