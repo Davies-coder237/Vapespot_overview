@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { MessageCircle, Send, X, Paperclip } from "lucide-react";
+import { TELEGRAM_HANDLE } from "@/lib/telegram";
 import {
   CHAT_ORDER_EVENT,
   CHAT_OPEN_EVENT,
@@ -20,7 +21,8 @@ type ChatMsg = {
 };
 type ServerFrame =
   | { type: "history"; messages: ChatMsg[] }
-  | { type: "message"; message: ChatMsg };
+  | { type: "message"; message: ChatMsg }
+  | { type: "typing"; active: boolean };
 
 type Status = "idle" | "connecting" | "open" | "reconnecting" | "offline";
 
@@ -47,6 +49,7 @@ export function ChatWidget() {
   const [status, setStatus] = useState<Status>("idle");
   const [messages, setMessages] = useState<ChatMsg[]>([]);
   const [input, setInput] = useState("");
+  const [adminTyping, setAdminTyping] = useState(false);
 
   const wsRef = useRef<WebSocket | null>(null);
   const shouldConnectRef = useRef(false);
@@ -57,6 +60,10 @@ export function ChatWidget() {
   const amountRef = useRef("");
   const listRef = useRef<HTMLDivElement | null>(null);
   const fileRef = useRef<HTMLInputElement | null>(null);
+  // Statut de frappe côté client → signal léger sur la WS (le DO l'envoie à
+  // l'admin en "typing…" via sendChatAction). Throttlé côté DO.
+  const typingSentRef = useRef(false);
+  const typingStopRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   // Règle 28/11 : le chat s'est ouvert parce que le client vient de passer une
   // commande → en le quittant, il est renvoyé vers la boutique (plus de popup
   // Telegram qui survit, Telegram minimisé au maximum).
@@ -83,9 +90,14 @@ export function ChatWidget() {
     next.onmessage = (e) => {
       try {
         const d = JSON.parse(String(e.data)) as ServerFrame;
-        if (d.type === "history") setMessages(d.messages || []);
-        else if (d.type === "message" && d.message)
+        if (d.type === "typing") setAdminTyping(!!d.active);
+        else if (d.type === "history") {
+          setMessages(d.messages || []);
+          setAdminTyping(false);
+        } else if (d.type === "message" && d.message) {
           setMessages((m) => [...m, d.message]);
+          setAdminTyping(false);
+        }
       } catch {
         /* frame inconnue ignorée */
       }
@@ -199,6 +211,36 @@ export function ChatWidget() {
     });
   }, [messages, status, open]);
 
+  // Signal « le client écrit » → le DO envoie la pastille "typing…" à l'admin.
+  // On ne renvoie le démarrage qu'une fois par séquence (pas à chaque frappe) ;
+  // l'arrêt est déclenché après ~2,5 s d'inactivité (ou à l'envoi).
+  const notifyTyping = (active: boolean) => {
+    const ws = wsRef.current;
+    if (!ws || ws.readyState !== 1) return;
+    if (typingStopRef.current) {
+      clearTimeout(typingStopRef.current);
+      typingStopRef.current = null;
+    }
+    if (active) {
+      if (!typingSentRef.current) {
+        typingSentRef.current = true;
+        try {
+          ws.send(JSON.stringify({ kind: "typing", active: true }));
+        } catch {
+          /* ignoré */
+        }
+      }
+      typingStopRef.current = setTimeout(() => notifyTyping(false), 2500);
+    } else if (typingSentRef.current) {
+      typingSentRef.current = false;
+      try {
+        ws.send(JSON.stringify({ kind: "typing", active: false }));
+      } catch {
+        /* ignoré */
+      }
+    }
+  };
+
   const send = () => {
     const text = input.trim();
     if (!text) return;
@@ -207,6 +249,19 @@ export function ChatWidget() {
       setStatus("offline");
       openWsRef.current();
       return; // on garde le texte, l'utilisateur peut renvoyer
+    }
+    // Coupe la frappe avant d'envoyer (sinon la pastille continuerait après le message).
+    if (typingStopRef.current) {
+      clearTimeout(typingStopRef.current);
+      typingStopRef.current = null;
+    }
+    if (typingSentRef.current) {
+      typingSentRef.current = false;
+      try {
+        ws.send(JSON.stringify({ kind: "typing", active: false }));
+      } catch {
+        /* ignoré */
+      }
     }
     ws.send(JSON.stringify({ kind: "text", text }));
     setInput("");
@@ -235,6 +290,10 @@ export function ChatWidget() {
 
   return (
     <>
+      <style>{`
+        @keyframes typingBounce { 0%,60%,100%{transform:translateY(0)} 30%{transform:translateY(-4px)} }
+        .typing-dot{ width:6px;height:6px;border-radius:9999px;background:#7C3AED;opacity:.55;display:inline-block;animation:typingBounce 1.2s infinite ease-in-out; }
+      `}</style>
       {!open && (
         <button
           type="button"
@@ -323,6 +382,16 @@ export function ChatWidget() {
                 </div>
               );
             })}
+            {adminTyping && (
+              <div className="flex justify-start">
+                <div className="max-w-[82%] rounded-2xl px-3 py-2.5 bg-white border border-[#E8E8E8] text-black rounded-bl-sm flex items-center gap-1.5">
+                  <span className="typing-dot" />
+                  <span className="typing-dot" style={{ animationDelay: "150ms" }} />
+                  <span className="typing-dot" style={{ animationDelay: "300ms" }} />
+                  <span className="ml-1.5 text-[12px] text-[#9E9E9E]">Support is typing…</span>
+                </div>
+              </div>
+            )}
           </div>
 
           <div className="border-t border-[#E8E8E8] bg-white px-3 py-2.5 md:rounded-b-2xl">
@@ -344,7 +413,10 @@ export function ChatWidget() {
               </button>
               <textarea
                 value={input}
-                onChange={(e) => setInput(e.target.value)}
+                onChange={(e) => {
+                  setInput(e.target.value);
+                  notifyTyping(e.target.value.trim().length > 0);
+                }}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" && !e.shiftKey) {
                     e.preventDefault();
@@ -369,6 +441,17 @@ export function ChatWidget() {
                 <Send className="h-5 w-5" />
               </button>
             </div>
+          </div>
+
+          <div className="border-t border-[#E8E8E8] bg-white px-3 py-2 text-center">
+            <a
+              href={`https://t.me/${TELEGRAM_HANDLE}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[11.5px] text-[#7C3AED] hover:underline"
+            >
+              Prefer Telegram? Continue on Telegram →
+            </a>
           </div>
         </div>
       )}
