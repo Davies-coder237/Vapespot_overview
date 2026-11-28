@@ -23,7 +23,7 @@ import {
 import { getOrder, listOrders, putOrder, isExpiredOrder, deleteOrder } from "./_lib/orders";
 import { emailPaymentInstructions, emailCongrats, emailDeparture, emailDelivered, emailCancelled, type PaymentOptions, type PayIdOptions, type BankOptions, type CryptoOptions } from "./_lib/emails";
 import { tgPaymentInstructions, tgCongrats, tgDeparture, tgDelivered, tgCancelled } from "./_lib/tgMessages";
-import { sendTelegram } from "./_lib/telegram";
+import { sendTelegram, replyButtonMarkup } from "./_lib/telegram";
 import type { Order } from "./_lib/types";
 import { PAYMENT_WINDOW_MIN } from "./_lib/types";
 
@@ -583,7 +583,7 @@ export async function onRequestPost(context: any): Promise<Response> {
     }
     // Brevo suspendu (22/11) : message ③ au DESIGN du preview (version RICHE
     // HTML Telegram) part sur le bot INTERNE du shop → l'admin le transmet.
-    const sent = await sendTelegram(env, tgCongrats(order), "HTML");
+    const sent = await sendTelegram(env, tgCongrats(order), "HTML", replyButtonMarkup(order?.clientId));
     if (!sent.ok) {
       return json({ ok: false, error: `Message ③ failed (${sent.status}) — check the shop Telegram bot` }, 502);
     }
@@ -605,7 +605,7 @@ export async function onRequestPost(context: any): Promise<Response> {
     order.updatedAt = nowIso;
     order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] moved to "In our warehouse" (no message — client sees the timeline move)`;
     await putOrder(env, order);
-    await sendTelegram(env, `📦 ${order.id} AT THE WAREHOUSE (${fmtAud(order.totalAud)})`);
+    await sendTelegram(env, `📦 ${order.id} AT THE WAREHOUSE (${fmtAud(order.totalAud)})`, undefined, replyButtonMarkup(order?.clientId));
     return json({ ok: true, msg: `${order.id} moved to "In our warehouse".` });
   }
 
@@ -646,7 +646,7 @@ export async function onRequestPost(context: any): Promise<Response> {
     }
     // Brevo suspendu (22/11) : message ④ au DESIGN du preview (version RICHE
     // HTML Telegram) part sur le bot INTERNE du shop → l'admin le transmet.
-    const sent = await sendTelegram(env, tgDeparture(order, payOptions, driverLink), "HTML");
+    const sent = await sendTelegram(env, tgDeparture(order, payOptions, driverLink), "HTML", replyButtonMarkup(order?.clientId));
     if (!sent.ok) {
       return json({ ok: false, error: `Message ④ failed (${sent.status}) — check the shop Telegram bot` }, 502);
     }
@@ -666,7 +666,7 @@ export async function onRequestPost(context: any): Promise<Response> {
     }
     // Brevo suspendu (22/11) : message ⑤ au DESIGN du preview (version RICHE
     // HTML Telegram) part sur le bot INTERNE du shop → l'admin le transmet.
-    const sent = await sendTelegram(env, tgDelivered(order), "HTML");
+    const sent = await sendTelegram(env, tgDelivered(order), "HTML", replyButtonMarkup(order?.clientId));
     if (!sent.ok) {
       return json({ ok: false, error: `Message ⑤ failed (${sent.status}) — check the shop Telegram bot` }, 502);
     }
@@ -688,7 +688,7 @@ export async function onRequestPost(context: any): Promise<Response> {
     order.updatedAt = nowIso;
     order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] delivery failed — courier will retry shortly (no message sent)`;
     await putOrder(env, order);
-    await sendTelegram(env, `⚠️ ${order.id} DELIVERY FAILED — another attempt is planned\n${order.id} → ${fmtAud(order.totalAud)}`);
+    await sendTelegram(env, `⚠️ ${order.id} DELIVERY FAILED — another attempt is planned\n${order.id} → ${fmtAud(order.totalAud)}`, undefined, replyButtonMarkup(order?.clientId));
     return json({ ok: true, msg: `${order.id} marked as delivery failed — a courier will retry shortly.` });
   }
 
@@ -702,7 +702,7 @@ export async function onRequestPost(context: any): Promise<Response> {
     order.updatedAt = nowIso;
     order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] retry — back in transit (no message sent)`;
     await putOrder(env, order);
-    await sendTelegram(env, `↩️ ${order.id} RETRY — back ON THE WAY (${fmtAud(order.totalAud)})`);
+    await sendTelegram(env, `↩️ ${order.id} RETRY — back ON THE WAY (${fmtAud(order.totalAud)})`, undefined, replyButtonMarkup(order?.clientId));
     return json({ ok: true, msg: `${order.id} sent back to "On the way" for a courier retry.` });
   }
 
@@ -713,7 +713,7 @@ export async function onRequestPost(context: any): Promise<Response> {
     }
     // Brevo suspendu (22/11) : message ⑥ au DESIGN du preview (version RICHE
     // HTML Telegram) part sur le bot INTERNE du shop → l'admin le transmet.
-    const sent = await sendTelegram(env, tgCancelled(order), "HTML");
+    const sent = await sendTelegram(env, tgCancelled(order), "HTML", replyButtonMarkup(order?.clientId));
     if (!sent.ok) {
       return json({ ok: false, error: `Message ⑥ failed (${sent.status}) — check the shop Telegram bot` }, 502);
     }
@@ -735,7 +735,7 @@ export async function onRequestPost(context: any): Promise<Response> {
     order.updatedAt = nowIso;
     order.notes = `${order.notes ? order.notes + "\n" : ""}[${fmtDate(nowIso)}] re-opened by admin — back to payment pending (no message sent)`;
     await putOrder(env, order);
-    await sendTelegram(env, `↩️ ${order.id} RE-OPENED (back to payment pending)`);
+    await sendTelegram(env, `↩️ ${order.id} RE-OPENED (back to payment pending)`, undefined, replyButtonMarkup(order?.clientId));
     return json({ ok: true, msg: `${order.id} re-opened — back to "Payment pending".` });
   }
 
@@ -794,7 +794,7 @@ export async function onRequestPost(context: any): Promise<Response> {
     if (action === "send-payment") {
       // Brevo suspendu (22/11) : message ② au DESIGN du preview (version RICHE
       // HTML Telegram) part sur le bot INTERNE du shop → l'admin le transmet.
-      const sent = await sendTelegram(env, tgPaymentInstructions(order, payOptions), "HTML");
+      const sent = await sendTelegram(env, tgPaymentInstructions(order, payOptions), "HTML", replyButtonMarkup(order?.clientId));
       if (!sent.ok) {
         return json({ ok: false, error: `Message ② failed (${sent.status}) — check the shop Telegram bot` }, 502);
       }

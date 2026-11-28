@@ -80,30 +80,37 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { Toaster } from "@/components/ui/sonner";
+import { ChatWidget } from "@/components/ChatWidget";
 
 function RootComponent() {
   const isListing = useRouterState({
     select: (s) => s.matches.some((m) => m.routeId === "/$slug"),
   });
 
-  return isListing ? (
+  return (
     <>
-      <Outlet />
-      <Toaster />
-    </>
-  ) : (
-    <>
-      <AgeGate>
-        <div className="flex flex-col bg-white">
-          <Header />
-          <main className="flex-1 w-full">
-            <Outlet />
-          </main>
-          <Footer />
-          <MobileBottomNav />
-        </div>
-      </AgeGate>
-      <Toaster />
+      {/* Widget de chat maison — monté globalement (Option A, ÉTAPE 4) */}
+      <ChatWidget />
+      {isListing ? (
+        <>
+          <Outlet />
+          <Toaster />
+        </>
+      ) : (
+        <>
+          <AgeGate>
+            <div className="flex flex-col bg-white">
+              <Header />
+              <main className="flex-1 w-full">
+                <Outlet />
+              </main>
+              <Footer />
+              <MobileBottomNav />
+            </div>
+          </AgeGate>
+          <Toaster />
+        </>
+      )}
     </>
   );
 }

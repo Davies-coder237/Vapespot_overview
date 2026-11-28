@@ -35,6 +35,8 @@ export interface OrderItem {
 export interface Order {
   id: string;                          // numéro VS-0001
   email: string;
+  clientId: string | null;             // clé du chat (getClientId) — permet le bouton « ↩️ Reply » sur les notifs
+  visitorLabel: string | null;         // « Visitor 3568 » du navigateur — continuité reconnue par l'admin
   customerName: string;
   deliveryAddress: string;
   deliveryMethod: DeliveryMethod;

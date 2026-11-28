@@ -17,6 +17,8 @@ export function orderKey(id: string): string {
 export function newPendingOrder(input: {
   id: string;
   email: string;
+  clientId?: string | null;   // clé du chat (bouton Reply sur les notifs Telegram)
+  visitorLabel?: string | null; // « Visitor 3568 » — même personne qu'au début du chat
   customerName: string;
   deliveryAddress: string;
   deliveryMethod: "courier" | "australia_post";
@@ -31,6 +33,8 @@ export function newPendingOrder(input: {
   const now = new Date().toISOString();
   return {
     ...input,
+    clientId: input.clientId ?? null,      // jamais undefined (Nullable requis par le type)
+    visitorLabel: input.visitorLabel ?? null,
     status: "pending_payment",
     paymentMethod: null,
     driverLink: null,

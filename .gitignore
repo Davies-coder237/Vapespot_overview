@@ -46,3 +46,6 @@ progress-products.json
 # Dossier d'infra local (pas committé) : wrangler.toml + Worker du compteur DO
 wrangler.toml
 do-worker/
+
+# Artefact de build des fonctions Pages (wrangler pages functions build)
+_worker.bundle

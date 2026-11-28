@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { toast } from "sonner";
-import { Send, ShieldAlert, Wallet, Landmark, Lock, Timer, Zap, Truck, MapPin, Bitcoin, Gift, Mail } from "lucide-react";
+import { Send, ShieldAlert, Wallet, Landmark, Lock, Timer, Zap, Truck, MapPin, Bitcoin, Gift } from "lucide-react";
 import { findProduct, formatPrice, onImageError, productCard } from "@/lib/data";
 import { captureClickId, getRecentOrder, saveLastOrder, useMyList } from "@/lib/storage";
 import { trackPopcashConversion } from "@/lib/conversion";
@@ -15,6 +15,7 @@ import {
 } from "@/lib/telegram";
 import { CRYPTO_DISCOUNT_PERCENT } from "@/lib/packs";
 import { MIN_ORDER_AUD, cryptoDiscounted } from "@/lib/checkout";
+import { dispatchOrderPlaced, getClientId, getVisitorLabel } from "@/lib/chat";
 
 export function OrderSummary() {
   const { items } = useMyList();
@@ -64,6 +65,10 @@ export function OrderSummary() {
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
           email,
+          // Identité du chat : clé opaque + label Visitor → le serveur pose le
+          // bouton « ↩️ Reply » et la mention « Visitor NNNN » sur les notifs.
+          clientId: getClientId(),
+          visitorLabel: getVisitorLabel(),
           customerName,
           deliveryAddress,
           deliveryMethod,
@@ -100,13 +105,14 @@ export function OrderSummary() {
       // en double : tant qu'une commande de < 15 min existe, on avertit avant
       // tout nouveau "Proceed to Checkout".
       saveLastOrder(data.orderNumber);
-      toast.success(`Order ${data.orderNumber} placed — open Telegram to confirm.`);
-      // Ouverture automatique du canal Telegram (nouveau tab — aucun blocage
-      // navigateur car c'est un clic direct sur "Proceed to Checkout").
-      setTimeout(() => {
-        const w = window.open(tgUrl, "_blank");
-        if (w) w.opener = null; // le nouveau tab ne peut pas réécrire notre page
-      }, 400);
+      // ÉTAPE 4 du chat maison : prévient le widget → ouverture auto + la commande
+      // est injectée (o/e/amount) + salutation préenregistrée servées par le DO.
+      dispatchOrderPlaced({
+        order: data.orderNumber,
+        email,
+        amount: typeof data.totalAud === "number" ? String(data.totalAud) : "",
+      });
+      toast.success(`Order ${data.orderNumber} placed — reply in the chat to confirm it.`);
     } catch {
       toast.error("We couldn't place your order right now. Please try again.");
     }
@@ -121,36 +127,28 @@ export function OrderSummary() {
           <p className="text-2xl md:text-3xl font-extrabold text-[#7C3AED]">
             Order {placedOrder} placed 🎉
           </p>
-          {telegramUrl ? (
-            <a
-              href={telegramUrl}
-              target="_blank"
-              rel="noopener"
-              className="inline-flex items-center gap-2 text-white bg-[#7C3AED] rounded-xl px-5 py-3 text-base md:text-lg font-bold hover:bg-[#6d28d9] transition-colors"
-            >
-              <Send className="h-5 w-5" />
-              SEND IT ON TELEGRAM
-            </a>
-          ) : (
-            <div className="inline-flex items-center gap-2 text-white bg-[#7C3AED] rounded-xl px-4 py-2.5 text-sm md:text-base font-bold">
-              <Mail className="h-5 w-5" />
-              CHECK YOUR EMAIL NOW
-            </div>
-          )}
           <p className="text-lg md:text-xl font-bold text-[#0A0A0A] leading-snug">
-            Tap the button above (it just opened in a new tab) — then press{" "}
-            <span className="text-[#7C3AED]">Send</span> in Telegram to confirm your order
-            <span className="font-extrabold underline decoration-[#7C3AED]">{placedOrder}</span>.
+            Your order is attached to the chat — it just opened at the bottom of this page.
           </p>
           <p className="text-[15px] md:text-[16px] text-[#4A4458] leading-snug">
-            Your order is created and reserved. Sending it on Telegram is the fast way — our team
-            replies there with the payment instructions. Your email{" "}
+            Reply in the chat and our team will confirm your order with the payment
+            instructions — no need to leave the site. Your email{" "}
             <span className="font-bold">{email}</span> was registered with the order.
           </p>
           <div className="border-t-2 border-[#DDD6FF] pt-4 text-[14px] md:text-[15px] text-[#6E6E73] leading-snug">
             <span className="font-bold text-[#0A0A0A]">Your cart is still kept</span> — you can adjust
             it, but make sure not to place a double order.
           </div>
+          {telegramUrl ? (
+            <a
+              href={telegramUrl}
+              target="_blank"
+              rel="noopener"
+              className="inline-block text-[13px] text-[#7C3AED] font-semibold hover:underline mt-1"
+            >
+              Prefer Telegram? Continue on @vapespot_store →
+            </a>
+          ) : null}
         </div>
         <div className="mt-6">
           <Link
@@ -159,10 +157,6 @@ export function OrderSummary() {
           >
             Back to shop
           </Link>
-          <p className="text-sm text-[#6E6E73] mt-3">
-            Telegram didn't open? You can also find us at{" "}
-            <span className="font-semibold">@vapespot_store</span> — or check your spam folder.
-          </p>
         </div>
       </div>
     );

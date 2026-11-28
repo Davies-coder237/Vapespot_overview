@@ -20,7 +20,7 @@
 import { geocodeAddress, nearestActiveWarehouse, fetchRoute, ACTIVE_WAREHOUSES } from "./_lib/geo";
 import { orderNumber } from "./_lib/counter";
 import { newPendingOrder, putOrder } from "./_lib/orders";
-import { sendTelegram } from "./_lib/telegram";
+import { sendTelegram, replyButtonMarkup } from "./_lib/telegram";
 import { fmtAud } from "./_lib/html";
 import type { Order } from "./_lib/types";
 import { MIN_ORDER_AUD } from "./_lib/types";
@@ -33,6 +33,8 @@ interface CheckoutBody {
   deliveryAddress?: unknown;
   deliveryMethod?: unknown;
   items?: unknown;
+  clientId?: unknown;      // clé du chat (getClientId) — bouton Reply + rattachement
+  visitorLabel?: unknown;  // « Visitor 3568 » — même personne qu'au début du chat
 }
 
 function fail(msg: string, status = 400) {
@@ -56,6 +58,10 @@ export async function onRequestPost({ request, env }: any): Promise<Response> {
   const deliveryAddress = String(body.deliveryAddress ?? "").trim().slice(0, 300);
   const deliveryMethod = String(body.deliveryMethod ?? "");
   const items = Array.isArray(body.items) ? body.items : [];
+  // Identité du chat : clé opaque du navigateur (bouton Reply) + label Visitor.
+  // OPTIONNELS mais fortement recommandés → rattachement de la commande au chat.
+  const clientId = String(body.clientId ?? "").trim().slice(0, 64);
+  const visitorLabel = String(body.visitorLabel ?? "").trim().slice(0, 64);
 
   if (!EMAIL_RE.test(email)) return fail("email_required");
 
@@ -140,6 +146,8 @@ export async function onRequestPost({ request, env }: any): Promise<Response> {
   const order = newPendingOrder({
     id,
     email,
+    clientId: clientId || null,
+    visitorLabel: visitorLabel || null,
     customerName,
     deliveryAddress,
     deliveryMethod: deliveryMethod === "australia_post" ? "australia_post" : "courier",
@@ -160,7 +168,9 @@ export async function onRequestPost({ request, env }: any): Promise<Response> {
   // client) — toujours en ANGLAIS : marché australien (règle 22/11).
   await sendTelegram(
     env,
-    `🛒 New order ${order.id}\n💰 ${fmtAud(order.totalAud)}\n📍 ${order.warehouseCity} → ${order.deliveryAddress}\n📧 ${order.email}`
+    `🛒 New order ${order.id}\n${order.visitorLabel ? `👤 Visitor ${order.visitorLabel}\n` : ""}💰 ${fmtAud(order.totalAud)}\n📍 ${order.warehouseCity} → ${order.deliveryAddress}\n📧 ${order.email}`,
+    undefined,
+    replyButtonMarkup(clientId || null)
   );
 
   // ── Réponse : numéro + infos pour la confirmation client ─────────
