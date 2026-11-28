@@ -12,7 +12,7 @@ function OrderSummaryPage() {
       <div className="px-4 space-y-1">
         <h1 className="text-[28px] font-extrabold text-black">Order Summary</h1>
         <p className="text-sm text-[#6E6E73]">
-          Please review your order before contacting us on Telegram.
+          Please review your order before confirming it in the live chat.
         </p>
       </div>
       <OrderSummary />

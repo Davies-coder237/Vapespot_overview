@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { MessageCircle, Send, X, Paperclip } from "lucide-react";
 import {
   CHAT_ORDER_EVENT,
+  CHAT_OPEN_EVENT,
   getClientId,
   getOrderStamp,
   getVisitorLabel,
@@ -169,8 +170,18 @@ export function ChatWidget() {
       openWsRef.current();
     };
     window.addEventListener(CHAT_ORDER_EVENT, h);
+    // 28/11 : boutons « Chat » du site (Header/Hero/Sidebar/barre du bas) →
+    // ouvrent le widget directement, sans ancrer de commande.
+    const openH = () => {
+      reconnectAttemptRef.current = 0;
+      setOpen(true);
+      shouldConnectRef.current = true;
+      openWsRef.current();
+    };
+    window.addEventListener(CHAT_OPEN_EVENT, openH);
     return () => {
       window.removeEventListener(CHAT_ORDER_EVENT, h);
+      window.removeEventListener(CHAT_OPEN_EVENT, openH);
       if (timerRef.current) clearTimeout(timerRef.current);
       try {
         wsRef.current?.close();
@@ -229,7 +240,7 @@ export function ChatWidget() {
           type="button"
           aria-label="Open live chat"
           onClick={openPanel}
-          className="fixed bottom-5 right-5 md:bottom-6 md:right-6 z-[1000] h-14 w-14 rounded-full bg-[#7C3AED] text-white shadow-xl hover:bg-[#6d28d9] transition-colors flex items-center justify-center"
+          className="fixed bottom-24 right-5 md:bottom-28 md:right-6 z-[1000] h-14 w-14 rounded-full bg-[#7C3AED] text-white shadow-xl hover:bg-[#6d28d9] transition-colors flex items-center justify-center"
         >
           <MessageCircle className="h-6 w-6" />
         </button>

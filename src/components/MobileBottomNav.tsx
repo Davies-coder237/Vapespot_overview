@@ -1,8 +1,8 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Home, Search, ClipboardList, Send } from "lucide-react";
+import { Home, Search, ClipboardList, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { useMyList } from "@/lib/storage";
-import { TELEGRAM_HANDLE, buildTelegramUrl, buildTelegramMessage } from "@/lib/telegram";
+import { openChat } from "@/lib/chat";
 import { SearchDialog } from "./SearchDialog";
 
 export function MobileBottomNav() {
@@ -50,15 +50,15 @@ export function MobileBottomNav() {
           </div>
           <span className={labelClass(isActive("/my-list"))}>My List</span>
         </Link>
-        <a
-          href={buildTelegramUrl(buildTelegramMessage([]), TELEGRAM_HANDLE)}
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          type="button"
+          onClick={openChat}
           className="flex-1 flex flex-col items-center justify-center"
+          aria-label="Open live chat"
         >
-          <Send className="h-5 w-5 text-black" strokeWidth={1.75} />
-          <span className="text-[10px] mt-0.5 text-black">Telegram</span>
-        </a>
+          <MessageCircle className="h-5 w-5 text-black" strokeWidth={1.75} />
+          <span className="text-[10px] mt-0.5 text-black">Chat</span>
+        </button>
       </nav>
       <SearchDialog open={searchOpen} onOpenChange={setSearchOpen} />
     </>

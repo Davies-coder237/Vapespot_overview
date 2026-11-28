@@ -1,10 +1,10 @@
 import { Link } from "@tanstack/react-router";
-import { Search, ShoppingCart, Send, Menu } from "lucide-react";
+import { Search, ShoppingCart, MessageCircle, Menu } from "lucide-react";
 import { useState } from "react";
 import { useMyList } from "@/lib/storage";
 import { Sidebar } from "./Sidebar";
 import { SearchDialog } from "./SearchDialog";
-import { TELEGRAM_HANDLE, buildTelegramUrl, buildTelegramMessage } from "@/lib/telegram";
+import { openChat } from "@/lib/chat";
 
 export function Header() {
   const { items } = useMyList();
@@ -68,17 +68,16 @@ export function Header() {
               )}
             </Link>
 
-            {/* Telegram - desktop only */}
-            <a
-              href={buildTelegramUrl(buildTelegramMessage([]), TELEGRAM_HANDLE)}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Telegram"
+            {/* Chat - desktop only */}
+            <button
+              type="button"
+              onClick={openChat}
+              aria-label="Chat"
               className="hidden md:flex p-2 md:px-3 md:py-2 items-center gap-1.5 text-black hover:opacity-70 transition-opacity"
             >
-              <Send className="h-5 w-5" strokeWidth={1.75} />
-              <span className="hidden md:inline text-sm font-medium">Telegram</span>
-            </a>
+              <MessageCircle className="h-5 w-5" strokeWidth={1.75} />
+              <span className="hidden md:inline text-sm font-medium">Chat</span>
+            </button>
           </div>
         </div>
       </header>

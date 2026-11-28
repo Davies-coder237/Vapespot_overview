@@ -4,7 +4,7 @@ import { Minus, Plus, Send } from "lucide-react";
 import { findProduct, formatPrice, onImageError, productCard } from "@/lib/data";
 import { useMyList } from "@/lib/storage";
 import type { Product } from "@/lib/types";
-import { buildTelegramMessage, buildTelegramUrl, buildOrderLines } from "@/lib/telegram";
+import { buildOrderLines } from "@/lib/telegram";
 import { packPrice } from "@/lib/packs";
 
 export function MyList() {
@@ -38,7 +38,6 @@ export function MyList() {
     .filter((l) => l.product) as { item: { productId: string; quantity: number }; product: Product }[];
 
   const orderLines = buildOrderLines(items, products);
-  const url = buildTelegramUrl(buildTelegramMessage(orderLines));
 
   return (
     <div className="pb-6 lg:max-w-4xl lg:mx-auto">

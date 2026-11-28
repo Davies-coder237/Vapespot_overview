@@ -84,3 +84,17 @@ export function dispatchOrderPlaced(stamp: ChatOrderStamp): void {
     /* ignoré */
   }
 }
+
+// Événement global « ouvrir le chat » (28/11 : remplace les boutons Telegram du
+// site — Header, Hero, Sidebar, barre du bas). Tout bouton « Chat » le dispatch ;
+// le widget s'y abonne pour ouvrir le panneau directement (sans ancrer de commande).
+export const CHAT_OPEN_EVENT = "vapespot:chat-open";
+
+export function openChat(): void {
+  if (typeof window === "undefined") return;
+  try {
+    window.dispatchEvent(new CustomEvent(CHAT_OPEN_EVENT));
+  } catch {
+    /* ignoré */
+  }
+}

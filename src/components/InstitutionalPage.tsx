@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import institutional from "@/data/institutional.json";
-
-const CONTACT = institutional.contact;
+import { openChat } from "@/lib/chat";
 
 /**
  * Rendu SPA d'une page institutionnelle (about / delivery / returns / contact).
@@ -37,15 +36,15 @@ export function InstitutionalPage({ slug }: { slug: string }) {
           <div className="border border-[#F0EEFF] bg-[#F0EEFF]/60 p-6 space-y-3">
             <h2 className="text-[18px] font-bold text-[#0A0A0A]">Contact details</h2>
             <div className="grid gap-2 text-[15px] text-[#3F3F46]">
-              <p>Telegram: <span className="font-semibold text-[#0A0A0A]">@{contact.telegram}</span></p>
               <p>Email: <span className="font-semibold text-[#0A0A0A]">{contact.email}</span></p>
             </div>
-            <a
-              href={contact.telegramUrl}
+            <button
+              type="button"
+              onClick={openChat}
               className="inline-flex items-center justify-center rounded-none bg-black px-5 py-3 text-sm font-semibold text-white hover:opacity-90"
             >
-              Open a chat on Telegram →
-            </a>
+              Open the live chat →
+            </button>
           </div>
         )}
 
@@ -124,12 +123,13 @@ export function InstitutionalPage({ slug }: { slug: string }) {
           <h2 className="text-[18px] font-bold text-[#0A0A0A]">{page.cta.title}</h2>
           <p className="text-[15px] text-[#3F3F46]">{page.cta.text}</p>
           {isContact ? (
-            <a
-              href={contact.telegramUrl}
+            <button
+              type="button"
+              onClick={openChat}
               className="inline-flex items-center justify-center rounded-none bg-black px-5 py-3 text-sm font-semibold text-white hover:opacity-90"
             >
-              Open a chat on Telegram →
-            </a>
+              Open the live chat →
+            </button>
           ) : (
             <Link
               to={page.cta.to}

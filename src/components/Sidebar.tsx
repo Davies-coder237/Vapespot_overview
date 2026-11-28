@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { ChevronRight, Send, X } from "lucide-react";
+import { ChevronRight, MessageCircle, X } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -17,7 +17,7 @@ import {
 } from "@/lib/data";
 import type { NavNode } from "@/lib/data";
 import { useMyList } from "@/lib/storage";
-import { TELEGRAM_HANDLE, buildTelegramUrl, buildTelegramMessage } from "@/lib/telegram";
+import { openChat } from "@/lib/chat";
 
 type Page =
   | { level: "root" }
@@ -180,21 +180,20 @@ export function Sidebar({
                 })}
               </div>
 
-              <a
-                href={buildTelegramUrl(buildTelegramMessage([]), TELEGRAM_HANDLE)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 flex items-center gap-3 p-4 bg-[#F5F5F7]"
+              <button
+                type="button"
+                onClick={openChat}
+                className="mt-6 flex w-full items-center gap-3 p-4 bg-[#F5F5F7] text-left"
               >
                 <div className="h-10 w-10 rounded-full bg-black flex items-center justify-center text-white shrink-0">
-                  <Send className="h-5 w-5" strokeWidth={1.75} />
+                  <MessageCircle className="h-5 w-5" strokeWidth={1.75} />
                 </div>
                 <div className="min-w-0">
-                  <p className="text-[11px] text-[#6E6E73]">Contact us on</p>
-                  <p className="text-sm font-bold leading-tight text-black">Telegram</p>
+                  <p className="text-[11px] text-[#6E6E73]">Chat with us</p>
+                  <p className="text-sm font-bold leading-tight text-black">Live chat</p>
                   <p className="text-[11px] text-[#6E6E73]">We reply fast 24/7</p>
                 </div>
-              </a>
+              </button>
             </div>
           </>
         )}

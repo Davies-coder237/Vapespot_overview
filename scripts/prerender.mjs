@@ -1229,9 +1229,9 @@ function institutionalContentHTML(pg) {
 
   // Bloc contact (page /contact uniquement — miroir du composant SPA)
   if (isContact) {
-    out += `<h2>Contact details</h2><p>Telegram: <strong>@${esc(institutionalData.contact.telegram)}</strong></p>` +
+    out += `<h2>Contact details</h2>` +
       `<p>Email: <strong>${esc(institutionalData.contact.email)}</strong></p>` +
-      `<p><a href="${esc(institutionalData.contact.telegramUrl)}">Open a chat on Telegram →</a></p>`;
+      `<p>Live chat — on the site: tap the chat bubble at the bottom of the page.</p>`;
   }
 
   for (const s of pg.sections) {
@@ -1252,7 +1252,9 @@ function institutionalContentHTML(pg) {
       `<p><a href="${esc(`https://vapespot.store${l.to}`)}">${esc(l.label)}</a></p>`).join("");
   }
 
-  out += `<p><a href="${isContact ? esc(institutionalData.contact.telegramUrl) : esc(`https://vapespot.store${pg.cta.to}`)}">${isContact ? "Open a chat on Telegram →" : esc(pg.cta.title)}</a></p>`;
+  out += `<p>${isContact
+    ? "Live chat is fastest — tap the chat bubble at the bottom of the page."
+    : `<a href="${esc(`https://vapespot.store${pg.cta.to}`)}">${esc(pg.cta.title)}</a>`}</p>`;
   out += `<p>${esc(institutionalData.contact.ageNote)}</p>`;
   return out;
 }

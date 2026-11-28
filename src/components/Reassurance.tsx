@@ -1,4 +1,4 @@
-import { Truck, ShieldCheck, BadgeCheck, Send } from "lucide-react";
+import { Truck, ShieldCheck, BadgeCheck, MessageCircle } from "lucide-react";
 
 const BLOCKS = [
   {
@@ -17,9 +17,9 @@ const BLOCKS = [
     subtitle: "Genuine products from top brands.",
   },
   {
-    icon: Send,
-    title: "Telegram Support",
-    subtitle: "Chat with us 24/7 on Telegram.",
+    icon: MessageCircle,
+    title: "Live Chat",
+    subtitle: "A real person answers you here on the site.",
   },
 ];
 
